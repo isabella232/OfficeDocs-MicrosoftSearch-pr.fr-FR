@@ -1,12 +1,4 @@
----
-ms.openlocfilehash: 195160e7208366f761fa1dc17b28d0e5b100b090
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378651"
----
-# [Microsoft Search](microsoft-search.md)
+# Microsoft Search
 # [Vue d’ensemble](why-microsoft-search.md)
 ## [Fonctionnalités](features.md)
 ## [Sécurité](security.md)
@@ -26,7 +18,7 @@ ms.locfileid: "29378651"
 ## [Navigateur par défaut de SET](set-default-browser.md)
 ## [Ajouter une zone de recherche à votre site intranet](add-a-search-box-to-your-intranet-site.md)
 ## [Planifier le contenu](plan-your-content.md)
-# [Signets](create-and-manage-bookmarks.md)
+# Signets
 ## [Créer des signets](create-bookmarks.md)
 ## [Gérer les signets](manage-bookmarks.md)
 ## [Publier les signets par défaut](publish-default-bookmarks.md)
@@ -37,17 +29,17 @@ ms.locfileid: "29378651"
 ## [Créer Q&As](create-qas.md)
 ## [Gérer les Q&As](manage-qas.md)
 ## [Créer des Q&As en bloc](bulk-create-qas.md)
-# [Emplacements](locations.md)
+# Emplacements
 ## [Ajouter un emplacement](add-a-location.md)
 ## [Gérer les emplacements](manage-locations.md)
 ## [Créer des emplacements en bloc](bulk-create-locations.md)
 # [Guide de l’utilisateur d’adoption](user-adoption-guide.md)
 # [Obtenir des informations](get-insights.md)
-# [FAQ](faqs.md)
-# [Obtenir une assistance](get-support.md)
+# FAQ
+# Obtenir une assistance
 # [Utiliser](use/about-microsoft-search.md)
 ## [Comment Microsoft Search protège vos informations](use/how-microsoft-search-keeps-your-info-secure.md)
-## [Connexion](use/sign-in.md)
+## Connexion
 ## [Pourquoi est-ce que j’automatiquement connecté ?](use/why-am-i-automatically-signed-in.md)
 ## [Recherches suggérées](use/suggested-searches.md)
 ## [Rechercher des personnes et groupes](use/find-people-and-groups.md)
@@ -56,4 +48,4 @@ ms.locfileid: "29378651"
 ## [Rechercher les fichiers](use/find-files.md)
 ## [Rechercher des conversations](use/find-conversations.md)
 ## [Trouver des emplacements](use/find-locations.md)
-## [Envoyer des commentaires](use/send-feedback.md)
+## Envoyer des commentaires
