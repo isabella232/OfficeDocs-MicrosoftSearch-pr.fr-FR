@@ -1,5 +1,5 @@
 ---
-title: Moteur de recherche par défaut Set
+title: Modèle de recherche par défaut
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,21 +7,21 @@ ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 description: Découvrez comment configurer Bing comme moteur de recherche par défaut de votre société à l’aide de Microsoft Search.
-ms.openlocfilehash: 1102c4c58b1e46e450276430a1e79b34964b4ad4
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: a0798da94f4433bb754c71b9e0d00e09ba5a543b
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378657"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612528"
 ---
-# <a name="set-default-search-engine"></a>Moteur de recherche par défaut Set
+# <a name="set-default-search-engine"></a>Modèle de recherche par défaut
 
 Configurer le navigateur par défaut, le moteur de recherche par défaut et la page d’accueil par défaut vous aidera vos utilisateurs découvrir les fonctionnalités de Microsoft Search, encourager l’utilisation de plus et fournir une meilleure expérience.
   

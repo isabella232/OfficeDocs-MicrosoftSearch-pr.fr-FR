@@ -7,25 +7,25 @@ ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
 description: Toutes les informations dont vous avez besoin pour déploiement Microsoft Search dans votre organisation
-ms.openlocfilehash: 0a9a37577d4c5cda98c51499994dc402e9ac8953
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 7e58d6df8d2ae35aab7d24c05b487f626b5f5c1c
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378645"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612400"
 ---
 # <a name="set-up-microsoft-search"></a>Configurer Microsoft Search
 
 Dans le cadre d’Office 365, Microsoft Search est facilement déployé par l’activation dans le centre d’administration Microsoft 365. Une fois activée, une configuration pour définir une couleur, le nom et le logo et donner aux utilisateurs l’accès rapide est tout ce qui est nécessaire pour mettre en place. À partir de là, les utilisateurs autorisés peuvent se connecter à Bing avec un compte professionnel ou de l’école et obtenir des résultats de travail lorsqu’ils recherchent.
 
-- [Configurer des rapide](quick-set-up.md)
+- [Configuration rapide](quick-set-up.md)
     
     Quatre étapes pour activer facilement Microsoft Search
 

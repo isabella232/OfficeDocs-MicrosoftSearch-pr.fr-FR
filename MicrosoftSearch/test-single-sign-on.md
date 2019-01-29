@@ -1,5 +1,5 @@
 ---
-title: Test de l’authentification unique
+title: Authentification unique
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,21 +7,21 @@ ms.date: 09/11/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: a220c1bf-7cee-448a-90a3-310284d03e81
 description: Réduire le nombre de fois où que les utilisateurs Windows 10 sont invités à se connecter à Microsoft Search et Office 365
-ms.openlocfilehash: 4157707d58ead304449805c8fd16578690ac01a6
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 55d359edac36020ec8cf2aad6b64ca9737ee1066
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378728"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612350"
 ---
-# <a name="test-single-sign-on"></a>Test de l’authentification unique
+# <a name="test-single-sign-on"></a>Authentification unique
 
 Authentification unique réduit le nombre de fois que les utilisateurs sont invités à se connecter. Test de l’authentification unique avec un petit groupe d’utilisateurs permet d’identifier les problèmes de configuration bloquante. 
   

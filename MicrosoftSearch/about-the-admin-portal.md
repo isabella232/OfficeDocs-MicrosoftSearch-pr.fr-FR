@@ -1,5 +1,5 @@
 ---
-title: Sur le portail d’administration
+title: À propos du Centre d’administration
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,21 +7,21 @@ ms.date: 12/11/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: fee131cf-c82f-4f4b-b288-6fa98a99b793
 description: Obtenir une vue d’ensemble de l’administrateur de fonctionnalités de portail et accéder aux autorisations disponibles avec Microsoft Search
-ms.openlocfilehash: 1bb219798a68553bd359ba15452cb4bb4ae74cbf
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 3b1a0173a12d921a789ccf1c01e788f9abae2916
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378629"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612448"
 ---
-# <a name="about-the-admin-portal"></a>Sur le portail d’administration
+# <a name="about-the-admin-portal"></a>À propos du Centre d’administration
 
 Microsoft Search vous permet d’utiliser Bing pour rechercher votre organisation pour les sites SharePoint et les fichiers, sites Web internes, personnes, groupes d’Office 365 et plus. Utilisez le portail d’administration pour gérer tous les aspects de Microsoft Search.
   
@@ -35,7 +35,7 @@ Le portail d’administration de recherche Microsoft est organisé autour de ces
     
     Créer des résultats promus pour aider les utilisateurs à trouver des outils importants et des ressources au sein de l’organisation en plaçant en haut des résultats de Bing
     
-- [Q&As](create-and-manage-qas.md)
+- [Questions et réponses](create-and-manage-qas.md)
     
     Répondez aux questions fréquemment posées au sein de votre organisation.
     

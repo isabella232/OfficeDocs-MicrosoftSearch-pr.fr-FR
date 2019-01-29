@@ -7,19 +7,19 @@ ms.date: 12/18/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
 description: Vue d’ensemble des outils Microsoft Search pour créer et importer des résultats, se connecter automatiquement et recherche à partir de n’importe où
-ms.openlocfilehash: e885760a85ebacecb2987fc1ec4e125115f00f5d
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 3b7064fbd0d8f66149a91057be00611e23928ccc
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378665"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612373"
 ---
 # <a name="admin-portal-tools"></a>Outils de portail d’administration
 
