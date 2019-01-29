@@ -8,13 +8,19 @@ ms.audience: Admin
 ms.topic: landing-page
 layout: LandingPage
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
-  - BFB160
-  - MET150
-  - MOE150
+- BFB160
+- MET150
+- MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
 description: Microsoft Search est une expérience de recherche d’entreprise qui augmente la productivité et de gagne du temps en fournissant des résultats de recherche plus pertinents pour votre organisation
+ms.openlocfilehash: 1a50ff7a0ae3c2b86f3051ad4eeecb38a8a602a9
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612348"
 ---
 # <a name="microsoft-search"></a>Microsoft Search
 
@@ -148,7 +154,7 @@ description: Microsoft Search est une expérience de recherche d’entreprise qu
                     <div class="cardText">
                         <p><a href="security.md">Sécurité</a></p>
                         <p><a href="requirements.md">Configuration requise</a></p>  
-                        <p><a href="about-the-admin-portal.md">Sur le portail d’administration</a></p>
+                        <p><a href="about-the-admin-portal.md">À propos du Centre d’administration</a></p>
                     </div>
                 </div>
             </div>
@@ -159,7 +165,7 @@ description: Microsoft Search est une expérience de recherche d’entreprise qu
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><a href="quick-set-up.md">Configurer des rapide</a></p>
+                        <p><a href="quick-set-up.md">Configuration rapide</a></p>
                         <p><a href="connected-services.md">Services connectés</a></p>
                         <p><a href="set-up-microsoft-search.md">Configurer Microsoft Search</a></p>
                     </div>
@@ -173,7 +179,7 @@ description: Microsoft Search est une expérience de recherche d’entreprise qu
                 <div class="card">
                     <div class="cardText">
                         <p><a href="create-bookmarks.md">Créer des signets</a></p>
-                        <p><a href="create-qas.md">Créer Q&As</a></p>
+                        <p><a href="create-qas.md">Créer des questions et réponses</a></p>
                         <p><a href="add-users.md">Ajout d’utilisateurs</a></p>
                     </div>
                 </div>
