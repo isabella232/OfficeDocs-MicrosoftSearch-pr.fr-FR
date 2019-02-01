@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 2379e72c-a7da-4e3f-932a-12d431a0a284
-description: Vue d’ensemble de toutes les méthodes que vous pouvez inclure les résultats de travail de votre organisation emplacements Searc Microsoft
-ms.openlocfilehash: 6b96fd405fc78d77f9b61408909b380cc45ec95e
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Vue d’ensemble de toutes les méthodes que vous pouvez inclure des emplacements de votre organisation dans les résultats de travail Microsoft Search
+ms.openlocfilehash: 4ff30d7e346d609e9fddaca70caa1a85652fad3c
+ms.sourcegitcommit: 98fd5dd37a5b753cfa2fb81fc4bd6497ecc8ed30
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378622"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690657"
 ---
 # <a name="locations"></a>Emplacements
 
@@ -27,15 +27,15 @@ ms.locfileid: "29378622"
 
 Emplacements aident vos utilisateurs à trouver des adresses et recherchez bâtiments de votre organisation, les bureaux et autres espaces de travail sur une carte. Ils peuvent également utiliser Bing Maps pour obtenir des instructions, consultez la rubrique What ' s proche et bien plus encore.
   
-- [Ajouter un emplacement](add-a-location.md)
+- [Ajoutez un emplacement](add-a-location.md)
     
     Ajouter un bâtiment, office, campus ou autre espace de travail
     
-- [Créer des emplacements en bloc](bulk-create-locations.md)
+- [Créer en bloc des emplacements](bulk-create-locations.md)
     
     Ajouter des emplacements à un fichier .csv et à importer en bloc
     
-## <a name="manage-locations"></a>Gérer les emplacements
+## <a name="manage-locations"></a>Gérer des emplacements
 
 Utiliser le statut de l’emplacement, outils, de filtrage et en bloc des outils d’exportation/importation pour [Rechercher et mettre à jour les emplacements](manage-locations.md), y compris nom adresse et l’emplacement
   
