@@ -1,5 +1,5 @@
 ---
-title: Créer Q&As
+title: Créer des Questions-réponses
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,127 +13,127 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d432b9d9-3792-47a0-9a13-30a1a83caabc
-description: Moyens de créer des réponses aux questions fréquemment posées pour votre Microsoft Search fonctionnent résultats
+description: Méthodes de création des réponses aux questions fréquemment posées pour vos résultats de travail relatifs à Microsoft Search (recherche Microsoft)
 ms.openlocfilehash: 9713608450688a0841aa64d1f3198183b10e05ee
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612496"
 ---
-# <a name="create-qas"></a><span data-ttu-id="e1610-103">Créer Q&As</span><span class="sxs-lookup"><span data-stu-id="e1610-103">Create Q&As</span></span>
+# <a name="create-qas"></a><span data-ttu-id="a5c3e-103">Créer des Questions-réponses</span><span class="sxs-lookup"><span data-stu-id="a5c3e-103">Create Q&As</span></span>
 
-<span data-ttu-id="e1610-p101">Q&As fournir une réponse ou les informations aux utilisateurs, y compris un lien facultatif. Dans l’idéal, un Q&A inclut tous les détails que cherchent vos utilisateurs afin qu’ils n’avez pas besoin accéder à la source. Vous pouvez mettre en forme votre contenu Q&A et inclure des images, des listes et des tableaux.</span><span class="sxs-lookup"><span data-stu-id="e1610-p101">Q&As provide an answer or info to users including an optional link. Ideally, a Q&A includes all the details your users are looking for so they don't need to go to the source. You can format your Q&A content and include images, lists, and tables.</span></span>
+<span data-ttu-id="a5c3e-p101">Les questions-réponses fournissent une réponse ou des informations aux utilisateurs ainsi qu’un lien facultatif. Dans l’idéal, une Question-Réponse inclut tous les détails que vos utilisateurs recherchent afin que personne n’ait besoin d’accéder à la source. Vous pouvez mettre en forme le contenu de vos Questions- Réponses et inclure des images, des listes et des tableaux.</span><span class="sxs-lookup"><span data-stu-id="a5c3e-p101">Q&As provide an answer or info to users including an optional link. Ideally, a Q&A includes all the details your users are looking for so they don't need to go to the source. You can format your Q&A content and include images, lists, and tables.</span></span>
   
-## <a name="create-a-qa"></a><span data-ttu-id="e1610-107">Créer un Q&A</span><span class="sxs-lookup"><span data-stu-id="e1610-107">Create a Q&A</span></span>
+## <a name="create-a-qa"></a><span data-ttu-id="a5c3e-107">Créer un Question-Réponse</span><span class="sxs-lookup"><span data-stu-id="a5c3e-107">Create a Q&A</span></span>
 
-<span data-ttu-id="e1610-108">Pour plus d’informations sur la création efficaces titres, descriptions, mots clés et plus d’informations, consultez [planifier votre contenu.](plan-your-content.md)</span><span class="sxs-lookup"><span data-stu-id="e1610-108">For information about creating effective titles, descriptions, keywords, and more, see [Plan your content.](plan-your-content.md)</span></span>
+<span data-ttu-id="a5c3e-108">Pour plus d’informations sur la création efficaces, les titres, des descriptions, les mots clés et autres aspects, voir [Planification de votre contenu](plan-your-content.md).</span><span class="sxs-lookup"><span data-stu-id="a5c3e-108">For information about creating effective titles, descriptions, keywords, and more, see [Plan your content.](plan-your-content.md)</span></span>
   
-1. <span data-ttu-id="e1610-109">Accédez au portail d’administration de recherche Microsoft</span><span class="sxs-lookup"><span data-stu-id="e1610-109">Go to the Microsoft Search Admin portal</span></span>
+1. <span data-ttu-id="a5c3e-109">Accédez au portail d’administration de Microsoft Search (recherche Microsoft).</span><span class="sxs-lookup"><span data-stu-id="a5c3e-109">Go to the Microsoft Search Admin portal</span></span>
     
-2. <span data-ttu-id="e1610-110">Dans le volet de navigation, cliquez sur **Q&As**</span><span class="sxs-lookup"><span data-stu-id="e1610-110">In the navigation pane, click **Q&As**</span></span>
+2. <span data-ttu-id="a5c3e-110">Dans le volet de navigation, cliquez sur Courrier**Q&As**.</span><span class="sxs-lookup"><span data-stu-id="a5c3e-110">In the navigation pane, click **ADSI Edit**.</span></span>
     
-3. <span data-ttu-id="e1610-111">En haut de la page, cliquez sur **Ajouter un Q&A**</span><span class="sxs-lookup"><span data-stu-id="e1610-111">At the top of the page, click **Add Q&A**</span></span>
+3. <span data-ttu-id="a5c3e-111">En haut de la page, cliquez sur **Ajouter Q&A**</span><span class="sxs-lookup"><span data-stu-id="a5c3e-111">At the top of the page, click **Share**.</span></span>
     
-    <span data-ttu-id="e1610-p102">La page Modifier la Q&A s’affiche, avec un aperçu de l’apparence de la Q&A sur Bing. Lorsque vous ajoutez les informations requises, l’aperçu met à jour automatiquement.</span><span class="sxs-lookup"><span data-stu-id="e1610-p102">The Edit Q&A page appears, with a preview of how the Q&A will look on Bing. As you add the required information, the preview will automatically update.</span></span>
+    <span data-ttu-id="a5c3e-p102">La page Modifier le signet s’affiche avec une version d’évaluation afin de montrer à quoi ressemblera le signet sur Bing. Lorsque vous ajoutez les informations requises, la version d’affichage se mettra à jour automatiquement.</span><span class="sxs-lookup"><span data-stu-id="a5c3e-p102">The Edit Q&A page appears, with a preview of how the Q&A will look on Bing. As you add the required information, the preview will automatically update.</span></span>
     
-4. <span data-ttu-id="e1610-114">Entrez un **titre**</span><span class="sxs-lookup"><span data-stu-id="e1610-114">Enter a **Title**</span></span>
+4. <span data-ttu-id="a5c3e-114">Entrez un**Titre**</span><span class="sxs-lookup"><span data-stu-id="a5c3e-114">Enter a **Title** for the new tile.</span></span>
     
-    <span data-ttu-id="e1610-p103">Le titre est le titre qui apparaît dans le résultat. Il peut contenir jusqu'à 120 caractères et nous recommandons d’utiliser un format de question.</span><span class="sxs-lookup"><span data-stu-id="e1610-p103">The title is the heading that appears in the result. It can be up to 120 characters long and we recommend using a question format.</span></span>
+    <span data-ttu-id="a5c3e-p103">Le titre est celui qui s’affiche dans le résultat. Il peut avoir jusqu'à 120 caractères et nous vous recommandons d’utiliser un format de question.</span><span class="sxs-lookup"><span data-stu-id="a5c3e-p103">The title is the heading that appears in the result. It can be up to 120 characters long and we recommend using a question format.</span></span>
     
-5. <span data-ttu-id="e1610-117">Si nécessaire, entrez l' **URL** de la page, un site ou un emplacement que établit un lien vers le signet</span><span class="sxs-lookup"><span data-stu-id="e1610-117">If needed, enter the **URL** of the page, site, or location the bookmark will link to</span></span> 
+5. <span data-ttu-id="a5c3e-117">Entrez l’**URL** de la page, d’un site ou d’un emplacement d’un signet qui sera lié au</span><span class="sxs-lookup"><span data-stu-id="a5c3e-117">If needed, enter the **URL** of the page, site, or location the bookmark will link to</span></span> 
     
-    <span data-ttu-id="e1610-118">Cette permet aux utilisateurs ayant besoin d’informations supplémentaires facilement accéder à la source pour en savoir plus.</span><span class="sxs-lookup"><span data-stu-id="e1610-118">This lets users that need additional information easily get to the source to read more.</span></span>
+    <span data-ttu-id="a5c3e-118">Cette permet aux utilisateurs qui ont besoin des informations supplémentaires facilement accéder à la source pour en savoir plus.</span><span class="sxs-lookup"><span data-stu-id="a5c3e-118">This lets users that need additional information easily get to the source to read more.</span></span>
     
-6. <span data-ttu-id="e1610-119">Entrez une **description de la réponse**</span><span class="sxs-lookup"><span data-stu-id="e1610-119">Enter an **Answer description**</span></span>
+6. <span data-ttu-id="a5c3e-119">Entrez une **description de réponse**</span><span class="sxs-lookup"><span data-stu-id="a5c3e-119">Enter an **Answer description**</span></span>
     
-    <span data-ttu-id="e1610-p104">Il doit répondre à la question est posée dans le titre. Vous pouvez copier le contenu HTML existant et coller ici. Toutes les balises non prises en charge seront ignorées.</span><span class="sxs-lookup"><span data-stu-id="e1610-p104">This should answer the question that's asked in the title. You can copy existing HTML content and paste it here. Any unsupported tags will be ignored.</span></span>
+    <span data-ttu-id="a5c3e-p104">Cela doit répondre à la question invitée dans le titre. Vous pouvez copier le contenu HTML existant et collez-la à cet endroit. Les balises non prises en charge seront ignorées.</span><span class="sxs-lookup"><span data-stu-id="a5c3e-p104">This should answer the question that's asked in the title. You can copy existing HTML content and paste it here. Any unsupported tags will be ignored.</span></span>
     
-7. <span data-ttu-id="e1610-123">Utiliser des balises HTML et les options intégrées au format texte, ajoutez des images, des listes, des tableaux et plus</span><span class="sxs-lookup"><span data-stu-id="e1610-123">Use HTML tags and the built-in options to format text, add images, lists, tables, and more</span></span>
+7. <span data-ttu-id="a5c3e-123">Utilisez les balises HTML et des options prédéfinies pour mettre en forme du texte, ajouter des images, listes, tableaux, etc.</span><span class="sxs-lookup"><span data-stu-id="a5c3e-123">Use HTML tags and the built-in options to format text, add images, lists, tables, and more</span></span>
     
-    <span data-ttu-id="e1610-p105">Utiliser l’aperçu en haut de la page pour voir comment vos balises et la mise en forme s’ils apparaissent sur Bing. Pour plus d’informations sur :</span><span class="sxs-lookup"><span data-stu-id="e1610-p105">Use the preview at the top of the page to see how your tags and formatting will appear on Bing. For information about:</span></span>
+    <span data-ttu-id="a5c3e-p105">Utilisez l’aperçu dans la partie supérieure de la page pour voir comment votre balise et la mise en forme ne s’affichent sur Bing. Pour plus d’informations sur :</span><span class="sxs-lookup"><span data-stu-id="a5c3e-p105">Use the preview at the top of the page to see how your tags and formatting will appear on Bing. For information about:</span></span>
     
-  - <span data-ttu-id="e1610-126">Balises HTML, voir la liste de balises HTML prises en charge ci-dessous</span><span class="sxs-lookup"><span data-stu-id="e1610-126">HTML tags, see the supported HTML tags list below</span></span>
+  - <span data-ttu-id="a5c3e-126">Les balises HTML, voir la liste des indicateurs pris en charge HTML ci-dessous</span><span class="sxs-lookup"><span data-stu-id="a5c3e-126">HTML tags, see the supported HTML tags list below</span></span>
     
-  - <span data-ttu-id="e1610-127">Options intégrées, cliquez sur **guide de promotions** (point d’interrogation)</span><span class="sxs-lookup"><span data-stu-id="e1610-127">Built-in options, click **Markdown guide** (question mark icon)</span></span> 
+  - <span data-ttu-id="a5c3e-127">Options intégrées, cliquez sur ce**guide de démarque** (icône de point d’interrogation)</span><span class="sxs-lookup"><span data-stu-id="a5c3e-127">Built-in options, click **Markdown guide** (question mark icon)</span></span> 
     
-8. <span data-ttu-id="e1610-128">Entrez des **mots clés** que vous souhaitez déclencher cette Q&A</span><span class="sxs-lookup"><span data-stu-id="e1610-128">Enter **Keywords** you want to trigger this Q&A</span></span> 
+8. <span data-ttu-id="a5c3e-128">Entrez les**mots clés** que vous souhaitez associer au déclenchement de cette Question-réponse</span><span class="sxs-lookup"><span data-stu-id="a5c3e-128">Enter **Keywords** you want to trigger this Q&A</span></span> 
     
-    <span data-ttu-id="e1610-p106">Comme un signet, lorsqu’un utilisateur recherche les mots clés que vous avez inclus, cette Q&A seront inclus dans les résultats de leur travail. Essayez d’ajouter des variantes autant que possible, y compris le titre de la Q&A.</span><span class="sxs-lookup"><span data-stu-id="e1610-p106">Like a bookmark, when a user searches for any of the keywords you've included, this Q&A will be included in their work results. Try adding as many variants as possible, including the title of the Q&A.</span></span>
+    <span data-ttu-id="a5c3e-p106">Par exemple, un signet, lorsqu’un utilisateur recherche tous les mots clés que vous avez inclus, cette Question-réponse sera incluse dans leurs résultats de travail. Essayez d’ajouter des variantes autant que possible, y compris le titre de la Question-réponse.</span><span class="sxs-lookup"><span data-stu-id="a5c3e-p106">Like a bookmark, when a user searches for any of the keywords you've included, this Q&A will be included in their work results. Try adding as many variants as possible, including the title of the Q&A.</span></span>
     
-9. <span data-ttu-id="e1610-131">Sélectionnez **automatiquement correspondent à des mots clés similaires** pour développer votre ensemble de mots clés</span><span class="sxs-lookup"><span data-stu-id="e1610-131">Select **Automatically match similar keywords** to expand your set of keywords</span></span> 
+9. <span data-ttu-id="a5c3e-131">Sélectionnez**automatiquement les mots-clés similaires en correspondance** pour développer votre ensemble de mots clés</span><span class="sxs-lookup"><span data-stu-id="a5c3e-131">Select **Automatically match similar keywords** to expand your set of keywords</span></span> 
     
-    <span data-ttu-id="e1610-132">Cela permet une correspondance plus large de termes de recherche et contribue à garantie que cette Q&A est inclus dans les résultats de travail pertinent.</span><span class="sxs-lookup"><span data-stu-id="e1610-132">This enables a broader matching of search terms and helps ensure this Q&A is included in relevant work results.</span></span>
+    <span data-ttu-id="a5c3e-132">Cela permet une correspondance plus large de termes de recherche et vous permet de vérifier que ce signet est inclus dans les résultats de travail pertinents.</span><span class="sxs-lookup"><span data-stu-id="a5c3e-132">This enables a broader matching of search terms and helps ensure this Q&A is included in relevant work results.</span></span>
     
-10. <span data-ttu-id="e1610-133">Entrez des **mots clés réservés**</span><span class="sxs-lookup"><span data-stu-id="e1610-133">Enter **Reserved keywords**</span></span>
+10. <span data-ttu-id="a5c3e-133">Entrez les**Mots clés réservés**</span><span class="sxs-lookup"><span data-stu-id="a5c3e-133">Enter **Reserved keywords**</span></span>
     
-    <span data-ttu-id="e1610-p107">Si un mot clé déclenche plusieurs Q&As, Microsoft Search alors placer les plus populaires en haut et affiche les autres sous forme de liens. Utilisez un ou plusieurs mots-clés réservés pour garantir qu'une Q&A apparaît toujours comme le meilleur résultat. Mots clés réservés ne peuvent pas être partagés entre Q&As. En outre, le partage des mots clés réservés entre Q&As et les signets n’est pas recommandé. Si un signet et un Q&A partagent un mot clé ou un mot clé réservé, le signet système toujours prioritaires et le Q&A n’apparaît pas.</span><span class="sxs-lookup"><span data-stu-id="e1610-p107">If a keyword triggers multiple Q&As, Microsoft Search will place the most popular one at the top and show the others as related links. Use one or more reserved keywords to ensure a Q&A always appears as the top result. Reserved keywords can't be shared across Q&As. Also, sharing reserved keywords across Q&As and bookmarks isn't recommended. If a bookmark and a Q&A share a keyword or a reserved keyword, the bookmark will always take precedence and the Q&A will not appear.</span></span>
+    <span data-ttu-id="a5c3e-p107">Si un mot clé déclenche plusieurs questions et réponses comme, Microsoft Search (recherche Microsoft) placera le plus populaire en haut et affichera les autres liens connexes. Utilisez un ou plusieurs mot(s) clé(s) réservé(s) pour garantir qu’une Question- réponse s’affiche en permanence en tant que résultat supérieur. Les mots clés réservés ne peuvent pas être partagés au sein de Question-réponse. Par ailleurs, le partage de signets et des mots clés réservés dans Question-réponse n’est pas recommandé. Si un signet et une question-réponse partagent un mot clé ou un mot clé réservé, le signet sera toujours prioritaire et la question-réponse ne s’affichera pas.</span><span class="sxs-lookup"><span data-stu-id="a5c3e-p107">If a keyword triggers multiple Q&As, Microsoft Search will place the most popular one at the top and show the others as related links. Use one or more reserved keywords to ensure a Q&A always appears as the top result. Reserved keywords can't be shared across Q&As. Also, sharing reserved keywords across Q&As and bookmarks isn't recommended. If a bookmark and a Q&A share a keyword or a reserved keyword, the bookmark will always take precedence and the Q&A will not appear.</span></span>
     
-## <a name="add-qa-settings"></a><span data-ttu-id="e1610-139">Ajouter des paramètres Q&A</span><span class="sxs-lookup"><span data-stu-id="e1610-139">Add Q&A settings</span></span>
+## <a name="add-qa-settings"></a><span data-ttu-id="a5c3e-139">Ajouter des paramètres Question-réponse</span><span class="sxs-lookup"><span data-stu-id="a5c3e-139">Add Q&A settings</span></span>
 
-<span data-ttu-id="e1610-140">Paramètres Q&A permettent de contrôler quand un Q&A s’affiche et qui il voit.</span><span class="sxs-lookup"><span data-stu-id="e1610-140">Q&A settings give you additional control over when a Q&A appears and who sees it.</span></span>
+<span data-ttu-id="a5c3e-140">Les paramètres de question-réponse cèdent le contrôle supplémentaire lorsque un signet s’affiche et les personnes autorisées l’affichent.</span><span class="sxs-lookup"><span data-stu-id="a5c3e-140">Q&A settings give you additional control over when a Q&A appears and who sees it.</span></span>
   
-- <span data-ttu-id="e1610-141">Dates</span><span class="sxs-lookup"><span data-stu-id="e1610-141">Dates</span></span>
+- <span data-ttu-id="a5c3e-141">Dates</span><span class="sxs-lookup"><span data-stu-id="a5c3e-141">Adjust Dates</span></span>
     
-    <span data-ttu-id="e1610-142">Définir une date de début ainsi que d’une date de fin facultative pour contrôler quand un Q&A sera publié ou expire.</span><span class="sxs-lookup"><span data-stu-id="e1610-142">Set a start date as well as an optional end date to control when a Q&A will be published or expire.</span></span>
+    <span data-ttu-id="a5c3e-142">Définir une date de début ainsi que d’une date de fin facultative pour contrôler quand un signet sera publié ou expirera.</span><span class="sxs-lookup"><span data-stu-id="a5c3e-142">Set a start date as well as an optional end date to control when a Q&A will be published or expire.</span></span>
     
-- <span data-ttu-id="e1610-143">Pays/région</span><span class="sxs-lookup"><span data-stu-id="e1610-143">Country/region</span></span>
+- <span data-ttu-id="a5c3e-143">Pays/région</span><span class="sxs-lookup"><span data-stu-id="a5c3e-143">Country/region</span></span>
     
-    <span data-ttu-id="e1610-144">Si vous sélectionnez le pays ou régions, uniquement dans ces emplacements s’affiche que Q&A.</span><span class="sxs-lookup"><span data-stu-id="e1610-144">If you select countries or regions, only users in those locations will see that Q&A.</span></span>
+    <span data-ttu-id="a5c3e-144">Si vous sélectionnez les pays ou les régions, seuls les utilisateurs dans ces emplacements verront cette question-réponse.</span><span class="sxs-lookup"><span data-stu-id="a5c3e-144">If you select countries or regions, only users in those locations will see that Q&A.</span></span>
     
-- <span data-ttu-id="e1610-145">Groupes</span><span class="sxs-lookup"><span data-stu-id="e1610-145">Groups</span></span>
+- <span data-ttu-id="a5c3e-145">Groupes</span><span class="sxs-lookup"><span data-stu-id="a5c3e-145">Groups</span></span>
     
-    <span data-ttu-id="e1610-p108">Utilisez les groupes pour qu’un résultat Q&A disponibles uniquement aux membres d’un groupe sélectionné. Par exemple, si vous créez Q&As qui s’appliquent uniquement aux employés du service des ressources humaines, vous pouvez mapper ce paramètre au groupe de sécurité des ressources humaines approprié.</span><span class="sxs-lookup"><span data-stu-id="e1610-p108">Use the Groups setting to make a Q&A result available only to members of a selected group. For example, if you're creating Q&As that pertain only to employees in the HR department, you could map this setting to the appropriate HR security group.</span></span>
+    <span data-ttu-id="a5c3e-p108">Utilisez les paramètres de groupes pour rendre un résultat de signet disponible uniquement aux membres d’un groupe sélectionné. Par exemple, si vous créez les signets qui concernent uniquement les employés au sein de service ressources humaines, vous pouvez cartographier ce paramètre au groupe de sécurité RH approprié.</span><span class="sxs-lookup"><span data-stu-id="a5c3e-p108">Use the Groups setting to make a Q&A result available only to members of a selected group. For example, if you're creating Q&As that pertain only to employees in the HR department, you could map this setting to the appropriate HR security group.</span></span>
     
-- <span data-ttu-id="e1610-148">APPAREIL &amp; système d’exploitation</span><span class="sxs-lookup"><span data-stu-id="e1610-148">Device &amp; OS</span></span>
+- <span data-ttu-id="a5c3e-148">Système d’exploitation de l’appareil OS&amp;</span><span class="sxs-lookup"><span data-stu-id="a5c3e-148">Device OS</span></span>
     
-    <span data-ttu-id="e1610-149">Si vous sélectionnez types de périphériques ou systèmes d’exploitation, uniquement une recherche sur ces périphériques ou à l’aide de ces systèmes s’affiche que Q&A.</span><span class="sxs-lookup"><span data-stu-id="e1610-149">If you select device types or operating systems, only users searching on those devices or using those systems will see that Q&A.</span></span>
+    <span data-ttu-id="a5c3e-149">Si vous sélectionnez les types d’appareil ou des systèmes d’exploitation, seuls les utilisateurs effectuant une recherche sur ces appareils ou à l’aide de ces systèmes verront cette Question-réponse.</span><span class="sxs-lookup"><span data-stu-id="a5c3e-149">If you select device types or operating systems, only users searching on those devices or using those systems will see that Q&A.</span></span>
     
-- <span data-ttu-id="e1610-150">Variantes ciblés</span><span class="sxs-lookup"><span data-stu-id="e1610-150">Targeted variations</span></span>
+- <span data-ttu-id="a5c3e-150">Variantes ciblées</span><span class="sxs-lookup"><span data-stu-id="a5c3e-150">Targeted variations</span></span>
     
-    <span data-ttu-id="e1610-151">Utilisez ce paramètre pour faire varier le contenu de la Q&A basé sur l’appareil et l’emplacement d’un utilisateur.</span><span class="sxs-lookup"><span data-stu-id="e1610-151">Use this setting to vary the content of the Q&A based on a user's device and location.</span></span>
+    <span data-ttu-id="a5c3e-151">Utilisez ce paramètre pour varier le contenu du signet en fonction de l’appareil et l’emplacement d’un utilisateur.</span><span class="sxs-lookup"><span data-stu-id="a5c3e-151">Use this setting to vary the content of the Q&A based on a user's device and location.</span></span>
     
-## <a name="use-a-browser-extension-to-create-content"></a><span data-ttu-id="e1610-152">Utiliser une extension de navigateur pour créer du contenu</span><span class="sxs-lookup"><span data-stu-id="e1610-152">Use a browser extension to create content</span></span>
+## <a name="use-a-browser-extension-to-create-content"></a><span data-ttu-id="a5c3e-152">Utiliser une extension du navigateur pour créer du contenu</span><span class="sxs-lookup"><span data-stu-id="a5c3e-152">Use a browser extension to create content</span></span>
 
-<span data-ttu-id="e1610-p109">Dans la section Outils du portail d’administration, téléchargez et installez l’extension de navigateur créateur de contenu pour le serveur Edge ou Chrome. Pour utiliser l’extension, se connecter et accéder à un site ou une page que vous souhaitez ajouter en tant que révision Q&A. et modifier les suggestions de contenu, y compris les mots clés, ajouter du contenu supplémentaire, puis enregistrez le Q&A.</span><span class="sxs-lookup"><span data-stu-id="e1610-p109">From the Tools section of the Admin portal, download and install the Content creator browser extension for Edge or Chrome. To use the extension, sign in and go to a site or page that you want to add as a Q&A. Review and change the suggested content, including keywords, add any additional content, and save the Q&A.</span></span>
+<span data-ttu-id="a5c3e-p109">À la section Outils du portail d’Administration, téléchargez et installez l’extension de navigateur créateur de contenu pour Microsoft Edge ou Chrome. Pour utiliser l’extension, connectez-vous et accédez à un site ou la page que vous souhaitez ajouter en tant qu’un signet. Passez en revue et modifiez le contenu suggéré, y compris les mots clés, ajoutez le contenu supplémentaire et enregistrez la Question-réponse.</span><span class="sxs-lookup"><span data-stu-id="a5c3e-p109">From the Tools section of the Admin portal, download and install the Content creator browser extension for Edge or Chrome. To use the extension, sign in and go to a site or page that you want to add as a Q&A. Review and change the suggested content, including keywords, add any additional content, and save the Q&A.</span></span>
   
-<span data-ttu-id="e1610-156">Si plusieurs Q&As sont détectés, passez en revue chaque et déterminez si vous souhaitez publier, enregistrer un brouillon ou enregistrer tout brouillon.</span><span class="sxs-lookup"><span data-stu-id="e1610-156">If multiple Q&As are found, review each one and determine whether you want to publish, save to draft, or save all to draft.</span></span>
+<span data-ttu-id="a5c3e-156">Si plusieurs questions et réponses sont trouvées, passez en revue chacune d’elles et déterminez si vous souhaitez publier, enregistrer un brouillon ou tout enregistrer comme brouillon.</span><span class="sxs-lookup"><span data-stu-id="a5c3e-156">If multiple Q&As are found, review each one and determine whether you want to publish, save to draft, or save all to draft.</span></span>
   
-## <a name="supported-html-tags"></a><span data-ttu-id="e1610-157">Balises HTML prises en charge</span><span class="sxs-lookup"><span data-stu-id="e1610-157">Supported HTML tags</span></span>
+## <a name="supported-html-tags"></a><span data-ttu-id="a5c3e-157">Balises HTML pris en charge</span><span class="sxs-lookup"><span data-stu-id="a5c3e-157">Supported HTML tags</span></span>
 
-<span data-ttu-id="e1610-p110">Vous pouvez utiliser le contenu HTML existant ou ajouter des balises HTML pour la description de votre réponse. Balises non prises en charge sont ignorées.</span><span class="sxs-lookup"><span data-stu-id="e1610-p110">You can use existing HTML content or add HTML tags to your answer description. Unsupported tags are ignored.</span></span>
+<span data-ttu-id="a5c3e-p110">Vous pouvez utiliser les contenus HTML ou ajouter des balises HTML à la description de votre réponse. Les balises non prises en charge sont ignorées.</span><span class="sxs-lookup"><span data-stu-id="a5c3e-p110">You can use existing HTML content or add HTML tags to your answer description. Unsupported tags are ignored.</span></span>
   
-- <span data-ttu-id="e1610-160">BLOCKQUOTE</span><span class="sxs-lookup"><span data-stu-id="e1610-160">blockquote</span></span>
+- <span data-ttu-id="a5c3e-160">blockquote</span><span class="sxs-lookup"><span data-stu-id="a5c3e-160">blockquote</span></span>
     
-- <span data-ttu-id="e1610-161">div</span><span class="sxs-lookup"><span data-stu-id="e1610-161">div</span></span>
+- <span data-ttu-id="a5c3e-161">div</span><span class="sxs-lookup"><span data-stu-id="a5c3e-161">div</span></span>
     
-- <span data-ttu-id="e1610-162">cadratin</span><span class="sxs-lookup"><span data-stu-id="e1610-162">em</span></span>
+- <span data-ttu-id="a5c3e-162">em</span><span class="sxs-lookup"><span data-stu-id="a5c3e-162">/EM</span></span>
     
-- <span data-ttu-id="e1610-163">H1, h2, h3 et h4</span><span class="sxs-lookup"><span data-stu-id="e1610-163">h1, h2, h3, and h4</span></span>
+- <span data-ttu-id="a5c3e-163">H1, h2, h3 et h4</span><span class="sxs-lookup"><span data-stu-id="a5c3e-163">h1, h2, h3, and h4</span></span>
     
-- <span data-ttu-id="e1610-164">ol, ul et li</span><span class="sxs-lookup"><span data-stu-id="e1610-164">ol, ul, and li</span></span>
+- <span data-ttu-id="a5c3e-164">ol, ul et li</span><span class="sxs-lookup"><span data-stu-id="a5c3e-164">ol, ul, and li</span></span>
     
-- <span data-ttu-id="e1610-165">p</span><span class="sxs-lookup"><span data-stu-id="e1610-165">p</span></span>
+- <span data-ttu-id="a5c3e-165">p</span><span class="sxs-lookup"><span data-stu-id="a5c3e-165">p</span></span>
     
-- <span data-ttu-id="e1610-166">versions antérieures</span><span class="sxs-lookup"><span data-stu-id="e1610-166">pre</span></span>
+- <span data-ttu-id="a5c3e-166">Pre</span><span class="sxs-lookup"><span data-stu-id="a5c3e-166">pre</span></span>
     
-- <span data-ttu-id="e1610-167">étendue</span><span class="sxs-lookup"><span data-stu-id="e1610-167">span</span></span>
+- <span data-ttu-id="a5c3e-167">span</span><span class="sxs-lookup"><span data-stu-id="a5c3e-167">span</span></span>
     
-- <span data-ttu-id="e1610-168">fort</span><span class="sxs-lookup"><span data-stu-id="e1610-168">strong</span></span>
+- <span data-ttu-id="a5c3e-168">Fort</span><span class="sxs-lookup"><span data-stu-id="a5c3e-168">Strong</span></span>
     
-- <span data-ttu-id="e1610-169">table, thead, tbody, tr, th et td</span><span class="sxs-lookup"><span data-stu-id="e1610-169">table, thead, tbody, tr, th, and td</span></span>
+- <span data-ttu-id="a5c3e-169">table, thead, tbody, tr, th et td</span><span class="sxs-lookup"><span data-stu-id="a5c3e-169">table, thead, tbody, tr, th, and td</span></span>
     
-- <span data-ttu-id="e1610-170">u</span><span class="sxs-lookup"><span data-stu-id="e1610-170">u</span></span>
+- <span data-ttu-id="a5c3e-170">u</span><span class="sxs-lookup"><span data-stu-id="a5c3e-170">u</span></span>
     
-- <span data-ttu-id="e1610-171">a</span><span class="sxs-lookup"><span data-stu-id="e1610-171">a</span></span>
+- <span data-ttu-id="a5c3e-171">a</span><span class="sxs-lookup"><span data-stu-id="a5c3e-171">a</span></span>
     
-- <span data-ttu-id="e1610-172">code</span><span class="sxs-lookup"><span data-stu-id="e1610-172">code</span></span>
+- <span data-ttu-id="a5c3e-172">code</span><span class="sxs-lookup"><span data-stu-id="a5c3e-172">Code</span></span>
     
-- <span data-ttu-id="e1610-173">br</span><span class="sxs-lookup"><span data-stu-id="e1610-173">br</span></span>
+- <span data-ttu-id="a5c3e-173">br</span><span class="sxs-lookup"><span data-stu-id="a5c3e-173">br</span></span>
     
-- <span data-ttu-id="e1610-174">hr</span><span class="sxs-lookup"><span data-stu-id="e1610-174">hr</span></span>
+- <span data-ttu-id="a5c3e-174">hr</span><span class="sxs-lookup"><span data-stu-id="a5c3e-174">hr</span></span>
     
-- <span data-ttu-id="e1610-175">IMG</span><span class="sxs-lookup"><span data-stu-id="e1610-175">img</span></span>
+- <span data-ttu-id="a5c3e-175">img</span><span class="sxs-lookup"><span data-stu-id="a5c3e-175">img</span></span>
 
   
 
