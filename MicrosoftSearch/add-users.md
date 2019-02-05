@@ -1,5 +1,5 @@
 ---
-title: Add users
+title: Ajout d’utilisateurs
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,56 +13,56 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 41723aec-435c-400e-a818-6b1e8a1324c0
-description: Attribuer des autorisations et des rôles pour les administrateurs, les éditeurs et les utilisateurs dans le portail d’administration de recherche Microsoft
+description: Attribuez des autorisations et des rôles aux administrateurs, aux éditeurs et aux utilisateurs dans le portal d’administration de la recherche Microsoft.
 ms.openlocfilehash: c6c842a4337d218764c1969939e77e4abe91915c
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612392"
 ---
-# <a name="add-users"></a>Add users
+# <a name="add-users"></a>Ajout d’utilisateurs
 
-Activation de Microsoft Search pour toute votre organisation ou l’ajout de groupes de sécurité, en plus de votre service informatique, est les moyens d’ajouter des utilisateurs de Microsoft Search.
+Le moyen le plus rapide d’ajouter des utilisateurs de la recherche Microsoft consiste à activer la recherche Microsoft pour l’ensemble de votre organisation ou à ajouter des groupes de sécurité, en plus de votre service informatique.
   
-## <a name="add-admins-and-editors"></a>Ajouter des administrateurs et les éditeurs
+## <a name="add-admins-and-editors"></a>Ajout d’administrateurs et d’éditeurs
 
-1. Accédez au portail d’administration de recherche Microsoft
+1. Accédez au portail d’administration de la recherche Microsoft.
     
-2. Dans le volet de navigation, cliquez sur **utilisateurs &amp; autorisations**
+2. Dans le volet de navigation, cliquez sur **Utilisateurs et autorisations**.
     
-3. En haut de la page, cliquez sur **Ajouter admin ou éditeur**
+3. En haut de la page, cliquez sur **Ajouter un administrateur ou un éditeur**.
     
-4. Dans la zone **administrateurs supplémentaires** , pour les personnes ou groupes que vous souhaitez accorder des autorisations d’administrateur et sélectionnez-les dans les résultats de recherche 
+4. Dans la zone **Administrateurs supplémentaires**, recherchez les personnes ou les groupes auxquels accorder des autorisations d’administration et sélectionnez-les dans les résultats. 
     
-5. Dans la zone **éditeurs** , pour les personnes ou groupes que vous souhaitez accorder des autorisations d’éditeur et sélectionnez-les dans les résultats de recherche 
+5. Dans la zone **Éditeurs**, recherchez les personnes ou les groupes auxquels accorder des autorisations d’administration et sélectionnez-les dans les résultats. 
     
 6. Cliquez sur **Enregistrer**.
     
-## <a name="add-users"></a>Add users
+## <a name="add-users"></a>Ajout d’utilisateurs
 
-Par défaut, tout le monde dans votre organisation dispose d’un accès à Microsoft Search fonctionne de résultats. Si vous souhaitez limiter l’accès à un groupe plus petit, prenez en compte ces options permettant d’identifier les utilisateurs :
+Par défaut, tous les membres de votre organisation ont accès aux résultats du travail de la recherche Microsoft. Pour limiter l’accès à un groupe plus restreint, envisagez d’utiliser les options suivantes pour identifier les utilisateurs :
   
-- Associer un sponsor métiers au sein de votre organisation.
+- Travailler en partenariat avec un sponsor professionnel au sein de votre organisation.
     
-- Identifier un groupe de premiers
+- Identifier un groupe d’utilisateurs précoces.
     
-- Identifier les groupes qui effectuent des volumes importants de recherche de contenu d’entreprise
+- Identifier les groupes qui font beaucoup de recherches d’entreprise.
     
-- Identifier les utilisateurs dans d’autres emplacements géographiques, y compris international
+- Identifier des utilisateurs dans d’autres emplacements géographiques, y compris à l’international.
     
-Pour activer Microsoft Search pour un ou plusieurs utilisateurs :
+Afin d’activer la recherche Microsoft pour un ou plusieurs utilisateur(s), procédez comme suit :
   
-1. Accédez au portail d’administration de recherche Microsoft
+1. Accédez au portail d’administration de la recherche Microsoft.
     
-2. Dans le volet de navigation, cliquez sur **utilisateurs &amp; autorisations**
+2. Dans le volet de navigation, cliquez sur **Utilisateurs et autorisations**.
     
-3. En haut de la page, cliquez sur **Gérer les accès preview**
+3. En haut de la page, cliquez sur **Gérer l’accès à la version d’évaluation**.
     
-4. Désactivez l’option **Ajouter tout le monde dans votre organisation** 
+4. Désactivez l’option **Ajouter tout le monde dans votre organisation**. 
     
-5. Dans la zone **Autoriser uniquement les utilisateurs** , recherchez l’utilisateur ou les groupes que vous souhaitez ajouter 
+5. Dans la zone **Autoriser uniquement ces utilisateurs**, recherchez les utilisateurs ou les groupes à ajouter. 
     
 6. Cliquez sur **Enregistrer**.
     
-Une fois qu’ils vous données access preview, les deux heures connexion avec leur compte professionnel sur Bing s’affiche travail pertinent lorsqu’ils recherchent des résultats. Pour plus d’informations sur la connexion à Bing, voir [se connecter à Microsoft Search](use/sign-in.md).
+Deux heures après que l’accès à la version d’évaluation a été accordé aux utilisateurs qui se connectent avec leur compte professionnel à Bing, ces derniers peuvent voir des résultats de travail pertinents lorsqu’ils lancent une recherche. Pour plus d’informations sur la connexion à Bing, reportez-vous à l’article relatif à la [connexion à la recherche Microsoft](use/sign-in.md).

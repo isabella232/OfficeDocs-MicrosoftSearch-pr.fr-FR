@@ -1,5 +1,5 @@
 ---
-title: Ajouter une zone de recherche à votre site intranet
+title: Ajout d’une zone de recherche à votre site intranet
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,21 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
-description: Obtenir des suggestions de recherche pertinents et trouvez des résultats de travail plus rapidement en ajoutant une zone de recherche Microsoft Search vers une page ou un site intranet.
+description: Obtenez des suggestions de recherche pertinentes et trouvez des résultats de travail plus rapidement en ajoutant la zone de recherche Microsoft à une page ou à un site intranet.
 ms.openlocfilehash: 699cfd9c411c9b86f3a2f8742c425aaedef1ebc5
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612416"
 ---
-# <a name="add-a-search-box-to-your-intranet-site"></a>Ajouter une zone de recherche à votre site intranet
+# <a name="add-a-search-box-to-your-intranet-site"></a>Ajout d’une zone de recherche à votre site intranet
 
-Pour accéder rapidement à des suggestions de recherche pertinents et les résultats de travail, ajoutez une zone de recherche Microsoft Search vers n’importe quel site intranet ou une page.
+Pour accéder rapidement à des suggestions de recherche et des résultats de travail pertinents, ajoutez une zone de recherche Microsoft à des sites ou à des pages intranet.
   
-## <a name="add-a-search-box-to-an-intranet-page"></a>Ajouter une zone de recherche à une page intranet
+## <a name="add-a-search-box-to-an-intranet-page"></a>Ajout d’une zone de recherche à une page intranet
 
-Vous devez ajouter deux éléments à la page : un conteneur pour la zone de recherche et le script qui il démarre.
+Vous devez ajouter deux éléments à la page : un conteneur pour la zone de recherche et le script qui l’alimente.
   
 ```html
 <div id="bfb_searchbox"></div>
@@ -39,11 +39,11 @@ Vous devez ajouter deux éléments à la page : un conteneur pour la zone de re
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-Sur un site classique SharePoint, ajouter un composant WebPart Éditeur de Script et abandonner le script qu’il contient.
+Sur un site SharePoint classique, ajoutez un composant WebPart Éditeur de script et faites glisser le script vers ce dernier.
   
-## <a name="enable-the-search-box-for-mobile"></a>Activer la zone de recherche pour mobile
+## <a name="enable-the-search-box-for-mobile"></a>Activation de la zone de recherche pour la version mobile
 
-Pour les sites intranet ou pages sont disponibles pour les utilisateurs mobiles, ajoutez isMobile : true pour l’objet settings :
+Pour les pages ou les sites intranet à disposition des utilisateurs mobiles, ajoutez « isMobile: true » à l’objet des paramètres :
   
 ```html
 <div id="bfb_searchbox"></div>
@@ -56,9 +56,9 @@ Pour les sites intranet ou pages sont disponibles pour les utilisateurs mobiles,
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-## <a name="put-focus-on-the-search-box-by-default"></a>Placer le focus sur la zone de recherche par défaut
+## <a name="put-focus-on-the-search-box-by-default"></a>Mise en surbrillance par défaut de la zone de recherche
 
-Pour aider les utilisateurs à effectuer des recherches rapides, lorsque le chargement de page ou un site placez le curseur dans la zone de recherche en ajoutant le focus : true pour l’objet settings :
+Pour aider les utilisateurs à effectuer plus rapidement leurs recherches, placez le curseur dans la zone de recherche pendant le chargement de la page ou du site, et ajoutez « focus: true » à l’objet des paramètres :
   
 ```html
 <div id="bfb_searchbox"></div>
@@ -71,9 +71,9 @@ Pour aider les utilisateurs à effectuer des recherches rapides, lorsque le char
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-## <a name="use-an-iframe-to-embed-a-search-box"></a>Utilisez un iFrame pour incorporer une zone de recherche
+## <a name="use-an-iframe-to-embed-a-search-box"></a>Utilisation d’un iFrame pour incorporer une zone de recherche
 
-Si l’incorporation d’un script n’est pas une option pour le site, utilisez un iFrame pour ajouter la zone de recherche :
+Si vous ne pouvez pas incorporer un script dans le site, ajoutez la zone de recherche en utilisant un iFrame :
   
 ```html
 <iframe width="564" height="400" src="https://www.bing.com/business/searchbox"></iframe>

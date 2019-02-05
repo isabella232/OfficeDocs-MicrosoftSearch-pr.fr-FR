@@ -1,5 +1,5 @@
 ---
-title: Gérer les connexions réseau
+title: Gestion des connexions réseau
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8ad58820-69e0-4ee0-88a7-d207ffa790b7
-description: Ajouter ces domaines à votre pare-feu et l’URL liste verte afin que les utilisateurs accèdent facilement à Microsoft Search
+description: Ajoutez ces URL et domaines à la liste verte de votre pare-feu afin que vos utilisateurs puissent accéder facilement à la recherche Microsoft.
 ms.openlocfilehash: 87a650bd0db17fbede2483c5e117cb03841f6378
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612544"
 ---
-# <a name="manage-network-connections"></a>Gérer les connexions réseau
+# <a name="manage-network-connections"></a>Gestion des connexions réseau
 
-Pour vérifier que vous et vos utilisateurs peuvent se connecter aux systèmes d’extrémité Microsoft Search, ajoutez que ces URL à votre pare-feu Autoriser les listes.
+Pour vous assurer que vos utilisateurs et vous-même pouvez vous connecter aux points de terminaison de la recherche Microsoft, ajoutez ces URL aux listes vertes de votre pare-feu.
   
-## <a name="for-the-microsoft-search-admin-portal"></a>Pour le portail d’administration de recherche Microsoft :
+## <a name="for-the-microsoft-search-admin-portal"></a>Pour le portail d’administration de la recherche Microsoft, procédez comme suit :
 
 - `www.bingatwork.com`
     
@@ -39,7 +39,7 @@ Pour vérifier que vous et vos utilisateurs peuvent se connecter aux systèmes d
     
 - `\*.bingforbusiness.com`
     
-## <a name="for-microsoft-search-in-bing"></a>Pour la recherche de Microsoft dans Bing :
+## <a name="for-microsoft-search-in-bing"></a>Pour la recherche Microsoft dans Bing, procédez comme suit :
 
 - `business.bing.com`
     

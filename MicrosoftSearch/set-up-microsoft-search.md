@@ -1,5 +1,5 @@
 ---
-title: Configurer Microsoft Search
+title: Configuration de la recherche Microsoft
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,53 +13,53 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
-description: Toutes les informations dont vous avez besoin pour déploiement Microsoft Search dans votre organisation
+description: Présentation de toutes les informations nécessaires au déploiement de la recherche Microsoft dans votre organisation
 ms.openlocfilehash: 7e58d6df8d2ae35aab7d24c05b487f626b5f5c1c
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612400"
 ---
-# <a name="set-up-microsoft-search"></a>Configurer Microsoft Search
+# <a name="set-up-microsoft-search"></a>Configuration de la recherche Microsoft
 
-Dans le cadre d’Office 365, Microsoft Search est facilement déployé par l’activation dans le centre d’administration Microsoft 365. Une fois activée, une configuration pour définir une couleur, le nom et le logo et donner aux utilisateurs l’accès rapide est tout ce qui est nécessaire pour mettre en place. À partir de là, les utilisateurs autorisés peuvent se connecter à Bing avec un compte professionnel ou de l’école et obtenir des résultats de travail lorsqu’ils recherchent.
+Dans le cadre d’Office 365, vous pouvez déployer facilement la recherche Microsoft en l’activant dans le Centre d’administration Microsoft 365. Une fois qu’elle est activée, il vous reste juste à définir rapidement un logo, un nom et une couleur, puis à accorder l’accès aux utilisateurs. Une fois ces étapes réalisées, les utilisateurs autorisés peuvent se connecter à Bing avec leur compte professionnel ou scolaire, et obtenir des résultats de travail lorsqu’ils lancent une recherche.
 
 - [Configuration rapide](quick-set-up.md)
     
-    Quatre étapes pour activer facilement Microsoft Search
+    Réalisez quatre opérations pour activer la recherche Microsoft en toute simplicité.
 
 - [Paramètres de contenu](content-settings.md)
     
-    Contrôler l’apparence des résultats de Microsoft Search
+    Contrôle de l’apparence des résultats de la recherche Microsoft
     
 - [Ajout d’utilisateurs](add-users.md)
     
-    Gérer l’accès au portail pour les administrateurs et les éditeurs et fournissent ou restreindre l’accès à Microsoft Search au sein de votre organisation.
+    Gérez l’accès au portail pour les administrateurs et les éditeurs, et accordez ou limitez l’accès à la recherche Microsoft dans votre organisation.
     
-- [Outils de portail d’administration](admin-portal-tools.md)
+- [Outils du portail d’administration](admin-portal-tools.md)
     
-    Utiliser des extensions de navigateur et d’autres outils pour créer et importer du contenu, réduisez le nombre de fois que les utilisateurs sont invités à se connecter et obtenir des résultats de travail sur Bing
+    Utilisez des extensions de navigateur et d’autres outils pour créer et importer du contenu, réduire le nombre d’invites de connexion pour les utilisateurs, et rechercher des résultats de travail sur Bing.
     
 - [Test de l’authentification unique](test-single-sign-on.md)
     
-    Réduire le nombre de fois que les utilisateurs sont invités à se connecter
+    Réduisez le nombre d’invites de connexion pour les utilisateurs.
     
-- [Paramètre Bing en tant que le moteur de recherche par défaut](set-default-search-engine.md) et la [page d’accueil](set-default-homepage.md)et la [configuration d’un navigateur par défaut](set-default-browser.md)
+- [Définissez Bing en tant que moteur de recherche](set-default-search-engine.md) et [page d’accueil](set-default-homepage.md) par défaut, et [configurez un navigateur par défaut](set-default-browser.md).
     
-    Aider vos utilisateurs plus facilement découvrir les fonctionnalités de Microsoft Search, encourager l’utilisation plus et fournir une meilleure expérience
+    Aidez plus facilement les utilisateurs à découvrir les capacités de la recherche Microsoft, encouragez-les à l’utiliser davantage et proposez-leur une expérience plus fluide.
     
-- [Configuration de votre serveur DNS](advanced-dns-configuration.md) et de [Gestion des connexions réseau](manage-network-connections.md)
+- [Configuration de votre serveur DNS](advanced-dns-configuration.md) et [gestion des connexions réseau](manage-network-connections.md)
     
-    Vérifiez que vos utilisateurs peuvent se connecter à Microsoft Search et Bing permettre identifier et leur connexion
+    Assurez-vous que vos utilisateurs peuvent se connecter à la recherche Microsoft, et que Bing peut les identifier et les connecter.
 
-- [Ajout d’une zone de recherche à votre intranet](add-a-search-box-to-your-intranet-site.md)
+- [Ajout d’une zone de recherche à votre site intranet](add-a-search-box-to-your-intranet-site.md)
 
-    Donner aux utilisateurs un accès rapide aux résultats et les suggestions de recherche pertinents
+    Accordez à vos utilisateurs un accès rapide à des suggestions et résultats de recherche pertinents.
 
 - [Planification de votre contenu](plan-your-content.md)
     
-    Découvrir les sites, les outils et les ressources sont fréquemment recherchées et déterminent les types de résultats meilleures pour les
+    Découvrez les sites, les outils et les ressources le plus souvent recherchés, et déterminez les meilleurs types de résultats correspondants.
 
   
 
