@@ -1,5 +1,5 @@
 ---
-title: Configuration requise pour Microsoft Search
+title: Configuration requise pour Microsoft Search (recherche Microsoft)
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,47 +13,47 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 41b9b33d-fcc4-470c-90ec-068211fbbb16
-description: Les exigences Office 365 et les abonnements qui sont nécessaires pour permettent à Microsoft Search
+description: Les configuration requises pour Office 365 et les abonnements sont nécessaires pour activer Microsoft Search (recherche Microsoft)
 ms.openlocfilehash: e90013eb2b76a4a4f4fff2e8b91f3bc6e48a4f2b
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612463"
 ---
-# <a name="requirements-for-microsoft-search"></a>Configuration requise pour Microsoft Search
+# <a name="requirements-for-microsoft-search"></a>Configuration requise pour Microsoft Search (recherche Microsoft)
 
-Voici les exigences du client Office 365 pour activer Microsoft Search : 
+Voici les configurations requises client Office 365 pour activer Microsoft Search (recherche Microsoft) : 
   
 - Azure Active Directory
     
-- SharePoint Online (ou hybride)
+- SharePoint Online (ou hybride)
     
 - Exchange Online
     
-- Abonnement à Office 365 pour une des références prise en charge ci-dessous. Comptes d’utilisateurs actifs uniquement avec une de ces abonnements peuvent utiliser Microsoft Search :
+- L’abonnement Office 365 pour l’une des références SKU pris en charge ci-dessous. Activez uniquement les comptes avec l’un de ces abonnements qui peuvent utiliser Microsoft Search (recherche Microsoft) :
     
-  - Business Essentials
+  - Business Essentials
     
-  - Business Premium
+  - Business Premium
     
   - Office 365 F1
     
   - Office 365 E1/E2/E3/E5
     
-  - Microsoft 365 Business
+  - Microsoft 365 Business
     
-  - Microsoft 365 entreprise E3/F1/E5
+  - Microsoft 365 Entreprise F1/E3/E5
     
-  - Formation Microsoft 365 pour l’enseignant A3/A5
+  - Microsoft 365 Education pour les enseignants A3/A5
     
-  - Office 365 Éducation pour l’enseignant A1/A1 Plus/A3/A5
+  - Office 365 Education pour les enseignants A1/A1 Plus/A3/A5
     
-  - Office 365 Éducation pour l’enseignant E1/E3
+  - Office 365 Education pour les enseignants E1/E3 Plus/A3/A5
     
-  - Office 365 pour les bénéfices Non NPBE/NPBP/NPE1/NPE3/NPE5
+  - Office 365 pour les bénévoles NPBE/NPBP/NPE1/NPE3/NPE5
     
-Pour permettre à Microsoft Search pour votre organisation, le client Office 365 et l’administrateur Global doivent être dans un des emplacements suivants :
+Pour activer Microsoft Search (recherche Microsoft) pour votre organisation, le client Office 365, l’administrateur général devraient être dans un de ces emplacements :
   
 - États-Unis
     
@@ -85,9 +85,9 @@ Pour permettre à Microsoft Search pour votre organisation, le client Office 365
 
 - Chine
  
-Actuellement, Microsoft Search est optimisée pour l’anglais. Prise en charge complète pour d’autres langues seront prochainement disponibles.
+Pour l’instant, Microsoft Search (recherche Microsoft) est optimisé pour l’anglais. La prise en charge complète pour d’autres langues sera bientôt disponible.
 
-Une fois que le produit est activé, il n’existe aucun emplacement pour les administrateurs de Microsoft Search ou utilisateurs. Pour plus d’informations sur l’activation, voir [configurer rapide pour la recherche de Microsoft](quick-set-up.md) . 
+Une fois le produit activé, il n’y a aucune condition requise d’emplacement parles administrateurs ou les utilisateurs de Microsoft Search(recherche Microsoft) . Voir[Configuration rapide pour Microsoft Search (recherche Microsoft)](quick-set-up.md) pour plus d’informations concernant l’activation de celui-ci. 
 
   
 

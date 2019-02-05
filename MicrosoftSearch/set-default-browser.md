@@ -1,5 +1,5 @@
 ---
-title: Navigateur par défaut
+title: Configurer la configuration par défaut
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,27 +13,27 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
-description: Découvrez comment configurer un navigateur par défaut pour l’entreprise avec Microsoft Search.
+description: Découvrez comment configurer un navigateur par défaut pour votre entreprise avec Microsoft Search (recherche Microsoft).
 ms.openlocfilehash: 160dbbef9981127b74c51f54f86428667ecd4471
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612472"
 ---
-# <a name="set-default-browser"></a>Navigateur par défaut
+# <a name="set-default-browser"></a>Configurer la configuration par défaut
 
-Configurer le navigateur par défaut, le moteur de recherche par défaut et la page d’accueil par défaut vous aidera vos utilisateurs découvrir les fonctionnalités de Microsoft Search, encourager l’utilisation de plus et fournir une meilleure expérience.
+La configuration du navigateur par défaut, le moteur de recherche par défaut et la page d’accueil par défaut aideront vos utilisateurs à découvrir les fonctionnalités de Microsoft Search (recherche Microsoft), à plus encourager l’utilisation et offrir une expérience plus fluide.
   
-Pour définir le navigateur par défaut pour votre organisation, procédez comme suit.
+Pour définir le navigateur par défaut pour votre organisation, suivez les étapes ci-dessous.
   
-## <a name="windows-8-and-above"></a>Windows 8 et versions ultérieures
+## <a name="windows-8-and-above"></a>Windows 8 ou version ultérieure
 
-Pour configurer Internet Explorer ou Microsoft Edge comme navigateur par défaut, procédez comme suit :
+Pour définir Internet Explorer ou Microsoft Edge comme navigateur par défaut, procédez comme suit :
   
-### <a name="create-default-associations-file"></a>Créer le fichier d’associations par défaut
+### <a name="create-default-associations-file"></a>Créez le fichier d’associations par défaut
 
-1. Ouvrez une console d’administration de PowerShell.
+1. Ouvrez une console d’administration PowerShell.
     
 2.  `New-Item -Path "\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN" -Type Directory -Name "Settings"`
     
@@ -41,15 +41,15 @@ Pour configurer Internet Explorer ou Microsoft Edge comme navigateur par défaut
     
 4.  `Start-Process Dism.exe -PassThru "/Online /Export-DefaultAppAssociations:$SettingsPath\AppAssoc.xml"`
     
-Ces étapes essaient et créer le fichier d’associations par défaut dans le dossier SYSVOL du contrôleur de domaine.
+Ces étapes essaient et créent le fichier d’associations par défaut dans le dossier SYSVOL du contrôleur de domaine.
   
-### <a name="add-or-edit-the-default-associations-file"></a>Ajouter ou modifier le fichier d’associations par défaut
+### <a name="add-or-edit-the-default-associations-file"></a>Ajoutez ou modifiez le fichier d’associations par défaut
 
 1. `Notepad "$SettingsPath\AppAssoc.xml"`
     
-2. Modifier les entrées suivantes (.htm, .html, http, https) et supprimez les autres entrées s’ils ne sont pas nécessaires.
+2. Modifier les entrées suivantes (.htm, .html, http, https) et supprimez les autres entrées si elles ne sont pas utilisées.
     
-  - **Microsoft Edge**
+  - **Microsoft Edge**
     
      `<Association Identifier=".htm" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
   
@@ -67,38 +67,38 @@ Ces étapes essaient et créer le fichier d’associations par défaut dans le d
   
      `<Association Identifier="https" ProgId="IE.HTTPS" ApplicationName="Internet Explorer" />`
     
-3. Ouvrez la Console de gestion des stratégies de groupe (gpmc.msc) et passer à la modification d’une stratégie existante ou créer un nouveau.
+3. Ouvrez la Console de gestion des stratégies de groupe (gpmc.msc) et basculez vers modifier toute stratégie existante ou créer un nouveau.
     
-1. Accédez à la **configuration d’ordinateur administration\Composants Components\File Explorer**
+1. Accédez à**Configuration ordinateur\Administration administrative\Composants Windows\Dossier Explorer**
     
-2. Double-cliquez sur **la valeur d’un fichier de configuration d’associations par défaut**, définissez-la sur **activé**, puis entrez le chemin d’accès AppAssoc.xml (par exemple %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\AppAssoc.xml)
+2. Double-cliquez sur **définir un fichier de configuration d’associations par défaut**, définissez-le comme programme **Activé**, puis entrez le chemin d’accès à AppAssoc.xml (par exemple %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\ AppAssoc.xml)
     
-4. Appliquer la stratégie de groupe qui en découlent à lier au domaine approprié.
+4. Appliquez la stratégie de groupe résultante GPO en les reliant au domaine approprié.
     
-Les utilisateurs pourront modifier le navigateur une fois que cette stratégie est définie.
+Les utilisateurs pourront modifier le navigateur après avoir défini cette stratégie.
   
 ## <a name="windows-7"></a>Windows 7
 
-1. Configurer l’ordinateur local qui sera utilisé pour définir la stratégie de groupe.
+1. Configurez l’ordinateur local destiné à être utilisé pour définir la stratégie de groupe (GPO).
     
-1. Ouvrez **Programmes de contrôle Panel\Programs\Default Programs\Set par défaut** et définir Internet Explorer par défaut. 
+1. Ouvrez le**programmes par défaut de contrôle\Programmes\Programmes par défaut\Définir les programmes par défaut** et définir Internet Explorer par défaut. 
     
-2. Ouvrez la Console de gestion des stratégies de groupe (gpmc.msc) et passer à la modification d’une stratégie existante ou créer un nouveau.
+2. Ouvrez la Console de gestion des stratégies de groupe (gpmc.msc) et basculez vers modifier toute stratégie existante ou créer un nouveau.
     
-1. Accédez à ** \<utilisateur de l’ordinateur/\> Configuration\Policies\Preferences\Windows paramètres**.
+1. Accédez à ** \<Ordinateur/Utilisateur\> Configuration\Stratégies\Préférences\Paramètres Windows**.
     
-2. Avec le bouton droit sur **Registry\New** et sélectionnez **l’Assistant de Registre**.
+2. Avec le bouton droit cliquez sur **Registre\Nouveauté** et sélectionnez **Assistant Registre**.
     
-3. Dans la fenêtre de navigateur dans le Registre, sélectionnez **l’Ordinateur Local** , cliquez sur **suivant**.
+3. Dans la fenêtre du navigateur de Registre, sélectionnez **Ordinateur Local** sur **Suivant**.
     
-4. Accédez à **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** et sélectionnez la valeur ProgId. Assurez-vous que la valeur ressemble à celui ci-dessous : 
+4. Accédez à **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** et sélectionnez la valeur ProgId. Vérifiez que la valeur semblable à celui ci-dessous : 
     
-    ![Sélectionner une valeur ProgID de modification de la chaîne](media/f6173dcc-b898-4967-8c40-4b0fe411a92b.png)
+    ![Sélectionner une valeur dans la modification de la chaîne ProgID](media/f6173dcc-b898-4967-8c40-4b0fe411a92b.png)
   
-5. Accédez à **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** et sélectionnez la valeur ProgId. Assurez-vous que la valeur ressemble à celui ci-dessous : 
+5. Accédez à **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** et sélectionnez la valeur ProgId. Vérifiez que la valeur semblable à celui ci-dessous : 
     
-    ![Sélectionnez ProgId pour le protocole HTTPS dans la chaîne de modification](media/3519e13b-4fe7-4d15-946c-82fd50fc49bb.png)
+    ![Sélectionner une valeur dans la modification de la chaîne ProgID pour HTTPS](media/3519e13b-4fe7-4d15-946c-82fd50fc49bb.png)
   
-3. Appliquer la stratégie de groupe qui en découlent à lier au domaine approprié.
+3. Appliquez la stratégie de groupe résultante GPO en les reliant au domaine approprié.
     
-Les utilisateurs pourront modifier le navigateur une fois que cette stratégie est définie.
+Les utilisateurs pourront modifier le navigateur après avoir défini cette stratégie.

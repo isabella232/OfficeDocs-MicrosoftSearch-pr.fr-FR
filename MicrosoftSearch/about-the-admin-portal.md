@@ -1,5 +1,5 @@
 ---
-title: À propos du Centre d’administration
+title: À propos du portail d’Administration
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,62 +13,62 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fee131cf-c82f-4f4b-b288-6fa98a99b793
-description: Obtenir une vue d’ensemble de l’administrateur de fonctionnalités de portail et accéder aux autorisations disponibles avec Microsoft Search
+description: Obtenez les fonctionnalités d’une vue d’ensemble de l’administrateur du portail et accédez aux autorisations disponibles avec Microsoft Search (recherche Microsoft)
 ms.openlocfilehash: 3b1a0173a12d921a789ccf1c01e788f9abae2916
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612448"
 ---
-# <a name="about-the-admin-portal"></a>À propos du Centre d’administration
+# <a name="about-the-admin-portal"></a>À propos du portail d’Administration
 
-Microsoft Search vous permet d’utiliser Bing pour rechercher votre organisation pour les sites SharePoint et les fichiers, sites Web internes, personnes, groupes d’Office 365 et plus. Utilisez le portail d’administration pour gérer tous les aspects de Microsoft Search.
+Microsoft Search(recherche Microsoft) vous permet d’utiliser Bing pour rechercher votre organisation à des sites SharePoint et des fichiers, sites Web internes, personnes, des groupes Office 365 et autres aspects. Utilisez le portail d’administration pour gérer tous les aspects de Microsoft Search (recherche Microsoft).
   
-Le portail d’administration de recherche Microsoft est organisé autour de ces zones :
+Le portail d’administration de Microsoft Search (recherche Microsoft) est organisé autour de ces zones:
   
 - [Tableau de bord](get-insights.md)
     
-    Obtenez un aperçu rapide des résultats Q&A signet, voir principales requêtes de recherche, et les performances de vos résultats
+    Obtenez un aperçu rapide de signet et les résultats des Questions-Réponses, voir les requêtes de recherche supérieure et l’exécution de vos résultats
     
 - [Signets](create-and-manage-bookmarks.md)
     
-    Créer des résultats promus pour aider les utilisateurs à trouver des outils importants et des ressources au sein de l’organisation en plaçant en haut des résultats de Bing
+    Créez les résultats promus pour aider les utilisateurs à rechercher des outils importants et des ressources au sein de l’organisation en plaçant dans la partie supérieure de résultats de Bing
     
 - [Questions et réponses](create-and-manage-qas.md)
     
-    Répondez aux questions fréquemment posées au sein de votre organisation.
+    Répondez aux questions fréquemment posées dans votre organisation
     
 - [Emplacements](add-a-location.md)
     
-    Afficher les résultats du mappage et les informations d’adresse de bâtiments, bureaux, campus et autres emplacements importants
+    Affichez les résultats de la carte et les informations d’adresse pour les bâtiments, bureaux, campus et autres endroits importants
     
 - [Utilisateurs et autorisations](add-users.md)
     
-    Gérer l’accès au portail pour les administrateurs et les éditeurs et fournissent ou restreindre l’accès à Microsoft Search au sein de votre organisation.
+    Gérez l’accès au portail pour les administrateurs et éditeurs et établissez ou restreignez l’accès à Microsoft Search(recherche Microsoft) au sein de votre organisation
     
 - [Paramètres de contenu](content-settings.md)
     
-    Contrôler l’apparence des résultats de Microsoft Search sur Bing
+    Contrôlez l’apparence des résultats de Microsoft Search (recherche Microsoft) sur Bing
     
 - [Outils](admin-portal-tools.md)
     
-    Utiliser des extensions de navigateur et d’autres outils pour créer et importer du contenu, réduisez le nombre de fois que les utilisateurs sont invités à se connecter et obtenir des résultats de travail sur Bing
+    Utilisez les extensions de navigateur et d’autres outils pour créer et importer ensuite du contenu, réduisez le nombre de fois où les utilisateurs sont invités à se connecter et recherchez des résultats de travail sur Bing
     
 - [Services connectés](connected-services.md)
     
-    Sélectionnez les sources de données et les informations à inclure dans les résultats de Microsoft Search
+    Sélectionnez les sources de données et les informations à inclure dans les résultats de Microsoft Search (recherche Microsoft)
     
-## <a name="who-can-access-the-admin-portal"></a>Personnes autorisées à accéder le portail d’administration
+## <a name="who-can-access-the-admin-portal"></a>Qui peut accéder au portail d’administration
 
-Pour accéder au portail d’administration de recherche Microsoft, vous devez disposer d’un des rôles suivants :
+Pour accéder au portail d’administration de Microsoft Search (recherche Microsoft), vous devez disposer d’un des rôles suivants:
   
 - Administrateur global
     
-- Microsoft Search admin, attribué par un administrateur global
+- Administrateur de Microsoft Search(recherche Microsoft), attribuée par un administrateur général
     
-- Éditeur de Microsoft Search, attribué par un Microsoft Search ou un administrateur global
+- Éditeur de Microsoft Search(recherche Microsoft), attribué par un administrateur général ou Microsoft Search (recherche Microsoft)
     
-## <a name="go-to-the-microsoft-search-admin-portal"></a>Accédez au portail d’administration de recherche Microsoft
+## <a name="go-to-the-microsoft-search-admin-portal"></a>Accédez au portail d’administration de Microsoft Search(recherche Microsoft).
 
-Vous pouvez obtenir au portail d’administration à tout moment en accédant à la [page de recherche de Microsoft Explorer](https://www.bing.com/business/explore) et en cliquant sur la connexion d’administration. 
+Vous pouvez accéder au portail d’Administration à tout moment en accédant à la [page Explorer Microsoft Search(recherche Microsoft)](https://www.bing.com/business/explore) et en cliquant sur la connexion d’Administration. 
