@@ -1,5 +1,5 @@
 ---
-title: Créer Q&As
+title: Créer des Questions-réponses
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,101 +13,101 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d432b9d9-3792-47a0-9a13-30a1a83caabc
-description: Moyens de créer des réponses aux questions fréquemment posées pour votre Microsoft Search fonctionnent résultats
+description: Méthodes de création des réponses aux questions fréquemment posées pour vos résultats de travail relatifs à Microsoft Search (recherche Microsoft)
 ms.openlocfilehash: 9713608450688a0841aa64d1f3198183b10e05ee
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612496"
 ---
-# <a name="create-qas"></a>Créer Q&As
+# <a name="create-qas"></a>Créer des Questions-réponses
 
-Q&As fournir une réponse ou les informations aux utilisateurs, y compris un lien facultatif. Dans l’idéal, un Q&A inclut tous les détails que cherchent vos utilisateurs afin qu’ils n’avez pas besoin accéder à la source. Vous pouvez mettre en forme votre contenu Q&A et inclure des images, des listes et des tableaux.
+Les questions-réponses fournissent une réponse ou des informations aux utilisateurs ainsi qu’un lien facultatif. Dans l’idéal, une Question-Réponse inclut tous les détails que vos utilisateurs recherchent afin que personne n’ait besoin d’accéder à la source. Vous pouvez mettre en forme le contenu de vos Questions- Réponses et inclure des images, des listes et des tableaux.
   
-## <a name="create-a-qa"></a>Créer un Q&A
+## <a name="create-a-qa"></a>Créer un Question-Réponse
 
-Pour plus d’informations sur la création efficaces titres, descriptions, mots clés et plus d’informations, consultez [planifier votre contenu.](plan-your-content.md)
+Pour plus d’informations sur la création efficaces, les titres, des descriptions, les mots clés et autres aspects, voir [Planification de votre contenu](plan-your-content.md).
   
-1. Accédez au portail d’administration de recherche Microsoft
+1. Accédez au portail d’administration de Microsoft Search (recherche Microsoft).
     
-2. Dans le volet de navigation, cliquez sur **Q&As**
+2. Dans le volet de navigation, cliquez sur Courrier**Q&As**.
     
-3. En haut de la page, cliquez sur **Ajouter un Q&A**
+3. En haut de la page, cliquez sur **Ajouter Q&A**
     
-    La page Modifier la Q&A s’affiche, avec un aperçu de l’apparence de la Q&A sur Bing. Lorsque vous ajoutez les informations requises, l’aperçu met à jour automatiquement.
+    La page Modifier le signet s’affiche avec une version d’évaluation afin de montrer à quoi ressemblera le signet sur Bing. Lorsque vous ajoutez les informations requises, la version d’affichage se mettra à jour automatiquement.
     
-4. Entrez un **titre**
+4. Entrez un**Titre**
     
-    Le titre est le titre qui apparaît dans le résultat. Il peut contenir jusqu'à 120 caractères et nous recommandons d’utiliser un format de question.
+    Le titre est celui qui s’affiche dans le résultat. Il peut avoir jusqu'à 120 caractères et nous vous recommandons d’utiliser un format de question.
     
-5. Si nécessaire, entrez l' **URL** de la page, un site ou un emplacement que établit un lien vers le signet 
+5. Entrez l’**URL** de la page, d’un site ou d’un emplacement d’un signet qui sera lié au 
     
-    Cette permet aux utilisateurs ayant besoin d’informations supplémentaires facilement accéder à la source pour en savoir plus.
+    Cette permet aux utilisateurs qui ont besoin des informations supplémentaires facilement accéder à la source pour en savoir plus.
     
-6. Entrez une **description de la réponse**
+6. Entrez une **description de réponse**
     
-    Il doit répondre à la question est posée dans le titre. Vous pouvez copier le contenu HTML existant et coller ici. Toutes les balises non prises en charge seront ignorées.
+    Cela doit répondre à la question invitée dans le titre. Vous pouvez copier le contenu HTML existant et collez-la à cet endroit. Les balises non prises en charge seront ignorées.
     
-7. Utiliser des balises HTML et les options intégrées au format texte, ajoutez des images, des listes, des tableaux et plus
+7. Utilisez les balises HTML et des options prédéfinies pour mettre en forme du texte, ajouter des images, listes, tableaux, etc.
     
-    Utiliser l’aperçu en haut de la page pour voir comment vos balises et la mise en forme s’ils apparaissent sur Bing. Pour plus d’informations sur :
+    Utilisez l’aperçu dans la partie supérieure de la page pour voir comment votre balise et la mise en forme ne s’affichent sur Bing. Pour plus d’informations sur :
     
-  - Balises HTML, voir la liste de balises HTML prises en charge ci-dessous
+  - Les balises HTML, voir la liste des indicateurs pris en charge HTML ci-dessous
     
-  - Options intégrées, cliquez sur **guide de promotions** (point d’interrogation) 
+  - Options intégrées, cliquez sur ce**guide de démarque** (icône de point d’interrogation) 
     
-8. Entrez des **mots clés** que vous souhaitez déclencher cette Q&A 
+8. Entrez les**mots clés** que vous souhaitez associer au déclenchement de cette Question-réponse 
     
-    Comme un signet, lorsqu’un utilisateur recherche les mots clés que vous avez inclus, cette Q&A seront inclus dans les résultats de leur travail. Essayez d’ajouter des variantes autant que possible, y compris le titre de la Q&A.
+    Par exemple, un signet, lorsqu’un utilisateur recherche tous les mots clés que vous avez inclus, cette Question-réponse sera incluse dans leurs résultats de travail. Essayez d’ajouter des variantes autant que possible, y compris le titre de la Question-réponse.
     
-9. Sélectionnez **automatiquement correspondent à des mots clés similaires** pour développer votre ensemble de mots clés 
+9. Sélectionnez**automatiquement les mots-clés similaires en correspondance** pour développer votre ensemble de mots clés 
     
-    Cela permet une correspondance plus large de termes de recherche et contribue à garantie que cette Q&A est inclus dans les résultats de travail pertinent.
+    Cela permet une correspondance plus large de termes de recherche et vous permet de vérifier que ce signet est inclus dans les résultats de travail pertinents.
     
-10. Entrez des **mots clés réservés**
+10. Entrez les**Mots clés réservés**
     
-    Si un mot clé déclenche plusieurs Q&As, Microsoft Search alors placer les plus populaires en haut et affiche les autres sous forme de liens. Utilisez un ou plusieurs mots-clés réservés pour garantir qu'une Q&A apparaît toujours comme le meilleur résultat. Mots clés réservés ne peuvent pas être partagés entre Q&As. En outre, le partage des mots clés réservés entre Q&As et les signets n’est pas recommandé. Si un signet et un Q&A partagent un mot clé ou un mot clé réservé, le signet système toujours prioritaires et le Q&A n’apparaît pas.
+    Si un mot clé déclenche plusieurs questions et réponses comme, Microsoft Search (recherche Microsoft) placera le plus populaire en haut et affichera les autres liens connexes. Utilisez un ou plusieurs mot(s) clé(s) réservé(s) pour garantir qu’une Question- réponse s’affiche en permanence en tant que résultat supérieur. Les mots clés réservés ne peuvent pas être partagés au sein de Question-réponse. Par ailleurs, le partage de signets et des mots clés réservés dans Question-réponse n’est pas recommandé. Si un signet et une question-réponse partagent un mot clé ou un mot clé réservé, le signet sera toujours prioritaire et la question-réponse ne s’affichera pas.
     
-## <a name="add-qa-settings"></a>Ajouter des paramètres Q&A
+## <a name="add-qa-settings"></a>Ajouter des paramètres Question-réponse
 
-Paramètres Q&A permettent de contrôler quand un Q&A s’affiche et qui il voit.
+Les paramètres de question-réponse cèdent le contrôle supplémentaire lorsque un signet s’affiche et les personnes autorisées l’affichent.
   
 - Dates
     
-    Définir une date de début ainsi que d’une date de fin facultative pour contrôler quand un Q&A sera publié ou expire.
+    Définir une date de début ainsi que d’une date de fin facultative pour contrôler quand un signet sera publié ou expirera.
     
 - Pays/région
     
-    Si vous sélectionnez le pays ou régions, uniquement dans ces emplacements s’affiche que Q&A.
+    Si vous sélectionnez les pays ou les régions, seuls les utilisateurs dans ces emplacements verront cette question-réponse.
     
 - Groupes
     
-    Utilisez les groupes pour qu’un résultat Q&A disponibles uniquement aux membres d’un groupe sélectionné. Par exemple, si vous créez Q&As qui s’appliquent uniquement aux employés du service des ressources humaines, vous pouvez mapper ce paramètre au groupe de sécurité des ressources humaines approprié.
+    Utilisez les paramètres de groupes pour rendre un résultat de signet disponible uniquement aux membres d’un groupe sélectionné. Par exemple, si vous créez les signets qui concernent uniquement les employés au sein de service ressources humaines, vous pouvez cartographier ce paramètre au groupe de sécurité RH approprié.
     
-- APPAREIL &amp; système d’exploitation
+- Système d’exploitation de l’appareil OS&amp;
     
-    Si vous sélectionnez types de périphériques ou systèmes d’exploitation, uniquement une recherche sur ces périphériques ou à l’aide de ces systèmes s’affiche que Q&A.
+    Si vous sélectionnez les types d’appareil ou des systèmes d’exploitation, seuls les utilisateurs effectuant une recherche sur ces appareils ou à l’aide de ces systèmes verront cette Question-réponse.
     
-- Variantes ciblés
+- Variantes ciblées
     
-    Utilisez ce paramètre pour faire varier le contenu de la Q&A basé sur l’appareil et l’emplacement d’un utilisateur.
+    Utilisez ce paramètre pour varier le contenu du signet en fonction de l’appareil et l’emplacement d’un utilisateur.
     
-## <a name="use-a-browser-extension-to-create-content"></a>Utiliser une extension de navigateur pour créer du contenu
+## <a name="use-a-browser-extension-to-create-content"></a>Utiliser une extension du navigateur pour créer du contenu
 
-Dans la section Outils du portail d’administration, téléchargez et installez l’extension de navigateur créateur de contenu pour le serveur Edge ou Chrome. Pour utiliser l’extension, se connecter et accéder à un site ou une page que vous souhaitez ajouter en tant que révision Q&A. et modifier les suggestions de contenu, y compris les mots clés, ajouter du contenu supplémentaire, puis enregistrez le Q&A.
+À la section Outils du portail d’Administration, téléchargez et installez l’extension de navigateur créateur de contenu pour Microsoft Edge ou Chrome. Pour utiliser l’extension, connectez-vous et accédez à un site ou la page que vous souhaitez ajouter en tant qu’un signet. Passez en revue et modifiez le contenu suggéré, y compris les mots clés, ajoutez le contenu supplémentaire et enregistrez la Question-réponse.
   
-Si plusieurs Q&As sont détectés, passez en revue chaque et déterminez si vous souhaitez publier, enregistrer un brouillon ou enregistrer tout brouillon.
+Si plusieurs questions et réponses sont trouvées, passez en revue chacune d’elles et déterminez si vous souhaitez publier, enregistrer un brouillon ou tout enregistrer comme brouillon.
   
-## <a name="supported-html-tags"></a>Balises HTML prises en charge
+## <a name="supported-html-tags"></a>Balises HTML pris en charge
 
-Vous pouvez utiliser le contenu HTML existant ou ajouter des balises HTML pour la description de votre réponse. Balises non prises en charge sont ignorées.
+Vous pouvez utiliser les contenus HTML ou ajouter des balises HTML à la description de votre réponse. Les balises non prises en charge sont ignorées.
   
-- BLOCKQUOTE
+- blockquote
     
 - div
     
-- cadratin
+- em
     
 - H1, h2, h3 et h4
     
@@ -115,11 +115,11 @@ Vous pouvez utiliser le contenu HTML existant ou ajouter des balises HTML pour l
     
 - p
     
-- versions antérieures
+- Pre
     
-- étendue
+- span
     
-- fort
+- Fort
     
 - table, thead, tbody, tr, th et td
     
@@ -133,7 +133,7 @@ Vous pouvez utiliser le contenu HTML existant ou ajouter des balises HTML pour l
     
 - hr
     
-- IMG
+- img
 
   
 
