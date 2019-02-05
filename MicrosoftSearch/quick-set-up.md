@@ -1,5 +1,5 @@
 ---
-title: Rapide défini pour Microsoft Search
+title: Configuration rapide pour Microsoft Search
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,75 +13,75 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0
-description: Découvrez les quatre étapes nécessaires pour activer et utiliser Microsoft Search.
+description: En savoir plus sur les quatre étapes simples nécessaires à l’activation et l’utilisation de Microsoft Search.
 ms.openlocfilehash: fb5677a0acc896e593eae42c35111e0f744ef45d
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612349"
 ---
-# <a name="quick-set-up-for-microsoft-search"></a><span data-ttu-id="048c9-103">Rapide défini pour Microsoft Search</span><span class="sxs-lookup"><span data-stu-id="048c9-103">Quick set up for Microsoft Search</span></span>
+# <a name="quick-set-up-for-microsoft-search"></a><span data-ttu-id="0e4c2-103">Configuration rapide pour Microsoft Search</span><span class="sxs-lookup"><span data-stu-id="0e4c2-103">Quick set up for Microsoft Search</span></span>
 
-<span data-ttu-id="048c9-104">Gagner du temps en mettant la meilleure du site web et fonctionnent à votre organisation.</span><span class="sxs-lookup"><span data-stu-id="048c9-104">Save time by bringing the best of the web and work to your organization.</span></span>
+<span data-ttu-id="0e4c2-104">Gagner du temps en appliquant le meilleur du web et les utiliser à votre organisation.</span><span class="sxs-lookup"><span data-stu-id="0e4c2-104">Save time by bringing the best of the web and work to your organization.</span></span>
   
-## <a name="step-1-turn-on-microsoft-search"></a><span data-ttu-id="048c9-105">Étape 1 : Activer la recherche Microsoft</span><span class="sxs-lookup"><span data-stu-id="048c9-105">Step 1: Turn on Microsoft Search</span></span>
+## <a name="step-1-turn-on-microsoft-search"></a><span data-ttu-id="0e4c2-105">Étape 1 : Activer Microsoft Search</span><span class="sxs-lookup"><span data-stu-id="0e4c2-105">Step 1: Turn on Microsoft Search</span></span>
 
-1. <span data-ttu-id="048c9-106">Dans le menu de navigation dans le centre d’administration Microsoft 365, accédez à **paramètres** \> **Services &amp; compléments**</span><span class="sxs-lookup"><span data-stu-id="048c9-106">On the navigation menu in the Microsoft 365 admin center, go to **Settings** \> **Services &amp; add-ins**</span></span>
+1. <span data-ttu-id="0e4c2-106">Dans le menu de navigation dans le centre d’administration Microsoft 365, accédez à **Paramètres** \> **Services &amp;Compléments**</span><span class="sxs-lookup"><span data-stu-id="0e4c2-106">On the navigation menu in the Microsoft 365 admin center, go to **Settings** \> **Services &amp; add-ins**</span></span>
     
-2. <span data-ttu-id="048c9-107">Cliquez sur le service de **Recherche Microsoft**</span><span class="sxs-lookup"><span data-stu-id="048c9-107">Click the **Microsoft Search** service</span></span> 
+2. <span data-ttu-id="0e4c2-107">Cliquez sur le service\*\* Microsoft Search\*\*</span><span class="sxs-lookup"><span data-stu-id="0e4c2-107">Click the **Microsoft Search** service</span></span> 
     
-3. <span data-ttu-id="048c9-108">Dans le volet droit, activez **Activer Microsoft Search**</span><span class="sxs-lookup"><span data-stu-id="048c9-108">In the right pane, turn on **Activate Microsoft Search**</span></span>
+3. <span data-ttu-id="0e4c2-108">Dans le volet droit, activez**Activer Microsoft Search**</span><span class="sxs-lookup"><span data-stu-id="0e4c2-108">In the right pane, turn on **Activate Microsoft Search**</span></span>
     
-4. <span data-ttu-id="048c9-109">Cliquez sur **Enregistrer**.</span><span class="sxs-lookup"><span data-stu-id="048c9-109">Click **Save**</span></span>
+4. <span data-ttu-id="0e4c2-109">Cliquez sur **Enregistrer**</span><span class="sxs-lookup"><span data-stu-id="0e4c2-109">Click **Save**</span></span>
     
-5. <span data-ttu-id="048c9-110">Cliquez sur **mise en route**</span><span class="sxs-lookup"><span data-stu-id="048c9-110">Click **Get started**</span></span>
+5. <span data-ttu-id="0e4c2-110">Cliquez sur **Prise en main**</span><span class="sxs-lookup"><span data-stu-id="0e4c2-110">Click Get started</span></span>
   
-<span data-ttu-id="048c9-111">Cela vous dirige vers le portail d’administration de recherche Microsoft pour effectuer les étapes de configuration.</span><span class="sxs-lookup"><span data-stu-id="048c9-111">This will take you to the Microsoft Search Admin portal to complete the remaining set-up steps.</span></span>
+<span data-ttu-id="0e4c2-111">Vous accédez au portail d’administration de Microsoft Search pour effectuer les étapes restantes de la configuration.</span><span class="sxs-lookup"><span data-stu-id="0e4c2-111">This will take you to the Microsoft Search Admin portal to complete the remaining set-up steps.</span></span>
     
-## <a name="step-2-enable-connected-services"></a><span data-ttu-id="048c9-112">Étape 2 : Activer les services connectés</span><span class="sxs-lookup"><span data-stu-id="048c9-112">Step 2: Enable Connected services</span></span>
+## <a name="step-2-enable-connected-services"></a><span data-ttu-id="0e4c2-112">Étapes 2: Activer les Services Connectés</span><span class="sxs-lookup"><span data-stu-id="0e4c2-112">Step 2: Enable Connected services</span></span>
 
-<span data-ttu-id="048c9-113">Obtenez une expérience de recherche d’entreprise complet qui curates plus d’informations sur les différents services Microsoft.</span><span class="sxs-lookup"><span data-stu-id="048c9-113">Get a full enterprise search experience that curates information across different Microsoft services.</span></span>
+<span data-ttu-id="0e4c2-113">Profitez d’une expérience de recherche d’entreprise complète qui conserve les informations au sein des différents services Microsoft.</span><span class="sxs-lookup"><span data-stu-id="0e4c2-113">Get a full enterprise search experience that curates information across different Microsoft services.</span></span>
   
-1. <span data-ttu-id="048c9-114">Accédez au [portail d’administration de recherche Microsoft](https://www.bingforbusiness.com/admin)</span><span class="sxs-lookup"><span data-stu-id="048c9-114">Go to the [Microsoft Search Admin portal](https://www.bingforbusiness.com/admin)</span></span>
+1. <span data-ttu-id="0e4c2-114">Accédez au[portail d’administration de Microsoft Search](https://www.bingforbusiness.com/admin)</span><span class="sxs-lookup"><span data-stu-id="0e4c2-114">Go to the [Microsoft Search Admin portal](https://www.bingforbusiness.com/admin)</span></span>
     
-2. <span data-ttu-id="048c9-115">Dans le volet de navigation, cliquez sur **services connectés**</span><span class="sxs-lookup"><span data-stu-id="048c9-115">In the navigation pane, click **Connected services**</span></span>
+2. <span data-ttu-id="0e4c2-115">Dans le volet de navigation, cliquez sur**Services Connectés**</span><span class="sxs-lookup"><span data-stu-id="0e4c2-115">In the navigation pane, click **Connected services**</span></span>
     
-    <span data-ttu-id="048c9-116">Pour plus d’informations sur le contenu associé à chaque service connecté, voir [services connectés](connected-services.md).</span><span class="sxs-lookup"><span data-stu-id="048c9-116">For information about the content associated with each connected service, see [Connected services](connected-services.md).</span></span>
+    <span data-ttu-id="0e4c2-116">Pour plus d’informations sur le contenu associé à chaque service connecté, voir [Services Connectés](connected-services.md).</span><span class="sxs-lookup"><span data-stu-id="0e4c2-116">For information about the content associated with each connected service, see [Connected services](connected-services.md).</span></span>
     
-3. <span data-ttu-id="048c9-117">Pour chaque service que vous souhaitez vous connecter, cliquez **sur**</span><span class="sxs-lookup"><span data-stu-id="048c9-117">For each service you want to connect, click **On**</span></span>
+3. <span data-ttu-id="0e4c2-117">Pour chaque service auquel vous souhaitez vous connecter, cliquez**Sur**</span><span class="sxs-lookup"><span data-stu-id="0e4c2-117">For each service you want to connect, click **On**</span></span>
     
-    <span data-ttu-id="048c9-118">Recherche de personnes peut prendre jusqu'à 48 heures à activer.</span><span class="sxs-lookup"><span data-stu-id="048c9-118">People search may take up to 48 hours to activate.</span></span>
+    <span data-ttu-id="0e4c2-118">Il faut compter jusqu’à 48 heures pour activer la recherche de personnes.</span><span class="sxs-lookup"><span data-stu-id="0e4c2-118">People search may take up to 48 hours to activate.</span></span>
     
-## <a name="step-3-customize-content-settings"></a><span data-ttu-id="048c9-119">Étape 3 : Personnaliser les paramètres de contenu</span><span class="sxs-lookup"><span data-stu-id="048c9-119">Step 3: Customize Content settings</span></span>
+## <a name="step-3-customize-content-settings"></a><span data-ttu-id="0e4c2-119">Étape 3 : Personnaliser les paramètres de contenu</span><span class="sxs-lookup"><span data-stu-id="0e4c2-119">Step 3: Customize Content settings</span></span>
 
-<span data-ttu-id="048c9-120">Paramètres de contenu de garantir un aspect familier pour les résultats de votre travail.</span><span class="sxs-lookup"><span data-stu-id="048c9-120">Content settings ensure a familiar look and feel for your work results.</span></span> 
+<span data-ttu-id="0e4c2-120">Les paramètres de contenu garantissent une apparence familière pour les résultats de votre travail.</span><span class="sxs-lookup"><span data-stu-id="0e4c2-120">Content settings ensure a familiar look and feel for your work results.</span></span> 
   
-1. <span data-ttu-id="048c9-121">Dans le volet de navigation, cliquez sur **paramètres du contenu**</span><span class="sxs-lookup"><span data-stu-id="048c9-121">In the navigation pane, click **Content settings**</span></span>
+1. <span data-ttu-id="0e4c2-121">Dans le volet de navigation, **cliquez sur Paramètres de contenu**</span><span class="sxs-lookup"><span data-stu-id="0e4c2-121">In the navigation pane, click **Content settings**</span></span>
     
-2. <span data-ttu-id="048c9-122">Pour plus d’informations sur chaque paramètre, consultez [les paramètres de contenu](content-settings.md)</span><span class="sxs-lookup"><span data-stu-id="048c9-122">For details about each setting, see [Content settings](content-settings.md)</span></span>
+2. <span data-ttu-id="0e4c2-122">Pour plus d’informations sur chaque paramètre, voir [paramètres du contenu](content-settings.md)</span><span class="sxs-lookup"><span data-stu-id="0e4c2-122">For details about each setting, see [Content settings](content-settings.md)</span></span>
     
-## <a name="step-4-import-best-bets-as-suggested-bookmarks"></a><span data-ttu-id="048c9-123">Étape 4 : Importation des meilleurs résultats sous forme de signets suggérées</span><span class="sxs-lookup"><span data-stu-id="048c9-123">Step 4: Import Best Bets as suggested bookmarks</span></span>
+## <a name="step-4-import-best-bets-as-suggested-bookmarks"></a><span data-ttu-id="0e4c2-123">Étape 4 : Importer de meilleurs résultats sous forme de signets suggérées</span><span class="sxs-lookup"><span data-stu-id="0e4c2-123">Step 4: Import Best Bets as suggested bookmarks</span></span>
 
-<span data-ttu-id="048c9-p101">Si votre organisation possède les meilleurs résultats définis dans SharePoint, vous pouvez facilement les importer dans Microsoft Search. L’outil d’importation prend actuellement en charge les collections de sites sharepoint.com et sharepoint.com/search.</span><span class="sxs-lookup"><span data-stu-id="048c9-p101">If your organization has Best Bets set up in SharePoint, you can easily import them into Microsoft Search. The import tool currently supports sharepoint.com and sharepoint.com/search site collections.</span></span> 
+<span data-ttu-id="0e4c2-p101">Si votre organisation a de meilleurs résultats de configuration dans SharePoint, vous pouvez facilement les importer dans Microsoft Search. L’outil d’importation prend actuellement en charge les collections sharepoint.com et sharepoint.com/search.</span><span class="sxs-lookup"><span data-stu-id="0e4c2-p101">If your organization has Best Bets set up in SharePoint, you can easily import them into Microsoft Search. The import tool currently supports sharepoint.com and sharepoint.com/search site collections.</span></span> 
   
-1. <span data-ttu-id="048c9-126">Dans le volet de navigation, cliquez sur **Outils**</span><span class="sxs-lookup"><span data-stu-id="048c9-126">In the navigation pane, click **Tools**</span></span>
+1. <span data-ttu-id="0e4c2-126">Dans le volet de navigation, cliquez sur**Outils**</span><span class="sxs-lookup"><span data-stu-id="0e4c2-126">In the navigation pane, click **ADSI Edit**.</span></span>
     
-2. <span data-ttu-id="048c9-127">Pour l’importation SharePoint promu résultat règles de requête comme outil de signets, cliquez sur **Importer**</span><span class="sxs-lookup"><span data-stu-id="048c9-127">For the Import SharePoint Promoted Result Query Rules as bookmarks tool, click **Import**</span></span>
+2. <span data-ttu-id="0e4c2-127">Concernant les règles de requête relatives aux résultats promues d’importation SharePoint en tant qu’outil de signets, cliquez sur **Importation**</span><span class="sxs-lookup"><span data-stu-id="0e4c2-127">For the Import SharePoint Promoted Result Query Rules as bookmarks tool, click **Import**</span></span>
     
-    <span data-ttu-id="048c9-p102">Lors de l’importation, statut planifié s’affiche. La durée requise varie en fonction du nombre de meilleurs résultats que vous importez.</span><span class="sxs-lookup"><span data-stu-id="048c9-p102">While importing, a Scheduled status appears. The required time varies based on the number of Best Bets you're importing.</span></span>
+    <span data-ttu-id="0e4c2-p102">Lors de l’importation, un état planifié s’affiche. Le temps nécessaire varie en fonction du nombre de meilleurs résultats que vous importez.</span><span class="sxs-lookup"><span data-stu-id="0e4c2-p102">While importing, a Scheduled status appears. The required time varies based on the number of Best Bets you're importing.</span></span>
     
-3. <span data-ttu-id="048c9-130">Pour plus d’informations à ce sujet, voir [Outils de portail d’administration](admin-portal-tools.md)</span><span class="sxs-lookup"><span data-stu-id="048c9-130">For details about this, see [Admin portal tools](admin-portal-tools.md)</span></span>
+3. <span data-ttu-id="0e4c2-130">Pour plus d’informations à ce sujet, voir [Outils portail d’administration](admin-portal-tools.md)</span><span class="sxs-lookup"><span data-stu-id="0e4c2-130">For details about this, see [Admin portal tools](admin-portal-tools.md)</span></span>
     
-<span data-ttu-id="048c9-131">Après avoir terminé cette installation rapide et [Ajouter des utilisateurs](add-users.md), ils peuvent atteindre Bing.com et rechercher les résultats de travail.</span><span class="sxs-lookup"><span data-stu-id="048c9-131">After you complete this quick setup and [add users](add-users.md), they can go to Bing.com and search for work results.</span></span> 
+<span data-ttu-id="0e4c2-131">Une fois cette configuration rapide et [ajouter des utilisateurs](add-users.md), ils peuvent accéder à Bing.com et effectuez une recherche pour obtenir des résultats travail.</span><span class="sxs-lookup"><span data-stu-id="0e4c2-131">After you complete this quick setup and [add users](add-users.md), they can go to Bing.com and search for work results.</span></span> 
   
-## <a name="how-do-i-get-to-the-microsoft-search-admin-portal"></a><span data-ttu-id="048c9-132">Comment obtenir au portail d’administration de recherche de Microsoft ?</span><span class="sxs-lookup"><span data-stu-id="048c9-132">How do I get to the Microsoft Search Admin portal?</span></span>
+## <a name="how-do-i-get-to-the-microsoft-search-admin-portal"></a><span data-ttu-id="0e4c2-132">Comment puis-je accéder au portail d’administration de Microsoft Search?</span><span class="sxs-lookup"><span data-stu-id="0e4c2-132">How do I get to the Microsoft Search Admin portal?</span></span>
 
-<span data-ttu-id="048c9-133">Pour accéder au portail d’administration à tout moment :</span><span class="sxs-lookup"><span data-stu-id="048c9-133">To get to the Admin portal at any time:</span></span>
+<span data-ttu-id="0e4c2-133">Pour accéder au portail d’administration à tout moment:</span><span class="sxs-lookup"><span data-stu-id="0e4c2-133">To get to the Admin portal at any time:</span></span>
   
-- <span data-ttu-id="048c9-134">Dans la page de [Recherche de Microsoft Explorer](https://www.bing.com/business/explore) , cliquez sur **connexion d’administration**</span><span class="sxs-lookup"><span data-stu-id="048c9-134">Go to the [Explore Microsoft Search](https://www.bing.com/business/explore) page and click **Admin login**</span></span>
+- <span data-ttu-id="0e4c2-134">Accédez à la page[Explorer Microsoft Search](https://www.bing.com/business/explore), puis cliquez sur**connexion d’administration**</span><span class="sxs-lookup"><span data-stu-id="0e4c2-134">Go to the [Explore Microsoft Search](https://www.bing.com/business/explore) page and click **Admin login**</span></span>
     
-- <span data-ttu-id="048c9-135">Dans le centre d’administration Microsoft 365, dans le volet gauche, accédez au **Centre d’administration** \> **Microsoft Search**</span><span class="sxs-lookup"><span data-stu-id="048c9-135">In the Microsoft 365 admin center, in the left pane, go to **Admin centers** \> **Microsoft Search**</span></span>
+- <span data-ttu-id="0e4c2-135">Dans le centre d’administration Microsoft 365, dans le volet gauche, accédez à **centres d’Administration** \> **Microsoft Search**</span><span class="sxs-lookup"><span data-stu-id="0e4c2-135">In the Microsoft 365 admin center, in the left pane, go to **Admin centers** \> **Microsoft Search**</span></span>
 
   
 
