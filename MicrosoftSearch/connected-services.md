@@ -13,41 +13,41 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 161ea667-9b27-4695-b7a8-e8e063141795
-description: Découvrez comment personnaliser les résultats de travail qui s’affichent lorsque vous utilisez Microsoft Search.
+description: Découvrez comment personnaliser les résultats de travail qui s’affichent lorsque vous utilisez Microsoft Search (recherche Microsoft).
 ms.openlocfilehash: 0990b8362b01a2173f87e541bc1ea86aadcbb506
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612429"
 ---
 # <a name="connected-services"></a>Services connectés
 
-Microsoft Search vous permet d’utiliser le moteur de recherche Bing puissant pour rechercher les fichiers de votre organisation Office 365 SharePoint, sites Web internes marquée par un signet, personnes dans la liste d’adresses globale et les groupes d’Office 365.
+Microsoft Search(recherche Microsoft) vous permet d’utiliser le puissant moteur de recherche Bing pour rechercher des fichiers de votre organisation Office 365 SharePoint, sites Web internes avec signet, personnes dans la liste d’adresses globale, les groupes Office 365.
   
-## <a name="search-for-sites-and-documents"></a>Recherche des sites et des documents
+## <a name="search-for-sites-and-documents"></a>Rechercher des sites et documents
 
-Recherche de sites, pages, fichiers et des documents à partir de SharePoint et OneDrive for Business. Parcourir les personnes ont partagé au sein de votre organisation et dans Office 365 groupes de fichiers. Par exemple, rechercher des fichiers tels que « nouveau pont de formation employé » ou pour un utilisateur et puis, dans le résultat de personnes, cliquez simplement sur sous l’onglet fichiers, voir fichiers qu'elle a partagé. Vous pouvez également rechercher des sites SharePoint entre équipes et votre organisation.
+Recherchez des sites, pages, fichiers et documents à partir de SharePoint et OneDrive Entreprise. Parcourez les fichiers partagés d’autres utilisateurs au sein de votre organisation et au sein des groupes Office 365. Par exemple, recherchez des fichiers tels que « nouvelle présentation formation employé » ou un utilisateur, puis, dans les résultats de personnes, il vous suffit sur sous l’onglet fichiers d’afficher les fichiers que vous avez partagés. Vous pouvez également rechercher des sites SharePoint au sein des équipes et votre organisation.
   
-Autoriser l’accès des utilisateurs à la recherche de document et le site SharePoint en allumant **Autoriser document et le site de recherche sur Bing.com** dans le portail d’administration de recherche de Microsoft. 
+Autoriser l’accès utilisateur au document et site SharePoint en activant les options**Autoriser l recherche de document et de site sur Bing.com** dans le portail d’administration de Microsoft Search (recherche Microsoft). 
   
-## <a name="search-for-people"></a>Recherche de personnes
+## <a name="search-for-people"></a>Rechercher des contacts
 
-Recherche de personnes extrait toutes les informations relatives à une personne de votre organisation afin que vous n’êtes pas obligé de recherche à plusieurs endroits pour en savoir plus. Par exemple, si vous recherchez « Megan Fry », vous pouvez voir elle hiérarchique, qui elle fonctionne avec, ses fichiers partagés publiquement, structure d’organisation et les groupes à qu'elle appartient.
+La recherche de personnes extrait les informations sur une personne de votre organisation afin de ne pas avoir à effectuer des recherches dans plusieurs emplacements pour obtenir de l’article entier. Par exemple, si vous recherchez des « Megan Fry », vous pouvez voir à qui elle se rapporte, qui travaille avec elle, ses fichiers partagés publiquement, sa structure d’ organisation et les groupes auquel elle appartient.
   
-Autoriser l’accès des utilisateurs à la recherche de personnes en activant sur **Autoriser la recherche de personnes sur Bing.com** dans le portail d’administration de recherche de Microsoft. 
+Autoriser l’accès utilisateur au document et site SharePoint en activant les options**Autoriser la recherche de personnes sur Bing.com** dans le portail d’administration de Microsoft Search (recherche Microsoft). 
   
-## <a name="search-for-groups"></a>Recherche de groupes
+## <a name="search-for-groups"></a>Rechercher de groupes
 
-Recherche de groupes d’Office 365 obtenir des informations sur le groupe, ses propriétaires, les membres, fichiers et conversations. Si vous cliquez sur un titre de conversation, il ouvrirez dans Outlook sur le web, et vous pouvez répondre à ou réviser.
+Rechercher des groupes Office 365 pour obtenir des informations sur le groupe, ses propriétaires, membres, fichiers et conversations. Si vous cliquez sur un titre de conversation, celui-ci s’ouvre dans Outlook sur le web, et vous pouvez y répondre ou relire.
   
-Autoriser l’accès des utilisateurs à la recherche de groupe en activant **permettre la recherche sur Bing.com groupe** dans le portail d’administration de recherche de Microsoft. 
+Autoriser l’accès utilisateur au document et site SharePoint en activant les options**Autoriser la recherche de groupe sur Bing.com** dans le portail d’administration de Microsoft Search (recherche Microsoft). 
   
 ## <a name="search-for-conversations"></a>Rechercher des conversations
 
-Recherchez vos conversations Teams Microsoft ou Microsoft Yammer privé ou des conversations entre collègues que vous êtes autorisé à afficher. Par exemple, vous pourrez rechercher « introduction » et voir les conversations pertinentes 30 supérieurs à son sujet.
+Recherchez vos conversations privés Microsoft Teams ou Microsoft Yammer ou conversations entre vos collègues que vous êtes autorisé à consulter. Vous pouvez par exemple, rechercher« feuille de route » et voir les 30 conversations les plus pertinentes à ce sujet.
   
-Autoriser l’accès des utilisateurs à la recherche de la conversation en activant sur **Autoriser la recherche de conversation sur Bing.com** pour Microsoft Teams, Yammer ou les deux dans le portail d’administration de recherche de Microsoft. 
+Autoriser l’accès utilisateur à recherche conversation en activant les options **Autoriser la recherche de conversation sur Bing.com** pour Microsoft Teams, Yammer ou les deux dans le portail d’administration de Microsoft Search(recherche Microsoft). 
 
   
 

@@ -1,5 +1,5 @@
 ---
-title: Fonctionnalités de recherche de Microsoft
+title: Fonctionnalités de Microsoft Search (recherche Microsoft)
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,80 +13,80 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
-description: Principales fonctionnalités de Microsoft Search pour les utilisateurs finaux et les administrateurs sont des signets, Q&As et la gestion et les détails de données
+description: Les fonctionnalités principales de Microsoft Search (recherche Microsoft) pour les administrateurs et les utilisateurs finaux incluent des signets, Questions et Réponses, des informations et des analyses de données et de gestion
 ms.openlocfilehash: ca2c0de9fbed075a822989ab8b3bf881d5626cee
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612426"
 ---
-# <a name="features-of-microsoft-search"></a>Fonctionnalités de recherche de Microsoft
+# <a name="features-of-microsoft-search"></a>Fonctionnalités de Microsoft Search (recherche Microsoft)
 
-## <a name="key-admin-features-include"></a>Fonctionnalités d’administration clés sont les suivantes :
+## <a name="key-admin-features-include"></a>Les principales fonctionnalités d’administration incluent :
 
-- [Signets d’entreprise](create-and-manage-bookmarks.md)
+- [Signets Entreprise](create-and-manage-bookmarks.md)
     
-    Trouvez des sites, des outils et autres informations au sein de votre entreprise
+    Rechercher des sites, des outils et d’autres informations au sein de votre entreprise
     
-- [Q&As d’entreprise](create-and-manage-qas.md)
+- [Questions et Réponses](create-and-manage-qas.md)
     
-    Répondez aux questions fréquemment posées au sein de votre organisation.
+    Répondez aux questions fréquemment posées dans votre organisation
     
-- Importer et exporter les [signets](bulk-create-bookmarks.md) et [Q&As](bulk-create-qas.md)
+- Importez et exportez des[signets](bulk-create-bookmarks.md) et [Questions et Réponses](bulk-create-qas.md)
     
-    Simplifier la création et la mise à jour en bloc importation et exportation de modification
+    Uniformisez la création et la mise à jour avec l’importation, l’exportation et modification en bloc
 
 - [Emplacements](locations.md)
     
-    Recherche des adresses et la localisation de bâtiments de votre organisation, les bureaux et autres espaces de travail sur une carte
+    Rechercher des adresses et localisez les bâtiments, les bureaux et autres espaces de travail de votre organisation sur une carte
     
 - [Gestion](set-up-microsoft-search.md)
     
-    Configurer, créer du contenu et de définir des mots clés de recherche et d’expressions
+    Configurez, créez du contenu et définissez des mots clés de recherche et des phrases
     
 - [Utilisateurs et autorisations](add-users.md)
     
-    Votre administrateur Global ou Microsoft Search autorise les administrateurs supplémentaires qui gèrent la configuration Microsoft Search, éditeurs qui créent le contenu et les utilisateurs finaux qui ont accès à Microsoft Search
+    Votre administrateur général ou administrateur de Microsoft Search (recherche Microsoft) autorise d’autres administrateurs qui gèrent la configuration, les éditeurs qui créent du contenu et les utilisateurs finaux qui ont accès à Microsoft Search (recherche Microsoft)
     
-- [Analytique](get-insights.md) 
+- [Analytics](get-insights.md) 
     
-    Comprendre comment votre organisation utilise Microsoft Search 
+    Comprendre la manière dont votre organisation utilise Microsoft Search (recherche Microsoft) 
     
-## <a name="key-end-user-features-include"></a>Fonctionnalités clés pour l’utilisateur final :
+## <a name="key-end-user-features-include"></a>Les fonctionnalités de l’utilisateur final clés sont les suivantes :
 
 - [Contacts](use/find-people-and-groups.md)
     
-    Rechercher des personnes et comprendre leur rôle dans la société, lesquels ils travaillent sur et comment contacter
+    Rechercher des personnes et comprendre leur rôle au sein de l’entreprise, sur quoi ils travaillent et les méthodes pour les contacter
     
 - [Organigrammes](use/find-people-and-groups.md)
     
-    Comprendre la place d’une personne dans la société et parcourir facilement leurs homologues, la gestion et subordonnés directs
+    Comprendre l’emplacement d’une personne au sein de l’entreprise et de consulter facilement leurs collègues, leur gestion et leurs collaborateurs directs
     
-- [Fichiers](use/find-files.md)
+- [Dossier](use/find-files.md)
     
-    Rechercher les fichiers contextuelles et pertinents enregistrées dans SharePoint et OneDrive entreprise
+    Accès aux fichiers pertinents et contextuelles enregistrés sur SharePoint et OneDrive Entreprise
     
-- [Groupes Office 365](use/find-people-and-groups.md)
+- [Groupes Office 365](use/find-people-and-groups.md)
     
-    Rechercher un groupe par son nom ou les membres, Explorer les groupes qu'auxquels appartient une personne et parcourir le contenu partagé
+    Recherchez un groupe par son nom ou ses membres, Explorez les groupes auxquels une personne appartient et parcourez leur contenu partagé
     
-- [Outils et ressources](use/find-resources-tools-and-more.md)
+- [Ressources et outils](use/find-resources-tools-and-more.md)
     
-    Obtenez des liens vers les ressources internes et externes, outils et plus facilement trouver les informations dont vous avez besoin
+    Obtenir des liens vers des ressources internes et externes, outils et autres aspects pour retrouver facilement les informations que nécessaires
     
 - [Sites SharePoint](use/find-sharepoint-sites.md)
     
-    Recherchez un site par un nom ou afficher les résultats d’une personne ou un groupe
+    Rechercher un site par son nom ou afficher les résultats pour une personne ou un groupe
     
-- [Les équipes et les conversations de Yammer](use/find-conversations.md)
+- [Équipes et conversations Yammer](use/find-conversations.md)
     
-    Recherchez des résultats pertinents et contextuelles public et les conversations de groupe
+    Trouver des résultats pertinents et contextuels publics et des conversations de groupe
 
 - [Emplacements](use/find-locations.md)
     
-    Recherchez l’adresse et mapper les résultats de bâtiments, bureaux, campus et bien plus encore
+    Trouver une adresse et cartographier des résultats des bâtiments, bureaux, campus, etc.
     
-- Expérience de première exécution
+- Première expérience d’utilisation
     
-    La première fois qu’un utilisateur se connecte à Microsoft Search et accède à Bing, ils obtiendrez des informations sur l’utilisation et les types de résultats de travail qu’ils se trouvent lorsqu’ils cherchent
+    La première fois qu’un utilisateur se connecte à Microsoft Search (recherche Microsoft), mais parvienne plutôt à Bing, ils recevront des informations sur l’utilisation il et les types de résultats de travail qu’ils trouveront lors de leur recherche

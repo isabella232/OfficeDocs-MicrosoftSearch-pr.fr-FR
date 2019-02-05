@@ -1,5 +1,5 @@
 ---
-title: Pourquoi la recherche Microsoft
+title: Pourquoi Microsoft Search(recherche Microsoft)
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,52 +13,52 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38569f03-db18-49ab-96ef-213a1f410935
-description: Découvrez pourquoi Microsoft Search recherche d’entreprise intelligent pour l’espace de travail moderne.
+description: Découvrez pourquoi Microsoft Search(recherche Microsoft) est une recherche d’entreprise intelligente pour les lieux de travail modernes.
 ms.openlocfilehash: f00622643aac867a83614fe613f8c8ef4bdb116b
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612379"
 ---
-# <a name="why-microsoft-search"></a>Pourquoi la recherche Microsoft
+# <a name="why-microsoft-search"></a>Pourquoi Microsoft Search(recherche Microsoft)
 
-Transformation des façon dont les gens de votre recherche d’entreprise pour plus d’informations avec Microsoft Search. 
+Transformer les manières dont les personnes de votre organisation recherchent les informations avec Microsoft Search(recherche Microsoft). 
   
-Cette recherche d’entreprise l’expérience à l’augmentation de la productivité et de gagner du temps en fournissant des résultats de recherche plus pertinents pour l’espace de travail. Microsoft Search récupère des informations en toute sécurité à partir de votre société, une école ou organisation, telles que des fichiers, données de l’entreprise, informations sur les personnes et les sites — ainsi que des résultats web publics et les affiche dans une expérience unique.
+Cette expérience de recherche entreprise augmente la productivité et fait gagner du temps en fournissant des résultats de recherche plus pertinents pour l’espace de travail. Microsoft Search(recherche Microsoft) récupère les informations en toute sécurité à partir de votre entreprise, scolaire ou organisation, tels que des fichiers, données d’entreprise, les informations de personnes et des sites, ainsi que les résultats publics sur le web et les affiche dans une expérience unique.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2EWQN?autoplay=false]
   
-## <a name="save-time-with-intelligent-search"></a>Gagner du temps avec recherche intelligente
+## <a name="save-time-with-intelligent-search"></a>Fait gagner du temps avec la recherche intelligente (Intelligent Search)
 
-Microsoft Search exploite AI pour fournir contextuelle, sans limite et les résultats pertinents, afin de vous les meilleurs résultats de recherche à partir de votre organisation et le site web dans une expérience unique.
+Microsoft Search(recherche Microsoft) exploite AI afin de fournir des résultats contextuels, sans limite et pertinents pour vous apporter les meilleurs résultats de recherche de votre organisation et du web dans une expérience unique.
   
-## <a name="get-enterprise-grade-protection"></a>Obtenir la protection de l’échelle de l’entreprise
+## <a name="get-enterprise-grade-protection"></a>Obtenez la protection de qualité professionnelle
 
-Microsoft Search requiert une authentification Azure Active Directory pour accéder aux résultats du nuage approuvés. Les utilisateurs authentifiés voient uniquement le contenu qu’ils ont accès à. Requêtes de recherche sont identifiés déduplication et journaux sont séparés du trafic de recherche Bing public. Ce niveau de protection n’est pas disponible partout ailleurs dans le secteur.
+Microsoft Search(recherche Microsoft) requiert une authentification Azure Active Directory pour accéder aux résultats à partir du Cloud approuvés. Les utilisateurs authentifiés affichent uniquement le contenu auquel ils ont accès. Les requêtes de recherche sont identifiés et les journaux sont séparés du trafic recherche public Bing. Ce niveau de protection n’est pas disponible partout dans le secteur.
   
-## <a name="easy-to-administer-and-available-everywhere"></a>Facile à gérer et disponible partout
+## <a name="easy-to-administer-and-available-everywhere"></a>Simple à administrer et disponible partout
 
-Déploiement de Microsoft Search est simple : simplement l’activer à partir du centre d’administration de Microsoft 365 et personnaliser les paramètres, y compris votre logo, le nom, couleur et autres. Les utilisateurs autorisés peuvent y accéder sur n’importe quel périphérique en vous connectant à Bing.
+Le déploiement de Microsoft Search(recherche Microsoft) est simple-simplement activez à partir du centre d’administration Microsoft 365 et personnalisez les paramètres, y compris le logo de votre nom, couleur et bien plus encore. Les utilisateurs autorisés peuvent y accéder sur n’importe quel appareil simplement en se connectant à Bing.
   
-## <a name="one-place-to-search-across-office-365-apps"></a>Un emplacement de recherche dans les applications Office 365
+## <a name="one-place-to-search-across-office-365-apps"></a>Un emplacement unique pour effectuer des recherches dans les applications Office 365
 
-Microsoft Search rassemblant les résultats de différentes sources de données dans Office 365, y compris SharePoint, OneDrive entreprise, Yammer, groupes et les équipes plus. Recherche des résultats pertinents de travail est aussi simple que d’une recherche.
+Microsoft Search (recherche Microsoft) regroupe les résultats à partir de diverses sources de données dans Office 365, notamment SharePoint, OneDrive Entreprise, les équipes, Yammer, groupes et bien plus encore. La recherche de résultats pertinents travail est aussi simple comme critère de recherche.
   
-## <a name="share-authoritative-information-and-answer-questions"></a>Partager des questions d’informations et des réponses faisant autoritées
+## <a name="share-authoritative-information-and-answer-questions"></a>Partager les informations autorisées et les questions- réponses
 
-Fournir les informations et les réponses à que vos utilisateurs ont besoin pour effectuer des tâches, telles que les stratégies, avantages, ressources, outils et plus dans les résultats de travail. Vous pouvez également cibler des groupes spécifiques, telles que les nouvelles recrues ou des travailleurs à distance.
+Fournir les informations et les réponses que vos utilisateurs ont besoin pour effectuer les tâches, telles que les stratégies, avantages, ressources, outils et plus dans les résultats de travail. Vous pouvez également cibler des groupes spécifiques, par exemple, de nouveaux employés ou des employés à distance.
   
-## <a name="find-shared-files"></a>Rechercher les fichiers partagés
+## <a name="find-shared-files"></a>Trouver les fichiers partagés
 
-Microsoft Search utilise la requête avancée présentation pour rechercher les fichiers et documents partagés simple. Rechercher des documents qu'auquel vous collaborez et vous avez accès à des fichiers. 
+Microsoft Search(recherche Microsoft) utilise une requête avancée présentation pour faciliter la recherche des fichiers et documents partagés simple. Trouvez des documents sur lesquels vous collaborez et fichiers auxquels vous avez accès. 
   
-## <a name="complete-tasks-faster"></a>Réalisation de tâches plus rapide
+## <a name="complete-tasks-faster"></a>Effectuer des tâches plus rapides
 
-Intégrer PowerApps votre contenu pour permettre l’exécution de la tâche dans les résultats de travail.
+Intégrez PowerApps dans votre contenu pour activer l’achèvement de la tâche dans les résultats de travail.
   
 ## <a name="reduce-support-costs"></a>Réduire les coûts de prise en charge
 
-Réduire les coûts et que les utilisateurs autonomes en incorporant des réponses aux questions courantes et réduit le besoin de contacter votre support technique, service informatique, ou l’équipe de support technique.
+Réduisez les coûts et rendez toute autonomie aux utilisateurs en incorporant des réponses personnalisées aux questions fréquemment posées et qui réduit leur nécessité de contacter le support technique, le service informatique, ou l’équipe de support technique.
   
 
