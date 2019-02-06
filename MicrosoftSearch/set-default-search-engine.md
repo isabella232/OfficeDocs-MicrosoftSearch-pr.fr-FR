@@ -1,5 +1,5 @@
 ---
-title: Modèle de recherche par défaut
+title: Définir le mode de recherche par défaut
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,29 +13,29 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
-description: Découvrez comment configurer Bing comme moteur de recherche par défaut de votre société à l’aide de Microsoft Search.
+description: Découvrez comment définir Bing comme moteur de recherche par défaut de votre entreprise à l’aide de Microsoft Search (recherche Microsoft).
 ms.openlocfilehash: a0798da94f4433bb754c71b9e0d00e09ba5a543b
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612528"
 ---
-# <a name="set-default-search-engine"></a>Modèle de recherche par défaut
+# <a name="set-default-search-engine"></a>Définir le mode de recherche par défaut
 
-Configurer le navigateur par défaut, le moteur de recherche par défaut et la page d’accueil par défaut vous aidera vos utilisateurs découvrir les fonctionnalités de Microsoft Search, encourager l’utilisation de plus et fournir une meilleure expérience.
+La configuration du navigateur par défaut, le moteur de recherche par défaut et la page d’accueil par défaut aideront vos utilisateurs à découvrir les fonctionnalités de Microsoft Search (recherche Microsoft), à plus encourager l’utilisation et offrir une expérience plus fluide.
   
-Pour définir le moteur de recherche par défaut pour votre organisation, procédez comme suit.
+Pour définir le navigateur par défaut pour votre organisation, suivez les étapes ci-dessous.
   
 ## <a name="internet-explorer"></a>Internet Explorer
 
-### <a name="internet-explorer-11"></a>Internet Explorer 11
+### <a name="internet-explorer-11"></a>Internet Explorer 11
 
-Les utilisateurs seront en mesure de modifier le fournisseur de recherche une fois que cette stratégie est définie.
+Les utilisateurs ne pourront pas modifier le navigateur après avoir défini cette stratégie.
   
-#### <a name="1-configure-the-local-machine-that-will-be-used-to-set-the-gpo"></a>1. Configuration de l’ordinateur local qui sera utilisé pour définir la stratégie de groupe
+#### <a name="1-configure-the-local-machine-that-will-be-used-to-set-the-gpo"></a>1.Configurez l’ordinateur local destiné à être utilisé pour définir la stratégie de groupe (GPO)
 
-Collez le texte suivant dans un Registre (\*.reg) fichier.
+Collez le texte suivant dans un fichier Bloc-notes(\*.reg).
   
 Windows Registry Editor Version 5.00
   
@@ -50,106 +50,106 @@ Windows Registry Editor Version 5.00
 "ShowSearchSuggestions"=dword:00000001
 "URL"="https://www.bing.com/business/search?q={searchTerms}&amp;form=BFBSPR"</pre>
   
-Double-cliquez sur le fichier créé et suivez les étapes pour importer le fichier. Une importation réussie devrait se traduire par la boîte de dialogue suivante :
+Double-cliquez sur le fichier créé et suivez les étapes pour importer le fichier. Une importation réussie doit avoir pour résultat la boîte de dialogue suivante :
   
-![Message d’importation réussie de l’Éditeur du Registre](media/ea3686b9-f6d7-481e-9a0d-2c96891bc501.png)
+![Message d’importation réussi Éditeur du Registre](media/ea3686b9-f6d7-481e-9a0d-2c96891bc501.png)
   
-#### <a name="2-open-the-group-policy-management-console-gpmcmsc-and-switch-to-editing-an-existing-policy-or-creating-a-new-one"></a>2. Ouvrez la Console de gestion de stratégie de groupe (gpmc.msc) et passer à la modification d’une stratégie existante ou créer un nouveau
+#### <a name="2-open-the-group-policy-management-console-gpmcmsc-and-switch-to-editing-an-existing-policy-or-creating-a-new-one"></a>2. Ouvrez la Console de gestion des stratégies de groupe (gpmc.msc) et basculez vers modifier toute stratégie existante ou créer un nouveau.
 
-1. Accédez à **paramètres Configuration\Policies\Preferences\Windows de l’utilisateur**.
+1. Accédez à **Configuration Utilisateur\Stratégies\Préférences\Paramètres Windows**.
     
-2. Avec le bouton droit sur **Registry\New** et sélectionnez **l’Assistant de Registre**. Dans la fenêtre de navigateur dans le Registre, sélectionnez **l’Ordinateur Local** , cliquez sur **suivant**.
+2. Avec le bouton droit sur **Registre\Nouveau** et sélectionnez **Assistant Registre**. Dans la fenêtre du navigateur de Registre, sélectionnez **ordinateur Local** sur **Suivant**.
     
 3. Accédez à **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\SearchScopes**.
     
 4. À partir de cette clé, veillez à sélectionner DefaultScope.
     
-    ![Navigateur dans le Registre avec DefaultScope sélectionné](media/ec5a450d-0cba-4e9c-acba-1a09e8e90bad.png)
+    ![Navigateur de Registre avec DefaultScope sélectionné](media/ec5a450d-0cba-4e9c-acba-1a09e8e90bad.png)
   
-5. Vérifiez toutes les sous-clés qui contient le GUID pour Microsoft Search dans Bing et chaque valeur sous la clé, à l’exception de n’importe quel chemin d’accès à des profils utilisateur. Faites défiler vers le bas pour sélectionner d’autres éléments.
+5. Consultez toutes les sous-clés contenant le GUIDE de Microsoft Search (recherche Microsoft) dans Bing et chaque valeur sous la clé à l’exception d’un chemin d’accès aux profils utilisateur. Faites défiler vers le bas pour sélectionner d’autres éléments.
     
-    ![Navigateur dans le Registre avec les autres valeurs sélectionnées](media/7eef7690-8bc5-46cf-9cd8-bd134fc77a02.png)
+    ![Navigateur de Registre avec des valeurs supplémentaires sélectionnées](media/7eef7690-8bc5-46cf-9cd8-bd134fc77a02.png)
   
-6. Cliquez sur Terminer pour terminer cette configuration.
+6. Cliquez sur Terminer afin de compléter cette configuration.
     
-#### <a name="3-set-up-user-preferences-to-help-eliminate-a-warning-the-user-may-get-when-defaultscope-search-is-enforced"></a>3. configurer les préférences utilisateur afin d’éliminer un avertissement indiquant que l’utilisateur peut obtenir lors de l’application de recherche DefaultScope
+#### <a name="3-set-up-user-preferences-to-help-eliminate-a-warning-the-user-may-get-when-defaultscope-search-is-enforced"></a>3. configurer les Préférences d’utilisateur pour éliminer un avertissement que l’utilisateur peut apparaître quand la recherche DefaultScope est appliquée
 
-Cet avertissement est par défaut et avertit l’utilisateur d’un programme essaie de modifier leurs paramètres.
+Ce message d’avertissement est normal et les utilisateurs d’un programme tente de modifier leurs paramètres d’alertes.
   
-1. Dans la même stratégie de groupe, cliquez avec le bouton droit sur **Registry\New** et sélectionnez **Assistant dans le Registre**.
+1. Dans le même GPO, cliquez sur le bouton droit**Registre\Nouveauté** et sélectionnez**Assistant Registre**.
     
-2. Accédez à **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\User préférences**.
+2. Accédez à **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Préférences Utilisateur**.
     
-3. Sélectionnez la clé de **Préférence de l’utilisateur** .
+3. Sélectionnez la clé**Préférence Utilisateur**.
     
-4. Cliquez sur **Terminer**.
+4. Cliquez sur**Terminer**.
     
-5. Cliquez sur l’objet nouvellement créé. Dans le volet de droite, double-cliquez sur l’objet de préférences de l’utilisateur, modifier l' **Action** **Supprimer**et enregistrer.
+5. Cliquez sur l’objet nouvellement créé. Dans le volet de droite, double-cliquez sur l’objet de Préférences d’utilisateur, modifiez le **Action** à **Supprimer et Enregistrer**.
     
-Appliquer la stratégie de groupe qui en découlent à lier au domaine approprié.
+Appliquez la stratégie de groupe résultante GPO en les reliant au domaine approprié.
   
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
-### <a name="windows-10-version-1703-or-later"></a>Windows 10, 1703 ou Version ultérieure
+### <a name="windows-10-version-1703-or-later"></a>Windows 10, version 1703 ou supérieure.
 
-Les utilisateurs seront en mesure de modifier le fournisseur de recherche une fois que cette stratégie est définie.
+Les utilisateurs ne pourront pas modifier le navigateur après avoir défini cette stratégie.
   
-Pour les fichiers ADMX le plus récent pour les différentes versions de Windows, voir [comment créer et gérer le magasin Central de modèles d’administration de stratégie de groupe dans Windows](https://support.microsoft.com/en-us/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
+Concernant les fichiers récents d’ADMX relatifs aux différentes versions de Windows, reportez-vous à l’article [Comment créer et gérer le magasin central des modèles d’administration de stratégie de groupe dans Windows](https://support.microsoft.com/fr-FR/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
   
-Si le paramètre décrit dans cette section est introuvable à l’intérieur de la console GPMC, téléchargez le ADMX approprié et les copier dans le magasin central. Pour plus d’informations, voir [Stratégie de groupe de modification via des fichiers ADMX](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Magasin central sur le contrôleur est un dossier avec la convention d’affectation de noms suivante :
+Si les paramètres décrits dans cette section sont introuvables dans le GPMC, téléchargez l’ ADMX approprié et copiez-les dans le magasin central. Pour plus d’informations, voir[Modifier les groupes de stratégie GPOs basés sur le domaine à l’aide des fichiers ADMX](https://docs.microsoft.com/fr-FR/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Le magasin central relatif au contrôleur est un dossier avec la convention de dénomination suivante:
   
  **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
   
-Chaque domaine qui gère votre contrôleur doit obtenir un dossier distinct. La commande suivante peut être utilisée pour copier le fichier ADMX à partir de l’invite de commandes :
+Chaque domaine que votre contrôleur gère doit avoir un dossier séparé. La commande suivante peut être utilisée pour copier le fichier ADMX à partir de la commande rapide:
   
  `Copy <path_to_ADMX.ADMX> %systemroot%\sysvol\<domain>\policies\PolicyDefinitions`
   
-1. Ouvrez la Console de gestion de stratégie de groupe (gpmc.msc) et passer à la modification d’une stratégie existante ou créer un nouveau.
+1. Ouvrez la Console de Gestion des Stratégies de Groupe (gpmc.msc) et basculez vers modifier toute stratégie existante ou créer un nouveau.
     
-2. Accédez à ** &lt;Configuration ordinateur/utilisateur&gt;\Administrative Templates\Windows Components\Microsoft Edge**.
+2. Accédez à**&lt;Ordinateur/ Configuration Utilisateur&gt;\ Modèles administratifs\Composants Windows\Microsoft Edge**.
     
-1. Double-cliquez sur **l’ensemble de moteur de recherche par défaut**, défini sur **activé**, puis entrez`https://www.bing.com/sa/osd/bfb.xml`
+1. Double-cliquez sur Définir le moteur de recherche par défaut, définir àActivé, puis entrer`https://www.bing.com/sa/osd/bfb.xml`
     
-3. Appliquer la stratégie de groupe qui en découlent à lier au domaine approprié.
+3. Appliquez la stratégie de groupe résultante GPO en les reliant au domaine approprié.
     
 ## <a name="google-chrome"></a>Google Chrome
 
-### <a name="windows-xp-sp2-or-later"></a>Windows XP SP2 ou version ultérieure
+### <a name="windows-xp-sp2-or-later"></a>Windows XP SP2 ou version ultérieure
 
-Les utilisateurs ne pourront pas modifier le fournisseur de recherche une fois que cette stratégie est définie.
+Les utilisateurs ne pourront pas modifier le fournisseur de recherche après avoir défini cette stratégie.
   
-Chrome est fourni avec son propre ensemble de paramètres de stratégie de groupe qui peut être téléchargé sous la forme d’un fichier ADMX à partir de [Google Chrome entreprise aide](https://support.google.com/chrome/a/answer/187202). Si Windows Vista de systèmes d’exploitation/Server 2008 ou version ultérieure sont utilisés pour gérer les objets de stratégie de groupe pour le domaine, le fichier ADMX fourni dans ce package prend en charge les paramètres de Chrome sur Windows XP SP2 ou version ultérieure.
+Chrome fournit avec son propre ensemble de paramètres de stratégie de groupe qui peut être téléchargé sous la forme d’un fichier ADMX à partir[Aide Google Chrome Enterprise](https://support.google.com/chrome/a/answer/187202). Si les systèmes d’exploitation Windows Vista/Server 2008 ou version ultérieure servent à gérer l’objet de stratégie de groupe pour le domaine, le fichier ADMX fourni dans ce package assure la gestion des paramètres de Chrome sous Windows XP SP2 ou version ultérieure.
   
-Copiez le fichier de modèle pour un magasin central pour les fichiers ADMX sur le contrôleur de domaine. Pour plus d’informations, voir [Stratégie de groupe de modification via des fichiers ADMX](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Magasin central sur le contrôleur est un dossier avec la convention d’affectation de noms suivante :
+Copiez le fichier de modèle dans un magasin central de fichiers ADMX sur le contrôleur de domaine. Pour plus d’informations, voir [Modifier les stratégies de groupe GPOs basés sur le domaine à l’aide des fichiers ADMX](https://docs.microsoft.com/fr-FR/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Le magasin central sur le contrôleur est un dossier avec la convention de dénomination suivante:
   
  **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
   
-Chaque domaine qui gère votre contrôleur doit obtenir un dossier distinct. La commande suivante peut être utilisée pour copier le fichier ADMX à partir de l’invite de commandes :
+Chaque domaine que votre contrôleur gère doit avoir un dossier séparé. La commande suivante peut être utilisée pour copier le fichier ADMX à partir de la commande rapide:
   
  `Copy <path_to_Chrome.ADMX> %systemroot%\sysvol\<domain>\policies\PolicyDefinitions`
   
-1. Ouvrez la Console de gestion de stratégie de groupe (gpmc.msc) et passer à la modification d’une stratégie existante ou créer un nouveau.
+1. Ouvrez la Console de gestion des stratégies de groupe (gpmc.msc) et basculez vers modifier toute stratégie existante ou créer un nouveau.
     
-2. Assurez-vous que les dossiers suivants apparaissent dans la section modèles d’administration de deux Configuration ordinateur/utilisateur : Google Chrome et Google Chrome - paramètres par défaut.
+2. Assurez-vous que les dossiers suivants apparaissent dans la section Modèles Administratifs à la fois pour l’Utilisateur/la Configuration Ordinateur: Google Chrome et Google Chrome- Paramètres par défaut.
     
-  - Les paramètres de la première section sont fixes et les administrateurs locaux ne pourront pas les modifier dans le navigateur.
+  - Les paramètres de la première section sont fixes et l’administrateur local ne pourra pas les modifier.
     
-  - Les paramètres de la section de ce dernier de stratégies peuvent être modifiés par les utilisateurs dans les paramètres du navigateur.
+  - Les paramètres de la dernière section de stratégies peuvent être modifiés par les utilisateurs dans les paramètres de navigateur.
     
-3. Accédez à ** \<utilisateur de l’ordinateur/\> fournisseur de recherche Chrome\Default Templates\Google de configuration**
+3. Accédez à**\<Ordinateur/Configuration utilisateur\>\Modèles Administratifs\Google Chrome- Paramétrage fournisseur par défaut**.
     
-4. Double-cliquez sur **Activer le fournisseur de recherche par défaut**, puis définissez-la sur **activé**.
+4. Double-cliquez sur **Activer le fournisseur de recherche par défaut**et définissez-le comme programme **Activé**.
     
-5. Double-cliquez sur **icône de fournisseur de recherche par défaut**, définissez-la sur **activé**, puis entrez`https://www.bing.com/sa/simg/bb.ico`
+5. Double-cliquez sur **icône fournisseur de recherche par défaut**, définissez-le comme programme **Activé**, puis entrez `https://www.bing.com/sa/simg/bb.ico`
     
-6. Double-cliquez sur **URL instantanée fournisseur de recherche par défaut**, puis entrez`https://www.bing.com/business/search?q={searchTerms}&amp;form=BFBSPR`
+6. Double-cliquez sur **l’URL instantané de fournisseur de recherche par défaut** puis entrez`https://www.bing.com/business/search?q={searchTerms}&amp;form=BFBSPR`
     
-7. Double-cliquez sur le **nom de fournisseur de recherche par défaut**, définissez-la sur activé et entrez « Microsoft Search dans Bing »
+7. Double-cliquez sur **nom du fournisseur de recherche par défaut**, définissez-le comme Activé, puis entrez «Microsoft Search (recherche Microsoft) dans Bing»
     
-8. Double-cliquez sur **recherche URL du fournisseur de recherche par défaut**, définissez-la sur **activé**, puis entrez`https://www.bing.com/business/search?q={searchTerms}&amp;form=BFBSPR`
+8. Double-cliquez sur **l’URL fournisseur de recherche par défaut**, définissez-le comme**Activé**, puis entrez `https://www.bing.com/business/search?q={searchTerms}&amp;form=BFBSPR`
     
-9. Double-cliquez sur le **fournisseur de recherche par défaut suggérer URL**, définissez-la sur **activé**, puis entrez`https://business.bing.com/api/v2/browser/suggest?q={searchTerms}&amp;form=BFBSPA`
+9. Double-cliquez sur **l’URL fournisseur de recherche par défaut suggéré**, définissez-le comme**Activé**, puis entrez `https://business.bing.com/api/v2/browser/suggest?q={searchTerms}&amp;form=BFBSPA`
     
-10. Appliquer la stratégie de groupe qui en découlent à lier au domaine approprié.
+10. Appliquez la stratégie de groupe résultante GPO en les reliant au domaine approprié.
     
-Le moteur de recherche par défaut ajoute la fonctionnalité de suggestions de recherche Microsoft Search dans la barre d’adresse de navigateur. Actuellement, il prend en charge les signets uniquement. Les utilisateurs voient les suggestions de deux signet principaux au-dessus de suggestions web publics en tapant dans la barre d’adresses.
+Le paramétrage du moteur de recherche par défaut ajoute la fonctionnalité de suggestions de recherche Microsoft Search (recherche Microsoft) dans la barre d’adresses navigateur. Pour l’instant, il prend en charge uniquement des signets. Les utilisateurs verront les deux premières suggestions des signets au-dessus des suggestions web public en temps réel dans la barre d’adresses.
