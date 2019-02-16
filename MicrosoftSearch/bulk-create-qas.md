@@ -1,5 +1,5 @@
 ---
-title: Créer des Q&As en bloc
+title: Créer Q&As
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,40 +13,51 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
-description: Ajouter rapidement des réponses aux questions fréquemment posées avec les outils d’importation dans le portail d’administration de recherche Microsoft
-ms.openlocfilehash: 84cca87eada0c31f9c39a16b364fb399014a6a5b
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Ajoutez rapidement des réponses aux questions fréquemment posées à l'aide des outils d'importation dans le portail d'administration de Microsoft Search.
+ms.openlocfilehash: 53f1d167948f6b621ad139620553df51b0cb91c2
+ms.sourcegitcommit: 61b4b84e581d3df6045851fe6c9c1291853dea06
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378625"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "30068393"
 ---
-# <a name="bulk-create-qas"></a>Créer des Q&As en bloc
+# <a name="bulk-create-qas"></a>Créer Q&As
 
-Télécharger et utiliser le modèle .csv en bloc créer ou en bloc modifier Q&As. Il est également un moyen simple pour enregistrer le brouillon Q&As nécessitant des modifications supplémentaires ou des mises à jour en bloc des. Si vous devez modifier une existant Q&As, les exporter à partir du portail d’administration, apportez les modifications nécessaires, puis importez-les.
+Téléchargez et utilisez le modèle. csv pour créer ou modifier en bloc Q&As. Il s'agit également d'un moyen simple d'enregistrer des Q&As brouillons qui nécessitent des modifications ou des mises à jour supplémentaires. Si vous devez modifier en bloc des Q&As existants, exportez-les à partir du portail d'administration, effectuez les modifications nécessaires, puis importez-les.
   
-1. Dans le coin supérieur droit de la section Q&As, cliquez sur **Importer**
+1. Dans le coin supérieur droit de la section Q&As, cliquez sur **Importer** .
     
-2. Cliquez sur **Q&A télécharger le modèle (.csv)**
+2. Cliquez sur **Télécharger le modèle Q&A (. csv)** .
     
-3. Enregistrez et ouvrez le fichier .csv
+3. Enregistrer et ouvrir le fichier. csv
     
-4. Ajouter le contenu de Q&A et les paramètres et enregistrez le fichier
+4. Ajouter le contenu et les paramètres Q&A et enregistrer le fichier
     
-5. Dans le coin supérieur droit de la section Q&As, cliquez sur **Importer**
+5. Dans le coin supérieur droit de la section Q&As, cliquez sur **Importer** .
     
-6. Dans le volet Q&As importer, cliquez sur **Parcourir** et accédez au fichier .csv à importer 
+6. Dans le volet importer Q&As, cliquez sur **Parcourir** et naviguez jusqu'au fichier. csv que vous souhaitez importer. 
     
 7. Cliquez sur **Importer**
-    
-Vous obtiendrez une erreur si toutes les données requises sont manquant ou non valide. En fonction de l’erreur, un fichier journal peut être généré avec plus d’informations sur les lignes et colonnes qui doivent être corrigées. Apportez les modifications nécessaires et relancez l’importation du fichier.
-  
+
+# <a name="prevent-import-errors"></a>Empêcher les erreurs d'importation      
+Vous obtiendrez une erreur si les données requises sont manquantes ou non valides. En fonction de l'erreur, un fichier journal peut être généré avec davantage d'informations sur les lignes et les colonnes qui doivent être corrigées. Effectuez les modifications nécessaires, puis réessayez d'importer le fichier.
+
 > [!NOTE]
-> Jusqu'à ce que toutes les erreurs sont résolus, vous ne pouvez pas créer ou modifier n’importe quel Q&As. 
-  
-Les champs dans les modèles d’importation et d’exportation Q&A sont les mêmes. Vous pouvez exporter, modifier et importer les modifications, ou démarrer avec un modèle vide en bloc créer nouveau Q&As.
-  
-Pas tous les champs obligatoires et les champs requis varient en fonction de l’état Q&A. Selon le champ d’état, Q&As sera enregistré comme brouillon, suggéré, planifiées, ou ils sont automatiquement publiées. Pour en savoir plus sur les champs obligatoires et recommandées dans [créer Q&As](create-qas.md).
+> Tant que toutes les erreurs ne sont pas résolues, vous ne pouvez pas créer ni modifier de Q&As. 
+
+Pour éviter les erreurs, assurez-vous que votre fichier d'importation est correctement mis en forme:
+- Inclut la ligne d'en-tête qui était dans le modèle d'importation.
+- Inclut toutes les colonnes qui se trouvaient dans le modèle d'importation.
+- L'ordre des colonnes est le même que celui du modèle d'importation.
+- Ces colonnes peuvent être vides: ID, Last modified et Last modified by
+- La colonne État ne peut pas être vide; cette information est requise  
+En fonction du champ d'État, Q&As sera enregistré en tant que brouillon, suggéré, programmé, ou il sera automatiquement publié.
+
+En outre, si vous incluez l'ID d'un Q&A existant, il sera remplacé par les informations contenues dans le fichier d'importation.
+
+Pour les organisations avec plusieurs locataires, vous pouvez exporter votre Q&As d'un client et l'importer dans un autre. Toutefois, vous devez supprimer toutes les données de la colonne ID avant d'importer.
+
+Pour en savoir plus sur les champs requis et recommandés, voir [Create Q&As](create-qas.md).
 
   
 

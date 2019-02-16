@@ -1,5 +1,5 @@
 ---
-title: Créer des emplacements en bloc
+title: Créer en bloc des emplacements
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,40 +13,54 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 15c9fada-f7a6-4210-aa6b-028b32217830
-description: Ajouter de nombreux emplacements à la fois avec les outils pour le portail d’administration de recherche Microsoft d’importation
-ms.openlocfilehash: af91dbc4a0efdaabb2bf91672c0e665683d2a6ab
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Ajouter des emplacements à la fois à l'aide des outils d'importation pour le portail d'administration de Microsoft Search
+ms.openlocfilehash: eb51b93ceaa560e5142ac46d316ba745c614fe34
+ms.sourcegitcommit: 61b4b84e581d3df6045851fe6c9c1291853dea06
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378661"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "30068409"
 ---
-# <a name="bulk-create-locations"></a>Créer des emplacements en bloc
+# <a name="bulk-create-locations"></a>Créer en bloc des emplacements
 
-Télécharger et utiliser le modèle .csv en bloc créer, modifier et enregistrer des emplacements. Pour en bloc modifier les emplacements existants, les exporter à partir du portail d’administration, apportez les modifications nécessaires, puis importez-les.
+Téléchargez et utilisez le modèle. csv pour créer, modifier et enregistrer en bloc des emplacements. 
   
-1. Dans le coin supérieur droit de la section emplacements, cliquez sur **Importer**
+1. Dans le coin supérieur droit de la section emplacements, cliquez sur **Importer** .
     
-2. Cliquez sur **Télécharger le modèle d’emplacements (.csv)**
+2. Cliquez sur **Télécharger les emplacements (. csv)** .
     
-3. Enregistrez et ouvrez le fichier .csv
+3. Enregistrer et ouvrir le fichier. csv
     
-4. Ajouter du contenu de l’emplacement et enregistrez le fichier
+4. Ajouter le contenu de l'emplacement et enregistrer le fichier
     
-5. Dans le coin supérieur droit de la section emplacements, cliquez sur **Importer**
+5. Dans le coin supérieur droit de la section emplacements, cliquez sur **Importer** .
     
-6. Dans le volet d’emplacements importation, cliquez sur **Parcourir** et accédez au fichier .csv à importer 
+6. Dans le volet importer des emplacements, cliquez sur **Parcourir** et naviguez jusqu'au fichier. csv que vous souhaitez importer. 
     
 7. Cliquez sur **Importer**
-    
-Vous obtiendrez une erreur si toutes les données requises sont manquant ou non valide. En fonction de l’erreur, un fichier journal peut être généré avec plus d’informations sur les lignes et colonnes qui doivent être corrigées. Apportez les modifications nécessaires et relancez l’importation du fichier.
+
+Les champs des modèles d'emplacement d'importation et d'exportation sont les mêmes. Vous pouvez exporter, modifier en bloc et importer les modifications, ou commencer avec un modèle vide pour créer des emplacements en bloc. Pour modifier en bloc des emplacements existants, exportez-les à partir du portail d'administration, effectuez les modifications nécessaires, puis importez-les.
+
+# <a name="prevent-import-errors"></a>Empêcher les erreurs d'importation  
+Vous obtiendrez une erreur si les données requises sont manquantes ou non valides. En fonction de l'erreur, un fichier journal peut être généré avec davantage d'informations sur les lignes et les colonnes qui doivent être corrigées. Effectuez les modifications nécessaires, puis réessayez d'importer le fichier.
   
 > [!NOTE]
-> Jusqu'à ce que toutes les erreurs sont résolus, vous ne pouvez pas créer ou modifier tous les emplacements. 
+> Tant que toutes les erreurs ne sont pas résolues, vous ne pouvez pas créer ni modifier d'emplacements. 
+
+Pour éviter les erreurs, assurez-vous que votre fichier d'importation est correctement mis en forme:
+- Inclut la ligne d'en-tête qui était dans le modèle d'importation.
+- Inclut toutes les colonnes qui se trouvaient dans le modèle d'importation.
+- L'ordre des colonnes est le même que celui du modèle d'importation.
+- Ces colonnes peuvent être vides: ID, dernière modification, dernière modification par et lat/long.  
+Nous allons essayer de déterminer la table des adresses locales/longue en fonction de l'adresse si ce champ est vide.
+- La colonne État ne peut pas être vide; cette information est requise  
+En fonction du champ d'État, les emplacements seront enregistrés en tant que brouillon, suggéré, programmé, ou ils seront publiés automatiquement.
+
+En outre, si vous incluez l'ID d'un emplacement existant, il sera remplacé par les informations contenues dans le fichier d'importation.
+
+Pour les organisations avec plusieurs locataires, vous pouvez exporter vos emplacements d'un client et l'importer dans un autre. Toutefois, vous devez supprimer toutes les données de la colonne ID avant d'importer.
   
-Les champs dans les modèles d’importation et d’exportation emplacements sont les mêmes. Vous pouvez exporter, modifier et importer les modifications, ou démarrer avec un modèle vide en bloc créer de nouveaux emplacements.
-  
-Pas tous les champs obligatoires et les champs requis varient en fonction de l’état de l’emplacement. Basé sur le champ d’état, les emplacements seront enregistrées comme brouillon, suggéré, planifiées, ou ils sont automatiquement publiées. Pour en savoir plus sur les champs obligatoires et recommandées, voir [Gérer les emplacements](manage-locations.md).
+Pour en savoir plus sur les champs requis et recommandés, consultez [la rubrique ajouter un emplacement](add-a-location.md).
 
   
 
