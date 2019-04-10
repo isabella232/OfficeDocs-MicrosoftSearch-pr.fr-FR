@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
-description: Microsoft Search est une expérience de recherche d’entreprise qui augmente la productivité et de gagne du temps en fournissant des résultats de recherche plus pertinents pour votre organisation
-ms.openlocfilehash: 9ef8153979a31bbcb2ed6014055e99dc8dbc793a
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Microsoft Search est une expérience de recherche d'entreprise qui augmente la productivité et vous permet de gagner du temps en fournissant des résultats de recherche plus pertinents pour votre organisation.
+ms.openlocfilehash: 4d3e3edd64d527121c1e4aee30376b15ca0c2e60
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378637"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746397"
 ---
 # <a name="microsoft-search"></a>Microsoft Search
 
@@ -45,8 +45,8 @@ ms.locfileid: "29378637"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Pourquoi la recherche Microsoft</h2>
-                        <p>Obtenir une expérience de recherche d’entreprise qui augmente la productivité et de gagne du temps en fournissant des résultats de recherche plus pertinents pour votre organisation</p>
+                        <h2>Pourquoi Microsoft Search(recherche Microsoft)</h2>
+                        <p>Obtenir une expérience de recherche d'entreprise qui augmente la productivité et vous permet de gagner du temps en fournissant des résultats de recherche plus pertinents pour votre organisation</p>
                         <p><a href="why-microsoft-search.md">En savoir plus</a></p>
                     </div>
                 </div>
@@ -68,8 +68,8 @@ ms.locfileid: "29378637"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Les principales fonctionnalités</h3>
-                        <p>Voir les fonctionnalités qui sont disponibles pour les administrateurs et les utilisateurs, y compris ce que vous trouverez lorsque vous effectuez une recherche</p>
+                        <h3>Fonctionnalités clés</h3>
+                        <p>Voir les fonctionnalités disponibles pour les administrateurs et les utilisateurs, y compris les éléments que vous trouverez lors de la recherche</p>
                         <p><a href="features.md">En savoir plus</a></p>
                     </div>
                 </div>
@@ -86,8 +86,8 @@ ms.locfileid: "29378637"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Admin rapide configurer</h3>
-                        <p>Découvrez comment activer Microsoft Search et le configurer pour votre organisation en quatre étapes</p>
+                        <h3>Configuration rapide de l'administrateur</h3>
+                        <p>Découvrez comment activer Microsoft Search et le configurer pour votre organisation en quatre étapes simples</p>
                         <p><a href="quick-set-up.md">Démarrer maintenant</a></p>
                     </div>
                 </div>
@@ -105,7 +105,7 @@ ms.locfileid: "29378637"
                     </div>
                     <div class="cardText">
                         <h3>FAQ</h3>
-                        <p>Obtenez des réponses à certaines questions fréquentes sur Microsoft Search</p>
+                        <p>Obtenez des réponses à certaines des questions fréquemment posées à propos de Microsoft Search</p>
                         <p><a href="faqs.md">Parcourir le Forum aux questions</a></p>
                     </div>
                 </div>
@@ -120,8 +120,8 @@ ms.locfileid: "29378637"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Utilisation de la recherche Microsoft</h2>
-                        <p>Microsoft Search constitue un moyen simple, rapide et plus sûr de rechercher des informations, à améliorer votre productivité et travailler plus efficacement</p>
+                        <h2>Utiliser Microsoft Search</h2>
+                        <p>Microsoft Search est un moyen simple, rapide et plus sûr de trouver des informations, de gagner en productivité et de travailler plus efficacement</p>
                         <p><a href="use/about-microsoft-search.md">En savoir plus</a></p>
                     </div>
                 </div>
@@ -154,7 +154,7 @@ ms.locfileid: "29378637"
                     <div class="cardText">
                         <p><a href="security.md">Sécurité</a></p>
                         <p><a href="requirements.md">Configuration requise</a></p>  
-                        <p><a href="about-the-admin-portal.md">Sur le portail d’administration</a></p>
+                        <p><a href="about-the-admin-portal.md">À propos du portail d’Administration</a></p>
                     </div>
                 </div>
             </div>
@@ -165,9 +165,9 @@ ms.locfileid: "29378637"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><a href="quick-set-up.md">Configurer des rapide</a></p>
+                        <p><a href="quick-set-up.md">Configuration rapide</a></p>
                         <p><a href="connected-services.md">Services connectés</a></p>
-                        <p><a href="set-up-microsoft-search.md">Configurer Microsoft Search</a></p>
+                        <p><a href="set-up-microsoft-search.md">Configuration de la recherche Microsoft</a></p>
                     </div>
                 </div>
             </div>
@@ -179,8 +179,8 @@ ms.locfileid: "29378637"
                 <div class="card">
                     <div class="cardText">
                         <p><a href="create-bookmarks.md">Créer des signets</a></p>
-                        <p><a href="create-qas.md">Créer Q&As</a></p>
-                        <p><a href="add-users.md">Ajout d’utilisateurs</a></p>
+                        <p><a href="create-qas.md">Créer des Questions-réponses</a></p>
+                        <p><a href="add-users.md">Gérer les utilisateurs</a></p>
                     </div>
                 </div>
             </div>
