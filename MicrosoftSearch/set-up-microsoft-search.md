@@ -14,32 +14,32 @@ search.appverid:
 - MOE150
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
 description: Présentation de toutes les informations nécessaires au déploiement de la recherche Microsoft dans votre organisation
-ms.openlocfilehash: 7e58d6df8d2ae35aab7d24c05b487f626b5f5c1c
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: f4a6a5c6fa3765cd08935970178af8ac0d46421c
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612400"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746349"
 ---
 # <a name="set-up-microsoft-search"></a>Configuration de la recherche Microsoft
 
-Dans le cadre d’Office 365, vous pouvez déployer facilement la recherche Microsoft en l’activant dans le Centre d’administration Microsoft 365. Une fois qu’elle est activée, il vous reste juste à définir rapidement un logo, un nom et une couleur, puis à accorder l’accès aux utilisateurs. Une fois ces étapes réalisées, les utilisateurs autorisés peuvent se connecter à Bing avec leur compte professionnel ou scolaire, et obtenir des résultats de travail lorsqu’ils lancent une recherche.
+Dans le cadre d’Office 365, la fonctionnalité Recherche Microsoft peut être facilement déployée en l’activant dans le Centre d’administration Microsoft 365. Une fois celle-ci activée, il vous suffit de configurer rapidement un logo, un nom et une couleur, et d’accorder l’accès aux administrateurs et aux éditeurs. Ensuite, les utilisateurs peuvent se connecter à Bing avec un compte professionnel ou scolaire et obtenir des résultats professionnels lors de leurs recherches.
 
 - [Configuration rapide](quick-set-up.md)
     
-    Réalisez quatre opérations pour activer la recherche Microsoft en toute simplicité.
+    Réalisez quatre opérations pour activer la fonctionnalité Recherche Microsoft en toute simplicité
 
 - [Paramètres de contenu](content-settings.md)
     
-    Contrôle de l’apparence des résultats de la recherche Microsoft
+    Contrôle de l’apparence des résultats de la fonctionnalité Recherche Microsoft
     
-- [Ajout d’utilisateurs](add-users.md)
+- [Gestion des utilisateurs](add-users.md)
     
-    Gérez l’accès au portail pour les administrateurs et les éditeurs, et accordez ou limitez l’accès à la recherche Microsoft dans votre organisation.
+    Gestion de l’accès au portail pour les administrateurs et les éditeurs
     
 - [Outils du portail d’administration](admin-portal-tools.md)
     
-    Utilisez des extensions de navigateur et d’autres outils pour créer et importer du contenu, réduire le nombre d’invites de connexion pour les utilisateurs, et rechercher des résultats de travail sur Bing.
+    Utilisez les extensions de navigateur et d’autres outils pour créer et importer ensuite du contenu, réduisez le nombre de fois où les utilisateurs sont invités à se connecter et recherchez des résultats de travail sur Bing
     
 - [Test de l’authentification unique](test-single-sign-on.md)
     
