@@ -1,5 +1,5 @@
 ---
-title: Créer en bloc des signets
+title: Créer des signets en bloc
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 ms.assetid: def300e7-103c-4e92-a062-28ffa27561d7
 description: Créer un grand nombre de signets à la fois avec les outils d'importation pour le portail d'administration de Microsoft Search
-ms.openlocfilehash: 07694de1f546a1431f371fa24ffc5721ea66337c
-ms.sourcegitcommit: 61b4b84e581d3df6045851fe6c9c1291853dea06
+ms.openlocfilehash: 7c134784f0ca0d4cc84d5bce3a98f7e75aa6f441
+ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30068401"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901791"
 ---
-# <a name="bulk-create-bookmarks"></a>Créer en bloc des signets
+# <a name="bulk-create-bookmarks"></a>Créer des signets en bloc
 
 Téléchargez et utilisez le modèle. csv pour créer, modifier et enregistrer des signets en bloc. Pour modifier en bloc des signets existants, exportez-les à partir du portail d'administration, effectuez les modifications nécessaires, puis importez-les.
   
@@ -32,6 +32,8 @@ Téléchargez et utilisez le modèle. csv pour créer, modifier et enregistrer d
 3. Enregistrer et ouvrir le fichier. csv
     
 4. Ajouter le contenu et les paramètres du signet et enregistrer le fichier
+
+    Le fichier. csv doit être enregistré en tant que fichier CSV UTF-8, d'autres types de fichiers ou de codages peuvent entraîner des erreurs d'importation
     
 5. Dans le coin supérieur droit de la section signets, cliquez sur **Importer** .
     

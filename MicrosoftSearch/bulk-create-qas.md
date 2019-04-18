@@ -1,5 +1,5 @@
 ---
-title: Créer Q&As
+title: Créer en bloc des Q&R
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
 description: Ajoutez rapidement des réponses aux questions fréquemment posées à l'aide des outils d'importation dans le portail d'administration de Microsoft Search.
-ms.openlocfilehash: 53f1d167948f6b621ad139620553df51b0cb91c2
-ms.sourcegitcommit: 61b4b84e581d3df6045851fe6c9c1291853dea06
+ms.openlocfilehash: 28fcf57c44f809e7f9b0c1b27042f4549067a0f8
+ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30068393"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901815"
 ---
-# <a name="bulk-create-qas"></a>Créer Q&As
+# <a name="bulk-create-qas"></a>Créer en bloc des Q&R
 
 Téléchargez et utilisez le modèle. csv pour créer ou modifier en bloc Q&As. Il s'agit également d'un moyen simple d'enregistrer des Q&As brouillons qui nécessitent des modifications ou des mises à jour supplémentaires. Si vous devez modifier en bloc des Q&As existants, exportez-les à partir du portail d'administration, effectuez les modifications nécessaires, puis importez-les.
   
@@ -32,6 +32,8 @@ Téléchargez et utilisez le modèle. csv pour créer ou modifier en bloc Q&As. 
 3. Enregistrer et ouvrir le fichier. csv
     
 4. Ajouter le contenu et les paramètres Q&A et enregistrer le fichier
+
+    Le fichier. csv doit être enregistré en tant que fichier CSV UTF-8, d'autres types de fichiers ou de codages peuvent entraîner des erreurs d'importation
     
 5. Dans le coin supérieur droit de la section Q&As, cliquez sur **Importer** .
     

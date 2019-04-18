@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 15c9fada-f7a6-4210-aa6b-028b32217830
 description: Ajouter des emplacements à la fois à l'aide des outils d'importation pour le portail d'administration de Microsoft Search
-ms.openlocfilehash: eb51b93ceaa560e5142ac46d316ba745c614fe34
-ms.sourcegitcommit: 61b4b84e581d3df6045851fe6c9c1291853dea06
+ms.openlocfilehash: 3c7e43b03b97b46769d5e73f20ddae47b3459b59
+ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30068409"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901807"
 ---
 # <a name="bulk-create-locations"></a>Créer en bloc des emplacements
 
@@ -32,6 +32,8 @@ Téléchargez et utilisez le modèle. csv pour créer, modifier et enregistrer e
 3. Enregistrer et ouvrir le fichier. csv
     
 4. Ajouter le contenu de l'emplacement et enregistrer le fichier
+
+    Le fichier. csv doit être enregistré en tant que fichier CSV UTF-8, d'autres types de fichiers ou de codages peuvent entraîner des erreurs d'importation
     
 5. Dans le coin supérieur droit de la section emplacements, cliquez sur **Importer** .
     
