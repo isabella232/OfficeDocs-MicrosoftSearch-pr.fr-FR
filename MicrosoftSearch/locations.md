@@ -13,55 +13,55 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 2379e72c-a7da-4e3f-932a-12d431a0a284
-description: Vue d’ensemble de toutes les méthodes que vous pouvez inclure des emplacements de votre organisation dans les résultats de travail Microsoft Search
+description: Vue d'ensemble de toutes les façons dont vous pouvez inclure les emplacements de votre organisation dans les résultats de travail Microsoft Search
 ms.openlocfilehash: 4ff30d7e346d609e9fddaca70caa1a85652fad3c
-ms.sourcegitcommit: 98fd5dd37a5b753cfa2fb81fc4bd6497ecc8ed30
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690657"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508808"
 ---
 # <a name="locations"></a>Emplacements
 
 ## <a name="add-locations"></a>Ajouter des emplacements
 
-Emplacements aident vos utilisateurs à trouver des adresses et recherchez bâtiments de votre organisation, les bureaux et autres espaces de travail sur une carte. Ils peuvent également utiliser Bing Maps pour obtenir des instructions, consultez la rubrique What ' s proche et bien plus encore.
+Les emplacements aident vos utilisateurs à trouver des adresses et à localiser les bâtiments, les bureaux et les autres espaces de travail de votre organisation sur une carte. Ils peuvent également utiliser Bing Maps pour obtenir des instructions, voir ce qui est à proximité, et bien plus encore.
   
-- [Ajoutez un emplacement](add-a-location.md)
+- [Ajouter un emplacement](add-a-location.md)
     
-    Ajouter un bâtiment, office, campus ou autre espace de travail
+    Ajouter un immeuble, un bureau, un campus ou un autre espace de travail
     
 - [Créer en bloc des emplacements](bulk-create-locations.md)
     
-    Ajouter des emplacements à un fichier .csv et à importer en bloc
+    Ajouter des emplacements à un fichier. csv et les importer par bloc
     
-## <a name="manage-locations"></a>Gérer des emplacements
+## <a name="manage-locations"></a>Gérer les emplacements
 
-Utiliser le statut de l’emplacement, outils, de filtrage et en bloc des outils d’exportation/importation pour [Rechercher et mettre à jour les emplacements](manage-locations.md), y compris nom adresse et l’emplacement
+Utiliser l'état de l'emplacement, les outils de filtrage et les outils d'exportation/importation en bloc pour [Rechercher et mettre à jour des emplacements](manage-locations.md), dont l'adresse et le nom d'emplacement
   
-## <a name="location-status"></a>État de l’emplacement
+## <a name="location-status"></a>Statut de l'emplacement
 
-Dans le portail d’administration, vous pouvez afficher les emplacements à leur état actuel :
+Dans le portail d'administration, vous pouvez afficher les emplacements en fonction de leur état actuel:
   
-- publiée ; 
+- Published
     
-    Emplacements publiés s’affichent dans les résultats de recherche Bing lorsqu’un utilisateur autorisé recherche un mot clé.
+    Les emplacements publiés apparaissent dans les résultats de la recherche Bing lorsqu'un utilisateur autorisé recherche un mot clé.
     
-- ébauchée. 
+- Première version
     
-    Si un emplacement n’est pas prêt à publier, l’enregistrer en tant que brouillon. Emplacements de brouillon n’apparaîtront pas sur Bing.
+    Si un emplacement n'est pas prêt à être publié, enregistrez-le en tant que brouillon. Les emplacements de brouillon n'apparaissent pas sur Bing.
     
-- Planifiée
+- Scheduled
     
-    Emplacements planifiées sont automatiquement publiés à une date ultérieure.
+    Les emplacements planifiés sont automatiquement publiés à une date ultérieure.
     
 - Expiré
     
-    Contenu publié en fonction de leur date d’expiration ont été supprimés automatiquement les emplacements arrivés à expiration.
+    Les emplacements expirés ont été automatiquement supprimés du contenu publié en fonction de leur date d'expiration.
     
-- Suggérés
+- Préférable
     
-    Emplacements suggérés sont basées sur les commentaires des utilisateurs. Vous pouvez également voir des suggestions par défaut de Microsoft.
+    Les emplacements suggérés sont basés sur les commentaires des utilisateurs. Vous pouvez également consulter les suggestions par défaut de Microsoft.
 
   
 

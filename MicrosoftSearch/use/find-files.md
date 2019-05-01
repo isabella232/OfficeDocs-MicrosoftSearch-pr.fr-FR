@@ -1,5 +1,5 @@
 ---
-title: Rechercher les fichiers
+title: Trouver des fichiers
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,21 +12,21 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: ff42d668-f721-4ada-b130-77e38508197c
-description: Microsoft Search permet de rechercher des fichiers Office et PDF et les informations que vous verrez
+description: Utiliser Microsoft Search pour rechercher des fichiers Office et des fichiers PDF, ainsi que les informations que vous verrez
 ms.openlocfilehash: f46796c015137a5bc1a24a52f7eb35cd2675a09d
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378632"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508936"
 ---
-# <a name="find-files"></a>Rechercher les fichiers
+# <a name="find-files"></a>Trouver des fichiers
 
-Recherchez vos propres fichiers ou contenu créé par vos collaborateurs auxquels vous avez accès à rechercher. Résultats incluent le nom de fichier et l’emplacement et vous pouvez également voir un extrait de code brève du contenu, qui a modifié en dernier et quand.
+Recherchez vos propres fichiers ou recherchez du contenu créé par des collègues auxquels vous avez accès. Les résultats incluent le nom de fichier et l'emplacement, et vous pouvez également voir un bref extrait de code du contenu, qui l'a modifié en dernier, et à quel moment.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AsoN?autoplay=false]
   
-Vous trouverez SharePoint et OneDrive pour les fichiers d’entreprise, y compris :
+Vous pouvez trouver des fichiers SharePoint et OneDrive entreprise, notamment:
   
 - Documents Word
     
@@ -36,16 +36,16 @@ Vous trouverez SharePoint et OneDrive pour les fichiers d’entreprise, y compri
     
 - Blocs-notes OneNote
     
-- Fichiers PDF
+- Document
     
-1. Connectez-vous à votre compte professionnel ou de l’école sur Bing
+1. Connectez-vous à votre compte professionnel ou scolaire sur Bing
     
-2. Recherchez « Mes documents,' « Mes présentations », ou inclure une rubrique ou le nom d’une personne
+2. Rechercher «mes documents», «mes présentations» ou inclure une rubrique ou un nom d'utilisateur
     
-    Par exemple, « documents sur les codes de taxe » ou « fichiers par John ».
+    Par exemple, «docs à propos des codes de taxe» ou «fichiers par John».
     
-3. Fichier de résultats s’affiche en haut de la page de résultats
+3. Les résultats du fichier s'affichent en haut de la page de résultats
     
-    Autres résultats web apparaissent sous elle. Ils ne sont pas propres à votre organisation.
+    D'autres résultats Web s'affichent sous lui. Elles ne sont pas propres à votre organisation.
 
 

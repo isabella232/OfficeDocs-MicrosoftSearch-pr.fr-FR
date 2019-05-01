@@ -12,43 +12,43 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 429fb92c-e968-4d61-be15-6ecebfdbd157
-description: Se connecter rapidement à Microsoft Search ou n’importe quelle application Office 365 avec un compte professionnel ou de l’école
+description: Se connecter rapidement à Microsoft Search ou à une application Office 365 avec un compte professionnel ou scolaire
 ms.openlocfilehash: 0edfd7d244e953beb8153f494e83a3e59c74c007
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378640"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508864"
 ---
 # <a name="sign-in-to-microsoft-search"></a>Se connecter à Microsoft Search
 
-Une fois que votre service informatique vous a ajouté en tant qu’un utilisateur de Microsoft Search, connectez-vous avec votre bureau ou l’école compte.
+Une fois que votre service informatique vous a ajouté en tant qu'utilisateur de Microsoft Search, connectez-vous avec votre compte professionnel ou scolaire.
   
 ## <a name="sign-in-to-microsoft-search"></a>Se connecter à Microsoft Search
 
-Si vous êtes déjà connecté à une application Office 365, vous allez être automatiquement connecté à Microsoft Search lorsque vous accédez à Bing. Si vous n’êtes pas connecté :
+Si vous êtes déjà connecté à une application Office 365, vous êtes automatiquement connecté à Microsoft Search lorsque vous accédez à Bing. Si vous n'êtes pas connecté:
   
-1. Dans le coin supérieur droit de n’importe quelle page Bing, cliquez sur **se connecter** ou **se connecter à voir les résultats commerciaux**
+1. Dans le coin supérieur droit d'une page Bing, cliquez sur **se connecter** ou **Connectez-vous pour afficher les résultats** de l'entreprise.
     
-2. Si vous ne voyez pas ces options de connexion, accédez à [Explorer Microsoft Search](https://www.bing.com/business/explore)
+2. Si ces options de connexion ne s'affichent pas, rendez-vous sur [Explorer Microsoft Search](https://www.bing.com/business/explore)
     
-    Vous allez être automatiquement redirigé vers la page de connexion de votre organisation.
+    Vous serez automatiquement redirigé vers la page de connexion de votre organisation.
     
-3. Dans le menu comptes, à côté **travail ou une école compte**, cliquez sur **se connecter**
+3. Dans le menu compte, en regard de **compte professionnel ou scolaire**, cliquez sur **se connecter** .
     
-4. Si vous y êtes invité, choisissez le compte que vous souhaitez vous connecter avec ou entrez votre adresse de messagerie et votre mot de passe
+4. Si vous y êtes invité, choisissez le compte avec lequel vous voulez vous connecter ou saisissez votre adresse de messagerie et votre mot de passe.
     
-## <a name="use-a-browser-extension-to-sign-in-automatically"></a>Utiliser une extension de navigateur pour vous connecter automatiquement
+## <a name="use-a-browser-extension-to-sign-in-automatically"></a>Utiliser une extension de navigateur pour se connecter automatiquement
 
-Si vous utilisez Chrome sur Windows 10, installez les 10 Windows et le DAS connexion extension. Avec ce dernier vous pouvez vous connecter aux sites pris en charge, telles que Microsoft Search et Office 365 sans avoir à entrer votre adresse de messagerie et le mot de passe.
+Si vous utilisez le chrome sur Windows 10, installez l'extension de connexion Windows 10 et AAD. Il vous permet de vous connecter à des sites pris en charge tels que Microsoft Search et Office 365 sans avoir à entrer votre adresse de messagerie et votre mot de passe.
   
-## <a name="sign-out-of-microsoft-search"></a>Vous déconnecter de Microsoft Search
+## <a name="sign-out-of-microsoft-search"></a>Se déConnecter de Microsoft Search
 
-- Dans le coin supérieur droit de n’importe quelle page Bing, cliquez sur votre nom, puis, dans le menu comptes, à côté **travail ou une école compte**, cliquez sur **se déconnecter**.
+- Dans le coin supérieur droit d'une page Bing, cliquez sur votre nom, puis, dans le menu compte, en regard de **compte professionnel ou scolaire**, **** cliquez sur Déconnexion.
     
-Bing enregistre votre travail ou état du compte de l’école, connecté ou déconnecté, dans un cookie du navigateur. Si vous déconnectez et que vous désactivez les cookies, la prochaine fois que vous accédez à Bing vous pouvez être automatiquement connecté, ou vous pouvez être invité à vous reconnecter. Votre service informatique configure ce pour votre organisation.
+Bing enregistre votre statut de compte professionnel ou scolaire, connecté ou déconnecté, dans un cookie de navigateur. Si vous vous déconnectez et effacez vos cookies, la prochaine fois que vous accédez à Bing, vous pouvez être automatiquement connecté, ou vous pouvez être invité à vous connecter à nouveau. Votre service informatique le configure pour votre organisation.
   
-Lorsque vous êtes connecté à Microsoft Search, certaines fonctionnalités, telles que des résultats personnalisés et Microsoft Rewards, peut se comportent différemment ou ne soient pas disponibles.
+Lorsque vous êtes connecté à Microsoft Search, certaines fonctionnalités, telles que les résultats personnalisés et les récompenses Microsoft, peuvent se comporter différemment ou indisponibles.
 
   
 

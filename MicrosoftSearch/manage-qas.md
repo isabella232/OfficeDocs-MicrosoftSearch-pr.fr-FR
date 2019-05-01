@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: Rechercher et mettre à jour les réponses individuellement ou utiliser les outils de recherche Microsoft disponibles pour les modifier en une seule fois
 ms.openlocfilehash: 47882deeb95133cfc19f4eec6417fc20fb7203de
-ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901831"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508816"
 ---
 # <a name="manage-qas"></a>Gérer des Q&R
 

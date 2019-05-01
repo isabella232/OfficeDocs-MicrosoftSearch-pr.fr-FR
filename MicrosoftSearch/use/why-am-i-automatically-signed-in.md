@@ -1,5 +1,5 @@
 ---
-title: Pourquoi est-ce que j’automatiquement connecté ?
+title: Pourquoi suis-je connecté automatiquement ?
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,43 +12,43 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 94f6fa41-0570-4668-b2fe-d51ed177716c
-description: Découvrez comment automatiquement la connexion à Microsoft Search peut vous aider à rapidement et trouvez facilement des résultats de travail
+description: Découvrez comment la connexion automatique à Microsoft Search peut vous aider à trouver rapidement et facilement les résultats de travail
 ms.openlocfilehash: 999341f10c0b75009246451f7e48f9fc4706d86a
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378654"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508832"
 ---
-# <a name="why-am-i-automatically-signed-in"></a>Pourquoi est-ce que j’automatiquement connecté ?
+# <a name="why-am-i-automatically-signed-in"></a>Pourquoi suis-je connecté automatiquement ?
 
-Pour vous aider à trouver les informations dont vous avez besoin rapidement et facilement, votre organisation est configurée pour vous connecter à Microsoft Search automatiquement.
+Pour vous aider à trouver rapidement et facilement les informations dont vous avez besoin, votre organisation est configurée pour vous connecter automatiquement à Microsoft Search.
   
-## <a name="about-microsoft-search"></a>À propos de Microsoft Search
+## <a name="about-microsoft-search"></a>À propos de Microsoft Search (recherche Microsoft)
 
-Microsoft Search met le contenu que vous avez besoin de votre espace de travail ou de l’école en Bing. Pour en savoir plus [Sur la recherche de Microsoft](about-microsoft-search.md).
+Microsoft Search met en place le contenu dont vous avez besoin à partir de votre école ou de votre espace de travail dans Bing. En savoir plus [sur Microsoft Search](about-microsoft-search.md).
   
 ## <a name="privacy-and-security"></a>Confidentialité et sécurité
 
-Microsoft Search, vous avez accordé l’accès aux seules les personnes affichent vos fichiers partagés. Autres résultats comme organigrammes et informations sur les personnes apparaissent uniquement à d’autres personnes dans votre organisation.
+Avec Microsoft Search, seules les personnes auxquelles vous avez accordé l'accès verront vos fichiers partagés. D'autres résultats, comme les organigrammes et les informations de personnes, ne seront visibles que pour les autres membres de votre organisation.
   
-Microsoft Search vous aide à protéger votre confidentialité en protégeant votre historique de recherche. Votre historique de recherche n’est pas partagé avec d’autres personnes dans votre organisation, même lorsque vous êtes connecté et la recherche d’informations professionnelles ou une école.
+Microsoft Search contribue à protéger votre confidentialité en protégeant votre historique de recherche. Votre historique de recherche n'est pas partagé avec d'autres personnes de votre organisation, même si vous êtes connecté et que vous recherchez des informations relatives au travail ou à l'école.
   
-Pour améliorer votre expérience de recherche, Bing rapports fréquents recherches effectuées par plusieurs utilisateurs pour les administrateurs de votre organisation. Uniquement les administrateurs peuvent afficher ces données, il n’est pas liée à des utilisateurs spécifiques et s’affiche uniquement lorsque plusieurs utilisateurs ont recherché dans la même chose.
+Pour améliorer votre expérience de recherche, Bing signale des recherches fréquentes effectuées par plusieurs utilisateurs aux administrateurs de votre organisation. Seuls les administrateurs peuvent afficher ces données, qui ne sont pas liées à des utilisateurs spécifiques et qui apparaissent uniquement lorsque plusieurs utilisateurs ont recherché la même chose.
   
-Chaque organisation est différente, et Microsoft ne garantit pas la vôtre gère vos recherches et autres données en dehors de Microsoft Search.
+Chaque organisation est différente et Microsoft ne peut pas garantir la manière dont votre entreprise gère vos recherches et autres données en dehors de Microsoft Search.
   
-## <a name="sign-out-of-microsoft-search"></a>Vous déconnecter de Microsoft Search
+## <a name="sign-out-of-microsoft-search"></a>Se déConnecter de Microsoft Search
 
-Vous pouvez vous déconnecter de Bing à tout moment : dans le coin supérieur droit de n’importe quelle page Bing, cliquez sur votre profil, cliquez sur **se déconnecter**.
+Vous pouvez vous déconnecter de Bing à tout moment: dans le coin supérieur droit d'une page Bing, cliquez sur votre profil, puis cliquez **** sur Déconnexion.
   
-Vous ne sont pas être connecté automatiquement à nouveau sur ce périphérique. Si vous avez utilisé des autres navigateurs ou des périphériques pour se connecter à Microsoft Search, vous devez vous connecter, ainsi que. 
+Vous ne serez pas connecté automatiquement sur cet appareil. Si vous avez utilisé d'autres navigateurs ou appareils pour vous connecter à Microsoft Search, vous devez également vous y déconnecter. 
   
-Lorsque vous êtes déconnecté, vos recherches ne s’affichera une protection supplémentaire. Ils sont traités comme des recherches de consommateur Bing standards et sont régies par [Déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/en-us/privacystatement).
+Lorsque vous êtes déconnecté, vos recherches ne bénéficient pas d'une protection supplémentaire. Ils sont traités comme des recherches de consommateur Bing standard et sont régis par la [déclaration de confidentialité de Microsoft](https://privacy.microsoft.com/en-us/privacystatement).
   
-## <a name="view-your-search-history"></a>Afficher l’historique de la recherche
+## <a name="view-your-search-history"></a>Afficher l'historique de recherche
 
-Pour afficher l’historique de vos Microsoft Search pour les derniers 30 jours, accédez à votre [historique de recherche](https://ssl.bing.com/profile/history), sous Microsoft Search dans Bing, cliquez sur **Exporter**. Recherches plus de 30 jours sont automatiquement effacées de l’historique de vos.
+Pour afficher votre historique de recherche Microsoft au cours des 30 derniers jours, accédez à votre [historique de recherche](https://ssl.bing.com/profile/history)et sous recherche Microsoft dans Bing, cliquez sur **Exporter**. Les recherches datant de plus de 30 jours sont automatiquement effacées de votre historique.
 
   
 

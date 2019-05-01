@@ -1,5 +1,5 @@
 ---
-title: Trouver des emplacements
+title: Rechercher des emplacements
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,29 +12,29 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 3d34bfbc-d4a3-4ef2-85d3-cf92835382ac
-description: Utiliser Microsoft Search pour rechercher d’office, de création et d’autres emplacements de l’espace de travail, obtenir des instructions et bien plus encore
+description: Utiliser Microsoft Search pour trouver Office, créer et d'autres emplacements d'espace de travail, obtenir des instructions et plus encore
 ms.openlocfilehash: 8264f223808750cab6c5117b3b3fa1adbee5a40a
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378630"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508960"
 ---
-# <a name="find-locations"></a>Trouver des emplacements
+# <a name="find-locations"></a>Rechercher des emplacements
 
-Recherche de bâtiments bureaux, campus et pour voir un mappage résultat et une adresse. Vous pouvez facilement obtenir des instructions et voir ce qui est proche de Bing Maps.
+Recherchez des bâtiments, des bureaux, des campus et bien plus encore pour voir un résultat de carte et une adresse. Vous pouvez facilement obtenir des itinéraires et voir ce qui est à proximité sur Bing Maps.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2ACDW?autoplay=false]
   
-1. Connectez-vous à votre compte professionnel ou de l’école sur Bing
+1. Connectez-vous à votre compte professionnel ou scolaire sur Bing
     
-2. Recherchez le nom de l’emplacement
+2. Rechercher le nom de l'emplacement
     
-    Par exemple, « Building 9 » ou « Café ouest. »
+    Par exemple, «bâtiment 9» ou «café de l'Ouest».
     
-3. Une carte s’affiche en haut de la page de résultats indiquant l’emplacement et l’adresse postale
+3. Une carte apparaît en haut de la page de résultats, indiquant l'emplacement et l'adresse postale
     
-    Autres résultats web apparaissent sous elle. Ils ne sont pas propres à votre organisation.
+    D'autres résultats Web s'affichent sous lui. Elles ne sont pas propres à votre organisation.
 
   
 

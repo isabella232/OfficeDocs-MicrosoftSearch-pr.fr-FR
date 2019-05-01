@@ -1,5 +1,5 @@
 ---
-title: Recherches suggérées
+title: Suggestions de recherche
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,21 +12,21 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: c7f3aa2c-f3f5-4d1b-91cd-4fd4ed3775d3
-description: À propos de la recherche d’exemple que vous voyez lorsque vous utilisez Microsoft Search
+description: À propos des exemples de recherche que vous voyez lorsque vous utilisez Microsoft Search
 ms.openlocfilehash: 38afbdf233feba1772b9b72291d1571e2cf7ab97
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378660"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508504"
 ---
-# <a name="suggested-searches"></a>Recherches suggérées
+# <a name="suggested-searches"></a>Suggestions de recherche
 
-La première fois que vous vous connectez à Bing avec votre compte professionnel ou de l’école, vous verrez un message de bienvenue en haut de la page avec les recherches suggérées. Ces recherches sont conçus pour aider à vous familiariser avec Microsoft Search et les types de résultats de travail que vous trouverez lorsque vous effectuez une recherche.
+La première fois que vous vous connectez à Bing avec votre compte professionnel ou scolaire, un message d'accueil apparaît en haut de la page avec des suggestions de recherche. Ces recherches sont conçues pour vous aider à vous familiariser avec Microsoft Search et les types de résultats de travail que vous trouverez lors de votre recherche.
   
-Pour les rendre plus pertinents pour vous et d’autres personnes dans votre organisation, votre service informatique a passé en revue les ou créés eux-mêmes.
+Pour les rendre plus pertinentes pour vous et d'autres personnes de votre organisation, votre service informatique les a révisées ou créé leur propre.
   
-Parfois, vous verrez les messages annonce des nouvelles fonctionnalités ou vous indiquant d’informations sur Microsoft Search. Nous allons vous donner toujours un lien pour en savoir plus, ou vous pouvez accéder au [Service de recherche Microsoft Explorer](https://www.bing.com/business/explore) pour plus d’informations. 
+Parfois, vous verrez des messages annonçant de nouvelles fonctionnalités ou vous informant sur Microsoft Search. Nous vous fournirons toujours un lien pour en savoir plus ou vous pouvez vous rendre sur l' [exploration de Microsoft Search](https://www.bing.com/business/explore) pour plus d'informations. 
 
   
 

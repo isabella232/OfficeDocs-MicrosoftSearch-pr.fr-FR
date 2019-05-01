@@ -1,5 +1,5 @@
 ---
-title: Publier les signets par défaut
+title: Publier des signets par défaut
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,47 +13,47 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d49a0b97-e4ca-47cf-ad52-6113787b8402
-description: Signets par défaut qui sont disponibles dans le portail d’administration de recherche Microsoft
+description: Signets par défaut disponibles dans le portail d'administration de Microsoft Search
 ms.openlocfilehash: 0105cf33fdf274a6a856615b992e5bc0e0cc02e8
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378646"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508680"
 ---
-# <a name="publish-default-bookmarks"></a>Publier les signets par défaut
+# <a name="publish-default-bookmarks"></a>Publier des signets par défaut
 
-Pour voir rapidement comment les signets s’affichent sur Bing, publiez les valeurs par défaut fournis. Utiliser comme référence pour comprendre comment nommer les signets et créer des mots clés bonne.
+Pour voir rapidement comment les signets apparaissent sur Bing, publiez les valeurs par défaut fournies. Utilisez-les comme référence pour comprendre comment nommer des signets et créer des mots clés efficaces.
   
-Nous vous suggérons de que consulter les deux jeux de signets par défaut :
+Nous vous suggérons de consulter les deux ensembles de signets par défaut:
   
-- Valeur par défaut de signets publiés
+- Signets publiés par défaut
     
-    Cela inclut les résultats sur aide pour les applications Windows et Office et Microsoft Search. Une fois Microsoft Search est activé dans le centre d’administration Microsoft 365, ils sont automatiquement publiés et seront affiche sur Bing. Vous pouvez modifier ou supprimer à tout moment.
+    Ces éléments incluent les résultats de Microsoft Search et de l'aide pour les applications Windows et Office. Une fois que Microsoft Search est activé dans le centre d'administration 365 de Microsoft, ces éléments sont automatiquement publiés et s'affichent sur Bing. Vous pouvez les modifier ou les supprimer à tout moment.
     
-- Par défaut suggérés signets
+- Signets suggérés par défaut
     
-    Cela inclut les résultats des recherches courantes liées au travail, y compris les avantages, le temps et création de rapports, l’envoi de bons de commande et l’obtention d’aide à partir des services informatiques.
+    Celles-ci incluent les résultats des recherches courantes liées au travail, notamment les avantages des employés, la création de notes de frais, la soumission des bons de commande et l'aide des services informatiques.
     
-Si nous trouver un signet existant avec le même titre ou URL comme un signet par défaut, la valeur par défaut est ignorée. Nous ne modifier le signet existant en aucune façon, publier le signet par défaut ou inclure le signet par défaut dans la liste suggérés.
+Si nous trouvons un signet existant avec le même titre ou URL qu'un signet par défaut, la valeur par défaut sera ignorée. Nous ne modifierons en aucune façon le signet existant, ne publierez pas le signet par défaut ou incluez le signet par défaut dans la liste proposée.
   
-## <a name="update-and-publish-a-default-suggested-bookmark"></a>Mettre à jour et publier un signet suggérée par défaut
+## <a name="update-and-publish-a-default-suggested-bookmark"></a>Mettre à jour et publier un signet suggéré par défaut
 
-1. Accédez au portail d’administration de recherche Microsoft
+1. Accédez au Portail d’administration de Microsoft Search(recherche Microsoft)
     
-2. Dans le volet de navigation, cliquez sur **signets**
+2. Dans le volet de navigation, cliquez sur**Signets**
     
-3. Dans la Bookmarkspage, cliquez sur **suggérés**
+3. Dans le BookmarksPage, cliquez sur **suggéré**
     
-4. Sélectionné un signet suggéré puis cliquez sur **Modifier**
+4. Sélectionné un signet suggéré et cliquez sur **modifier**
     
-5. Passez en revue le contenu du signet et apportez les modifications nécessaires
+5. Passez en revue le contenu du signet et effectuez les modifications nécessaires.
     
-6. Ajouter les informations manquantes, par exemple une URL ou la description
+6. Ajouter des informations manquantes, telles qu'une URL ou une description
     
-7. Cliquez sur **Publier**
+7. Cliquez sur **publier**
     
-Actuellement, les signets par défaut sont uniquement disponibles en anglais. 
+Actuellement, les signets par défaut ne sont disponibles qu'en anglais. 
 
   
 

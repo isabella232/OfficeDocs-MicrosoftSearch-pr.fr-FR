@@ -13,45 +13,45 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c37cf1b1-5915-4eb1-9f78-72c48cad3b4b
-description: Ajout de résultats emplacements de bureaux de votre organisation, les bâtiments et autres espaces de travail s’affichent dans votre Microsoft Search
+description: Ajouter des emplacements afin que les bureaux, les bâtiments et les autres espaces de travail de votre organisation apparaissent dans vos résultats de travail Microsoft Search
 ms.openlocfilehash: ad9aa274e7934917a2c4fee05ad2c24af3d117f4
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378643"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508544"
 ---
 # <a name="add-a-location"></a>Ajouter un emplacement
 
-Ajouter un emplacement et de la recherchent de vos utilisateurs que les autres voient l’adresse de la construction, office, ou lieu et son emplacement sur le plan. Ils peuvent également utiliser Bing Maps pour obtenir des instructions, consultez la rubrique What ' s proche et bien plus encore.
+Ajoutez un emplacement et lorsque vos utilisateurs effectuent une recherche, ils verront l'adresse du bâtiment, bureau ou emplacement et son emplacement sur une carte. Ils peuvent également utiliser Bing Maps pour obtenir des instructions, voir ce qui est à proximité, et bien plus encore.
   
-1. Accédez au portail d’administration de recherche Microsoft
+1. Accédez au portail d’administration de la recherche Microsoft.
     
-2. Dans le volet de navigation, cliquez sur **emplacements**
+2. Dans le volet de navigation, cliquez sur **emplacements** .
     
 3. En haut de la page, cliquez sur **Ajouter un emplacement**
     
-    La page Modifier les emplacement s’affiche, avec une feuille de route interactive.
+    La page modifier l'emplacement apparaît, avec une carte interactive.
     
-4. Choisir un **Pays/région**
+4. Choisir un **pays/une région**
     
 5. Entrez l' **adresse**
     
-    Vous verrez un indicateur d’emplacement sur la feuille de route pour l’adresse. Il s’agit de la carte, les utilisateurs verront lorsqu’ils recherchent pour cet emplacement.
+    Vous verrez un indicateur d'emplacement sur la carte pour l'adresse. Il s'agit de la carte que les utilisateurs verront lorsqu'ils rechercheront cet emplacement.
     
-6. Si nécessaire, entrez les informations de la **Suite/unité/étage** 
+6. Si nécessaire, entrez des informations sur la **suite/l'unité/plancher** . 
     
-7. Entrez un **nom de l’emplacement**
+7. Entrer un **nom d'emplacement**
     
-    Décrivent cet emplacement de la façon dont vos utilisateurs font généralement référence à celui-ci. Par exemple, un nom ou numéro. Ne pas répéter l’adresse.
+    Décrivez cet emplacement de la façon dont vos utilisateurs s'y réfèrent généralement. Par exemple, un nom ou un numéro de bâtiment. Ne répétez pas l'adresse.
     
-8. Entrez des **mots clés** que vous souhaitez déclencher cet emplacement 
+8. Entrez les **Mots clés** devant déclencher cet emplacement 
     
-    Inclure des mots ou des personnes de phrases utilisera pour trouver cet emplacement ou les zones qu’il contient, par exemple : sièges sociaux, création 9 ou café ouest.
+    Inclure des mots ou des expressions que les utilisateurs utiliseront pour trouver cet emplacement ou les zones qu'il contient, par exemple: siège, bâtiment 9 ou café occidental.
     
-9. Entrez des **mots clés réservés**
+9. Entrez les**Mots clés réservés**
     
-    Utiliser un ou plusieurs mots-clés réservés pour garantir qu’un emplacement apparaît toujours en tant que les résultats les plus pertinents. Mots clés réservés ne peuvent pas être partagés entre les différents emplacements.
+    Utilisez un ou plusieurs mots clés réservés pour vous assurer qu'un emplacement apparaît toujours comme le résultat le plus pertinent. Les mots clés réservés ne peuvent pas être partagés entre les emplacements.
 
   
 

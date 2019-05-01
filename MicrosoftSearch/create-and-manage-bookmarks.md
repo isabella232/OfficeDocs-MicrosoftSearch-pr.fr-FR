@@ -13,67 +13,67 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5479dc34-3de0-41c5-94a7-ba87069e6b43
-description: Vue d’ensemble de toutes les méthodes que vous pouvez ajouter et créer des signets pour les résultats de travail Microsoft Search
+description: Vue d'ensemble de toutes les méthodes d'ajout et de création de signets pour les résultats de travail Microsoft Search
 ms.openlocfilehash: 306a7cb3b278556454c3050926fed93f2a6929ad
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378662"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508656"
 ---
 # <a name="create-and-manage-bookmarks"></a>Créer et gérer des signets
 
 ## <a name="create-bookmarks"></a>Créer des signets
 
-Signets vous aident à promouvoir les meilleurs résultats possibles pour les requêtes de lié au travail de l’utilisateur. L’ajouter des signets plus vous publiez, plus la valeur et avantages pour les utilisateurs.
+Les signets vous aident à promouvoir les meilleurs résultats possibles pour les requêtes liées au travail de votre utilisateur. Les autres signets que vous publiez, la valeur ajoutée et les avantages que vous ajoutez pour les utilisateurs.
   
 - [Créer des signets](create-bookmarks.md)
     
     Ajouter des signets individuels.
     
-- [Publier les signets par défaut](publish-default-bookmarks.md)
+- [Publier des signets par défaut](publish-default-bookmarks.md)
     
-    Passez en revue et ajouter des signets suggérés qui traitent les recherches les plus courantes.
+    Examinez et ajoutez les signets suggérés qui répondent aux recherches courantes.
     
-- [Importation SharePoint promu résultats et des requêtes les plus fréquentes](import-sharepoint-promoted-results-and-top-queries.md)
+- [Importer les résultats et principales requêtes mis en avant par SharePoint](import-sharepoint-promoted-results-and-top-queries.md)
     
-    Les requêtes des utilisateurs de tirer parti et des résultats de meilleur résultat existants pour créer des signets suggérées.
+    Exploitez les requêtes des utilisateurs et les résultats des meilleurs résultats existants pour créer des signets suggérés.
     
 - [Créer des signets en bloc](bulk-create-bookmarks.md)
     
-    Créer des signets dans un fichier .csv et importer en bloc.
+    Créez des signets dans un fichier. csv et importez-les par bloc.
     
 - [Intégrer PowerApps](integrate-powerapps.md)
     
-    Ajouter des applications à vos signets.
+    Ajoutez des applications métiers à vos signets.
     
-## <a name="manage-bookmarks"></a>Gérer les signets
+## <a name="manage-bookmarks"></a>Gérer des signets
 
-Utilisez l’état de signet, outils, de filtrage et en bloc des outils d’exportation/importation pour [Rechercher et mettre à jour le contenu du signet](manage-bookmarks.md), y compris le titre, mots clés et des URL.
+Utilisez les outils État du signet, outils de filtrage et exportation/importation en bloc pour [Rechercher et mettre à jour le contenu du signet](manage-bookmarks.md), y compris le titre, les mots clés et les URL.
   
-## <a name="bookmark-status"></a>État de signet
+## <a name="bookmark-status"></a>Statut du signet
 
-Dans le portail d’administration, vous pouvez afficher des signets à leur état actuel :
+Dans le portail d'administration, vous pouvez afficher les signets en fonction de leur état actuel:
   
-- publiée ; 
+- Published
     
-    Signets publiés s’affichent dans les résultats de recherche Bing lorsqu’un utilisateur autorisé recherche un mot clé.
+    Les signets publiés apparaissent dans les résultats de la recherche Bing lorsqu'un utilisateur autorisé recherche un mot clé.
     
-- ébauchée. 
+- Première version
     
-    Si un signet n’est pas prêt à publier, l’enregistrer en tant que brouillon. Signets brouillon n’apparaîtront pas sur Bing.
+    Si un signet n'est pas prêt à être publié, enregistrez-le en tant que brouillon. Les signets de brouillon n'apparaîtront pas sur Bing.
     
-- Planifiée
+- Scheduled
     
-    Signets planifiées sont automatiquement publiés à une date ultérieure.
+    Les signets planifiés sont automatiquement publiés à une date ultérieure.
     
 - Expiré
     
-    Signets expirées ont été supprimés automatiquement en fonction de leur date d’expiration de contenu publié.
+    Les signets expirés ont été automatiquement supprimés du contenu publié en fonction de leur date d'expiration.
     
-- Suggérés
+- Préférable
     
-    Signets suggérées sont basées sur les commentaires des utilisateurs. Vous pouvez également voir des suggestions par défaut de Microsoft.
+    Les signets suggérés sont basés sur les commentaires des utilisateurs. Vous pouvez également consulter les suggestions par défaut de Microsoft.
 
   
 

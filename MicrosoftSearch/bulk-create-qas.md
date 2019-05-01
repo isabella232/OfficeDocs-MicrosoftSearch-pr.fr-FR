@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
 description: Ajoutez rapidement des réponses aux questions fréquemment posées à l'aide des outils d'importation dans le portail d'administration de Microsoft Search.
 ms.openlocfilehash: 28fcf57c44f809e7f9b0c1b27042f4549067a0f8
-ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901815"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508672"
 ---
 # <a name="bulk-create-qas"></a>Créer en bloc des Q&R
 
