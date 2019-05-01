@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 description: Découvrez comment définir Bing comme moteur de recherche par défaut de votre entreprise à l’aide de Microsoft Search (recherche Microsoft).
 ms.openlocfilehash: a0798da94f4433bb754c71b9e0d00e09ba5a543b
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612528"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508769"
 ---
 # <a name="set-default-search-engine"></a>Définir le mode de recherche par défaut
 
@@ -108,7 +108,7 @@ Chaque domaine que votre contrôleur gère doit avoir un dossier séparé. La co
     
 2. Accédez à**&lt;Ordinateur/ Configuration Utilisateur&gt;\ Modèles administratifs\Composants Windows\Microsoft Edge**.
     
-1. Double-cliquez sur Définir le moteur de recherche par défaut, définir àActivé, puis entrer`https://www.bing.com/sa/osd/bfb.xml`
+1. Double-cliquez sur **Définir le moteur de recherche par défaut**, définir à**Activé**, puis entrer`https://www.bing.com/sa/osd/bfb.xml`
     
 3. Appliquez la stratégie de groupe résultante GPO en les reliant au domaine approprié.
     

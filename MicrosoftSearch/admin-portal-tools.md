@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
 description: Vue d’ensemble des outils de la recherche Microsoft pour créer et importer des résultats, vous connecter automatiquement et lancer des recherches de n’importe où
 ms.openlocfilehash: cae2612979673e086820fec78e4c1e085e38a749
-ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31746389"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508720"
 ---
 # <a name="admin-portal-tools"></a>Outils du portail d’administration
 

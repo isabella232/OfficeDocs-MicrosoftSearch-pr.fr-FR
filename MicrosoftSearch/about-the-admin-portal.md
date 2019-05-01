@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: fee131cf-c82f-4f4b-b288-6fa98a99b793
 description: Obtenez les fonctionnalités d’une vue d’ensemble de l’administrateur du portail et accédez aux autorisations disponibles avec Microsoft Search (recherche Microsoft)
 ms.openlocfilehash: 28706ada22b1523c8a89101d673fdbea8f752cb2
-ms.sourcegitcommit: e88ba533b4d6c623bda5953c49f7082b13b4d114
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800213"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508528"
 ---
 # <a name="about-the-admin-portal"></a>À propos du portail d’Administration
 

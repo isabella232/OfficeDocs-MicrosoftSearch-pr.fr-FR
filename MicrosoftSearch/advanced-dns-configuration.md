@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 47eedbb9-6da9-47e0-aac5-078d34a7fd8f
 description: Garantissez une expérience transparente à vos utilisateurs pour se connecter en configurant votre serveur DNS à l’aide d’un enregistrement CNAME
 ms.openlocfilehash: fa797b95f346d6d03bd020da146bb330c715e392
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612437"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508512"
 ---
 # <a name="advanced-dns-configuration"></a>Configuration DNS avancée
 

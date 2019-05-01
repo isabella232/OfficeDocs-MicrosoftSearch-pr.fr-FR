@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: a220c1bf-7cee-448a-90a3-310284d03e81
 description: Réduisez le nombre d’invites de connexion à la recherche Microsoft ou à Office 365 pour les utilisateurs de Windows 10.
 ms.openlocfilehash: 55d359edac36020ec8cf2aad6b64ca9737ee1066
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612350"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508928"
 ---
 # <a name="test-single-sign-on"></a>Test de l’authentification unique
 
