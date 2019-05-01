@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 8ad58820-69e0-4ee0-88a7-d207ffa790b7
 description: Ajoutez ces URL et domaines à la liste verte de votre pare-feu afin que vos utilisateurs puissent accéder facilement à la recherche Microsoft.
 ms.openlocfilehash: 87a650bd0db17fbede2483c5e117cb03841f6378
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612544"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508735"
 ---
-# <a name="manage-network-connections"></a><span data-ttu-id="d4bf1-103">Gestion des connexions réseau</span><span class="sxs-lookup"><span data-stu-id="d4bf1-103">Manage network connections</span></span>
+# <a name="manage-network-connections"></a><span data-ttu-id="0fa1e-103">Gestion des connexions réseau</span><span class="sxs-lookup"><span data-stu-id="0fa1e-103">Manage network connections</span></span>
 
-<span data-ttu-id="d4bf1-104">Pour vous assurer que vos utilisateurs et vous-même pouvez vous connecter aux points de terminaison de la recherche Microsoft, ajoutez ces URL aux listes vertes de votre pare-feu.</span><span class="sxs-lookup"><span data-stu-id="d4bf1-104">To ensure you and your users can connect to Microsoft Search endpoints, add these URLs to your firewall allow lists.</span></span>
+<span data-ttu-id="0fa1e-104">Pour vous assurer que vos utilisateurs et vous-même pouvez vous connecter aux points de terminaison de la recherche Microsoft, ajoutez ces URL aux listes vertes de votre pare-feu.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-104">To ensure you and your users can connect to Microsoft Search endpoints, add these URLs to your firewall allow lists.</span></span>
   
-## <a name="for-the-microsoft-search-admin-portal"></a><span data-ttu-id="d4bf1-105">Pour le portail d’administration de la recherche Microsoft, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="d4bf1-105">For the Microsoft Search Admin portal:</span></span>
+## <a name="for-the-microsoft-search-admin-portal"></a><span data-ttu-id="0fa1e-105">Pour le portail d’administration de la recherche Microsoft, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="0fa1e-105">For the Microsoft Search Admin portal:</span></span>
 
 - `www.bingatwork.com`
     
@@ -39,7 +39,7 @@ ms.locfileid: "29612544"
     
 - `\*.bingforbusiness.com`
     
-## <a name="for-microsoft-search-in-bing"></a><span data-ttu-id="d4bf1-106">Pour la recherche Microsoft dans Bing, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="d4bf1-106">For Microsoft Search in Bing:</span></span>
+## <a name="for-microsoft-search-in-bing"></a><span data-ttu-id="0fa1e-106">Pour la recherche Microsoft dans Bing, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="0fa1e-106">For Microsoft Search in Bing:</span></span>
 
 - `business.bing.com`
     
