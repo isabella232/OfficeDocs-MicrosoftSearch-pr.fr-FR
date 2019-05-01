@@ -1,5 +1,5 @@
 ---
-title: Importation SharePoint promu résultats et des requêtes les plus fréquentes
+title: Importer les résultats et principales requêtes mis en avant par SharePoint
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -15,31 +15,31 @@ search.appverid:
 ms.assetid: 3d2a1498-174e-4214-9cf1-8b58cce5a872
 description: Utiliser des requêtes de recherche à partir de SharePoint pour créer des résultats de travail pour Microsoft Search
 ms.openlocfilehash: f4fa4354fed667800c1cdcf63c86f59d736c342a
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378652"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508752"
 ---
-# <a name="import-sharepoint-promoted-results-and-top-queries"></a><span data-ttu-id="c7bab-103">Importation SharePoint promu résultats et des requêtes les plus fréquentes</span><span class="sxs-lookup"><span data-stu-id="c7bab-103">Import SharePoint promoted results and top queries</span></span>
+# <a name="import-sharepoint-promoted-results-and-top-queries"></a><span data-ttu-id="036fd-103">Importer les résultats et principales requêtes mis en avant par SharePoint</span><span class="sxs-lookup"><span data-stu-id="036fd-103">Import SharePoint promoted results and top queries</span></span>
 
-<span data-ttu-id="c7bab-104">Pour tirer parti des requêtes des utilisateurs et les meilleurs résultats que vous avez créé dans SharePoint, Microsoft Search inclut deux outils pour importer ces informations sous forme de signets suggérées :</span><span class="sxs-lookup"><span data-stu-id="c7bab-104">To leverage users' queries and Best Bets you've created in SharePoint, Microsoft Search includes two tools to import this information as suggested bookmarks:</span></span> 
+<span data-ttu-id="036fd-104">Pour tirer parti des requêtes et des meilleurs résultats que vous avez créés dans SharePoint, Microsoft Search inclut deux outils pour importer ces informations en tant que signets suggérés:</span><span class="sxs-lookup"><span data-stu-id="036fd-104">To leverage users' queries and Best Bets you've created in SharePoint, Microsoft Search includes two tools to import this information as suggested bookmarks:</span></span> 
   
-## <a name="import-sharepoint-promoted-result-query-rules"></a><span data-ttu-id="c7bab-105">Importation SharePoint promu des règles de requête de résultats</span><span class="sxs-lookup"><span data-stu-id="c7bab-105">Import SharePoint promoted result query rules</span></span>
+## <a name="import-sharepoint-promoted-result-query-rules"></a><span data-ttu-id="036fd-105">Importer des règles de requête de résultats promus SharePoint</span><span class="sxs-lookup"><span data-stu-id="036fd-105">Import SharePoint promoted result query rules</span></span>
 
-<span data-ttu-id="c7bab-p101">Importez ces règles, précédemment appelé les meilleurs résultats, sous forme de signets suggérées. Pour les rendre disponibles pour vos utilisateurs, les publier. Durée de la publication varie en fonction du nombre de signets que vous sélectionnez.</span><span class="sxs-lookup"><span data-stu-id="c7bab-p101">Import these rules, previously called Best Bets, as suggested bookmarks. To make them available to your users, publish them. Publishing time varies based on the number of bookmarks you select.</span></span>
+<span data-ttu-id="036fd-106">ImPortez ces règles, précédemment appelées meilleurs résultats, sous la forme de signets suggérés.</span><span class="sxs-lookup"><span data-stu-id="036fd-106">Import these rules, previously called Best Bets, as suggested bookmarks.</span></span> <span data-ttu-id="036fd-107">Pour les rendre accessibles à vos utilisateurs, publiez-les.</span><span class="sxs-lookup"><span data-stu-id="036fd-107">To make them available to your users, publish them.</span></span> <span data-ttu-id="036fd-108">Le temps de publication varie en fonction du nombre de signets que vous sélectionnez.</span><span class="sxs-lookup"><span data-stu-id="036fd-108">Publishing time varies based on the number of bookmarks you select.</span></span>
   
-## <a name="import-top-sharepoint-queries-using-powershell"></a><span data-ttu-id="c7bab-109">Importer des requêtes SharePoint principales à l’aide de PowerShell</span><span class="sxs-lookup"><span data-stu-id="c7bab-109">Import top SharePoint queries using PowerShell</span></span>
+## <a name="import-top-sharepoint-queries-using-powershell"></a><span data-ttu-id="036fd-109">Importer les requêtes SharePoint les plus courantes à l'aide de PowerShell</span><span class="sxs-lookup"><span data-stu-id="036fd-109">Import top SharePoint queries using PowerShell</span></span>
 
-- <span data-ttu-id="c7bab-p102">Télécharger les requêtes les plus fréquentes à partir de SharePoint. Le script PowerShell vous demandera de vos informations d’identification d’administrateur SharePoint.</span><span class="sxs-lookup"><span data-stu-id="c7bab-p102">Download the top queries from your SharePoint. The PowerShell script will prompt you for your SharePoint administrator credentials.</span></span>
+- <span data-ttu-id="036fd-110">Téléchargez les requêtes les plus populaires à partir de votre SharePoint.</span><span class="sxs-lookup"><span data-stu-id="036fd-110">Download the top queries from your SharePoint.</span></span> <span data-ttu-id="036fd-111">Le script PowerShell vous invite à entrer vos informations d'identification d'administrateur SharePoint.</span><span class="sxs-lookup"><span data-stu-id="036fd-111">The PowerShell script will prompt you for your SharePoint administrator credentials.</span></span>
     
-- <span data-ttu-id="c7bab-112">Exécuter une recherche de SharePoint pour chacune des requêtes supérieurs pour obtenir le résultat de recherche.</span><span class="sxs-lookup"><span data-stu-id="c7bab-112">Run a SharePoint search for each of the top queries to get the top search result.</span></span>
+- <span data-ttu-id="036fd-112">Exécutez une recherche SharePoint pour chacune des requêtes les plus fréquentes afin d'obtenir le résultat de recherche le plus élevé.</span><span class="sxs-lookup"><span data-stu-id="036fd-112">Run a SharePoint search for each of the top queries to get the top search result.</span></span>
     
-- <span data-ttu-id="c7bab-113">Ajouter des signets suggérés pour le portail d’administration.</span><span class="sxs-lookup"><span data-stu-id="c7bab-113">Add suggested bookmarks to the Admin portal.</span></span>
+- <span data-ttu-id="036fd-113">Ajouter des signets suggérés au portail d'administration.</span><span class="sxs-lookup"><span data-stu-id="036fd-113">Add suggested bookmarks to the Admin portal.</span></span>
     
-- <span data-ttu-id="c7bab-p103">Vos requêtes SharePoint les plus fréquentes sont une excellente candidats pour les signets. Utilisez le script PowerShell pour les importer sous forme de signets suggérées. Ce script est :</span><span class="sxs-lookup"><span data-stu-id="c7bab-p103">Your top SharePoint queries are excellent candidates for bookmarks. Use the PowerShell script to import them as suggested bookmarks. This script will:</span></span>
+- <span data-ttu-id="036fd-114">Vos requêtes SharePoint les plus fréquentes sont des candidats excellents pour les signets.</span><span class="sxs-lookup"><span data-stu-id="036fd-114">Your top SharePoint queries are excellent candidates for bookmarks.</span></span> <span data-ttu-id="036fd-115">Utilisez le script PowerShell pour les importer sous forme de signets suggérés.</span><span class="sxs-lookup"><span data-stu-id="036fd-115">Use the PowerShell script to import them as suggested bookmarks.</span></span> <span data-ttu-id="036fd-116">Ce script:</span><span class="sxs-lookup"><span data-stu-id="036fd-116">This script will:</span></span>
     
-<span data-ttu-id="c7bab-p104">Pour plus d’informations sur la configuration requise, des exemples et paramètres disponibles, téléchargez le script et consultez le fichier Lisez-moi. Après le script PowerShell s’exécute, un administrateur ou un éditeur doit consulter les signets suggérées et apportez les modifications nécessaires avant leur publication.</span><span class="sxs-lookup"><span data-stu-id="c7bab-p104">For information about requirements, examples, and available parameters, download the script and review the README file. After the PowerShell script runs, an admin or editor should review the suggested bookmarks and make any necessary edits before they're published.</span></span>
+<span data-ttu-id="036fd-117">Pour plus d'informations sur les conditions requises, les exemples et les paramètres disponibles, téléchargez le script et passez en revue le fichier Lisez-moi.</span><span class="sxs-lookup"><span data-stu-id="036fd-117">For information about requirements, examples, and available parameters, download the script and review the README file.</span></span> <span data-ttu-id="036fd-118">Une fois le script PowerShell exécuté, un administrateur ou un éditeur doit passer en revue les signets suggérés et apporter les modifications nécessaires avant qu'il ne soit publié.</span><span class="sxs-lookup"><span data-stu-id="036fd-118">After the PowerShell script runs, an admin or editor should review the suggested bookmarks and make any necessary edits before they're published.</span></span>
 
   
 

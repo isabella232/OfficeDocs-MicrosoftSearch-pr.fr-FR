@@ -12,43 +12,43 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: ecd31803-0b32-4ba3-8bb8-a0d1dfb8b856
-description: Utiliser Microsoft Search pour rechercher des équipes et conversations Yammer et les détails qui vous verrez
+description: Utiliser Microsoft Search pour trouver des équipes et des conversations Yammer, ainsi que les détails que vous verrez
 ms.openlocfilehash: b339242fbafc4cff0f6fe5960cb90b0d05493105
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378649"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508856"
 ---
-# <a name="find-conversations"></a><span data-ttu-id="244cc-103">Rechercher des conversations</span><span class="sxs-lookup"><span data-stu-id="244cc-103">Find conversations</span></span>
+# <a name="find-conversations"></a><span data-ttu-id="f22b1-103">Rechercher des conversations</span><span class="sxs-lookup"><span data-stu-id="f22b1-103">Find conversations</span></span>
 
-<span data-ttu-id="244cc-104">Rechercher vos propres conversations Teams Microsoft ou Microsoft Yammer ou les conversations entre collaborateurs auxquels vous avez accès à privé.</span><span class="sxs-lookup"><span data-stu-id="244cc-104">Search for your own private Microsoft Teams or Microsoft Yammer conversations or conversations between co-workers that you have access to.</span></span>
+<span data-ttu-id="f22b1-104">Recherchez vos propres conversations Microsoft teams privées ou conversations ou conversations Microsoft Yammer entre collègues auxquels vous avez accès.</span><span class="sxs-lookup"><span data-stu-id="f22b1-104">Search for your own private Microsoft Teams or Microsoft Yammer conversations or conversations between co-workers that you have access to.</span></span>
   
-<span data-ttu-id="244cc-105">Résultats de la conversation sont les suivantes :</span><span class="sxs-lookup"><span data-stu-id="244cc-105">Conversation results include:</span></span>
+<span data-ttu-id="f22b1-105">Les résultats de conversation sont les suivants:</span><span class="sxs-lookup"><span data-stu-id="f22b1-105">Conversation results include:</span></span>
   
-- <span data-ttu-id="244cc-106">Le nom de la personne qui a envoyé</span><span class="sxs-lookup"><span data-stu-id="244cc-106">The name of person who sent it</span></span>
+- <span data-ttu-id="f22b1-106">Le nom de la personne qui l'a envoyé</span><span class="sxs-lookup"><span data-stu-id="f22b1-106">The name of person who sent it</span></span>
     
-- <span data-ttu-id="244cc-107">S’il s’agit d’un équipes ou de la conversation de Yammer</span><span class="sxs-lookup"><span data-stu-id="244cc-107">If it's a Teams or Yammer conversation</span></span>
+- <span data-ttu-id="f22b1-107">S'il s'agit d'une conversation Yammer ou teams</span><span class="sxs-lookup"><span data-stu-id="f22b1-107">If it's a Teams or Yammer conversation</span></span>
     
-- <span data-ttu-id="244cc-108">Un extrait de code du message</span><span class="sxs-lookup"><span data-stu-id="244cc-108">A snippet of the message</span></span>
+- <span data-ttu-id="f22b1-108">Extrait de message</span><span class="sxs-lookup"><span data-stu-id="f22b1-108">A snippet of the message</span></span>
     
-- <span data-ttu-id="244cc-109">La date de la conversation</span><span class="sxs-lookup"><span data-stu-id="244cc-109">The conversation date</span></span>
+- <span data-ttu-id="f22b1-109">Date de conversation</span><span class="sxs-lookup"><span data-stu-id="f22b1-109">The conversation date</span></span>
     
-- <span data-ttu-id="244cc-110">Pièces jointes ayant accès à</span><span class="sxs-lookup"><span data-stu-id="244cc-110">Attachments that you have access to</span></span>
+- <span data-ttu-id="f22b1-110">Pièces jointes auxquelles vous avez accès</span><span class="sxs-lookup"><span data-stu-id="f22b1-110">Attachments that you have access to</span></span>
     
-<span data-ttu-id="244cc-p101">Les résultats de la 30 conversation supérieure apparaissent dans les résultats de travail. Pour plus d’informations ou des résultats, cliquez simplement sur le message. Dans les résultats de travail, conversations Yammer sont triées par date, mais dans le client de Yammer, ils sont tri par pertinence.</span><span class="sxs-lookup"><span data-stu-id="244cc-p101">The top 30 conversation results appear in work results. For more information or results, just click the message. In work results, Yammer conversations are sorted by date, but in the Yammer client, they're sort by relevancy.</span></span>
+<span data-ttu-id="f22b1-111">Les 30 premiers résultats de conversation apparaissent dans les résultats du travail.</span><span class="sxs-lookup"><span data-stu-id="f22b1-111">The top 30 conversation results appear in work results.</span></span> <span data-ttu-id="f22b1-112">Pour plus d'informations ou de résultats, il vous suffit de cliquer sur le message.</span><span class="sxs-lookup"><span data-stu-id="f22b1-112">For more information or results, just click the message.</span></span> <span data-ttu-id="f22b1-113">Dans les résultats du travail, les conversations Yammer sont triées par date, mais dans le client Yammer, elles sont triées par pertinence.</span><span class="sxs-lookup"><span data-stu-id="f22b1-113">In work results, Yammer conversations are sorted by date, but in the Yammer client, they're sort by relevancy.</span></span>
   
-<span data-ttu-id="244cc-114">Vous ne verrez les résultats de la conversation si votre organisation n’utilise pas les équipes ou Yammer ou votre service informatique n’activer ces résultats.</span><span class="sxs-lookup"><span data-stu-id="244cc-114">You won't see conversation results if your organization doesn't use Teams or Yammer or your IT department doesn't turn on these results.</span></span>
+<span data-ttu-id="f22b1-114">Vous ne verrez pas de résultats de conversation si votre organisation n'utilise pas teams ou Yammer ou si votre service informatique n'active pas ces résultats.</span><span class="sxs-lookup"><span data-stu-id="f22b1-114">You won't see conversation results if your organization doesn't use Teams or Yammer or your IT department doesn't turn on these results.</span></span>
   
-1. <span data-ttu-id="244cc-115">Connectez-vous à votre compte professionnel ou de l’école sur Bing</span><span class="sxs-lookup"><span data-stu-id="244cc-115">Sign in to your work or school account on Bing</span></span>
+1. <span data-ttu-id="f22b1-115">Connectez-vous à votre compte professionnel ou scolaire sur Bing</span><span class="sxs-lookup"><span data-stu-id="f22b1-115">Sign in to your work or school account on Bing</span></span>
     
-2. <span data-ttu-id="244cc-116">Rechercher une rubrique ou nom de la personne, cliquez sur l’onglet **Conversations**</span><span class="sxs-lookup"><span data-stu-id="244cc-116">Search for a topic or a person's name and click the **Conversations** tab</span></span> 
+2. <span data-ttu-id="f22b1-116">Recherchez une rubrique ou le nom d'une personne, puis cliquez sur l'onglet **conversations** .</span><span class="sxs-lookup"><span data-stu-id="f22b1-116">Search for a topic or a person's name and click the **Conversations** tab</span></span> 
     
-    <span data-ttu-id="244cc-117">Par exemple, « envoyez-moi du pont » ou « Amy Turner. »</span><span class="sxs-lookup"><span data-stu-id="244cc-117">For example, 'send me the deck' or 'Amy Turner.'</span></span>
+    <span data-ttu-id="f22b1-117">Par exemple, «m'envoyer le talon» ou «Amy Turner».</span><span class="sxs-lookup"><span data-stu-id="f22b1-117">For example, 'send me the deck' or 'Amy Turner.'</span></span>
     
-3. <span data-ttu-id="244cc-118">Conversations apparaissent en haut de la page de résultats</span><span class="sxs-lookup"><span data-stu-id="244cc-118">Conversations appear at the top of the results page</span></span>
+3. <span data-ttu-id="f22b1-118">Les conversations apparaissent en haut de la page de résultats</span><span class="sxs-lookup"><span data-stu-id="f22b1-118">Conversations appear at the top of the results page</span></span>
     
-    <span data-ttu-id="244cc-p102">Autres résultats web apparaissent sous elle. Ils ne sont pas propres à votre organisation.</span><span class="sxs-lookup"><span data-stu-id="244cc-p102">Other web results appear under it. They aren't specific to your organization.</span></span>
+    <span data-ttu-id="f22b1-119">D'autres résultats Web s'affichent sous lui.</span><span class="sxs-lookup"><span data-stu-id="f22b1-119">Other web results appear under it.</span></span> <span data-ttu-id="f22b1-120">Elles ne sont pas propres à votre organisation.</span><span class="sxs-lookup"><span data-stu-id="f22b1-120">They aren't specific to your organization.</span></span>
     
 
 

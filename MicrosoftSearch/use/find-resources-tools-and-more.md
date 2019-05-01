@@ -1,5 +1,5 @@
 ---
-title: Trouvez des ressources et outils
+title: Trouver des ressources, des outils et bien plus encore
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,31 +12,31 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: a67e015a-e10a-442a-b1c9-511136d54d1f
-description: Microsoft Search permet de rechercher des sites intranet, des ressources, des outils et des liens vers des informations internes
+description: Utiliser Microsoft Search pour rechercher des sites intranet, des ressources, des outils et des liens vers des informations internes
 ms.openlocfilehash: 4d484b832db07532d678af1f1c0f9f3348166e79
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378639"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508840"
 ---
-# <a name="find-resources-tools-and-more"></a><span data-ttu-id="2ca58-103">Trouvez des ressources et outils</span><span class="sxs-lookup"><span data-stu-id="2ca58-103">Find resources, tools, and more</span></span>
+# <a name="find-resources-tools-and-more"></a><span data-ttu-id="02130-103">Trouver des ressources, des outils et bien plus encore</span><span class="sxs-lookup"><span data-stu-id="02130-103">Find resources, tools, and more</span></span>
 
-<span data-ttu-id="2ca58-104">Votre service informatique crée et publie les signets vers les ressources internes et externes, des outils, des pages et plus d’informations pour vous aider à trouver les informations dont vous avez besoin.</span><span class="sxs-lookup"><span data-stu-id="2ca58-104">Your IT department creates and publishes bookmarks to internal and external resources, tools, pages, and more to help you find the information you need.</span></span>
+<span data-ttu-id="02130-104">Votre service informatique crée et publie des signets vers des ressources, des outils, des pages internes et externes pour vous aider à trouver les informations dont vous avez besoin.</span><span class="sxs-lookup"><span data-stu-id="02130-104">Your IT department creates and publishes bookmarks to internal and external resources, tools, pages, and more to help you find the information you need.</span></span>
   
-<span data-ttu-id="2ca58-p101">Résultats signet incluent une brève description du site ou de ressources avec un lien vers celui-ci. Par exemple, la plupart des organisations créera signets avantages, ressources humaines, info carrière, support technique et le temps de désactiver la création de rapports.</span><span class="sxs-lookup"><span data-stu-id="2ca58-p101">Bookmark results include a brief description of the site or resource along with a link to it. For example, most organizations will create bookmarks for benefits, HR, career info, IT support, and time off reporting.</span></span>
+<span data-ttu-id="02130-105">Les résultats de signet incluent une brève description du site ou de la ressource, ainsi qu'un lien vers celui-ci.</span><span class="sxs-lookup"><span data-stu-id="02130-105">Bookmark results include a brief description of the site or resource along with a link to it.</span></span> <span data-ttu-id="02130-106">Par exemple, la plupart des organisations créeront des signets pour les avantages, les RH, les informations sur la carrière, la prise en charge du service informatique et la création de rapports de temps.</span><span class="sxs-lookup"><span data-stu-id="02130-106">For example, most organizations will create bookmarks for benefits, HR, career info, IT support, and time off reporting.</span></span>
   
-<span data-ttu-id="2ca58-107">Résultats Q&A inclura généralement ces mêmes informations ainsi qu’une brève réponse susceptibles d’avoir les informations dont vous avez besoin et un lien si vous souhaitez en savoir plus.</span><span class="sxs-lookup"><span data-stu-id="2ca58-107">Q&A results will generally include this same information as well as a brief answer that may have the info you need and a link if you want to learn more.</span></span>
+<span data-ttu-id="02130-107">Les résultats de Q&A incluent généralement ces mêmes informations, ainsi qu'une brève réponse qui peut contenir les informations dont vous avez besoin et un lien si vous souhaitez en savoir plus.</span><span class="sxs-lookup"><span data-stu-id="02130-107">Q&A results will generally include this same information as well as a brief answer that may have the info you need and a link if you want to learn more.</span></span>
   
-1. <span data-ttu-id="2ca58-108">Connectez-vous à votre compte professionnel ou de l’école sur Bing</span><span class="sxs-lookup"><span data-stu-id="2ca58-108">Sign in to your work or school account on Bing</span></span> 
+1. <span data-ttu-id="02130-108">Connectez-vous à votre compte professionnel ou scolaire sur Bing</span><span class="sxs-lookup"><span data-stu-id="02130-108">Sign in to your work or school account on Bing</span></span> 
     
-2. <span data-ttu-id="2ca58-109">Recherche d’un élément</span><span class="sxs-lookup"><span data-stu-id="2ca58-109">Search for something</span></span>
+2. <span data-ttu-id="02130-109">Rechercher un objet</span><span class="sxs-lookup"><span data-stu-id="02130-109">Search for something</span></span>
     
-    <span data-ttu-id="2ca58-110">Par exemple, recherchez « avantages », « H », « carrière Infos sur, » « Support technique » ou « signaler temps désactivé ».</span><span class="sxs-lookup"><span data-stu-id="2ca58-110">For example, try searching for 'benefits,' 'HR,' 'career info,' 'IT support,' or 'report time off.'</span></span>
+    <span data-ttu-id="02130-110">Par exemple, essayez de Rechercher «avantages», «HR», «informations sur la carrière», «support informatique» ou «état de la durée de la notification».</span><span class="sxs-lookup"><span data-stu-id="02130-110">For example, try searching for 'benefits,' 'HR,' 'career info,' 'IT support,' or 'report time off.'</span></span>
     
-3. <span data-ttu-id="2ca58-111">Un signet ou un résultat Q&A apparaît en haut de la page ou de la colonne de droite</span><span class="sxs-lookup"><span data-stu-id="2ca58-111">A bookmark or Q&A result appears at the top of the page or right column</span></span>
+3. <span data-ttu-id="02130-111">Un signet ou un résultat Q&A apparaît en haut de la page ou de la colonne de droite</span><span class="sxs-lookup"><span data-stu-id="02130-111">A bookmark or Q&A result appears at the top of the page or right column</span></span>
     
-    <span data-ttu-id="2ca58-p102">Autres résultats web apparaissent sous elle. Ils ne sont pas propres à votre organisation.</span><span class="sxs-lookup"><span data-stu-id="2ca58-p102">Other web results appear under it. They aren't specific to your organization.</span></span>
+    <span data-ttu-id="02130-112">D'autres résultats Web s'affichent sous lui.</span><span class="sxs-lookup"><span data-stu-id="02130-112">Other web results appear under it.</span></span> <span data-ttu-id="02130-113">Elles ne sont pas propres à votre organisation.</span><span class="sxs-lookup"><span data-stu-id="02130-113">They aren't specific to your organization.</span></span>
 
   
 

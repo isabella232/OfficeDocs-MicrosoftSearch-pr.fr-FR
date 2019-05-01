@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search
+title: Recherche Microsoft
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
-description: Microsoft Search est une expérience de recherche d'entreprise qui augmente la productivité et vous permet de gagner du temps en fournissant des résultats de recherche plus pertinents pour votre organisation.
-ms.openlocfilehash: 4d3e3edd64d527121c1e4aee30376b15ca0c2e60
-ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
+description: La recherche Microsoft est une expérience de recherche d’entreprise qui permet d’augmenter la productivité et de faire gagner du temps en fournissant un plus grand nombre de résultats de recherche pertinents pour votre organisation.
+ms.openlocfilehash: b9937dd91d6101386a781884917dab131ddc85e9
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31746397"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33509023"
 ---
-# <a name="microsoft-search"></a>Microsoft Search
+# <a name="microsoft-search"></a>Recherche Microsoft
 
 <ul class="panelContent cardsW cols cols2">
     <li>
@@ -45,9 +45,9 @@ ms.locfileid: "31746397"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Pourquoi Microsoft Search(recherche Microsoft)</h2>
-                        <p>Obtenir une expérience de recherche d'entreprise qui augmente la productivité et vous permet de gagner du temps en fournissant des résultats de recherche plus pertinents pour votre organisation</p>
-                        <p><a href="why-microsoft-search.md">En savoir plus</a></p>
+                        <h2>Pourquoi Microsoft Search?</h2>
+                        <p>Bénéficiez d’une expérience de recherche d’entreprise qui améliore la productivité et fait gagner du temps en fournissant des résultats plus pertinents à votre organisation.</p>
+                        <p><a href="overview-microsoft-search.md">En savoir plus</a></p>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@ ms.locfileid: "31746397"
     </li>
 </ul>
 
-<h2>Rubriques proposées</h2>
+<h2>Rubriques recommandées</h2>
 
 <ul class="panelContent cardsW">
     <li>
@@ -68,9 +68,9 @@ ms.locfileid: "31746397"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Fonctionnalités clés</h3>
-                        <p>Voir les fonctionnalités disponibles pour les administrateurs et les utilisateurs, y compris les éléments que vous trouverez lors de la recherche</p>
-                        <p><a href="features.md">En savoir plus</a></p>
+                        <h3>Faire en sorte que le contenu soit utilisable</h3>
+                        <p>Découvrez les fonctionnalités disponibles pour les administrateurs et les utilisateurs, y compris les résultats que vous obtiendrez à l’issue de vos recherches.</p>
+                        <p><a href="make-content-easy-to-find.md">En savoir plus</a></p>
                     </div>
                 </div>
             </div>
@@ -86,9 +86,9 @@ ms.locfileid: "31746397"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Configuration rapide de l'administrateur</h3>
-                        <p>Découvrez comment activer Microsoft Search et le configurer pour votre organisation en quatre étapes simples</p>
-                        <p><a href="quick-set-up.md">Démarrer maintenant</a></p>
+                        <h3>Prise en main</h3>
+                        <p>Découvrez comment commencer à utiliser Microsoft Search et comment le configurer pour votre organisation</p>
+                        <p><a href="setup-microsoft-search.md">Commencer maintenant</a></p>
                     </div>
                 </div>
             </div>
@@ -104,9 +104,9 @@ ms.locfileid: "31746397"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>FAQ</h3>
-                        <p>Obtenez des réponses à certaines des questions fréquemment posées à propos de Microsoft Search</p>
-                        <p><a href="faqs.md">Parcourir le Forum aux questions</a></p>
+                        <h3>Recherche dans SharePoint</h3>
+                        <p>Vous vous demandez comment SharePoint et Microsoft Search fonctionnent ensemble?</p>
+                        <p><a href="get-started-search-in-sharepoint-online.md">Obtenir les faits</a></p>
                     </div>
                 </div>
             </div>
@@ -120,9 +120,9 @@ ms.locfileid: "31746397"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Utiliser Microsoft Search</h2>
-                        <p>Microsoft Search est un moyen simple, rapide et plus sûr de trouver des informations, de gagner en productivité et de travailler plus efficacement</p>
-                        <p><a href="use/about-microsoft-search.md">En savoir plus</a></p>
+                        <h2>Utiliser la fonctionnalité Recherche Microsoft</h2>
+                        <p>Afficher les articles et les vidéos pour aider vos utilisateurs à améliorer la productivité de Microsoft Search </p>
+                        <p><a href="https://go.microsoft.com/fwlink/?linkid=2090946">Regarde</a></p>
                     </div>
                 </div>
             </div>
@@ -134,7 +134,7 @@ ms.locfileid: "31746397"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/c8456838-c6db-41f7-9e84-eebfd9c5b0b8.png" alt="How work results appear on Bing" />
+                            <img src="media/c8456838-c6db-41f7-9e84-eebfd9c5b0b8.png" alt="How work results appear in Bing" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -144,46 +144,3 @@ ms.locfileid: "31746397"
         </div>
     </li>
 </ul>
-
-<h2>Plus d'informations</h2>
-<ul class="panelContent cardsW">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p><a href="security.md">Sécurité</a></p>
-                        <p><a href="requirements.md">Configuration requise</a></p>  
-                        <p><a href="about-the-admin-portal.md">À propos du portail d’Administration</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p><a href="quick-set-up.md">Configuration rapide</a></p>
-                        <p><a href="connected-services.md">Services connectés</a></p>
-                        <p><a href="set-up-microsoft-search.md">Configuration de la recherche Microsoft</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p><a href="create-bookmarks.md">Créer des signets</a></p>
-                        <p><a href="create-qas.md">Créer des Questions-réponses</a></p>
-                        <p><a href="add-users.md">Gérer les utilisateurs</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>  
