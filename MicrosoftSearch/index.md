@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
 description: La recherche Microsoft est une expérience de recherche d’entreprise qui permet d’augmenter la productivité et de faire gagner du temps en fournissant un plus grand nombre de résultats de recherche pertinents pour votre organisation.
 ms.openlocfilehash: 904a54998900e1c702d273dc71ceb605929269ed
-ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31746381"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33509099"
 ---
 # <a name="microsoft-search"></a>Recherche Microsoft
 
@@ -46,7 +46,7 @@ ms.locfileid: "31746381"
                 <div class="card">
                     <div class="cardText">
                         <h2>Pourquoi choisir la recherche Microsoft</h2>
-                        <p>Bénéficiez d’une expérience de recherche d’entreprise qui améliore la productivité et fait gagner du temps en fournissant des résultats plus pertinents à votre organisation.</p>
+                        <p>Faites l’expérience d’une recherche d’entreprise qui permet d’augmenter votre productivité et de vous faire gagner du temps en fournissant à votre organisation un plus grand nombre de résultats de recherche pertinents.</p>
                         <p><a href="why-microsoft-search.md">Raisons</a></p>
                     </div>
                 </div>
@@ -87,7 +87,7 @@ ms.locfileid: "31746381"
                     </div>
                     <div class="cardText">
                         <h3>Configuration rapide de l’administrateur</h3>
-                        <p>Apprenez à activer la fonctionnalité Recherche Microsoft et à la configurer pour votre organisation, le tout en quatre étapes.</p>
+                        <p>Découvrez comment activer la recherche Microsoft et la configurer pour votre organisation, le tout en quatre étapes.</p>
                         <p><a href="quick-set-up.md">Commencer maintenant</a></p>
                     </div>
                 </div>
@@ -105,8 +105,8 @@ ms.locfileid: "31746381"
                     </div>
                     <div class="cardText">
                         <h3>FAQ</h3>
-                        <p>Obtenez les réponses aux questions les plus fréquemment posées sur la fonctionnalité Recherche Microsoft.</p>
-                        <p><a href="faqs.md">Parcourir les FAQ</a></p>
+                        <p>Trouvez les réponses à certaines des questions les plus fréquentes concernant la recherche Microsoft.</p>
+                        <p><a href="faqs.md">Parcourir la page des FAQ</a></p>
                     </div>
                 </div>
             </div>
@@ -120,8 +120,8 @@ ms.locfileid: "31746381"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Utiliser la fonctionnalité Recherche Microsoft</h2>
-                        <p>La fonctionnalité Recherche Microsoft est un moyen simple, rapide et sûr de rechercher des informations tout en gagnant en productivité et en travaillant plus intelligemment.</p>
+                        <h2>Utilisation de la recherche Microsoft</h2>
+                        <p>Grâce à la recherche Microsoft, recherchez des informations simplement, rapidement et en toute sécurité afin d’être plus productifs et de travailler plus intelligemment </p>
                         <p><a href="use/about-microsoft-search.md">Raisons</a></p>
                     </div>
                 </div>
@@ -154,7 +154,7 @@ ms.locfileid: "31746381"
                     <div class="cardText">
                         <p><a href="security.md">Sécurité</a></p>
                         <p><a href="requirements.md">Configuration requise</a></p>  
-                        <p><a href="about-the-admin-portal.md">À propos du portail d’administration</a></p>
+                        <p><a href="about-the-admin-portal.md">À propos du Centre d’administration</a></p>
                     </div>
                 </div>
             </div>
@@ -178,8 +178,8 @@ ms.locfileid: "31746381"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><a href="create-bookmarks.md">Créer des signets</a></p>
-                        <p><a href="create-qas.md">Créer des Q&R</a></p>
+                        <p><a href="create-bookmarks.md">Création de signets</a></p>
+                        <p><a href="create-qas.md">Créer des questions et réponses</a></p>
                         <p><a href="add-users.md">Gérer les utilisateurs</a></p>
                     </div>
                 </div>
