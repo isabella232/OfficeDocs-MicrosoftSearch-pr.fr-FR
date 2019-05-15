@@ -1,26 +1,25 @@
 ---
 title: Recherche Microsoft
-ms.author: dawholl
-author: dawholl
-manager: kellis
-ms.date: 09/20/2018
+ms.author: anfowler
+author: adefowler
+manager: mnirkhe
 ms.audience: Admin
 ms.topic: landing-page
 layout: LandingPage
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
 description: La recherche Microsoft est une expérience de recherche d’entreprise qui permet d’augmenter la productivité et de faire gagner du temps en fournissant un plus grand nombre de résultats de recherche pertinents pour votre organisation.
-ms.openlocfilehash: 904a54998900e1c702d273dc71ceb605929269ed
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: e6f805ae5d1f8d622d779d71d7375047ab99ce75
+ms.sourcegitcommit: 06f995ae7696a8cafcd12d19ed16a35d059b6abb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33509099"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "33858263"
 ---
 # <a name="microsoft-search"></a>Recherche Microsoft
 
@@ -45,9 +44,9 @@ ms.locfileid: "33509099"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Pourquoi choisir la recherche Microsoft</h2>
-                        <p>Faites l’expérience d’une recherche d’entreprise qui permet d’augmenter votre productivité et de vous faire gagner du temps en fournissant à votre organisation un plus grand nombre de résultats de recherche pertinents.</p>
-                        <p><a href="why-microsoft-search.md">Raisons</a></p>
+                        <h2>Pourquoi choisir la fonctionnalité Recherche Microsoft ?</h2>
+                        <p>Bénéficiez d’une expérience de recherche d’entreprise qui améliore la productivité et fait gagner du temps en fournissant des résultats plus pertinents à votre organisation.</p>
+                        <p><a href="overview-microsoft-search.md">Raisons</a></p>
                     </div>
                 </div>
             </div>
@@ -68,9 +67,9 @@ ms.locfileid: "33509099"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Principales fonctionnalités</h3>
+                        <h3>Possibilité de faire une recherche dans le contenu</h3>
                         <p>Découvrez les fonctionnalités disponibles pour les administrateurs et les utilisateurs, y compris les résultats que vous obtiendrez à l’issue de vos recherches.</p>
-                        <p><a href="features.md">En savoir plus</a></p>
+                        <p><a href="make-content-easy-to-find.md">En savoir plus</a></p>
                     </div>
                 </div>
             </div>
@@ -86,9 +85,9 @@ ms.locfileid: "33509099"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Configuration rapide de l’administrateur</h3>
-                        <p>Découvrez comment activer la recherche Microsoft et la configurer pour votre organisation, le tout en quatre étapes.</p>
-                        <p><a href="quick-set-up.md">Commencer maintenant</a></p>
+                        <h3>Prise en main</h3>
+                        <p>Prenez en main la fonctionnalité Recherche Microsoft et configurez-la pour votre organisation</p>
+                        <p><a href="setup-microsoft-search.md">Commencer maintenant</a></p>
                     </div>
                 </div>
             </div>
@@ -104,9 +103,9 @@ ms.locfileid: "33509099"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>FAQ</h3>
-                        <p>Trouvez les réponses à certaines des questions les plus fréquentes concernant la recherche Microsoft.</p>
-                        <p><a href="faqs.md">Parcourir la page des FAQ</a></p>
+                        <h3>Recherche dans SharePoint</h3>
+                        <p>Vous vous demandez comment SharePoint et la fonctionnalité Recherche Microsoft fonctionnent ensemble ?</p>
+                        <p><a href="get-started-search-in-sharepoint-online.md">Obtenez des informations</a></p>
                     </div>
                 </div>
             </div>
@@ -120,9 +119,9 @@ ms.locfileid: "33509099"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>Utilisation de la recherche Microsoft</h2>
-                        <p>Grâce à la recherche Microsoft, recherchez des informations simplement, rapidement et en toute sécurité afin d’être plus productifs et de travailler plus intelligemment </p>
-                        <p><a href="use/about-microsoft-search.md">Raisons</a></p>
+                        <h2>Utiliser la fonctionnalité Recherche Microsoft</h2>
+                        <p>Affichez les articles et vidéos pour vous aider à former vos utilisateurs à être plus productifs avec la fonctionnalité Recherche Microsoft </p>
+                        <p><a href="https://go.microsoft.com/fwlink/?linkid=2090946">Venez les découvrir</a></p>
                     </div>
                 </div>
             </div>
@@ -134,7 +133,7 @@ ms.locfileid: "33509099"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/c8456838-c6db-41f7-9e84-eebfd9c5b0b8.png" alt="How work results appear on Bing" />
+                            <img src="media/c8456838-c6db-41f7-9e84-eebfd9c5b0b8.png" alt="How work results appear in Bing" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -144,46 +143,3 @@ ms.locfileid: "33509099"
         </div>
     </li>
 </ul>
-
-<h2>Plus d’informations</h2>
-<ul class="panelContent cardsW">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p><a href="security.md">Sécurité</a></p>
-                        <p><a href="requirements.md">Configuration requise</a></p>  
-                        <p><a href="about-the-admin-portal.md">À propos du Centre d’administration</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p><a href="quick-set-up.md">Configuration rapide</a></p>
-                        <p><a href="connected-services.md">Services connectés</a></p>
-                        <p><a href="set-up-microsoft-search.md">Configuration de la recherche Microsoft</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p><a href="create-bookmarks.md">Création de signets</a></p>
-                        <p><a href="create-qas.md">Créer des questions et réponses</a></p>
-                        <p><a href="add-users.md">Gérer les utilisateurs</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>  
