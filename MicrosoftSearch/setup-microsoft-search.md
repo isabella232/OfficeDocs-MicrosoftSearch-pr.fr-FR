@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer la fonctionnalité Recherche Microsoft pour la première fois.
-ms.openlocfilehash: f4648988563245f6a61169d7e62b48c456dfa8fa
-ms.sourcegitcommit: 06f995ae7696a8cafcd12d19ed16a35d059b6abb
+ms.openlocfilehash: 703b9c6ab1213fa06f3d959a0e29a9b757e2b2c9
+ms.sourcegitcommit: aeb44797427bd39c133fa899ab77277dd90fe47b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33858271"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33970129"
 ---
 # <a name="set-up-microsoft-search"></a>Configurer la fonctionnalité Recherche Microsoft
 
@@ -30,7 +30,11 @@ Pour en savoir plus sur la fonctionnalité **Recherche Microsoft**, consultez [V
 
 La fonctionnalité **Recherche Microsoft** est activée par défaut pour toutes les applications Microsoft qui la prennent en charge, dans le cadre de Microsoft 365. Il suffit à l’utilisateur de se connecter avec un compte professionnel ou scolaire et d’utiliser un navigateur sur lequel Bing est défini comme fournisseur de recherche par défaut.
 
-Toutefois, en tant qu’administrateur, vous devez tenir compte de certains éléments pour rendre l’expérience **Recherche Microsoft** efficace et conviviale au sein de votre organisation.
+Vous administrez **Recherche Microsoft** à partir du **Centre d’administration Microsoft 365**. Connectez-vous à l’aide de vos informations d'identification d’administrateur, sélectionnez la vignette **Administrateur** dans le **Lanceur d’applications**. Dans le **Centre d’administration Microsoft 365**, sélectionnez **Recherche Microsoft** sous **Paramètres** dans le volet de navigation de gauche. 
+
+**Remarque:** si vous voyez le portail d’administration hérité et voulez basculer vers le nouveau centre d’administration, activez le commutateur **Essayer la version préliminaire** dans l’angle supérieur droit du Centre d’administration. 
+
+En tant qu’administrateur, vous devez tenir compte de certains éléments pour rendre l’expérience **Recherche Microsoft** efficace et conviviale au sein de votre organisation.
 
 ### <a name="step-1-check-access-level-of-your-users"></a>Étape 1 : Vérifier le niveau d’accès de vos utilisateurs
 
@@ -42,13 +46,13 @@ Découvrez-en plus sur la [planification des autorisations](https://docs.microso
 
 Deux nouveaux rôles ont été ajoutés au **Centre d’administration Microsoft** : administrateur de recherche et éditeur de recherche.  L’administrateur général, qui bénéficie de tous les privilèges, affecte des rôles d’administrateur aux utilisateurs, notamment le rôle d’administrateur de recherche. Les administrateurs de recherche peuvent déléguer les rôles Administrateur de recherche ou Éditeur de recherche à d’autres utilisateurs. Pour plus d’informations sur les différents rôles d’administrateur, consultez l’article [À propos des rôles d’administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide).
 
+**Remarque :** ces deux nouveaux rôles (administrateur de recherche et éditeur de recherche) ne sont disponibles que dans le **Centre d’administration Microsoft 365**, pas dans le portail d’administration hérité. 
+
 Les administrateurs de recherche ont une influence directe sur l’expérience de recherche des utilisateurs finaux, notamment sur le choix des types de résultats présentés à ceux-ci. Il peut être difficile pour une seule et même personne de choisir et de créer du contenu capable de faire autorité dans les nombreux domaines sur lesquels les utilisateurs effectuent des recherches au sein d’une organisation. Nous vous recommandons donc de tirer parti de l’expertise et des connaissances d’experts techniques et d’autres utilisateurs en les ajoutant en tant qu’éditeurs. 
 
 La fonctionnalité **Recherche Microsoft** vous permet de gérer le contenu et les paramètres de recherche de votre organisation à l’aide de deux nouveaux rôles :
 1. **Administrateur de recherche :** ce rôle permet de créer et de gérer le contenu des résultats de recherche et de définir les paramètres de requête pour améliorer les résultats des recherches effectuées au sein de l’organisation. L’administrateur de recherche gère la configuration de la fonctionnalité **Recherche Microsoft** et désigne les éditeurs de recherche pour créer le contenu.
 2. **Éditeur de recherche :** ce rôle permet de créer, de gérer et de supprimer du contenu pour la fonctionnalité **Recherche Microsoft** dans le Centre d’administration Microsoft 365. Un éditeur peut créer et gérer du contenu éditorial tel que des questions fréquentes et leurs réponses, des emplacements importants, des sites et des applications fréquemment recherchés et utilisés, etc. Il n’a toutefois pas accès à la gestion des paramètres de recherche.
-
-**Remarque :** ces deux nouveaux rôles (administrateur de recherche et éditeur de recherche) ne sont disponibles que dans le **Centre d’administration Microsoft 365**, pas dans le portail d’administration hérité.
 
 Pour attribuer des rôles d’administrateur, consultez [Attribuer des rôles d’administrateur dans Office 365 pour les entreprises](https://docs.microsoft.com/en-us/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 
