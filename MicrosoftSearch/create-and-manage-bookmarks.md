@@ -13,67 +13,70 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5479dc34-3de0-41c5-94a7-ba87069e6b43
-description: Vue d'ensemble de toutes les méthodes d'ajout et de création de signets pour les résultats de travail Microsoft Search
-ms.openlocfilehash: 306a7cb3b278556454c3050926fed93f2a6929ad
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Vue d’ensemble de toutes les façons d’ajouter et de créer des signets pour les résultats de travail de la fonctionnalité Recherche Microsoft
+ms.openlocfilehash: a7243d43eb5132c8096115852a4ebd8bd4dc3305
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508656"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968371"
 ---
-# <a name="create-and-manage-bookmarks"></a><span data-ttu-id="ffddd-103">Créer et gérer des signets</span><span class="sxs-lookup"><span data-stu-id="ffddd-103">Create and manage bookmarks</span></span>
+# <a name="create-and-manage-bookmarks"></a><span data-ttu-id="3eca6-103">Créer et gérer des signets</span><span class="sxs-lookup"><span data-stu-id="3eca6-103">Create and manage notifications</span></span>
 
-## <a name="create-bookmarks"></a><span data-ttu-id="ffddd-104">Créer des signets</span><span class="sxs-lookup"><span data-stu-id="ffddd-104">Create bookmarks</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="3eca6-104">Les paramètres de Recherche Microsoft dans Bing sont désormais accessibles dans le Centre d’administration Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="3eca6-104">Microsoft Search in Bing settings are now available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="3eca6-105">Commencez par [assigner des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.</span><span class="sxs-lookup"><span data-stu-id="3eca6-105">Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.</span></span>
+    
+## <a name="create-bookmarks"></a><span data-ttu-id="3eca6-106">Créer des signets</span><span class="sxs-lookup"><span data-stu-id="3eca6-106">Create bookmarks</span></span>
 
-<span data-ttu-id="ffddd-105">Les signets vous aident à promouvoir les meilleurs résultats possibles pour les requêtes liées au travail de votre utilisateur.</span><span class="sxs-lookup"><span data-stu-id="ffddd-105">Bookmarks help you promote the best possible results for your user's work-related queries.</span></span> <span data-ttu-id="ffddd-106">Les autres signets que vous publiez, la valeur ajoutée et les avantages que vous ajoutez pour les utilisateurs.</span><span class="sxs-lookup"><span data-stu-id="ffddd-106">The more bookmarks you publish, the more value and benefit you add for users.</span></span>
+<span data-ttu-id="3eca6-107">Les signets vous aident à mettre en avant les meilleurs résultats possibles pour les requêtes de vos utilisateurs liées au travail.</span><span class="sxs-lookup"><span data-stu-id="3eca6-107">Bookmarks help you promote the best possible results for your user's work-related queries.</span></span> <span data-ttu-id="3eca6-108">Plus vous publiez de signets, plus c’est avantageux et précieux pour vos utilisateurs.</span><span class="sxs-lookup"><span data-stu-id="3eca6-108">The more Bookmarks, Q&A, and Locations you have, the more value and benefit you add for users.</span></span>
   
-- [<span data-ttu-id="ffddd-107">Créer des signets</span><span class="sxs-lookup"><span data-stu-id="ffddd-107">Create bookmarks</span></span>](create-bookmarks.md)
+- [<span data-ttu-id="3eca6-109">Créer des signets</span><span class="sxs-lookup"><span data-stu-id="3eca6-109">Create bookmarks</span></span>](create-bookmarks.md)
     
-    <span data-ttu-id="ffddd-108">Ajouter des signets individuels.</span><span class="sxs-lookup"><span data-stu-id="ffddd-108">Add individual bookmarks.</span></span>
+    <span data-ttu-id="3eca6-110">Ajoutez des signets.</span><span class="sxs-lookup"><span data-stu-id="3eca6-110">Add individual bookmarks.</span></span>
     
-- [<span data-ttu-id="ffddd-109">Publier des signets par défaut</span><span class="sxs-lookup"><span data-stu-id="ffddd-109">Publish default bookmarks</span></span>](publish-default-bookmarks.md)
+- [<span data-ttu-id="3eca6-111">Publier des signets par défaut</span><span class="sxs-lookup"><span data-stu-id="3eca6-111">Publish default bookmarks</span></span>](publish-default-bookmarks.md)
     
-    <span data-ttu-id="ffddd-110">Examinez et ajoutez les signets suggérés qui répondent aux recherches courantes.</span><span class="sxs-lookup"><span data-stu-id="ffddd-110">Review and add suggested bookmarks that address common searches.</span></span>
+    <span data-ttu-id="3eca6-112">Passez en revue et ajoutez des signets suggérés qui répondent à des recherches courantes.</span><span class="sxs-lookup"><span data-stu-id="3eca6-112">Review and add suggested bookmarks that address common searches.</span></span>
     
-- [<span data-ttu-id="ffddd-111">Importer les résultats et principales requêtes mis en avant par SharePoint</span><span class="sxs-lookup"><span data-stu-id="ffddd-111">Import SharePoint promoted results and top queries</span></span>](import-sharepoint-promoted-results-and-top-queries.md)
+- [<span data-ttu-id="3eca6-113">Importer les requêtes les plus fréquentes et les résultats promus par SharePoint</span><span class="sxs-lookup"><span data-stu-id="3eca6-113">Import SharePoint promoted results and top queries</span></span>](import-sharepoint-promoted-results-and-top-queries.md)
     
-    <span data-ttu-id="ffddd-112">Exploitez les requêtes des utilisateurs et les résultats des meilleurs résultats existants pour créer des signets suggérés.</span><span class="sxs-lookup"><span data-stu-id="ffddd-112">Leverage users' queries and existing Best Bet results to create suggested bookmarks.</span></span>
+    <span data-ttu-id="3eca6-114">Tirez parti des requêtes des utilisateurs et des meilleurs résultats existants pour créer des signets suggérés.</span><span class="sxs-lookup"><span data-stu-id="3eca6-114">Leverage users' queries and existing Best Bet results to create suggested bookmarks.</span></span>
     
-- [<span data-ttu-id="ffddd-113">Créer des signets en bloc</span><span class="sxs-lookup"><span data-stu-id="ffddd-113">Bulk create bookmarks</span></span>](bulk-create-bookmarks.md)
+- [<span data-ttu-id="3eca6-115">Créer en bloc des signets</span><span class="sxs-lookup"><span data-stu-id="3eca6-115">Bulk create bookmarks</span></span>](bulk-create-bookmarks.md)
     
-    <span data-ttu-id="ffddd-114">Créez des signets dans un fichier. csv et importez-les par bloc.</span><span class="sxs-lookup"><span data-stu-id="ffddd-114">Create bookmarks in a .csv file and bulk import them.</span></span>
+    <span data-ttu-id="3eca6-116">Créez des signets dans un fichier .csv, puis importez-les en bloc.</span><span class="sxs-lookup"><span data-stu-id="3eca6-116">Create bookmarks in a .csv file and bulk import them.</span></span>
     
-- [<span data-ttu-id="ffddd-115">Intégrer PowerApps</span><span class="sxs-lookup"><span data-stu-id="ffddd-115">Integrate PowerApps</span></span>](integrate-powerapps.md)
+- [<span data-ttu-id="3eca6-117">Intégrer des PowerApps</span><span class="sxs-lookup"><span data-stu-id="3eca6-117">Integrate PowerApps</span></span>](integrate-powerapps.md)
     
-    <span data-ttu-id="ffddd-116">Ajoutez des applications métiers à vos signets.</span><span class="sxs-lookup"><span data-stu-id="ffddd-116">Add business apps to your bookmarks.</span></span>
+    <span data-ttu-id="3eca6-118">Ajoutez des applications métier à vos signets.</span><span class="sxs-lookup"><span data-stu-id="3eca6-118">Add business apps to your bookmarks.</span></span>
     
-## <a name="manage-bookmarks"></a><span data-ttu-id="ffddd-117">Gérer des signets</span><span class="sxs-lookup"><span data-stu-id="ffddd-117">Manage bookmarks</span></span>
+## <a name="manage-bookmarks"></a><span data-ttu-id="3eca6-119">Gérer des signets</span><span class="sxs-lookup"><span data-stu-id="3eca6-119">Manage bookmarks</span></span>
 
-<span data-ttu-id="ffddd-118">Utilisez les outils État du signet, outils de filtrage et exportation/importation en bloc pour [Rechercher et mettre à jour le contenu du signet](manage-bookmarks.md), y compris le titre, les mots clés et les URL.</span><span class="sxs-lookup"><span data-stu-id="ffddd-118">Use the bookmark status, filtering tools, and bulk export/import tools to [find and update bookmark content](manage-bookmarks.md), including title, keywords, and URLs.</span></span>
+<span data-ttu-id="3eca6-120">Utilisez l’état des signets, les outils de filtrage et les outils d’exportation/importation en bloc pour [rechercher et mettre à jour le contenu des signets](manage-bookmarks.md), notamment le titre, les mots clés et les URL.</span><span class="sxs-lookup"><span data-stu-id="3eca6-120">Use the bookmark status, filtering tools, and bulk export/import tools to [find and update bookmark content](manage-bookmarks.md), including title, keywords, and URLs.</span></span>
   
-## <a name="bookmark-status"></a><span data-ttu-id="ffddd-119">Statut du signet</span><span class="sxs-lookup"><span data-stu-id="ffddd-119">Bookmark status</span></span>
+## <a name="bookmark-status"></a><span data-ttu-id="3eca6-121">États des signets</span><span class="sxs-lookup"><span data-stu-id="3eca6-121">Bookmark status</span></span>
 
-<span data-ttu-id="ffddd-120">Dans le portail d'administration, vous pouvez afficher les signets en fonction de leur état actuel:</span><span class="sxs-lookup"><span data-stu-id="ffddd-120">In the Admin portal, you can view bookmarks by their current status:</span></span>
+<span data-ttu-id="3eca6-122">Dans le portail d’administration, vous pouvez afficher les signets selon leur statut actuel :</span><span class="sxs-lookup"><span data-stu-id="3eca6-122">In the Admin portal, you can view bookmarks by their current status:</span></span>
   
-- <span data-ttu-id="ffddd-121">Published</span><span class="sxs-lookup"><span data-stu-id="ffddd-121">Published</span></span>
+- <span data-ttu-id="3eca6-123">Publié</span><span class="sxs-lookup"><span data-stu-id="3eca6-123">Published</span></span>
     
-    <span data-ttu-id="ffddd-122">Les signets publiés apparaissent dans les résultats de la recherche Bing lorsqu'un utilisateur autorisé recherche un mot clé.</span><span class="sxs-lookup"><span data-stu-id="ffddd-122">Published bookmarks appear in Bing search results when an authorized user searches for a keyword.</span></span>
+    <span data-ttu-id="3eca6-124">Les signets publiés apparaissent dans les résultats de Recherche Bing quand un utilisateur autorisé recherche un mot clé.</span><span class="sxs-lookup"><span data-stu-id="3eca6-124">Published bookmarks appear in Bing search results when an authorized user searches for a keyword.</span></span>
     
-- <span data-ttu-id="ffddd-123">Première version</span><span class="sxs-lookup"><span data-stu-id="ffddd-123">Draft</span></span>
+- <span data-ttu-id="3eca6-125">Brouillon</span><span class="sxs-lookup"><span data-stu-id="3eca6-125">Draft</span></span>
     
-    <span data-ttu-id="ffddd-124">Si un signet n'est pas prêt à être publié, enregistrez-le en tant que brouillon.</span><span class="sxs-lookup"><span data-stu-id="ffddd-124">If a bookmark isn't ready to publish, save it as a draft.</span></span> <span data-ttu-id="ffddd-125">Les signets de brouillon n'apparaîtront pas sur Bing.</span><span class="sxs-lookup"><span data-stu-id="ffddd-125">Draft bookmarks will not appear on Bing.</span></span>
+    <span data-ttu-id="3eca6-126">Si un signet n’est pas prêt pour publication, enregistrez-le en tant que brouillon.</span><span class="sxs-lookup"><span data-stu-id="3eca6-126">If a bookmark isn't ready to publish, save it as a draft.</span></span> <span data-ttu-id="3eca6-127">Les signets dont le statut est Brouillon n’apparaissent pas sur Bing.</span><span class="sxs-lookup"><span data-stu-id="3eca6-127">Draft bookmarks will not appear on Bing.</span></span>
     
-- <span data-ttu-id="ffddd-126">Scheduled</span><span class="sxs-lookup"><span data-stu-id="ffddd-126">Scheduled</span></span>
+- <span data-ttu-id="3eca6-128">Planifié</span><span class="sxs-lookup"><span data-stu-id="3eca6-128">Scheduled</span></span>
     
-    <span data-ttu-id="ffddd-127">Les signets planifiés sont automatiquement publiés à une date ultérieure.</span><span class="sxs-lookup"><span data-stu-id="ffddd-127">Scheduled bookmarks are automatically published on a future date.</span></span>
+    <span data-ttu-id="3eca6-129">Les signets dont le statut est Planifié sont automatiquement publiés à une date future donnée.</span><span class="sxs-lookup"><span data-stu-id="3eca6-129">Scheduled bookmarks are automatically published on a future date.</span></span>
     
-- <span data-ttu-id="ffddd-128">Expiré</span><span class="sxs-lookup"><span data-stu-id="ffddd-128">Expired</span></span>
+- <span data-ttu-id="3eca6-130">Expiré</span><span class="sxs-lookup"><span data-stu-id="3eca6-130">Expired</span></span>
     
-    <span data-ttu-id="ffddd-129">Les signets expirés ont été automatiquement supprimés du contenu publié en fonction de leur date d'expiration.</span><span class="sxs-lookup"><span data-stu-id="ffddd-129">Expired bookmarks were automatically removed from published content based on their expiration dates.</span></span>
+    <span data-ttu-id="3eca6-131">Les signets dont le statut est Expiré ont été automatiquement supprimés du contenu publié à leur date d’expiration.</span><span class="sxs-lookup"><span data-stu-id="3eca6-131">Expired bookmarks were automatically removed from published content based on their expiration dates.</span></span>
     
-- <span data-ttu-id="ffddd-130">Préférable</span><span class="sxs-lookup"><span data-stu-id="ffddd-130">Suggested</span></span>
+- <span data-ttu-id="3eca6-132">Suggéré</span><span class="sxs-lookup"><span data-stu-id="3eca6-132">Suggested Meetings</span></span>
     
-    <span data-ttu-id="ffddd-131">Les signets suggérés sont basés sur les commentaires des utilisateurs.</span><span class="sxs-lookup"><span data-stu-id="ffddd-131">Suggested bookmarks are based on feedback from users.</span></span> <span data-ttu-id="ffddd-132">Vous pouvez également consulter les suggestions par défaut de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="ffddd-132">You may also see default suggestions from Microsoft.</span></span>
+    <span data-ttu-id="3eca6-133">Les signets dont le statut est Suggéré font l’objet de commentaires d’utilisateurs.</span><span class="sxs-lookup"><span data-stu-id="3eca6-133">Suggested bookmarks are based on feedback from users.</span></span> <span data-ttu-id="3eca6-134">Vous pouvez également afficher des suggestions par défaut de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="3eca6-134">You may also see default suggestions from Microsoft.</span></span>
 
   
 
