@@ -13,67 +13,70 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5479dc34-3de0-41c5-94a7-ba87069e6b43
-description: Vue d'ensemble de toutes les méthodes d'ajout et de création de signets pour les résultats de travail Microsoft Search
-ms.openlocfilehash: 306a7cb3b278556454c3050926fed93f2a6929ad
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Vue d’ensemble de toutes les façons d’ajouter et de créer des signets pour les résultats de travail de la fonctionnalité Recherche Microsoft
+ms.openlocfilehash: a7243d43eb5132c8096115852a4ebd8bd4dc3305
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508656"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968371"
 ---
 # <a name="create-and-manage-bookmarks"></a>Créer et gérer des signets
 
+> [!IMPORTANT]
+> Les paramètres de Recherche Microsoft dans Bing sont désormais accessibles dans le Centre d’administration Microsoft 365. Commencez par [assigner des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.
+    
 ## <a name="create-bookmarks"></a>Créer des signets
 
-Les signets vous aident à promouvoir les meilleurs résultats possibles pour les requêtes liées au travail de votre utilisateur. Les autres signets que vous publiez, la valeur ajoutée et les avantages que vous ajoutez pour les utilisateurs.
+Les signets vous aident à mettre en avant les meilleurs résultats possibles pour les requêtes de vos utilisateurs liées au travail. Plus vous publiez de signets, plus c’est avantageux et précieux pour vos utilisateurs.
   
 - [Créer des signets](create-bookmarks.md)
     
-    Ajouter des signets individuels.
+    Ajoutez des signets.
     
 - [Publier des signets par défaut](publish-default-bookmarks.md)
     
-    Examinez et ajoutez les signets suggérés qui répondent aux recherches courantes.
+    Passez en revue et ajoutez des signets suggérés qui répondent à des recherches courantes.
     
-- [Importer les résultats et principales requêtes mis en avant par SharePoint](import-sharepoint-promoted-results-and-top-queries.md)
+- [Importer les requêtes les plus fréquentes et les résultats promus par SharePoint](import-sharepoint-promoted-results-and-top-queries.md)
     
-    Exploitez les requêtes des utilisateurs et les résultats des meilleurs résultats existants pour créer des signets suggérés.
+    Tirez parti des requêtes des utilisateurs et des meilleurs résultats existants pour créer des signets suggérés.
     
-- [Créer des signets en bloc](bulk-create-bookmarks.md)
+- [Créer en bloc des signets](bulk-create-bookmarks.md)
     
-    Créez des signets dans un fichier. csv et importez-les par bloc.
+    Créez des signets dans un fichier .csv, puis importez-les en bloc.
     
-- [Intégrer PowerApps](integrate-powerapps.md)
+- [Intégrer des PowerApps](integrate-powerapps.md)
     
-    Ajoutez des applications métiers à vos signets.
+    Ajoutez des applications métier à vos signets.
     
 ## <a name="manage-bookmarks"></a>Gérer des signets
 
-Utilisez les outils État du signet, outils de filtrage et exportation/importation en bloc pour [Rechercher et mettre à jour le contenu du signet](manage-bookmarks.md), y compris le titre, les mots clés et les URL.
+Utilisez l’état des signets, les outils de filtrage et les outils d’exportation/importation en bloc pour [rechercher et mettre à jour le contenu des signets](manage-bookmarks.md), notamment le titre, les mots clés et les URL.
   
-## <a name="bookmark-status"></a>Statut du signet
+## <a name="bookmark-status"></a>États des signets
 
-Dans le portail d'administration, vous pouvez afficher les signets en fonction de leur état actuel:
+Dans le portail d’administration, vous pouvez afficher les signets selon leur statut actuel :
   
-- Published
+- Publié
     
-    Les signets publiés apparaissent dans les résultats de la recherche Bing lorsqu'un utilisateur autorisé recherche un mot clé.
+    Les signets publiés apparaissent dans les résultats de Recherche Bing quand un utilisateur autorisé recherche un mot clé.
     
-- Première version
+- Brouillon
     
-    Si un signet n'est pas prêt à être publié, enregistrez-le en tant que brouillon. Les signets de brouillon n'apparaîtront pas sur Bing.
+    Si un signet n’est pas prêt pour publication, enregistrez-le en tant que brouillon. Les signets dont le statut est Brouillon n’apparaissent pas sur Bing.
     
-- Scheduled
+- Planifié
     
-    Les signets planifiés sont automatiquement publiés à une date ultérieure.
+    Les signets dont le statut est Planifié sont automatiquement publiés à une date future donnée.
     
 - Expiré
     
-    Les signets expirés ont été automatiquement supprimés du contenu publié en fonction de leur date d'expiration.
+    Les signets dont le statut est Expiré ont été automatiquement supprimés du contenu publié à leur date d’expiration.
     
-- Préférable
+- Suggéré
     
-    Les signets suggérés sont basés sur les commentaires des utilisateurs. Vous pouvez également consulter les suggestions par défaut de Microsoft.
+    Les signets dont le statut est Suggéré font l’objet de commentaires d’utilisateurs. Vous pouvez également afficher des suggestions par défaut de Microsoft.
 
   
 

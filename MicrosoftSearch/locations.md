@@ -13,55 +13,58 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 2379e72c-a7da-4e3f-932a-12d431a0a284
-description: Vue d'ensemble de toutes les façons dont vous pouvez inclure les emplacements de votre organisation dans les résultats de travail Microsoft Search
-ms.openlocfilehash: 4ff30d7e346d609e9fddaca70caa1a85652fad3c
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Vue d’ensemble de toutes les façons d’inclure les emplacements de votre organisation dans les résultats de travail de la fonctionnalité Recherche Microsoft
+ms.openlocfilehash: bcda64315f85b9770f47d1b6c08fd90296063487
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508808"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968458"
 ---
 # <a name="locations"></a>Emplacements
 
+> [!IMPORTANT]
+> Les paramètres de Recherche Microsoft dans Bing sont désormais accessibles dans le Centre d’administration Microsoft 365. Commencez par [assigner des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.
+    
 ## <a name="add-locations"></a>Ajouter des emplacements
 
-Les emplacements aident vos utilisateurs à trouver des adresses et à localiser les bâtiments, les bureaux et les autres espaces de travail de votre organisation sur une carte. Ils peuvent également utiliser Bing Maps pour obtenir des instructions, voir ce qui est à proximité, et bien plus encore.
+Les emplacements aident vos utilisateurs à trouver des adresses ainsi qu’à localiser des bâtiments, bureaux et autres espaces de travail de votre organisation sur une carte. Le service Bing Cartes permet aux utilisateurs d’obtenir des itinéraires, de voir ce qui se trouve à proximité, et bien plus encore.
   
 - [Ajouter un emplacement](add-a-location.md)
     
-    Ajouter un immeuble, un bureau, un campus ou un autre espace de travail
+    Ajoutez un bâtiment, un bureau, un campus ou un espace de travail.
     
 - [Créer en bloc des emplacements](bulk-create-locations.md)
     
-    Ajouter des emplacements à un fichier. csv et les importer par bloc
+    Ajoutez des emplacements à un fichier. csv et importez-les en bloc.
     
 ## <a name="manage-locations"></a>Gérer les emplacements
 
-Utiliser l'état de l'emplacement, les outils de filtrage et les outils d'exportation/importation en bloc pour [Rechercher et mettre à jour des emplacements](manage-locations.md), dont l'adresse et le nom d'emplacement
+Utilisez le statut de l'emplacement, les outils de filtrage et les outils d'exportation/importation en bloc pour [rechercher et mettre à jour des emplacements ](manage-locations.md), notamment leur adresse et leur nom.
   
 ## <a name="location-status"></a>Statut de l'emplacement
 
-Dans le portail d'administration, vous pouvez afficher les emplacements en fonction de leur état actuel:
+Dans le portail d’administration, vous pouvez afficher des emplacements en fonction de leur statut :
   
-- Published
+- Publié
     
-    Les emplacements publiés apparaissent dans les résultats de la recherche Bing lorsqu'un utilisateur autorisé recherche un mot clé.
+    Les emplacements publiés apparaissent dans les résultats de Recherche Bing quand un utilisateur autorisé recherche un mot clé.
     
-- Première version
+- Brouillon
     
-    Si un emplacement n'est pas prêt à être publié, enregistrez-le en tant que brouillon. Les emplacements de brouillon n'apparaissent pas sur Bing.
+    Si un emplacement n’est pas prêt pour publication, enregistrez-le en tant que brouillon. Les emplacements dont le statut est Brouillon n’apparaissent pas sur Bing.
     
-- Scheduled
+- Planifié
     
-    Les emplacements planifiés sont automatiquement publiés à une date ultérieure.
+    Les emplacements dont le statut est Planifié sont automatiquement publiés à une date future donnée.
     
 - Expiré
     
-    Les emplacements expirés ont été automatiquement supprimés du contenu publié en fonction de leur date d'expiration.
+    Les emplacements dont le statut est Expiré ont été automatiquement supprimés du contenu publié à leur date d’expiration.
     
-- Préférable
+- Suggéré
     
-    Les emplacements suggérés sont basés sur les commentaires des utilisateurs. Vous pouvez également consulter les suggestions par défaut de Microsoft.
+    Les emplacements dont le statut est Suggéré font l’objet de commentaires d’utilisateurs. Vous pouvez également afficher des suggestions par défaut de Microsoft.
 
   
 

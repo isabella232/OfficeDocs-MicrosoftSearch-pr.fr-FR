@@ -13,53 +13,56 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
-description: Ajoutez rapidement des réponses aux questions fréquemment posées à l'aide des outils d'importation dans le portail d'administration de Microsoft Search.
-ms.openlocfilehash: 28fcf57c44f809e7f9b0c1b27042f4549067a0f8
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Ajoutez rapidement des réponses aux questions fréquemment posées à l’aide des outils d’importation disponibles dans le portail d’administration de Recherche Microsoft
+ms.openlocfilehash: f535cb7ae843def536976cb1f05c8601de592cbb
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508672"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968301"
 ---
 # <a name="bulk-create-qas"></a>Créer en bloc des Q&R
 
-Téléchargez et utilisez le modèle. csv pour créer ou modifier en bloc Q&As. Il s'agit également d'un moyen simple d'enregistrer des Q&As brouillons qui nécessitent des modifications ou des mises à jour supplémentaires. Si vous devez modifier en bloc des Q&As existants, exportez-les à partir du portail d'administration, effectuez les modifications nécessaires, puis importez-les.
+> [!IMPORTANT]
+> Les paramètres de Recherche Microsoft dans Bing sont désormais accessibles dans le Centre d’administration Microsoft 365. Commencez par [assigner des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.
+    
+Téléchargez et utilisez le modèle .csv pour créer ou éditer en bloc des Q&R. C’est également un moyen simple d’enregistrer en bloc les brouillons de FAQ qui ont besoin de plus de modifications ou mises à jour. Si vous avez besoin de modifier des Q&R existants en bloc, des les exporter à partir du portail d’administration, apportez les modifications nécessaires, puis importez-les.
   
-1. Dans le coin supérieur droit de la section Q&As, cliquez sur **Importer** .
+1. Dans le coin supérieur droit de l’écran Q&R, cliquez sur **Importer**.
     
-2. Cliquez sur **Télécharger le modèle Q&A (. csv)** .
+2. Cliquez sur **télécharger un modèle Q&R (.csv)**
     
-3. Enregistrer et ouvrir le fichier. csv
+3. Enregistrez et ouvrez le fichier .csv.
     
-4. Ajouter le contenu et les paramètres Q&A et enregistrer le fichier
+4. Ajoutez le contenu et les paramètres des Q&R, puis enregistrez le fichier.
 
-    Le fichier. csv doit être enregistré en tant que fichier CSV UTF-8, d'autres types de fichiers ou de codages peuvent entraîner des erreurs d'importation
+    Le fichier. csv doit être enregistré au format CSV UTF-8, car d’autres types ou codages de fichiers peuvent occasionner des erreurs d’importation.
     
-5. Dans le coin supérieur droit de la section Q&As, cliquez sur **Importer** .
+5. Dans l’angle supérieur droit de la section Q&R, cliquez sur **Importer**.
     
-6. Dans le volet importer Q&As, cliquez sur **Parcourir** et naviguez jusqu'au fichier. csv que vous souhaitez importer. 
+6. Dans le volet Import Q&As (Importer des Q&R), cliquez sur **Parcourir**, puis accédez au fichier .csv à importer. 
     
-7. Cliquez sur **Importer**
+7. Cliquez sur **Importer**.
 
-# <a name="prevent-import-errors"></a>Empêcher les erreurs d'importation      
-Vous obtiendrez une erreur si les données requises sont manquantes ou non valides. En fonction de l'erreur, un fichier journal peut être généré avec davantage d'informations sur les lignes et les colonnes qui doivent être corrigées. Effectuez les modifications nécessaires, puis réessayez d'importer le fichier.
+# <a name="prevent-import-errors"></a>Éviter les erreurs d’importation      
+Si des données requises sont manquantes ou non valides, un message d’erreur s’affiche. Selon l’erreur, un fichier journal peut être généré afin de fournir des informations supplémentaires sur les lignes et les colonnes à corriger. Apportez les modifications nécessaires, puis réessayez d’importer le fichier.
 
 > [!NOTE]
-> Tant que toutes les erreurs ne sont pas résolues, vous ne pouvez pas créer ni modifier de Q&As. 
+> Vous ne pouvez pas créer ou modifier des Q&R tant que toutes les erreurs ne sont pas résolues. 
 
-Pour éviter les erreurs, assurez-vous que votre fichier d'importation est correctement mis en forme:
-- Inclut la ligne d'en-tête qui était dans le modèle d'importation.
-- Inclut toutes les colonnes qui se trouvaient dans le modèle d'importation.
-- L'ordre des colonnes est le même que celui du modèle d'importation.
-- Ces colonnes peuvent être vides: ID, Last modified et Last modified by
-- La colonne État ne peut pas être vide; cette information est requise  
-En fonction du champ d'État, Q&As sera enregistré en tant que brouillon, suggéré, programmé, ou il sera automatiquement publié.
+Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement mis en forme, à savoir :
+- Il inclut la ligne d’en-tête qui figurait dans le modèle d’importation.
+- Il inclut toutes les colonnes qui figuraient dans le modèle d’importation.
+- L’ordre des colonnes est le même que celui du modèle d’importation.
+- Les colonnes suivantes peuvent être vides : ID, Dernière modification et Dernière modification par.
+- La colonne État ne peut pas être vide. Cette information est obligatoire.  
+En fonction du contenu du champ Statut, les Q&R sont enregistrés en tant que Brouillon, Suggéré ou Planifié, ou sont automatiquement publiés.
 
-En outre, si vous incluez l'ID d'un Q&A existant, il sera remplacé par les informations contenues dans le fichier d'importation.
+Par ailleurs, si vous incluez l’ID d’une Q&R existante, celle-ci est remplacée par les informations contenues dans le fichier d’importation.
 
-Pour les organisations avec plusieurs locataires, vous pouvez exporter votre Q&As d'un client et l'importer dans un autre. Toutefois, vous devez supprimer toutes les données de la colonne ID avant d'importer.
+Si votre organisation compte plusieurs locataires, vous pouvez exporter vos Q&R à partir d’un locataire, puis les importer dans un autre. Toutefois, avant l’importation, vous devez supprimer les données contenues dans la colonne ID.
 
-Pour en savoir plus sur les champs requis et recommandés, voir [Create Q&As](create-qas.md).
+Pour en savoir plus sur les champs obligatoires et recommandés, voir [Créer des Q&R](create-qas.md).
 
   
 

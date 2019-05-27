@@ -1,5 +1,5 @@
 ---
-title: Créer et gérer Q&As
+title: Créer et gérer des Q&R
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,55 +13,58 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b40a575d-7727-4bb0-80da-e25131315790
-description: Vue d'ensemble de toutes les façons de créer des réponses aux questions fréquemment posées dans le portail d'administration de Microsoft Search
-ms.openlocfilehash: f30693b0943a34786c9e52859c8c5c680dc6e141
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Vue d’ensemble de toutes les manières de créer des réponses à des questions fréquemment posées dans le portail d’administration de la fonctionnalité Recherche Microsoft
+ms.openlocfilehash: 09c6747dafd5d2cf029f75fec210d308356c54fe
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508744"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968431"
 ---
-# <a name="create-and-manage-qas"></a>Créer et gérer Q&As
+# <a name="create-and-manage-qas"></a>Créer et gérer des Q&R
 
+> [!IMPORTANT]
+> Les paramètres de Recherche Microsoft dans Bing sont désormais accessibles dans le Centre d’administration Microsoft 365. Commencez par [assigner des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.
+    
 ## <a name="create-qas"></a>Créer des Q&R
 
-Q&As fournissent la meilleure réponse possible pour les questions professionnelles de votre utilisateur. Les utilisateurs peuvent facilement les découvrir lorsqu'ils entrent des mots-clés que vous leur avez associés sur Bing.
+Les Q&R fournissent les réponses les plus pertinentes aux questions de vos utilisateurs portant sur le travail. Les utilisateurs peuvent les trouver aisément en entrant les mots clés que vous y associés sur Bing.
   
-- [Créer Q&As](create-qas.md)
+- [Créer des Q&R](create-qas.md)
     
-    Ajouter des Q&As individuels.
+    Ajoutez des Q&R.
     
-- [Créer et importer en bloc Q&As](bulk-create-qas.md)
+- [Créer et importer en bloc des Q&R](bulk-create-qas.md)
     
-    Créez Q&As dans un fichier. csv et importez-les par bloc.
+    Créez des Q&R dans un fichier .csv, puis importez-les en bloc.
     
-## <a name="manage-qas"></a>Gérer des Q&R
+## <a name="manage-qas"></a>Gérer les Q&R
 
-Utilisez l'État Q&A, les outils de filtrage et les outils d'exportation/importation en bloc pour [Rechercher et mettre à jour le contenu Q&A](manage-qas.md), y compris le titre, la réponse, les mots clés et les URL.
+Utilisez l’état des Q&R, les outils de filtrage et les outils d’exportation/importation en bloc pour [rechercher et mettre à jour le contenu des Q&R](manage-qas.md), notamment le titre, la réponse, les mots clés et les URL.
   
-## <a name="qa-status"></a>État Q&A
+## <a name="qa-status"></a>Statut de Q&R
 
-Dans le portail d'administration, vous pouvez afficher Q&As en fonction de leur état actuel:
+Dans le portail d’administration, vous pouvez afficher les Q&A selon leur statut actuel :
   
-- Published
+- Publié
     
-    Les Q&As publiés apparaissent dans les résultats de la recherche Bing lorsqu'un utilisateur autorisé recherche un mot clé.
+    Les Q&A publiées apparaissent dans les résultats de Recherche Bing quand un utilisateur autorisé recherche un mot clé.
     
-- Première version
+- Brouillon
     
-    Si un Q&A n'est pas prêt à être publié, enregistrez-le en tant que brouillon. Les brouillons Q&As n'apparaîtront pas sur Bing.
+    Si une Q&R n’est pas prête pour publication, enregistrez-la en tant que brouillon. Les Q&R dont le statut est Brouillon n’apparaissent pas sur Bing.
     
-- Scheduled
+- Planifié
     
-    Les Q&As planifiées sont automatiquement publiées à une date ultérieure.
+    Les Q&R dont le statut est Planifié sont automatiquement publiées à une date future donnée.
     
 - Expiré
     
-    Les Q&As expirées ont été automatiquement supprimées du contenu publié en fonction de la date d'expiration.
+    Les Q&R dont le statut est Expiré ont été automatiquement supprimées du contenu publié à leur date d’expiration.
     
-- Préférable
+- Suggéré
     
-    Les Q&As suggérées sont basées sur les commentaires des utilisateurs.
+    Les Q&R dont le statut est Suggéré font l’objet de commentaires d’utilisateurs.
 
   
 

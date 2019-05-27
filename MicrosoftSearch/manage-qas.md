@@ -1,5 +1,5 @@
 ---
-title: Gérer des Q&R
+title: Gérer les Q&R
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,55 +13,58 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
-description: Rechercher et mettre à jour les réponses individuellement ou utiliser les outils de recherche Microsoft disponibles pour les modifier en une seule fois
-ms.openlocfilehash: 47882deeb95133cfc19f4eec6417fc20fb7203de
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Recherchez et actualisez des réponses individuelles, ou servez-vous des outils de Recherche Microsoft disponibles pour les modifier tous à la fois
+ms.openlocfilehash: ee239aa73d4e650289f39d33c63c3e2df4f100cc
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508816"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968466"
 ---
-# <a name="manage-qas"></a>Gérer des Q&R
+# <a name="manage-qas"></a>Gérer les Q&R
 
-Au fil du temps, vous devrez peut-être mettre à jour l'État et le contenu d'un Q&A's pour le conserver en adéquation.
+> [!IMPORTANT]
+> Les paramètres de Recherche Microsoft dans Bing sont désormais accessibles dans le Centre d’administration Microsoft 365. Commencez par [assigner des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.
+    
+Au fil du temps, il se peut que vous deviez mettre à jour le statut et le contenu de certaines Q&R afin qu’elles restent pertinentes. 
   
-## <a name="filter-qas"></a>Filtre Q&As
+## <a name="filter-qas"></a>Filtrer FAQs
 
-Utilisez l'option de filtrage dans le coin supérieur droit de la page Q&As pour rechercher Q&As par date et qui les a modifiés. Par exemple, définissez le curseur date sur 30 jours et sélectionnez un administrateur ou un éditeur pour afficher la liste des Q&As qu'ils ont créés ou modifiés à ce moment-là.
+Utiliser l’option de filtre dans le coin supérieur droit sur l’utilisation de FAQ pour rechercher des questions et réponses par date et qui les a modifiées. Par exemple, positionnez le curseur de date sur 30 jours, puis sélectionnez un administrateur ou un éditeur pour afficher la liste des Q&R qu’il a créées ou modifiées au cours de cette période.
   
-## <a name="change-qa-content-or-settings"></a>Modifier le contenu ou les paramètres Q&A
+## <a name="change-qa-content-or-settings"></a>Modifier le contenu ou les paramètres d’une Q&A
 
-1. Accédez au portail d’administration de Microsoft Search (recherche Microsoft).
+1. Accédez au Portail d’administration de Recherche Microsoft
     
 2. Dans le volet de navigation, cliquez sur Courrier**Q&As**.
     
-3. Pour rechercher un Q&A, recherchez, filtrez ou cliquez sur un État Q&A pour affiner vos résultats
+3. Pour trouver une FAQ, recherchez, filtrez ou cliquez sur une FAQ pour affiner vos résultats
     
-4. Pour modifier ou mettre à jour un Q&A, cliquez sur le titre.
+4. Pour modifier ou mettre à jour une FAQ, cliquez sur le titre
     
-5. Effectuer des modifications ou des mises à jour du contenu ou des paramètres et afficher un aperçu de leur apparence
+5. Apportez des modifications ou mises à jour au contenu ou paramètres et voir comment elles s’affichent
     
-6. Cliquez sur **Enregistrer**
+6. Cliquez sur **Enregistrer**.
     
-## <a name="bulk-export-and-edit-qas"></a>Exportation et modification en bloc Q&As
+## <a name="bulk-export-and-edit-qas"></a>Exportation en bloc et modifier des FAQ
 
-Ne modifiez jamais les données de ces champs:
+Ne jamais modifier les données dans ces champs :
   
-- ID
+- Id
     
 - Dernière modification
     
 - Dernière modification par
     
-ID est un identificateur unique pour chaque Q&A et ne doit jamais être modifié. Les champs Last modified et Last modified by ne doivent être utilisés que pour trier et trouver Q&As.
+ID est un identificateur unique pour chaque Q&R, qui ne doit jamais être modifié. Les champs Dernière modification et Dernière modification par servent uniquement à trier et trouver des Q&R.
   
-1. Si vous souhaitez exporter un sous-ensemble de votre Q&As, filtrez-les.
+1. Si vous voulez exporter un sous-ensemble de vos Q&R, filtrez-les.
     
-2. Dans le coin supérieur droit de la page Q&As, cliquez sur **Exporter** .
+2. Dans le coin supérieur droit de l’écran FAQ, cliquez sur **Exporter**.
     
-3. Enregistrer ou ouvrir le fichier. csv
+3. Ouvrir et enregistrer le fichier .csv
     
-4. Modifiez les données dans l'un des champs suivants:
+4. Modifiez les données dans ces champs :
     
    - Question
     
@@ -71,38 +74,38 @@ ID est un identificateur unique pour chaque Q&A et ne doit jamais être modifié
     
    - État
     
-   - Description de la réponse
+   - Description de réponse
     
    - Mots clés réservés
     
-   - Start Date
+   - Date de début
     
-   - End Date
+   - Date de fin
     
-   - Pays/Région
+   - Pays/région
     
    - Groupes
     
-   - Système&amp;d'exploitation de l'appareil
+   - Appareil et système d’exploitation
     
    - Variantes ciblées
     
-5. Enregistrer le fichier. csv
+5. Enregistrez le fichier csv.
 
-    Le fichier. csv doit être enregistré en tant que fichier CSV UTF-8, d'autres types de fichiers ou de codages peuvent entraîner des erreurs d'importation
+    Le fichier. csv doit être enregistré au format CSV UTF-8, car d’autres types ou codages de fichiers peuvent occasionner des erreurs d’importation.
     
-6. Dans le coin supérieur droit de la page Q&As, cliquez sur **Importer** .
+6. Dans l’angle supérieur droit de la page Q&R, cliquez sur **Importer**.
     
-7. Dans le volet importer Q&As, cliquez sur **Parcourir** et sélectionnez le fichier. csv modifié. 
+7. Dans le volet Import Q&R (Importer les Q&R), cliquez sur **Parcourir**, puis sélectionnez le fichier .csv modifié. 
     
-8. Cliquez sur **Importer**
+8. Cliquez sur **Importer**.
     
-Vous obtiendrez une erreur si les données requises sont manquantes ou non valides. En fonction de l'erreur, un fichier journal peut être généré avec davantage d'informations sur les lignes et les colonnes qui doivent être corrigées. Effectuez les modifications nécessaires, puis réessayez d'importer le fichier.
+Vous recevrez une erreur si les données requises sont manquantes ou non valides. Selon l’erreur, un fichier journal peut être généré afin de fournir des informations supplémentaires sur les lignes et les colonnes à corriger. Apportez les modifications nécessaires, puis réessayez d’importer le fichier.
   
 > [!NOTE]
-> Tant que toutes les erreurs ne sont pas résolues, vous ne pouvez pas créer ni modifier de Q&As. 
+> Vous ne pouvez pas créer ou modifier des Q&R tant que toutes les erreurs ne sont pas résolues. 
   
-Tous les champs ne sont pas obligatoires et les champs obligatoires varient en fonction de l'État Q&A. En fonction du champ d'État, Q&As sera enregistré en tant que brouillon, suggéré, programmé, ou il sera automatiquement publié. Pour en savoir plus sur les champs requis et recommandés, consultez la rubrique [Create Q&As](create-qas.md).
+Les champs obligatoires varient en fonction du statut du Q&R. En fonction du contenu du champ Statut, les Q&R sont enregistrées en tant que Brouillon, Suggéré ou Planifié, ou sont automatiquement publiées. Pour en savoir plus sur les champs obligatoires et recommandés, voir [Créer des Q&R](create-qas.md).
 
   
 

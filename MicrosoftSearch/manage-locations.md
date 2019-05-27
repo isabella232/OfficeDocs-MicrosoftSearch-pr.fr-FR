@@ -13,65 +13,68 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
-description: Au fil du temps, vous devrez peut-être mettre à jour l'État et le contenu d'un emplacement pour le conserver en adéquation.
-ms.openlocfilehash: 69fa4fc86d80adf76aa2a5788bdde433dd827a4d
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Au fil du temps, il se peut que vous deviez mettre à jour le statut et le contenu de certains emplacements afin qu’ils restent pertinents. 
+ms.openlocfilehash: 0e23cf3d3d3d05fe86cdc3e09ce808e54242d670
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508664"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968426"
 ---
 # <a name="manage-locations"></a>Gérer les emplacements
 
-Au fil du temps, vous devrez peut-être mettre à jour l'État et le contenu d'un emplacement pour le conserver en adéquation. 
+> [!IMPORTANT]
+> Les paramètres de Recherche Microsoft dans Bing sont désormais accessibles dans le Centre d’administration Microsoft 365. Commencez par [assigner des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.
+    
+Au fil du temps, il se peut que vous deviez mettre à jour le statut et le contenu de certains emplacements afin qu’ils restent pertinents.  
   
-## <a name="filter-locations"></a>Emplacements de filtre
+## <a name="filter-locations"></a>Filtrer les emplacements
 
-Utilisez l'option de filtrage située dans le coin supérieur droit de la page emplacements pour rechercher des emplacements par date et Voir qui les a modifiés. Par exemple, définissez le curseur date sur 30 jours et sélectionnez un administrateur ou un éditeur pour afficher la liste des emplacements qu'il a créés ou modifiés au cours de cette période.
+L’option Filtrer dans l’angle supérieur droit de la page Emplacements permet de rechercher des emplacements sur la base de leur date afin de voir qui les a modifiés. Par exemple, positionnez le curseur de date sur 30 jours, puis sélectionnez un administrateur ou un éditeur pour afficher la liste des emplacements qu’il a créés ou modifiés au cours de cette période.
   
-## <a name="change-location-content"></a>Modifier le contenu de l'emplacement
+## <a name="change-location-content"></a>Modifier le contenu d’un emplacement
 
-1. Accédez au portail d’administration de la recherche Microsoft.
+1. Accédez au portail d’administration de Recherche Microsoft.
     
-2. Dans le volet de navigation, cliquez sur **emplacements** .
+2. Dans le volet de navigation, cliquez sur **Emplacements**.
     
-3. Pour rechercher un emplacement, Rechercher, filtrer ou cliquer sur l'état d'un emplacement pour affiner les résultats
+3. Pour trouver un emplacement, effectuez une recherche, filtrez ou cliquez sur un statut d’emplacement pour limiter les résultats.
     
-4. Pour modifier ou mettre à jour un emplacement, cliquez sur le nom de l'emplacement.
+4. Pour modifier ou mettre à jour un emplacement, cliquez sur son nom.
     
-5. Effectuer des modifications ou des mises à jour du contenu et afficher un aperçu de leur apparence 
+5. Apportez des modifications ou mises à jour au contenu afin de voir comment elles s’affichent. 
     
-6. Cliquez sur **Enregistrer**
+6. Cliquez sur **Enregistrer**.
     
-## <a name="bulk-export-and-edit-locations"></a>Emplacements d'exportation et de modification en bloc
+## <a name="bulk-export-and-edit-locations"></a>Exporter et modifier en bloc des emplacements
 
-Ne modifiez jamais les données de ces champs:
+Ne modifiez jamais les données contenues dans les champs suivants :
   
-- ID
+- Id
     
 - Dernière modification
     
 - Dernière modification par
     
-ID est un identificateur unique pour chaque emplacement et ne doit jamais être modifié. Les champs dernière modification et dernière modification par ne doivent être utilisés que pour trier et trouver des emplacements.
+ID est un identificateur unique pour chaque emplacement, qui ne doit jamais être modifié. Les champs Dernière modification et Dernière modification par servent uniquement à trier et trouver des signets.
   
-1. Si vous souhaitez exporter un sous-ensemble de vos emplacements, filtrez-les.
+1. Si vous voulez exporter un sous-ensemble de vos emplacements, filtrez-les.
     
-2. Dans le coin supérieur droit de la page emplacements, cliquez sur **Exporter** .
+2. Dans l’angle supérieur droit de la page Emplacements, cliquez sur **Exporter**.
     
-3. Enregistrer ou ouvrir le fichier. csv
+3. Enregistrez ou ouvrez le fichier .csv.
     
-4. Modifiez les données dans l'un des champs suivants:
+4. Si nécessaire, modifiez les données des champs suivants :
     
    - Nom
     
-   - Ligne d'adresse 1
+   - Ligne d’adresse 1
     
-   - Ligne d'adresse 2
+   - Ligne d’adresse 2
     
    - Ville
     
-   - État de l'adresse
+   - État de l’adresse
     
    - Code postal
     
@@ -79,9 +82,9 @@ ID est un identificateur unique pour chaque emplacement et ne doit jamais être 
     
    - Adresse complète
     
-   - Système
+   - Latitude
     
-   - Ouest
+   - Longitude
     
    - Mots clés
     
@@ -89,15 +92,15 @@ ID est un identificateur unique pour chaque emplacement et ne doit jamais être 
     
    - État
     
-5. Enregistrer le fichier. csv
+5. Enregistrez le fichier csv.
 
-    Le fichier. csv doit être enregistré en tant que fichier CSV UTF-8, d'autres types de fichiers ou de codages peuvent entraîner des erreurs d'importation
+    Le fichier. csv doit être enregistré au format CSV UTF-8, car d’autres types ou codages de fichiers peuvent occasionner des erreurs d’importation.
     
-6. Dans le coin supérieur droit de la page emplacements, cliquez sur **Importer** .
+6. Dans l’angle supérieur droit de la page Emplacements, cliquez sur **Importer**.
     
-7. Dans le volet importer des emplacements, cliquez sur **Parcourir** et sélectionnez le fichier. csv modifié. 
+7. Dans le volet Import locations (Importer les emplacements), cliquez sur **Parcourir**, puis sélectionnez le fichier .csv modifié. 
     
-8. Cliquez sur **Importer**
+8. Cliquez sur **Importer**.
 
   
 

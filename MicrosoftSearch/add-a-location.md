@@ -13,45 +13,48 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c37cf1b1-5915-4eb1-9f78-72c48cad3b4b
-description: Ajouter des emplacements afin que les bureaux, les bâtiments et les autres espaces de travail de votre organisation apparaissent dans vos résultats de travail Microsoft Search
-ms.openlocfilehash: ad9aa274e7934917a2c4fee05ad2c24af3d117f4
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Ajouter des emplacements de sorte que les bureaux, bâtiments et autres espaces de travail de votre organisation apparaissent dans vos résultats de travail Recherche Microsoft
+ms.openlocfilehash: 37cc56a733bb6395325ab4baf7885084d956938b
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508544"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968178"
 ---
 # <a name="add-a-location"></a>Ajouter un emplacement
 
-Ajoutez un emplacement et lorsque vos utilisateurs effectuent une recherche, ils verront l'adresse du bâtiment, bureau ou emplacement et son emplacement sur une carte. Ils peuvent également utiliser Bing Maps pour obtenir des instructions, voir ce qui est à proximité, et bien plus encore.
-  
-1. Accédez au portail d’administration de la recherche Microsoft.
+> [!IMPORTANT]
+> Les paramètres de Recherche Microsoft dans Bing sont désormais disponibles dans le Centre d’administration Microsoft 365. Commencez par [attribuer des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.
     
-2. Dans le volet de navigation, cliquez sur **emplacements** .
+Ajouter un emplacement et lorsque vos utilisateurs rechercheront, ils trouveront l’adresse du bâtiment, du bureau ou de l’endroit et pourront voir son emplacement sur une carte. Les utilisateurs peuvent utiliser les cartes Bing pour obtenir des instructions, voir ce qui est proche et bien plus encore.
+  
+1. Accédez au Portail d’administration de Recherche Microsoft
+    
+2. Dans le volet de navigation, cliquez sur **Emplacements**
     
 3. En haut de la page, cliquez sur **Ajouter un emplacement**
     
-    La page modifier l'emplacement apparaît, avec une carte interactive.
+    La page Modifier l’emplacement apparaît avec une carte interactive.
     
-4. Choisir un **pays/une région**
+4. Sélectionnez **un pays/une région**
     
 5. Entrez l' **adresse**
     
-    Vous verrez un indicateur d'emplacement sur la carte pour l'adresse. Il s'agit de la carte que les utilisateurs verront lorsqu'ils rechercheront cet emplacement.
+    Un indicateur d’emplacement apparaît sur la carte pour l’adresse. Il s’agit de la carte que les utilisateurs verront lorsqu’ils recherchent cet emplacement.
     
-6. Si nécessaire, entrez des informations sur la **suite/l'unité/plancher** . 
+6. Si nécessaire, entrez les informations relatives au **numéro de chambre/le numéro d’appartement/l’étage** 
     
-7. Entrer un **nom d'emplacement**
+7. Entrer un **nom d’emplacement**
     
-    Décrivez cet emplacement de la façon dont vos utilisateurs s'y réfèrent généralement. Par exemple, un nom ou un numéro de bâtiment. Ne répétez pas l'adresse.
+    Décrivez cet emplacement de la façon dont vos utilisateurs font généralement référence à celui-ci. Par exemple, un nom ou un numéro de bâtiment. Ne répétez pas l’adresse.
     
-8. Entrez les **Mots clés** devant déclencher cet emplacement 
+8. Entrez les**mots clés** que vous souhaitez associer au déclenchement de cet emplacement 
     
-    Inclure des mots ou des expressions que les utilisateurs utiliseront pour trouver cet emplacement ou les zones qu'il contient, par exemple: siège, bâtiment 9 ou café occidental.
+    Saisissez des mots ou des phrases qui seront utilisées pour rechercher cet emplacement ou des zones aux alentours. Par exemple : siège, bâtiment 9 ou Café Ouest.
     
-9. Entrez les**Mots clés réservés**
+9. Entrez les **Mots clés réservés**
     
-    Utilisez un ou plusieurs mots clés réservés pour vous assurer qu'un emplacement apparaît toujours comme le résultat le plus pertinent. Les mots clés réservés ne peuvent pas être partagés entre les emplacements.
+    Utiliser un ou plusieurs mots clés réservés pour garantir un emplacement qui s’affiche en permanence en premier résultat. Les mots clés réservés ne peuvent pas être partagés avec d’autres emplacements.
 
   
 

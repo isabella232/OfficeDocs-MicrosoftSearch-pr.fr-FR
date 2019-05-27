@@ -1,5 +1,5 @@
 ---
-title: Gérer des signets
+title: Gérer les signets
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,55 +13,58 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: Rechercher les signets qui doivent être mis à jour et comment modifier en bloc les résultats de signet pour Microsoft Search
-ms.openlocfilehash: f87176c645e127e20edd9e70a74efe05dd381236
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: Recherchez les signets qui nécessitent une mise à jour et des façons de modifier en bloc les résultats de signet pour la fonctionnalité Recherche Microsoft
+ms.openlocfilehash: d5cebbfd5779bc8a6aa25cdbcdedb6e9b18f242e
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508608"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968482"
 ---
-# <a name="manage-bookmarks"></a>Gérer des signets
+# <a name="manage-bookmarks"></a>Gérer les signets
 
-Au fil du temps, vous devrez peut-être mettre à jour l'État et le contenu d'un signet pour le conserver en adéquation. 
+> [!IMPORTANT]
+> Les paramètres de Recherche Microsoft dans Bing sont désormais accessibles dans le Centre d’administration Microsoft 365. Commencez par [assigner des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.
+    
+Au fil du temps, il se peut que vous deviez mettre à jour le statut et le contenu de certains signets afin qu’ils restent pertinents.  
   
 ## <a name="filter-bookmarks"></a>Filtrer les signets
 
-Utilisez l'option de filtre dans le coin supérieur droit de la page de signets pour rechercher des signets par date et qui les a modifiés. Par exemple, définissez le curseur date sur 30 jours et sélectionnez un administrateur ou un éditeur pour afficher la liste des signets qu'il a créés ou modifiés dans ce délai.
+Utiliser l’option de filtre dans le coin supérieur droit sur l’utilisation des signets pour rechercher des signets par date et qui les a modifiés. Par exemple, positionnez le curseur de date sur 30 jours, puis sélectionnez un administrateur ou un éditeur pour afficher la liste des signets qu’il a créés ou modifiés au cours de cette période.
   
-## <a name="change-bookmark-content-or-settings"></a>Modifier le contenu ou les paramètres d'un signet
+## <a name="change-bookmark-content-or-settings"></a>Modifier le contenu ou les paramètres d’un signet
 
-1. Accédez au Portail d’administration de Microsoft Search(recherche Microsoft)
+1. Accédez au Portail d’administration de Recherche Microsoft
     
 2. Dans le volet de navigation, cliquez sur**Signets**
     
-3. Pour rechercher un signet, Rechercher, filtrer ou cliquer sur l'état d'un signet pour affiner les résultats
+3. Pour trouver un signet, effectuez une recherche, filtrez ou cliquez sur un statut de signet pour limiter les résultats.
     
-4. Pour modifier ou mettre à jour un signet, cliquez sur le titre
+4. Pour modifier ou mettre à jour un signet, cliquez sur son titre.
     
-5. Effectuer des modifications ou des mises à jour du contenu ou des paramètres et afficher un aperçu de leur apparence 
+5. Apportez des modifications ou mises à jour au contenu ou paramètres et voir comment ils s’affichent 
     
-6. Cliquez sur **Enregistrer**
+6. Cliquez sur **Enregistrer**.
     
-## <a name="bulk-export-and-edit-bookmarks"></a>Exportation et modification en bloc de signets
+## <a name="bulk-export-and-edit-bookmarks"></a>Exporter en bloc et modifier des signets
 
-Ne modifiez jamais les données de ces champs:
+Ne jamais modifier les données dans ces champs :
   
-- ID
+- Id
     
 - Dernière modification
     
 - Dernière modification par
     
-ID est un identificateur unique pour chaque signet et ne doit jamais être modifié. Les champs dernière modification et dernière modification par ne doivent être utilisés que pour trier et Rechercher des signets.
+ID est un identificateur unique pour chaque signet et ne doit jamais être modifié. Utilisez les options dernière modification et dernier modification par uniquement pour trier et trouver des signets.
   
-1. Si vous souhaitez exporter un sous-ensemble de vos signets, filtrez-les.
+1. Si vous voulez exporter un sous-ensemble de vos signets, filtrez-les
     
-2. Dans le coin supérieur droit de la page signets, cliquez sur **Exporter**
+2. Dans le coin supérieur droit de l’écran signets, cliquez sur **Exporter**.
     
-3. Enregistrer ou ouvrir le fichier. csv
+3. Ouvrir et enregistrer le fichier .csv
     
-4. Modifiez les données dans l'un des champs suivants:
+4. Modifiez les données dans ces champs :
    - Titre
     
    - URL
@@ -74,24 +77,24 @@ ID est un identificateur unique pour chaque signet et ne doit jamais être modif
     
    - Mots clés réservés
     
-   - Start Date
+   - Date de début
     
-   - End Date
+   - Date de fin
     
-   - Pays/Région
+   - Pays/région
     
    - Groupes
     
-   - Système&amp;d'exploitation de l'appareil
+   - Appareil et système d’exploitation
     
    - Variantes ciblées
     
-5. Enregistrer le fichier. csv
+5. Enregistrez le fichier csv.
 
-    Le fichier. csv doit être enregistré en tant que fichier CSV UTF-8, d'autres types de fichiers ou de codages peuvent entraîner des erreurs d'importation
+    Le fichier. csv doit être enregistré au format CSV UTF-8, car d’autres types ou codages de fichiers peuvent occasionner des erreurs d’importation.
     
-6. Dans le coin supérieur droit de la page signets, cliquez sur **Importer** .
+6. Dans l’angle supérieur droit de la page Signets, cliquez sur **Importer**.
     
-7. Dans le volet importer les signets, cliquez sur **Parcourir** et sélectionnez le fichier. csv modifié. 
+7. Dans le volet Import bookmarks (Importer les signets), cliquez sur **Parcourir**, puis sélectionnez le fichier .csv modifié. 
     
-8. Cliquez sur **Importer**
+8. Cliquez sur **Importer**.
