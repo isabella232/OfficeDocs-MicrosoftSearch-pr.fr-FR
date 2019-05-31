@@ -12,27 +12,28 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 5ab1234e-fbb2-4bf9-a907-fa83389a7dee
-description: Comment vos informations et fichiers sont protégés lorsque vous utilisez la fonctionnalité Recherche Microsoft
-ms.openlocfilehash: 52dbf65d3c7414eaa2c4a3770def3f4f00edc40c
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: HT
+ROBOTS: NOINDEX
+description: Protection de vos informations et des fichiers lors de l’utilisation de Microsoft Search
+ms.openlocfilehash: ba1cb7c106f5944b634e4995648975ff9c6113d8
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508848"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590908"
 ---
 # <a name="how-microsoft-search-keeps-your-info-secure"></a>Comment la fonctionnalité Recherche Microsoft sécurise vos informations
 
-La fonctionnalité Recherche Microsoft utilise différentes méthodes pour sécuriser votre contenu et vos informations :
+Microsoft Search utilise plusieurs méthodes pour sécuriser votre contenu et vos informations:
   
-- Les résultats de Recherche Microsoft proviennent directement du cloud approuvé utilisé par Office 365. Bing ne stocke pas de contenu ou d’informations de travail dans l’index web public.
+- Les résultats de la recherche Microsoft proviennent directement du même Cloud approuvé que celui utilisé par Office 365. Bing ne stocke pas de contenu ou d’informations de travail dans l’index Web public.
     
-- Vous ne pouvez voir de résultats de travail que lorsque vous êtes connecté avec votre compte professionnel ou scolaire.
+- Vous ne pouvez afficher les résultats de travail que si vous êtes connecté avec votre compte professionnel ou scolaire.
     
-- La fonctionnalité Recherche Microsoft ne renvoie que des informations que vous êtes autorisé à voir. Il peut s’agir d’informations ou de fichiers que vous avez créés, qui ont été partagés avec vous ou avec un groupe dont vous êtes membre, ou qui sont stockés dans des dossiers ou emplacements auxquels vous avez accès.
+- Microsoft Search ne renverra que les informations que vous êtes autorisé à voir. Vous avez peut-être autorisé, car vous avez créé les fichiers ou les informations, ils ont été partagés avec vous ou avec un groupe plus important qui vous y inclut, ou ils sont stockés dans des dossiers ou des emplacements auxquels vous êtes autorisé à accéder.
     
-- La fonctionnalité Recherche Microsoft n’utilise pas vos recherches professionnelles pour améliorer les résultats sur le web public ou pour améliorer Bing.
+- Microsoft Search n’utilise pas vos recherches professionnelles pour améliorer les résultats Web publics ou pour améliorer Bing.
     
-- La fonctionnalité Recherche Microsoft ne permet pas aux annonceurs de vous cibler ou de cibler tout autre membre de votre organisation.
+- Microsoft Search ne permet pas aux annonceurs de cibler vous-même ou quiconque au sein de votre organisation.
 
   
 

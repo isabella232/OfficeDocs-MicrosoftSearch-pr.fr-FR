@@ -1,5 +1,5 @@
 ---
-title: Chercher des ressources, des outils et bien plus
+title: Trouver des ressources, des outils et bien plus encore
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,31 +12,32 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: a67e015a-e10a-442a-b1c9-511136d54d1f
-description: Utilisez la fonctionnalité Recherche Microsoft dans Bing pour trouver des sites intranet, des ressources, des outils et des liens vers des informations internes
-ms.openlocfilehash: 4d484b832db07532d678af1f1c0f9f3348166e79
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: HT
+ROBOTS: NOINDEX
+description: Utiliser Microsoft Search pour rechercher des sites intranet, des ressources, des outils et des liens vers des informations internes
+ms.openlocfilehash: 986da96bd0d3964bd0ceff839d015e83df927fd2
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508840"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590863"
 ---
-# <a name="find-resources-tools-and-more"></a>Chercher des ressources, des outils et bien plus
+# <a name="find-resources-tools-and-more"></a>Trouver des ressources, des outils et bien plus encore
 
-Votre service informatique crée et publie des signets pour outils, pages et autres ressources internes et externes afin de vous aider à trouver les informations dont vous avez besoin.
+Votre service informatique crée et publie des signets vers des ressources, des outils, des pages internes et externes pour vous aider à trouver les informations dont vous avez besoin.
   
-Les résultats de recherche de signet contiennent une brève description du site ou de la ressource ainsi qu’un lien y conduisant. Par exemple, la plupart des organisations créent un signet pour les avantages, les RH, les emplois, le support informatique et le suivi des congés.
+Les résultats de signet incluent une brève description du site ou de la ressource, ainsi qu’un lien vers celui-ci. Par exemple, la plupart des organisations créeront des signets pour les avantages, les RH, les informations sur la carrière, la prise en charge du service informatique et la création de rapports de temps.
   
-Les résultats de recherche de Q&A incluent généralement les mêmes informations ainsi qu’une brève réponse pouvant contenir l’information recherchée ainsi qu’un lien pour en savoir plus.
+Les résultats de Q&A incluent généralement ces mêmes informations, ainsi qu’une brève réponse qui peut contenir les informations dont vous avez besoin et un lien si vous souhaitez en savoir plus.
   
-1. Connectez-vous à votre compte professionnel ou scolaire sur Bing. 
+1. Connectez-vous à votre compte professionnel ou scolaire sur Bing 
     
-2. Lancez une recherche.
+2. Rechercher un objet
     
-    Par exemple, essayez de rechercher « avantages », « ressources humaines », « emploi », « support informatique » ou « suivi des congés ».
+    Par exemple, essayez de Rechercher «avantages», «HR», «informations sur la carrière», «support informatique» ou «état de la durée de la notification».
     
-3. Un résultat de signet ou de Q&A apparaît en haut de la page ou dans la colonne de droite.
+3. Un signet ou un résultat Q&A apparaît en haut de la page ou de la colonne de droite
     
-    Les autres résultats sur le web s’affichent en dessous. Ils ne sont pas spécifiques de votre organisation.
+    D’autres résultats Web s’affichent sous lui. Elles ne sont pas propres à votre organisation.
 
   
 

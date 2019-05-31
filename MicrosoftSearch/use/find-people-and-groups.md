@@ -1,5 +1,5 @@
 ---
-title: Chercher des personnes et des groupes
+title: Trouver des personnes et des groupes
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,39 +12,40 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 17c9982a-0fd9-4cf1-b010-69ae3440b41f
-description: Utilisez la fonctionnalité Recherche Microsoft pour trouver un membre de votre organisation, ainsi que les informations le concernant
-ms.openlocfilehash: c9b71b8353e5ebc6e876a837424de8b74a7c20d5
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: HT
+ROBOTS: NOINDEX
+description: Utiliser Microsoft Search pour trouver tous les utilisateurs de votre entreprise et les informations que vous verrez
+ms.openlocfilehash: e772eede386c26264414acb99b952570a9d33b91
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508919"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590944"
 ---
-# <a name="find-people-and-groups"></a>Chercher des personnes et des groupes
+# <a name="find-people-and-groups"></a>Trouver des personnes et des groupes
 
-La fonctionnalité Recherche Microsoft vous permet de trouver aisément des informations sur vos collaborateurs. Recherchez simplement sur Bing leur nom ou alias pour trouver leurs coordonnées, les réunions à venir planifiées avec eux, les détails de leurs organigrammes, leurs appartenances à des groupes et des fichiers qu’ils partagent avec vous.
+Il est facile de trouver des informations sur vos collègues à l’aide de Microsoft Search. Il vous suffit d’effectuer une recherche sur Bing pour leur nom ou alias afin de trouver des informations de contact, les réunions à venir, les détails de l’organigramme, les appartenances aux groupes et les fichiers qu’ils ont partagés avec vous.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AuTv?autoplay=false]
   
 ## <a name="find-people"></a>Rechercher des personnes
 
-Votre service informatique détermine le contenu qui s’affiche dans les résultats de Recherche Microsoft.
+Votre service informatique détermine le contenu qui s’affiche dans les résultats de la recherche Microsoft.
   
-1. Connectez-vous à votre compte professionnel ou scolaire sur Bing.
+1. Connectez-vous à votre compte professionnel ou scolaire sur Bing
     
-2. Recherchez « moi », votre nom ou votre alias professionnel, ou le nom ou alias d’un collaborateur.
+2. Rechercher «moi», votre nom ou votre alias de travail, ou le nom ou l’alias d’un collègue
     
-    Pour obtenir un résultat optimal, incluez un nom et un prénom. Toutefois, si vous ne connaissez qu’une partie du nom, la fonctionnalité Recherche Microsoft affiche le résultat le plus proche de votre recherche et, le cas échéant, propose de présenter des résultats supplémentaires.
+    Si vous incluez un prénom et un nom de famille, vous obtiendrez le meilleur résultat, mais si vous n’en avez qu’une partie, Microsoft Search vous indiquera le résultat qui correspond le mieux à votre recherche et, si possible, offrira plus de résultats.
     
-3. La fiche d’un contact apparaît en haut de la page de résultats ou en haut de la colonne de droite.
+3. Une carte de visite apparaît en haut de la page de résultats ou en haut de la colonne de droite.
     
-    Consultez les actions et détails mentionnés sur la fiche, et cliquez pour accéder à des informations supplémentaires.
+    Consultez les détails et les actions sur la carte, puis cliquez sur à travers pour obtenir plus d’informations.
     
-Les résultats web apparaissent sous les résultats relatifs à votre travail. Ces résultats ne sont pas spécifiques de votre organisation. Dans certains cas, par exemple, quand un nom correspond à une recherche web très courante, il se peut que la carte de la personne ne s’affiche pas automatiquement. Pour afficher les résultats relatifs à votre travail, il se peut que vous deviez cliquer sur le lien **Afficher les résultats de** en regard du logo de votre organisation. 
+Les résultats Web s’affichent sous vos résultats de travail. Ces résultats ne sont pas spécifiques à votre organisation. Dans certains cas, par exemple, lorsqu’un nom est une recherche Web très commune, il se peut que la carte des personnes ne s’affiche pas automatiquement. Pour voir vos résultats de travail, vous devrez peut-être cliquer sur le lien **afficher les résultats à** côté du logo de votre organisation. 
   
 ## <a name="find-groups"></a>Rechercher des groupes
 
-Tout comme vous le faites pour vous rechercher vous-même ou rechercher un collègue, entrez le nom ou l’alias d’un groupe pour afficher ses coordonnées, ses propriétaires et membres, les fichiers qu’ils ont partagés avec vous et les conversations.
+Tout comme vous recherchez vous-même ou un collègue, entrez le nom d’un alias de groupe ou de groupe pour afficher les détails du contact, les propriétaires de groupe, les membres, les fichiers qu’il a partagés avec vous et les conversations.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AA2V?autoplay=false]
   
