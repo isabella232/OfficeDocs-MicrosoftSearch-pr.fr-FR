@@ -3,22 +3,23 @@ title: Faciliter l’accès au contenu à l’aide de la fonctionnalité Recherc
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 12/11/2018
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 localization_priority: Priority
+ROBOTS: NOINDEX
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Créez des signets, des emplacements et des Q&R pour accéder facilement au contenu de votre organisation.
-ms.openlocfilehash: e7f65715faf71165549cb1af7f15a4d3ac918f19
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 851f88206d7f8e0330497c9706b02ad98e0f8e6c
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33511037"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591565"
 ---
 # <a name="make-content-easy-to-find"></a>Faciliter l’accès au contenu
 La fonctionnalité ****Recherche Microsoft**** aide les utilisateurs à accéder à du contenu pertinent. La fonctionnalité **Recherche Microsoft** permet d’effectuer des recherches de contenu sécurisées sur votre intranet et sur le web. Microsoft est le seul à proposer ce type d’intégration web et entreprise. 
@@ -156,8 +157,9 @@ Aidez vos utilisateurs à accomplir certaines tâches, telles que la saisie de p
 #### <a name="what-are-powerapps"></a>Que sont les applications PowerApps ?
 PowerApps est un service qui vous permet de créer des applications métier qui s’exécutent dans un navigateur, sur un téléphone ou sur une tablette, sans aucune expérience en matière de codage. Les applications PowerApps fonctionnent dans n’importe quel navigateur et sur n’importe quel appareil, et leur ajout prend moins d’une minute. Pour plus d’informations sur les applications PowerApps, consultez :
 - 
-  [Formation guidée](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)
-- [Documentation](https://docs.microsoft.com/fr-FR/powerapps/maker/canvas-apps/get-sessionid)
+  [Formation guidée](https://docs.microsoft.com/fr-FR/learn/browse/?products=powerapps)
+- 
+  [Documentation](https://docs.microsoft.com/fr-FR/powerapps/maker/canvas-apps/get-sessionid)
 - [Accueil PowerApps](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 #### <a name="add-a-powerapp-to-a-bookmark"></a>Ajouter une application PowerApp à un signet
