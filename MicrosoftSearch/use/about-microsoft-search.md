@@ -12,57 +12,58 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: b453e6f0-10cf-4384-9914-241f425cd5f9
+ROBOTS: NOINDEX
 description: Obtenir une vue d’ensemble de toutes les informations que vous trouverez lorsque vous utilisez Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: f5a9656144efad8c6e146f6654ebc9f69f1b1843
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: bc8d53610d125aba57b2c2c8a8c6d1077e2f012a
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508944"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590980"
 ---
-# <a name="about-microsoft-search"></a><span data-ttu-id="62ffe-103">À propos de Microsoft Search (recherche Microsoft)</span><span class="sxs-lookup"><span data-stu-id="62ffe-103">About Microsoft Search</span></span>
+# <a name="about-microsoft-search"></a><span data-ttu-id="5c181-103">À propos de Microsoft Search (recherche Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5c181-103">About Microsoft Search</span></span>
 
-<span data-ttu-id="62ffe-p101">Microsoft Search(recherche Microsoft) permet simplement d’accéder à la recherche travail et sur le web au même endroit dans une expérience. Utilisez Microsoft Search(recherche Microsoft) pour un moyen simple, rapide, puissant et obtenez les informations appropriées au moment opportun dans n’importe quel navigateur et sur n’importe quel appareil.</span><span class="sxs-lookup"><span data-stu-id="62ffe-p101">Microsoft Search effortlessly brings searching work and the web together in one experience. Use Microsoft Search for a simple, fast, powerful, and safer way to get the right information at the right time in any browser and on any device.</span></span>
+<span data-ttu-id="5c181-p101">Microsoft Search(recherche Microsoft) permet simplement d’accéder à la recherche travail et sur le web au même endroit dans une expérience. Utilisez Microsoft Search(recherche Microsoft) pour un moyen simple, rapide, puissant et obtenez les informations appropriées au moment opportun dans n’importe quel navigateur et sur n’importe quel appareil.</span><span class="sxs-lookup"><span data-stu-id="5c181-p101">Microsoft Search effortlessly brings searching work and the web together in one experience. Use Microsoft Search for a simple, fast, powerful, and safer way to get the right information at the right time in any browser and on any device.</span></span>
   
-<span data-ttu-id="62ffe-p102">Si vous recherchez des personnes, fichiers, organigrammes, des sites internes et ressources ou des réponses aux questions fréquemment posées, vous pouvez utiliser Microsoft Search (recherche Microsoft) tout au long de votre journée de travail pour obtenir des réponses plus rapides, et gagnez en productivité et travaillez plus intelligemment. Pour obtenir des résultats de travail, accédez à [bing.com/business](https://www.bing.com/business), connectez-vous avec votre compte professionnel ou scolaire et effectuez une recherche.</span><span class="sxs-lookup"><span data-stu-id="62ffe-p102">Whether you're searching for people, files, org charts, internal sites and resources, or answers to common questions, you can use Microsoft Search throughout your work day to get answers faster, be more productive, and work smarter. To get work results, just go to [bing.com/business](https://www.bing.com/business), sign in with your work or school account, and search.</span></span> 
+<span data-ttu-id="5c181-p102">Si vous recherchez des personnes, fichiers, organigrammes, des sites internes et ressources ou des réponses aux questions fréquemment posées, vous pouvez utiliser Microsoft Search (recherche Microsoft) tout au long de votre journée de travail pour obtenir des réponses plus rapides, et gagnez en productivité et travaillez plus intelligemment. Pour obtenir des résultats de travail, accédez à [bing.com/business](https://www.bing.com/business), connectez-vous avec votre compte professionnel ou scolaire et effectuez une recherche.</span><span class="sxs-lookup"><span data-stu-id="5c181-p102">Whether you're searching for people, files, org charts, internal sites and resources, or answers to common questions, you can use Microsoft Search throughout your work day to get answers faster, be more productive, and work smarter. To get work results, just go to [bing.com/business](https://www.bing.com/business), sign in with your work or school account, and search.</span></span> 
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AA2W?autoplay=false]
 
-## <a name="what-you-can-find"></a><span data-ttu-id="62ffe-108">Ce que vous pouvez trouver</span><span class="sxs-lookup"><span data-stu-id="62ffe-108">What you can find</span></span>
+## <a name="what-you-can-find"></a><span data-ttu-id="5c181-108">Ce que vous pouvez trouver</span><span class="sxs-lookup"><span data-stu-id="5c181-108">What you can find</span></span>
   
-<span data-ttu-id="62ffe-109">Utilisez Microsoft Search(recherche Microsoft) afin de trouver:</span><span class="sxs-lookup"><span data-stu-id="62ffe-109">Use Microsoft Search to find:</span></span>
+<span data-ttu-id="5c181-109">Utilisez Microsoft Search(recherche Microsoft) afin de trouver:</span><span class="sxs-lookup"><span data-stu-id="5c181-109">Use Microsoft Search to find:</span></span>
   
-- [<span data-ttu-id="62ffe-110">Contacts</span><span class="sxs-lookup"><span data-stu-id="62ffe-110">People</span></span>](find-people-and-groups.md)
+- [<span data-ttu-id="5c181-110">Contacts</span><span class="sxs-lookup"><span data-stu-id="5c181-110">People</span></span>](find-people-and-groups.md)
     
-    <span data-ttu-id="62ffe-111">Trouver facilement les informations relatif au contact, aux réunions à venir que vous avez en commun, aux détails de l’organigramme, appartenances aux groupes et autres fichiers</span><span class="sxs-lookup"><span data-stu-id="62ffe-111">Easily find contact info, upcoming meetings you have together, org chart details, group memberships, and other files</span></span>
+    <span data-ttu-id="5c181-111">Trouver facilement les informations relatif au contact, aux réunions à venir que vous avez en commun, aux détails de l’organigramme, appartenances aux groupes et autres fichiers</span><span class="sxs-lookup"><span data-stu-id="5c181-111">Easily find contact info, upcoming meetings you have together, org chart details, group memberships, and other files</span></span>
     
-- [<span data-ttu-id="62ffe-112">Groupes</span><span class="sxs-lookup"><span data-stu-id="62ffe-112">Groups</span></span>](find-people-and-groups.md)
+- [<span data-ttu-id="5c181-112">Groupes</span><span class="sxs-lookup"><span data-stu-id="5c181-112">Groups</span></span>](find-people-and-groups.md)
     
-    <span data-ttu-id="62ffe-113">Recherchez un groupe par son nom ou ses membres, Explorez les groupes auxquels une personne appartient et parcourez leur contenu partagé</span><span class="sxs-lookup"><span data-stu-id="62ffe-113">Find a group by its name or members, explore groups a person belongs, and browse their shared content</span></span>
+    <span data-ttu-id="5c181-113">Recherchez un groupe par son nom ou ses membres, Explorez les groupes auxquels une personne appartient et parcourez leur contenu partagé</span><span class="sxs-lookup"><span data-stu-id="5c181-113">Find a group by its name or members, explore groups a person belongs, and browse their shared content</span></span>
     
-- [<span data-ttu-id="62ffe-114">Ressources et outils</span><span class="sxs-lookup"><span data-stu-id="62ffe-114">Resources and tools</span></span>](find-resources-tools-and-more.md)
+- [<span data-ttu-id="5c181-114">Ressources et outils</span><span class="sxs-lookup"><span data-stu-id="5c181-114">Resources and tools</span></span>](find-resources-tools-and-more.md)
     
-    <span data-ttu-id="62ffe-115">Repérez facilement les ressources internes, les outils, et bien plus</span><span class="sxs-lookup"><span data-stu-id="62ffe-115">Easily locate internal resources, tools, and more</span></span>
+    <span data-ttu-id="5c181-115">Repérez facilement les ressources internes, les outils, et bien plus</span><span class="sxs-lookup"><span data-stu-id="5c181-115">Easily locate internal resources, tools, and more</span></span>
     
-- [<span data-ttu-id="62ffe-116">Sites SharePoint</span><span class="sxs-lookup"><span data-stu-id="62ffe-116">SharePoint sites</span></span>](find-sharepoint-sites.md)
+- [<span data-ttu-id="5c181-116">Sites SharePoint</span><span class="sxs-lookup"><span data-stu-id="5c181-116">SharePoint sites</span></span>](find-sharepoint-sites.md)
     
-    <span data-ttu-id="62ffe-117">Recherchez vos sites SharePoint ou vos sites SharePoint créés par vos collègues que vous êtes autorisé à consulter</span><span class="sxs-lookup"><span data-stu-id="62ffe-117">Find your SharePoint sites or SharePoint sites created by groups or co-workers that you have permission to view</span></span>
+    <span data-ttu-id="5c181-117">Recherchez vos sites SharePoint ou vos sites SharePoint créés par vos collègues que vous êtes autorisé à consulter</span><span class="sxs-lookup"><span data-stu-id="5c181-117">Find your SharePoint sites or SharePoint sites created by groups or co-workers that you have permission to view</span></span>
     
-- [<span data-ttu-id="62ffe-118">Dossiers</span><span class="sxs-lookup"><span data-stu-id="62ffe-118">Files</span></span>](find-files.md)
+- [<span data-ttu-id="5c181-118">Dossiers</span><span class="sxs-lookup"><span data-stu-id="5c181-118">Files</span></span>](find-files.md)
     
-    <span data-ttu-id="62ffe-119">Trouver rapidement vos propres fichiers ou votre contenu créés par vos collègues que vous êtes autorisé à afficher ou modifier</span><span class="sxs-lookup"><span data-stu-id="62ffe-119">Quickly find your own files, or content created by co-workers that you have permission to view or edit</span></span>
+    <span data-ttu-id="5c181-119">Trouver rapidement vos propres fichiers ou votre contenu créés par vos collègues que vous êtes autorisé à afficher ou modifier</span><span class="sxs-lookup"><span data-stu-id="5c181-119">Quickly find your own files, or content created by co-workers that you have permission to view or edit</span></span>
     
-- [<span data-ttu-id="62ffe-120">Conversations</span><span class="sxs-lookup"><span data-stu-id="62ffe-120">Conversations</span></span>](find-conversations.md)
+- [<span data-ttu-id="5c181-120">Conversations</span><span class="sxs-lookup"><span data-stu-id="5c181-120">Conversations</span></span>](find-conversations.md)
     
-    <span data-ttu-id="62ffe-121">Trouvez vos conversations privées Microsoft Teams ou Microsoft Yammer ou conversations entre collègues, que vous êtes autorisé à consulter</span><span class="sxs-lookup"><span data-stu-id="62ffe-121">Find your private Microsoft Teams or Microsoft Yammer conversations or conversations between co-workers you have permission to view</span></span>
+    <span data-ttu-id="5c181-121">Trouvez vos conversations privées Microsoft Teams ou Microsoft Yammer ou conversations entre collègues, que vous êtes autorisé à consulter</span><span class="sxs-lookup"><span data-stu-id="5c181-121">Find your private Microsoft Teams or Microsoft Yammer conversations or conversations between co-workers you have permission to view</span></span>
     
-- [<span data-ttu-id="62ffe-122">Emplacements</span><span class="sxs-lookup"><span data-stu-id="62ffe-122">Locations</span></span>](find-locations.md)
+- [<span data-ttu-id="5c181-122">Emplacements</span><span class="sxs-lookup"><span data-stu-id="5c181-122">Locations</span></span>](find-locations.md)
     
-    <span data-ttu-id="62ffe-123">Recherchez des résultats et adresses relatifs aux bâtiments, bureaux, campus et bien plus, calculez facilement l’itinéraire et découvrez les nouveautés proches</span><span class="sxs-lookup"><span data-stu-id="62ffe-123">Find map results and addresses for buildings, offices, campuses, and more, easily get directions, and see what's nearby</span></span>    
+    <span data-ttu-id="5c181-123">Recherchez des résultats et adresses relatifs aux bâtiments, bureaux, campus et bien plus, calculez facilement l’itinéraire et découvrez les nouveautés proches</span><span class="sxs-lookup"><span data-stu-id="5c181-123">Find map results and addresses for buildings, offices, campuses, and more, easily get directions, and see what's nearby</span></span>    
     
-<span data-ttu-id="62ffe-p103">Vous pouvez uniquement voir fonctionner les résultats lorsque vous êtes connecté à Bing avec votre compte professionnel ou scolaire. Il s’agit du même compte que vous utilisez pour vous connecter à Outlook sur le web, SharePoint et autres applications Office 365.</span><span class="sxs-lookup"><span data-stu-id="62ffe-p103">You can only see work results when you're signed in to Bing with your work or school account. This is the same account you use to sign in to Outlook on the web, SharePoint, and other Office 365 apps.</span></span> 
+<span data-ttu-id="5c181-p103">Vous pouvez uniquement voir fonctionner les résultats lorsque vous êtes connecté à Bing avec votre compte professionnel ou scolaire. Il s’agit du même compte que vous utilisez pour vous connecter à Outlook sur le web, SharePoint et autres applications Office 365.</span><span class="sxs-lookup"><span data-stu-id="5c181-p103">You can only see work results when you're signed in to Bing with your work or school account. This is the same account you use to sign in to Outlook on the web, SharePoint, and other Office 365 apps.</span></span> 
   
-<span data-ttu-id="62ffe-p104">Microsoft Search renvoie uniquement les informations et les fichiers que vous êtes autorisé à consulter. Vous disposez des autorisations, car vous avez créé les fichiers ou les informations, qui ont été partagés avec vous ou avec un plus grand groupe vous ou qu’ils soient stockés dans des dossiers ou des emplacements où vous êtes autorisé à accéder.</span><span class="sxs-lookup"><span data-stu-id="62ffe-p104">Microsoft Search will only return information and files that you have permission to see. You may have permission because you created the files or information, they've been shared with you or with a larger group that includes you, or they're stored in folders or locations that you have permission to access.</span></span>
+<span data-ttu-id="5c181-p104">Microsoft Search renvoie uniquement les informations et les fichiers que vous êtes autorisé à consulter. Vous disposez des autorisations, car vous avez créé les fichiers ou les informations, qui ont été partagés avec vous ou avec un plus grand groupe vous ou qu’ils soient stockés dans des dossiers ou des emplacements où vous êtes autorisé à accéder.</span><span class="sxs-lookup"><span data-stu-id="5c181-p104">Microsoft Search will only return information and files that you have permission to see. You may have permission because you created the files or information, they've been shared with you or with a larger group that includes you, or they're stored in folders or locations that you have permission to access.</span></span>
 
   
 
