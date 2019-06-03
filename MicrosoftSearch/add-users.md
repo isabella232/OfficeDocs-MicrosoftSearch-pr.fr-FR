@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 41723aec-435c-400e-a818-6b1e8a1324c0
+ROBOTS: NoIndex
 description: Attribuer des autorisations et des rôles aux administrateurs et aux éditeurs de la fonctionnalité Recherche Microsoft
-ms.openlocfilehash: 7fa32c008fcbc1bb436f4e90ff0621ed87df8fc6
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: e29de1b38c0014d282168b4771f8400b2deb6ee3
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508480"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591376"
 ---
 # <a name="manage-users"></a>Gérer les utilisateurs
 
+> [!IMPORTANT]
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
+    
 Les éditeurs peuvent ajouter du contenu, mais ne peuvent pas modifier les paramètres.
   
 ## <a name="add-admins-and-editors"></a>Ajout d’administrateurs et d’éditeurs

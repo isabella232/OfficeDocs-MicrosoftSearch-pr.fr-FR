@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5479dc34-3de0-41c5-94a7-ba87069e6b43
+ROBOTS: NoIndex
 description: Vue d’ensemble de toutes les façons d’ajouter et de créer des signets pour les résultats de travail de la fonctionnalité Recherche Microsoft
-ms.openlocfilehash: a7243d43eb5132c8096115852a4ebd8bd4dc3305
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 5e79fdb892e02673c08c62402e6fa0fea25f70f7
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968371"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591457"
 ---
 # <a name="create-and-manage-bookmarks"></a>Créer et gérer des signets
 
 > [!IMPORTANT]
-> Les paramètres de Recherche Microsoft dans Bing sont désormais accessibles dans le Centre d’administration Microsoft 365. Commencez par [assigner des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
     
 ## <a name="create-bookmarks"></a>Créer des signets
 

@@ -13,16 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fee131cf-c82f-4f4b-b288-6fa98a99b793
+ROBOTS: NoIndex
 description: Obtenez les fonctionnalités d’une vue d’ensemble de l’administrateur du portail et accédez aux autorisations disponibles avec Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 28706ada22b1523c8a89101d673fdbea8f752cb2
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 4edfbce7b5858a3e8cd3aad30109177d71d45d7b
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508528"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590719"
 ---
-# <a name="about-the-admin-portal"></a>À propos du portail d’Administration
+# <a name="about-the-admin-portal"></a>À propos du portail d’administration
 
+> [!IMPORTANT]
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
+
+    
 Microsoft Search(recherche Microsoft) vous permet d’utiliser Bing pour rechercher votre organisation à des sites SharePoint et des fichiers, sites Web internes, personnes, des groupes Office 365 et autres aspects. Utilisez le portail d’administration pour gérer tous les aspects de Microsoft Search (recherche Microsoft).
   
 Le portail d’administration de Microsoft Search (recherche Microsoft) est organisé autour de ces zones:

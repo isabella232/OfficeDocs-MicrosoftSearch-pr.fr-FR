@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8ad58820-69e0-4ee0-88a7-d207ffa790b7
+ROBOTS: NOINDEX
 description: Ajoutez ces URL et domaines à la liste verte de votre pare-feu afin que vos utilisateurs puissent accéder facilement à la recherche Microsoft.
-ms.openlocfilehash: 87a650bd0db17fbede2483c5e117cb03841f6378
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 08e98dbde4d9a32827ac000b0b922aab53abc681
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508735"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591529"
 ---
-# <a name="manage-network-connections"></a>Gestion des connexions réseau
+# <a name="manage-network-connections"></a>Gérer les connexions réseau
 
+> [!IMPORTANT]
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
+    
 Pour vous assurer que vos utilisateurs et vous-même pouvez vous connecter aux points de terminaison de la recherche Microsoft, ajoutez ces URL aux listes vertes de votre pare-feu.
   
 ## <a name="for-the-microsoft-search-admin-portal"></a>Pour le portail d’administration de la recherche Microsoft, procédez comme suit :

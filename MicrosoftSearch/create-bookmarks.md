@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 40a556e1-61c2-4bd3-b80e-5ad62af77454
+ROBOTS: NoIndex
 description: Créer des signets ou une extension du navigateur de l’utilisateur pour les ajouter à vos résultats de travail Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 71e5ae48bb8812e5222a4d6075292f3b85bed441
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 6f6efd10b360547bb0cde47f35510433bf6f90cc
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508729"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590710"
 ---
 # <a name="create-bookmarks"></a>Créer des signets
 
+> [!IMPORTANT]
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
+    
 Les signets aident les utilisateurs à trouver rapidement des outils, des sites et des ressources intéressantes. Chaque signet inclut un titre, une URL et un ensemble de mots clés, qui déclenchent celui-ci.
   
 ## <a name="create-a-bookmark"></a>Créer un signet

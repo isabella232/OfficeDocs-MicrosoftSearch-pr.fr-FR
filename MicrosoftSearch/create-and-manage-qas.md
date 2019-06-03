@@ -13,20 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b40a575d-7727-4bb0-80da-e25131315790
+ROBOTS: NoIndex
 description: Vue d’ensemble de toutes les manières de créer des réponses à des questions fréquemment posées dans le portail d’administration de la fonctionnalité Recherche Microsoft
-ms.openlocfilehash: 09c6747dafd5d2cf029f75fec210d308356c54fe
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 2d58d8b7bdec69f2f1d5078283ee1fb939e84e32
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968431"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591448"
 ---
-# <a name="create-and-manage-qas"></a>Créer et gérer des Q&R
+# <a name="create-and-manage-qas"></a>Créer et gérer des questions et réponses
 
 > [!IMPORTANT]
-> Les paramètres de Recherche Microsoft dans Bing sont désormais accessibles dans le Centre d’administration Microsoft 365. Commencez par [assigner des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
     
-## <a name="create-qas"></a>Créer des Q&R
+## <a name="create-qas"></a>Créer des questions et réponses
 
 Les Q&R fournissent les réponses les plus pertinentes aux questions de vos utilisateurs portant sur le travail. Les utilisateurs peuvent les trouver aisément en entrant les mots clés que vous y associés sur Bing.
   

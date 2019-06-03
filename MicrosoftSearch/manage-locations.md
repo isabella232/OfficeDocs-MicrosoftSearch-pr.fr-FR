@@ -3,7 +3,7 @@ title: Gérer les emplacements
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 11/08/2018
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,93 +14,51 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: Au fil du temps, il se peut que vous deviez mettre à jour le statut et le contenu de certains emplacements afin qu’ils restent pertinents. 
-ms.openlocfilehash: 0e23cf3d3d3d05fe86cdc3e09ce808e54242d670
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: d026e518011f3b3739beb2b6aaa044f8a5e9c0d4
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968426"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591556"
 ---
 # <a name="manage-locations"></a>Gérer les emplacements
 
-> [!IMPORTANT]
-> Les paramètres de Recherche Microsoft dans Bing sont désormais accessibles dans le Centre d’administration Microsoft 365. Commencez par [assigner des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.
-    
-Au fil du temps, il se peut que vous deviez mettre à jour le statut et le contenu de certains emplacements afin qu’ils restent pertinents.  
-  
-## <a name="filter-locations"></a>Filtrer les emplacements
+## <a name="location"></a>Lieu
+Les emplacements permettent à vos utilisateurs de trouver des adresses et de localiser les bâtiments de votre organisation en fournissant la localisation précise des bureaux, campus et bâtiments, ainsi que des instructions de navigation. Les administrateurs doivent ajouter tous les emplacements importants de votre organisation. Contrairement aux signets et aux Q&R, l’index n’est pas actualisé immédiatement, et il peut s’écouler plusieurs heures avant que de nouveaux emplacements ou des emplacements modifiés apparaissent dans les résultats de la recherche.
 
-L’option Filtrer dans l’angle supérieur droit de la page Emplacements permet de rechercher des emplacements sur la base de leur date afin de voir qui les a modifiés. Par exemple, positionnez le curseur de date sur 30 jours, puis sélectionnez un administrateur ou un éditeur pour afficher la liste des emplacements qu’il a créés ou modifiés au cours de cette période.
-  
-## <a name="change-location-content"></a>Modifier le contenu d’un emplacement
+### <a name="add-or-edit-a-single-location"></a>Ajouter ou modifier un seul emplacement
+1. Accédez au **Centre d’administration Microsoft 365**.
+1. Dans le volet de navigation, accédez à **Paramètres** et sélectionnez **Recherche Microsoft**.
+1. Sélectionnez l’onglet **Emplacements**. Par défaut, l’onglet **Signets** est sélectionné sur la page **Recherche Microsoft**.
+1. Pour ajouter un nouvel emplacement, sélectionnez **Ajouter nouveau**.
+1. Pour modifier un emplacement, sélectionnez-le dans la liste.
+1. Lorsque vous ajoutez ou modifiez les informations, l’aperçu est automatiquement mis à jour.
+1. Enregistrez vos modifications.
 
-1. Accédez au portail d’administration de Recherche Microsoft.
-    
-2. Dans le volet de navigation, cliquez sur **Emplacements**.
-    
-3. Pour trouver un emplacement, effectuez une recherche, filtrez ou cliquez sur un statut d’emplacement pour limiter les résultats.
-    
-4. Pour modifier ou mettre à jour un emplacement, cliquez sur son nom.
-    
-5. Apportez des modifications ou mises à jour au contenu afin de voir comment elles s’affichent. 
-    
-6. Cliquez sur **Enregistrer**.
-    
-## <a name="bulk-export-and-edit-locations"></a>Exporter et modifier en bloc des emplacements
+### <a name="bulk-add-or-edit-locations"></a>Ajout ou modification en bloc d’emplacements
+Les administrateurs peuvent utiliser les fonctions d’importation ou d’exportation pour ajouter ou modifier des emplacements en bloc. 
 
-Ne modifiez jamais les données contenues dans les champs suivants :
-  
-- Id
-    
-- Dernière modification
-    
-- Dernière modification par
-    
-ID est un identificateur unique pour chaque emplacement, qui ne doit jamais être modifié. Les champs Dernière modification et Dernière modification par servent uniquement à trier et trouver des signets.
-  
-1. Si vous voulez exporter un sous-ensemble de vos emplacements, filtrez-les.
-    
-2. Dans l’angle supérieur droit de la page Emplacements, cliquez sur **Exporter**.
-    
-3. Enregistrez ou ouvrez le fichier .csv.
-    
-4. Si nécessaire, modifiez les données des champs suivants :
-    
-   - Nom
-    
-   - Ligne d’adresse 1
-    
-   - Ligne d’adresse 2
-    
-   - Ville
-    
-   - État de l’adresse
-    
-   - Code postal
-    
-   - Pays
-    
-   - Adresse complète
-    
-   - Latitude
-    
-   - Longitude
-    
-   - Mots clés
-    
-   - Mots clés réservés
-    
-   - État
-    
-5. Enregistrez le fichier csv.
+Utilisez la fonction d’importation/exportation pour les opérations suivantes :
+1. Ajout en bloc d’emplacements - Ajoutez des détails dans le fichier modèle de l’emplacement, puis importez-le. 
+1. Modification en bloc d’emplacements - Exportez les emplacements dans un fichier .csv, modifiez les détails des emplacements dans le fichier .csv exporté, puis importez le fichier .csv mis à jour.
+1. Sauvegarde d’emplacements - Exportez les emplacements existants dans un fichier .csv.
 
-    Le fichier. csv doit être enregistré au format CSV UTF-8, car d’autres types ou codages de fichiers peuvent occasionner des erreurs d’importation.
-    
-6. Dans l’angle supérieur droit de la page Emplacements, cliquez sur **Importer**.
-    
-7. Dans le volet Import locations (Importer les emplacements), cliquez sur **Parcourir**, puis sélectionnez le fichier .csv modifié. 
-    
-8. Cliquez sur **Importer**.
+Pour exporter ou importer des emplacements :
+1. Dans le coin supérieur droit de l’onglet **Emplacements**, sélectionnez **Importer**.
+Sélectionnez **Exporter** pour télécharger les emplacements existants dans un fichier .csv.
+1. Dans le volet de droite, choisissez de procéder à l’importation à l’aide d’un fichier .csv. Téléchargez le fichier modèle pour obtenir la liste des champs et détails obligatoires.
+1. Ajoutez ou modifiez les détails de l’emplacement dans le fichier modèle, puis enregistrez-le sur votre ordinateur. 
+1. Dans le volet **Importer des emplacements**, sélectionnez **Parcourir** et choisissez le fichier .csv à importer.
+1. Sélectionnez **Importer**.
 
-  
+Remarques importantes concernant le fichier modèle :
+- Ne modifiez jamais les données dans les champs suivants : *ID*, *Dernière modification* et *Dernière modification par*.
+- Si vous incluez l’*ID* d’un signet existant, celui-ci sera remplacé par les informations contenues dans le fichier d’importation.
+- Si un signet existant comporte déjà le même titre ou la même URL, il est mis à jour avec les informations contenues dans le fichier d’importation.
+- Certains champs du fichier modèle ne sont pas obligatoires, et les champs obligatoires varient en fonction de l’état du signet.
+- En fonction du champ *État*, les signets sont enregistrés en tant que signets brouillons, suggérés ou programmés, ou sont automatiquement publiés.
+- Si votre organisation est dotée de plusieurs locataires, vous pouvez exporter vos signets à partir d’un locataire et les importer dans un autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne *ID*.
 
+**Remarque :** il est impossible d’importer des emplacements si le fichier modèle comporte des erreurs. Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement mis en forme et qu’il contient toutes les informations requises. 
+
+Pour plus d’informations sur la prévention des erreurs, consultez [Éviter les erreurs d’importation](manage-bookmarks.md#prevent-import-errors).

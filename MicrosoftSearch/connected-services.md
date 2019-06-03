@@ -13,16 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 161ea667-9b27-4695-b7a8-e8e063141795
+ROBOTS: NoIndex
 description: Découvrez comment personnaliser les résultats de travail qui s’affichent lorsque vous utilisez Microsoft Search (recherche Microsoft).
-ms.openlocfilehash: 0990b8362b01a2173f87e541bc1ea86aadcbb506
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 9054febab2626097762a80f093affb1e3351fe1a
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508706"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591259"
 ---
 # <a name="connected-services"></a>Services connectés
 
+> [!IMPORTANT]
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
+     
+     
 Microsoft Search(recherche Microsoft) vous permet d’utiliser le puissant moteur de recherche Bing pour rechercher des fichiers de votre organisation Office 365 SharePoint, sites Web internes avec signet, personnes dans la liste d’adresses globale, les groupes Office 365.
   
 ## <a name="search-for-sites-and-documents"></a>Rechercher des sites et documents

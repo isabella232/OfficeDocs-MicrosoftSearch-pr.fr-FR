@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0
+ROBOTS: NOINDEX
 description: En savoir plus sur les quatre étapes simples nécessaires à l’activation et l’utilisation de Microsoft Search.
-ms.openlocfilehash: 2a113cf10d944aea54d3fe6342599934e4b5ac45
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: fe6e01c866ca99357ce8bdd5e9cb1b6cee1a2333
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508584"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591538"
 ---
 # <a name="quick-set-up-for-microsoft-search"></a>Configuration rapide pour Microsoft Search
 
+> [!IMPORTANT]
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
+    
 Gagner du temps en appliquant le meilleur du web et les utiliser à votre organisation.
   
 ## <a name="step-1-turn-on-microsoft-search"></a>Étape 1 : Activer Microsoft Search

@@ -13,15 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 41b9b33d-fcc4-470c-90ec-068211fbbb16
+ROBOTS: NOINDEX
 description: Les configuration requises pour Office 365 et les abonnements sont nécessaires pour activer Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: e90013eb2b76a4a4f4fff2e8b91f3bc6e48a4f2b
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 029bab5b88a800786f137941df1077b28d4398b7
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508648"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591214"
 ---
 # <a name="requirements-for-microsoft-search"></a>Configuration requise pour Microsoft Search (recherche Microsoft)
+
+> [!IMPORTANT]
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
 
 Voici les configurations requises client Office 365 pour activer Microsoft Search (recherche Microsoft) : 
   

@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d1432d64-7a97-4b1b-a99f-11291814d361
+ROBOTS: NoIndex
 description: Ajouter un logo, le nom de la société et autres éléments à vos résultats de travail relatifs à Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 1ec90c5ad10fb1c3b494ccbe3ad1cd1c6497e0fb
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: d3989422c4bd38236241984c1f9beb67d12a0847
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508640"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591241"
 ---
-# <a name="content-settings"></a>Paramètres du contenu
+# <a name="content-settings"></a>Paramètres de contenu
 
+> [!IMPORTANT]
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
+    
 Avec Microsoft Search (recherche Microsoft), vous pouvez vous assurer une apparence habituelle pour obtenir des résultats qui proviennent de sources de contenu au sein de votre organisation, tels que SharePoint, OneDrive Entreprise ou intranet de votre société. 
   
 - Nom de l’organisation

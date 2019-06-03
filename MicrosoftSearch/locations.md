@@ -13,18 +13,19 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 2379e72c-a7da-4e3f-932a-12d431a0a284
+ROBOTS: NOINDEX
 description: Vue d’ensemble de toutes les façons d’inclure les emplacements de votre organisation dans les résultats de travail de la fonctionnalité Recherche Microsoft
-ms.openlocfilehash: bcda64315f85b9770f47d1b6c08fd90296063487
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 9eb61d206852759ade3cb668a3d9c0dee83c424f
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968458"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591574"
 ---
 # <a name="locations"></a>Emplacements
 
 > [!IMPORTANT]
-> Les paramètres de Recherche Microsoft dans Bing sont désormais accessibles dans le Centre d’administration Microsoft 365. Commencez par [assigner des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
     
 ## <a name="add-locations"></a>Ajouter des emplacements
 

@@ -1,9 +1,9 @@
 ---
 title: Gérer les Q&R
-ms.author: dawholl
-author: dawholl
-manager: kellis
-ms.date: 12/18/2018
+ms.author: anfowler
+author: adefowler
+manager: mnirkhe
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,98 +14,70 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: Recherchez et actualisez des réponses individuelles, ou servez-vous des outils de Recherche Microsoft disponibles pour les modifier tous à la fois
-ms.openlocfilehash: ee239aa73d4e650289f39d33c63c3e2df4f100cc
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 8620842e64a40eb32467c42a289bdec3b67d303b
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968466"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591520"
 ---
 # <a name="manage-qas"></a>Gérer les Q&R
 
-> [!IMPORTANT]
-> Les paramètres de Recherche Microsoft dans Bing sont désormais accessibles dans le Centre d’administration Microsoft 365. Commencez par [assigner des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.
-    
-Au fil du temps, il se peut que vous deviez mettre à jour le statut et le contenu de certaines Q&R afin qu’elles restent pertinentes. 
-  
-## <a name="filter-qas"></a>Filtrer FAQs
+La création de Q&R s’apparente à celle de signets. Les Q&R vous permettent de répondre aux questions des utilisateurs au lieu de vous contenter de leur fournir un lien vers une page web. Les réponses peuvent être mises en forme en texte enrichi à l’aide des outils disponibles. Si un signet et un élément Q&R partagent le même mot clé, le résultat du signet est affiché en premier. Comme pour les signets, l’index des Q&R est actualisé immédiatement après l’ajout ou la modification d’un élément Q&R. 
 
-Utiliser l’option de filtre dans le coin supérieur droit sur l’utilisation de FAQ pour rechercher des questions et réponses par date et qui les a modifiées. Par exemple, positionnez le curseur de date sur 30 jours, puis sélectionnez un administrateur ou un éditeur pour afficher la liste des Q&R qu’il a créées ou modifiées au cours de cette période.
-  
-## <a name="change-qa-content-or-settings"></a>Modifier le contenu ou les paramètres d’une Q&A
+## <a name="add-or-edit-a-single-qa"></a>Ajouter ou modifier un seul élément Q&R
+1. Accédez au **Centre d’administration Microsoft 365**.
+1. Dans le volet de navigation, accédez à **Paramètres** et sélectionnez **Recherche Microsoft**.
+1. Sélectionnez l’onglet **Q&R**. Par défaut, le premier onglet (**Signets**) est sélectionné.
+1. Pour ajouter un élément Q&R, sélectionnez **Ajouter nouveau**.
+Pour modifier un élément Q&R, sélectionnez-le dans la liste.
+1. Lorsque vous ajoutez ou modifiez les informations, l’aperçu est automatiquement mis à jour.
+1. Enregistrez vos modifications.
 
-1. Accédez au Portail d’administration de Recherche Microsoft
-    
-2. Dans le volet de navigation, cliquez sur Courrier**Q&As**.
-    
-3. Pour trouver une FAQ, recherchez, filtrez ou cliquez sur une FAQ pour affiner vos résultats
-    
-4. Pour modifier ou mettre à jour une FAQ, cliquez sur le titre
-    
-5. Apportez des modifications ou mises à jour au contenu ou paramètres et voir comment elles s’affichent
-    
-6. Cliquez sur **Enregistrer**.
-    
-## <a name="bulk-export-and-edit-qas"></a>Exportation en bloc et modifier des FAQ
+### <a name="supported-html-tags"></a>Balises HTML prises en charge
+Vous pouvez utiliser le contenu HTML existant ou ajouter des balises HTML à votre réponse (description). Les balises non prises en charge sont ignorées.  
+Les balises HTML suivantes sont prises en charge :
+- blockquote
+- div
+- em
+- H1, h2, h3 et h4
+- ol, ul et li
+- p
+- Pre
+- span
+- Fort
+- table, thead, tbody, tr, th et td
+- u
+- a
+- code
+- br
+- hr
+- img
 
-Ne jamais modifier les données dans ces champs :
-  
-- Id
-    
-- Dernière modification
-    
-- Dernière modification par
-    
-ID est un identificateur unique pour chaque Q&R, qui ne doit jamais être modifié. Les champs Dernière modification et Dernière modification par servent uniquement à trier et trouver des Q&R.
-  
-1. Si vous voulez exporter un sous-ensemble de vos Q&R, filtrez-les.
-    
-2. Dans le coin supérieur droit de l’écran FAQ, cliquez sur **Exporter**.
-    
-3. Ouvrir et enregistrer le fichier .csv
-    
-4. Modifiez les données dans ces champs :
-    
-   - Question
-    
-   - URL
-      
-   - Mots clés
-    
-   - État
-    
-   - Description de réponse
-    
-   - Mots clés réservés
-    
-   - Date de début
-    
-   - Date de fin
-    
-   - Pays/région
-    
-   - Groupes
-    
-   - Appareil et système d’exploitation
-    
-   - Variantes ciblées
-    
-5. Enregistrez le fichier csv.
+## <a name="bulk-add-or-edit-qas"></a>Ajouter ou modifier en bloc des questions et réponses
+Les administrateurs peuvent utiliser les fonctions d’importation ou d’exportation pour créer ou modifier des Q&R en bloc. Il s’agit d’une fonctionnalité très utile lorsque les administrateurs ont besoin d’ajouter ou de modifier un grand nombre de Q&R. 
 
-    Le fichier. csv doit être enregistré au format CSV UTF-8, car d’autres types ou codages de fichiers peuvent occasionner des erreurs d’importation.
-    
-6. Dans l’angle supérieur droit de la page Q&R, cliquez sur **Importer**.
-    
-7. Dans le volet Import Q&R (Importer les Q&R), cliquez sur **Parcourir**, puis sélectionnez le fichier .csv modifié. 
-    
-8. Cliquez sur **Importer**.
-    
-Vous recevrez une erreur si les données requises sont manquantes ou non valides. Selon l’erreur, un fichier journal peut être généré afin de fournir des informations supplémentaires sur les lignes et les colonnes à corriger. Apportez les modifications nécessaires, puis réessayez d’importer le fichier.
-  
-> [!NOTE]
-> Vous ne pouvez pas créer ou modifier des Q&R tant que toutes les erreurs ne sont pas résolues. 
-  
-Les champs obligatoires varient en fonction du statut du Q&R. En fonction du contenu du champ Statut, les Q&R sont enregistrées en tant que Brouillon, Suggéré ou Planifié, ou sont automatiquement publiées. Pour en savoir plus sur les champs obligatoires et recommandés, voir [Créer des Q&R](create-qas.md).
+Utilisez la fonction d’importation/exportation pour les opérations suivantes :
+1. Ajout en bloc de Q&R - Ajoutez des détails dans le fichier modèle de l’élément Q&R, puis importez-le.
+1. Modification en bloc de Q&R - Exportez les Q&R dans un fichier .csv, modifiez les détails des Q&R dans le fichier .csv exporté, puis importez le fichier .csv.
+1. Sauvegarde de Q&R - Exportez les Q&R dans un fichier .csv.
 
-  
+Pour importer ou exporter des Q&R :
+1. Dans le coin supérieur droit de l’onglet Q&R, sélectionnez **Importer**. Sélectionnez **Exporter** pour télécharger tous les Q&R existants dans un fichier .csv.
+1. Dans le volet de droite, choisissez de procéder à l’importation à l’aide d’un fichier .csv.
+Téléchargez le fichier modèle pour obtenir la liste des champs et détails requis. 
+1. Ajoutez ou modifiez les détails des Q&R dans le fichier modèle et enregistrez-le sur votre ordinateur. 
+1. Dans le volet **Importer des Q&R**, sélectionnez **Parcourir** et choisissez le fichier .csv à importer.
+1. Sélectionnez **Importer**.
 
+Remarques importantes concernant le fichier modèle :
+- Ne modifiez jamais les données dans les champs suivants : *ID*, *Dernière modification* et *Dernière modification par*.
+- Si vous incluez l’*ID* d’un signet existant, celui-ci sera remplacé par les informations contenues dans le fichier d’importation.
+- Si un signet existant comporte déjà le même titre ou la même URL, il est mis à jour avec les informations contenues dans le fichier d’importation.
+- Certains champs du fichier modèle ne sont pas obligatoires, et les champs obligatoires varient en fonction de l’état du signet.
+- En fonction du champ État, les signets sont enregistrés en tant que signets brouillons, suggérés ou programmés, ou sont automatiquement publiés.
+- Si votre organisation est dotée de plusieurs locataires, vous pouvez exporter vos signets à partir d’un locataire et les importer dans un autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne *ID*.
+
+**Remarque :** vous ne pouvez pas importer de Q&R si le fichier modèle comporte des erreurs. Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement mis en forme et qu’il contient toutes les informations requises. 
+
+Pour plus d’informations sur la prévention des erreurs, consultez [Éviter les erreurs d’importation](manage-bookmarks.md#prevent-import-errors).

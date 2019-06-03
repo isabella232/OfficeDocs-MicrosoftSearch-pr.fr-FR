@@ -13,17 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: cd3ee09d-58ab-4b8a-8822-fa11a1399672
+ROBOTS: NoIndex
 description: Trouvez les réponses à certaines des questions les plus fréquentes concernant Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: ed4179262dc20a441ce5e3acadc895bacb271fa9
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 58fb45eec5cc354a6228fb552a3dcda28c2b2367
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508696"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591502"
 ---
 # <a name="faqs"></a>FAQ
 
 Voici le Forum aux questions ayant des utilisateurs et organisations sur administration et l’utilisation de Microsoft Search (recherche Microsoft).
+
+> [!IMPORTANT]
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
   
 ## <a name="whats-the-value-proposition-for-microsoft-search"></a>Quelle est la proposition de valeur pour Microsoft Search (recherche Microsoft) ?
 

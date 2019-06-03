@@ -13,15 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d432b9d9-3792-47a0-9a13-30a1a83caabc
+ROBOTS: NoIndex
 description: Méthodes de création des réponses aux questions fréquemment posées pour vos résultats de travail relatifs à Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 9713608450688a0841aa64d1f3198183b10e05ee
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 9b4d63490c95ec9d5468abbae281c9cc84ab25ca
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508624"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591493"
 ---
-# <a name="create-qas"></a>Créer des Questions-réponses
+# <a name="create-qas"></a>Créer des Q&R
+
+> [!IMPORTANT]
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
 
 Les questions-réponses fournissent une réponse ou des informations aux utilisateurs ainsi qu’un lien facultatif. Dans l’idéal, une Question-Réponse inclut tous les détails que vos utilisateurs recherchent afin que personne n’ait besoin d’accéder à la source. Vous pouvez mettre en forme le contenu de vos Questions- Réponses et inclure des images, des listes et des tableaux.
   

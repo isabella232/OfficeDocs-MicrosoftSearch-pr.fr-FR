@@ -13,20 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
+ROBOTS: NoIndex
 description: Ajoutez rapidement des réponses aux questions fréquemment posées à l’aide des outils d’importation disponibles dans le portail d’administration de Recherche Microsoft
-ms.openlocfilehash: f535cb7ae843def536976cb1f05c8601de592cbb
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 7368014f3bc2f21a788625f0bf826af963366e1b
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968301"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591367"
 ---
-# <a name="bulk-create-qas"></a>Créer en bloc des Q&R
+# <a name="bulk-create-qas"></a>Créer en bloc des questions et réponses
 
 > [!IMPORTANT]
-> Les paramètres de Recherche Microsoft dans Bing sont désormais accessibles dans le Centre d’administration Microsoft 365. Commencez par [assigner des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
     
-Téléchargez et utilisez le modèle .csv pour créer ou éditer en bloc des Q&R. C’est également un moyen simple d’enregistrer en bloc les brouillons de FAQ qui ont besoin de plus de modifications ou mises à jour. Si vous avez besoin de modifier des Q&R existants en bloc, des les exporter à partir du portail d’administration, apportez les modifications nécessaires, puis importez-les.
+Téléchargez et utilisez le modèle .csv pour créer ou éditer en bloc des questions et réponses. C’est également un moyen simple d’enregistrer en bloc les brouillons de FAQ qui ont besoin de plus de modifications ou mises à jour. Si vous avez besoin de modifier des Q&R existants en bloc, des les exporter à partir du portail d’administration, apportez les modifications nécessaires, puis importez-les.
   
 1. Dans le coin supérieur droit de l’écran Q&R, cliquez sur **Importer**.
     

@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
+ROBOTS: NOINDEX
 description: Présentation de toutes les informations nécessaires au déploiement de la recherche Microsoft dans votre organisation
-ms.openlocfilehash: f4a6a5c6fa3765cd08935970178af8ac0d46421c
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: d375f67045a04341dedc699856f631c5c41e5896
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508952"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591088"
 ---
-# <a name="set-up-microsoft-search"></a>Configuration de la recherche Microsoft
+# <a name="set-up-microsoft-search"></a>Configurer la fonctionnalité Recherche Microsoft
 
+> [!IMPORTANT]
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
+    
 Dans le cadre d’Office 365, la fonctionnalité Recherche Microsoft peut être facilement déployée en l’activant dans le Centre d’administration Microsoft 365. Une fois celle-ci activée, il vous suffit de configurer rapidement un logo, un nom et une couleur, et d’accorder l’accès aux administrateurs et aux éditeurs. Ensuite, les utilisateurs peuvent se connecter à Bing avec un compte professionnel ou scolaire et obtenir des résultats professionnels lors de leurs recherches.
 
 - [Configuration rapide](quick-set-up.md)

@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: def300e7-103c-4e92-a062-28ffa27561d7
+ROBOTS: NoIndex
 description: Créez un grand nombre de signets à la fois grâce aux outils d’importation pour le portail d’administration de la fonctionnalité Recherche Microsoft
-ms.openlocfilehash: 560cda6f94060d428f2d18cc61bd2430cb31b474
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 1b3922215534391c65547a4ece22310261626036
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968347"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591421"
 ---
 # <a name="bulk-create-bookmarks"></a>Créer en bloc des signets
 
 > [!IMPORTANT]
-> Les paramètres de Recherche Microsoft dans Bing sont désormais accessibles dans le Centre d’administration Microsoft 365. Commencez par [assigner des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
     
 Téléchargez et utilisez le modèle .csv pour créer, éditer et enregistrer en bloc des signets. Pour modifier des signets en bloc, exportez-les à partir du portail d’administration, apportez les modifications nécessaires, puis importez-les.
   
