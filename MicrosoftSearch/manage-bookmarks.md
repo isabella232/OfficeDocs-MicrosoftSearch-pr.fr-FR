@@ -1,9 +1,9 @@
 ---
 title: Gérer les signets
-ms.author: dawholl
-author: dawholl
-manager: kellis
-ms.date: 09/08/2018
+ms.author: anfowler
+author: adefowler
+manager: mnirkhe
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,88 +13,86 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: Recherchez les signets qui nécessitent une mise à jour et des façons de modifier en bloc les résultats de signet pour la fonctionnalité Recherche Microsoft
-ms.openlocfilehash: d5cebbfd5779bc8a6aa25cdbcdedb6e9b18f242e
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+description: Créez et mettez à jour des signets et des façons de modifier en bloc les résultats de signet pour la fonctionnalité Recherche Microsoft
+ms.openlocfilehash: fb1be0bc137891a54e370fef1e4b5628963c5ad9
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968482"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591619"
 ---
-# <a name="manage-bookmarks"></a><span data-ttu-id="c9731-103">Gérer les signets</span><span class="sxs-lookup"><span data-stu-id="c9731-103">Manage bookmarks</span></span>
+# <a name="manage-bookmarks"></a><span data-ttu-id="2e6cc-103">Gérer les signets</span><span class="sxs-lookup"><span data-stu-id="2e6cc-103">Manage bookmarks</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="c9731-104">Les paramètres de Recherche Microsoft dans Bing sont désormais accessibles dans le Centre d’administration Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="c9731-104">Microsoft Search in Bing settings are now available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="c9731-105">Commencez par [assigner des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.</span><span class="sxs-lookup"><span data-stu-id="c9731-105">Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.</span></span>
-    
-<span data-ttu-id="c9731-106">Au fil du temps, il se peut que vous deviez mettre à jour le statut et le contenu de certains signets afin qu’ils restent pertinents. </span><span class="sxs-lookup"><span data-stu-id="c9731-106">Over time, you may need to update a bookmark's status and content to keep it relevant.</span></span> 
-  
-## <a name="filter-bookmarks"></a><span data-ttu-id="c9731-107">Filtrer les signets</span><span class="sxs-lookup"><span data-stu-id="c9731-107">Filter bookmarks</span></span>
+<span data-ttu-id="2e6cc-104">Vous pouvez créer un signet en quelques étapes.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-104">You can create a bookmark in just a few steps.</span></span> <span data-ttu-id="2e6cc-105">Chaque signet comprend un titre, une URL et un ensemble de mots clés qui le déclenchent.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-105">Each bookmark includes a title, a URL, and a set of keywords that trigger it.</span></span> <span data-ttu-id="2e6cc-106">Un signet peut comprendre plusieurs mots clés, et plusieurs signets peuvent partager le même mot clé, mais un mot clé réservé ne peut pas être partagé.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-106">A bookmark can have several keywords and several bookmarks can share the same keyword, but reserved keyword can't be shared.</span></span> <span data-ttu-id="2e6cc-107">Lorsqu’un signet est créé ou modifié, l’index de recherche est aussitôt actualisé et le signet est immédiatement accessible aux utilisateurs.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-107">When a Bookmark is created or modified, the search index is refreshed immediately, and the bookmark is available to users immediately.</span></span>
 
-<span data-ttu-id="c9731-108">Utiliser l’option de filtre dans le coin supérieur droit sur l’utilisation des signets pour rechercher des signets par date et qui les a modifiés.</span><span class="sxs-lookup"><span data-stu-id="c9731-108">Use the filter option in the upper-right corner of the Bookmarks page to find bookmarks by date and who modified them.</span></span> <span data-ttu-id="c9731-109">Par exemple, positionnez le curseur de date sur 30 jours, puis sélectionnez un administrateur ou un éditeur pour afficher la liste des signets qu’il a créés ou modifiés au cours de cette période.</span><span class="sxs-lookup"><span data-stu-id="c9731-109">For example, set the date slider to 30 days and select an admin or editor to see the list of bookmarks they've created or changed in that time.</span></span>
-  
-## <a name="change-bookmark-content-or-settings"></a><span data-ttu-id="c9731-110">Modifier le contenu ou les paramètres d’un signet</span><span class="sxs-lookup"><span data-stu-id="c9731-110">Change bookmark content or settings</span></span>
+<span data-ttu-id="2e6cc-108">Si votre organisation a configuré des résultats promus dans SharePoint, vous pouvez importer ceux-ci dans **Recherche Microsoft** et mettre le contenu importé à la disposition de vos utilisateurs.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-108">If your organization has Promoted Results set up in SharePoint, you can import the Promoted Results into**Microsoft Search** and make the imported content available to your users.</span></span> <span data-ttu-id="2e6cc-109">Cette méthode simple permet de renseigner rapidement les résultats de recherche dès que vous avez configuré la fonctionnalité **Recherche Microsoft**, et d’améliorer son efficacité pour vos utilisateurs.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-109">This is an easy way to quickly populate search results as soon as you set up **Microsoft Search** and make it more effective for your users.</span></span> <span data-ttu-id="2e6cc-110">Nous vous recommandons d’utiliser les résultats promus de SharePoint comme référence pour apprendre à nommer et créer des résultats de recherche pertinents.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-110">We recommend that you use promoted results from SharePoint as a reference to understand how to name and create relevant search results.</span></span> 
 
-1. <span data-ttu-id="c9731-111">Accédez au Portail d’administration de Recherche Microsoft</span><span class="sxs-lookup"><span data-stu-id="c9731-111">Go to the Microsoft Search Admin portal</span></span>
-    
-2. <span data-ttu-id="c9731-112">Dans le volet de navigation, cliquez sur**Signets**</span><span class="sxs-lookup"><span data-stu-id="c9731-112">In the navigation pane, click **Bookmarks**</span></span>
-    
-3. <span data-ttu-id="c9731-113">Pour trouver un signet, effectuez une recherche, filtrez ou cliquez sur un statut de signet pour limiter les résultats.</span><span class="sxs-lookup"><span data-stu-id="c9731-113">To find a bookmark, search, filter, or click a bookmark status to narrow your results</span></span>
-    
-4. <span data-ttu-id="c9731-114">Pour modifier ou mettre à jour un signet, cliquez sur son titre.</span><span class="sxs-lookup"><span data-stu-id="c9731-114">To change or update a bookmark, click the title</span></span>
-    
-5. <span data-ttu-id="c9731-115">Apportez des modifications ou mises à jour au contenu ou paramètres et voir comment ils s’affichent</span><span class="sxs-lookup"><span data-stu-id="c9731-115">Make any changes or updates to the content or settings and preview how they'll appear</span></span> 
-    
-6. <span data-ttu-id="c9731-116">Cliquez sur **Enregistrer**.</span><span class="sxs-lookup"><span data-stu-id="c9731-116">Click **Save**</span></span>
-    
-## <a name="bulk-export-and-edit-bookmarks"></a><span data-ttu-id="c9731-117">Exporter en bloc et modifier des signets</span><span class="sxs-lookup"><span data-stu-id="c9731-117">Bulk export and edit bookmarks</span></span>
+## <a name="add-or-edit-a-single-bookmark"></a><span data-ttu-id="2e6cc-111">Ajouter ou modifier un seul signet</span><span class="sxs-lookup"><span data-stu-id="2e6cc-111">Add or edit a single bookmark</span></span>
+1. <span data-ttu-id="2e6cc-112">Accédez au **Centre d’administration Microsoft 365**.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-112">Go to **Microsoft 365 admin center**.</span></span>
+1. <span data-ttu-id="2e6cc-113">Dans le volet de navigation, accédez à **Paramètres**, puis sélectionnez \*\*\*\*Recherche Microsoft\*\*\*\*.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-113">In the navigation pane, go to **Settings**, and then select \*\*\*\*Microsoft Search\*\*\*\*.</span></span>
+<span data-ttu-id="2e6cc-114">Par défaut, l’onglet **Signets** est sélectionné.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-114">By default, the **Bookmarks** tab is selected.</span></span>
+1. <span data-ttu-id="2e6cc-115">Pour ajouter un signet, sélectionnez **Ajouter nouveau**.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-115">To add a bookmark, select **Add new**.</span></span> <span data-ttu-id="2e6cc-116">Pour modifier un signet, sélectionnez-le dans la liste.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-116">To edit a bookmark, select the bookmark in the relevant bookmark list.</span></span> 
+1. <span data-ttu-id="2e6cc-117">Lorsque vous ajoutez ou modifiez les informations, l’aperçu est automatiquement mis à jour.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-117">As you add or edit the information, the preview automatically updates.</span></span>
+1. <span data-ttu-id="2e6cc-118">Enregistrez vos modifications.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-118">Save your changes.</span></span>
 
-<span data-ttu-id="c9731-118">Ne jamais modifier les données dans ces champs :</span><span class="sxs-lookup"><span data-stu-id="c9731-118">Never edit data in these fields: Id, Last Modified, and Last Modified By</span></span>
-  
-- <span data-ttu-id="c9731-119">Id</span><span class="sxs-lookup"><span data-stu-id="c9731-119">Id</span></span>
-    
-- <span data-ttu-id="c9731-120">Dernière modification</span><span class="sxs-lookup"><span data-stu-id="c9731-120">Last modified</span></span>
-    
-- <span data-ttu-id="c9731-121">Dernière modification par</span><span class="sxs-lookup"><span data-stu-id="c9731-121">Last modified by</span></span>
-    
-<span data-ttu-id="c9731-122">ID est un identificateur unique pour chaque signet et ne doit jamais être modifié.</span><span class="sxs-lookup"><span data-stu-id="c9731-122">Id is a unique identifier for each bookmark and should never be edited.</span></span> <span data-ttu-id="c9731-123">Utilisez les options dernière modification et dernier modification par uniquement pour trier et trouver des signets.</span><span class="sxs-lookup"><span data-stu-id="c9731-123">The Last Modified and Last Modified By fields should only be used to sort and find bookmarks.</span></span>
-  
-1. <span data-ttu-id="c9731-124">Si vous voulez exporter un sous-ensemble de vos signets, filtrez-les</span><span class="sxs-lookup"><span data-stu-id="c9731-124">If you want to export a subset of your bookmarks, filter them</span></span>
-    
-2. <span data-ttu-id="c9731-125">Dans le coin supérieur droit de l’écran signets, cliquez sur **Exporter**.</span><span class="sxs-lookup"><span data-stu-id="c9731-125">In the upper-right corner of the Bookmarks page, click **Export**</span></span>
-    
-3. <span data-ttu-id="c9731-126">Ouvrir et enregistrer le fichier .csv</span><span class="sxs-lookup"><span data-stu-id="c9731-126">Save or open the .csv file</span></span>
-    
-4. <span data-ttu-id="c9731-127">Modifiez les données dans ces champs :</span><span class="sxs-lookup"><span data-stu-id="c9731-127">Edit data in any of these fields:</span></span>
-   - <span data-ttu-id="c9731-128">Titre</span><span class="sxs-lookup"><span data-stu-id="c9731-128">Title</span></span>
-    
-   - <span data-ttu-id="c9731-129">URL</span><span class="sxs-lookup"><span data-stu-id="c9731-129">URL</span></span>
-    
-   - <span data-ttu-id="c9731-130">Mots clés</span><span class="sxs-lookup"><span data-stu-id="c9731-130">Keywords</span></span>
-    
-   - <span data-ttu-id="c9731-131">État</span><span class="sxs-lookup"><span data-stu-id="c9731-131">State</span></span>
-    
-   - <span data-ttu-id="c9731-132">Description</span><span class="sxs-lookup"><span data-stu-id="c9731-132">Description</span></span>
-    
-   - <span data-ttu-id="c9731-133">Mots clés réservés</span><span class="sxs-lookup"><span data-stu-id="c9731-133">Reserved keywords</span></span>
-    
-   - <span data-ttu-id="c9731-134">Date de début</span><span class="sxs-lookup"><span data-stu-id="c9731-134">Start Date</span></span>
-    
-   - <span data-ttu-id="c9731-135">Date de fin</span><span class="sxs-lookup"><span data-stu-id="c9731-135">End Date</span></span>
-    
-   - <span data-ttu-id="c9731-136">Pays/région</span><span class="sxs-lookup"><span data-stu-id="c9731-136">Country/Region</span></span>
-    
-   - <span data-ttu-id="c9731-137">Groupes</span><span class="sxs-lookup"><span data-stu-id="c9731-137">Groups</span></span>
-    
-   - <span data-ttu-id="c9731-138">Appareil et système d’exploitation</span><span class="sxs-lookup"><span data-stu-id="c9731-138">Device&amp;OS</span></span>
-    
-   - <span data-ttu-id="c9731-139">Variantes ciblées</span><span class="sxs-lookup"><span data-stu-id="c9731-139">Targeted variations</span></span>
-    
-5. <span data-ttu-id="c9731-140">Enregistrez le fichier csv.</span><span class="sxs-lookup"><span data-stu-id="c9731-140">Save the file as a .csv file.</span></span>
+## <a name="add-or-edit-bookmark-using-browser-extensions"></a><span data-ttu-id="2e6cc-119">Ajouter ou modifier un signet à l’aide d’extensions de navigateur</span><span class="sxs-lookup"><span data-stu-id="2e6cc-119">Add or edit bookmark using browser extensions</span></span>
+<span data-ttu-id="2e6cc-120">Les administrateurs de recherche peuvent facilement créer du contenu de recherche en utilisant des extensions de navigateur.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-120">Search administrators can create search content easily by using browser extensions.</span></span> <span data-ttu-id="2e6cc-121">Installez l’extension de navigateur, puis accédez au site que vous souhaitez ajouter en tant que signet et ajoutez-le.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-121">Install the browser extension and then go to the site you want to add as bookmark and add the site as bookmark.</span></span>
 
-    <span data-ttu-id="c9731-141">Le fichier. csv doit être enregistré au format CSV UTF-8, car d’autres types ou codages de fichiers peuvent occasionner des erreurs d’importation.</span><span class="sxs-lookup"><span data-stu-id="c9731-141">The .csv file should be saved as a CSV UTF-8 file, other file types and or encodings may cause import errors</span></span>
-    
-6. <span data-ttu-id="c9731-142">Dans l’angle supérieur droit de la page Signets, cliquez sur **Importer**.</span><span class="sxs-lookup"><span data-stu-id="c9731-142">In the upper-right corner of the Bookmarks page, click **Import**</span></span>
-    
-7. <span data-ttu-id="c9731-143">Dans le volet Import bookmarks (Importer les signets), cliquez sur **Parcourir**, puis sélectionnez le fichier .csv modifié.</span><span class="sxs-lookup"><span data-stu-id="c9731-143">In the Import bookmarks pane, click **Browse** and select the edited .csv file</span></span> 
-    
-8. <span data-ttu-id="c9731-144">Cliquez sur **Importer**.</span><span class="sxs-lookup"><span data-stu-id="c9731-144">Click **Import**.</span></span>
+<span data-ttu-id="2e6cc-122">Actuellement, des extensions de navigateur sont disponibles pour Edge et Chrome.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-122">Currently, browser extensions are available for Edge and Chrome.</span></span> 
+- <span data-ttu-id="2e6cc-123">Pour télécharger l’extension Edge, accédez à [Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) et téléchargez l’application.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-123">To download Edge extension, go to [Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) and download the app.</span></span>
+- <span data-ttu-id="2e6cc-124">Pour télécharger l’extension Chrome, accédez à [Chrome Web Store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) et téléchargez l’application.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-124">To download Chrome extension, go to [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) and download the app.</span></span>
+
+## <a name="bulk-add-or-edit-bookmarks"></a><span data-ttu-id="2e6cc-125">Ajout ou modification en bloc de signets</span><span class="sxs-lookup"><span data-stu-id="2e6cc-125">Bulk add or edit bookmarks</span></span>
+<span data-ttu-id="2e6cc-126">L’administrateur de recherche peut utiliser les fonctions d’importation ou d’exportation pour créer ou modifier des signets en bloc.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-126">Search administrator can use the Import or Export features to bulk create or edit bookmarks.</span></span> <span data-ttu-id="2e6cc-127">Il s’agit d’une fonctionnalité très utile lorsqu’un administrateur souhaite ajouter ou modifier un grand nombre de signets.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-127">This is a very useful feature when an administrator wants to add or edit a large number of bookmarks.</span></span> 
+
+<span data-ttu-id="2e6cc-128">Utilisez la fonction d’importation/exportation pour les opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="2e6cc-128">Use the import/export feature to:</span></span>
+- <span data-ttu-id="2e6cc-129">Ajout en bloc de signets - Ajoutez des détails dans le fichier modèle du signet, puis importez-le.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-129">Bulk add bookmarks - Add details in the bookmark template file, and then import it.</span></span>
+- <span data-ttu-id="2e6cc-130">Modification en bloc de signets - Exportez les signets dans un fichier .csv, modifiez les détails des signets dans le fichier .csv exporté, puis importez le fichier .csv mis à jour.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-130">Bulk edit bookmarks - Export bookmarks to a .csv file, then edit the bookmark details in the exported .csv file, and then import the updated .csv file.</span></span>
+- <span data-ttu-id="2e6cc-131">Importer les sites promus depuis SharePoint.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-131">Import promoted sites from SharePoint.</span></span>
+- <span data-ttu-id="2e6cc-132">Sauvegarde de signets - Exportez les signets dans un fichier .csv.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-132">Backup bookmarks - Export bookmarks to a .csv file.</span></span>
+
+<span data-ttu-id="2e6cc-133">Pour importer ou exporter des signets :</span><span class="sxs-lookup"><span data-stu-id="2e6cc-133">To import or export bookmarks:</span></span>
+1. <span data-ttu-id="2e6cc-134">Dans le coin supérieur droit de l’onglet **Signets**, sélectionnez **Importer**.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-134">In the upper-right corner of **Bookmarks** tab, select **Import**.</span></span> <span data-ttu-id="2e6cc-135">Sélectionnez **Exporter** pour télécharger tous les signets existants dans un fichier .csv.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-135">Select **Export** to download all the existing bookmarks in a .csv file.</span></span>
+1. <span data-ttu-id="2e6cc-136">Dans le volet de droite, choisissez l’option d’importation : à l’aide d’un fichier .csv ou à partir de SharePoint.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-136">In the right pane, choose the option to import using a .csv file or from SharePoint.</span></span>
+<span data-ttu-id="2e6cc-137">Téléchargez le fichier modèle pour obtenir la liste des champs et détails requis.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-137">Download the template file for a list of the required fields and details.</span></span> 
+1. <span data-ttu-id="2e6cc-138">Ajoutez ou modifiez les détails des signets dans le fichier modèle, puis enregistrez-le sur votre ordinateur.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-138">Add or edit bookmark details in the template file, and then save it on your computer.</span></span> 
+1. <span data-ttu-id="2e6cc-139">Dans le volet **Importer des signets**, sélectionnez **Parcourir** et choisissez le fichier .csv à importer.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-139">In the **Import bookmarks** pane, select **Browse** and then the .csv file that you want to import.</span></span>
+1. <span data-ttu-id="2e6cc-140">Sélectionnez **Importer**.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-140">Select **Import**.</span></span>
+
+<span data-ttu-id="2e6cc-141">Remarques importantes concernant le fichier modèle :</span><span class="sxs-lookup"><span data-stu-id="2e6cc-141">Here are some important points to be noted regarding the template file:</span></span>
+- <span data-ttu-id="2e6cc-142">Ne modifiez jamais les données dans les champs suivants : *ID*, *Dernière modification* et *Dernière modification par*.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-142">Never edit data in these fields: *Id*, *Last Modified*, and *Last Modified By*</span></span>
+- <span data-ttu-id="2e6cc-143">Si vous incluez l’*ID* d’un signet existant, celui-ci sera remplacé par les informations contenues dans le fichier d’importation.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-143">If you include the *Id* of an existing bookmark, it will be replaced with the information in the import file.</span></span>
+- <span data-ttu-id="2e6cc-144">Si un signet existant comporte déjà le même titre ou la même URL, il est mis à jour avec les informations contenues dans le fichier d’importation.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-144">If there is an existing bookmark with the same title or URL, the bookmark will be updated with information in the import file.</span></span>
+- <span data-ttu-id="2e6cc-145">Certains champs du fichier modèle ne sont pas obligatoires, et les champs obligatoires varient en fonction de l’état du signet.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-145">Not all fields in the template file are required and required fields vary depending on the bookmark state.</span></span>
+- <span data-ttu-id="2e6cc-146">En fonction du champ *État*, les signets sont enregistrés en tant que signets brouillons, suggérés ou programmés, ou sont automatiquement publiés.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-146">Based on the *State* field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.</span></span>
+- <span data-ttu-id="2e6cc-147">Si votre organisation est dotée de plusieurs locataires, vous pouvez exporter vos signets à partir d’un locataire et les importer dans un autre.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-147">For organizations with multiple tenants, you can export your bookmarks from one tenant and import it into another.</span></span> <span data-ttu-id="2e6cc-148">Avant l’importation, vous devez toutefois supprimer les données de la colonne *ID*.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-148">But you must remove the data in the *Id* column before you import.</span></span>
+
+### <a name="prevent-import-errors"></a><span data-ttu-id="2e6cc-149">Éviter les erreurs d’importation</span><span class="sxs-lookup"><span data-stu-id="2e6cc-149">Prevent import errors</span></span>
+<span data-ttu-id="2e6cc-150">Une erreur se produit lorsqu’il manque des données obligatoires ou que celles-ci ne sont pas valides. Un fichier journal signalant les lignes et colonnes à corriger est alors généré.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-150">You'll get an error if any required data is missing or invalid, and a log file is generated with more information about the rows and columns to be corrected.</span></span> <span data-ttu-id="2e6cc-151">Apportez les modifications nécessaires et essayez à nouveau d’importer le fichier.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-151">Make necessary edits and try importing the file again.</span></span> <span data-ttu-id="2e6cc-152">Il est impossible d’importer ou d’enregistrer les signets tant que toutes les erreurs n’ont pas été résolues.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-152">You cannot import or save any bookmarks until all errors are resolved.</span></span>
+
+<span data-ttu-id="2e6cc-153">Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement mis en forme et :</span><span class="sxs-lookup"><span data-stu-id="2e6cc-153">To prevent errors, make sure your import file is properly formatted and:</span></span>
+- <span data-ttu-id="2e6cc-154">qu’il inclut la ligne d’en-tête ainsi que toutes les colonnes qui se trouvaient dans le modèle d’importation ;</span><span class="sxs-lookup"><span data-stu-id="2e6cc-154">Includes the header row and all the columns that were in the import template</span></span>
+- <span data-ttu-id="2e6cc-155">que l’ordre des colonnes est le même que celui du modèle d’importation.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-155">The column order is the same as the import template</span></span>
+- <span data-ttu-id="2e6cc-156">Toutes les colonnes comportent des valeurs, à l’exception des trois suivantes, qui peuvent être vides : *ID*, *Dernière modification* et *Dernière modification par*.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-156">All columns have values, except the three that can be empty: *Id*, *Last Modified*, and *Last Modified By*</span></span> 
+- <span data-ttu-id="2e6cc-157">La colonne *État* n’est pas vide, car il s’agit d’une information obligatoire</span><span class="sxs-lookup"><span data-stu-id="2e6cc-157">The *State* column is not empty, as this information is required</span></span>
+
+## <a name="powerapps"></a><span data-ttu-id="2e6cc-158">PowerApps</span><span class="sxs-lookup"><span data-stu-id="2e6cc-158">PowerApps</span></span>
+<span data-ttu-id="2e6cc-159">Aidez vos utilisateurs à accomplir certaines tâches, telles que la saisie de périodes de congés ou de frais, en ajoutant des applications PowerApp existantes à vos signets.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-159">Help your users complete tasks, such as entering vacation time or reporting expenses, by adding existing PowerApps to your bookmarks.</span></span> 
+
+### <a name="what-are-powerapps"></a><span data-ttu-id="2e6cc-160">Que sont les applications PowerApps ?</span><span class="sxs-lookup"><span data-stu-id="2e6cc-160">What are PowerApps?</span></span>
+<span data-ttu-id="2e6cc-161">PowerApps est un service qui vous permet de créer des applications métier qui s’exécutent dans un navigateur, sur un téléphone ou sur une tablette, sans aucune expérience en matière de codage.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-161">PowerApps is a service that lets you build business apps that run in a browser or on a phone or tablet with no coding experience required.</span></span> <span data-ttu-id="2e6cc-162">Les applications PowerApps fonctionnent dans n’importe quel navigateur et sur n’importe quel appareil, et leur ajout prend moins d’une minute.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-162">PowerApps work in any browser and on any device and take less than a minute to add.</span></span> <span data-ttu-id="2e6cc-163">Pour plus d’informations sur les applications PowerApps, consultez :</span><span class="sxs-lookup"><span data-stu-id="2e6cc-163">For more on PowerApps, see:</span></span>
+- <span data-ttu-id="2e6cc-164">
+  [Formation guidée](https://docs.microsoft.com/fr-FR/learn/browse/?products=powerapps)</span><span class="sxs-lookup"><span data-stu-id="2e6cc-164">[Guided Learning](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)</span></span>
+- <span data-ttu-id="2e6cc-165">
+  [Documentation](https://docs.microsoft.com/fr-FR/powerapps/maker/canvas-apps/get-sessionid)</span><span class="sxs-lookup"><span data-stu-id="2e6cc-165">[Documentation](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid)</span></span>
+- [<span data-ttu-id="2e6cc-166">Accueil PowerApps</span><span class="sxs-lookup"><span data-stu-id="2e6cc-166">PowerApps Home</span></span>](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
+
+### <a name="add-a-powerapp-to-a-bookmark"></a><span data-ttu-id="2e6cc-167">Ajouter une application PowerApp à un signet</span><span class="sxs-lookup"><span data-stu-id="2e6cc-167">Add a PowerApp to a bookmark</span></span>
+1. <span data-ttu-id="2e6cc-168">Recherchez l’[ID de l’application PowerApp](https://docs.microsoft.com/fr-FR/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) que vous souhaitez ajouter.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-168">Find the [App ID for the PowerApp](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) that you want to add.</span></span>
+1. <span data-ttu-id="2e6cc-169">Connectez-vous et accédez au **Centre d’administration Microsoft 365**.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-169">Sign in and go to **Microsoft 365 admin center**.</span></span>
+1. <span data-ttu-id="2e6cc-170">Dans le volet de navigation, accédez à **Paramètres**, puis sélectionnez **Recherche Microsoft**.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-170">In the navigation pane, go to **Settings**, and then select **Microsoft Search**.</span></span>
+1. <span data-ttu-id="2e6cc-171">Ajoutez un nouveau signet ou accédez à un signet existant auquel vous souhaitez ajouter une application **PowerApp**.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-171">Add a bookmark or find an existing bookmark that you want to add a **PowerApp** to.</span></span>
+1. <span data-ttu-id="2e6cc-172">Dans **Paramètres de signet**, sélectionnez **Application PowerApp**, puis **Ajouter une application PowerApp**.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-172">In **Bookmark settings**, select **Power App**, and then **Add a Power App**.</span></span>
+1. <span data-ttu-id="2e6cc-173">Entrez ou collez l’**ID de l’application**.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-173">Enter or paste the **App ID**.</span></span>
+    <span data-ttu-id="2e6cc-174">La hauteur et la largeur sont automatiquement ajustées.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-174">The height and width are automatically adjusted.</span></span> <span data-ttu-id="2e6cc-175">Les signets peuvent prendre en charge les orientations portrait et paysage, mais actuellement la taille ne peut pas être modifiée.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-175">Bookmarks can support both portrait and landscape orientations, but currently the size can't be changed.</span></span> <span data-ttu-id="2e6cc-176">L’aperçu du signet présente une application PowerApp entièrement opérationnelle pour faciliter les tests.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-176">The bookmark preview shows a fully functional PowerApp to make it easy to test.</span></span>
+1. <span data-ttu-id="2e6cc-177">Sélectionnez **Publier** ou **Enregistrer en tant que brouillon**.</span><span class="sxs-lookup"><span data-stu-id="2e6cc-177">Select **Publish** or **Save to Draft**.</span></span>
