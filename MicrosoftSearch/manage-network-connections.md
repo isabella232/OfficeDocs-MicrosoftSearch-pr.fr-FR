@@ -13,19 +13,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8ad58820-69e0-4ee0-88a7-d207ffa790b7
+ROBOTS: NOINDEX
 description: Ajoutez ces URL et domaines à la liste verte de votre pare-feu afin que vos utilisateurs puissent accéder facilement à la recherche Microsoft.
-ms.openlocfilehash: 87a650bd0db17fbede2483c5e117cb03841f6378
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 08e98dbde4d9a32827ac000b0b922aab53abc681
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508735"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591529"
 ---
-# <a name="manage-network-connections"></a><span data-ttu-id="0fa1e-103">Gestion des connexions réseau</span><span class="sxs-lookup"><span data-stu-id="0fa1e-103">Manage network connections</span></span>
+# <a name="manage-network-connections"></a><span data-ttu-id="831cb-103">Gérer les connexions réseau</span><span class="sxs-lookup"><span data-stu-id="831cb-103">Manage network connections</span></span>
 
-<span data-ttu-id="0fa1e-104">Pour vous assurer que vos utilisateurs et vous-même pouvez vous connecter aux points de terminaison de la recherche Microsoft, ajoutez ces URL aux listes vertes de votre pare-feu.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-104">To ensure you and your users can connect to Microsoft Search endpoints, add these URLs to your firewall allow lists.</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="831cb-104">Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing.</span><span class="sxs-lookup"><span data-stu-id="831cb-104">This article applies to the Microsoft Search in Bing admin portal.</span></span> <span data-ttu-id="831cb-105">Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons.</span><span class="sxs-lookup"><span data-stu-id="831cb-105">We’re moving the portal to the Microsoft 365 admin center, and then it will be removed.</span></span> <span data-ttu-id="831cb-106">Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="831cb-106">We recommend that you use the Microsoft 365 admin center to get started.</span></span> <span data-ttu-id="831cb-107">[Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).</span><span class="sxs-lookup"><span data-stu-id="831cb-107">[Overview of Microsoft Search](overview-microsoft-search.md)</span></span>
+    
+<span data-ttu-id="831cb-108">Pour vous assurer que vos utilisateurs et vous-même pouvez vous connecter aux points de terminaison de la recherche Microsoft, ajoutez ces URL aux listes vertes de votre pare-feu.</span><span class="sxs-lookup"><span data-stu-id="831cb-108">To ensure you and your users can connect to Microsoft Search endpoints, add these URLs to your firewall allow lists.</span></span>
   
-## <a name="for-the-microsoft-search-admin-portal"></a><span data-ttu-id="0fa1e-105">Pour le portail d’administration de la recherche Microsoft, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="0fa1e-105">For the Microsoft Search Admin portal:</span></span>
+## <a name="for-the-microsoft-search-admin-portal"></a><span data-ttu-id="831cb-109">Pour le portail d’administration de la recherche Microsoft, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="831cb-109">For the Microsoft Search Admin portal:</span></span>
 
 - `www.bingatwork.com`
     
@@ -39,7 +43,7 @@ ms.locfileid: "33508735"
     
 - `\*.bingforbusiness.com`
     
-## <a name="for-microsoft-search-in-bing"></a><span data-ttu-id="0fa1e-106">Pour la recherche Microsoft dans Bing, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="0fa1e-106">For Microsoft Search in Bing:</span></span>
+## <a name="for-microsoft-search-in-bing"></a><span data-ttu-id="831cb-110">Pour la recherche Microsoft dans Bing, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="831cb-110">For Microsoft Search in Bing:</span></span>
 
 - `business.bing.com`
     

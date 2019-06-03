@@ -1,9 +1,9 @@
 ---
 title: Gérer les Q&R
-ms.author: dawholl
-author: dawholl
-manager: kellis
-ms.date: 12/18/2018
+ms.author: anfowler
+author: adefowler
+manager: mnirkhe
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,98 +14,70 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: Recherchez et actualisez des réponses individuelles, ou servez-vous des outils de Recherche Microsoft disponibles pour les modifier tous à la fois
-ms.openlocfilehash: ee239aa73d4e650289f39d33c63c3e2df4f100cc
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 8620842e64a40eb32467c42a289bdec3b67d303b
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968466"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591520"
 ---
-# <a name="manage-qas"></a><span data-ttu-id="0ce9a-103">Gérer les Q&R</span><span class="sxs-lookup"><span data-stu-id="0ce9a-103">Manage Q&As</span></span>
+# <a name="manage-qas"></a><span data-ttu-id="e8fe5-103">Gérer les Q&R</span><span class="sxs-lookup"><span data-stu-id="e8fe5-103">Manage Q&As</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="0ce9a-104">Les paramètres de Recherche Microsoft dans Bing sont désormais accessibles dans le Centre d’administration Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-104">Microsoft Search in Bing settings are now available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="0ce9a-105">Commencez par [assigner des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-105">Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.</span></span>
-    
-<span data-ttu-id="0ce9a-106">Au fil du temps, il se peut que vous deviez mettre à jour le statut et le contenu de certaines Q&R afin qu’elles restent pertinentes. </span><span class="sxs-lookup"><span data-stu-id="0ce9a-106">Over time, you may need to update a Q&A's status and content to keep it relevant.</span></span>
-  
-## <a name="filter-qas"></a><span data-ttu-id="0ce9a-107">Filtrer FAQs</span><span class="sxs-lookup"><span data-stu-id="0ce9a-107">Filter Q&As</span></span>
+<span data-ttu-id="e8fe5-104">La création de Q&R s’apparente à celle de signets.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-104">Creating a Q&A is similar to creating bookmarks.</span></span> <span data-ttu-id="e8fe5-105">Les Q&R vous permettent de répondre aux questions des utilisateurs au lieu de vous contenter de leur fournir un lien vers une page web.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-105">Q&A allows you to answer the user's question instead of just providing a link to webpage.</span></span> <span data-ttu-id="e8fe5-106">Les réponses peuvent être mises en forme en texte enrichi à l’aide des outils disponibles.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-106">You can format the answer in rich text using the available tools.</span></span> <span data-ttu-id="e8fe5-107">Si un signet et un élément Q&R partagent le même mot clé, le résultat du signet est affiché en premier.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-107">If a Bookmark and a Q&A share the same keyword, the Bookmark result is shown first.</span></span> <span data-ttu-id="e8fe5-108">Comme pour les signets, l’index des Q&R est actualisé immédiatement après l’ajout ou la modification d’un élément Q&R.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-108">Like Bookmarks, the Q&A index is refreshed immediately after a Q&A is added or changed.</span></span> 
 
-<span data-ttu-id="0ce9a-108">Utiliser l’option de filtre dans le coin supérieur droit sur l’utilisation de FAQ pour rechercher des questions et réponses par date et qui les a modifiées.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-108">Use the filter option in the upper-right corner of the Q&As page to find Q&As by date and who modified them.</span></span> <span data-ttu-id="0ce9a-109">Par exemple, positionnez le curseur de date sur 30 jours, puis sélectionnez un administrateur ou un éditeur pour afficher la liste des Q&R qu’il a créées ou modifiées au cours de cette période.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-109">For example, set the date slider to 30 days and select an admin or editor to see the list of Q&As they've created or changed in that time.</span></span>
-  
-## <a name="change-qa-content-or-settings"></a><span data-ttu-id="0ce9a-110">Modifier le contenu ou les paramètres d’une Q&A</span><span class="sxs-lookup"><span data-stu-id="0ce9a-110">Change Q&A content or settings</span></span>
+## <a name="add-or-edit-a-single-qa"></a><span data-ttu-id="e8fe5-109">Ajouter ou modifier un seul élément Q&R</span><span class="sxs-lookup"><span data-stu-id="e8fe5-109">Add or edit a single Q&A</span></span>
+1. <span data-ttu-id="e8fe5-110">Accédez au **Centre d’administration Microsoft 365**.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-110">Go to **Microsoft 365 admin center**.</span></span>
+1. <span data-ttu-id="e8fe5-111">Dans le volet de navigation, accédez à **Paramètres** et sélectionnez **Recherche Microsoft**.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-111">In the navigation pane, go to **Settings** and select **Microsoft Search**.</span></span>
+1. <span data-ttu-id="e8fe5-112">Sélectionnez l’onglet **Q&R**. Par défaut, le premier onglet (**Signets**) est sélectionné.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-112">Select **Q&A** tab. By default, the first tab (**Bookmarks**) is selected.</span></span>
+1. <span data-ttu-id="e8fe5-113">Pour ajouter un élément Q&R, sélectionnez **Ajouter nouveau**.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-113">To add a Q&A, select **Add new**.</span></span>
+<span data-ttu-id="e8fe5-114">Pour modifier un élément Q&R, sélectionnez-le dans la liste.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-114">To edit a Q&A, select the Q&A in the relevant Q&A list.</span></span>
+1. <span data-ttu-id="e8fe5-115">Lorsque vous ajoutez ou modifiez les informations, l’aperçu est automatiquement mis à jour.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-115">As you add or edit the information, the preview automatically updates.</span></span>
+1. <span data-ttu-id="e8fe5-116">Enregistrez vos modifications.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-116">Save your changes.</span></span>
 
-1. <span data-ttu-id="0ce9a-111">Accédez au Portail d’administration de Recherche Microsoft</span><span class="sxs-lookup"><span data-stu-id="0ce9a-111">Go to the Microsoft Search Admin portal</span></span>
-    
-2. <span data-ttu-id="0ce9a-112">Dans le volet de navigation, cliquez sur Courrier**Q&As**.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-112">In the navigation pane, click **Q&As**</span></span>
-    
-3. <span data-ttu-id="0ce9a-113">Pour trouver une FAQ, recherchez, filtrez ou cliquez sur une FAQ pour affiner vos résultats</span><span class="sxs-lookup"><span data-stu-id="0ce9a-113">To find a Q&A, search, filter, or click a Q&A status to narrow your results</span></span>
-    
-4. <span data-ttu-id="0ce9a-114">Pour modifier ou mettre à jour une FAQ, cliquez sur le titre</span><span class="sxs-lookup"><span data-stu-id="0ce9a-114">To change or update a Q&A, click the title</span></span>
-    
-5. <span data-ttu-id="0ce9a-115">Apportez des modifications ou mises à jour au contenu ou paramètres et voir comment elles s’affichent</span><span class="sxs-lookup"><span data-stu-id="0ce9a-115">Make any changes or updates to the content or settings and preview how they'll appear</span></span>
-    
-6. <span data-ttu-id="0ce9a-116">Cliquez sur **Enregistrer**.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-116">Click **Save**</span></span>
-    
-## <a name="bulk-export-and-edit-qas"></a><span data-ttu-id="0ce9a-117">Exportation en bloc et modifier des FAQ</span><span class="sxs-lookup"><span data-stu-id="0ce9a-117">Bulk export and edit Q&As</span></span>
+### <a name="supported-html-tags"></a><span data-ttu-id="e8fe5-117">Balises HTML prises en charge</span><span class="sxs-lookup"><span data-stu-id="e8fe5-117">Supported HTML tags</span></span>
+<span data-ttu-id="e8fe5-118">Vous pouvez utiliser le contenu HTML existant ou ajouter des balises HTML à votre réponse (description).</span><span class="sxs-lookup"><span data-stu-id="e8fe5-118">You can use existing HTML content or add HTML tags to your answer (description).</span></span> <span data-ttu-id="e8fe5-119">Les balises non prises en charge sont ignorées.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-119">Unsupported tags are ignored.</span></span>  
+<span data-ttu-id="e8fe5-120">Les balises HTML suivantes sont prises en charge :</span><span class="sxs-lookup"><span data-stu-id="e8fe5-120">The following HTML tags are supported:</span></span>
+- <span data-ttu-id="e8fe5-121">blockquote</span><span class="sxs-lookup"><span data-stu-id="e8fe5-121">blockquote</span></span>
+- <span data-ttu-id="e8fe5-122">div</span><span class="sxs-lookup"><span data-stu-id="e8fe5-122">div</span></span>
+- <span data-ttu-id="e8fe5-123">em</span><span class="sxs-lookup"><span data-stu-id="e8fe5-123">em</span></span>
+- <span data-ttu-id="e8fe5-124">H1, h2, h3 et h4</span><span class="sxs-lookup"><span data-stu-id="e8fe5-124">h1, h2, h3, and h4</span></span>
+- <span data-ttu-id="e8fe5-125">ol, ul et li</span><span class="sxs-lookup"><span data-stu-id="e8fe5-125">ol, ul, and li</span></span>
+- <span data-ttu-id="e8fe5-126">p</span><span class="sxs-lookup"><span data-stu-id="e8fe5-126">p</span></span>
+- <span data-ttu-id="e8fe5-127">Pre</span><span class="sxs-lookup"><span data-stu-id="e8fe5-127">pre</span></span>
+- <span data-ttu-id="e8fe5-128">span</span><span class="sxs-lookup"><span data-stu-id="e8fe5-128">span</span></span>
+- <span data-ttu-id="e8fe5-129">Fort</span><span class="sxs-lookup"><span data-stu-id="e8fe5-129">strong</span></span>
+- <span data-ttu-id="e8fe5-130">table, thead, tbody, tr, th et td</span><span class="sxs-lookup"><span data-stu-id="e8fe5-130">table, thead, tbody, tr, th, and td</span></span>
+- <span data-ttu-id="e8fe5-131">u</span><span class="sxs-lookup"><span data-stu-id="e8fe5-131">u</span></span>
+- <span data-ttu-id="e8fe5-132">a</span><span class="sxs-lookup"><span data-stu-id="e8fe5-132">a</span></span>
+- <span data-ttu-id="e8fe5-133">code</span><span class="sxs-lookup"><span data-stu-id="e8fe5-133">code</span></span>
+- <span data-ttu-id="e8fe5-134">br</span><span class="sxs-lookup"><span data-stu-id="e8fe5-134">br</span></span>
+- <span data-ttu-id="e8fe5-135">hr</span><span class="sxs-lookup"><span data-stu-id="e8fe5-135">hr</span></span>
+- <span data-ttu-id="e8fe5-136">img</span><span class="sxs-lookup"><span data-stu-id="e8fe5-136">img</span></span>
 
-<span data-ttu-id="0ce9a-118">Ne jamais modifier les données dans ces champs :</span><span class="sxs-lookup"><span data-stu-id="0ce9a-118">Never edit data in these fields: Id, Last Modified, and Last Modified By</span></span>
-  
-- <span data-ttu-id="0ce9a-119">Id</span><span class="sxs-lookup"><span data-stu-id="0ce9a-119">Id</span></span>
-    
-- <span data-ttu-id="0ce9a-120">Dernière modification</span><span class="sxs-lookup"><span data-stu-id="0ce9a-120">Last modified</span></span>
-    
-- <span data-ttu-id="0ce9a-121">Dernière modification par</span><span class="sxs-lookup"><span data-stu-id="0ce9a-121">Last modified by</span></span>
-    
-<span data-ttu-id="0ce9a-122">ID est un identificateur unique pour chaque Q&R, qui ne doit jamais être modifié.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-122">Id is a unique identifier for each Q&A and should never be edited.</span></span> <span data-ttu-id="0ce9a-123">Les champs Dernière modification et Dernière modification par servent uniquement à trier et trouver des Q&R.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-123">The Last Modified and Last Modified By fields should only be used to sort and find Q&As.</span></span>
-  
-1. <span data-ttu-id="0ce9a-124">Si vous voulez exporter un sous-ensemble de vos Q&R, filtrez-les.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-124">If you want to export a subset of your Q&As, filter them</span></span>
-    
-2. <span data-ttu-id="0ce9a-125">Dans le coin supérieur droit de l’écran FAQ, cliquez sur **Exporter**.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-125">In the upper-right corner of the Q&As page, click **Export**</span></span>
-    
-3. <span data-ttu-id="0ce9a-126">Ouvrir et enregistrer le fichier .csv</span><span class="sxs-lookup"><span data-stu-id="0ce9a-126">Save or open the .csv file</span></span>
-    
-4. <span data-ttu-id="0ce9a-127">Modifiez les données dans ces champs :</span><span class="sxs-lookup"><span data-stu-id="0ce9a-127">Edit data in any of these fields:</span></span>
-    
-   - <span data-ttu-id="0ce9a-128">Question</span><span class="sxs-lookup"><span data-stu-id="0ce9a-128">Question</span></span>
-    
-   - <span data-ttu-id="0ce9a-129">URL</span><span class="sxs-lookup"><span data-stu-id="0ce9a-129">URL</span></span>
-      
-   - <span data-ttu-id="0ce9a-130">Mots clés</span><span class="sxs-lookup"><span data-stu-id="0ce9a-130">Keywords</span></span>
-    
-   - <span data-ttu-id="0ce9a-131">État</span><span class="sxs-lookup"><span data-stu-id="0ce9a-131">State</span></span>
-    
-   - <span data-ttu-id="0ce9a-132">Description de réponse</span><span class="sxs-lookup"><span data-stu-id="0ce9a-132">Answer Description</span></span>
-    
-   - <span data-ttu-id="0ce9a-133">Mots clés réservés</span><span class="sxs-lookup"><span data-stu-id="0ce9a-133">Reserved keywords</span></span>
-    
-   - <span data-ttu-id="0ce9a-134">Date de début</span><span class="sxs-lookup"><span data-stu-id="0ce9a-134">Start Date</span></span>
-    
-   - <span data-ttu-id="0ce9a-135">Date de fin</span><span class="sxs-lookup"><span data-stu-id="0ce9a-135">End Date</span></span>
-    
-   - <span data-ttu-id="0ce9a-136">Pays/région</span><span class="sxs-lookup"><span data-stu-id="0ce9a-136">Country/Region</span></span>
-    
-   - <span data-ttu-id="0ce9a-137">Groupes</span><span class="sxs-lookup"><span data-stu-id="0ce9a-137">Groups</span></span>
-    
-   - <span data-ttu-id="0ce9a-138">Appareil et système d’exploitation</span><span class="sxs-lookup"><span data-stu-id="0ce9a-138">Device&amp;OS</span></span>
-    
-   - <span data-ttu-id="0ce9a-139">Variantes ciblées</span><span class="sxs-lookup"><span data-stu-id="0ce9a-139">Targeted variations</span></span>
-    
-5. <span data-ttu-id="0ce9a-140">Enregistrez le fichier csv.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-140">Save the file as a .csv file.</span></span>
+## <a name="bulk-add-or-edit-qas"></a><span data-ttu-id="e8fe5-137">Ajouter ou modifier en bloc des questions et réponses</span><span class="sxs-lookup"><span data-stu-id="e8fe5-137">Bulk add or edit Q&A</span></span>
+<span data-ttu-id="e8fe5-138">Les administrateurs peuvent utiliser les fonctions d’importation ou d’exportation pour créer ou modifier des Q&R en bloc.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-138">Administrators can use the Import and Export features to bulk create or edit Q&A.</span></span> <span data-ttu-id="e8fe5-139">Il s’agit d’une fonctionnalité très utile lorsque les administrateurs ont besoin d’ajouter ou de modifier un grand nombre de Q&R.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-139">This is a useful feature when administrators need to add or edit a large number of Q&A.</span></span> 
 
-    <span data-ttu-id="0ce9a-141">Le fichier. csv doit être enregistré au format CSV UTF-8, car d’autres types ou codages de fichiers peuvent occasionner des erreurs d’importation.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-141">The .csv file should be saved as a CSV UTF-8 file, other file types and or encodings may cause import errors</span></span>
-    
-6. <span data-ttu-id="0ce9a-142">Dans l’angle supérieur droit de la page Q&R, cliquez sur **Importer**.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-142">In the upper-right corner of the Q&As page, click **Import**</span></span>
-    
-7. <span data-ttu-id="0ce9a-143">Dans le volet Import Q&R (Importer les Q&R), cliquez sur **Parcourir**, puis sélectionnez le fichier .csv modifié.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-143">In the Import Q&As pane, click **Browse** and select the edited .csv file</span></span> 
-    
-8. <span data-ttu-id="0ce9a-144">Cliquez sur **Importer**.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-144">Click **Import**.</span></span>
-    
-<span data-ttu-id="0ce9a-145">Vous recevrez une erreur si les données requises sont manquantes ou non valides.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-145">You'll get an error if any required data is missing or invalid.</span></span> <span data-ttu-id="0ce9a-146">Selon l’erreur, un fichier journal peut être généré afin de fournir des informations supplémentaires sur les lignes et les colonnes à corriger.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-146">Depending on the error, a log file may be generated with more information about the rows and columns that need to be corrected.</span></span> <span data-ttu-id="0ce9a-147">Apportez les modifications nécessaires, puis réessayez d’importer le fichier.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-147">Make necessary edits and try importing the file again.</span></span>
-  
-> [!NOTE]
-> <span data-ttu-id="0ce9a-148">Vous ne pouvez pas créer ou modifier des Q&R tant que toutes les erreurs ne sont pas résolues.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-148">Until all errors are resolved, you can't create or edit any Q&As.</span></span> 
-  
-<span data-ttu-id="0ce9a-149">Les champs obligatoires varient en fonction du statut du Q&R.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-149">Not all fields in the template file are required and required fields vary depending on the bookmark state.</span></span> <span data-ttu-id="0ce9a-150">En fonction du contenu du champ Statut, les Q&R sont enregistrées en tant que Brouillon, Suggéré ou Planifié, ou sont automatiquement publiées.</span><span class="sxs-lookup"><span data-stu-id="0ce9a-150">Based on the State field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.</span></span> <span data-ttu-id="0ce9a-151">Pour en savoir plus sur les champs obligatoires et recommandés, voir [Créer des Q&R](create-qas.md).</span><span class="sxs-lookup"><span data-stu-id="0ce9a-151">Find out more about required and recommended fields in [create Q&As](create-qas.md).</span></span>
+<span data-ttu-id="e8fe5-140">Utilisez la fonction d’importation/exportation pour les opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="e8fe5-140">Use the import/export feature to:</span></span>
+1. <span data-ttu-id="e8fe5-141">Ajout en bloc de Q&R - Ajoutez des détails dans le fichier modèle de l’élément Q&R, puis importez-le.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-141">Bulk add Q&A - Add details in the Q&A template file, and then import it.</span></span>
+1. <span data-ttu-id="e8fe5-142">Modification en bloc de Q&R - Exportez les Q&R dans un fichier .csv, modifiez les détails des Q&R dans le fichier .csv exporté, puis importez le fichier .csv.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-142">Bulk edit Q&A - Export Q&A to a .csv file, then edit the Q&A details in the exported .csv file, and then import the .csv file.</span></span>
+1. <span data-ttu-id="e8fe5-143">Sauvegarde de Q&R - Exportez les Q&R dans un fichier .csv.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-143">Backup Q&A - Export Q&A to a .csv file.</span></span>
 
-  
+<span data-ttu-id="e8fe5-144">Pour importer ou exporter des Q&R :</span><span class="sxs-lookup"><span data-stu-id="e8fe5-144">To import or export Q&A:</span></span>
+1. <span data-ttu-id="e8fe5-145">Dans le coin supérieur droit de l’onglet Q&R, sélectionnez **Importer**.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-145">In the upper-right corner of the Q&A tab, select **Import**.</span></span> <span data-ttu-id="e8fe5-146">Sélectionnez **Exporter** pour télécharger tous les Q&R existants dans un fichier .csv.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-146">Select **Export** to download all the existing Q&A in a .csv file.</span></span>
+1. <span data-ttu-id="e8fe5-147">Dans le volet de droite, choisissez de procéder à l’importation à l’aide d’un fichier .csv.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-147">In the right pane, choose the option to import using a .csv file.</span></span>
+<span data-ttu-id="e8fe5-148">Téléchargez le fichier modèle pour obtenir la liste des champs et détails requis.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-148">Download the template file for a list of the required fields and details.</span></span> 
+1. <span data-ttu-id="e8fe5-149">Ajoutez ou modifiez les détails des Q&R dans le fichier modèle et enregistrez-le sur votre ordinateur.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-149">Add or edit Q&A details in the template file and save it on your computer.</span></span> 
+1. <span data-ttu-id="e8fe5-150">Dans le volet **Importer des Q&R**, sélectionnez **Parcourir** et choisissez le fichier .csv à importer.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-150">In the **Import Q&A** pane, select **Browse**, and then the .csv file that you want to import.</span></span>
+1. <span data-ttu-id="e8fe5-151">Sélectionnez **Importer**.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-151">Select **Import**.</span></span>
 
+<span data-ttu-id="e8fe5-152">Remarques importantes concernant le fichier modèle :</span><span class="sxs-lookup"><span data-stu-id="e8fe5-152">Here are some important points regarding the template file:</span></span>
+- <span data-ttu-id="e8fe5-153">Ne modifiez jamais les données dans les champs suivants : *ID*, *Dernière modification* et *Dernière modification par*.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-153">Never edit data in these fields: *Id*, *Last Modified*, and *Last Modified By*</span></span>
+- <span data-ttu-id="e8fe5-154">Si vous incluez l’*ID* d’un signet existant, celui-ci sera remplacé par les informations contenues dans le fichier d’importation.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-154">If you include the *Id* of an existing bookmark, it will be replaced with the information in the import file.</span></span>
+- <span data-ttu-id="e8fe5-155">Si un signet existant comporte déjà le même titre ou la même URL, il est mis à jour avec les informations contenues dans le fichier d’importation.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-155">If there is an existing bookmark with the same title or URL, the bookmark will be updated with information in the import file.</span></span>
+- <span data-ttu-id="e8fe5-156">Certains champs du fichier modèle ne sont pas obligatoires, et les champs obligatoires varient en fonction de l’état du signet.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-156">Not all fields in the template file are required and required fields vary depending on the bookmark state.</span></span>
+- <span data-ttu-id="e8fe5-157">En fonction du champ État, les signets sont enregistrés en tant que signets brouillons, suggérés ou programmés, ou sont automatiquement publiés.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-157">Based on the State field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.</span></span>
+- <span data-ttu-id="e8fe5-158">Si votre organisation est dotée de plusieurs locataires, vous pouvez exporter vos signets à partir d’un locataire et les importer dans un autre.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-158">For organizations with multiple tenants, you can export your bookmarks from one tenant and import it into another.</span></span> <span data-ttu-id="e8fe5-159">Avant l’importation, vous devez toutefois supprimer les données de la colonne *ID*.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-159">But you must remove the data in the *Id* column before you import.</span></span>
+
+<span data-ttu-id="e8fe5-160">**Remarque :** vous ne pouvez pas importer de Q&R si le fichier modèle comporte des erreurs.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-160">**Note:** You cannot import Q&A if there are any errors in the template file.</span></span> <span data-ttu-id="e8fe5-161">Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement mis en forme et qu’il contient toutes les informations requises.</span><span class="sxs-lookup"><span data-stu-id="e8fe5-161">To prevent errors, make sure your import file is properly formatted and include all the required information.</span></span> 
+
+<span data-ttu-id="e8fe5-162">Pour plus d’informations sur la prévention des erreurs, consultez [Éviter les erreurs d’importation](manage-bookmarks.md#prevent-import-errors).</span><span class="sxs-lookup"><span data-stu-id="e8fe5-162">For more information on how to prevent error, see [Prevent import errors](manage-bookmarks.md#prevent-import-errors).</span></span>
