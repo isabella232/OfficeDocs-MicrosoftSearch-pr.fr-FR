@@ -3,7 +3,7 @@ title: Configurer la fonctionnalité **Recherche Microsoft**
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 04/30/2019
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer la fonctionnalité Recherche Microsoft pour la première fois.
-ms.openlocfilehash: 703b9c6ab1213fa06f3d959a0e29a9b757e2b2c9
-ms.sourcegitcommit: aeb44797427bd39c133fa899ab77277dd90fe47b
+ms.openlocfilehash: 3b872370dc2058c56637b836f8f78b7ed8e6680e
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970129"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591052"
 ---
 # <a name="set-up-microsoft-search"></a>Configurer la fonctionnalité Recherche Microsoft
 
@@ -30,9 +30,9 @@ Pour en savoir plus sur la fonctionnalité **Recherche Microsoft**, consultez [V
 
 La fonctionnalité **Recherche Microsoft** est activée par défaut pour toutes les applications Microsoft qui la prennent en charge, dans le cadre de Microsoft 365. Il suffit à l’utilisateur de se connecter avec un compte professionnel ou scolaire et d’utiliser un navigateur sur lequel Bing est défini comme fournisseur de recherche par défaut.
 
-Vous administrez **Recherche Microsoft** à partir du **Centre d’administration Microsoft 365**. Connectez-vous à l’aide de vos informations d'identification d’administrateur, sélectionnez la vignette **Administrateur** dans le **Lanceur d’applications**. Dans le **Centre d’administration Microsoft 365**, sélectionnez **Recherche Microsoft** sous **Paramètres** dans le volet de navigation de gauche. 
+Vous administrez **Recherche Microsoft** à partir du **Centre d’administration Microsoft 365**. Connectez-vous en utilisant votre ID de connexion avec les informations d’identification d’administrateur, puis, dans la liste des applications Office 365, sélectionnez la vignette **Administrateur** (cliquez sur l’icône du **lanceur d’applications** dans l’angle supérieur gauche de la liste des applications). Dans le **Centre d’administration Microsoft 365**, sélectionnez **Recherche Microsoft** sous **Paramètres** dans le volet de navigation de gauche. 
 
-**Remarque:** si vous voyez le portail d’administration hérité et voulez basculer vers le nouveau centre d’administration, activez le commutateur **Essayer la version préliminaire** dans l’angle supérieur droit du Centre d’administration. 
+**Remarque:** si vous voyez **Recherche Microsoft** sous **Paramètres** dans le **Centre d’administration Microsoft 365**, activez le commutateur **Essayer la préversion** dans l’angle supérieur droit du centre d’administration. 
 
 En tant qu’administrateur, vous devez tenir compte de certains éléments pour rendre l’expérience **Recherche Microsoft** efficace et conviviale au sein de votre organisation.
 
@@ -54,7 +54,7 @@ La fonctionnalité **Recherche Microsoft** vous permet de gérer le contenu et l
 1. **Administrateur de recherche :** ce rôle permet de créer et de gérer le contenu des résultats de recherche et de définir les paramètres de requête pour améliorer les résultats des recherches effectuées au sein de l’organisation. L’administrateur de recherche gère la configuration de la fonctionnalité **Recherche Microsoft** et désigne les éditeurs de recherche pour créer le contenu.
 2. **Éditeur de recherche :** ce rôle permet de créer, de gérer et de supprimer du contenu pour la fonctionnalité **Recherche Microsoft** dans le Centre d’administration Microsoft 365. Un éditeur peut créer et gérer du contenu éditorial tel que des questions fréquentes et leurs réponses, des emplacements importants, des sites et des applications fréquemment recherchés et utilisés, etc. Il n’a toutefois pas accès à la gestion des paramètres de recherche.
 
-Pour attribuer des rôles d’administrateur, consultez [Attribuer des rôles d’administrateur dans Office 365 pour les entreprises](https://docs.microsoft.com/en-us/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
+Pour attribuer des rôles d’administrateur, consultez [Attribuer des rôles d’administrateur dans Office 365 pour les entreprises](https://docs.microsoft.com/fr-FR/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 
 ### <a name="step-3-make-content-easy-to-find"></a>Étape 3 : Faciliter l’accès au contenu 
 
@@ -86,7 +86,7 @@ Pour télécharger et installer l’extension de connexion Windows 10 et AAD po
 - [Trouvez ce dont vous avez besoin avec la fonctionnalité Recherche Microsoft d’Office](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
 - [Centre de formation Office 365](https://support.office.com/office-training-center)
 - 
-  [Centre de recherche Microsoft](https://support.office.com/en-us/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
+  [Centre de recherche Microsoft](https://support.office.com/fr-FR/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
 
 ### <a name="trying-out-microsoft-search-in-bing"></a>Essayer la fonctionnalité **Recherche Microsoft** dans Bing 
 L’administrateur de la fonctionnalité **Recherche Microsoft** peut désactiver celle-ci dans Bing. Lorsqu’elle est désactivée, les utilisateurs n’ont pas accès au contenu de l’organisation dans le cadre de la recherche Bing. Par défaut, la fonctionnalité **Recherche Microsoft** est activée dans Bing. Pour une meilleure expérience utilisateur, nous vous recommandons de ne pas désactiver la fonctionnalité **Recherche Microsoft** dans Bing. 
