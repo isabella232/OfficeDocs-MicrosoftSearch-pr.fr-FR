@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
+ROBOTS: NOINDEX
 description: Incluez des applications de navigateur dans les résultats de signet pour la fonctionnalité Recherche Microsoft
-ms.openlocfilehash: 96b409274e3fa06cef7dcc6f1c43360a3e6b9d34
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 655b8c8c6f4a9729461447112b21ca7c6c7864f9
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968376"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591610"
 ---
 # <a name="integrate-powerapps"></a>Intégrer des PowerApps
 
 > [!IMPORTANT]
-> Les paramètres de Recherche Microsoft dans Bing sont désormais accessibles dans le Centre d’administration Microsoft 365. Commencez par [assigner des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
     
 Aidez vos utilisateurs à accomplir des tâches telles que saisir une période de vacances ou une note de frais en intégrant des PowerApps existants dans vos signets. Les PowerApps intégrés apparaissent dans un résultat de signet, ce qui élimine le besoin d’accéder à un autre site ou d’ouvrir un outil distinct, les heures enregistrés ainsi que vos efforts.
   
