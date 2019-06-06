@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer la fonctionnalité Recherche Microsoft pour la première fois.
-ms.openlocfilehash: 3b872370dc2058c56637b836f8f78b7ed8e6680e
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 5b686d34375453fd98bdb0915ee49016e71da20d
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591052"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34728004"
 ---
 # <a name="set-up-microsoft-search"></a>Configurer la fonctionnalité Recherche Microsoft
 
@@ -36,13 +36,13 @@ Vous administrez **Recherche Microsoft** à partir du **Centre d’administratio
 
 En tant qu’administrateur, vous devez tenir compte de certains éléments pour rendre l’expérience **Recherche Microsoft** efficace et conviviale au sein de votre organisation.
 
-### <a name="step-1-check-access-level-of-your-users"></a>Étape 1 : Vérifier le niveau d’accès de vos utilisateurs
+## <a name="step-1-check-access-level-of-your-users"></a>Étape 1 : Vérifier le niveau d’accès de vos utilisateurs
 
 La fonctionnalité **Recherche Microsoft** respecte les paramètres de sécurité de la source du contenu. Ce que les utilisateurs voient dans les résultats de leur recherche dépend de leurs autorisations et de leurs niveaux d’accès. Vérifiez le niveau d’accès des utilisateurs de votre organisation pour veiller à ce qu’ils aient uniquement accès à du contenu autorisé.
 
 Découvrez-en plus sur la [planification des autorisations](https://docs.microsoft.com/fr-FR/sharepoint/plan-your-permissions-strategy) et la [création de niveaux d’autorisation](https://docs.microsoft.com/fr-FR/sharepoint/how-to-create-and-edit-permission-levels).
 
-### <a name="step-2-assign-search-admin-and-search-editor"></a>Étape 2 : Attribuer un administrateur et un éditeur de recherche
+## <a name="step-2-assign-search-admin-and-search-editor"></a>Étape 2 : Attribuer un administrateur et un éditeur de recherche
 
 Deux nouveaux rôles ont été ajoutés au **Centre d’administration Microsoft** : administrateur de recherche et éditeur de recherche.  L’administrateur général, qui bénéficie de tous les privilèges, affecte des rôles d’administrateur aux utilisateurs, notamment le rôle d’administrateur de recherche. Les administrateurs de recherche peuvent déléguer les rôles Administrateur de recherche ou Éditeur de recherche à d’autres utilisateurs. Pour plus d’informations sur les différents rôles d’administrateur, consultez l’article [À propos des rôles d’administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide).
 
@@ -56,7 +56,7 @@ La fonctionnalité **Recherche Microsoft** vous permet de gérer le contenu et l
 
 Pour attribuer des rôles d’administrateur, consultez [Attribuer des rôles d’administrateur dans Office 365 pour les entreprises](https://docs.microsoft.com/fr-FR/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 
-### <a name="step-3-make-content-easy-to-find"></a>Étape 3 : Faciliter l’accès au contenu 
+## <a name="step-3-make-content-easy-to-find"></a>Étape 3 : Faciliter l’accès au contenu 
 
 La fonctionnalité **Recherche Microsoft** fournit aux administrateurs des outils qui leur permettent de créer une expérience de recherche robuste pour leurs utilisateurs. Dans la fonctionnalité **Recherche Microsoft**, les administrateurs peuvent créer trois types de contenus de recherche différents afin d’améliorer l’expérience de recherche et l’accessibilité du contenu :
 - **Signet :** les signets sont semblables aux résultats promus de SharePoint. Ils vous permettent de placer les meilleurs résultats possibles pour les requêtes de vos utilisateurs en tête des résultats de recherche et de faciliter l’accès aux sites internes importants. 
@@ -72,7 +72,7 @@ Voici quelques exemples de contenu que vous pouvez transformer en signets pour v
 
 Pour créer et gérer du contenu de recherche, consultez [Faciliter l’accès au contenu](make-content-easy-to-find.md).
 
-### <a name="step-4-test-single-sign-on"></a>Étape 4 : Tester l’authentification unique
+## <a name="step-4-test-single-sign-on"></a>Étape 4 : Tester l’authentification unique
 La fonctionnalité **Recherche Microsoft** utilise Azure Active Directory (AAD) pour authentifier et autoriser l’accès aux données de votre organisation.  Cela signifie que vos utilisateurs sont automatiquement connectés à votre compte professionnel ou scolaire lorsque vous êtes connecté à une application Office 365 ou Windows 10.
 
 Nous recommandons aux utilisateurs de la fonctionnalité **Recherche Microsoft** d’avoir recours à l’authentification unique car celle-ci réduit le nombre d’invitations à se connecter. Il est conseillé aux administrateurs de tester l’authentification unique sur un petit groupe d’utilisateurs afin d’identifier les éventuels problèmes de blocage de la configuration. 
@@ -81,14 +81,14 @@ Pour les utilisateurs de Chrome sous Windows 10, l’authentification unique ne
 
 Pour télécharger et installer l’extension de connexion Windows 10 et AAD pour Chrome, accédez à [Chrome Web Store](https://go.microsoft.com/fwlink/?linkid=2090961).
 
-### <a name="step-5-training-and-communication"></a>Étape 5 : Formation et communication
+## <a name="step-5-training-and-communication"></a>Étape 5 : Formation et communication
 Établissez des ressources en libre-service auxquelles les employés peuvent facilement accéder par eux-mêmes. Cela allégera le fardeau qui pèse constamment sur vous et votre équipe en termes de publication de communications et de formation/auto-formation des employés. Fournissez à vos utilisateurs des communications, des FAQ, des vidéos et des webinaires ou formations enregistrées. Voici quelques liens utiles pour commencer :
 - [Trouvez ce dont vous avez besoin avec la fonctionnalité Recherche Microsoft d’Office](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
 - [Centre de formation Office 365](https://support.office.com/office-training-center)
 - 
   [Centre de recherche Microsoft](https://support.office.com/fr-FR/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
 
-### <a name="trying-out-microsoft-search-in-bing"></a>Essayer la fonctionnalité **Recherche Microsoft** dans Bing 
+## <a name="trying-out-microsoft-search-in-bing"></a>Essayer la fonctionnalité **Recherche Microsoft** dans Bing 
 L’administrateur de la fonctionnalité **Recherche Microsoft** peut désactiver celle-ci dans Bing. Lorsqu’elle est désactivée, les utilisateurs n’ont pas accès au contenu de l’organisation dans le cadre de la recherche Bing. Par défaut, la fonctionnalité **Recherche Microsoft** est activée dans Bing. Pour une meilleure expérience utilisateur, nous vous recommandons de ne pas désactiver la fonctionnalité **Recherche Microsoft** dans Bing. 
 
 Si vous souhaitez essayer la fonctionnalité **Recherche Microsoft** sur un locataire test ou tester l’expérience de recherche avant de la mettre à la disposition de tous les utilisateurs, vous pouvez la désactiver.
