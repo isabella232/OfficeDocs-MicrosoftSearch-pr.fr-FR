@@ -15,17 +15,14 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: Découvrez les méthodes et les processus qui vous aident à déployer correctement Microsoft Search dans votre organisation
-ms.openlocfilehash: 967c5876fe1a559041ec88d5d038d5739fd77280
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 8fd7003426ad10e105ef427db5688b2a459d4f01
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590836"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727905"
 ---
 # <a name="user-adoption-guide"></a>Guide d’adoption par l’utilisateur
-
-> [!IMPORTANT]
-> Cet article s’applique au portail d’administration de Microsoft Search dans Bing. Nous allons déplacer le portail vers le centre d’administration Microsoft 365, puis il sera supprimé. Nous vous recommandons d’utiliser le centre d’administration Microsoft 365 pour commencer. [Vue d’ensemble de Microsoft Search](overview-microsoft-search.md).
 
 Ces informations sont destinées aux administrateurs de Microsoft Search, aux responsables de la gestion des modifications et aux chefs d’entreprise.
   
@@ -88,9 +85,9 @@ Le temps nécessaire à la préparation de votre déploiement de Microsoft Searc
   
 Les administrateurs influencent directement l’expérience de recherche pour les utilisateurs finaux et déterminent la façon dont Microsoft Search recherche l’organisation. notamment sur le choix des types de résultats présentés à ceux-ci. Contrôlez cette fonctionnalité en activant ou en désactivant les résultats pour les documents, les sites, les personnes, les groupes ou les conversations.
   
-Pour plus d’informations, consultez la rubrique [configurer Microsoft Search](set-up-microsoft-search.md).
+Pour plus d’informations, consultez la rubrique [configurer Microsoft Search](setup-microsoft-search.md).
   
-Les éditeurs sont des experts techniques qui vous aident à gérer les signets et Q&As dans leurs domaines d’expertise. Les éditeurs doivent créer du contenu qui traite des scénarios utilisateur que vous avez identifiés précédemment.
+Les éditeurs sont des experts techniques qui facilitent la gestion des signets et des Q&s dans leurs domaines d’expertise. Les éditeurs doivent créer du contenu qui traite des scénarios utilisateur que vous avez identifiés précédemment.
   
 Pour plus d’informations, reportez-vous à [la rubrique plan Your Content](plan-your-content.md).
   
@@ -188,7 +185,7 @@ Envoyez des communications en ligne qui mettent en évidence les fonctionnalité
   
 Prenez en charge les utilisateurs et informez-les de votre attention en les écoutant et en agissant sur leurs commentaires.
   
-Utilisez le tableau de bord Insights pour voir comment le produit et le contenu sont en cours d’exécution. Utilisez ces informations pour mettre à jour les signets, les Q&As et les autres communications. Cela vous aidera également à:
+Utilisez le tableau de bord Insights pour voir comment le produit et le contenu sont en cours d’exécution. Utilisez ces informations pour mettre à jour les signets, Q&en tant que et autres communications. Cela vous aidera également à:
   
 1. Améliorer la qualité du contenu: consultez les titres, les descriptions et les URL, optimisez les mots clés, supprimez les informations obsolètes et ajoutez de nouvelles informations.
     
@@ -196,7 +193,4 @@ Utilisez le tableau de bord Insights pour voir comment le produit et le contenu 
     
 3. Mener des enquêtes, des groupes de focus et des sessions de feedback pour comprendre ce que les utilisateurs pensent de Microsoft Search, augmenter l’adoption et identifier les zones d’amélioration
     
-L’éducation et les commentaires sont un processus itératif. Il peut s’avérer nécessaire de modifier le contenu et les communications à mesure que vos utilisateurs adoptent Microsoft Search. 
-
-  
-
+L’éducation et les commentaires sont un processus itératif. Il peut s’avérer nécessaire de modifier le contenu et les communications à mesure que vos utilisateurs adoptent Microsoft Search.
