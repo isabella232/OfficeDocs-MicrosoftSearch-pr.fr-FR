@@ -14,14 +14,14 @@ search.appverid:
 ms.assetid: b453e6f0-10cf-4384-9914-241f425cd5f9
 ROBOTS: NOINDEX
 description: Obtenir une vue d’ensemble de toutes les informations que vous trouverez lorsque vous utilisez Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: bc8d53610d125aba57b2c2c8a8c6d1077e2f012a
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: a6bda23da00ac302287787b1c48a3e578f0bb335
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590980"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727933"
 ---
-# <a name="about-microsoft-search"></a>À propos de Microsoft Search (recherche Microsoft)
+# <a name="using-microsoft-search"></a>Utilisation de la fonctionnalité Recherche Microsoft
 
 Microsoft Search(recherche Microsoft) permet simplement d’accéder à la recherche travail et sur le web au même endroit dans une expérience. Utilisez Microsoft Search(recherche Microsoft) pour un moyen simple, rapide, puissant et obtenez les informations appropriées au moment opportun dans n’importe quel navigateur et sur n’importe quel appareil.
   
