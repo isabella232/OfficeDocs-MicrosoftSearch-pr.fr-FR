@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez un aperçu des nouveautés de la fonctionnalité Recherche Microsoft, de ses avantages et des applications qui en disposent actuellement.
-ms.openlocfilehash: 7fc58204b17fbe8274655756bd8e041c921a063e
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: c60ece3778db4696437d8ed0c5cefd0bfaa39142
+ms.sourcegitcommit: 9345523f0143f613c702cd3dcc084b5f7bd6a0b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591307"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767189"
 ---
 # <a name="overview-of-microsoft-search"></a>Vue d’ensemble de Recherche Microsoft
 
@@ -26,7 +26,7 @@ Recherche Microsoft est la capacité de recherche unifiée dans les applications
 
 Recherche Microsoft permet aux utilisateurs de trouver les réponses adaptées, personnes et le contenu pour effectuer leurs tâches dans l’application où elles travaillent déjà.
 
-- Les utilisateurs obtiennent des résultats pertinents dans le **contexte** de l’application à partir de laquelle ils effectuent la recherche. Par exemple, quand ils effectuent une recherche dans Outlook, ils trouvent des e-mails, pas des sites SharePoint. Inversement, quand ils effectuent une recherche dans SharePoint, ils trouvent des sites, pages et fichiers, pas des e-mails.
+- Les utilisateurs obtiennent des résultats pertinents dans le **contexte** de l’application à partir de laquelle ils effectuent la recherche. Par exemple, quand ils effectuent une recherche dans Outlook, ils trouvent des e-mails, pas des sites SharePoint. Lorsqu’ils recherchent dans SharePoint, ils trouvent des sites, pages et fichiers.
 - Quelle que soit l’application dans laquelle les utilisateurs travaillent ; Recherche Microsoft est **personnel**.  Recherche Microsoft utilise les données de Microsoft Graph pour afficher les résultats qui sont pertinents pour vous. Chaque utilisateur peut voir des résultats différents, même s’ils cherchaient les même mots. Ils ne voient que les résultats auxquels ils ont déjà accès, Recherche Microsoft ne modifie pas les autorisations.
 - Les utilisateurs n’ont pas besoin de se souvenir où se trouvent les informations. Par exemple, un utilisateur travaille dans Word et souhaite réutiliser l’information d’une présentation qu’un collègue a partagée à partir de leur espace OneDrive. Il est inutile pour basculer vers OneDrive et rechercher cette présentation, ils peuvent simplement effectuer une recherche à partir de Word.  
 - Dans Bing, les utilisateurs obtiennent des résultats relatifs à leur organisation en plus des résultats web publics.
@@ -58,12 +58,11 @@ Si les suggestions dans la zone de recherche ne conviennent pas, l’action de l
 
 **Recherche Microsoft évolue** : l’ensemble de types de contenu que les utilisateurs peuvent rechercher et l’intelligence de la zone de recherche augmenteront au fil du temps.
 
-**Administrer sur toutes les applications** : Recherche Microsoft est activé par défaut, puis toute administration que vous effectuez s’applique à Recherche Microsoft dans toutes les applications.
+**Administrer sur toutes les applications** : Recherche Microsoft est **activé** par défaut, puis toute administration que vous effectuez s’applique à Recherche Microsoft dans toutes les applications.
 
 ## <a name="apps-that-currently-have-microsoft-search"></a>Applications disposant actuellement de la fonctionnalité Recherche Microsoft
 
-
-Au fil du temps Recherche Microsoft sera disponible dans de plus en plus d’applications sur Microsoft 365. Les applications Office 365 suivantes offrent actuellement Recherche Microsoft :
+ Les applications Office 365 suivantes offrent actuellement Recherche Microsoft :
 
 - SharePoint Online
 - OneDrive Entreprise
@@ -103,9 +102,9 @@ En tant qu’administrateur, vous pouvez simplifier pour vos utilisateurs l’ob
 
 **Afficher les emplacements utiles** : afficher des résultats et les informations d’adresse pour des bâtiments de votre organisation, bureaux et autres espaces de travail sur une carte. Les utilisateurs peuvent utiliser les cartes pour obtenir des instructions, voir ce qui est proche et bien plus encore.
 
-## <a name="what-content-is-searched"></a>Dans que contenu la recherche est-elle effectuée ?
+## <a name="what-content-is-searched"></a>Dans quel contenu la recherche est-elle effectuée ?
 
-Le fonctionnalité Recherche Microsoft peut effectuer une recherche dans du contenu stocké dans SharePoint Online, OneDrive Entreprise et Exchange, y compris dans les contacts de la liste d’adresses globale et les groupes Office 365. Si votre organisation a mis en place environnement SharePoint hybride utilisant une fonctionnalité de recherche hybride dans le cloud, les utilisateurs de Recherche Microsoft peuvent également obtenir des résultats à partir de contenu SharePoint local, ainsi que de tout contenu externe que vous avez connecté à votre environnement SharePoint Server. [Apprenez-en davantage sur les environnements hybrides de recherche](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
+Le fonctionnalité Recherche Microsoft effectue une recherche dans du contenu stocké dans SharePoint Online, OneDrive Entreprise et Exchange, y compris dans les contacts de la liste d’adresses globale et les groupes Office 365. Si votre organisation a mis en place environnement SharePoint hybride utilisant une fonctionnalité de recherche hybride dans le cloud, Recherche Microsoft renvoie des résultats de recherche du contenu SharePoint en ligne et local, y compris tout contenu externe que vous avez connecté à votre environnement SharePoint Server. [Apprenez-en davantage sur les environnements hybrides de recherche](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
 Lorsque des utilisateurs effectuent une recherche à partir de la page d’accueil de SharePoint ou d’Office.com, la fonctionnalité Recherche Microsoft effectue une recherche dans tout le contenu de leur organisation et présente tous les résultats trouvés. C’est ce qu’on appelle l’**étendue de recherche globale**.
 
