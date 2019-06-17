@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez un aperçu des nouveautés de la fonctionnalité Recherche Microsoft, de ses avantages et des applications qui en disposent actuellement.
-ms.openlocfilehash: c60ece3778db4696437d8ed0c5cefd0bfaa39142
-ms.sourcegitcommit: 9345523f0143f613c702cd3dcc084b5f7bd6a0b5
+ms.openlocfilehash: d16066c941bb5c3619d7fd50e9cf33952216fb87
+ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34767189"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "35003136"
 ---
 # <a name="overview-of-microsoft-search"></a>Vue d’ensemble de Recherche Microsoft
 
@@ -147,12 +147,11 @@ Vous pouvez personnaliser l’expérience de recherche classique, par exemple en
 
 Indépendamment du fait qu’une requête d’utilisateur reçoive un ou plusieurs résultats professionnels en retour, les mesures suivantes sont prises :
 
-**Connexion** : Tous les journaux de recherche appartenant au trafic Recherche Microsoft sont rendus anonymes et stockés dans un autre emplacement que le trafic non-Recherche Microsoft public. Ils sont conservés 18 mois et l’accès est autorisé à des fins de débogage uniquement. Les requêtes dans les journaux créés ne sont pas utilisées pour modèle ou en train fonctionnalités publiques comme suggestions automatiques ou recherches pour le site web public associées. L’accès restreint est géré via divers mécanismes sécurisés, y compris les groupes de sécurité et autres couches au sein du système d’ingénierie.
+**Journalisation** - Tous les journaux de recherche relatifs au trafic Recherche Microsoft sont dépersonnalisés et conservés pendant 18 mois. Les requêtes stockées dans ces journaux système ne seront utilisées que pour modéliser et former des fonctionnalités publiques, telles que la suggestion automatique ou les recherches associées de résultats web publics, lorsqu’un ensemble de restrictions et de seuils de fréquence sont atteints, ce qui nous donne la certitude que ces requêtes sont communes et ne sont pas spécifiques à une organisation particulière. La requête doit apparaître un nombre significatif de fois dans la mise en relation des données provenant d’utilisateurs qui n’utilisent pas Recherche Microsoft, et la requête ne doit pas déclencher exclusivement des résultats de recherche d’entreprise. Les requêtes qui ne répondent pas à ces exigences seront stockées séparément du trafic public qui ne concerne pas Recherche Microsoft. L’accès restreint est géré via divers mécanismes sécurisés, y compris les groupes de sécurité et autres couches au sein du système d’ingénierie.
 
 **Historique de recherche** : lorsqu’un utilisateur est connecté avec un compte professionnel ou scolaire, son historique de recherche n’est pas disponible sur d’autres ordinateurs ou appareils.
 
 **Publicité**: les requêtes de recherche d’entreprise ne sont jamais partagées avec ou suggérées aux publicitaires.
-Les journaux de publicités de recherche appartenant à Microsoft Search (recherche Microsoft) sont stockés séparément du trafic public.
 Les publicités ne sont jamais des canaux ciblés à un utilisateur en fonction de leur travail d’identité ou d’organisation.
 
 ## <a name="see-also"></a>Voir aussi

@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 ROBOTS: NOINDEX
 description: Protégez vos données d’entreprise et utilisateurs tout en fournissant des informations pour les utilisateurs ayant une autorisation pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 4e5e23e5e1389c95d28ede66e06707f9856a3770
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: 72f45097ebdc97a03d6016d4cac9a19327c68f30
+ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727939"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "35003109"
 ---
 # <a name="security-for-microsoft-search"></a>Sécurité relative à Microsoft Search (recherche Microsoft)
 
@@ -59,26 +59,15 @@ Quelle que soit la requête utilisateur contienne un ou plusieurs résultat(s) d
   
 - Journalisation
     
-  - Tous les journaux de recherche se rapportant au trafic Microsoft Search (recherche Microsoft) sont anonymisés et stockés séparément du trafic public, non Microsoft Search (recherche Microsoft). Elles sont conservées pendant 18 mois et l’accès est restreint uniquement aux fins de débogage.
-    
-  - Les requêtes dans les journaux créés ne sont pas utilisées pour modèle ou en train fonctionnalités publiques comme suggestions automatiques ou recherches pour le site web public associées.
-    
-  - L’accès restreint est géré via divers mécanismes sécurisés, y compris les groupes de sécurité et autres couches au sein du système d’ingénierie.
-    
-- Historique de recherche
-    
-  - Une fois connecté avec un compte professionnel ou scolaire, l’historique de recherche d’un utilisateur n’est pas disponible sur d’autres ordinateurs ou appareils.
+  - Tous les journaux de recherche relatifs au trafic Recherche Microsoft sont dépersonnalisés et conservés pendant 18 mois.
+  - Les requêtes stockées dans ces journaux système ne seront utilisées que pour modéliser et former des fonctionnalités publiques, telles que la suggestion automatique ou les recherches associées de résultats web publics, lorsqu’un ensemble de restrictions et de seuils de fréquence sont atteints, ce qui nous donne la certitude que ces requêtes sont communes et ne sont pas spécifiques à une organisation particulière. La requête doit apparaître un nombre significatif de fois dans la mise en relation des données provenant d’utilisateurs qui n’utilisent pas Recherche Microsoft, et la requête ne doit pas déclencher exclusivement des résultats de recherche d’entreprise. Les requêtes qui ne répondent pas à ces exigences seront stockées séparément du trafic public qui ne concerne pas Recherche Microsoft.
+  - L’accès restreint est géré par le biais de différents mécanismes sécurisés, y compris des groupes de sécurité et d’autres couches du système d’ingénierie.
     
 - Publicité
     
   - Les requêtes de recherche d’entreprise sont jamais partagées avec ou suggérées aux publicitaires.
-    
-  - Les journaux de publicités de recherche appartenant à Microsoft Search (recherche Microsoft) sont stockés séparément du trafic public.
-    
   - Les publicités ne sont jamais des canaux ciblés à un utilisateur en fonction de leur travail d’identité ou d’organisation.
     
 ## <a name="gdpr"></a>RGPD
 
 Le [billet de blog 21 mai 2018](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/) auprès de Microsoft reflète notre engagement de mise en conformité et comment Microsoft aide les entreprises et les organisations avec leurs propres obligations de conformité RGPD. Vous pouvez trouver des détails supplémentaires dans le Microsoft [Forum aux questions du centre de gestion de la Confidentialité](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs). Les requêtes Microsoft Search (recherche Microsoft) fonctionnent sur les données organisationnelles clients client au sein de Services en ligne seront également respecter les engagements de processeur décrites dans l’Article 28 comme reflétées dans le [Forum aux questions du centre de gestion de la confidentialité](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs). Pour des requêtes à partir de Microsoft Search atteindre Bing public, Microsoft est un contrôleur des données et a implémenté mesures pour l’identifier les requêtes comme indiqué sous RGPD.
-
-
