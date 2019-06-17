@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
 description: Fournissez du contenu de qualité sans recourir à des ressources supplémentaires lorsque vous utilisez Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 88c2af543be02f8e17937e36a81fd28d862e8fb0
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 90774f8606f5582338c12b4f123153b6f3f4de74
+ms.sourcegitcommit: 9df9b1a5f83c9fbe62900df183bee239a8ea6d91
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591205"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34947751"
 ---
 # <a name="plan-your-content"></a>Programmez votre contenu
 
@@ -91,7 +91,7 @@ Une fois les signets et les Q&R créés, il est important de vérifier que :
 
 Les utilisateurs et les experts techniques qui ont contribué à la création du contenu peuvent participer aux tests et à la validation des résultats de la recherche.
 
-## <a name="step-5-review-and-update-periodically"></a>Étape 5 : Procéder à des vérifications et mises à jour régulières
+## <a name="step-5-use-insights-to-review-and-update-periodically"></a>Étape 5 : Utiliser les informations Insights pour examiner et actualiser régulièrement le contenu et les fonctionnalités
 Il est important que les informations faisant autorité, comme les signets et les Q&R, soient à jour. Vous devez régulièrement :
 - corriger ou supprimer les URL rompues ou non valides ;
 - supprimer les signets ou les Q&R qui ne sont plus pertinents ;

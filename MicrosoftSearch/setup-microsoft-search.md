@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer la fonctionnalité Recherche Microsoft pour la première fois.
-ms.openlocfilehash: 5b686d34375453fd98bdb0915ee49016e71da20d
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: c95cc0d11d60e3d4d9a509dc691c01858ede7262
+ms.sourcegitcommit: 9df9b1a5f83c9fbe62900df183bee239a8ea6d91
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34728004"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34947742"
 ---
 # <a name="set-up-microsoft-search"></a>Configurer la fonctionnalité Recherche Microsoft
 
@@ -32,7 +32,7 @@ La fonctionnalité **Recherche Microsoft** est activée par défaut pour toutes 
 
 Vous administrez **Recherche Microsoft** à partir du **Centre d’administration Microsoft 365**. Connectez-vous en utilisant votre ID de connexion avec les informations d’identification d’administrateur, puis, dans la liste des applications Office 365, sélectionnez la vignette **Administrateur** (cliquez sur l’icône du **lanceur d’applications** dans l’angle supérieur gauche de la liste des applications). Dans le **Centre d’administration Microsoft 365**, sélectionnez **Recherche Microsoft** sous **Paramètres** dans le volet de navigation de gauche. 
 
-**Remarque:** si vous voyez **Recherche Microsoft** sous **Paramètres** dans le **Centre d’administration Microsoft 365**, activez le commutateur **Essayer la préversion** dans l’angle supérieur droit du centre d’administration. 
+**Remarque:** si vous NE voyez PAS **Recherche Microsoft** sous **Paramètres** dans le **Centre d’administration Microsoft 365**, activez le commutateur **Essayer la préversion** en haut à droite dans le centre d’administration. 
 
 En tant qu’administrateur, vous devez tenir compte de certains éléments pour rendre l’expérience **Recherche Microsoft** efficace et conviviale au sein de votre organisation.
 
