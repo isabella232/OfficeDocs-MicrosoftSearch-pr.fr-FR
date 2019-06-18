@@ -3,15 +3,6 @@
 
 
 
-## <a name="week-of-may-06-2019"></a>Semaine du mois de mai 06, 2019
-
-
-| Publié le |Titre de la rubrique | Modification |
-|------|------------|--------|
-| 5/9/2019 | [Recherche Microsoft](/MicrosoftSearch/index) | modifié |
-| 5/9/2019 | [Configurer **Microsoft Search**](/MicrosoftSearch/setup-microsoft-search) | modifié |
-
-
 ## <a name="week-of-may-13-2019"></a>Semaine du 13 mai, 2019
 
 
@@ -132,3 +123,17 @@
 | 6/5/2019 | [ Guide d’Adoption par l’utilisateur](/MicrosoftSearch/user-adoption-guide) | modifié |
 | 6/7/2019 | [Prise en main de Recherche Microsoft dans SharePoint Online](/MicrosoftSearch/get-started-search-in-sharepoint-online) | modifié |
 | 6/7/2019 | [Vue d’ensemble de Recherche Microsoft](/MicrosoftSearch/overview-microsoft-search) | modifié |
+
+
+## <a name="week-of-june-10-2019"></a>Semaine du 10 juin 2019
+
+
+| Publié le |Titre de la rubrique | Modification |
+|------|------------|--------|
+| 6/10/2019 | [Importation des résultats SharePoint promus et des principales requêtes](/MicrosoftSearch/import-sharepoint-promoted-results-and-top-queries) | modifié |
+| 6/14/2019 | [Programmer votre contenu](/MicrosoftSearch/plan-your-content) | modifié |
+| 6/14/2019 | [Configurer **Microsoft Search**](/MicrosoftSearch/setup-microsoft-search) | modifié |
+| 6/14/2019 | [Intégrer PowerApps](/MicrosoftSearch/integrate-powerapps) | modifié |
+| 6/14/2019 | [Vue d’ensemble de Recherche Microsoft](/MicrosoftSearch/overview-microsoft-search) | modifié |
+| 6/14/2019 | [Trouver des sites SharePoint](/MicrosoftSearch/use/find-sharepoint-sites) | modifié |
+| 6/14/2019 | [Sécurité relative à Microsoft Search (recherche Microsoft)](/MicrosoftSearch/security) | modifié |
