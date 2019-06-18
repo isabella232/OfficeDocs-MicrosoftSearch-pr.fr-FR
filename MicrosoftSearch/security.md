@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 ROBOTS: NOINDEX
 description: Protégez vos données d’entreprise et utilisateurs tout en fournissant des informations pour les utilisateurs ayant une autorisation pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 72f45097ebdc97a03d6016d4cac9a19327c68f30
-ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
+ms.openlocfilehash: b079a693f7289977c9f7545ec049828f76939ee0
+ms.sourcegitcommit: 6f4756d2887c66030c5e7b81fb936d673bb594a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2019
-ms.locfileid: "35003109"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35009094"
 ---
 # <a name="security-for-microsoft-search"></a>Sécurité relative à Microsoft Search (recherche Microsoft)
 
@@ -33,7 +33,7 @@ Microsoft Search (recherche Microsoft) garantit toujours que les requêtes soien
   
 ## <a name="authentication-and-authorization-with-azure-active-directory"></a>Authentification et autorisation avec Azure Active Directory
 
-L’authentification pour Microsoft Search (recherche Microsoft) est liée à Azure Active Directory. Lorsque les utilisateurs de Microsoft Search (recherche Microsoft) passent à Bing, l’en-tête de Bing affiche également les options de connexion pour un compte Microsoft comme un professionnel ou scolaire. Si Bing ne peut pas déterminer si un utilisateur est un participant éligible, les utilisateurs peuvent accéder à la page[Explorer Microsoft Search (recherche Microsoft)](https://www.bing.com/business/explore), où ils seront redirigés automatiquement vers la page de connexion de votre organisation. 
+L’authentification pour Microsoft Search (recherche Microsoft) est liée à Azure Active Directory. Lorsque les utilisateurs de Microsoft Search (recherche Microsoft) passent à Bing, l’en-tête de Bing affiche également les options de connexion pour un compte Microsoft comme un professionnel ou scolaire. Si Bing ne peut pas déterminer si un utilisateur est un participant éligible, les utilisateurs peuvent accéder à la page[Explorer Microsoft Search (recherche Microsoft)](https://www.bing.com/business/explore), où ils seront redirigés automatiquement vers la page de connexion de votre organisation.
   
 Les utilisateurs peuvent accéder à Microsoft Search (recherche Microsoft) uniquement par le biais d’un compte professionnel ou scolaire. Ils doivent se connecter avec les mêmes informations d’identification qu’ils utilisent pour accéder aux services Office 365 tels que SharePoint ou Outlook. Un compte Microsoft personnel ne peut pas être utilisé pour se connecter à Microsoft Search (recherche Microsoft).
   
@@ -57,14 +57,14 @@ Les résultats travail récupérées à partir de charges de travail Office 365 
   
 Quelle que soit la requête utilisateur contienne un ou plusieurs résultat(s) de travail dans la réponse renvoyée, les mesures suivantes sont prises:
   
-- Journalisation
-    
+- Journalisation 
   - Tous les journaux de recherche relatifs au trafic Recherche Microsoft sont dépersonnalisés et conservés pendant 18 mois.
   - Les requêtes stockées dans ces journaux système ne seront utilisées que pour modéliser et former des fonctionnalités publiques, telles que la suggestion automatique ou les recherches associées de résultats web publics, lorsqu’un ensemble de restrictions et de seuils de fréquence sont atteints, ce qui nous donne la certitude que ces requêtes sont communes et ne sont pas spécifiques à une organisation particulière. La requête doit apparaître un nombre significatif de fois dans la mise en relation des données provenant d’utilisateurs qui n’utilisent pas Recherche Microsoft, et la requête ne doit pas déclencher exclusivement des résultats de recherche d’entreprise. Les requêtes qui ne répondent pas à ces exigences seront stockées séparément du trafic public qui ne concerne pas Recherche Microsoft.
-  - L’accès restreint est géré par le biais de différents mécanismes sécurisés, y compris des groupes de sécurité et d’autres couches du système d’ingénierie.
-    
-- Publicité
-    
+  - L’accès restreint est géré via divers mécanismes sécurisés, y compris les groupes de sécurité et autres couches au sein du système d’ingénierie.
+- Historique de recherche    
+  - Une fois connecté avec un compte professionnel ou scolaire, l’historique de recherche d’un utilisateur n’est pas disponible sur d’autres ordinateurs ou appareils.
+ 
+- Publicité   
   - Les requêtes de recherche d’entreprise sont jamais partagées avec ou suggérées aux publicitaires.
   - Les publicités ne sont jamais des canaux ciblés à un utilisateur en fonction de leur travail d’identité ou d’organisation.
     
