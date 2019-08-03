@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: Découvrez les méthodes et les processus qui vous aident à déployer correctement Microsoft Search dans votre organisation
-ms.openlocfilehash: 8fd7003426ad10e105ef427db5688b2a459d4f01
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: 2b4dafa4168dfd4c3bbb78ba40e860186ff3d9e3
+ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727905"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36170310"
 ---
 # <a name="user-adoption-guide"></a>Guide d’adoption par l’utilisateur
 
@@ -79,11 +79,11 @@ Pour vous aider à atteindre vos objectifs de déploiement et présenter un impa
     
 ## <a name="stage-3-readiness"></a>Étape 3: préparation
 
-Le temps nécessaire à la préparation de votre déploiement de Microsoft Search entraînera un impact positif pour votre organisation. 
+Le temps nécessaire à la préparation de votre déploiement de Microsoft Search entraînera un impact positif pour votre organisation. Microsoft fournit un <a href="https://aka.ms/MicrosoftSearch/Adoption">Kit d’adoption</a> qui contient des conseils de planification, des annonces de courrier électronique personnalisables, des modèles d’enquête, des présentations de cadres, et bien plus encore. Il existe également un <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Centre de ressources Microsoft Search</a> où les responsables informatiques peuvent trouver d’autres ressources de formation et d’adoption conçues pour faire en sorte que votre déploiement de Microsoft Search réussisse.
   
  **Préparation des produits et du contenu**
   
-Les administrateurs influencent directement l’expérience de recherche pour les utilisateurs finaux et déterminent la façon dont Microsoft Search recherche l’organisation. notamment sur le choix des types de résultats présentés à ceux-ci. Contrôlez cette fonctionnalité en activant ou en désactivant les résultats pour les documents, les sites, les personnes, les groupes ou les conversations.
+Les administrateurs influencent directement l’expérience de recherche pour les utilisateurs finaux et déterminent la façon dont Microsoft Search recherche l’organisation. notamment sur le choix des types de résultats présentés à ceux-ci. Ces résultats peuvent inclure des liens, également appelés signets, vers des documents, des sites, des personnes, des groupes, des emplacements, des conversations et d’autres ressources Workplace.
   
 Pour plus d’informations, consultez la rubrique [configurer Microsoft Search](setup-microsoft-search.md).
   
