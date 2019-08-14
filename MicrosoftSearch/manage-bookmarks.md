@@ -14,22 +14,22 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Créez et mettez à jour des signets et des façons de modifier en bloc les résultats de signet pour la fonctionnalité Recherche Microsoft
-ms.openlocfilehash: fb1be0bc137891a54e370fef1e4b5628963c5ad9
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 0cd37ebcd7cd3ea7bbe55064fd41a3c42b2e4725
+ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591619"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36170319"
 ---
 # <a name="manage-bookmarks"></a>Gérer les signets
 
 Vous pouvez créer un signet en quelques étapes. Chaque signet comprend un titre, une URL et un ensemble de mots clés qui le déclenchent. Un signet peut comprendre plusieurs mots clés, et plusieurs signets peuvent partager le même mot clé, mais un mot clé réservé ne peut pas être partagé. Lorsqu’un signet est créé ou modifié, l’index de recherche est aussitôt actualisé et le signet est immédiatement accessible aux utilisateurs.
 
-Si votre organisation a configuré des résultats promus dans SharePoint, vous pouvez importer ceux-ci dans **Recherche Microsoft** et mettre le contenu importé à la disposition de vos utilisateurs. Cette méthode simple permet de renseigner rapidement les résultats de recherche dès que vous avez configuré la fonctionnalité **Recherche Microsoft**, et d’améliorer son efficacité pour vos utilisateurs. Nous vous recommandons d’utiliser les résultats promus de SharePoint comme référence pour apprendre à nommer et créer des résultats de recherche pertinents. 
+Si votre entreprise a configuré l’option Résultats promus dans SharePoint, vous pouvez importer les résultats promus dans **Recherche Microsoft** et mettre le contenu importé à la disposition de vos utilisateurs. Cette méthode simple permet de renseigner rapidement les résultats de recherche dès que vous avez configuré la fonctionnalité **Recherche Microsoft**, et d’améliorer son efficacité pour vos utilisateurs. Nous vous recommandons d’utiliser les résultats promus de SharePoint comme référence pour apprendre à nommer et créer des résultats de recherche pertinents. 
 
 ## <a name="add-or-edit-a-single-bookmark"></a>Ajouter ou modifier un seul signet
 1. Accédez au **Centre d’administration Microsoft 365**.
-1. Dans le volet de navigation, accédez à **Paramètres**, puis sélectionnez ****Recherche Microsoft****.
+1. Dans le volet de navigation, accédez à **Paramètres**, puis sélectionnez **Recherche Microsoft**.
 Par défaut, l’onglet **Signets** est sélectionné.
 1. Pour ajouter un signet, sélectionnez **Ajouter nouveau**. Pour modifier un signet, sélectionnez-le dans la liste. 
 1. Lorsque vous ajoutez ou modifiez les informations, l’aperçu est automatiquement mis à jour.
