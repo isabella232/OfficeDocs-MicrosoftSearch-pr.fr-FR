@@ -13,19 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d49a0b97-e4ca-47cf-ad52-6113787b8402
+ROBOTS: NOINDEX
 description: Signets par défaut qui sont disponibles dans le portail d’administration de Recherche Microsoft
-ms.openlocfilehash: 03cc7030498558fd23375297504b0a33012e9b7d
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 06d4ee1eccacc288982d3824c5c0aab7bcfdbe55
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968352"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591187"
 ---
 # <a name="publish-default-bookmarks"></a>Publier des signets par défaut
 
 > [!IMPORTANT]
-> Les paramètres de Recherche Microsoft dans Bing sont désormais accessibles dans le Centre d’administration Microsoft 365. Commencez par [assigner des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.
-    
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
+
 Pour voir rapidement comment les signets s’affichent sur Bing, publiez les valeurs par défaut fournies. Utilisez-les comme référence pour comprendre comment nommer des signets et créer de bons mots clés.
   
 Nous vous conseillons de passer en revue deux ensembles de signets par défaut :

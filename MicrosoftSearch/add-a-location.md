@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c37cf1b1-5915-4eb1-9f78-72c48cad3b4b
+ROBOTS: NoIndex
 description: Ajouter des emplacements de sorte que les bureaux, bâtiments et autres espaces de travail de votre organisation apparaissent dans vos résultats de travail Recherche Microsoft
-ms.openlocfilehash: 37cc56a733bb6395325ab4baf7885084d956938b
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: be55112453289a3cb10736750ecdf1c706fe5458
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968178"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591340"
 ---
 # <a name="add-a-location"></a>Ajouter un emplacement
 
 > [!IMPORTANT]
-> Les paramètres de Recherche Microsoft dans Bing sont désormais disponibles dans le Centre d’administration Microsoft 365. Commencez par [attribuer des administrateurs de recherche](https://docs.microsoft.com/fr-FR/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) dans votre centre d’administration.
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
     
 Ajouter un emplacement et lorsque vos utilisateurs rechercheront, ils trouveront l’adresse du bâtiment, du bureau ou de l’endroit et pourront voir son emplacement sur une carte. Les utilisateurs peuvent utiliser les cartes Bing pour obtenir des instructions, voir ce qui est proche et bien plus encore.
   
