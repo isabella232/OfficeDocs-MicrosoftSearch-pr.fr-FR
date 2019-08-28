@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: Découvrez les méthodes et les processus qui vous aident à déployer correctement Microsoft Search dans votre organisation
-ms.openlocfilehash: 2b4dafa4168dfd4c3bbb78ba40e860186ff3d9e3
-ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
+ms.openlocfilehash: 3bca460fe4d764fd1fee1eac16faa467c66cd4b9
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36170310"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639882"
 ---
 # <a name="user-adoption-guide"></a>Guide d’adoption par l’utilisateur
 
@@ -79,7 +79,7 @@ Pour vous aider à atteindre vos objectifs de déploiement et présenter un impa
     
 ## <a name="stage-3-readiness"></a>Étape 3: préparation
 
-Le temps nécessaire à la préparation de votre déploiement de Microsoft Search entraînera un impact positif pour votre organisation. Microsoft fournit un <a href="https://aka.ms/MicrosoftSearch/Adoption">Kit d’adoption</a> qui contient des conseils de planification, des annonces de courrier électronique personnalisables, des modèles d’enquête, des présentations de cadres, et bien plus encore. Il existe également un <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Centre de ressources Microsoft Search</a> où les responsables informatiques peuvent trouver d’autres ressources de formation et d’adoption conçues pour faire en sorte que votre déploiement de Microsoft Search réussisse.
+Le temps nécessaire à la préparation de votre déploiement de Microsoft Search entraînera un impact positif pour votre organisation. Microsoft fournit un <a href="https://resources.techcommunity.microsoft.com/microsoft-search-in-bing-adoption-kit/">Kit d’adoption</a> qui contient des conseils de planification, des annonces de courrier électronique personnalisables, des modèles d’enquête, des présentations de cadres, et bien plus encore. Il existe également un <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Centre de ressources Microsoft Search</a> où les responsables informatiques peuvent trouver d’autres ressources de formation et d’adoption conçues pour faire en sorte que votre déploiement de Microsoft Search réussisse.
   
  **Préparation des produits et du contenu**
   
