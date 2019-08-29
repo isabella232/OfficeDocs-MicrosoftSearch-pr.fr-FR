@@ -15,82 +15,82 @@ search.appverid:
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
 ROBOTS: NoIndex
 description: Les fonctionnalités principales de Microsoft Search (recherche Microsoft) pour les administrateurs et les utilisateurs finaux incluent des signets, Questions et Réponses, des informations et des analyses de données et de gestion
-ms.openlocfilehash: a0c9dc773ce7e11c446437cbcbcdc56014a4fe5e
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 2bcc922e6f9915494434098d6418dcceea264354
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591484"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639639"
 ---
-# <a name="features-of-microsoft-search"></a><span data-ttu-id="73edf-103">Fonctionnalités de Microsoft Search (recherche Microsoft)</span><span class="sxs-lookup"><span data-stu-id="73edf-103">Features of Microsoft Search</span></span>
+# <a name="features-of-microsoft-search"></a><span data-ttu-id="b94f7-103">Fonctionnalités de Microsoft Search (recherche Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b94f7-103">Features of Microsoft Search</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="73edf-104">Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing.</span><span class="sxs-lookup"><span data-stu-id="73edf-104">This article applies to the Microsoft Search in Bing admin portal.</span></span> <span data-ttu-id="73edf-105">Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons.</span><span class="sxs-lookup"><span data-stu-id="73edf-105">We’re moving the portal to the Microsoft 365 admin center, and then it will be removed.</span></span> <span data-ttu-id="73edf-106">Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="73edf-106">We recommend that you use the Microsoft 365 admin center to get started.</span></span> <span data-ttu-id="73edf-107">[Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).</span><span class="sxs-lookup"><span data-stu-id="73edf-107">[Overview of Microsoft Search](overview-microsoft-search.md)</span></span>
+> <span data-ttu-id="b94f7-104">Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing.</span><span class="sxs-lookup"><span data-stu-id="b94f7-104">This article applies to the Microsoft Search in Bing admin portal.</span></span> <span data-ttu-id="b94f7-105">Nous déplaçons le portail vers le centre d’administration Microsoft 365. Nous supprimerons ensuite la fonctionnalité Recherche Microsoft dans le portail Bing.</span><span class="sxs-lookup"><span data-stu-id="b94f7-105">We’re moving the portal to the Microsoft 365 admin center, and then the Microsoft Search in Bing portal will be removed.</span></span> <span data-ttu-id="b94f7-106">Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="b94f7-106">We recommend that you use the Microsoft 365 admin center to get started.</span></span> <span data-ttu-id="b94f7-107">[Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).</span><span class="sxs-lookup"><span data-stu-id="b94f7-107">[Overview of Microsoft Search](overview-microsoft-search.md)</span></span>
 
-## <a name="key-admin-features-include"></a><span data-ttu-id="73edf-108">Les principales fonctionnalités d’administration incluent :</span><span class="sxs-lookup"><span data-stu-id="73edf-108">Key admin features include:</span></span>
+## <a name="key-admin-features-include"></a><span data-ttu-id="b94f7-108">Les principales fonctionnalités d’administration incluent :</span><span class="sxs-lookup"><span data-stu-id="b94f7-108">Key admin features include:</span></span>
 
-- [<span data-ttu-id="73edf-109">Signets Entreprise</span><span class="sxs-lookup"><span data-stu-id="73edf-109">Enterprise bookmarks</span></span>](create-and-manage-bookmarks.md)
+- [<span data-ttu-id="b94f7-109">Signets Entreprise</span><span class="sxs-lookup"><span data-stu-id="b94f7-109">Enterprise bookmarks</span></span>](create-and-manage-bookmarks.md)
     
-    <span data-ttu-id="73edf-110">Rechercher des sites, des outils et d’autres informations au sein de votre entreprise</span><span class="sxs-lookup"><span data-stu-id="73edf-110">Find sites, tools, and other information within your enterprise</span></span>
+    <span data-ttu-id="b94f7-110">Rechercher des sites, des outils et d’autres informations au sein de votre entreprise</span><span class="sxs-lookup"><span data-stu-id="b94f7-110">Find sites, tools, and other information within your enterprise</span></span>
     
-- [<span data-ttu-id="73edf-111">Questions et Réponses</span><span class="sxs-lookup"><span data-stu-id="73edf-111">Enterprise Q&As</span></span>](create-and-manage-qas.md)
+- [<span data-ttu-id="b94f7-111">Questions et Réponses</span><span class="sxs-lookup"><span data-stu-id="b94f7-111">Enterprise Q&As</span></span>](create-and-manage-qas.md)
     
-    <span data-ttu-id="73edf-112">Répondez aux questions fréquemment posées dans votre organisation</span><span class="sxs-lookup"><span data-stu-id="73edf-112">Answer the most frequently asked questions in your organization</span></span>
+    <span data-ttu-id="b94f7-112">Répondez aux questions fréquemment posées dans votre organisation</span><span class="sxs-lookup"><span data-stu-id="b94f7-112">Answer the most frequently asked questions in your organization</span></span>
     
-- <span data-ttu-id="73edf-113">Importez et exportez des[signets](bulk-create-bookmarks.md) et [Questions et Réponses](bulk-create-qas.md)</span><span class="sxs-lookup"><span data-stu-id="73edf-113">Import and export [bookmarks](bulk-create-bookmarks.md) and [Q&As](bulk-create-qas.md)</span></span>
+- <span data-ttu-id="b94f7-113">Importez et exportez des[signets](bulk-create-bookmarks.md) et [Questions et Réponses](bulk-create-qas.md)</span><span class="sxs-lookup"><span data-stu-id="b94f7-113">Import and export [bookmarks](bulk-create-bookmarks.md) and [Q&As](bulk-create-qas.md)</span></span>
     
-    <span data-ttu-id="73edf-114">Uniformisez la création et la mise à jour avec l’importation, l’exportation et modification en bloc</span><span class="sxs-lookup"><span data-stu-id="73edf-114">Streamline creating and updating with bulk importing, exporting, and editing</span></span>
+    <span data-ttu-id="b94f7-114">Uniformisez la création et la mise à jour avec l’importation, l’exportation et modification en bloc</span><span class="sxs-lookup"><span data-stu-id="b94f7-114">Streamline creating and updating with bulk importing, exporting, and editing</span></span>
 
-- [<span data-ttu-id="73edf-115">Emplacements</span><span class="sxs-lookup"><span data-stu-id="73edf-115">Locations</span></span>](locations.md)
+- [<span data-ttu-id="b94f7-115">Emplacements</span><span class="sxs-lookup"><span data-stu-id="b94f7-115">Locations</span></span>](locations.md)
     
-    <span data-ttu-id="73edf-116">Rechercher des adresses et localisez les bâtiments, les bureaux et autres espaces de travail de votre organisation sur une carte</span><span class="sxs-lookup"><span data-stu-id="73edf-116">Find addresses and locate your organization's buildings, offices, and other workspaces on a map</span></span>
+    <span data-ttu-id="b94f7-116">Rechercher des adresses et localisez les bâtiments, les bureaux et autres espaces de travail de votre organisation sur une carte</span><span class="sxs-lookup"><span data-stu-id="b94f7-116">Find addresses and locate your organization's buildings, offices, and other workspaces on a map</span></span>
     
-- [<span data-ttu-id="73edf-117">Gestion</span><span class="sxs-lookup"><span data-stu-id="73edf-117">Management</span></span>](set-up-microsoft-search.md)
+- [<span data-ttu-id="b94f7-117">Gestion</span><span class="sxs-lookup"><span data-stu-id="b94f7-117">Management</span></span>](set-up-microsoft-search.md)
     
-    <span data-ttu-id="73edf-118">Configurez, créez du contenu et définissez des mots clés de recherche et des phrases</span><span class="sxs-lookup"><span data-stu-id="73edf-118">Configure, create content, and define search keywords and phrases</span></span>
+    <span data-ttu-id="b94f7-118">Configurez, créez du contenu et définissez des mots clés de recherche et des phrases</span><span class="sxs-lookup"><span data-stu-id="b94f7-118">Configure, create content, and define search keywords and phrases</span></span>
     
-- [<span data-ttu-id="73edf-119">Utilisateurs et autorisations</span><span class="sxs-lookup"><span data-stu-id="73edf-119">Users and permissions</span></span>](add-users.md)
+- [<span data-ttu-id="b94f7-119">Utilisateurs et autorisations</span><span class="sxs-lookup"><span data-stu-id="b94f7-119">Users and permissions</span></span>](add-users.md)
     
-    <span data-ttu-id="73edf-120">Votre administrateur général ou administrateur de Recherche Microsoft autorise d’autres administrateurs qui gèrent la configuration de Recherche Microsoft ainsi que des éditeurs qui créent du contenu</span><span class="sxs-lookup"><span data-stu-id="73edf-120">Your Global Administrator or Microsoft Search administrator authorizes additional admins who manage the Microsoft Search configuration and editors who create content</span></span>
+    <span data-ttu-id="b94f7-120">Votre administrateur général ou administrateur de Recherche Microsoft autorise d’autres administrateurs qui gèrent la configuration de Recherche Microsoft ainsi que des éditeurs qui créent du contenu</span><span class="sxs-lookup"><span data-stu-id="b94f7-120">Your Global Administrator or Microsoft Search administrator authorizes additional admins who manage the Microsoft Search configuration and editors who create content</span></span>
     
-- [<span data-ttu-id="73edf-121">Analytics</span><span class="sxs-lookup"><span data-stu-id="73edf-121">Analytics </span></span>](get-insights.md) 
+- [<span data-ttu-id="b94f7-121">Analytics</span><span class="sxs-lookup"><span data-stu-id="b94f7-121">Analytics </span></span>](get-insights.md) 
     
-    <span data-ttu-id="73edf-122">Comprendre la manière dont votre organisation utilise Microsoft Search (recherche Microsoft)</span><span class="sxs-lookup"><span data-stu-id="73edf-122">Understand how your organization is using Microsoft Search</span></span> 
+    <span data-ttu-id="b94f7-122">Comprendre la manière dont votre organisation utilise Microsoft Search (recherche Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b94f7-122">Understand how your organization is using Microsoft Search</span></span> 
     
-## <a name="key-end-user-features-include"></a><span data-ttu-id="73edf-123">Les fonctionnalités de l’utilisateur final clés sont les suivantes :</span><span class="sxs-lookup"><span data-stu-id="73edf-123">Key end-user features include:</span></span>
+## <a name="key-end-user-features-include"></a><span data-ttu-id="b94f7-123">Les fonctionnalités de l’utilisateur final clés sont les suivantes :</span><span class="sxs-lookup"><span data-stu-id="b94f7-123">Key end-user features include:</span></span>
 
-- [<span data-ttu-id="73edf-124">Contacts</span><span class="sxs-lookup"><span data-stu-id="73edf-124">People</span></span>](use/find-people-and-groups.md)
+- [<span data-ttu-id="b94f7-124">Contacts</span><span class="sxs-lookup"><span data-stu-id="b94f7-124">People</span></span>](use/find-people-and-groups.md)
     
-    <span data-ttu-id="73edf-125">Rechercher des personnes et comprendre leur rôle au sein de l’entreprise, sur quoi ils travaillent et les méthodes pour les contacter</span><span class="sxs-lookup"><span data-stu-id="73edf-125">Find people and understand their role within the company, what they're working on, and ways to contact them</span></span>
+    <span data-ttu-id="b94f7-125">Rechercher des personnes et comprendre leur rôle au sein de l’entreprise, sur quoi ils travaillent et les méthodes pour les contacter</span><span class="sxs-lookup"><span data-stu-id="b94f7-125">Find people and understand their role within the company, what they're working on, and ways to contact them</span></span>
     
-- [<span data-ttu-id="73edf-126">Organigrammes</span><span class="sxs-lookup"><span data-stu-id="73edf-126">Organizational charts</span></span>](use/find-people-and-groups.md)
+- [<span data-ttu-id="b94f7-126">Organigrammes</span><span class="sxs-lookup"><span data-stu-id="b94f7-126">Organizational charts</span></span>](use/find-people-and-groups.md)
     
-    <span data-ttu-id="73edf-127">Comprendre l’emplacement d’une personne au sein de l’entreprise et de consulter facilement leurs collègues, leur gestion et leurs collaborateurs directs</span><span class="sxs-lookup"><span data-stu-id="73edf-127">Understand a person's place within the company and easily browse their peers, management, and direct reports</span></span>
+    <span data-ttu-id="b94f7-127">Comprendre l’emplacement d’une personne au sein de l’entreprise et de consulter facilement leurs collègues, leur gestion et leurs collaborateurs directs</span><span class="sxs-lookup"><span data-stu-id="b94f7-127">Understand a person's place within the company and easily browse their peers, management, and direct reports</span></span>
     
-- [<span data-ttu-id="73edf-128">Dossier</span><span class="sxs-lookup"><span data-stu-id="73edf-128">Files</span></span>](use/find-files.md)
+- [<span data-ttu-id="b94f7-128">Dossier</span><span class="sxs-lookup"><span data-stu-id="b94f7-128">Files</span></span>](use/find-files.md)
     
-    <span data-ttu-id="73edf-129">Accès aux fichiers pertinents et contextuelles enregistrés sur SharePoint et OneDrive Entreprise</span><span class="sxs-lookup"><span data-stu-id="73edf-129">Find contextual and relevant files saved on SharePoint and OneDrive for Business</span></span>
+    <span data-ttu-id="b94f7-129">Accès aux fichiers pertinents et contextuelles enregistrés sur SharePoint et OneDrive Entreprise</span><span class="sxs-lookup"><span data-stu-id="b94f7-129">Find contextual and relevant files saved on SharePoint and OneDrive for Business</span></span>
     
-- [<span data-ttu-id="73edf-130">Groupes Office 365</span><span class="sxs-lookup"><span data-stu-id="73edf-130">Office 365 groups</span></span>](use/find-people-and-groups.md)
+- [<span data-ttu-id="b94f7-130">Groupes Office 365</span><span class="sxs-lookup"><span data-stu-id="b94f7-130">Office 365 groups</span></span>](use/find-people-and-groups.md)
     
-    <span data-ttu-id="73edf-131">Recherchez un groupe par son nom ou ses membres, Explorez les groupes auxquels une personne appartient et parcourez leur contenu partagé</span><span class="sxs-lookup"><span data-stu-id="73edf-131">Find a group by its name or members, explore groups a person belongs to, and browse shared content</span></span>
+    <span data-ttu-id="b94f7-131">Recherchez un groupe par son nom ou ses membres, Explorez les groupes auxquels une personne appartient et parcourez leur contenu partagé</span><span class="sxs-lookup"><span data-stu-id="b94f7-131">Find a group by its name or members, explore groups a person belongs to, and browse shared content</span></span>
     
-- [<span data-ttu-id="73edf-132">Ressources et outils</span><span class="sxs-lookup"><span data-stu-id="73edf-132">Resources and tools</span></span>](use/find-resources-tools-and-more.md)
+- [<span data-ttu-id="b94f7-132">Ressources et outils</span><span class="sxs-lookup"><span data-stu-id="b94f7-132">Resources and tools</span></span>](use/find-resources-tools-and-more.md)
     
-    <span data-ttu-id="73edf-133">Obtenir des liens vers des ressources internes et externes, outils et autres aspects pour retrouver facilement les informations que nécessaires</span><span class="sxs-lookup"><span data-stu-id="73edf-133">Get links to internal and external resources, tools, and more to easily find the information you need</span></span>
+    <span data-ttu-id="b94f7-133">Obtenir des liens vers des ressources internes et externes, outils et autres aspects pour retrouver facilement les informations que nécessaires</span><span class="sxs-lookup"><span data-stu-id="b94f7-133">Get links to internal and external resources, tools, and more to easily find the information you need</span></span>
     
-- [<span data-ttu-id="73edf-134">Sites SharePoint</span><span class="sxs-lookup"><span data-stu-id="73edf-134">SharePoint sites</span></span>](use/find-sharepoint-sites.md)
+- [<span data-ttu-id="b94f7-134">Sites SharePoint</span><span class="sxs-lookup"><span data-stu-id="b94f7-134">SharePoint sites</span></span>](use/find-sharepoint-sites.md)
     
-    <span data-ttu-id="73edf-135">Rechercher un site par son nom ou afficher les résultats pour une personne ou un groupe</span><span class="sxs-lookup"><span data-stu-id="73edf-135">Search for a site by name or see results for a person or group</span></span>
+    <span data-ttu-id="b94f7-135">Rechercher un site par son nom ou afficher les résultats pour une personne ou un groupe</span><span class="sxs-lookup"><span data-stu-id="b94f7-135">Search for a site by name or see results for a person or group</span></span>
     
-- [<span data-ttu-id="73edf-136">Équipes et conversations Yammer</span><span class="sxs-lookup"><span data-stu-id="73edf-136">Teams and Yammer conversations</span></span>](use/find-conversations.md)
+- [<span data-ttu-id="b94f7-136">Équipes et conversations Yammer</span><span class="sxs-lookup"><span data-stu-id="b94f7-136">Teams and Yammer conversations</span></span>](use/find-conversations.md)
     
-    <span data-ttu-id="73edf-137">Trouver des résultats pertinents et contextuels publics et des conversations de groupe</span><span class="sxs-lookup"><span data-stu-id="73edf-137">Find contextual and relevant results from public and group conversations</span></span>
+    <span data-ttu-id="b94f7-137">Trouver des résultats pertinents et contextuels publics et des conversations de groupe</span><span class="sxs-lookup"><span data-stu-id="b94f7-137">Find contextual and relevant results from public and group conversations</span></span>
 
-- [<span data-ttu-id="73edf-138">Emplacements</span><span class="sxs-lookup"><span data-stu-id="73edf-138">Locations</span></span>](use/find-locations.md)
+- [<span data-ttu-id="b94f7-138">Emplacements</span><span class="sxs-lookup"><span data-stu-id="b94f7-138">Locations</span></span>](use/find-locations.md)
     
-    <span data-ttu-id="73edf-139">Trouver une adresse et cartographier des résultats des bâtiments, bureaux, campus, etc.</span><span class="sxs-lookup"><span data-stu-id="73edf-139">Find address and map results for buildings, offices, campuses, and more</span></span>
+    <span data-ttu-id="b94f7-139">Trouver une adresse et cartographier des résultats des bâtiments, bureaux, campus, etc.</span><span class="sxs-lookup"><span data-stu-id="b94f7-139">Find address and map results for buildings, offices, campuses, and more</span></span>
     
-- <span data-ttu-id="73edf-140">Première expérience d’utilisation</span><span class="sxs-lookup"><span data-stu-id="73edf-140">First-run experience</span></span>
+- <span data-ttu-id="b94f7-140">Première expérience d’utilisation</span><span class="sxs-lookup"><span data-stu-id="b94f7-140">First-run experience</span></span>
     
-    <span data-ttu-id="73edf-141">La première fois qu’un utilisateur se connecte à Microsoft Search (recherche Microsoft), mais parvienne plutôt à Bing, ils recevront des informations sur l’utilisation il et les types de résultats de travail qu’ils trouveront lors de leur recherche</span><span class="sxs-lookup"><span data-stu-id="73edf-141">The first time a user signs in to Microsoft Search and goes to Bing, they'll get information about using it and the types of work results they'll find when they search</span></span>
+    <span data-ttu-id="b94f7-141">La première fois qu’un utilisateur se connecte à Microsoft Search (recherche Microsoft), mais parvienne plutôt à Bing, ils recevront des informations sur l’utilisation il et les types de résultats de travail qu’ils trouveront lors de leur recherche</span><span class="sxs-lookup"><span data-stu-id="b94f7-141">The first time a user signs in to Microsoft Search and goes to Bing, they'll get information about using it and the types of work results they'll find when they search</span></span>
