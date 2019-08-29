@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
 ROBOTS: NoIndex
 description: Vue d’ensemble des outils de la recherche Microsoft pour créer et importer des résultats, vous connecter automatiquement et lancer des recherches de n’importe où
-ms.openlocfilehash: 16beaf5ae2945df19b32b65ae4e65b4989217f9f
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: d8c725841e70dc90b5ae17fa992a933b8cb3e8c3
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591349"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639630"
 ---
 # <a name="admin-portal-tools"></a>Outils du portail d’administration
 
 > [!IMPORTANT]
-> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Nous supprimerons ensuite la fonctionnalité Recherche Microsoft dans le portail Bing. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
     
 Le portail d’administration de la recherche Microsoft comprend des outils et des ressources conçus pour les administrateurs, les éditeurs et les utilisateurs, notamment :
   

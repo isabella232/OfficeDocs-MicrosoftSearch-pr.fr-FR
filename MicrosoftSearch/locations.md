@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 2379e72c-a7da-4e3f-932a-12d431a0a284
 ROBOTS: NOINDEX
 description: Vue d’ensemble de toutes les façons d’inclure les emplacements de votre organisation dans les résultats de travail de la fonctionnalité Recherche Microsoft
-ms.openlocfilehash: 9eb61d206852759ade3cb668a3d9c0dee83c424f
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 1c8aed7931eb3586bbf2b79251afa94152656cd3
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591574"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639864"
 ---
 # <a name="locations"></a>Emplacements
 
 > [!IMPORTANT]
-> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Nous supprimerons ensuite la fonctionnalité Recherche Microsoft dans le portail Bing. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
     
 ## <a name="add-locations"></a>Ajouter des emplacements
 

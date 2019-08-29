@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
 ROBOTS: NoIndex
 description: Les fonctionnalités principales de Microsoft Search (recherche Microsoft) pour les administrateurs et les utilisateurs finaux incluent des signets, Questions et Réponses, des informations et des analyses de données et de gestion
-ms.openlocfilehash: a0c9dc773ce7e11c446437cbcbcdc56014a4fe5e
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 2bcc922e6f9915494434098d6418dcceea264354
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591484"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639639"
 ---
 # <a name="features-of-microsoft-search"></a>Fonctionnalités de Microsoft Search (recherche Microsoft)
 
 > [!IMPORTANT]
-> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Nous supprimerons ensuite la fonctionnalité Recherche Microsoft dans le portail Bing. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
 
 ## <a name="key-admin-features-include"></a>Les principales fonctionnalités d’administration incluent :
 

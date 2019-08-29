@@ -14,14 +14,17 @@ search.appverid:
 - MOE150
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 description: Protégez vos données d’entreprise et utilisateurs tout en fournissant des informations pour les utilisateurs ayant une autorisation pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: b7b62173dc61d271a4953adbf20a6cf48b122694
-ms.sourcegitcommit: 4eeb78066fd13e906daed3add003398bd9d0f6ca
+ms.openlocfilehash: 7aef4acad9f387e50fb03478a7c00d57fa451c00
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35917568"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639613"
 ---
 # <a name="security-for-microsoft-search"></a>Sécurité relative à Microsoft Search (recherche Microsoft)
+
+> [!IMPORTANT]
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Nous supprimerons ensuite la fonctionnalité Recherche Microsoft dans le portail Bing. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
 
 Avec la sécurité de qualité professionnelle, Microsoft Search (recherche Microsoft) conserve toujours vos utilisateurs et données protégées.
 
@@ -56,8 +59,8 @@ Les résultats travail récupérées à partir de charges de travail Office 365 
   
 Quelle que soit la requête utilisateur contienne un ou plusieurs résultat(s) de travail dans la réponse renvoyée, les mesures suivantes sont prises:
   
-- Journalisation 
-  - Tous les journaux de recherche relatifs au trafic Recherche Microsoft sont dépersonnalisés et conservés pendant 18 mois.
+- Logging 
+  - Tous les journaux de recherche relatifs au trafic de la fonctionnalité Recherche Microsoft sont dépersonnalisés et conservés pendant 18 mois.
   - Les requêtes stockées dans ces journaux système ne seront utilisées que pour modéliser et former des fonctionnalités publiques, telles que la suggestion automatique ou les recherches associées de résultats web publics, lorsqu’un ensemble de restrictions et de seuils de fréquence sont atteints, ce qui nous donne la certitude que ces requêtes sont communes et ne sont pas spécifiques à une organisation particulière. La requête doit apparaître un nombre significatif de fois dans la mise en relation des données provenant d’utilisateurs qui n’utilisent pas Recherche Microsoft, et la requête ne doit pas déclencher exclusivement des résultats de recherche d’entreprise. Les requêtes qui ne répondent pas à ces exigences seront stockées séparément du trafic public qui ne concerne pas Recherche Microsoft.
   - L’accès restreint est géré via divers mécanismes sécurisés, y compris les groupes de sécurité et autres couches au sein du système d’ingénierie.
 - Historique de recherche    
