@@ -1,8 +1,8 @@
 ---
 title: Configurer la configuration par défaut
-ms.author: dawholl
-author: dawholl
-manager: kellis
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
@@ -14,70 +14,55 @@ search.appverid:
 - MOE150
 ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
 ROBOTS: NOINDEX
-description: Découvrez comment configurer un navigateur par défaut pour votre entreprise avec Microsoft Search (recherche Microsoft).
-ms.openlocfilehash: 08c61bf6dd68f8044f3f79a0b22829a8f7f6b8ef
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+description: Définissez votre navigateur par défaut sur Microsoft Edge ou Internet Explorer pour les utilisateurs de Recherche Microsoft.
+ms.openlocfilehash: ed145a1811aba0b58158ed04dd3bf8dc089a0682
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727842"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639738"
 ---
-# <a name="set-default-browser"></a>Configurer la configuration par défaut
+# <a name="make-microsoft-edge-the-default-browser"></a>Définir Microsoft Edge comme navigateur par défaut
+  
+Pour garantir à vos utilisateurs une expérience optimale avec Recherche Microsoft, vous pouvez définir Microsoft Edge comme navigateur par défaut. De cette façon, Microsoft Edge ne deviendra le navigateur par défaut que pour les utilisateurs de votre organisation, les utilisateurs individuels pouvant toujours sélectionner un navigateur différent.
+  
+  
+## <a name="windows-8-and-later"></a>Windows 8 (et versions ultérieures)
 
+Ces instructions vous montrent comment définir Microsoft Edge ou Internet Explorer comme navigateur par défaut pour les ordinateurs exécutant Windows 8 ou une version ultérieure. Les utilisateurs pourront modifier le navigateur après avoir défini cette stratégie.
   
-La configuration du navigateur par défaut, le moteur de recherche par défaut et la page d’accueil par défaut aideront vos utilisateurs à découvrir les fonctionnalités de Microsoft Search (recherche Microsoft), à plus encourager l’utilisation et offrir une expérience plus fluide.
-  
-Pour définir le navigateur par défaut pour votre organisation, suivez les étapes ci-dessous.
-  
-## <a name="windows-8-and-above"></a>Windows 8 ou version ultérieure
-
-Pour définir Internet Explorer ou Microsoft Edge comme navigateur par défaut, procédez comme suit :
-  
-### <a name="create-default-associations-file"></a>Créez le fichier d’associations par défaut
+### <a name="step-1-create-the-default-associations-file"></a>ÉTAPE 1 : Créer le fichier d'associations par défaut
+Créez le fichier d’associations par défaut dans le dossier SYSVOL du contrôleur de domaine.
 
 1. Ouvrez une console d’administration PowerShell.
+1. `New-Item -Path "\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN" -Type Directory -Name "Settings"`
+1. `$SettingsPath="\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN\Settings"`
+1. `Start-Process Dism.exe -PassThru "/Online /Export-DefaultAppAssociations:$SettingsPath\AppAssoc.xml"`
     
-2.  `New-Item -Path "\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN" -Type Directory -Name "Settings"`
-    
-3.  `$SettingsPath="\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN\Settings"`
-    
-4.  `Start-Process Dism.exe -PassThru "/Online /Export-DefaultAppAssociations:$SettingsPath\AppAssoc.xml"`
-    
-Ces étapes essaient et créent le fichier d’associations par défaut dans le dossier SYSVOL du contrôleur de domaine.
   
-### <a name="add-or-edit-the-default-associations-file"></a>Ajoutez ou modifiez le fichier d’associations par défaut
+### <a name="step-2-add-or-edit-the-default-associations-file"></a>ÉTAPE 2. Ajoutez ou modifiez le fichier d’associations par défaut
 
 1. `Notepad "$SettingsPath\AppAssoc.xml"`
-    
-2. Modifier les entrées suivantes (.htm, .html, http, https) et supprimez les autres entrées si elles ne sont pas utilisées.
-    
+1. Modifier les entrées suivantes (.htm, .html, http, https) et supprimez les autres entrées si elles ne sont pas utilisées.
   - **Microsoft Edge**
-    
-     `<Association Identifier=".htm" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
-  
-     `<Association Identifier=".html" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
-  
-     `<Association Identifier="http" ProgId="AppXq0fevzme2pys62n3e0fbqa7peapykr8v" ApplicationName="Microsoft Edge" />`
+    - `<Association Identifier=".htm" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
+              
+    - `<Association Identifier=".html" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
+    - `<Association Identifier="http" ProgId="AppXq0fevzme2pys62n3e0fbqa7peapykr8v" ApplicationName="Microsoft Edge" />`
     
   - **Internet Explorer**
     
-     `<Association Identifier=".htm" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
-  
-     `<Association Identifier=".html" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
-  
-     `<Association Identifier="http" ProgId="IE.HTTP" ApplicationName="Internet Explorer" />`
-  
-     `<Association Identifier="https" ProgId="IE.HTTPS" ApplicationName="Internet Explorer" />`
-    
-3. Ouvrez la Console de gestion des stratégies de groupe (gpmc.msc) et basculez vers modifier toute stratégie existante ou créer un nouveau.
-    
-1. Accédez à**Configuration ordinateur\Administration administrative\Composants Windows\Dossier Explorer**
-    
-2. Double-cliquez sur **définir un fichier de configuration d’associations par défaut**, définissez-le comme programme **Activé**, puis entrez le chemin d’accès à AppAssoc.xml (par exemple %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\ AppAssoc.xml)
-    
-4. Appliquez la stratégie de groupe résultante GPO en les reliant au domaine approprié.
-    
-Les utilisateurs pourront modifier le navigateur après avoir défini cette stratégie.
+    - `<Association Identifier=".htm" ProgId="htmlfile" ApplicationName="Internet Explorer" />`        
+    - `<Association Identifier=".html" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
+    - `<Association Identifier="http" ProgId="IE.HTTP" ApplicationName="Internet Explorer" />`
+    - `<Association Identifier="https" ProgId="IE.HTTPS" ApplicationName="Internet Explorer" />`
+
+### <a name="step-3-edit-the-group-policy"></a>Étape 3. Modifier la stratégie de groupe
+
+1. Ouvrez la **Console de gestion des stratégies de groupe** (gpmc.msc) et basculez vers modifier toute stratégie existante ou créer une nouvelle.
+1. Accédez à**Configuration ordinateur\Modèles administratifs\Composants Windows\Explorateur de fichiers**.
+1. Double-cliquez sur **Définir un fichier de configuration d’associations par défaut**, définissez-le sur **Activé**, puis entrez le chemin d’accès à AppAssoc.xml (par exemple %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\ AppAssoc.xml) Appliquez l’objet de la stratégie de groupe GPO résultant en le liant au domaine approprié.
+
   
 ## <a name="windows-7"></a>Windows 7
 
@@ -103,4 +88,3 @@ Les utilisateurs pourront modifier le navigateur après avoir défini cette stra
   
 3. Appliquez la stratégie de groupe résultante GPO en les reliant au domaine approprié.
     
-Les utilisateurs pourront modifier le navigateur après avoir défini cette stratégie.
