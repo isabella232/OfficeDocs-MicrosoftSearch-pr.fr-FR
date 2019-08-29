@@ -1,8 +1,8 @@
 ---
 title: Configurer la configuration par défaut
-ms.author: dawholl
-author: dawholl
-manager: kellis
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
@@ -14,93 +14,77 @@ search.appverid:
 - MOE150
 ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
 ROBOTS: NOINDEX
-description: Découvrez comment configurer un navigateur par défaut pour votre entreprise avec Microsoft Search (recherche Microsoft).
-ms.openlocfilehash: 08c61bf6dd68f8044f3f79a0b22829a8f7f6b8ef
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+description: Définissez votre navigateur par défaut sur Microsoft Edge ou Internet Explorer pour les utilisateurs de Recherche Microsoft.
+ms.openlocfilehash: ed145a1811aba0b58158ed04dd3bf8dc089a0682
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727842"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639738"
 ---
-# <a name="set-default-browser"></a><span data-ttu-id="ea39c-103">Configurer la configuration par défaut</span><span class="sxs-lookup"><span data-stu-id="ea39c-103">Set default browser</span></span>
+# <a name="make-microsoft-edge-the-default-browser"></a><span data-ttu-id="22dcd-103">Définir Microsoft Edge comme navigateur par défaut</span><span class="sxs-lookup"><span data-stu-id="22dcd-103">Make Microsoft Edge the default browser</span></span>
+  
+<span data-ttu-id="22dcd-104">Pour garantir à vos utilisateurs une expérience optimale avec Recherche Microsoft, vous pouvez définir Microsoft Edge comme navigateur par défaut.</span><span class="sxs-lookup"><span data-stu-id="22dcd-104">To give your users the best experience with Microsoft Search, you can make Microsoft Edge the default browser.</span></span> <span data-ttu-id="22dcd-105">De cette façon, Microsoft Edge ne deviendra le navigateur par défaut que pour les utilisateurs de votre organisation, les utilisateurs individuels pouvant toujours sélectionner un navigateur différent.</span><span class="sxs-lookup"><span data-stu-id="22dcd-105">This will only set Microsoft Edge as the default browser for users in your org, individual users can still select a different browser.</span></span>
+  
+  
+## <a name="windows-8-and-later"></a><span data-ttu-id="22dcd-106">Windows 8 (et versions ultérieures)</span><span class="sxs-lookup"><span data-stu-id="22dcd-106">Windows 8 and above</span></span>
 
+<span data-ttu-id="22dcd-107">Ces instructions vous montrent comment définir Microsoft Edge ou Internet Explorer comme navigateur par défaut pour les ordinateurs exécutant Windows 8 ou une version ultérieure.</span><span class="sxs-lookup"><span data-stu-id="22dcd-107">These instructions show you how to make Microsoft Edge or Internet Explorer as the default browser for computers running Windows 8 or later.</span></span> <span data-ttu-id="22dcd-108">Les utilisateurs pourront modifier le navigateur après avoir défini cette stratégie.</span><span class="sxs-lookup"><span data-stu-id="22dcd-108">Users will be able to change the browser after this policy is set.</span></span>
   
-<span data-ttu-id="ea39c-104">La configuration du navigateur par défaut, le moteur de recherche par défaut et la page d’accueil par défaut aideront vos utilisateurs à découvrir les fonctionnalités de Microsoft Search (recherche Microsoft), à plus encourager l’utilisation et offrir une expérience plus fluide.</span><span class="sxs-lookup"><span data-stu-id="ea39c-104">Configuring the default browser, default search engine, and default homepage will help your users discover Microsoft Search capabilities, encourage more usage, and provide a smoother experience.</span></span>
-  
-<span data-ttu-id="ea39c-105">Pour définir le navigateur par défaut pour votre organisation, suivez les étapes ci-dessous.</span><span class="sxs-lookup"><span data-stu-id="ea39c-105">To set the default browser for your organization, follow the steps below.</span></span>
-  
-## <a name="windows-8-and-above"></a><span data-ttu-id="ea39c-106">Windows 8 ou version ultérieure</span><span class="sxs-lookup"><span data-stu-id="ea39c-106">Windows 8 and above</span></span>
+### <a name="step-1-create-the-default-associations-file"></a><span data-ttu-id="22dcd-109">ÉTAPE 1 : Créer le fichier d'associations par défaut</span><span class="sxs-lookup"><span data-stu-id="22dcd-109">STEP 1: Create the default associations file</span></span>
+<span data-ttu-id="22dcd-110">Créez le fichier d’associations par défaut dans le dossier SYSVOL du contrôleur de domaine.</span><span class="sxs-lookup"><span data-stu-id="22dcd-110">These steps try and create the default associations file in the SYSVOL folder of the domain controller.</span></span>
 
-<span data-ttu-id="ea39c-107">Pour définir Internet Explorer ou Microsoft Edge comme navigateur par défaut, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="ea39c-107">To set Internet Explorer or Microsoft Edge as the default browser, follow these steps:</span></span>
+1. <span data-ttu-id="22dcd-111">Ouvrez une console d’administration PowerShell.</span><span class="sxs-lookup"><span data-stu-id="22dcd-111">Open an administrative PowerShell console.</span></span>
+1. `New-Item -Path "\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN" -Type Directory -Name "Settings"`
+1. `$SettingsPath="\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN\Settings"`
+1. `Start-Process Dism.exe -PassThru "/Online /Export-DefaultAppAssociations:$SettingsPath\AppAssoc.xml"`
+    
   
-### <a name="create-default-associations-file"></a><span data-ttu-id="ea39c-108">Créez le fichier d’associations par défaut</span><span class="sxs-lookup"><span data-stu-id="ea39c-108">Create default associations file</span></span>
-
-1. <span data-ttu-id="ea39c-109">Ouvrez une console d’administration PowerShell.</span><span class="sxs-lookup"><span data-stu-id="ea39c-109">Open an administrative PowerShell console.</span></span>
-    
-2.  `New-Item -Path "\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN" -Type Directory -Name "Settings"`
-    
-3.  `$SettingsPath="\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN\Settings"`
-    
-4.  `Start-Process Dism.exe -PassThru "/Online /Export-DefaultAppAssociations:$SettingsPath\AppAssoc.xml"`
-    
-<span data-ttu-id="ea39c-110">Ces étapes essaient et créent le fichier d’associations par défaut dans le dossier SYSVOL du contrôleur de domaine.</span><span class="sxs-lookup"><span data-stu-id="ea39c-110">These steps try and create the default associations file in the SYSVOL folder of the domain controller.</span></span>
-  
-### <a name="add-or-edit-the-default-associations-file"></a><span data-ttu-id="ea39c-111">Ajoutez ou modifiez le fichier d’associations par défaut</span><span class="sxs-lookup"><span data-stu-id="ea39c-111">Add or edit the default associations file</span></span>
+### <a name="step-2-add-or-edit-the-default-associations-file"></a><span data-ttu-id="22dcd-112">ÉTAPE 2.</span><span class="sxs-lookup"><span data-stu-id="22dcd-112">Step 2</span></span> <span data-ttu-id="22dcd-113">Ajoutez ou modifiez le fichier d’associations par défaut</span><span class="sxs-lookup"><span data-stu-id="22dcd-113">Add or edit the default associations file</span></span>
 
 1. `Notepad "$SettingsPath\AppAssoc.xml"`
+1. <span data-ttu-id="22dcd-114">Modifier les entrées suivantes (.htm, .html, http, https) et supprimez les autres entrées si elles ne sont pas utilisées.</span><span class="sxs-lookup"><span data-stu-id="22dcd-114">Edit the following entries (.htm, .html, http, https), and remove other entries if they're not needed.</span></span>
+  - <span data-ttu-id="22dcd-115">**Microsoft Edge**</span><span class="sxs-lookup"><span data-stu-id="22dcd-115">**Microsoft Edge**</span></span>
+    - `<Association Identifier=".htm" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
+              
+    - `<Association Identifier=".html" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
+    - `<Association Identifier="http" ProgId="AppXq0fevzme2pys62n3e0fbqa7peapykr8v" ApplicationName="Microsoft Edge" />`
     
-2. <span data-ttu-id="ea39c-112">Modifier les entrées suivantes (.htm, .html, http, https) et supprimez les autres entrées si elles ne sont pas utilisées.</span><span class="sxs-lookup"><span data-stu-id="ea39c-112">Edit the following entries (.htm, .html, http, https), and remove other entries if they're not needed.</span></span>
+  - <span data-ttu-id="22dcd-116">**Internet Explorer**</span><span class="sxs-lookup"><span data-stu-id="22dcd-116">**Internet Explorer**</span></span>
     
-  - <span data-ttu-id="ea39c-113">**Microsoft Edge**</span><span class="sxs-lookup"><span data-stu-id="ea39c-113">**Microsoft Edge**</span></span>
-    
-     `<Association Identifier=".htm" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
-  
-     `<Association Identifier=".html" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
-  
-     `<Association Identifier="http" ProgId="AppXq0fevzme2pys62n3e0fbqa7peapykr8v" ApplicationName="Microsoft Edge" />`
-    
-  - <span data-ttu-id="ea39c-114">**Internet Explorer**</span><span class="sxs-lookup"><span data-stu-id="ea39c-114">**Internet Explorer**</span></span>
-    
-     `<Association Identifier=".htm" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
-  
-     `<Association Identifier=".html" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
-  
-     `<Association Identifier="http" ProgId="IE.HTTP" ApplicationName="Internet Explorer" />`
-  
-     `<Association Identifier="https" ProgId="IE.HTTPS" ApplicationName="Internet Explorer" />`
-    
-3. <span data-ttu-id="ea39c-115">Ouvrez la Console de gestion des stratégies de groupe (gpmc.msc) et basculez vers modifier toute stratégie existante ou créer un nouveau.</span><span class="sxs-lookup"><span data-stu-id="ea39c-115">Open Group Policy Management Console (gpmc.msc) and switch to editing any existing policy or creating a new one.</span></span>
-    
-1. <span data-ttu-id="ea39c-116">Accédez à**Configuration ordinateur\Administration administrative\Composants Windows\Dossier Explorer**</span><span class="sxs-lookup"><span data-stu-id="ea39c-116">Navigate to **Computer Configuration\Administrative Templates\Windows Components\File Explorer**</span></span>
-    
-2. <span data-ttu-id="ea39c-117">Double-cliquez sur **définir un fichier de configuration d’associations par défaut**, définissez-le comme programme **Activé**, puis entrez le chemin d’accès à AppAssoc.xml (par exemple %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\ AppAssoc.xml)</span><span class="sxs-lookup"><span data-stu-id="ea39c-117">Double-click **Set a default associations configuration file**, set it to **Enabled**, and enter the path to AppAssoc.xml (for example %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\AppAssoc.xml)</span></span>
-    
-4. <span data-ttu-id="ea39c-118">Appliquez la stratégie de groupe résultante GPO en les reliant au domaine approprié.</span><span class="sxs-lookup"><span data-stu-id="ea39c-118">Enforce the resultant GPO by linking it to the appropriate domain.</span></span>
-    
-<span data-ttu-id="ea39c-119">Les utilisateurs pourront modifier le navigateur après avoir défini cette stratégie.</span><span class="sxs-lookup"><span data-stu-id="ea39c-119">Users will be able to change the browser after this policy is set.</span></span>
-  
-## <a name="windows-7"></a><span data-ttu-id="ea39c-120">Windows 7</span><span class="sxs-lookup"><span data-stu-id="ea39c-120">Windows 7</span></span>
+    - `<Association Identifier=".htm" ProgId="htmlfile" ApplicationName="Internet Explorer" />`        
+    - `<Association Identifier=".html" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
+    - `<Association Identifier="http" ProgId="IE.HTTP" ApplicationName="Internet Explorer" />`
+    - `<Association Identifier="https" ProgId="IE.HTTPS" ApplicationName="Internet Explorer" />`
 
-1. <span data-ttu-id="ea39c-121">Configurez l’ordinateur local destiné à être utilisé pour définir la stratégie de groupe (GPO).</span><span class="sxs-lookup"><span data-stu-id="ea39c-121">Configure the local machine that will be used to set the GPO.</span></span>
+### <a name="step-3-edit-the-group-policy"></a><span data-ttu-id="22dcd-117">Étape 3.</span><span class="sxs-lookup"><span data-stu-id="22dcd-117">Step 3.</span></span> <span data-ttu-id="22dcd-118">Modifier la stratégie de groupe</span><span class="sxs-lookup"><span data-stu-id="22dcd-118">Edit the Group Policy</span></span>
+
+1. <span data-ttu-id="22dcd-119">Ouvrez la **Console de gestion des stratégies de groupe** (gpmc.msc) et basculez vers modifier toute stratégie existante ou créer une nouvelle.</span><span class="sxs-lookup"><span data-stu-id="22dcd-119">Open Group Policy Management Console (gpmc.msc) and switch to editing any existing policy or creating a new one.</span></span>
+1. <span data-ttu-id="22dcd-120">Accédez à**Configuration ordinateur\Modèles administratifs\Composants Windows\Explorateur de fichiers**.</span><span class="sxs-lookup"><span data-stu-id="22dcd-120">Navigate to **Computer Configuration\Administrative Templates\Windows Components\File Explorer**</span></span>
+1. <span data-ttu-id="22dcd-121">Double-cliquez sur **Définir un fichier de configuration d’associations par défaut**, définissez-le sur **Activé**, puis entrez le chemin d’accès à AppAssoc.xml (par exemple %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\ AppAssoc.xml) Appliquez l’objet de la stratégie de groupe GPO résultant en le liant au domaine approprié.</span><span class="sxs-lookup"><span data-stu-id="22dcd-121">Double-click **Set a default associations configuration file**, set it to **Enabled**, and enter the path to AppAssoc.xml (for example %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\AppAssoc.xml) Enforce the resultant GPO by linking it to the appropriate domain.</span></span>
+
+  
+## <a name="windows-7"></a><span data-ttu-id="22dcd-122">Windows 7</span><span class="sxs-lookup"><span data-stu-id="22dcd-122">Windows 7</span></span>
+
+1. <span data-ttu-id="22dcd-123">Configurez l’ordinateur local destiné à être utilisé pour définir la stratégie de groupe (GPO).</span><span class="sxs-lookup"><span data-stu-id="22dcd-123">Configure the local machine that will be used to set the GPO.</span></span>
     
-1. <span data-ttu-id="ea39c-122">Ouvrez le**programmes par défaut de contrôle\Programmes\Programmes par défaut\Définir les programmes par défaut** et définir Internet Explorer par défaut.</span><span class="sxs-lookup"><span data-stu-id="ea39c-122">Open **Control Panel\Programs\Default Programs\Set Default Programs** and set Internet Explorer as the default.</span></span> 
+1. <span data-ttu-id="22dcd-124">Ouvrez le**programmes par défaut de contrôle\Programmes\Programmes par défaut\Définir les programmes par défaut** et définir Internet Explorer par défaut.</span><span class="sxs-lookup"><span data-stu-id="22dcd-124">Open **Control Panel\Programs\Default Programs\Set Default Programs** and set Internet Explorer as the default.</span></span> 
     
-2. <span data-ttu-id="ea39c-123">Ouvrez la Console de gestion des stratégies de groupe (gpmc.msc) et basculez vers modifier toute stratégie existante ou créer un nouveau.</span><span class="sxs-lookup"><span data-stu-id="ea39c-123">Open Group Policy Management Console (gpmc.msc) and switch to editing any existing policy or creating a new one.</span></span>
+2. <span data-ttu-id="22dcd-125">Ouvrez la Console de gestion des stratégies de groupe (gpmc.msc) et basculez vers modifier toute stratégie existante ou créer un nouveau.</span><span class="sxs-lookup"><span data-stu-id="22dcd-125">Open Group Policy Management Console (gpmc.msc) and switch to editing any existing policy or creating a new one.</span></span>
     
-1. <span data-ttu-id="ea39c-124">Accédez à \*\* \<Ordinateur/Utilisateur\> Configuration\Stratégies\Préférences\Paramètres Windows\*\*.</span><span class="sxs-lookup"><span data-stu-id="ea39c-124">Navigate to **\<Computer/User\> Configuration\Policies\Preferences\Windows Settings**.</span></span>
+1. <span data-ttu-id="22dcd-126">Accédez à \*\* \<Ordinateur/Utilisateur\> Configuration\Stratégies\Préférences\Paramètres Windows\*\*.</span><span class="sxs-lookup"><span data-stu-id="22dcd-126">Navigate to **\<Computer/User\> Configuration\Policies\Preferences\Windows Settings**.</span></span>
     
-2. <span data-ttu-id="ea39c-125">Avec le bouton droit cliquez sur **Registre\Nouveauté** et sélectionnez **Assistant Registre**.</span><span class="sxs-lookup"><span data-stu-id="ea39c-125">Right-click on **Registry\New** and select **Registry Wizard**.</span></span>
+2. <span data-ttu-id="22dcd-127">Avec le bouton droit cliquez sur **Registre\Nouveauté** et sélectionnez **Assistant Registre**.</span><span class="sxs-lookup"><span data-stu-id="22dcd-127">Right-click on **Registry\New** and select **Registry Wizard**.</span></span>
     
-3. <span data-ttu-id="ea39c-126">Dans la fenêtre du navigateur de Registre, sélectionnez **Ordinateur Local** sur **Suivant**.</span><span class="sxs-lookup"><span data-stu-id="ea39c-126">From the Registry Browser window, select **Local Computer** and click **Next**.</span></span>
+3. <span data-ttu-id="22dcd-128">Dans la fenêtre du navigateur de Registre, sélectionnez **Ordinateur Local** sur **Suivant**.</span><span class="sxs-lookup"><span data-stu-id="22dcd-128">From the Registry Browser window, select **Local Computer** and click **Next**.</span></span>
     
-4. <span data-ttu-id="ea39c-p101">Accédez à **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** et sélectionnez la valeur ProgId. Vérifiez que la valeur semblable à celui ci-dessous :</span><span class="sxs-lookup"><span data-stu-id="ea39c-p101">Navigate to **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** and select the ProgId value. Make sure the value looks like the one below:</span></span> 
+4. <span data-ttu-id="22dcd-p105">Accédez à **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** et sélectionnez la valeur ProgId. Vérifiez que la valeur semblable à celui ci-dessous :</span><span class="sxs-lookup"><span data-stu-id="22dcd-p105">Navigate to **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** and select the ProgId value. Make sure the value looks like the one below:</span></span> 
     
     ![Sélectionner une valeur dans la modification de la chaîne ProgID](media/f6173dcc-b898-4967-8c40-4b0fe411a92b.png)
   
-5. <span data-ttu-id="ea39c-p102">Accédez à **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** et sélectionnez la valeur ProgId. Vérifiez que la valeur semblable à celui ci-dessous :</span><span class="sxs-lookup"><span data-stu-id="ea39c-p102">Navigate to **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** and select the ProgId value. Make sure that the value looks like the one below:</span></span> 
+5. <span data-ttu-id="22dcd-p106">Accédez à **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** et sélectionnez la valeur ProgId. Vérifiez que la valeur semblable à celui ci-dessous :</span><span class="sxs-lookup"><span data-stu-id="22dcd-p106">Navigate to **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** and select the ProgId value. Make sure that the value looks like the one below:</span></span> 
     
     ![Sélectionner une valeur dans la modification de la chaîne ProgID pour HTTPS](media/3519e13b-4fe7-4d15-946c-82fd50fc49bb.png)
   
-3. <span data-ttu-id="ea39c-133">Appliquez la stratégie de groupe résultante GPO en les reliant au domaine approprié.</span><span class="sxs-lookup"><span data-stu-id="ea39c-133">Enforce the resultant GPO by linking it to the appropriate domain.</span></span>
+3. <span data-ttu-id="22dcd-135">Appliquez la stratégie de groupe résultante GPO en les reliant au domaine approprié.</span><span class="sxs-lookup"><span data-stu-id="22dcd-135">Enforce the resultant GPO by linking it to the appropriate domain.</span></span>
     
-<span data-ttu-id="ea39c-134">Les utilisateurs pourront modifier le navigateur après avoir défini cette stratégie.</span><span class="sxs-lookup"><span data-stu-id="ea39c-134">Users will be able to change the browser after this policy is set.</span></span>
