@@ -1,8 +1,8 @@
 ---
 title: Page d’accueil par défaut
-ms.author: dawholl
-author: dawholl
-manager: kellis
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
@@ -15,22 +15,56 @@ search.appverid:
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 ROBOTS: NOINDEX
 description: Découvrez comment configurer un navigateur par défaut pour votre entreprise avec Microsoft Search (recherche Microsoft).
-ms.openlocfilehash: 457202ba8dbebf59c5ef6a4630aea98304b9acdb
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: 707b6fefe1bd3e096f758df92fedca28f3f1530a
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727995"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639828"
 ---
-# <a name="set-default-homepage"></a>Page d’accueil par défaut
+# <a name="make-bingcom-the-default-home-page"></a>Configurer Bing.com en tant que page d’accueil par défaut
 
-La configuration du navigateur par défaut, le moteur de recherche par défaut et la page d’accueil par défaut qui aideront vos utilisateurs à découvrir les fonctionnalités de Microsoft Search (recherche Microsoft), à plus encourager l’utilisation et offrir une expérience plus fluide.
+Cet article vous explique comment configurer Bing.com en tant que page d’accueil par défaut pour Microsoft Edge, Google Chrome et Internet Explorer. 
   
-Pour définir le navigateur par défaut pour votre organisation, suivez les étapes ci-dessous.
-  
-## <a name="internet-explorer"></a>Internet Explorer
+ 
+## <a name="microsoft-edge-on-windows-10-version-1511-or-later"></a>Microsoft Edge sur Windows 10, version 1511 ou ultérieure
 
-### <a name="internet-explorer-50-or-later"></a>Internet Explorer 5.0 ou version ultérieure
+Les utilisateurs ne pourront plus modifier ce paramètre après avoir défini cette stratégie. 
+
+1. Ouvrez la Console de gestion des stratégies de groupe (gpmc.msc) et basculez vers le mode de modification d’une stratégie existante ou de création d’une nouvelle. 
+1. Accédez à **Modèles administratifs\Composants Windows\Microsoft Edge**.    
+1. Double-cliquez sur **Configurer les pages de démarrage**, définissez-le comme programme **Activé**, puis entrez `https://www.bing.com/business`
+1.  Appliquez la stratégie de groupe résultante GPO en les reliant au domaine approprié.
+
+  
+## <a name="google-chrome-on-windows-xp-sp2-or-later"></a>Google Chrome sur Windows XP SP2 ou version ultérieure
+
+
+L’article du Support de Windows sur la gestion des fichiers ADMX et les derniers fichiers ADMX pour différentes versions de Windows est accessible [sur le Support Microsoft](https://support.microsoft.com/fr-FR/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
+
+Vous devez également utiliser le fichier de stratégie Google le plus récent, que vous trouverez sur[Aide Google Chrome Enterprise](https://support.google.com/chrome/a/answer/187202).
+  
+Si les paramètres décrits dans cette section sont introuvables dans le GPMC, téléchargez l’ ADMX approprié et les copier dans le [magasin central](https://docs.microsoft.com/fr-FR/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Le magasin central relatif au contrôleur est un dossier avec la convention de dénomination suivante :
+  
+ **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
+  
+Chaque domaine que votre contrôleur gère doit avoir un dossier séparé. La commande suivante peut être utilisée pour copier le fichier ADMX à partir de la commande rapide:
+  
+ `Copy <path_to_ADMX.ADMX> %systemroot%\sysvol\<domain>\policies\PolicyDefinitions`
+  
+1. Ouvrez la Console de gestion des stratégies de groupe (gpmc.msc) et basculez vers modifier toute stratégie existante ou créer un nouveau.
+1. Assurez-vous que les dossiers suivants apparaissent dans la section**Modèles Administratifs** des deux*Utilisateur/Configuration Ordinateur*:Google Chrome et Google Chrome- Paramètres par défaut (les utilisateurs peuvent y déroger).
+   - Les paramètres de la première section sont fixes et l’administrateur local ne pourra pas les modifier.
+   - Les paramètres de la dernière section de stratégies peuvent être modifiés par les utilisateurs dans leurs paramètres de navigateur. Vous devez décider si les utilisateurs peuvent remplacer votre paramètre par défaut. Dans les étapes suivantes, modifiez dans le paramètre dans le dossier qui correspond à la stratégie de l’organisation et aux besoins. Les étapes ci-dessous utilisent Google Chrome- les paramètres par défaut comme paramètre par défaut.
+
+1. Accédez à**&lt;Ordinateur/Configuration utilisateur&gt;\Modèles Administratifs\Google Chrome- Paramétrage par défaut\Page d’Accueil**. 
+1. Double-cliquez sur la**Page du Nouvel Onglet utilisation en tant que Page d’Accueil**et définissez-le comme**Activé**. 
+1. Accédez à**&lt;Ordinateur/Configuration Utilisateur&gt;\Modèles Administratifs\Google Chrome-Paramétrage par défaut\Page du Nouvel Onglet**. 
+1. Double-cliquez sur **Configurer le Nouvel URL de la Pages d’Onglet**, définissez-la comme**Activé**, puis entrez `https://www.bing.com/business?form=BFBSPR` 
+1. Appliquez la stratégie de groupe résultante GPO en les reliant au domaine approprié.
+
+## <a name="internet-explorer-50-or-later"></a>Internet Explorer 5.0 ou version ultérieure
+Les utilisateurs peuvent encore modifier la page d’accueil une fois cette stratégie définie. 
 
 1. Ouvrez la Console de gestion des stratégies de groupe (gpmc.msc) et basculez vers modifier toute stratégie existante ou créer un nouveau.
     
@@ -57,58 +91,4 @@ Pour définir le navigateur par défaut pour votre organisation, suivez les éta
   
 6. Appuyez sur**F6** sur les paramètres de la page d’accueil et entrez `https://www.bing.com/business?form=BFBSPR`
     
-7. Appliquez la stratégie de groupe résultante GPO en les reliant au domaine approprié.
-    
-> [!NOTE]
-> Les utilisateurs peuvent toujours modifier la page d’accueil après avoir défini cette stratégie. 
-  
-## <a name="microsoft-edge"></a>Microsoft Edge
-
-### <a name="windows-10-version-1511-or-later"></a>Windows 10, version 1511 ou supérieure.
-
-1. Ouvrez la Console de gestion des stratégies de groupe (gpmc.msc) et basculez vers modifier toute stratégie existante ou créer un nouveau.
-    
-2. Accédez à **Modèles administratifs\Composants Windows\Microsoft Edge**
-    
-1. Double-cliquez sur **Configurer les pages de démarrage**, définissez-le comme programme **Activé**, puis entrez `https://www.bing.com/business`
-    
-3. Appliquez la stratégie de groupe résultante GPO en les reliant au domaine approprié.
-    
-> [!CAUTION]
-> Les utilisateurs ne pourront pas modifier le navigateur après avoir défini cette stratégie. 
-  
-## <a name="google-chrome"></a>Google Chrome
-
-### <a name="windows-xp-sp2-or-later"></a>Windows XP (SP2) ou version ultérieure
-
-L’article du Support de Windows sur la gestion des fichiers ADMX et les derniers fichiers ADMX pour différentes versions de Windows est accessible [sur le Support Microsoft](https://support.microsoft.com/fr-FR/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
-
-Vous devez également utiliser le fichier de stratégie Google le plus récent, que vous trouverez sur[Aide Google Chrome Enterprise](https://support.google.com/chrome/a/answer/187202).
-  
-Si les paramètres décrits dans cette section sont introuvables dans le GPMC, téléchargez l’ ADMX approprié et les copier dans le [magasin central](https://docs.microsoft.com/fr-FR/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Le magasin central relatif au contrôleur est un dossier avec la convention de dénomination suivante :
-  
- **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
-  
-Chaque domaine que votre contrôleur gère doit avoir un dossier séparé. La commande suivante peut être utilisée pour copier le fichier ADMX à partir de la commande rapide:
-  
- `Copy <path_to_ADMX.ADMX> %systemroot%\sysvol\<domain>\policies\PolicyDefinitions`
-  
-1. Ouvrez la Console de gestion des stratégies de groupe (gpmc.msc) et basculez vers modifier toute stratégie existante ou créer un nouveau.
-    
-2. Assurez-vous que les dossiers suivants apparaissent dans la section**Modèles Administratifs** des deux*Utilisateur/Configuration Ordinateur*:Google Chrome et Google Chrome- Paramètres par défaut (les utilisateurs peuvent y déroger).
-    
-   - Les paramètres de la première section sont fixes et l’administrateur local ne pourra pas les modifier.
-    
-   - Les paramètres de la dernière section de stratégies peuvent être modifiés par les utilisateurs dans leurs paramètres de navigateur. Vous devez décider si les utilisateurs peuvent remplacer votre paramètre par défaut. Dans les étapes suivantes, modifiez dans le paramètre dans le dossier qui correspond à la stratégie de l’organisation et aux besoins. Les étapes ci-dessous utilisent Google Chrome- les paramètres par défaut comme paramètre par défaut.
-    
-3. Accédez à**&lt;Ordinateur/Configuration utilisateur&gt;\Modèles Administratifs\Google Chrome- Paramétrage par défaut\Page d’Accueil**.
-    
-4. Double-cliquez sur la**Page du Nouvel Onglet utilisation en tant que Page d’Accueil**et définissez-le comme**Activé**.
-    
-5. Accédez à**&lt;Ordinateur/Configuration Utilisateur&gt;\Modèles Administratifs\Google Chrome-Paramétrage par défaut\Page du Nouvel Onglet**.
-    
-6. Double-cliquez sur **Configurer le Nouvel URL de la Pages d’Onglet**, définissez-la comme**Activé**, puis entrez `https://www.bing.com/business?form=BFBSPR`
-    
-7. Appliquez la stratégie de groupe résultante GPO en les reliant au domaine approprié.
-    
-Les utilisateurs pourront modifier le navigateur après avoir défini cette stratégie.
+7. Appliquez la stratégie de groupe résultante GPO en la reliant au domaine approprié.

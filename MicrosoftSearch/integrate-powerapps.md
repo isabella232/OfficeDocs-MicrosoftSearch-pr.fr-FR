@@ -15,29 +15,24 @@ search.appverid:
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
 ROBOTS: NOINDEX
 description: Incluez des applications de navigateur dans les résultats de signet pour la fonctionnalité Recherche Microsoft
-ms.openlocfilehash: d818ab8149032b4664adb90098700d4432a6fbb7
-ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
+ms.openlocfilehash: f68b3c2b74f0a5c1712f0e86e86826e1f2c94b58
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2019
-ms.locfileid: "35003118"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639846"
 ---
 # <a name="integrate-powerapps"></a>Intégrer des PowerApps
-
-> [!IMPORTANT]
-> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
-    
+   
 Aidez vos utilisateurs à accomplir des tâches telles que saisir une période de vacances ou une note de frais en intégrant des PowerApps existants dans vos signets. Les PowerApps intégrés apparaissent dans un résultat de signet, ce qui élimine le besoin d’accéder à un autre site ou d’ouvrir un outil distinct, les heures enregistrés ainsi que vos efforts.
   
 ## <a name="what-are-powerapps"></a>Quelles sont les PowerApps ?
 
 PowerApps est un service qui vous permet de créer des applications métier qui s’exécutent dans un navigateur ou sur un téléphone ou une tablette avec aucune expérience codage requise. En savoir plus :
   
-- 
-  [Formation guidée](https://docs.microsoft.com/fr-FR/learn/browse/?products=powerapps)
+- [Formation guidée](https://docs.microsoft.com/learn/browse/?products=powerapps)
     
-- 
-  [Documentation](https://docs.microsoft.com/fr-FR/powerapps/)
+- [Documentation](https://docs.microsoft.com/powerapps/)
     
 ## <a name="add-a-powerapp-to-a-bookmark"></a>Ajouter un PowerApp à un signet
 

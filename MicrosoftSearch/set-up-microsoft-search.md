@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
 ROBOTS: NOINDEX
 description: Présentation de toutes les informations nécessaires au déploiement de la recherche Microsoft dans votre organisation
-ms.openlocfilehash: d375f67045a04341dedc699856f631c5c41e5896
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: e5d67700e5f7f145634d61fd336c959114819b35
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591088"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639396"
 ---
 # <a name="set-up-microsoft-search"></a>Configurer la fonctionnalité Recherche Microsoft
 
 > [!IMPORTANT]
-> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le Centre d’administration Microsoft 365. Nous supprimerons ensuite la fonctionnalité Recherche Microsoft du portail Bing. Pour commencer, nous vous suggérons d’utiliser le Centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
     
 Dans le cadre d’Office 365, la fonctionnalité Recherche Microsoft peut être facilement déployée en l’activant dans le Centre d’administration Microsoft 365. Une fois celle-ci activée, il vous suffit de configurer rapidement un logo, un nom et une couleur, et d’accorder l’accès aux administrateurs et aux éditeurs. Ensuite, les utilisateurs peuvent se connecter à Bing avec un compte professionnel ou scolaire et obtenir des résultats professionnels lors de leurs recherches.
 

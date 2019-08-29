@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: a220c1bf-7cee-448a-90a3-310284d03e81
 ROBOTS: NOINDEX
 description: Réduisez le nombre d’invites de connexion à la recherche Microsoft ou à Office 365 pour les utilisateurs de Windows 10.
-ms.openlocfilehash: c05a8ffcc973926add551bdbb20273b41ea23bc0
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 5dbceb070a469d1a8b3808a07a0972978a909f8a
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591043"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639372"
 ---
 # <a name="test-single-sign-on"></a>Tester l’authentification unique
 
 > [!IMPORTANT]
-> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le Centre d’administration Microsoft 365. Nous supprimerons ensuite la fonctionnalité Recherche Microsoft du portail Bing. Pour commencer, nous vous suggérons d’utiliser le Centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
     
 Grâce à l’authentification unique, vous pouvez réduire le nombre d’invites de connexion pour les utilisateurs. Vous pouvez tester cette fonctionnalité avec un petit groupe d’utilisateurs afin d’identifier les problèmes de configuration bloquants. 
   

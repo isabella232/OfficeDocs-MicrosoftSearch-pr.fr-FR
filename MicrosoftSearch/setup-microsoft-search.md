@@ -3,7 +3,7 @@ title: Configurer la fonctionnalité Recherche Microsoft
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 05/30/2019
+ms.date: 08/06/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer la fonctionnalité Recherche Microsoft pour la première fois.
-ms.openlocfilehash: 55ff009a17f63bfdaa1edf1e14fddfe132e20000
-ms.sourcegitcommit: 4eeb78066fd13e906daed3add003398bd9d0f6ca
+ms.openlocfilehash: 7c80701e83fea7b9b93e4e01f98fd1eeedbfa749
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35917577"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639498"
 ---
 # <a name="set-up-microsoft-search"></a>Configurer la fonctionnalité Recherche Microsoft
 
@@ -54,14 +54,7 @@ La fonctionnalité Recherche Microsoft respecte les paramètres de sécurité de
 | OneNote         | Vous ne pouvez pas effectuer de recherche dans les fichiers incorporés dans OneNote. [Changer les autorisations pour un bloc-notes sur OneDrive](https://support.office.com/article/B9600CCF-045A-40E6-9913-4A7EB02869A5)                                                                    |
 | Yammer          | [Paramètres de sécurité Yammer](https://docs.microsoft.com/Yammer/manage-security-and-compliance/yammer-security-settings)                                                                                                                               |
 
-## <a name="step-2-assign-search-admin-and-search-editor"></a>Étape 2 : Attribuer un administrateur et un éditeur de recherche
-
-Deux rôles d’administrateur limités sont disponibles pour vous aider dans la prise en charge de la fonctionnalité Recherche Microsoft : **Administrateur de recherche** et **Éditeur de recherche**.
-
-> [!NOTE]
-> Le rôle d’administrateur de recherche et le rôle d’éditeur de recherche n’accordent des autorisations que dans le Centre d’administration Microsoft 365 et non dans le **portail d’administration Recherche Microsoft Search dans Bing existant**. Vous devez être un administrateur général pour gérer la fonctionnalité Recherche Microsoft dans le portail existant.
-
-Les administrateurs de recherche ont une influence directe sur l’expérience de recherche des utilisateurs finaux, notamment sur le choix des types de résultats présentés à ceux-ci. Il peut être difficile pour une seule et même personne de choisir et de créer du contenu capable de faire autorité dans les nombreux domaines sur lesquels les utilisateurs effectuent des recherches au sein d’une organisation. Nous vous recommandons donc de tirer parti de l’expertise et des connaissances d’experts techniques et d’autres utilisateurs en les ajoutant en tant qu’éditeurs de recherche.
+## <a name="step-2-assign-search-admin-and-search-editor"></a>Étape 2 : attribuer un administrateur et un éditeur de recherche
 
 La fonctionnalité Recherche Microsoft vous permet de gérer le contenu et les paramètres de recherche de votre organisation en affectant ces rôles aux utilisateurs :
 
@@ -70,7 +63,9 @@ La fonctionnalité Recherche Microsoft vous permet de gérer le contenu et les p
 
 Pour l’instant, les rôles d’administrateur et d’éditeur de recherche doivent être attribués par un administrateur général. Pour plus d’informations, voir [Attribuer des rôles d’administrateur](https://docs.microsoft.com/fr-FR/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 
-## <a name="step-3-make-content-easy-to-find"></a>Étape 3 : Faciliter l’accès au contenu
+Les administrateurs de recherche ont une influence directe sur l’expérience de recherche des utilisateurs finaux, notamment sur le choix des types de résultats présentés à ceux-ci. Il peut être difficile pour une seule et même personne de choisir et de créer du contenu capable de faire autorité dans les nombreux domaines sur lesquels les utilisateurs effectuent des recherches au sein d’une organisation. Nous vous recommandons donc de tirer parti de l’expertise et des connaissances d’experts techniques et d’autres utilisateurs en les ajoutant en tant qu’éditeurs de recherche.
+
+## <a name="step-3-make-content-easy-to-find"></a>Étape 3 : faciliter l’accès au contenu
 
 La fonctionnalité Recherche Microsoft fournit aux administrateurs des outils qui leur permettent de créer une expérience de recherche robuste pour leurs utilisateurs. Dans la fonctionnalité Recherche Microsoft, les administrateurs peuvent créer trois types de contenus de recherche différents afin d’améliorer l’expérience de recherche et l’accessibilité du contenu :
 
@@ -86,19 +81,9 @@ Voici quelques exemples de contenu que vous pouvez transformer en signets pour v
 - Contenu informatif accessible à tous ; par exemple, informations sur l’entreprise, aide pour les applications Windows et Office, etc.
 - Contenu que les membres de l’organisation ont l’habitude de rechercher dans le cadre de leurs activités professionnelles quotidiennes. Dans ce domaine, les recherches les plus courantes concernent les avantages sociaux des employés, les fiches de présence et les notes de frais, l’envoi de bons de commande et l’obtention d’aide auprès des services informatiques.
 
-Pour créer et gérer du contenu de recherche, consultez [Faciliter l’accès au contenu](make-content-easy-to-find.md).
+Pour créer et gérer du contenu de recherche, consultez la page [Faciliter l’accès au contenu](make-content-easy-to-find.md).
 
-## <a name="step-4-test-single-sign-on"></a>Étape 4 : Tester l’authentification unique
-
-La fonctionnalité Recherche Microsoft utilise Azure Active Directory (AAD) pour authentifier et autoriser l’accès aux données de votre organisation. Cela signifie que vos utilisateurs sont automatiquement connectés à votre compte professionnel ou scolaire lorsque vous êtes connecté à une application Office 365 ou Windows 10.
-
-Nous recommandons aux utilisateurs de la fonctionnalité Recherche Microsoft d’avoir recours à l’authentification unique car celle-ci réduit le nombre d’invitations à se connecter. Il est conseillé aux administrateurs de tester l’authentification unique sur un petit groupe d’utilisateurs afin d’identifier les éventuels problèmes de blocage de la configuration.
-
-Pour les utilisateurs de Chrome sous Windows 10, l’authentification unique ne fonctionne que lorsque l’extension de connexion Windows 10 et AAD pour Chrome est installée. Une fois l’extension Chrome installée, vous pouvez l’utiliser pour vous authentifier facilement auprès d’AAD lors de la connexion à des sites pris en charge, comme Office 365 et Bing. Cette fonctionnalité est réservée aux utilisateurs autorisés.
-
-Pour télécharger et installer l’extension de connexion Windows 10 et AAD pour Chrome, accédez à [Chrome Web Store](https://go.microsoft.com/fwlink/?linkid=2090961).
-
-## <a name="step-5-training-and-communication"></a>Étape 5 : Formation et communication
+## <a name="step-4-training-and-communication"></a>Étape 4 : formation et communication
 
 Établissez des ressources en libre-service auxquelles les employés peuvent facilement accéder par eux-mêmes. Cela allégera le fardeau qui pèse constamment sur vous et votre équipe en termes de publication de communications et de formation/auto-formation des employés. Fournissez à vos utilisateurs des communications, des FAQ, des vidéos et des webinaires ou formations enregistrées. Voici quelques liens utiles pour commencer :
 
@@ -106,9 +91,3 @@ Pour télécharger et installer l’extension de connexion Windows 10 et AAD po
 - [Centre de formation Office 365](https://support.office.com/office-training-center)
 - 
   [Centre de recherche Microsoft](https://support.office.com/fr-FR/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
-
-## <a name="trying-out-microsoft-search-in-bing"></a>Essayer la fonctionnalité Recherche Microsoft dans Bing
-
-Vous pouvez désactiver **Recherche Microsoft dans Bing**. Lorsqu’elle est désactivée, les utilisateurs n’ont pas accès au contenu de l’organisation dans le cadre de la recherche Bing. Par défaut, la fonctionnalité Recherche Microsoft est activée. Pour une meilleure expérience utilisateur, nous vous recommandons de ne pas désactiver la fonctionnalité Recherche Microsoft dans Bing.
-
-Accédez à **Paramètres** > **Services et compléments** > **Recherche Microsoft dans Bing** pour l’activer ou la désactiver.

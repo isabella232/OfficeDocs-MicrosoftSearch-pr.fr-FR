@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
 ROBOTS: NOINDEX
 description: Analysez des métriques et gérez du contenu en toute facilité à partir du tableau de bord disponible dans le portail d’administration de Recherche Microsoft
-ms.openlocfilehash: a01b79dfc71218862da07270171da95e699ed7f2
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 9323ad97a2baffc3bdc1794049f6933335b298b2
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591511"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639819"
 ---
 # <a name="use-the-insights-dashboard"></a>Utiliser le tableau de bord d’informations
 
 > [!IMPORTANT]
-> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le Centre d’administration Microsoft 365. Nous supprimerons ensuite la fonctionnalité Recherche Microsoft du portail Bing. Pour commencer, nous vous suggérons d’utiliser le Centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
     
 Obtenez des informations extraites des données et voyez comment les utilisateurs interagissent avec vos résultats. Utilisez le tableau de bord du portail d’administration pour :
   

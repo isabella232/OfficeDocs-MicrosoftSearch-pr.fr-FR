@@ -15,19 +15,19 @@ search.appverid:
 ms.assetid: 38569f03-db18-49ab-96ef-213a1f410935
 ROBOTS: NOINDEX
 description: Découvrez pourquoi Microsoft Search(recherche Microsoft) est une recherche d’entreprise intelligente pour les lieux de travail modernes.
-ms.openlocfilehash: f2cf9c3e4d80bc17fd74bf0ae34b7886b4b69d33
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 392e004fef54d1bdbec302b780dd79ecc4668cb9
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590746"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639387"
 ---
 # <a name="why-microsoft-search"></a>Pourquoi Microsoft Search(recherche Microsoft)
 
 Transformer les manières dont les personnes de votre organisation recherchent les informations avec Microsoft Search(recherche Microsoft). 
 
 > [!IMPORTANT]
-> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Ensuite, nous le supprimerons. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le Centre d’administration Microsoft 365. Nous supprimerons ensuite la fonctionnalité Recherche Microsoft du portail Bing. Pour commencer, nous vous suggérons d’utiliser le Centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
   
 Cette expérience de recherche entreprise augmente la productivité et fait gagner du temps en fournissant des résultats de recherche plus pertinents pour l’espace de travail. Microsoft Search(recherche Microsoft) récupère les informations en toute sécurité à partir de votre entreprise, scolaire ou organisation, tels que des fichiers, données d’entreprise, les informations de personnes et des sites, ainsi que les résultats publics sur le web et les affiche dans une expérience unique.
 
