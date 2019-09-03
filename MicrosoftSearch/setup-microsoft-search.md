@@ -48,9 +48,7 @@ La fonctionnalité Recherche Microsoft respecte les paramètres de sécurité de
 | Personnes          | Vous pouvez masquer certains utilisateurs d’une recherche dans votre liste d'adresses en définissant le paramètre `HiddenFromAddressListEnabled` sur `true` en utilisant l’applet de commande [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user). |
 | Microsoft Teams | [Gérer l’accès des utilisateurs à Microsoft Teams](https://docs.microsoft.com/microsoftteams/user-access)                                                                                                                                                      |
 | OneDrive        | [Gérer le partage](https://docs.microsoft.com/OneDrive/manage-sharing)                                                                                                                                                                                |
-| SharePoint      | 
-  [Planification des autorisations](https://docs.microsoft.com/fr-FR/sharepoint/plan-your-permissions-strategy)<br> 
-  [Création des niveaux d’autorisations](https://docs.microsoft.com/fr-FR/sharepoint/how-to-create-and-edit-permission-levels)                          |
+| SharePoint      | [Planification des autorisations](https://docs.microsoft.com/fr-FR/sharepoint/plan-your-permissions-strategy)<br> [Création des niveaux d’autorisations](https://docs.microsoft.com/fr-FR/sharepoint/how-to-create-and-edit-permission-levels)                          |
 | OneNote         | Vous ne pouvez pas effectuer de recherche dans les fichiers incorporés dans OneNote. [Changer les autorisations pour un bloc-notes sur OneDrive](https://support.office.com/article/B9600CCF-045A-40E6-9913-4A7EB02869A5)                                                                    |
 | Yammer          | [Paramètres de sécurité Yammer](https://docs.microsoft.com/Yammer/manage-security-and-compliance/yammer-security-settings)                                                                                                                               |
 
@@ -89,5 +87,4 @@ Pour créer et gérer du contenu de recherche, consultez la page [Faciliter l’
 
 - [Trouvez ce dont vous avez besoin avec la fonctionnalité Recherche Microsoft d’Office](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
 - [Centre de formation Office 365](https://support.office.com/office-training-center)
-- 
-  [Centre de recherche Microsoft](https://support.office.com/fr-FR/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
+- [Centre de recherche Microsoft](https://support.office.com/fr-FR/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)

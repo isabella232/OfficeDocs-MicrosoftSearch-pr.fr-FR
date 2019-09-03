@@ -38,8 +38,7 @@ PowerApps est un service qui vous permet de créer des applications métier qui 
 
 Les applications PowerApps fonctionnent dans n’importe quel navigateur ainsi que sur tout appareil, et leur ajout prend moins d’une minute.
   
-1. 
-  [Trouvez l’ID du PowerApp](https://docs.microsoft.com/fr-FR/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) que vous souhaitez intégrer. 
+1. [Trouvez l’ID du PowerApp](https://docs.microsoft.com/fr-FR/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) que vous souhaitez intégrer. 
     
 2. Dans le portail d’administration de la fonctionnalité Recherche Microsoft, accédez à **Favoris**.
     

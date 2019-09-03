@@ -161,10 +161,8 @@ Aidez vos utilisateurs à accomplir certaines tâches, telles que la saisie de p
 #### <a name="what-are-powerapps"></a>Que sont les applications PowerApps ?
 
 PowerApps est un service qui vous permet de créer des applications métier qui s’exécutent dans un navigateur, sur un téléphone ou sur une tablette, sans aucune expérience en matière de codage. Les applications PowerApps fonctionnent dans n’importe quel navigateur et sur n’importe quel appareil, et leur ajout prend moins d’une minute. Pour plus d’informations sur les applications PowerApps, consultez :
-- 
-  [Formation guidée](https://docs.microsoft.com/fr-FR/learn/browse/?products=powerapps)
-- 
-  [Documentation](https://docs.microsoft.com/fr-FR/powerapps/maker/canvas-apps/get-sessionid)
+- [Formation guidée](https://docs.microsoft.com/fr-FR/learn/browse/?products=powerapps)
+- [Documentation](https://docs.microsoft.com/fr-FR/powerapps/maker/canvas-apps/get-sessionid)
 - [Accueil PowerApps](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 #### <a name="add-a-powerapp-to-a-bookmark"></a>Ajouter une application PowerApp à un signet
