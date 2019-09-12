@@ -47,7 +47,6 @@ Incitez vos utilisateurs à effectuer une recherche à partir de la page d’acc
 ## <a name="see-also"></a>Voir aussi
 [Vue d’ensemble de Recherche Microsoft](overview-microsoft-search.md)
 
-
-  [En savoir plus sur la recherche moderne dans SharePoint](https://docs.microsoft.com/fr-FR/sharepoint/overview-of-search).
+[En savoir plus sur la recherche moderne dans SharePoint](https://docs.microsoft.com/fr-FR/sharepoint/overview-of-search).
 
 [Quand et quelle expérience de recherche utiliser dans SharePoint](https://docs.microsoft.com/sharepoint/get-started-with-modern-search-experience)
