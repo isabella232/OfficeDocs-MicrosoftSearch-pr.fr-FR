@@ -1,5 +1,5 @@
 ---
-title: Gérer les signets
+title: Gérer des signets
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: Créez et mettez à jour des signets et des façons de modifier en bloc les résultats de signet pour la fonctionnalité Recherche Microsoft
-ms.openlocfilehash: 0cd37ebcd7cd3ea7bbe55064fd41a3c42b2e4725
-ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
-ms.translationtype: HT
+description: Créer et mettre à jour des signets et des méthodes pour modifier en bloc les résultats de signet pour Microsoft Search
+ms.openlocfilehash: 02b9bfecd97210ba8cd5b46bf3bc108bf66b6f01
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36170319"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288972"
 ---
-# <a name="manage-bookmarks"></a>Gérer les signets
+# <a name="manage-bookmarks"></a>Gérer des signets
 
 Vous pouvez créer un signet en quelques étapes. Chaque signet comprend un titre, une URL et un ensemble de mots clés qui le déclenchent. Un signet peut comprendre plusieurs mots clés, et plusieurs signets peuvent partager le même mot clé, mais un mot clé réservé ne peut pas être partagé. Lorsqu’un signet est créé ou modifié, l’index de recherche est aussitôt actualisé et le signet est immédiatement accessible aux utilisateurs.
 
-Si votre entreprise a configuré l’option Résultats promus dans SharePoint, vous pouvez importer les résultats promus dans **Recherche Microsoft** et mettre le contenu importé à la disposition de vos utilisateurs. Cette méthode simple permet de renseigner rapidement les résultats de recherche dès que vous avez configuré la fonctionnalité **Recherche Microsoft**, et d’améliorer son efficacité pour vos utilisateurs. Nous vous recommandons d’utiliser les résultats promus de SharePoint comme référence pour apprendre à nommer et créer des résultats de recherche pertinents. 
+Si votre organisation a promu les résultats configurés dans SharePoint, vous pouvez importer les résultats promus dans **Microsoft Search** et mettre le contenu importé à la disposition de vos utilisateurs. Cette méthode simple permet de renseigner rapidement les résultats de recherche dès que vous avez configuré la fonctionnalité **Recherche Microsoft**, et d’améliorer son efficacité pour vos utilisateurs. Nous vous recommandons d’utiliser les résultats promus de SharePoint comme référence pour apprendre à nommer et créer des résultats de recherche pertinents. 
 
 ## <a name="add-or-edit-a-single-bookmark"></a>Ajouter ou modifier un seul signet
 1. Accédez au **Centre d’administration Microsoft 365**.
@@ -39,7 +39,7 @@ Par défaut, l’onglet **Signets** est sélectionné.
 Les administrateurs de recherche peuvent facilement créer du contenu de recherche en utilisant des extensions de navigateur. Installez l’extension de navigateur, puis accédez au site que vous souhaitez ajouter en tant que signet et ajoutez-le.
 
 Actuellement, des extensions de navigateur sont disponibles pour Edge et Chrome. 
-- Pour télécharger l’extension Edge, accédez à [Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) et téléchargez l’application.
+- Pour télécharger l’extension Edge, accédez à [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) et téléchargez l’application.
 - Pour télécharger l’extension Chrome, accédez à [Chrome Web Store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) et téléchargez l’application.
 
 ## <a name="bulk-add-or-edit-bookmarks"></a>Ajout ou modification en bloc de signets
@@ -81,12 +81,13 @@ Aidez vos utilisateurs à accomplir certaines tâches, telles que la saisie de p
 
 ### <a name="what-are-powerapps"></a>Que sont les applications PowerApps ?
 PowerApps est un service qui vous permet de créer des applications métier qui s’exécutent dans un navigateur, sur un téléphone ou sur une tablette, sans aucune expérience en matière de codage. Les applications PowerApps fonctionnent dans n’importe quel navigateur et sur n’importe quel appareil, et leur ajout prend moins d’une minute. Pour plus d’informations sur les applications PowerApps, consultez :
-- [Formation guidée](https://docs.microsoft.com/fr-FR/learn/browse/?products=powerapps)
-- [Documentation](https://docs.microsoft.com/fr-FR/powerapps/maker/canvas-apps/get-sessionid)
+- 
+  [Formation guidée](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [Documentation](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid)
 - [Accueil PowerApps](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 ### <a name="add-a-powerapp-to-a-bookmark"></a>Ajouter une application PowerApp à un signet
-1. Recherchez l’[ID de l’application PowerApp](https://docs.microsoft.com/fr-FR/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) que vous souhaitez ajouter.
+1. Recherchez l’[ID de l’application PowerApp](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) que vous souhaitez ajouter.
 1. Connectez-vous et accédez au **Centre d’administration Microsoft 365**.
 1. Dans le volet de navigation, accédez à **Paramètres**, puis sélectionnez **Recherche Microsoft**.
 1. Ajoutez un nouveau signet ou accédez à un signet existant auquel vous souhaitez ajouter une application **PowerApp**.
