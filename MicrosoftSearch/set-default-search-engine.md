@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 ROBOTS: NOINDEX
 description: Découvrez comment définir Bing comme moteur de recherche par défaut de votre entreprise à l’aide de Microsoft Search (recherche Microsoft).
-ms.openlocfilehash: cc03e3aa280ea621702ce99c2cc8eb530b310251
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 7c7ec8be726f2ac12a0e07f3d70c4b6515366bf3
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639837"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37289017"
 ---
 # <a name="make-bing-the-default-search-engine"></a>Définir Bing en tant que moteur de recherche par défaut
   
@@ -30,9 +30,9 @@ Cet article vous explique comment configurer Bing en tant que moteur de recherch
 
 Bien que vous puissiez définir Bing en tant que moteur de recherche par défaut, Microsoft Edge autorise les utilisateurs à modifier leurs paramètres de manière à utiliser un autre moteur de recherche.
   
-Concernant les fichiers récents d’ADMX relatifs aux différentes versions de Windows, reportez-vous à l’article [Comment créer et gérer le magasin central des modèles d’administration de stratégie de groupe dans Windows](https://support.microsoft.com/fr-FR/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
+Concernant les fichiers récents d’ADMX relatifs aux différentes versions de Windows, reportez-vous à l’article [Comment créer et gérer le magasin central des modèles d’administration de stratégie de groupe dans Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
   
-Si les paramètres décrits dans cette section sont introuvables dans le GPMC, téléchargez l’ ADMX approprié et copiez-les dans le magasin central. Pour plus d’informations, voir[Modifier les groupes de stratégie GPOs basés sur le domaine à l’aide des fichiers ADMX](https://docs.microsoft.com/fr-FR/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Le magasin central relatif au contrôleur est un dossier avec la convention de dénomination suivante:
+Si les paramètres décrits dans cette section sont introuvables dans le GPMC, téléchargez l’ ADMX approprié et copiez-les dans le magasin central. Pour plus d’informations, voir[Modifier les groupes de stratégie GPOs basés sur le domaine à l’aide des fichiers ADMX](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Le magasin central relatif au contrôleur est un dossier avec la convention de dénomination suivante:
   
  **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
   
@@ -55,7 +55,7 @@ Une fois cette stratégie définie, les utilisateurs ne pourront plus modifier l
   
 Chrome fournit avec son propre ensemble de paramètres de stratégie de groupe qui peut être téléchargé sous la forme d’un fichier ADMX à partir[Aide Google Chrome Enterprise](https://support.google.com/chrome/a/answer/187202). Si les systèmes d’exploitation Windows Vista/Server 2008 ou version ultérieure servent à gérer l’objet de stratégie de groupe pour le domaine, le fichier ADMX fourni dans ce package assure la gestion des paramètres de Chrome sous Windows XP SP2 ou version ultérieure.
   
-Copiez le fichier de modèle dans un magasin central de fichiers ADMX sur le contrôleur de domaine. Pour plus d’informations, voir [Modifier les stratégies de groupe GPOs basés sur le domaine à l’aide des fichiers ADMX](https://docs.microsoft.com/fr-FR/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Le magasin central sur le contrôleur est un dossier avec la convention de dénomination suivante:
+Copiez le fichier de modèle dans un magasin central de fichiers ADMX sur le contrôleur de domaine. Pour plus d’informations, voir [Modifier les stratégies de groupe GPOs basés sur le domaine à l’aide des fichiers ADMX](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Le magasin central sur le contrôleur est un dossier avec la convention de dénomination suivante:
   
  **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
   

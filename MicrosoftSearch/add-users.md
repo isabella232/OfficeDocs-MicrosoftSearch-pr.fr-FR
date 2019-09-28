@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 41723aec-435c-400e-a818-6b1e8a1324c0
 ROBOTS: NoIndex
 description: Attribuer des autorisations et des rôles aux administrateurs et aux éditeurs de la fonctionnalité Recherche Microsoft
-ms.openlocfilehash: af89aa2d536baa64f16b0c2b2ff316200c83cbc0
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: b0a6d6db5c36bc12d4371e10d703e95bd3cd7731
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639648"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288954"
 ---
 # <a name="manage-users"></a>Gérer les utilisateurs
 
 > [!IMPORTANT]
-> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Nous supprimerons ensuite la fonctionnalité Recherche Microsoft dans le portail Bing. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le Centre d’administration Microsoft 365. Nous supprimerons ensuite la fonctionnalité Recherche Microsoft du portail Bing. Pour commencer, nous vous suggérons d’utiliser le Centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
     
 Les éditeurs peuvent ajouter du contenu, mais ne peuvent pas modifier les paramètres.
   
@@ -45,4 +45,4 @@ Les éditeurs peuvent ajouter du contenu, mais ne peuvent pas modifier les param
     
 ## <a name="add-users"></a>Ajout d’utilisateurs
 
-Par défaut, la fonctionnalité Recherche Microsoft est accessible à tous les membres de votre organisation. Pour modifier l’accès, utilisez [Accès conditionnel dans Azure Active Directory](https://docs.microsoft.com/fr-FR/azure/active-directory/conditional-access/overview).
+Par défaut, la fonctionnalité Recherche Microsoft est accessible à tous les membres de votre organisation. Pour modifier l’accès, utilisez [Accès conditionnel dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).

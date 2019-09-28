@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créez des signets, des emplacements et des Q&R pour accéder facilement au contenu de votre organisation.
-ms.openlocfilehash: a2f8018a85d792473f268a735abb368babfc582c
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 2ed18cf8dcb855725a7cf3d51737e767000e9e83
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639855"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288918"
 ---
 # <a name="make-content-easy-to-find"></a>Faciliter l’accès au contenu
 
@@ -116,7 +116,7 @@ Par défaut, l’onglet **Signets** est sélectionné.
 Les administrateurs de recherche peuvent facilement créer du contenu de recherche en utilisant des extensions de navigateur. Installez l’extension de navigateur, puis accédez au site que vous souhaitez ajouter en tant que signet et ajoutez-le.
 
 Actuellement, des extensions de navigateur sont disponibles pour Edge et Chrome. 
-- Pour télécharger l’extension Edge, accédez à [Microsoft Store](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) et téléchargez l’application.
+- Pour télécharger l’extension Edge, accédez à [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) et téléchargez l’application.
 - Pour télécharger l’extension Chrome, accédez à [Chrome Web Store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) et téléchargez l’application.
 
 ### <a name="bulk-add-or-edit-bookmarks"></a>Ajout ou modification en bloc de signets
@@ -161,13 +161,13 @@ Aidez vos utilisateurs à accomplir certaines tâches, telles que la saisie de p
 #### <a name="what-are-powerapps"></a>Que sont les applications PowerApps ?
 
 PowerApps est un service qui vous permet de créer des applications métier qui s’exécutent dans un navigateur, sur un téléphone ou sur une tablette, sans aucune expérience en matière de codage. Les applications PowerApps fonctionnent dans n’importe quel navigateur et sur n’importe quel appareil, et leur ajout prend moins d’une minute. Pour plus d’informations sur les applications PowerApps, consultez :
-- [Formation guidée](https://docs.microsoft.com/fr-FR/learn/browse/?products=powerapps)
-- [Documentation](https://docs.microsoft.com/fr-FR/powerapps/maker/canvas-apps/get-sessionid)
+- [Formation guidée](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [Documentation](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid)
 - [Accueil PowerApps](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 #### <a name="add-a-powerapp-to-a-bookmark"></a>Ajouter une application PowerApp à un signet
 
-1. Recherchez l’[ID de l’application PowerApp](https://docs.microsoft.com/fr-FR/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) que vous souhaitez ajouter.
+1. Recherchez l’[ID de l’application PowerApp](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) que vous souhaitez ajouter.
 1. Connectez-vous et accédez au **Centre d’administration Microsoft 365**.
 1. Dans le volet de navigation, accédez à **Paramètres**, puis sélectionnez **Recherche Microsoft**.
 1. Ajoutez un nouveau signet ou accédez à un signet existant auquel vous souhaitez ajouter une application **PowerApp**.

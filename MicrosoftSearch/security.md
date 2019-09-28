@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 description: Protégez vos données d’entreprise et utilisateurs tout en fournissant des informations pour les utilisateurs ayant une autorisation pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 7aef4acad9f387e50fb03478a7c00d57fa451c00
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 759fc49a4196e336d3a6016a91aa588fa1278b4d
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639613"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288999"
 ---
 # <a name="security-for-microsoft-search"></a>Sécurité relative à Microsoft Search (recherche Microsoft)
 
 > [!IMPORTANT]
-> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le centre d’administration Microsoft 365. Nous supprimerons ensuite la fonctionnalité Recherche Microsoft dans le portail Bing. Pour commencer, nous vous suggérons d’utiliser le centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le Centre d’administration Microsoft 365. Nous supprimerons ensuite la fonctionnalité Recherche Microsoft du portail Bing. Pour commencer, nous vous suggérons d’utiliser le Centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
 
 Avec la sécurité de qualité professionnelle, Microsoft Search (recherche Microsoft) conserve toujours vos utilisateurs et données protégées.
 
@@ -72,4 +72,4 @@ Quelle que soit la requête utilisateur contienne un ou plusieurs résultat(s) d
     
 ## <a name="gdpr"></a>RGPD
 
-Le [billet de blog 21 mai 2018](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/) auprès de Microsoft reflète notre engagement de mise en conformité et comment Microsoft aide les entreprises et les organisations avec leurs propres obligations de conformité RGPD. Vous pouvez trouver des détails supplémentaires dans le Microsoft [Forum aux questions du centre de gestion de la Confidentialité](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs). Les requêtes Microsoft Search (recherche Microsoft) fonctionnent sur les données organisationnelles clients client au sein de Services en ligne seront également respecter les engagements de processeur décrites dans l’Article 28 comme reflétées dans le [Forum aux questions du centre de gestion de la confidentialité](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs). Pour des requêtes à partir de Microsoft Search atteindre Bing public, Microsoft est un contrôleur des données et a implémenté mesures pour l’identifier les requêtes comme indiqué sous RGPD.
+Le [billet de blog 21 mai 2018](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/) auprès de Microsoft reflète notre engagement de mise en conformité et comment Microsoft aide les entreprises et les organisations avec leurs propres obligations de conformité RGPD. Vous pouvez trouver des détails supplémentaires dans le Microsoft [Forum aux questions du centre de gestion de la Confidentialité](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs). Les requêtes Microsoft Search (recherche Microsoft) fonctionnent sur les données organisationnelles clients client au sein de Services en ligne seront également respecter les engagements de processeur décrites dans l’Article 28 comme reflétées dans le [Forum aux questions du centre de gestion de la confidentialité](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs). Pour des requêtes à partir de Microsoft Search atteindre Bing public, Microsoft est un contrôleur des données et a implémenté mesures pour l’identifier les requêtes comme indiqué sous RGPD.
