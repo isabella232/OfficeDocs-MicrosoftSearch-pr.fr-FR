@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez un aperçu des nouveautés de la fonctionnalité Recherche Microsoft, de ses avantages et des applications qui en disposent actuellement.
-ms.openlocfilehash: 339b3d6350fa059ddc4dc24685e18739777bf932
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 55b6cad9f871eb1eb8d103c51e7cfeda02e6a452
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639585"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37289044"
 ---
 # <a name="overview-of-microsoft-search"></a>Vue d’ensemble de Recherche Microsoft
 
@@ -48,11 +48,11 @@ Si les suggestions dans la zone de recherche ne conviennent pas, l’action de l
 
 ## <a name="benefits-of-microsoft-search"></a>Avantages de la fonctionnalité Recherche Microsoft
 
-**Recherche au sein de Microsoft 365 à partir d’une zone de Recherche Microsoft** : les utilisateurs peuvent effectuer des recherches dans une zone de Recherche Microsoft et revenir rapidement à ce qu’ils faisaient. Le fonctionnalité Recherche Microsoft réunit les résultats provenant de sources de données dans Office 365, sont SharePoint, OneDrive Entreprise et Exchange.
+**Recherche au sein de Microsoft 365 à partir d’une zone de Recherche Microsoft** : les utilisateurs peuvent effectuer des recherches dans une zone de Recherche Microsoft et revenir rapidement à ce qu’ils faisaient. La fonctionnalité Recherche Microsoft réunit les résultats provenant de sources de données dans Office 365, sont SharePoint, OneDrive Entreprise et Exchange.
 
 **Facile de rechercher** : Recherche Microsoft suggère les résultats en fonction de précédentes activités des utilisateurs dans Office 365, directement dans la zone de recherche.
 
-**Recherche les dossiers partagés**: Recherche Microsoft utilise la compréhension de requête avancée pour simplifier la recherche de fichiers partagés. Les utilisateurs peuvent facilement trouver des fichiers sur lesquels ils collaborent.
+**Recherche les dossiers partagés** : Recherche Microsoft utilise la compréhension de requête avancée pour simplifier la recherche de fichiers partagés. Les utilisateurs peuvent facilement trouver des fichiers sur lesquels ils collaborent.
 
 **Afficher du contenu pertinent** : promouvoir les informations et réponses dont vos utilisateurs ont besoin pour effectuer les tâches, par exemple stratégies, avantages, les ressources, outils et bien plus encore. Vous pouvez également cibler des groupes spécifiques, tels que les nouvelles recrues ou les employés à distance.
 
@@ -118,7 +118,7 @@ Lorsque des utilisateurs recherchent à partir de Bing, ils obtiennent les résu
 ## <a name="what-types-of-results-can-users-find"></a>Quels types de résultats les utilisateurs peuvent-ils trouver ?
 Les utilisateurs trouvent les types de résultats suivants selon qu’ils recherchent à partir de :
 
-**SharePoint**: fichiers, dossiers, membres de votre organisation, organigrammes hiérarchiques, sites, pages de site, actualités, listes et éléments de liste. Si spécifié, réponses aux questions fréquemment posées, signets menant à des informations faisant autorité, localisations et outils. [Découvrez les types de fichiers que vous pouvez trouver](https://docs.microsoft.com/fr-FR/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
+**SharePoint**: fichiers, dossiers, membres de votre organisation, organigrammes hiérarchiques, sites, pages de site, actualités, listes et éléments de liste. Si spécifié, réponses aux questions fréquemment posées, signets menant à des informations faisant autorité, localisations et outils. [Découvrez les types de fichiers que vous pouvez trouver](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
 
 **Pages d’accueil Office.com et Word, Excel et PowerPoint Online** : applications, fichiers, dossiers, contacts, organigrammes hiérarchiques, sites SharePoint, pages de site, listes et éléments de liste. Si spécifié, réponses aux questions fréquemment posées, signets menant à des informations faisant autorité, localisations et outils. Des fichiers du même type que dans SharePoint peuvent être trouvés.
 
@@ -145,7 +145,7 @@ La fonctionnalité Recherche Microsoft est l’expérience de recherche moderne 
 - Les utilisateurs accèdent à la zone Recherche Microsoft sur la page d’accueil de SharePoint, des sites hub, des sites de communication et des sites d’équipe modernes.
 - Les utilisateurs accèdent à la zone de recherche classique sur des sites de publication, des sites d’équipe classiques et dans le centre de recherche.
 
-Vous pouvez personnaliser l’expérience de recherche classique, par exemple en ajoutant des affinements personnalisés à la page de résultats de recherche ou en affichant différemment un certain type de résultat. Vous ne pouvez pas personnaliser l’expérience de Recherche Microsoft dans SharePoint de la même manière. Certaines personnalisations que vous apportez à la recherche classique peuvent avoir une incidence sur la fonctionnalité Recherche Microsoft dans SharePoint. Si votre organisation compte utiliser les deux expériences de recherche dans SharePoint, [découvrez les différences entre celles-ci et comment éviter toute incidence sur la fonctionnalité Recherche Microsoft dans SharePoint](https://docs.microsoft.com/fr-FR/sharepoint/differences-classic-modern-search).
+Vous pouvez personnaliser l’expérience de recherche classique, par exemple en ajoutant des affinements personnalisés à la page de résultats de recherche ou en affichant différemment un certain type de résultat. Vous ne pouvez pas personnaliser l’expérience de Recherche Microsoft dans SharePoint de la même manière. Certaines personnalisations que vous apportez à la recherche classique peuvent avoir une incidence sur la fonctionnalité Recherche Microsoft dans SharePoint. Si votre organisation compte utiliser les deux expériences de recherche dans SharePoint, [découvrez les différences entre celles-ci et comment éviter toute incidence sur la fonctionnalité Recherche Microsoft dans SharePoint](https://docs.microsoft.com/sharepoint/differences-classic-modern-search).
 
 ## <a name="microsoft-search-in-bing"></a>Recherche Microsoft dans Bing
 
@@ -155,11 +155,11 @@ Les requêtes de Recherche Microsoft sont effectuées via HTTPS. Cette précauti
 
 Indépendamment du fait qu’une requête d’utilisateur reçoive un ou plusieurs résultats professionnels en retour, les mesures suivantes sont prises :
 
-**Journalisation** - Tous les journaux de recherche relatifs au trafic Recherche Microsoft sont dépersonnalisés et conservés pendant 18 mois. Les requêtes stockées dans ces journaux système ne seront utilisées que pour modéliser et former des fonctionnalités publiques, telles que la suggestion automatique ou les recherches associées de résultats web publics, lorsqu’un ensemble de restrictions et de seuils de fréquence sont atteints, ce qui nous donne la certitude que ces requêtes sont communes et ne sont pas spécifiques à une organisation particulière. La requête doit apparaître un nombre significatif de fois dans la mise en relation des données provenant d’utilisateurs qui n’utilisent pas Recherche Microsoft, et la requête ne doit pas déclencher exclusivement des résultats de recherche d’entreprise. Les requêtes qui ne répondent pas à ces exigences seront stockées séparément du trafic public qui ne concerne pas Recherche Microsoft. L’accès restreint est géré via divers mécanismes sécurisés, y compris les groupes de sécurité et autres couches au sein du système d’ingénierie.
+**Journalisation** : tous les journaux de recherche relatifs au trafic Recherche Microsoft sont dépersonnalisés et conservés pendant 18 mois. Les requêtes stockées dans ces journaux système ne seront utilisées que pour modéliser et former des fonctionnalités publiques, telles que la suggestion automatique ou les recherches associées de résultats web publics, lorsqu’un ensemble de restrictions et de seuils de fréquence sont atteints, ce qui nous donne la certitude que ces requêtes sont communes et ne sont pas spécifiques à une organisation particulière. La requête doit apparaître un nombre significatif de fois dans la mise en relation des données provenant d’utilisateurs qui n’utilisent pas Recherche Microsoft, et la requête ne doit pas déclencher exclusivement des résultats de recherche d’entreprise. Les requêtes qui ne répondent pas à ces exigences seront stockées séparément du trafic public qui ne concerne pas Recherche Microsoft. L’accès restreint est géré via divers mécanismes sécurisés, y compris les groupes de sécurité et autres couches au sein du système d’ingénierie.
 
 **Historique de recherche** : lorsqu’un utilisateur est connecté avec un compte professionnel ou scolaire, son historique de recherche n’est pas disponible sur d’autres ordinateurs ou appareils.
 
-**Publicité**: les requêtes de recherche d’entreprise ne sont jamais partagées avec ou suggérées aux publicitaires.
+**Publicité** : les requêtes de recherche d’entreprise ne sont jamais partagées avec ou suggérées aux publicitaires.
 Les publicités ne sont jamais des canaux ciblés à un utilisateur en fonction de leur travail d’identité ou d’organisation.
 
 ## <a name="see-also"></a>Voir aussi
