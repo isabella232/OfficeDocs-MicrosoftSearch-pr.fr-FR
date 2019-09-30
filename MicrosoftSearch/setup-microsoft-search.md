@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer la fonctionnalité Recherche Microsoft pour la première fois.
-ms.openlocfilehash: 7c80701e83fea7b9b93e4e01f98fd1eeedbfa749
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 3b3df3e3b3cb3e94abdf57bbb2c7e2db5f174898
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639498"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288990"
 ---
 # <a name="set-up-microsoft-search"></a>Configurer la fonctionnalité Recherche Microsoft
 
@@ -32,7 +32,7 @@ La fonctionnalité Recherche Microsoft est activée par défaut pour toutes les 
 
 Vous gérez Recherche Microsoft à partir du Centre d’administration Microsoft 365.
 
-1. Dans le Centre d’administration Microsoft 365, accédez à **Paramètres** > **Microsoft**.
+1. Dans le Centre d’administration Microsoft 365, accédez à** Paramètres** > **Recherche Microsoft**.
 
 **Remarque:** si vous NE voyez PAS Recherche Microsoft sous **Paramètres**, activez le commutateur **Essayer la préversion** en haut à droite d’une page du centre d’administration.
 
@@ -48,7 +48,7 @@ La fonctionnalité Recherche Microsoft respecte les paramètres de sécurité de
 | Personnes          | Vous pouvez masquer certains utilisateurs d’une recherche dans votre liste d'adresses en définissant le paramètre `HiddenFromAddressListEnabled` sur `true` en utilisant l’applet de commande [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user). |
 | Microsoft Teams | [Gérer l’accès des utilisateurs à Microsoft Teams](https://docs.microsoft.com/microsoftteams/user-access)                                                                                                                                                      |
 | OneDrive        | [Gérer le partage](https://docs.microsoft.com/OneDrive/manage-sharing)                                                                                                                                                                                |
-| SharePoint      | [Planification des autorisations](https://docs.microsoft.com/fr-FR/sharepoint/plan-your-permissions-strategy)<br> [Création des niveaux d’autorisations](https://docs.microsoft.com/fr-FR/sharepoint/how-to-create-and-edit-permission-levels)                          |
+| SharePoint      | [Planification des autorisations](https://docs.microsoft.com/sharepoint/plan-your-permissions-strategy)<br> [Création des niveaux d’autorisations](https://docs.microsoft.com/sharepoint/how-to-create-and-edit-permission-levels)                          |
 | OneNote         | Vous ne pouvez pas effectuer de recherche dans les fichiers incorporés dans OneNote. [Changer les autorisations pour un bloc-notes sur OneDrive](https://support.office.com/article/B9600CCF-045A-40E6-9913-4A7EB02869A5)                                                                    |
 | Yammer          | [Paramètres de sécurité Yammer](https://docs.microsoft.com/Yammer/manage-security-and-compliance/yammer-security-settings)                                                                                                                               |
 
@@ -59,7 +59,7 @@ La fonctionnalité Recherche Microsoft vous permet de gérer le contenu et les p
 1. **Administrateur de recherche :** ce rôle permet de créer et de gérer le contenu des résultats de recherche et de définir les paramètres de requête pour améliorer les résultats des recherches effectuées au sein de l’organisation. L’administrateur de recherche gère la configuration de la fonctionnalité Recherche Microsoft et peut effectuer les mêmes tâches de gestion de contenu qu’un éditeur de recherche.
 2. **Éditeur de recherche :** ce rôle permet de créer, de gérer et de supprimer du contenu pour la fonctionnalité Recherche Microsoft dans le Centre d’administration Microsoft 365. Un éditeur peut créer et gérer du contenu éditorial tel que des questions fréquentes et leurs réponses, des emplacements importants, ainsi que des sites et des applications fréquemment recherchés et utilisés.
 
-Pour l’instant, les rôles d’administrateur et d’éditeur de recherche doivent être attribués par un administrateur général. Pour plus d’informations, voir [Attribuer des rôles d’administrateur](https://docs.microsoft.com/fr-FR/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
+Pour l’instant, les rôles d’administrateur et d’éditeur de recherche doivent être attribués par un administrateur général. Pour plus d’informations, voir [Attribuer des rôles d’administrateur](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 
 Les administrateurs de recherche ont une influence directe sur l’expérience de recherche des utilisateurs finaux, notamment sur le choix des types de résultats présentés à ceux-ci. Il peut être difficile pour une seule et même personne de choisir et de créer du contenu capable de faire autorité dans les nombreux domaines sur lesquels les utilisateurs effectuent des recherches au sein d’une organisation. Nous vous recommandons donc de tirer parti de l’expertise et des connaissances d’experts techniques et d’autres utilisateurs en les ajoutant en tant qu’éditeurs de recherche.
 
@@ -85,6 +85,6 @@ Pour créer et gérer du contenu de recherche, consultez la page [Faciliter l’
 
 Établissez des ressources en libre-service auxquelles les employés peuvent facilement accéder par eux-mêmes. Cela allégera le fardeau qui pèse constamment sur vous et votre équipe en termes de publication de communications et de formation/auto-formation des employés. Fournissez à vos utilisateurs des communications, des FAQ, des vidéos et des webinaires ou formations enregistrées. Voici quelques liens utiles pour commencer :
 
-- [Trouvez ce dont vous avez besoin avec la fonctionnalité Recherche Microsoft d’Office](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
+- [Trouvez ce dont vous avez besoin avec la fonctionnalité Recherche Microsoft d’Office](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446)
 - [Centre de formation Office 365](https://support.office.com/office-training-center)
-- [Centre de recherche Microsoft](https://support.office.com/fr-FR/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
+- [Centre de recherche Microsoft](https://support.office.com/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc)
