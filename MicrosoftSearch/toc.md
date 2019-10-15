@@ -10,7 +10,6 @@
 ##[Gérer des signets](manage-bookmarks.md)
 ##[Gérer les questions et réponses](manage-qas.md)
 ##[Gérer les emplacements](manage-locations.md)
-##[Gérer les plans d’étage](manage-floorplans.md)
 #[Guide d’adoption par les utilisateurs](user-adoption-guide.md)
 #[Forum aux questions](faqs.md)
 #[Utilisation de la Recherche Microsoft](use/about-microsoft-search.md)
