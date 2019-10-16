@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez un aperçu des nouveautés de la fonctionnalité Recherche Microsoft, de ses avantages et des applications qui en disposent actuellement.
-ms.openlocfilehash: 55b6cad9f871eb1eb8d103c51e7cfeda02e6a452
-ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.openlocfilehash: c0599a09b2018062b1181762c2ce3c93cb16367a
+ms.sourcegitcommit: 5204b3c85e2fc190a8807d5268fb87145624a969
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37289044"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "37502937"
 ---
 # <a name="overview-of-microsoft-search"></a>Vue d’ensemble de Recherche Microsoft
 
@@ -29,7 +29,7 @@ Recherche Microsoft permet aux utilisateurs de trouver les réponses adaptées, 
 - Les utilisateurs obtiennent des résultats pertinents dans le **contexte** de l’application à partir de laquelle ils effectuent la recherche. Par exemple, quand ils effectuent une recherche dans Outlook, ils trouvent des e-mails, pas des sites SharePoint. Lorsqu’ils recherchent dans SharePoint, ils trouvent des sites, pages et fichiers.
 - Quelle que soit l’application dans laquelle les utilisateurs travaillent ; Recherche Microsoft est **personnel**.  Recherche Microsoft utilise les données de Microsoft Graph pour afficher les résultats qui sont pertinents pour vous. Chaque utilisateur peut voir des résultats différents, même s’ils cherchaient les même mots. Ils ne voient que les résultats auxquels ils ont déjà accès, Recherche Microsoft ne modifie pas les autorisations.
 - Les utilisateurs n’ont pas besoin de se souvenir où se trouvent les informations. Par exemple, un utilisateur travaille dans Word et souhaite réutiliser l’information d’une présentation qu’un collègue a partagée à partir de leur espace OneDrive. Il est inutile pour basculer vers OneDrive et rechercher cette présentation, ils peuvent simplement effectuer une recherche à partir de Word.  
-- Dans Bing, les utilisateurs obtiennent des résultats relatifs à leur organisation en plus des résultats web publics.
+- Dans [Bing](https://bing.com), les utilisateurs obtiennent des résultats relatifs à leur organisation en plus des résultats web publics.
 
 ## <a name="what-users-see"></a>Ce que voient les utilisateurs
 
@@ -147,20 +147,14 @@ La fonctionnalité Recherche Microsoft est l’expérience de recherche moderne 
 
 Vous pouvez personnaliser l’expérience de recherche classique, par exemple en ajoutant des affinements personnalisés à la page de résultats de recherche ou en affichant différemment un certain type de résultat. Vous ne pouvez pas personnaliser l’expérience de Recherche Microsoft dans SharePoint de la même manière. Certaines personnalisations que vous apportez à la recherche classique peuvent avoir une incidence sur la fonctionnalité Recherche Microsoft dans SharePoint. Si votre organisation compte utiliser les deux expériences de recherche dans SharePoint, [découvrez les différences entre celles-ci et comment éviter toute incidence sur la fonctionnalité Recherche Microsoft dans SharePoint](https://docs.microsoft.com/sharepoint/differences-classic-modern-search).
 
-## <a name="microsoft-search-in-bing"></a>Recherche Microsoft dans Bing
-
-Étant donné que les recherches à caractère professionnel peuvent être sensibles, la fonctionnalité Recherche Microsoft utilise un ensemble de mesures déterminant la manière dont ces recherches sont traitées par la partie des résultats web publics de Bing.
-
-Les requêtes de Recherche Microsoft sont effectuées via HTTPS. Cette précaution permet de s’assurer que la connexion est cryptée de bout en bout pour une sécurité renforcée. En outre, tous les journaux de recherche appartenant au trafic Recherche Microsoft sont rendus anonymes et stockés dans un autre emplacement que le trafic non-Recherche Microsoft public.
-
-Indépendamment du fait qu’une requête d’utilisateur reçoive un ou plusieurs résultats professionnels en retour, les mesures suivantes sont prises :
-
-**Journalisation** : tous les journaux de recherche relatifs au trafic Recherche Microsoft sont dépersonnalisés et conservés pendant 18 mois. Les requêtes stockées dans ces journaux système ne seront utilisées que pour modéliser et former des fonctionnalités publiques, telles que la suggestion automatique ou les recherches associées de résultats web publics, lorsqu’un ensemble de restrictions et de seuils de fréquence sont atteints, ce qui nous donne la certitude que ces requêtes sont communes et ne sont pas spécifiques à une organisation particulière. La requête doit apparaître un nombre significatif de fois dans la mise en relation des données provenant d’utilisateurs qui n’utilisent pas Recherche Microsoft, et la requête ne doit pas déclencher exclusivement des résultats de recherche d’entreprise. Les requêtes qui ne répondent pas à ces exigences seront stockées séparément du trafic public qui ne concerne pas Recherche Microsoft. L’accès restreint est géré via divers mécanismes sécurisés, y compris les groupes de sécurité et autres couches au sein du système d’ingénierie.
-
-**Historique de recherche** : lorsqu’un utilisateur est connecté avec un compte professionnel ou scolaire, son historique de recherche n’est pas disponible sur d’autres ordinateurs ou appareils.
-
-**Publicité** : les requêtes de recherche d’entreprise ne sont jamais partagées avec ou suggérées aux publicitaires.
-Les publicités ne sont jamais des canaux ciblés à un utilisateur en fonction de leur travail d’identité ou d’organisation.
+## <a name="microsoft-search-in-bing-protects-enterprise-searches"></a>La Recherche Microsoft dans Bing protège les recherches relatives à l’entreprise 
+Lorsqu’un utilisateur entre une requête de recherche d’entreprise dans Recherche Microsoft, deux requêtes de recherche simultanées ont lieu : (1) une recherche des ressources internes à l’entreprise, et (2) une recherche distincte des résultats publics par Bing.com. Étant donné que les recherches d’entreprise peuvent être sensibles, Recherche Microsoft a implémenté un groupe de mesures d’approbation qui décrivent la façon dont les résultats publics de Bing.com sont gérés. 
+-   **Journalisation**
+    - Tous les journaux de recherche relatifs au trafic Recherche Microsoft sont dissociés de l’identité de votre lieu de travail.
+    - Si un ensemble de restrictions ou de seuils de fréquence est respecté, ce qui nous permet de nous assurer que la requête n’est pas spécifique à une organisation, la requête est traitée comme décrit dans la section des services Bing de la [Déclaration de confidentialité](https://privacy.microsoft.com/privacystatement). Par exemple, ces requêtes sont utilisées pour modeler et entrainer des fonctionnalités publiques telles que la suggestion automatique ou les recherches associées. 
+    - Les requêtes qui ne répondent pas à ces restrictions ou seuils de fréquence seront stockées séparément du trafic public, hors Recherche Microsoft.
+-   **Publicité**
+    - Les publicités affichées sur Bing.com dans le cadre de la recherche d’entreprise sont uniquement liées au contenu des requêtes de recherche. Les publicités ne sont jamais ciblées pour les utilisateurs en fonction de leur identité professionnelle.
 
 ## <a name="see-also"></a>Voir aussi
 
