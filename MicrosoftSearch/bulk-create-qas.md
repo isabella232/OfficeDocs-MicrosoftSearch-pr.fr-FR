@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
 ROBOTS: NoIndex
 description: Ajoutez rapidement des réponses aux questions fréquemment posées à l’aide des outils d’importation disponibles dans le portail d’administration de Recherche Microsoft
-ms.openlocfilehash: c0ec4aaa0ee93e94c8569dc383456018ccc6679d
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
-ms.translationtype: HT
+ms.openlocfilehash: 660f5663ff6238f4ab59dab36d51f1311d5c7260
+ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639774"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37949031"
 ---
 # <a name="bulk-create-qas"></a>Créer en bloc des questions et réponses
 
@@ -45,7 +45,7 @@ Téléchargez et utilisez le modèle .csv pour créer ou éditer en bloc des que
     
 7. Cliquez sur **Importer**.
 
-# <a name="prevent-import-errors"></a>Éviter les erreurs d’importation      
+## <a name="prevent-import-errors"></a>Éviter les erreurs d’importation      
 Si des données requises sont manquantes ou non valides, un message d’erreur s’affiche. Selon l’erreur, un fichier journal peut être généré afin de fournir des informations supplémentaires sur les lignes et les colonnes à corriger. Apportez les modifications nécessaires, puis réessayez d’importer le fichier.
 
 > [!NOTE]
@@ -61,7 +61,7 @@ En fonction du contenu du champ Statut, les Q&R sont enregistrés en tant que Br
 
 Par ailleurs, si vous incluez l’ID d’une Q&R existante, celle-ci est remplacée par les informations contenues dans le fichier d’importation.
 
-Si votre organisation compte plusieurs locataires, vous pouvez exporter vos Q&R à partir d’un locataire, puis les importer dans un autre. Toutefois, avant l’importation, vous devez supprimer les données contenues dans la colonne ID.
+Pour les partenaires qui gèrent plusieurs organisations, vous pouvez exporter votre&Q à partir d’une organisation et les importer dans un autre. Toutefois, avant l’importation, vous devez supprimer les données contenues dans la colonne ID.
 
 Pour en savoir plus sur les champs obligatoires et recommandés, voir [Créer des Q&R](create-qas.md).
 

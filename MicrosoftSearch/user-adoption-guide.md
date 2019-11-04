@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: Découvrez les méthodes et les processus qui vous aident à déployer correctement Microsoft Search dans votre organisation
-ms.openlocfilehash: 3bca460fe4d764fd1fee1eac16faa467c66cd4b9
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 439c7a8e9fbfdeb5b2bc42276dccb2377f3f0dac
+ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639882"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37949355"
 ---
 # <a name="user-adoption-guide"></a>Guide d’adoption par l’utilisateur
 
@@ -28,7 +28,7 @@ Ces informations sont destinées aux administrateurs de Microsoft Search, aux re
   
 Pour déployer et garantir la réussite de l’adoption de Microsoft Search au sein de votre organisation, nous vous recommandons ce processus en quatre étapes.
   
-## <a name="stage-1-stakeholders"></a>Étape 1: parties prenantes
+## <a name="stage-1-stakeholders"></a>Étape 1 : parties prenantes
 
 Pour garantir un déploiement transparent et accroître l’adoption par les utilisateurs de Microsoft Search, identifiez les personnes qui peuvent aider à prendre en charge le processus.
   
@@ -36,16 +36,16 @@ Le tableau montre la hiérarchie d’équipe et ce que chaque personne contribue
   
  **Rôles et responsabilités de l’équipe d’adoption par l’utilisateur**
   
-|**Role**|**Attribution**|**Department**|
+|**Rôle**|**Attribution**|**Department**|
 |:-----|:-----|:-----|
-|Commanditaire exécutif  <br/> |Comprendre la vision de haut niveau et la valeur de Microsoft Search pour votre organisation  <br/> Fournir un support de leadership à l’équipe informatique/d’entreprise  <br/> Allouer des ressources  <br/> Communiquer directement avec les employés  <br/> |Leadership exécutif  <br/> |
+|Cadre responsable  <br/> |Comprendre la vision de haut niveau et la valeur de Microsoft Search pour votre organisation  <br/> Fournir un support de leadership à l’équipe informatique/d’entreprise  <br/> Allouer des ressources  <br/> Communiquer directement avec les employés  <br/> |Leadership exécutif  <br/> |
 |Propriétaire de l’entreprise  <br/> |Identifier les scénarios de produit et d’utilisateur  <br/> Déterminer les mesures de réussite pour les services et l’Organisation  <br/> |N'importe lequel  <br/> |
 |Équipe de gestion des modifications  <br/> |Vérifier que la valeur du produit est facile à comprendre  <br/> Création d’un plan pour le déploiement  <br/> |IT  <br/> |
-|Spécialistes  <br/> |Effectuer la documentation du produit auprès des pairs et des équipes  <br/> |Any (personnel)  <br/> |
+|Champions   <br/> |Effectuer la documentation du produit auprès des pairs et des équipes  <br/> |Any (personnel)  <br/> |
 |Administrateur de recherche  <br/> |Identifier les principaux membres de l’équipe de l’adoption par les utilisateurs  <br/> Administration de Microsoft Search, y compris l’apparence et la convivialité de l’expérience et de la gestion continue  <br/> Générer des discussions pour montrer la valeur de Microsoft Search  <br/> |IT  <br/> |
-|Editors  <br/> |Créer du contenu dans le portail d’administration  <br/> |IT/any  <br/> |
+|Editors  <br/> |Créer du contenu dans le centre d’administration  <br/> |IT/any  <br/> |
    
-## <a name="stage-2-scenarios"></a>Étape 2: scénarios
+## <a name="stage-2-scenarios"></a>Étape 2 : scénarios
 
 Pour garantir l’adoption par les utilisateurs, il est essentiel de déterminer et de définir des scénarios pour les utilisateurs finaux. Elles doivent inclure des exemples concrets de la façon dont les utilisateurs peuvent utiliser Microsoft Search pour trouver les informations dont ils ont besoin, répondre à des questions et effectuer des tâches plus rapidement. Afin de mesurer la réussite de votre déploiement et de votre adoption par les utilisateurs, il est également important de déterminer les mesures que vous utiliserez avant de commencer.
   
@@ -53,7 +53,7 @@ Pour garantir l’adoption par les utilisateurs, il est essentiel de déterminer
   
 Lorsqu’il s’agit de trouver des informations et d’obtenir des réponses, il est essentiel de connaître les besoins de vos utilisateurs et les points sensibles. Vous pouvez utiliser les méthodes quantitatives, comme les données d’utilisation de la recherche Office 365 et SharePoint, ou les méthodes qualitatives, comme les enquêtes et les groupes de focalisation de l’utilisateur pour obtenir ces données. Cela vous permettra de déterminer quand, où et comment Microsoft Search peut fournir de la valeur.
   
-Pour les différents rôles et équipes de votre organisation, prenez en compte les éléments suivants:
+Pour les différents rôles et équipes de votre organisation, prenez en compte les éléments suivants :
   
 - Points faibles de l’utilisateur existants lors de la recherche d’informations.
     
@@ -69,15 +69,15 @@ Choisissez les scénarios utilisateur qui auront le plus grand impact positif po
   
 Pour vous aider à atteindre vos objectifs de déploiement et présenter un impact positif pour votre organisation, il est essentiel de déterminer les mesures de réussite clés avant de commencer. Maintenez vos objectifs simples et mesurables et évaluez les performances de manière régulière afin de pouvoir répondre rapidement, le cas échéant.
   
-1. **Gestion des modifications:** Déterminez la manière dont vous allez mesurer la sensibilisation de Microsoft Search et la réussite de vos communications. 
+1. **Gestion des modifications :** Déterminez la manière dont vous allez mesurer la sensibilisation de Microsoft Search et la réussite de vos communications. 
     
-2. **Utilisation:** Vous pouvez utiliser les données de votre tableau de bord Insights, y compris les utilisateurs actifs quotidiens et mensuels (DAU et MAU), les types de contenu qui obtiennent le plus d’affichages et les mots clés de recherche les plus fréquents pour mesurer l’utilisation au fil du temps. Pour plus d’informations, voir [utiliser le tableau de bord Insights](get-insights.md).
+2. **Utilisation :** Vous pouvez utiliser les données de votre tableau de bord Insights, y compris les utilisateurs actifs quotidiens et mensuels (DAU et MAU), les types de contenu qui obtiennent le plus d’affichages et les mots clés de recherche les plus fréquents pour mesurer l’utilisation au fil du temps. Pour plus d’informations, voir [utiliser le tableau de bord Insights](get-insights.md).
     
-3. **Satisfaction de l’utilisateur:** Utilisez les données collectées auprès des sondages et des groupes de focalisation de l’utilisateur pour déterminer votre ligne de base. La satisfaction nette (NSAT) et le score net promoteur (NPS) peuvent également fournir des mesures utiles. Quelle que soit la méthode utilisée, assurez-vous qu’elle est cohérente pour pouvoir voir l’impact au fil du temps. 
+3. **Satisfaction de l’utilisateur :** Utilisez les données collectées auprès des sondages et des groupes de focalisation de l’utilisateur pour déterminer votre ligne de base. La satisfaction nette (NSAT) et le score net promoteur (NPS) peuvent également fournir des mesures utiles. Quelle que soit la méthode utilisée, assurez-vous qu’elle est cohérente pour pouvoir voir l’impact au fil du temps. 
     
-4. **Autres mesures:** Utiliser les données historiques et/ou actuelles pour les demandes de support et le temps consacré à la recherche. 
+4. **Autres mesures :** Utiliser les données historiques et/ou actuelles pour les demandes de support et le temps consacré à la recherche. 
     
-## <a name="stage-3-readiness"></a>Étape 3: préparation
+## <a name="stage-3-readiness"></a>Étape 3 : préparation
 
 Le temps nécessaire à la préparation de votre déploiement de Microsoft Search entraînera un impact positif pour votre organisation. Microsoft fournit un <a href="https://resources.techcommunity.microsoft.com/microsoft-search-in-bing-adoption-kit/">Kit d’adoption</a> qui contient des conseils de planification, des annonces de courrier électronique personnalisables, des modèles d’enquête, des présentations de cadres, et bien plus encore. Il existe également un <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Centre de ressources Microsoft Search</a> où les responsables informatiques peuvent trouver d’autres ressources de formation et d’adoption conçues pour faire en sorte que votre déploiement de Microsoft Search réussisse.
   
@@ -93,7 +93,7 @@ Pour plus d’informations, reportez-vous à [la rubrique plan Your Content](pla
   
  **Connexion**
   
-Les utilisateurs de Microsoft Search doivent se connecter à Bing avec un compte professionnel ou scolaire. Pour faciliter la connexion pour vos utilisateurs, procédez comme suit:
+Les utilisateurs de Microsoft Search doivent se connecter à Bing avec un compte professionnel ou scolaire. Pour faciliter la connexion pour vos utilisateurs, procédez comme suit :
   
 - Vérifiez que les configurations Azure Active Directory sont définies correctement, que quelques utilisateurs essaient de se connecter. Pour plus d’informations, consultez la rubrique Test de l' [authentification unique](test-single-sign-on.md).
     
@@ -105,7 +105,7 @@ Les utilisateurs de Microsoft Search doivent se connecter à Bing avec un compte
   
 Utilisez vos scénarios réels pour informer les utilisateurs de Microsoft Search et de la façon dont ils pourront gagner du temps. Votre équipe de gestion des modifications peut vous aider à créer une stratégie de déploiement et à préparer des brochures et des campagnes marketing pour la préparation de l’utilisateur final.
   
-Commencez la planification des communications et des événements pour votre organisation:
+Commencez la planification des communications et des événements pour votre organisation :
   
 - Bannières, affiches ou dépliants placés dans des emplacements importants
     
@@ -121,7 +121,7 @@ Toutes les communications doivent informer les utilisateurs de la façon dont il
   
  **Impliquer des équipes partenaires**
   
-En tant que partie intégrante de Microsoft 365, Microsoft Search est conforme aux directives RGPD et Tier-C. En fonction de votre organisation, il peut être nécessaire de partager des informations sur Microsoft Search avec vos équipes de confidentialité et de sécurité. Pour plus d’informations, consultez la rubrique [Security for Microsoft Search](security.md).
+En tant que partie intégrante de Microsoft 365, Microsoft Search est conforme aux directives RGPD et Tier-C. En fonction de votre organisation, il peut être nécessaire de partager des informations sur Microsoft Search avec vos équipes de confidentialité et de sécurité. Pour plus d’informations, consultez la rubrique [Security for Microsoft Search](overview-microsoft-search.md#microsoft-search-in-bing-protects-enterprise-searches).
   
 Assurez-vous que votre service d’assistance connaît les caractéristiques et les fonctionnalités de Microsoft Search, ainsi que les besoins des utilisateurs pour se connecter, afin qu’ils puissent mieux prendre en charge les utilisateurs. Pour plus d’informations, consultez la rubrique [utiliser Microsoft Search](use/about-microsoft-search.md) et les [questions fréquemment posées](faqs.md).
   
@@ -129,7 +129,7 @@ Assurez-vous que votre service d’assistance connaît les caractéristiques et 
   
 Commencez avec un petit groupe d’utilisateurs pour évaluer l’impact de Microsoft Search et recueillir les commentaires précoces. Cela vous permet de modifier le contenu, de mettre à jour vos communications et de définir les attentes relatives au déploiement général. Search Power Users or early adopter sont des candidats intéressants.
   
-Pour trouver des utilisateurs pilotes, procédez comme suit:
+Pour trouver des utilisateurs pilotes, procédez comme suit :
   
 - Travailler en partenariat avec un sponsor professionnel au sein de votre organisation.
     
@@ -141,25 +141,25 @@ Pour trouver des utilisateurs pilotes, procédez comme suit:
     
 Demandez à vos utilisateurs pilotes de fournir des informations à l’aide des options de commentaires dans Microsoft Search ou via des enquêtes simples.
   
-Posez-vous les questions suivantes: 
+Posez-vous les questions suivantes : 
   
-- Comprenez-vous comment se connecter et utiliser Microsoft Search?
+- Comprenez-vous comment se connecter et utiliser Microsoft Search ?
     
-- Fonctionne-t-il comme prévu?
+- Fonctionne-t-il comme prévu ?
     
-- Quelles sont les fonctionnalités que vous aimez?
+- Quelles sont les fonctionnalités que vous aimez ?
     
-- Avez-vous pu trouver des résultats de travail?
+- Avez-vous pu trouver des résultats de travail ?
     
-- Les résultats du travail sont-ils utiles?
+- Les résultats du travail sont-ils utiles ?
     
-- Les communications à propos de Microsoft Search sont-elles claires et compréhensibles?
+- Les communications à propos de Microsoft Search sont-elles claires et compréhensibles ?
     
 Il s’agit d’un bon moment pour commencer à mesurer l’efficacité des mesures identifiées à l’étape 2.
   
 Lors du démarrage de la phase pilote, envisagez de partager un aperçu furtif de Microsoft Search avec l’organisation plus large.
   
-## <a name="stage-4-roll-out"></a>Étape 4: déploiement
+## <a name="stage-4-roll-out"></a>Étape 4 : déploiement
 
 Chaque organisation pense aux déploiements de produits différemment. Voici quelques éléments à prendre en compte.
   
@@ -169,7 +169,7 @@ Lorsque vous êtes prêt, vous pouvez autoriser tous les utilisateurs de votre o
   
  **Générer une sensibilisation**
   
-Créez un enthousiasme dans votre organisation à propos de Microsoft Search:
+Créez un enthousiasme dans votre organisation à propos de Microsoft Search :
   
 - Enrôler les utilisateurs pilotes afin de fournir une assistance et une assistance P2P.
     
@@ -185,9 +185,9 @@ Envoyez des communications en ligne qui mettent en évidence les fonctionnalité
   
 Prenez en charge les utilisateurs et informez-les de votre attention en les écoutant et en agissant sur leurs commentaires.
   
-Utilisez le tableau de bord Insights pour voir comment le produit et le contenu sont en cours d’exécution. Utilisez ces informations pour mettre à jour les signets, Q&en tant que et autres communications. Cela vous aidera également à:
+Utilisez le tableau de bord Insights pour voir comment le produit et le contenu sont en cours d’exécution. Utilisez ces informations pour mettre à jour les signets, Q&en tant que et autres communications. Cela vous aidera également à :
   
-1. Améliorer la qualité du contenu: consultez les titres, les descriptions et les URL, optimisez les mots clés, supprimez les informations obsolètes et ajoutez de nouvelles informations.
+1. Améliorer la qualité du contenu : consultez les titres, les descriptions et les URL, optimisez les mots clés, supprimez les informations obsolètes et ajoutez de nouvelles informations.
     
 2. Déterminer les fonctionnalités les plus fréquemment utilisées (ou peu fréquentes)
     
