@@ -3,7 +3,6 @@ title: Connecteur de partage de fichiers pour Microsoft Search
 ms.author: v-pamcn
 author: TrishaMc1
 manager: mnirkhe
-ms.date: 10/08/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez le connecteur de partage de fichiers pour Microsoft Search.
-ms.openlocfilehash: d5fbc1af2868ce7baa70017f617a9731340fb19a
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 9791ee3460eb174fd7a478baa6a9beb45f1b1aab
+ms.sourcegitcommit: 6b531b2ce7253c16251c7089795dedf1d2f3fc33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949721"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38310715"
 ---
 # <a name="file-share-connector"></a>Connecteur de partage de fichiers
 
@@ -27,13 +26,15 @@ Avec le connecteur de partage de fichiers, les utilisateurs de votre organisatio
 Cet article est destiné aux administrateurs 365 de Microsoft ou toute personne qui configure, exécute et surveille un connecteur de partage de fichiers. Elle explique comment configurer les fonctionnalités de connecteur et de connecteur, ainsi que les restrictions et les techniques de résolution des problèmes.
 
 ## <a name="install-a-data-gateway"></a>Installer une passerelle de données
-Pour accéder à vos données tierces, vous devez installer et configurer une passerelle Microsoft Power BI. Pour en savoir plus [, voir Install and on-](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) premises Gateway.  
+Pour accéder à vos données tierces, vous devez installer et configurer une passerelle Microsoft Power BI. Pour en savoir plus, consultez la rubrique [Install an on-](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) premises Gateway.  
+
+## <a name="content-requirements"></a>Exigences en matière de contenu
+**Types de fichiers**. Seuls les fichiers de ces formats peuvent être indexés et recherchés : DOC, DOCM, DOCX, DOT, DOTX, EML, GIF, HTML, JPEG, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS et ZIP. Seul le contenu textuel de ces formats est indexé. Tout le contenu multimédia est ignoré.
+ 
+**Limites de taille de fichier**. La taille maximale de fichier prise en charge est de 100 Mo. Les fichiers qui dépassent 100 Mo sont ignorés de l’indexation. La limite de taille post-traitée maximale est de 4 Mo. Le traitement s’arrête lorsque la taille d’un fichier atteint 4 Mo. Par conséquent, il se peut que certaines expressions présentes dans le fichier ne fonctionnent pas pour la recherche.
 
 ## <a name="connect-to-a-data-source"></a>Se connecter à une source de données
-Sur la page **se connecter à la source de données** , créez un dossier et indiquez un chemin d’accès au partage de fichiers. Sélectionnez ensuite votre passerelle précédemment installée. Entrez les informations d’identification d’un compte d’utilisateur Windows avec **accès en lecture** à tous les fichiers du partage. Vous pouvez ensuite vérifier les fichiers présents dans le partage et consulter toutes les métadonnées extraites.
-
-## <a name="manage-search-permissions"></a>Gérer les autorisations de recherche
-Le connecteur de partage de fichiers prend uniquement en charge les autorisations de recherche visibles par **tous les utilisateurs**. Les données indexées apparaissent dans les résultats de la recherche et sont visibles par tous les utilisateurs de l’organisation.
+Sur la page **se connecter à la source de données** , sélectionnez **partage de fichiers** et indiquez le nom, l’ID de connexion et la description. Sur la page suivante, indiquez le chemin d’accès au partage de fichiers et sélectionnez votre passerelle précédemment installée. Entrez les informations d’identification d’un compte d’utilisateur Windows avec accès en lecture à tous les fichiers du partage. Passez en revue les autres paramètres et publiez la connexion.
 
 ## <a name="set-the-refresh-schedule"></a>Définir la planification d’actualisation
 L’intervalle de planification des actualisations par défaut recommandé est de 15 minutes, mais vous pouvez le remplacer par un autre intervalle de votre choix.
@@ -111,5 +112,5 @@ Si une connexion est mal rencontrée, son statut indique **failed**. Pour plus d
 ## <a name="limitations"></a>Limites
 Le connecteur de partage de fichiers présente ces limitations dans la version d’évaluation :
 * Vous pouvez uniquement indexer les fichiers avec des propriétés fixes, pas les fichiers avec des propriétés personnalisées.
-* Les listes de contrôle d’accès de partage de fichiers ne sont actuellement pas prises en charge.
+* Les listes de contrôle d’accès de partage de fichiers ne sont actuellement pas prises en charge. Seules les listes de Contrã’le d’accès NTFS fichiers sont prises en charge.
 * Les identités externes ne sont pas prises en charge. Ils doivent être mappés à des identités Azure Active Directory.
