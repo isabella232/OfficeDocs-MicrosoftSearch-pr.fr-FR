@@ -1,9 +1,8 @@
 ---
-title: Utiliser le tableau de bord d’informations
-ms.author: dawholl
-author: dawholl
-manager: kellis
-ms.date: 9/11/2018
+title: Rapports de tableau de bord Insights Microsoft Search
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -13,65 +12,43 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
-ROBOTS: NOINDEX
-description: Analysez des métriques et gérez du contenu en toute facilité à partir du tableau de bord disponible dans le portail d’administration de Recherche Microsoft
-ms.openlocfilehash: 9323ad97a2baffc3bdc1794049f6933335b298b2
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
-ms.translationtype: HT
+description: Analyser les mesures et gérer le contenu à partir du tableau de bord Insights dans Microsoft Search
+ms.openlocfilehash: d75622ad8c414f225615ea14082c8197e2947dd4
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639819"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626872"
 ---
-# <a name="use-the-insights-dashboard"></a>Utiliser le tableau de bord d’informations
+# <a name="microsoft-search-insights-dashboard-reports"></a>Rapports de tableau de bord Insights Microsoft Search
 
-> [!IMPORTANT]
-> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le Centre d’administration Microsoft 365. Nous supprimerons ensuite la fonctionnalité Recherche Microsoft du portail Bing. Pour commencer, nous vous suggérons d’utiliser le Centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
-    
-Obtenez des informations extraites des données et voyez comment les utilisateurs interagissent avec vos résultats. Utilisez le tableau de bord du portail d’administration pour :
-  
-- Voir combien de signets et Q&R ont été publiés, planifiés ou suggérés
-    
-- Voir les impressions pour les requêtes de recherche les plus fréquentes qui affichent des résultats de travail
-    
-- Analyser des répartitions d’impression pour des signets et Q&R
-    
-## <a name="get-details-about-bookmarks-and-qas"></a>Obtenir des détails sur des signets et Q&R
+Vous pouvez utiliser le tableau de bord Insights de Microsoft Search pour gérer les données Bing de vos réponses publiées. Il s’agit juste d’une des étapes nécessaires pour [faciliter la recherche de contenu](make-content-easy-to-find.md) pour vos utilisateurs.
 
-Utilisez le tableau de bord pour voir le total des signets ou Q&R par statut :
-  
-- Publié : nombre de résultats publiés disponibles pour les utilisateurs
-    
-- Planifié : nombre de résultats planifiées dans le pipeline de publication
-    
-- Suggéré : nombre de suggestions d’utilisateurs
-    
-Des carte d'informations sur les signets et Q&R dans le tableau de bord permettent également d’accéder aisément à des tâches courantes :
-  
-- Pour afficher les résultats de signets ou FAQ, cliquez sur le titre de la carte signets ou FAQ.
-    
-- Pour ajouter un signet ou FAQ, cliquez sur l’option créer.
-    
-- Pour ajouter en bloc des signets ou FAQ, cliquez sur l’option importer.
-    
-## <a name="review-top-search-queries"></a>Examiner les principales requêtes de recherche.
+Lorsque vous accédez à Microsoft Search pour la première fois dans le centre d’administration Microsoft 365, vous pouvez entrer dans le tableau de bord Insights.
 
-Découvrez quelles recherches ont généré le plus d’impressions au cours des 90 derniers jours. Les 25 recherches les plus fréquentes des utilisateurs pour chaque type de résultat s’affichent avec le nombre total d’impressions et leur taux de clic (TVC). Sur la carte des requêtes de recherche les plus fréquentes, vous pouvez :
-  
-- Filtrer par type de résultat en cliquant sur Tous les résultats dans le menu, puis en sélectionnant un autre type de résultat.
-    
-- Voir comment un résultat s’affiche sur Bing en cliquant sur une requête pour ouvrir la page des résultats de la recherche dans un nouvel onglet.
-    
-- Voir des requêtes de recherche supplémentaires en cliquant sur les flèches gauche ou droite au bas de la carte.
-    
-## <a name="analyze-impressions-by-result-type"></a>Analyser les impressions par type de résultat
+![Insights-Dashboard. png](media/Insights-dashboard.png)
 
-Des graphiques faciles à lire sur la répartitions des impressions par carte de type de résultat affichent des données sur différentes périodes. La synthèse indique le nombre d’impressions, avec un calcul du pourcentage pour la répartition (nombre d’impressions pour un type de résultat x 100 / nombre total d’impressions). La chronologie indique le nombre d’impressions quotidien pour un type de résultat. Vous pouvez également modifier l’intervalle de temps pour les deux affichages et obtenir des informations supplémentaires :
-  
-- En haut de la carte, cliquez sur 7 jours, 30 jours ou 90 jours.
-    
-- Pour afficher une plage personnalisée comprise entre 0 et 90 jours, cliquez sur Plage personnalisée, puis entrez les dates de début et de fin.
-    
-- Dans la chronologie, placez le curseur sur un point de données pour afficher les impressions par type de résultat pour une journée.
+Voici les rapports disponibles dans le tableau de bord Insights.
 
-  
+> [!NOTE]
+> Les données des rapports représentent uniquement les données Bing.
 
+## <a name="top-queries"></a>requêtes les plus courantes ;
+
+Ce rapport fournit des détails sur les requêtes de recherche Bing les plus à 2000 que les utilisateurs exécutent. Pour qu’une requête apparaisse dans les **requêtes les plus fréquentes**, la requête doit obtenir au moins trois clics.
+
+![Rapport de requêtes les plus fréquentes avec les en-têtes de tableau : requête, nombre total de requêtes et cliquez sur taux.](media/Insights-topqueries.png)
+
+Un taux de clic faible signifie que les utilisateurs ne trouvent pas ce qu’ils cherchent.
+
+Vous pouvez choisir différentes vues du rapport en filtrant sur le type de réponse. Par exemple, si vous souhaitez simplement afficher les requêtes les plus fréquentes pour les signets, sélectionnez la liste déroulante dans le coin supérieur droit du rapport, puis cliquez sur **signets**. Par défaut, **tous les** types de réponses sont affichés.
+
+![Filtrer les requêtes les plus fréquentes par signet, contacts, Q&A, les fichiers, les groupes, les emplacements, les conversations et les sites](media/Insights-topqueries-dropdown.png)
+
+## <a name="impression-distribution"></a>Distribution d’impression
+
+Ce rapport affiche la distribution de l’impression dans Bing dans le temps pour diverses réponses. Voici des exemples de signets, de personnes, de Q&A, de fichiers, d’emplacements, de sites de fichiers, de groupes et de conversations. 
+
+![Rapport impressions avec 90 jours sélectionnés comme période.](media/Insights-impressions.png)
+
+La distribution d’impression peut aider les administrateurs à comprendre ce que recherche les utilisateurs au cours d’une période spécifiée.

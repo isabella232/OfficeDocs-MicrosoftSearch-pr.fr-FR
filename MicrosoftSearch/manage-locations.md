@@ -3,7 +3,6 @@ title: Gérer les emplacements
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: Au fil du temps, il se peut que vous deviez mettre à jour le statut et le contenu de certains emplacements afin qu’ils restent pertinents. 
-ms.openlocfilehash: d026e518011f3b3739beb2b6aaa044f8a5e9c0d4
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
-ms.translationtype: HT
+ms.openlocfilehash: 25fa6fdb8f95c04332e8df16c7589286ecaefdb0
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591556"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626782"
 ---
 # <a name="manage-locations"></a>Gérer les emplacements
 
@@ -57,7 +56,7 @@ Remarques importantes concernant le fichier modèle :
 - Si un signet existant comporte déjà le même titre ou la même URL, il est mis à jour avec les informations contenues dans le fichier d’importation.
 - Certains champs du fichier modèle ne sont pas obligatoires, et les champs obligatoires varient en fonction de l’état du signet.
 - En fonction du champ *État*, les signets sont enregistrés en tant que signets brouillons, suggérés ou programmés, ou sont automatiquement publiés.
-- Si votre organisation est dotée de plusieurs locataires, vous pouvez exporter vos signets à partir d’un locataire et les importer dans un autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne *ID*.
+- Pour les partenaires qui gèrent plusieurs organisations, vous pouvez exporter vos signets d’une organisation et les importer dans un autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne *ID*.
 
 **Remarque :** il est impossible d’importer des emplacements si le fichier modèle comporte des erreurs. Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement mis en forme et qu’il contient toutes les informations requises. 
 

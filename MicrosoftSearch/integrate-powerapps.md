@@ -3,7 +3,6 @@ title: Intégrer PowerApps
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 12/18/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,14 +12,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
-ROBOTS: NOINDEX
 description: Inclure des applications basées sur le navigateur dans les résultats de signets pour Microsoft Search
-ms.openlocfilehash: 36389a8b53390c7dd18cf98285b0faa6df73c8b4
-ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.openlocfilehash: e3fda45bbc7bef5634fb08a7dd6fc0143d6da054
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288927"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626836"
 ---
 # <a name="integrate-powerapps"></a>Intégrer PowerApps
    
@@ -30,8 +28,7 @@ Aidez vos utilisateurs à effectuer des tâches, par exemple en entrant des heur
 
 PowerApps est un service qui vous permet de créer des applications métier qui s’exécutent dans un navigateur, sur un téléphone ou sur une tablette, sans aucune expérience en matière de codage. En savoir plus :
   
-- 
-  [Formation guidée](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [Formation guidée](https://docs.microsoft.com/learn/browse/?products=powerapps)
     
 - [Documentation](https://docs.microsoft.com/powerapps/)
     
@@ -55,6 +52,6 @@ Les applications PowerApps fonctionnent dans n’importe quel navigateur et sur 
     
     Le PowerApp dans la version d’évaluation est entièrement fonctionnel pour faciliter le test et l’utilisation.
     
-7. Cliquez sur **publier**
+7. Cliquez sur **Publier**.
     
 Lorsqu’un utilisateur de Microsoft Search autorisé recherche des mots clés réservés ou des mots clés réservés du signet, le PowerApp apparaît dans le résultat du signet.

@@ -3,22 +3,21 @@ title: Configurer la fonctionnalité Recherche Microsoft
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 08/06/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Configurer la fonctionnalité Recherche Microsoft pour la première fois.
-ms.openlocfilehash: 3b3df3e3b3cb3e94abdf57bbb2c7e2db5f174898
-ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
-ms.translationtype: HT
+ms.openlocfilehash: 94ee7ece8a56d599778b151d5b836240d8832762
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288990"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626908"
 ---
 # <a name="set-up-microsoft-search"></a>Configurer la fonctionnalité Recherche Microsoft
 
@@ -28,7 +27,7 @@ Pour en savoir plus sur la fonctionnalité Recherche Microsoft, consultez [Vue d
 
 ## <a name="get-started"></a>Prise en main
 
-La fonctionnalité Recherche Microsoft est activée par défaut pour toutes les applications Microsoft qui la prennent en charge, dans le cadre de Microsoft 365. Il suffit à l’utilisateur de se connecter avec un compte professionnel ou scolaire et d’utiliser un navigateur sur lequel Bing est défini comme fournisseur de recherche par défaut.
+La fonctionnalité Recherche Microsoft est activée par défaut pour toutes les applications Microsoft qui la prennent en charge, dans le cadre de Microsoft 365. Aucune configuration n’est requise, mais vous pouvez améliorer l’expérience de recherche globale de Microsoft par le biais de tâches d’administration de base.
 
 Vous gérez Recherche Microsoft à partir du Centre d’administration Microsoft 365.
 
@@ -38,21 +37,7 @@ Vous gérez Recherche Microsoft à partir du Centre d’administration Microsoft
 
 En tant qu’administrateur, vous devez tenir compte de certains éléments pour rendre l’expérience Recherche Microsoft efficace et conviviale au sein de votre organisation.
 
-## <a name="step-1-check-access-level-of-your-users"></a>Étape 1 : Vérifier le niveau d’accès de vos utilisateurs
-
-La fonctionnalité Recherche Microsoft respecte les paramètres de sécurité de la source du contenu. Ce que les utilisateurs voient dans les résultats de leur recherche dépend de leurs autorisations et de leurs niveaux d’accès. Vérifiez le niveau d’accès des utilisateurs de votre organisation pour veiller à ce qu’ils aient uniquement accès à du contenu autorisé.
-
-| Service         | Description                                                                                                                                                                                                                                         |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Groupes          | [Ajouter ou supprimer des membres de groupes](https://docs.microsoft.com/office365/admin/create-groups/add-or-remove-members-from-groups)                                                                                                                     |
-| Personnes          | Vous pouvez masquer certains utilisateurs d’une recherche dans votre liste d'adresses en définissant le paramètre `HiddenFromAddressListEnabled` sur `true` en utilisant l’applet de commande [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user). |
-| Microsoft Teams | [Gérer l’accès des utilisateurs à Microsoft Teams](https://docs.microsoft.com/microsoftteams/user-access)                                                                                                                                                      |
-| OneDrive        | [Gérer le partage](https://docs.microsoft.com/OneDrive/manage-sharing)                                                                                                                                                                                |
-| SharePoint      | [Planification des autorisations](https://docs.microsoft.com/sharepoint/plan-your-permissions-strategy)<br> [Création des niveaux d’autorisations](https://docs.microsoft.com/sharepoint/how-to-create-and-edit-permission-levels)                          |
-| OneNote         | Vous ne pouvez pas effectuer de recherche dans les fichiers incorporés dans OneNote. [Changer les autorisations pour un bloc-notes sur OneDrive](https://support.office.com/article/B9600CCF-045A-40E6-9913-4A7EB02869A5)                                                                    |
-| Yammer          | [Paramètres de sécurité Yammer](https://docs.microsoft.com/Yammer/manage-security-and-compliance/yammer-security-settings)                                                                                                                               |
-
-## <a name="step-2-assign-search-admin-and-search-editor"></a>Étape 2 : attribuer un administrateur et un éditeur de recherche
+## <a name="step-1-assign-search-admin-and-search-editor"></a>Étape 1 : affecter l’administrateur de recherche et l’éditeur de recherche
 
 La fonctionnalité Recherche Microsoft vous permet de gérer le contenu et les paramètres de recherche de votre organisation en affectant ces rôles aux utilisateurs :
 
@@ -63,27 +48,18 @@ Pour l’instant, les rôles d’administrateur et d’éditeur de recherche doi
 
 Les administrateurs de recherche ont une influence directe sur l’expérience de recherche des utilisateurs finaux, notamment sur le choix des types de résultats présentés à ceux-ci. Il peut être difficile pour une seule et même personne de choisir et de créer du contenu capable de faire autorité dans les nombreux domaines sur lesquels les utilisateurs effectuent des recherches au sein d’une organisation. Nous vous recommandons donc de tirer parti de l’expertise et des connaissances d’experts techniques et d’autres utilisateurs en les ajoutant en tant qu’éditeurs de recherche.
 
-## <a name="step-3-make-content-easy-to-find"></a>Étape 3 : faciliter l’accès au contenu
+## <a name="step-2-create-answers"></a>Étape 2 : créer des réponses
 
-La fonctionnalité Recherche Microsoft fournit aux administrateurs des outils qui leur permettent de créer une expérience de recherche robuste pour leurs utilisateurs. Dans la fonctionnalité Recherche Microsoft, les administrateurs peuvent créer trois types de contenus de recherche différents afin d’améliorer l’expérience de recherche et l’accessibilité du contenu :
+La fonctionnalité Recherche Microsoft fournit aux administrateurs des outils qui leur permettent de créer une expérience de recherche robuste pour leurs utilisateurs. Dans Microsoft Search, les administrateurs disposent de trois contenus de recherche différents qu’ils peuvent créer pour une meilleure expérience de recherche et pour améliorer la « recherche » de contenu :
 
-- **Signets :** les signets sont semblables aux résultats promus de SharePoint. Ils vous permettent de placer les meilleurs résultats possibles pour les requêtes de vos utilisateurs en tête des résultats de recherche et de faciliter l’accès aux sites internes importants.
-- **Questions et réponses :** les Q&R sont semblables aux questions fréquentes. Elles sont généralement présentées sous un format question/réponse. Les Q&R fournissent les réponses les plus pertinentes aux questions à visée professionnelle de vos utilisateurs.
-- **Emplacements :** les emplacements sont des adresses permettant aux utilisateurs de localiser les bâtiments, les bureaux et les campus de votre organisation.
+Les signets sont le type de réponse le plus couramment utilisé. Elles favorisent les meilleurs résultats possibles pour les requêtes de vos utilisateurs en haut des résultats de recherche et permettent aux utilisateurs de trouver facilement ce qu’ils cherchent.
+Contenu informatif disponible pour tout le monde ; par exemple, des informations sur la société, de l’aide pour les applications Windows et Office, etc. Contenu que les personnes de l’organisation recherchent généralement dans leur travail quotidien. Dans ce domaine, les recherches les plus courantes concernent les avantages sociaux des employés, les fiches de présence et les notes de frais, l’envoi de bons de commande et l’obtention d’aide auprès des services informatiques.
 
-Plus vous publiez de signets, de Q&R et d’emplacements, plus vos utilisateurs en tirent parti. Cependant, s’ils sont trop nombreux, ceux-ci peuvent générer des frais de gestion importants, car ils doivent être régulièrement examinés et actualisés pour que les résultats restent pertinents et à jour.
+Pour créer et gérer des réponses, voir [planifier votre contenu](plan-your-content.md).
 
-Voici quelques exemples de contenu que vous pouvez transformer en signets pour vos utilisateurs :
+## <a name="next-steps"></a>Étapes suivantes
 
-- Informations relatives à l’organisation ou aux produits et services.
-- Contenu informatif accessible à tous ; par exemple, informations sur l’entreprise, aide pour les applications Windows et Office, etc.
-- Contenu que les membres de l’organisation ont l’habitude de rechercher dans le cadre de leurs activités professionnelles quotidiennes. Dans ce domaine, les recherches les plus courantes concernent les avantages sociaux des employés, les fiches de présence et les notes de frais, l’envoi de bons de commande et l’obtention d’aide auprès des services informatiques.
-
-Pour créer et gérer du contenu de recherche, consultez la page [Faciliter l’accès au contenu](make-content-easy-to-find.md).
-
-## <a name="step-4-training-and-communication"></a>Étape 4 : formation et communication
-
-Établissez des ressources en libre-service auxquelles les employés peuvent facilement accéder par eux-mêmes. Cela allégera le fardeau qui pèse constamment sur vous et votre équipe en termes de publication de communications et de formation/auto-formation des employés. Fournissez à vos utilisateurs des communications, des FAQ, des vidéos et des webinaires ou formations enregistrées. Voici quelques liens utiles pour commencer :
+Si vous souhaitez en savoir plus sur la façon dont vos utilisateurs vont utiliser Microsoft Search, consultez les articles suivants :
 
 - [Trouvez ce dont vous avez besoin avec la fonctionnalité Recherche Microsoft d’Office](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446)
 - [Centre de formation Office 365](https://support.office.com/office-training-center)

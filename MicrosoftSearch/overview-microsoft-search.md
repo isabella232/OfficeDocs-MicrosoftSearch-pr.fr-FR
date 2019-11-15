@@ -1,160 +1,97 @@
 ---
 title: Vue d’ensemble de Recherche Microsoft
-ms.author: tlarsen
-author: tlarsen
-manager: mnirkhe
-ms.date: 12/11/2018
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Obtenez un aperçu des nouveautés de la fonctionnalité Recherche Microsoft, de ses avantages et des applications qui en disposent actuellement.
-ms.openlocfilehash: c0599a09b2018062b1181762c2ce3c93cb16367a
-ms.sourcegitcommit: 5204b3c85e2fc190a8807d5268fb87145624a969
-ms.translationtype: HT
+description: Obtenez une vue d’ensemble de ce que fait Microsoft Search, de ses avantages et des applications qui prennent en charge Microsoft Search.
+ms.openlocfilehash: 28bd561e53bb1878c601a08e919e37f524a6470c
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "37502937"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626971"
 ---
 # <a name="overview-of-microsoft-search"></a>Vue d’ensemble de Recherche Microsoft
 
-Recherche Microsoft est la capacité de recherche unifiée dans les applications de productivité Microsoft 365 et l’écosystème de Microsoft plus large. Au fil du temps Recherche Microsoft sera disponible dans de plus en plus d’applications sur Microsoft 365.
+Microsoft Search vous aide à trouver ce dont vous avez besoin pour effectuer ce que vous utilisez. Que vous cherchiez des personnes, des fichiers, des organigrammes, des sites ou des réponses aux questions courantes, vous pouvez utiliser Microsoft Search tout au long de votre journée de travail pour obtenir des réponses.
 
 Recherche Microsoft permet aux utilisateurs de trouver les réponses adaptées, personnes et le contenu pour effectuer leurs tâches dans l’application où elles travaillent déjà.
 
-- Les utilisateurs obtiennent des résultats pertinents dans le **contexte** de l’application à partir de laquelle ils effectuent la recherche. Par exemple, quand ils effectuent une recherche dans Outlook, ils trouvent des e-mails, pas des sites SharePoint. Lorsqu’ils recherchent dans SharePoint, ils trouvent des sites, pages et fichiers.
-- Quelle que soit l’application dans laquelle les utilisateurs travaillent ; Recherche Microsoft est **personnel**.  Recherche Microsoft utilise les données de Microsoft Graph pour afficher les résultats qui sont pertinents pour vous. Chaque utilisateur peut voir des résultats différents, même s’ils cherchaient les même mots. Ils ne voient que les résultats auxquels ils ont déjà accès, Recherche Microsoft ne modifie pas les autorisations.
-- Les utilisateurs n’ont pas besoin de se souvenir où se trouvent les informations. Par exemple, un utilisateur travaille dans Word et souhaite réutiliser l’information d’une présentation qu’un collègue a partagée à partir de leur espace OneDrive. Il est inutile pour basculer vers OneDrive et rechercher cette présentation, ils peuvent simplement effectuer une recherche à partir de Word.  
+- Les utilisateurs obtiennent des résultats pertinents dans le **contexte** de l’application à partir de laquelle ils effectuent la recherche. Par exemple, lorsqu’ils recherchent dans [Microsoft Outlook](https://www.microsoft.com/outlook), ils trouvent des courriers électroniques et non des sites [SharePoint](http://sharepoint.com/) . Lorsqu’ils recherchent dans SharePoint, ils trouvent des sites, pages et fichiers.
+- Quelle que soit l’application dans laquelle les utilisateurs travaillent ; Recherche Microsoft est **personnel**. Microsoft Search utilise des informations de [Microsoft Graph](https://developer.microsoft.com/graph/) pour afficher les résultats pertinents pour chaque utilisateur. Chaque utilisateur peut voir des résultats différents, même s’ils cherchaient les même mots. Ils ne voient que les résultats auxquels ils ont déjà accès, Recherche Microsoft ne modifie pas les autorisations.
+- Les utilisateurs n’ont pas besoin de se souvenir où se trouvent les informations. Par exemple, un utilisateur travaille dans [Microsoft Word](https://products.office.com/word) et souhaite réutiliser les informations d’une présentation qu’un collègue partage à partir de son [OneDrive](https://onedrive.live.com/about/). Il est inutile pour basculer vers OneDrive et rechercher cette présentation, ils peuvent simplement effectuer une recherche à partir de Word.
 - Dans [Bing](https://bing.com), les utilisateurs obtiennent des résultats relatifs à leur organisation en plus des résultats web publics.
 
 ## <a name="what-users-see"></a>Ce que voient les utilisateurs
 
-Dans Bing, les utilisateurs utilisent la même zone de recherche que pour les recherches web. Dans les applications Microsoft 365, la zone Recherche Microsoft figure dans la barre d’en-tête. Elle se présente ainsi :
+Dans [Bing](https://bing.com), les utilisateurs utilisent la même zone de recherche que pour les recherches sur le Web. Dans les applications Office, les utilisateurs trouvent la zone de recherche Microsoft dans la barre d’en-tête. Elle se présente ainsi :
 
 ![Captures d’écran de la fenêtre d’application avec la zone Recherche Microsoft dans l’en-tête](media/Headings_520.png)
 
+Lorsque les utilisateurs cliquent dans la zone de **recherche** , la recherche suggère des résultats en fonction de leur activité précédente dans Office 365 et en fonction du contenu qui fait l’objet de tendances dans votre organisation. Les fichiers sur lesquels ils ont été récemment travaillé, les commandes qu’ils ont utilisées récemment ainsi que les personnes avec qui ils collaborent sont considérés comme des exemples d’activité que la recherche prend en compte. Au fur et à mesure que les utilisateurs commencent à taper dans la zone de **recherche** , la mise à jour des résultats suggérés. Les utilisateurs peuvent ouvrir les résultats de la recherche directement à partir de la zone de **recherche** . Voici un exemple de recherche dans [SharePoint](http://sharepoint.com/).
 
-Lorsque les utilisateurs cliquent dans la zone de recherche, la recherche suggère des résultats basés sur leur activité récente dans Office 365 et basés sur le contenu populaire dans votre organisation. Les fichiers sur lesquels ils ont été récemment travaillé, les commandes qu’ils ont utilisées récemment ainsi que les personnes avec qui ils collaborent sont considérés comme des exemples d’activité que la recherche prend en compte. Lorsque les utilisateurs commencent à taper dans la zone de recherche, les résultats suggérées se mettent à jour. Les utilisateurs peuvent ouvrir les résultats de recherche directement à partir de la zone de recherche. Voici un exemple de recherche dans SharePoint.
+![Captures d’écran de la zone Recherche Microsoft avec une requête et des résultats suggérés](media/SERP_text_520.png)
 
-![Captures d’écran de la zone Recherche Microsoft avec une requête et des résultats suggérés](media/search_box.png)
+Si les suggestions de la zone de recherche ne correspondent pas à ce que les utilisateurs recherchent, **Entrez** ouvre la liste complète des résultats. Ils peuvent utiliser les métadonnées telles que : qui a modifié l’élément et quand, où se trouvent les éléments, mais aussi afficher un aperçu pour déterminer si c’est ce qu’ils cherchent.
 
-Si les suggestions dans la zone de recherche ne conviennent pas, l’action de la touche **Entrée** ouvre la liste complète des résultats. Ils peuvent utiliser les métadonnées telles que : qui a modifié l’élément et quand, où se trouvent les éléments, mais aussi afficher un aperçu pour déterminer si c’est ce qu’ils cherchent.
-
-![Page de résultats des captures d’écran de Recherche Microsoft](media/SERP_text_520.png)
+![Page de résultats des captures d’écran de Recherche Microsoft](media/search_box.png)
 
 ## <a name="benefits-of-microsoft-search"></a>Avantages de la fonctionnalité Recherche Microsoft
 
-**Recherche au sein de Microsoft 365 à partir d’une zone de Recherche Microsoft** : les utilisateurs peuvent effectuer des recherches dans une zone de Recherche Microsoft et revenir rapidement à ce qu’ils faisaient. La fonctionnalité Recherche Microsoft réunit les résultats provenant de sources de données dans Office 365, sont SharePoint, OneDrive Entreprise et Exchange.
+**Recherche au sein de Microsoft 365 à partir d’une zone de Recherche Microsoft** : les utilisateurs peuvent effectuer des recherches dans une zone de Recherche Microsoft et revenir rapidement à ce qu’ils faisaient. Microsoft Search rassemble les résultats de sources de données dans Office 365, y compris [SharePoint](http://sharepoint.com/), [Microsoft OneDrive entreprise](https://onedrive.live.com/about/en-us/business/)et [Microsoft Exchange Server](https://products.office.com/en-us/exchange/microsoft-exchange-server).
 
-**Facile de rechercher** : Recherche Microsoft suggère les résultats en fonction de précédentes activités des utilisateurs dans Office 365, directement dans la zone de recherche.
+**Facile à rechercher** : Microsoft Search suggère des résultats en fonction de l’activité précédente des utilisateurs dans Office 365, directement dans la zone de **recherche** .
 
 **Recherche les dossiers partagés** : Recherche Microsoft utilise la compréhension de requête avancée pour simplifier la recherche de fichiers partagés. Les utilisateurs peuvent facilement trouver des fichiers sur lesquels ils collaborent.
 
-**Afficher du contenu pertinent** : promouvoir les informations et réponses dont vos utilisateurs ont besoin pour effectuer les tâches, par exemple stratégies, avantages, les ressources, outils et bien plus encore. Vous pouvez également cibler des groupes spécifiques, tels que les nouvelles recrues ou les employés à distance.
-
-**Recherche Microsoft évolue** : l’ensemble de types de contenu que les utilisateurs peuvent rechercher et l’intelligence de la zone de recherche augmenteront au fil du temps.
+**Afficher du contenu pertinent** : promouvoir les informations et réponses dont vos utilisateurs ont besoin pour effectuer les tâches, par exemple stratégies, avantages, les ressources, outils et bien plus encore. Vous pouvez également cibler des groupes spécifiques, tels que de nouveaux employés, des travailleurs distants ou des régions géographiques différentes.
 
 **Administrer sur toutes les applications** : Recherche Microsoft est **activé** par défaut, puis toute administration que vous effectuez s’applique à Recherche Microsoft dans toutes les applications.
 
-## <a name="apps-that-currently-have-microsoft-search"></a>Applications disposant actuellement de la fonctionnalité Recherche Microsoft
-
- La fonctionnalité Recherche Microsoft est activée par défaut pour toutes les applications Microsoft qui la prennent en charge. Tous les utilisateurs doivent se connecter avec un compte professionnel ou scolaire.
-
-Les applications suivantes offrent actuellement Recherche Microsoft :
-- SharePoint Online
-- OneDrive Entreprise
-- Outlook sur le web
-- Applications Office sur Windows
-
-En outre, les utilisateurs connectés peuvent trouver Recherche Microsoft dans :
-
-- Page d’accueil de Bing
-- Office.com
-- Les pages d’accueil de Word, Excel et PowerPoint Online
-
-Les utilisateurs peuvent également lancer une recherche dans Bing à partir de la barre d’adresse de Microsoft Edge, s’ils utilisent Bing comme moteur de recherche par défaut.
-
-## <a name="requirements"></a>Configuration requise
-
-Vous devez disposer de l'un des abonnements Office 365 ou Microsoft 365 suivants :
-
-- Office 365 Business Essentials ou Office Business Premium
-- Office 365 A1/A3/A5
-- Office 365 éducation E1/E3
-- Office 365 Entreprise E1/E3/E3 développeur/E5
-- Office 365 F1
-- Microsoft 365 Business
-- Microsoft 365 A3/A5
-- Microsoft 365 F1/E3/E5
-
-Les utilisateurs et les administrateurs de recherche doivent se voir attribuer ces licences. Seuls les utilisateurs dotés de comptes actifs peuvent utiliser Recherche Microsoft. Ils doivent être **connectés**, car Recherche Microsoft requiert Azure Active Directory
-
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>Personnaliser Recherche Microsoft à votre organisation
 
-En tant qu’administrateur, vous pouvez simplifier pour vos utilisateurs l’obtention de résultats spécifiques d’une organisation quand ils font une recherche à partir de leur page d’accueil SharePoint, office.com ou Bing. Pour ce faire, vous devez définir les réponses que Recherche Microsoft affiche en réponse à certains mots clés dans les requêtes. Il existe plusieurs types de réponses que vous pouvez définir : 
+En tant qu’administrateur, vous pouvez créer une expérience Microsoft Search incroyable pour vos utilisateurs. 
 
-**Afficher du contenu utile** : aider les utilisateurs à trouver des outils et ressources importants au sein de votre organisation en leur créant des signets. Tout comme vous pouvez créer un signet pour une page Web publique, vous pouvez créer un signet pour toute page Web interne, que vos utilisateurs peuvent rechercher. Vous pouvez également intégrer une application Power dans le signet pour que les utilisateurs puissent effectuer leurs tâches directement à partir du signet.
+**Afficher un contenu utile** : les réponses fournissent des résultats faisant autorité pour les requêtes de recherche basées sur des mots clés. [Faciliter la recherche de contenu](make-content-easy-to-find.md).
 
-**Offrir des réponses aux questions fréquemment posées** : apporter les meilleures réponses aux questions les plus fréquemment posées au sein de votre organisation. Lorsque les utilisateurs entrent une question courante dans la zone de recherche, Recherche Microsoft affiche la réponse au lieu de simplement fournir un lien vers la page web.
+**Ajout de contenu externe** : les connecteurs Microsoft Graph vous permettent d’intégrer du contenu externe à l’index. Utilisez des connecteurs pour enrichir l’expérience de recherche avec des données et des fichiers en dehors de Microsoft 365. [Vue d’ensemble des connecteurs Microsoft Graph](connectors-overview.md)
 
-**Afficher les emplacements utiles** : afficher des résultats et les informations d’adresse pour des bâtiments de votre organisation, bureaux et autres espaces de travail sur une carte. Les utilisateurs peuvent utiliser les cartes pour obtenir des instructions, voir ce qui est proche et bien plus encore.
-
-Vous pouvez afficher les statistiques d’utilisation qui indiquent la manière dont les utilisateurs sont en contact avec vos réponses et si les utilisateurs trouvent ce qu’ils cherchent. Sur cette base, vous pouvez affiner les réponses ou en ajouter de nouvelles.
-
-Pour plus d’informations sur l’utilisation des mots clés et des mots clés réservés, consultez la rubrique [Faciliter la recherche de contenu](make-content-easy-to-find.md).
+**Personnaliser l’expérience utilisateur** : vous pouvez personnaliser l’expérience utilisateur en utilisant des configurations verticales et d’autres configurations. [Personnaliser la page Microsoft Search](customize-search-page.md)
 
 ## <a name="what-content-is-searched"></a>Dans quel contenu la recherche est-elle effectuée ?
 
-Le fonctionnalité Recherche Microsoft effectue une recherche dans du contenu que votre organisation a stocké dans SharePoint Online, OneDrive Entreprise et Exchange, y compris dans la liste d’adresses globale et les groupes Office 365. Recherche Microsoft n'effectue pas de recherche parmi les clients et n'affiche pas les résultats des contenus partagés par les entreprises. Si votre organisation a mis en place un environnement SharePoint hybride utilisant une fonctionnalité de recherche hybride dans le cloud, Recherche Microsoft renvoie les résultats de recherche du contenu SharePoint en ligne et local, y compris tout contenu externe que vous avez connecté à votre environnement SharePoint Server. [Apprenez-en davantage sur les environnements hybrides de recherche](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
+Microsoft Search affiche le contenu que votre organisation a stocké dans Microsoft 365 ou indexé par le biais de connecteurs. Microsoft Search ne recherche pas dans les clients ni n’affiche les résultats provenant de contenu partagé par d’autres organisations. Si votre organisation a mis en place un environnement SharePoint hybride utilisant une fonctionnalité de recherche hybride dans le cloud, Recherche Microsoft renvoie les résultats de recherche du contenu SharePoint en ligne et local, y compris tout contenu externe que vous avez connecté à votre environnement SharePoint Server. [Apprenez-en davantage sur les environnements hybrides de recherche](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
-Lorsque des utilisateurs effectuent une recherche à partir de la page d’accueil de SharePoint ou d’Office.com, la fonctionnalité Recherche Microsoft effectue une recherche dans tout le contenu de leur organisation et présente les résultats que l'utilisateur est autorisé à voir. C’est ce qu’on appelle l’**étendue de recherche globale**.
-
-Lorsque des utilisateurs recherchent à partir de Bing, ils obtiennent les résultats les plus pertinents trouvés dans tout le contenu de leur organisation incorporé dans la liste des résultats provenant du **web**. S’ils ont besoin d’afficher **tous** les résultats provenant de l’organisation, l’étendue de recherche globale est à portée de clic.
-
-## <a name="what-types-of-results-can-users-find"></a>Quels types de résultats les utilisateurs peuvent-ils trouver ?
-Les utilisateurs trouvent les types de résultats suivants selon qu’ils recherchent à partir de :
-
-**SharePoint**: fichiers, dossiers, membres de votre organisation, organigrammes hiérarchiques, sites, pages de site, actualités, listes et éléments de liste. Si spécifié, réponses aux questions fréquemment posées, signets menant à des informations faisant autorité, localisations et outils. [Découvrez les types de fichiers que vous pouvez trouver](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
-
-**Pages d’accueil Office.com et Word, Excel et PowerPoint Online** : applications, fichiers, dossiers, contacts, organigrammes hiérarchiques, sites SharePoint, pages de site, listes et éléments de liste. Si spécifié, réponses aux questions fréquemment posées, signets menant à des informations faisant autorité, localisations et outils. Des fichiers du même type que dans SharePoint peuvent être trouvés.
-
-**Bing** : contenu sur le web public, fichiers, groupes Office 365, contacts, conversations Yammer et Teams, organigrammes, sites SharePoint. Si spécifié, réponses aux questions fréquemment posées, signets menant à des informations faisant autorité, localisations et outils.  Des fichiers Word, Excel, PowerPoint, Visio, OneNote et PDF peuvent être trouvés.
-
-**Outlook** : messages électroniques, pièces jointes et membres de votre organisation.
-
-**Applications Office sur Windows** : actions dans l’application, contacts de votre organisation et sur le web, fichiers, explications de mots, correspondances pour la requête dans le fichier ou dans le contenu d’aide, contenu sur le web. Fichiers Word, Excel, PowerPoint, Visio et OneNote sont accessibles.
-
-**OneDrive**: les fichiers du même type que dans SharePoint sont accessibles.
+Les utilisateurs obtiendront les mêmes résultats de recherche d’entreprise qu’ils obtiennent d’autres emplacements et obtiendront également des résultats à partir d’Internet.
 
 ## <a name="how-does-microsoft-search-work"></a>Comment fonctionne Recherche Microsoft ?
 
 Lorsqu’un utilisateur effectue une recherche, Recherche Microsoft traite la requête et analyse l’objectif de recherche de plus grandes phrases, à l’aide de l’Intelligence artificielle (AI) pour en savoir plus sur les phrases courantes superflues que les utilisateurs ajoutent à leurs requêtes et qui n’ont pas d’impact sur leur objectif de recherche. Par exemple, lorsqu’un utilisateur recherche « comment modifier mon mot de passe », nous extrayons les mots les moins importants de la requête, puis déclenchons la recherche en nous basant sur les mots pertinents comme par exemple, « modifier mot de passe ».  
-
-Recherche Microsoft ne crée pas de nouvel index, il recherche les index existants de SharePoint Online, de OneDrive Entreprise et de contenu Exchange.
-
 Les résultats de recherche que l’utilisateur est **autorisé** à voir sont présentés dans la page de résultats de recherche. Recherche Microsoft utilise des algorithmes de classement intelligent pour classer les résultats selon la pertinence.
 
-## <a name="microsoft-search-in-sharepoint"></a>Recherche Microsoft dans SharePoint
+## <a name="microsoft-search-in-bing-protects-enterprise-searches"></a>La Recherche Microsoft dans Bing protège les recherches relatives à l’entreprise
 
-La fonctionnalité Recherche Microsoft est l’expérience de recherche moderne dans SharePoint Online. SharePoint Online offre également une expérience de recherche classique. Les deux expériences sont activées par défaut et toutes deux recherchent dans le même contenu. En tant qu’administrateur de recherche, vous ne pouvez ni activer, ni désactiver ces expériences de recherche. L’expérience de recherche de vos utilisateurs dépend de l’endroit depuis lequel ils effectuent une recherche :
+Lorsqu’un utilisateur entre une requête de recherche dans Microsoft Search dans Bing, deux requêtes de recherche simultanées se produisent :
 
-- Les utilisateurs accèdent à la zone Recherche Microsoft sur la page d’accueil de SharePoint, des sites hub, des sites de communication et des sites d’équipe modernes.
-- Les utilisateurs accèdent à la zone de recherche classique sur des sites de publication, des sites d’équipe classiques et dans le centre de recherche.
+- Une recherche des ressources internes de votre organisation.
+- Une recherche distincte des résultats publics à partir de Bing.com. 
 
-Vous pouvez personnaliser l’expérience de recherche classique, par exemple en ajoutant des affinements personnalisés à la page de résultats de recherche ou en affichant différemment un certain type de résultat. Vous ne pouvez pas personnaliser l’expérience de Recherche Microsoft dans SharePoint de la même manière. Certaines personnalisations que vous apportez à la recherche classique peuvent avoir une incidence sur la fonctionnalité Recherche Microsoft dans SharePoint. Si votre organisation compte utiliser les deux expériences de recherche dans SharePoint, [découvrez les différences entre celles-ci et comment éviter toute incidence sur la fonctionnalité Recherche Microsoft dans SharePoint](https://docs.microsoft.com/sharepoint/differences-classic-modern-search).
+Étant donné que les recherches d’entreprise peuvent être sensibles, Microsoft Search a implémenté un ensemble de mesures d’approbation qui décrivent le mode `Bing.com` de gestion de la recherche séparée des résultats publics.
 
-## <a name="microsoft-search-in-bing-protects-enterprise-searches"></a>La Recherche Microsoft dans Bing protège les recherches relatives à l’entreprise 
-Lorsqu’un utilisateur entre une requête de recherche d’entreprise dans Recherche Microsoft, deux requêtes de recherche simultanées ont lieu : (1) une recherche des ressources internes à l’entreprise, et (2) une recherche distincte des résultats publics par Bing.com. Étant donné que les recherches d’entreprise peuvent être sensibles, Recherche Microsoft a implémenté un groupe de mesures d’approbation qui décrivent la façon dont les résultats publics de Bing.com sont gérés. 
--   **Journalisation**
-    - Tous les journaux de recherche relatifs au trafic Recherche Microsoft sont dissociés de l’identité de votre lieu de travail.
-    - Si un ensemble de restrictions ou de seuils de fréquence est respecté, ce qui nous permet de nous assurer que la requête n’est pas spécifique à une organisation, la requête est traitée comme décrit dans la section des services Bing de la [Déclaration de confidentialité](https://privacy.microsoft.com/privacystatement). Par exemple, ces requêtes sont utilisées pour modeler et entrainer des fonctionnalités publiques telles que la suggestion automatique ou les recherches associées. 
-    - Les requêtes qui ne répondent pas à ces restrictions ou seuils de fréquence seront stockées séparément du trafic public, hors Recherche Microsoft.
--   **Publicité**
-    - Les publicités affichées sur Bing.com dans le cadre de la recherche d’entreprise sont uniquement liées au contenu des requêtes de recherche. Les publicités ne sont jamais ciblées pour les utilisateurs en fonction de leur identité professionnelle.
+### <a name="logging"></a>Logging
+ - Tous `Bing.com` les journaux de recherche relatifs à Microsoft Search dans le trafic Bing sont désassociés à l’identité de votre espace de travail.
+- Si un ensemble de restrictions ou de seuils de fréquence est respecté, ce qui nous permet de nous assurer que la requête n’est pas spécifique à une organisation, la requête est traitée comme décrit dans la section des services Bing de la [Déclaration de confidentialité](https://privacy.microsoft.com/privacystatement). Par exemple, ces requêtes seront utilisées pour modéliser et former des fonctionnalités publiques, telles que des suggestions automatiques ou des recherches associées.
+- Les requêtes qui ne répondent pas à ces restrictions ou seuils de fréquence seront stockées séparément du trafic public, hors Recherche Microsoft.
+### <a name="advertising"></a>Publicité 
+Les publicités affichées `Bing.com` en relation avec les recherches d’entreprise sont uniquement liées au contenu des requêtes de recherche. Les publicités ne sont jamais ciblées pour les utilisateurs en fonction de leur identité professionnelle.
 
 ## <a name="see-also"></a>Voir aussi
 

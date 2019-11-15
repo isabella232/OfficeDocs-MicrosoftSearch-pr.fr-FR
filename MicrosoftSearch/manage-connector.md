@@ -1,9 +1,8 @@
 ---
 title: Gérer les connecteurs Microsoft Graph pour Microsoft Search
-ms.author: v-pamcn
+ms.author: mounika.narayanan
 author: monaray
 manager: mnirkhe
-ms.date: 11/04/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gérer les connecteurs Microsoft Graph pour Microsoft Search.
-ms.openlocfilehash: 5aab310a05d073221918a8aaa80ea1e06c818e51
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: c74dc8f6d08519860e757b0ebe19e83dcf42159b
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949761"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626800"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>Gérer votre connecteur pour Microsoft Search
 
@@ -34,9 +33,9 @@ Pour chaque type de connecteur, le [Centre d’administration Microsoft 365](htt
 **Opération** | **Connecteur créé par Microsoft** | **Connecteur partenaire ou personnalisé**
 --- | --- | ---
 Ajouter une connexion | : heavy_check_mark : (voir [Configure Your Microsoft-Built Connector](configure-connector.md)) | : x : (reportez-vous à votre partenaire ou à l’expérience utilisateur d’administration des connecteurs personnalisés)
-Supprimer une connexion | :heavy_check_mark: | :heavy_check_mark:
+Supprimer une connexion | : heavy_check_mark : | : heavy_check_mark :
 Modifier une connexion publiée | : heavy_check_mark : nom<br></br> : heavy_check_mark : description<br></br> : heavy_check_mark : informations d’identification d’authentification pour votre source de données externe<br></br> : heavy_check_mark : informations d’identification de la passerelle pour votre source de données locale<br></br> : heavy_check_mark : actualiser la planification<br></br> | : heavy_check_mark : nom<br></br> : heavy_check_mark : description
-Modifier une connexion brouillon | :heavy_check_mark: | ActiveX
+Modifier une connexion brouillon | : heavy_check_mark : | ActiveX
 
 ## <a name="monitor-your-connection-status"></a>Surveiller l’état de votre connexion
 Une fois que vous avez créé une connexion, le nombre d’éléments traités est affiché sous l’onglet **connecteurs** de la page **Microsoft Search** . Une fois l’analyse complète initiale terminée, la progression des analyses incrémentielles périodiques s’affiche. Cette page fournit des informations sur les opérations quotidiennes du connecteur et une vue d’ensemble des journaux et de l’historique des erreurs.

@@ -3,7 +3,6 @@ title: Importer les résultats et principales requêtes mis en avant par SharePo
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 9/8/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -15,19 +14,19 @@ search.appverid:
 ms.assetid: 3d2a1498-174e-4214-9cf1-8b58cce5a872
 ROBOTS: NOINDEX
 description: Utiliser des requêtes de recherche à partir de SharePoint pour créer des résultats de travail pour Microsoft Search
-ms.openlocfilehash: ebfd10f8705ce5b9a36b9c13d549e28a3f1c6b91
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: c69203ce2138a7609e1b52614f8bfccc98bc9616
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639801"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626845"
 ---
 # <a name="import-sharepoint-promoted-results-and-top-queries"></a>Importer les résultats et principales requêtes mis en avant par SharePoint
 
 > [!IMPORTANT]
-> Cet article s’applique au portail d’administration de Microsoft Search dans Bing. Nous transférons le portail vers le centre d’administration Microsoft 365, puis le portail Microsoft Search dans Bing sera supprimé. Nous vous recommandons d’utiliser le centre d’administration Microsoft 365 pour commencer. [Vue d’ensemble de Microsoft Search](overview-microsoft-search.md).
+> Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing. Nous déplaçons le portail vers le Centre d’administration Microsoft 365. Nous supprimerons ensuite la fonctionnalité Recherche Microsoft du portail Bing. Pour commencer, nous vous suggérons d’utiliser le Centre d’administration Microsoft 365. [Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).
     
-Pour tirer parti des requêtes et des meilleurs résultats que vous avez créés dans SharePoint, Microsoft Search inclut deux outils pour importer ces informations en tant que signets suggérés: 
+Pour tirer parti des requêtes et des meilleurs résultats que vous avez créés dans SharePoint, Microsoft Search inclut deux outils pour importer ces informations en tant que signets suggérés : 
   
 ## <a name="import-sharepoint-promoted-result-query-rules"></a>Importer des règles de requête de résultats promus SharePoint
 
@@ -41,12 +40,12 @@ Importez ces règles, précédemment appelées meilleurs résultats, sous la for
     
 - Ajouter des signets suggérés au portail d’administration.
     
-- Vos requêtes SharePoint les plus fréquentes sont des candidats excellents pour les signets. Utilisez le script PowerShell pour les importer sous forme de signets suggérés. Ce script effectue les tâches suivantes:
+- Vos requêtes SharePoint les plus fréquentes sont des candidats excellents pour les signets. Utilisez le script PowerShell pour les importer sous forme de signets suggérés. Ce script effectue les tâches suivantes :
     - Ajoute des signets suggérés basés sur les requêtes principales de SharePoint pour améliorer la couverture des signets Microsoft Search. Ce script télécharge les requêtes principales accessibles à partir du portail d’administration SharePoint, puis les télécharge sous forme de signets suggérés pour un administrateur afin qu’il les examine dans le portail d’administration de Microsoft Search.
     - Par défaut, le script ajoute des signets suggérés au client donné pour tous les mois disponibles. Il obtient les requêtes les plus populaires à partir d’un site Web d’administration SharePoint donné et les ajoute à Microsoft Search en tant que signets suggérés. Les signets suggérés ont besoin d’un administrateur/éditeur pour les approuver dans le portail d’administration avant d’être publiés. Lorsque vous exécutez ce script, vous êtes invité à entrer les informations d’identification pour accéder au portail d’administration de Microsoft Search.
     - Le script permet de spécifier des paramètres supplémentaires. Vous pouvez, par exemple, ajouter des signets suggérés au client donné pour les requêtes Top N dans chaque mois disponible.
     - Si vous le souhaitez, vous pouvez ajouter des signets suggérés au client donné pendant les mois de l’année donnée. Cette commande obtient les requêtes les plus fréquentes pour la période donnée à partir du site Web d’administration SharePoint et les ajoute à Microsoft Search en tant que signets suggérés.
-    - Il existe également de nombreuses autres options et modes de commande: Télécharger les requêtes les plus fréquentes à partir de SharePoint vers un dossier spécifique, exécuter le script en mode sans échec, exécuter le script en mode détaillé et un mode de débogage.
+    - Il existe également de nombreuses autres options et modes de commande : Télécharger les requêtes les plus fréquentes à partir de SharePoint vers un dossier spécifique, exécuter le script en mode sans échec, exécuter le script en mode détaillé et un mode de débogage.
     - Téléchargez le script [ici](https://www.bingforbusiness.com/distribution/SharepointTopQueryBookmarks.zip). 
 
 Pour plus d’informations sur les conditions requises, les exemples et les paramètres disponibles, téléchargez le script et passez en revue le fichier Lisez-moi. Une fois le script PowerShell exécuté, un administrateur ou un éditeur doit passer en revue les signets suggérés et apporter les modifications nécessaires avant qu’il ne soit publié.

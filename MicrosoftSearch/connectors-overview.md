@@ -1,6 +1,6 @@
 ---
 title: Vue d’ensemble des connecteurs
-ms.author: v-pamcn
+ms.author: mounika.narayanan
 author: monaray
 manager: shohara
 ms.audience: Admin
@@ -11,13 +11,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Vue d’ensemble des connecteurs Microsoft Graph pour la recherche Microsfot
-ms.openlocfilehash: c372d4750c6644f0f98054a2531b6431fb8cd334
-ms.sourcegitcommit: 90f82efc3671c477536cbe8d8846132910b64600
+description: Vue d’ensemble des connecteurs Microsoft Graph pour Microsoft Search
+ms.openlocfilehash: 8b46dc5150fa7f302f2d8abe98018465f2e4e1c3
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37961951"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626317"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Vue d’ensemble des connecteurs Microsoft Graph
 

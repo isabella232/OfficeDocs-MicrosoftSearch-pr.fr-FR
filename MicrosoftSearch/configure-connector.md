@@ -1,6 +1,6 @@
 ---
 title: Configurer votre connecteur créé par Microsoft pour Microsoft Search
-ms.author: v-pamcn
+ms.author: mounika.narayanan
 author: monaray
 manager: shohara
 ms.audience: Admin
@@ -12,31 +12,31 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer votre connecteur créé par Microsoft pour Microsoft Search
-ms.openlocfilehash: aee7c142e8cf04349076030cdedde0cea7344906
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 1a3affebc754595eabc40a13402aae6bbb7a1e1c
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949736"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626524"
 ---
 # <a name="set-up-your-microsoft-built-connector-for-microsoft-search"></a>Configurer votre connecteur créé par Microsoft pour Microsoft Search
 
-Cet article vous guide tout au long de la procédure de configuration d’un connecteur créé par Microsoft. Il décrit le flux de configuration d’une connexion dans le centre d' [administration 365 de Microsoft](https://admin.microsoft.com). Pour plus d’informations sur la configuration de connecteurs créés par Microsoft, consultez les articles suivants :
+Cet article vous guide tout au long de la procédure de configuration d’un connecteur créé par Microsoft. Il décrit le flux de configuration d’une connexion dans le [Centre d’administration](https://admin.microsoft.com)365 de Microsoft. Pour plus d’informations sur la configuration de connecteurs créés par Microsoft, consultez les articles suivants :
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
-* [Sites Web d’entreprise](enterprise-web-connector.md)
+* [Sites web d’entreprise](enterprise-web-connector.md)
 * [Partage de fichiers](file-share-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [Microsoft SQL Server](MSSQL-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
 ## <a name="set-up"></a>Configuration
-Pour configurer les connecteurs créés par Microsoft, accédez au [Centre d’administration microsoft 365](https://admin.microsoft.com):
-1. Connectez-vous à votre compte avec les informations d’identification de votre client de test Microsoft 365.
+Pour configurer les connecteurs créés par Microsoft, accédez au [Centre d’administration](https://admin.microsoft.com):
+1. Connectez-vous à votre compte avec les informations d’identification de votre client de test [Microsoft 365](https://www.microsoft.com/microsoft-365) .
 2. Accédez à **paramètres** > **Microsoft Search** > **Connectors**.
 3. Sélectionnez **Ajouter un connecteur**.
 4. Dans la liste des connecteurs disponibles, sélectionnez le connecteur de votre choix.
 
-![](media/addconnector_final.png)
+![Les sources de données disponibles sont les suivantes : connecteur ADLS Gen2, sites Web d’entreprise, ServiceNow, partage de fichiers, Microsoft SQL Server et MediaWiki.](media/addconnector_final.png)
 
 ### <a name="name-the-connector"></a>Nommer le connecteur
 Pour créer une connexion, spécifiez d’abord les attributs suivants :
@@ -59,16 +59,16 @@ Les attributs de schéma de recherche incluent des **recherches pouvant**faire l
 
 **Attribut de schéma de recherche** | **Fonction** | **Exemple**
 --- | --- | ---
-FAIRE l’objet | Rend le texte d’une propriété pouvant faire l’objet d’une recherche. Le contenu de la propriété est inclus dans l’index de texte intégral. | Si la propriété est « title », une requête pour « Enterprise » renvoie les réponses qui contiennent le mot « entreprise » dans n’importe quel texte ou titre.
-QUERYABLE | Recherche par requête une correspondance pour une propriété particulière. Le nom de la propriété peut ensuite être spécifié dans la requête, soit par programme, soit par mot Verbatim. |  Si la propriété « Title » est utilisable dans une requête, la requête « title : Enterprise » est prise en charge.
-AFFICHABLE dans | Seules les propriétés récupérables peuvent être utilisées dans le type de résultat et affichables dans le résultat de la recherche. | 
+FAIRE l’objet | Rend le texte d’une propriété pouvant faire l’objet d’une recherche. Le contenu de la propriété est inclus dans l’index de texte intégral. | Si la propriété est **title**, une requête pour **Enterprise** renvoie des réponses qui contiennent le mot **entreprise** dans n’importe quel texte ou titre.
+QUERYABLE | Recherche par requête une correspondance pour une propriété particulière. Le nom de la propriété peut ensuite être spécifié dans la requête, soit par programme, soit par mot Verbatim. |  Si la propriété **title** peut être Requery, le titre de la requête **: Enterprise** est pris en charge.
+AFFICHABLE dans | Seules les propriétés récupérables peuvent être utilisées dans le type de résultat et s’afficher dans le résultat de la recherche. | 
 
-Pour tous les connecteurs à l’exception du connecteur de partage de fichiers, les types personnalisés doivent être définis manuellement. Pour activer les fonctionnalités de recherche pour chaque champ, vous avez besoin d’un schéma de recherche mappé à une liste de propriétés. L’Assistant de connexion sélectionne automatiquement un schéma de recherche en fonction de l’ensemble des propriétés sources que vous choisissez. Vous pouvez modifier ce schéma en cochant les cases correspondant à chaque propriété et attribut de la page schéma de recherche.
+Pour tous les connecteurs à l’exception du connecteur de partage de fichiers, les types personnalisés doivent être définis manuellement. Pour activer les fonctionnalités de recherche pour chaque champ, vous avez besoin d’un schéma de recherche mappé à une liste de propriétés. L’Assistant de connexion sélectionne automatiquement un schéma de recherche en fonction de l’ensemble des propriétés sources que vous choisissez. Vous pouvez modifier ce schéma en activant les cases à cocher pour chaque propriété et attribut dans la page schéma de recherche.
 
 ![Le schéma d’un connecteur peut être personnalisé en ajoutant ou en supprimant des fonctions de requête, de recherche et de récupération.](media/manageschema.png)
 
 Ces restrictions et recommandations s’appliquent aux paramètres de schéma de recherche :
-* Pour les connecteurs qui indexent des types personnalisés, nous vous recommandons de **ne pas** marquer le champ qui contient l' **extrait**de contenu principal. Des problèmes de performances significatifs se produisent lorsque les résultats de la recherche sont affichés avec cet attribut de recherche. Le champ de contenu de **texte** d’un article de la base de connaissances ServiceNow en est un exemple.
+* Pour les connecteurs qui indexent des types personnalisés, nous vous recommandons de **ne pas** marquer le champ qui contient l' **extrait**de contenu principal. Des problèmes de performances significatifs se produisent lorsque les résultats de la recherche sont affichés avec cet attribut de recherche. Le champ de contenu de **texte** d’un article de la base de connaissances [ServiceNow](https://www.servicenow.com) en est un exemple.
 * Seules les propriétés marquées comme rendu récupérables dans les résultats de la recherche et peuvent être utilisées pour créer des types de résultats modernes (MRTs).
 * Seules les propriétés de chaîne peuvent être marquées comme pouvant faire l’objet d’une recherche.
 
@@ -97,14 +97,14 @@ Chaque connecteur dispose d’un ensemble optimal de planifications d’actualis
 ![Paramètres d’analyse incrémentielle et d’intervalle de l’analyse complète, avec incrémentielle à 15 minutes et analyse complète sur 1 semaine.](media/refreshschedule.png)
 
 ### <a name="review-connector-settings"></a>Vérifier les paramètres du connecteur
-Une fois que vous avez configuré votre connecteur, le [Centre d’administration Microsoft 365](https://admin.microsoft.com) vous amène sur une page où vous pouvez vérifier vos paramètres. Vous pouvez revenir au processus de configuration pour modifier un paramètre avant de confirmer la connexion. Pour plus d’informations, consultez [la rubrique Manage Your Connector](manage-connector.md).
+Une fois que vous avez configuré votre connecteur, le [Centre d’administration](https://admin.microsoft.com) vous amène sur une page où vous pouvez vérifier vos paramètres. Vous pouvez revenir au processus de configuration pour modifier un paramètre avant de confirmer la connexion. Pour plus d’informations, consultez [la rubrique Manage Your Connector](manage-connector.md).
 
 ## <a name="next-steps-customize-the-search-results-page"></a>Étapes suivantes : personnaliser la page de résultats de recherche
-Avec l’interface utilisateur de Microsoft Search (IU), vos utilisateurs finals peuvent rechercher du contenu à partir de vos applications de productivité Microsoft 365 et de l’écosystème Microsoft plus large. Un secteur vertical de recherche fait référence aux onglets qui apparaissent lorsqu’un utilisateur affiche ses résultats de recherche dans SharePoint, Office.com et Microsoft Search dans Bing. Vous pouvez personnaliser les secteurs verticaux de recherche pour affiner les résultats de manière à ce qu’un certain type de résultats de recherche s’affiche. Ces secteurs verticaux apparaissent sous forme d’onglet dans la partie supérieure de la page des résultats de la recherche. Un type de résultat moderne (MRT) est l’interface utilisateur qui désigne le mode de présentation des résultats.
+Avec l’interface utilisateur de Microsoft Search (IU), vos utilisateurs finals peuvent rechercher du contenu à partir de vos applications de productivité [microsoft 365](https://www.microsoft.com/microsoft-365) et de l’écosystème Microsoft plus large. Un secteur vertical de recherche fait référence aux onglets qui apparaissent lorsqu’un utilisateur affiche ses résultats de recherche dans [SharePoint](http://sharepoint.com/), [Microsoft Office](https://Office.com)et Microsoft Search dans [Bing](https://Bing.com). Vous pouvez personnaliser les secteurs verticaux de recherche pour affiner les résultats, de sorte que seul un certain type de résultats de recherche s’affiche. Ces secteurs verticaux apparaissent sous forme d’onglet dans la partie supérieure de la page des résultats de la recherche. Un type de résultat moderne (MRT) est l’interface utilisateur qui désigne le mode de présentation des résultats.
 
 Vous devez créer vos propres types de résultats verticaux et de résultats, afin que les utilisateurs finaux puissent afficher les résultats de la recherche à partir de nouvelles connexions. Sans cette étape, les données de votre connexion ne s’afficheront pas sur la page des résultats de la recherche.
 
 Pour en savoir plus sur la création de vos secteurs verticaux et MRTs, voir Personnalisation de la [page de résultats de recherche](customize-search-page.md).
 
 ## <a name="how-do-i-know-this-worked"></a>Comment savoir si cela a fonctionné ?
-Accédez à la liste de vos connexions publiées sous l’onglet **connecteurs** dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com). Pour savoir comment effectuer des mises à jour et des suppressions, consultez [la rubrique Manage Your Connector](manage-connector.md).
+Accédez à la liste de vos connexions publiées sous l’onglet **connecteurs** dans le [Centre d’administration](https://admin.microsoft.com). Pour savoir comment effectuer des mises à jour et des suppressions, consultez [la rubrique Manage Your Connector](manage-connector.md).

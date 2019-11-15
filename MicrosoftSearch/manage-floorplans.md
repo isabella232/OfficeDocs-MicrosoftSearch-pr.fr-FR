@@ -3,7 +3,6 @@ title: Gérer les plans d’étage
 ms.author: rasrivas
 author: rasrivas
 manager: tonytha
-ms.date: 11/01/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: La fonctionnalité plans d’étage de Microsoft Search aide les utilisateurs à trouver des personnes, des bureaux et d’autres équipements dans un immeuble.
-ms.openlocfilehash: 68912a8f440443c14cbc27019c7b30dc2d7a34c6
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 9871cda3790f210dc0c406d1d29abe2c571c1085
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949742"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626791"
 ---
 # <a name="manage-floor-plans"></a>Gérer les plans d’étage
 
@@ -90,12 +89,12 @@ Pour être mis en correspondance avec les plans d’étage, tous les emplacement
 
 ## <a name="troubleshoot-errors"></a>Résoudre les erreurs
 
-Vous ne pouvez pas passer à l’étape suivante de définition du plancher, de l’aile et des informations de salle jusqu’à ce que toutes les erreurs soient résolues. Le tableau suivant présente les messages d’erreur de chargement de fichier et les actions permettant de résoudre les problèmes.
+Vous ne pouvez pas passer à l’étape suivante de définition du plancher, de l’aile et des informations de salle jusqu’à ce que toutes les erreurs soient résolues. Le tableau suivant répertorie les messages d’erreur de téléchargement de fichiers et les actions à suivre pour résoudre les problèmes.
 
 | Message d’erreur   | Type    | Action       |
 |:----------------| :--------- | :-------------- |
 | Impossible de lire CC_1. dwg. Rechargez ou supprimez le plan d’étage. | Error |  Essayez de recharger le fichier. Si cela ne fonctionne pas, supprimez le fichier, puis réessayez. |
 | Il existe deux fichiers nommés CC_1. dwg. Supprimez l’un d’entre eux ou rechargez-le à l’aide d’un autre nom.| Error | Si le nom de fichier est incorrect, rendez le nom de fichier unique en ajoutant des informations d’étage ou d’aile, puis téléchargez de nouveau le fichier. <br><br>Si vous avez accidentellement ajouté le même fichier deux fois, supprimez-le. |
 | Aucune donnée n’a été trouvée. | Error | Vérifiez que votre fichier est correct, puis téléchargez-le à nouveau, ou supprimez-le. |
-| Des références externes sont manquantes dans ce fichier. Téléchargez le fichier « CC_1_furniture. DWG » ou supprimez-le. | Avertissement | Télécharger des fichiers de référence externes ou supprimer.|
+| Des références externes sont manquantes dans ce fichier. Téléchargez « CC_1_furniture. DWG » ou supprimez ce fichier. | Avertissement | Télécharger des fichiers de référence externes ou supprimer.|
 | Impossible de lire les numéros de pièces ou les balises dans le fichier DWG. Veuillez supprimer ce fichier. | Avertissement | Vérifiez que les données sont incluses dans votre fichier DWG, puis supprimez le fichier et réessayez. |

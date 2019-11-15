@@ -1,22 +1,23 @@
 ---
 title: Galerie de connecteurs
-description: Répertorie tous les connecteurs Microsoft Graph pour Microsoft Search
-services: microsoft-search
+ms.author: mounika.narayanan
 author: monaray
-manager: samanro
-layout: LandingPage
-ms.assetid: ''
-ms.service: mssearch
-ms.tgt_pltfrm: na
-ms.devlang: na
+manager: shohara
+ms.audience: Admin
 ms.topic: landing-page
-ms.author: samanro
-ms.openlocfilehash: 87fc858f702940afd5a943d05287aab15fd33d1e
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.service: mssearch
+localization_priority: Normal
+search.appverid:
+- BFB160
+- MET150
+- MOE150
+description: Répertorie tous les connecteurs Microsoft Graph pour Microsoft Search
+ms.openlocfilehash: 6ae3ef26fc80997c9698b3fc5bd47cfceef6a32a
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949745"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626551"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Galerie de connecteurs Microsoft Graph
 
@@ -55,7 +56,7 @@ ms.locfileid: "37949745"
             <div class="cardPadding">
                 <div class="card" style="overflow: hidden; height: 235px;">
                     <div class="cardText">
-                        <h3>Sites Web d’entreprise</h3>
+                        <h3>Sites web d’entreprise</h3>
                         <p>par <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'" style="height: 100px; overflow: hidden;">Avec ce connecteur Microsoft Graph, les utilisateurs de votre organisation peuvent effectuer des recherches dans des pages de n’importe quel site Web d’entreprise non SharePoint.</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">

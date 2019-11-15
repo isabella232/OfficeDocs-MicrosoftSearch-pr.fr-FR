@@ -3,7 +3,6 @@ title: Gérer les Q&R
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: Recherchez et actualisez des réponses individuelles, ou servez-vous des outils de Recherche Microsoft disponibles pour les modifier tous à la fois
-ms.openlocfilehash: 8620842e64a40eb32467c42a289bdec3b67d303b
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
-ms.translationtype: HT
+ms.openlocfilehash: 903aab52e8d51e45588a390b5ccdccbaae2cf04a
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591520"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626773"
 ---
 # <a name="manage-qas"></a>Gérer les Q&R
 
@@ -76,7 +75,7 @@ Remarques importantes concernant le fichier modèle :
 - Si un signet existant comporte déjà le même titre ou la même URL, il est mis à jour avec les informations contenues dans le fichier d’importation.
 - Certains champs du fichier modèle ne sont pas obligatoires, et les champs obligatoires varient en fonction de l’état du signet.
 - En fonction du champ État, les signets sont enregistrés en tant que signets brouillons, suggérés ou programmés, ou sont automatiquement publiés.
-- Si votre organisation est dotée de plusieurs locataires, vous pouvez exporter vos signets à partir d’un locataire et les importer dans un autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne *ID*.
+- Pour les partenaires qui gèrent plusieurs organisations, vous pouvez exporter vos signets d’une organisation et les importer dans un autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne *ID*.
 
 **Remarque :** vous ne pouvez pas importer de Q&R si le fichier modèle comporte des erreurs. Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement mis en forme et qu’il contient toutes les informations requises. 
 
