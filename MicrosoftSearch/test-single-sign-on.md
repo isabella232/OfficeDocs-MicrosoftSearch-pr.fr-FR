@@ -3,45 +3,43 @@ title: Test de l’authentification unique
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 09/11/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: a220c1bf-7cee-448a-90a3-310284d03e81
-ROBOTS: NOINDEX
 description: Réduisez le nombre d’invites de connexion à la recherche Microsoft ou à Office 365 pour les utilisateurs de Windows 10.
-ms.openlocfilehash: 5dbceb070a469d1a8b3808a07a0972978a909f8a
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
-ms.translationtype: HT
+ms.openlocfilehash: 9fa7e067a5d72b7044981491f8526e6de727cfae
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639372"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626890"
 ---
-# <a name="test-single-sign-on"></a><span data-ttu-id="e3a5a-103">Tester l’authentification unique</span><span class="sxs-lookup"><span data-stu-id="e3a5a-103">Test single sign-on</span></span>
+# <a name="test-single-sign-on"></a><span data-ttu-id="0d062-103">Tester l’authentification unique</span><span class="sxs-lookup"><span data-stu-id="0d062-103">Test single sign-on</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="e3a5a-104">Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing.</span><span class="sxs-lookup"><span data-stu-id="e3a5a-104">This article applies to the Microsoft Search in Bing admin portal.</span></span> <span data-ttu-id="e3a5a-105">Nous déplaçons le portail vers le Centre d’administration Microsoft 365. Nous supprimerons ensuite la fonctionnalité Recherche Microsoft du portail Bing.</span><span class="sxs-lookup"><span data-stu-id="e3a5a-105">We’re moving the portal to the Microsoft 365 admin center, and then the Microsoft Search in Bing portal will be removed.</span></span> <span data-ttu-id="e3a5a-106">Pour commencer, nous vous suggérons d’utiliser le Centre d’administration Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="e3a5a-106">We recommend that you use the Microsoft 365 admin center to get started.</span></span> <span data-ttu-id="e3a5a-107">[Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).</span><span class="sxs-lookup"><span data-stu-id="e3a5a-107">[Overview of Microsoft Search](overview-microsoft-search.md)</span></span>
+> <span data-ttu-id="0d062-104">Cet article s’applique à la fonctionnalité Recherche Microsoft dans le portail d’administration Bing.</span><span class="sxs-lookup"><span data-stu-id="0d062-104">This article applies to the Microsoft Search in Bing admin portal.</span></span> <span data-ttu-id="0d062-105">Nous déplaçons le portail vers le Centre d’administration Microsoft 365. Nous supprimerons ensuite la fonctionnalité Recherche Microsoft du portail Bing.</span><span class="sxs-lookup"><span data-stu-id="0d062-105">We’re moving the portal to the Microsoft 365 admin center, and then the Microsoft Search in Bing portal will be removed.</span></span> <span data-ttu-id="0d062-106">Pour commencer, nous vous suggérons d’utiliser le Centre d’administration Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="0d062-106">We recommend that you use the Microsoft 365 admin center to get started.</span></span> <span data-ttu-id="0d062-107">[Vue d’ensemble de la fonctionnalité Recherche Microsoft](overview-microsoft-search.md).</span><span class="sxs-lookup"><span data-stu-id="0d062-107">[Overview of Microsoft Search](overview-microsoft-search.md).</span></span>
     
-<span data-ttu-id="e3a5a-p102">Grâce à l’authentification unique, vous pouvez réduire le nombre d’invites de connexion pour les utilisateurs. Vous pouvez tester cette fonctionnalité avec un petit groupe d’utilisateurs afin d’identifier les problèmes de configuration bloquants.</span><span class="sxs-lookup"><span data-stu-id="e3a5a-p102">Single sign-on reduces the number of times users are prompted to sign in. Testing single sign-on with a small group of users will help identify any blocking configuration issues.</span></span> 
+<span data-ttu-id="0d062-p102">Grâce à l’authentification unique, vous pouvez réduire le nombre d’invites de connexion pour les utilisateurs. Vous pouvez tester cette fonctionnalité avec un petit groupe d’utilisateurs afin d’identifier les problèmes de configuration bloquants.</span><span class="sxs-lookup"><span data-stu-id="0d062-p102">Single sign-on reduces the number of times users are prompted to sign in. Testing single sign-on with a small group of users will help identify any blocking configuration issues.</span></span> 
   
-<span data-ttu-id="e3a5a-110">Pour les utilisateurs de Chrome sur Windows 10, l’authentification unique fonctionnera uniquement si l’extension de connexion Windows 10 et AAD pour Chrome est installée.</span><span class="sxs-lookup"><span data-stu-id="e3a5a-110">For Chrome users on Windows 10, single sign-on will only work if the Windows 10 and AAD sign-in extension for Chrome is installed.</span></span> 
+<span data-ttu-id="0d062-110">Pour les utilisateurs de Chrome sur Windows 10, l’authentification unique fonctionnera uniquement si l’extension de connexion Windows 10 et AAD pour Chrome est installée.</span><span class="sxs-lookup"><span data-stu-id="0d062-110">For Chrome users on Windows 10, single sign-on will only work if the Windows 10 and AAD sign-in extension for Chrome is installed.</span></span> 
   
-## <a name="download-the-windows-10-and-aad-sign-in-extension-for-chrome"></a><span data-ttu-id="e3a5a-111">Téléchargez l’extension de connexion Windows 10 et AAD pour Chrome.</span><span class="sxs-lookup"><span data-stu-id="e3a5a-111">Download the Windows 10 and AAD sign-in extension for Chrome</span></span>
+## <a name="download-the-windows-10-and-aad-sign-in-extension-for-chrome"></a><span data-ttu-id="0d062-111">Téléchargez l’extension de connexion Windows 10 et AAD pour Chrome.</span><span class="sxs-lookup"><span data-stu-id="0d062-111">Download the Windows 10 and AAD sign-in extension for Chrome</span></span>
 
-<span data-ttu-id="e3a5a-112">Nous vous recommandons de créer une stratégie de groupe pour installer automatiquement cette extension.</span><span class="sxs-lookup"><span data-stu-id="e3a5a-112">We recommend that you create a group policy to automatically install this extension.</span></span>
+<span data-ttu-id="0d062-112">Nous vous recommandons de créer une stratégie de groupe pour installer automatiquement cette extension.</span><span class="sxs-lookup"><span data-stu-id="0d062-112">We recommend that you create a group policy to automatically install this extension.</span></span>
   
-1. <span data-ttu-id="e3a5a-113">Accédez au portail d’administration de la recherche Microsoft.</span><span class="sxs-lookup"><span data-stu-id="e3a5a-113">Go to the Microsoft Search Admin portal</span></span>
+1. <span data-ttu-id="0d062-113">Accédez au portail d’administration de la recherche Microsoft.</span><span class="sxs-lookup"><span data-stu-id="0d062-113">Go to the Microsoft Search Admin portal</span></span>
     
-2. <span data-ttu-id="e3a5a-114">Dans le volet de navigation, cliquez sur **Outils**.</span><span class="sxs-lookup"><span data-stu-id="e3a5a-114">In the navigation pane, click **Tools**</span></span>
+2. <span data-ttu-id="0d062-114">Dans le volet de navigation, cliquez sur **Outils**.</span><span class="sxs-lookup"><span data-stu-id="0d062-114">In the navigation pane, click **Tools**</span></span>
     
-3. <span data-ttu-id="e3a5a-115">Dans la liste Outils, téléchargez l’**extension de connexion Windows 10 et AAD pour Chrome**.</span><span class="sxs-lookup"><span data-stu-id="e3a5a-115">In the Tools list, download the **Windows 10 and AAD sign-in extension for Chrome**</span></span>
+3. <span data-ttu-id="0d062-115">Dans la liste Outils, téléchargez l’**extension de connexion Windows 10 et AAD pour Chrome**.</span><span class="sxs-lookup"><span data-stu-id="0d062-115">In the Tools list, download the **Windows 10 and AAD sign-in extension for Chrome**</span></span>
     
-4. <span data-ttu-id="e3a5a-116">Partagez l’extension avec les utilisateurs de Chrome sur Windows 10.</span><span class="sxs-lookup"><span data-stu-id="e3a5a-116">Share the extension with Chrome users on Windows 10</span></span>
+4. <span data-ttu-id="0d062-116">Partagez l’extension avec les utilisateurs de Chrome sur Windows 10.</span><span class="sxs-lookup"><span data-stu-id="0d062-116">Share the extension with Chrome users on Windows 10</span></span>
 
   
 
