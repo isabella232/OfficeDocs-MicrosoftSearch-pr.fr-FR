@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Trouvez les réponses à certaines des questions les plus fréquentes concernant Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 3ff2aabae4e09170b6b0380d520bfc620d5de5d8
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: edfb8346263d60184d8655afa24118ed4b3e3bca
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626254"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699792"
 ---
 # <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
@@ -28,26 +28,26 @@ Voici la liste des questions fréquemment posées.
 
 ## <a name="is-advanced-query-understanding-supported"></a>La compréhension de recherche avancée est-elle prise en charge ?
 
-Oui, Microsoft Search (recherche Microsoft) analyse objectif requête à partir de phrases plus grande. Cette fonctionnalité utilise AI pour en savoir plus sur les phrases courantes superflues que les utilisateurs ajoutent à leurs requêtes qui n’ont pas d’impact sur leur objectif de recherche. Par exemple, lorsqu’un utilisateur recherche « en savoir plus sur comment modifier mon mot de passe svp» nous extrayons les mots moins importants à partir de la requête, puis déclenchons ceux pertinents par exemple, « modifier votre mot de passe ».
+Oui, Microsoft Search analyse l’intention des requêtes à partir d’expressions plus volumineuses. Cette fonctionnalité utilise l’AI pour découvrir les expressions superflues courantes que les utilisateurs ajoutent à leurs requêtes qui n’ont pas d’impact sur leur intention de recherche. Par exemple, lorsqu’un utilisateur recherche de *plus amples informations sur la modification de mon mot de passe*, Nous extrayons les mots moins importants de la requête et du déclencheur en fonction de ceux-ci, comme *modifier le mot de passe*.
   
-Cette fonctionnalité ne remplace pas l’ensemble de mots clés dans le Centre d’administration.
+Cette fonctionnalité ne remplace pas les mots clés définis dans le [Centre d’administration](https://admin.microsoft.com)365 de Microsoft.
   
 ## <a name="can-you-search-for-files-on-premises"></a>Pouvez-vous rechercher des fichiers en local ?
 
-Oui. Vous pouvez rechercher des fichiers SharePoint locaux si vous disposez d’un déploiement SharePoint hybride.
+Oui. Vous pouvez effectuer des recherches dans des fichiers [SharePoint](http://sharepoint.com/) locaux si vous disposez d’un déploiement hybride de SharePoint.
   
 ## <a name="how-do-i-make-bing-the-default-search-engine-for-people-in-my-org"></a>Comment configurer Bing en tant que moteur de recherche par défaut pour les personnes au sein de mon organisation ?
 
-Voici les instructions permettant de définir le moteur de recherche, la page d’accueil et le navigateur par défaut afin d’offrir à vos utilisateurs une expérience optimale avec la Recherche Microsoft dans Bing :
+Voici les instructions permettant de définir le moteur de recherche par défaut, la page d’accueil par défaut et le navigateur par défaut pour permettre à vos utilisateurs de tirer le meilleur parti de Microsoft Search dans [Bing](https://Bing.com):
 
-- [Définir Microsoft Edge en tant que navigateur par défaut](set-default-browser.md)
+- [Définir Microsoft Edge comme navigateur par défaut](set-default-browser.md)
 - [Définir Bing en tant que moteur de recherche par défaut](set-default-search-engine.md)
 - [Définir Bing.com en tant que page d’accueil de votre entreprise](set-default-homepage.md)
 
   
 ## <a name="how-are-my-search-results-protected"></a>Quel est le niveau de protection de mes résultats de recherche ?
 
-Nous demandons l’authentification Azure Active Directory pour accéder aux résultats à partir de Trusted Cloud. Seul est présenté le contenu auquel les utilisateurs authentifiés ont accès. Les requêtes de recherche ne sont pas identifiées et les journaux sont séparés du trafic de recherche public Bing. Ce niveau de protection est inédit dans le secteur.
+Nous avons besoin de l’authentification [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) pour accéder aux résultats à partir du Cloud approuvé. Seul est présenté le contenu auquel les utilisateurs authentifiés ont accès. Les requêtes de recherche sont déidentifiées et les journaux sont séparés du trafic de recherche [Bing](https://Bing.com) public. Ce niveau de protection est inédit dans le secteur.
 
 ## <a name="can-i-search-across-federated-organizations"></a>Puis-je effectuer des recherches dans les organisations fédérées ?
 
@@ -59,5 +59,5 @@ Les détails sont accessibles dans l’[infrastructure de conformité pour les n
 
 ## <a name="can-users-earn-microsoft-rewards-points-with-their-work-or-school-account"></a>Les utilisateurs peuvent-ils gagner des points Microsoft Rewards avec leur compte professionnel ou scolaire ?
 
-La Recherche Microsoft nécessite que les utilisateurs de l’entreprise se connectent avec un compte professionnel ou scolaire, mais les utilisateurs ne peuvent pas participer ou se connecter au programme Microsoft Rewards avec ces comptes. Toutefois, il existe une instance où un utilisateur de l’entreprise peut voir un gain de points Rewards. Cela peut se produire lorsqu’un utilisateur de la Recherche Microsoft dispose d’un compte Rewards qui a été créé avec un <a href="https://www.microsoft.com/en-us/welcome?rtc=1">compte Microsoft</a>. (L’adresse e-mail associée à un compte Microsoft peut être un compte Outlook.com, Hotmail.com, Gmail, Yahoo ou un compte provenant d’autres fournisseurs.) Si les utilisateurs se connectent avec leur compte professionnel et leur compte Microsoft dans la même session de navigateur, ils peuvent accumuler des points à leur compte Rewards. Les utilisateurs peuvent arrêter d’accumuler des points lorsqu’ils effectuent une recherche avec la Recherche Microsoft en effaçant leur cookies. 
+La Recherche Microsoft nécessite que les utilisateurs de l’entreprise se connectent avec un compte professionnel ou scolaire, mais les utilisateurs ne peuvent pas participer ou se connecter au programme Microsoft Rewards avec ces comptes. Toutefois, il existe une instance où un utilisateur de l’entreprise peut voir un gain de points Rewards. Cela peut se produire lorsqu’un utilisateur de la Recherche Microsoft dispose d’un compte Rewards qui a été créé avec un <a href="https://www.microsoft.com/welcome?rtc=1">compte Microsoft</a>. (L’adresse e-mail associée à un compte Microsoft peut être un compte Outlook.com, Hotmail.com, Gmail, Yahoo ou un compte provenant d’autres fournisseurs.) Si les utilisateurs se connectent avec leur compte professionnel et leur compte Microsoft dans la même session de navigateur, ils peuvent accumuler des points à leur compte Rewards. Les utilisateurs peuvent arrêter d’accumuler des points lorsqu’ils effectuent une recherche avec la Recherche Microsoft en effaçant leur cookies. 
 

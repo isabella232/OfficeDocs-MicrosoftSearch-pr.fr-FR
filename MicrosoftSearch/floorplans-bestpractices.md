@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Meilleures pratiques pour les plans d’étage de Microsoft Search
-ms.openlocfilehash: 62c7122dd9fddfe41edb6841187e9974f222e62b
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: ddad671592ab3cf05400faa1261ee7258f3868bb
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626863"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699851"
 ---
-# <a name="best-practices"></a>Meilleures pratiques
+# <a name="best-practices-for-microsoft-search-floor-plans"></a>Meilleures pratiques pour les plans d’étage de Microsoft Search
 
 Pour implémenter correctement les plans d’étage de Microsoft Search, vous devez coordonner trois types de données :
 
@@ -46,7 +46,7 @@ Pour créer des cartes dans Microsoft Search, vous devez télécharger des plans
 
 Les cartes de plan d’étage affichent quatre éléments :
 
-1. **Numéros de chambre**: dans l’exemple suivant, les numéros de pièce sont définis comme **B1 1001** et **B1 1002**. **B1** est le code de bâtiment, et 1001 contient le numéro de plancher **1** et le numéro d’Office **001**.
+1. **Numéros de chambre**: dans l’exemple suivant, les numéros de pièce sont définis comme **B1 1001** et **B1 1002**. **B1** est le code de bâtiment, et **1001** contient le numéro de plancher **1** et le numéro d’Office **001**.
 1. **Dispositions de salle**: pour vous aider à clarifier les détails lorsque plusieurs utilisateurs partagent un bureau, vous pouvez définir des mises en page comme les chaises et le bureau.
 1. **Types de salle**: certains exemples incluent Office, corridor, zone ouverte et toilettes.
 1. **Informations sur les biens**: si les utilisateurs se trouvent dans un espace ouvert, vous pouvez indiquer le bureau auquel ils sont assis. Dans cet exemple, les bureaux sont notés par **TB1** et **TB2**.
@@ -57,29 +57,29 @@ Dans ce diagramme, les numéros de salle sont les éléments les plus importants
 
 ![Onglet vue d’ensemble de la carte de résultats de recherche de personnes affichant les détails de l’utilisateur, y compris l’emplacement du Bureau](media/floorplans-peoplecard.png)
 
-Ces informations sont stockées dans Azure AD dans la propriété **PhysicalDeliveryOfficeName** . Dans le centre d' [administration](https://admin.microsoft.com)365 de Microsoft, il s’agit de la propriété **Office** qui peut être ajoutée **aux utilisateurs actifs**.
+Ces informations sont stockées dans [Azure ad](https://azure.microsoft.com/services/active-directory/) dans la propriété **PhysicalDeliveryOfficeName** . Dans le centre d' [administration](https://admin.microsoft.com)365 de Microsoft, il s’agit de la propriété **Office** qui peut être ajoutée **aux utilisateurs actifs**.
 
 ### <a name="dwg-files"></a>Fichiers DWG
-Microsoft Search nécessite des fichiers de plan d’étage en DWG, qui est un format de dessin AutoCAD. Les fichiers doivent contenir des données de **disposition** et d' **étiquette** . Les **numéros de salle** représentent les étiquettes les plus importantes pour les plans d’étage.
+Microsoft Search nécessite des fichiers de plan d’étage en DWG, qui est un format de dessin [AutoCAD](https://www.autodesk.com/autocad) . Les fichiers doivent contenir des données de **disposition** et d' **étiquette** . Les **numéros de salle** représentent les étiquettes les plus importantes pour les plans d’étage.
 
-Nous vous recommandons de créer votre système de numérotation Office avec la méthode de correspondance exacte indiquée dans le tableau suivant. Mais vous n’êtes pas limité à cette étiquette. Par exemple, si l’emplacement du Bureau de l’utilisateur dans Azure AD est **B1 1001**, vous pouvez étiqueter le numéro de la salle dans le fichier DWG avec l’une des options suivantes.
+Nous vous recommandons de créer votre système de numérotation Office avec la méthode de correspondance exacte indiquée dans le tableau suivant. Mais vous n’êtes pas limité à cette étiquette. Par exemple, si l’emplacement du Bureau de l’utilisateur dans [Azure ad](https://azure.microsoft.com/services/active-directory/) est **B1 1001**, vous pouvez étiqueter le numéro de la salle dans le fichier DWG avec l’une des options suivantes.
 
 |Match  |Disposition  |
 |---------|---------|
-|Correspondance exacte avec l’emplacement du Bureau (recommandé) <br> **B1 1001** <br> Code de bâtiment : B1<br>Plancher : 1 <br>Numéro de la salle : 001    |    ![Plan d’étage Office unique avec le numéro de bureau « B1 1001 ».](media/floorplans-layoutexactmatch.png)     |
-|Faire correspondre le plancher et le numéro de la salle <br> **1001**<br>Plancher : 1 <br>Numéro de la salle : 001    |   ![Plan d’étage Office unique avec le numéro de bureau « 1001 ».](media/floorplans-layoutfloorroom.png)   |
+|Correspondance exacte avec l’emplacement du Bureau (recommandé) <br> **B1 1001** <br> Code de bâtiment : B1<br>Plancher : 1 <br>Numéro de la salle : 001    |    ![Plan d’étage Office unique avec le numéro de bureau « B1 1001 »](media/floorplans-layoutexactmatch.png)     |
+|Faire correspondre le plancher et le numéro de la salle <br> **1001**<br>Plancher : 1 <br>Numéro de la salle : 001    |   ![Plan d’étage Office unique avec le numéro de bureau « 1001 »](media/floorplans-layoutfloorroom.png)   |
 |Respecter uniquement le numéro de la salle <br> **0,1**<br>Numéro de la salle : 1        |    ![Carte d’étage Office unique avec le numéro de bureau « 1 »](media/floorplans-layoutroomonly.png)     |
 
 ## <a name="user-account-office-location"></a>Emplacement du Bureau du compte d’utilisateur
-Pour mapper l’emplacement d’un employé, les numéros de pièce dans les fichiers DWG sont mappés sur les emplacements de bureau dans le compte de l’utilisateur dans Azure AD. La propriété de l' **emplacement** du Bureau doit correspondre aux informations relatives à l’emplacement du bureau dans le fichier DWG.
+Pour mapper l’emplacement d’un employé, les numéros de pièce dans les fichiers DWG sont mappés sur les emplacements de bureau dans le compte de l’utilisateur dans [Azure ad](https://azure.microsoft.com/services/active-directory/). La propriété de l' **emplacement** du Bureau doit correspondre aux informations relatives à l’emplacement du bureau dans le fichier DWG.
 
 Le tableau suivant décrit les meilleures pratiques pour le mappage des données de localisation :
 
 |Meilleures pratiques  |Explication |
 |---------|---------|
 |Incluez le code de bâtiment, le plancher et le numéro de la salle.     |   Ces données vous permettent de faire des correspondances exactes.     |
-|Incluez un séparateur après la création des codes et des étages.     |  Séparez les codes de bâtiment et les numéros de salle par un séparateur ou un espace, comme dans les exemples suivants :<br> B1 1001<br> B1/1001 <br> B1-1001   |
-|Le numéro de la salle suit toujours le code de construction, l’aile et les informations de plancher.     |  Si le numéro de la salle est **1001**, définissez l’emplacement du Bureau sur **B1 1001**, **B1/1001**ou **B1-1001**. <br> Si le numéro de la pièce est **F1-001**, définissez l’emplacement du Bureau sur **B1 F1-001** ou **B1/F1-001**. <br> Si le numéro de la salle est **1**, définissez l’emplacement Azure ad sur **B1 1001**, **B1/1001**ou **B1-F1-001**.       |
+|Incluez un séparateur après la création des codes et des étages.     |  Séparez les codes de bâtiment et les numéros de salle par un séparateur ou un espace, comme dans les exemples suivants :<br> B1 1001<br> B1/1001 <br> B1-1001.   |
+|Le numéro de la salle suit toujours le code de construction, l’aile et les informations de plancher.     |  Si le numéro de la salle est **1001**, définissez l’emplacement du Bureau sur **B1 1001**, **B1/1001**ou **B1-1001**. <br> Si le numéro de la pièce est **F1-001**, définissez l’emplacement du Bureau sur **B1 F1-001** ou **B1/F1-001**. <br> Si le numéro de la salle est **1**, définissez l’emplacement [Azure AD](https://azure.microsoft.com/services/active-directory/) sur **B1 1001**, **B1/1001**ou **B1-F1-001**.       |
 |
 
 ## <a name="next-steps"></a>Étapes suivantes

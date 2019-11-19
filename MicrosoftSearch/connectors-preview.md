@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez l’aperçu des connecteurs Microsoft Graph pour Microsoft Search.
-ms.openlocfilehash: 3ac27bd1e859f9ffc825e5e77d96f0de56b13647
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 6080674e1a6b789cbe5b3492f93f5f932b536e53
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626263"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699367"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Aperçu des connecteurs Microsoft Graph
 
@@ -38,4 +38,4 @@ La version d’évaluation présente les limitations suivantes :
 * Il n’existe pas de prise en charge des mises à jour de schéma. Une fois que vous avez créé une configuration de connexion, il n’existe aucun moyen de mettre à jour le schéma. Vous pouvez supprimer et recréer la connexion uniquement.
 * Le contenu indexé apparaît uniquement dans la page des résultats de recherche sous un secteur vertical personnalisé. Cette restriction s’applique au contenu avec des types personnalisés.
 * Avant la mise à disposition générale, toute connexion que vous configurez pendant la période d’aperçu doit être supprimée et recréée. Ces connexions ne fonctionneront plus si elles sont incompatibles avec les modifications apportées à l’amélioration du produit.
-* Limite de connexions. Chaque client peut créer jusqu’à 10 connexions.
+* Il existe une limite de connexions. Chaque client peut créer jusqu’à 10 connexions.

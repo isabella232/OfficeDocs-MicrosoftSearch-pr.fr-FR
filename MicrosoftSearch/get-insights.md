@@ -13,31 +13,31 @@ search.appverid:
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
 description: Analyser les mesures et gérer le contenu à partir du tableau de bord Insights dans Microsoft Search
-ms.openlocfilehash: d75622ad8c414f225615ea14082c8197e2947dd4
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: bbfc8b230690eeef1f7a23d70d7af29b88924e7d
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626872"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699861"
 ---
 # <a name="microsoft-search-insights-dashboard-reports"></a>Rapports de tableau de bord Insights Microsoft Search
 
-Vous pouvez utiliser le tableau de bord Insights de Microsoft Search pour gérer les données Bing de vos réponses publiées. Il s’agit juste d’une des étapes nécessaires pour [faciliter la recherche de contenu](make-content-easy-to-find.md) pour vos utilisateurs.
+Vous pouvez utiliser le tableau de bord Insights de Microsoft Search pour gérer les données [Bing](https://Bing.com) de vos réponses publiées. Il s’agit juste d’une des étapes nécessaires pour [faciliter la recherche de contenu](make-content-easy-to-find.md) pour vos utilisateurs.
 
-Lorsque vous accédez à Microsoft Search pour la première fois dans le centre d’administration Microsoft 365, vous pouvez entrer dans le tableau de bord Insights.
+Lorsque vous accédez à Microsoft Search pour la première fois dans le [Centre d’administration](https://admin.microsoft.com)365 de Microsoft, vous devez l’entrer dans le tableau de bord Insights.
 
 ![Insights-Dashboard. png](media/Insights-dashboard.png)
 
-Voici les rapports disponibles dans le tableau de bord Insights.
+Les rapports suivants sont disponibles dans le tableau de bord Insights.
 
 > [!NOTE]
-> Les données des rapports représentent uniquement les données Bing.
+> Les données des rapports représentent uniquement les données [Bing](https://Bing.com) .
 
 ## <a name="top-queries"></a>requêtes les plus courantes ;
 
-Ce rapport fournit des détails sur les requêtes de recherche Bing les plus à 2000 que les utilisateurs exécutent. Pour qu’une requête apparaisse dans les **requêtes les plus fréquentes**, la requête doit obtenir au moins trois clics.
+Ce rapport fournit des détails sur les requêtes de recherche [Bing](https://Bing.com) les plus à 2000 que les utilisateurs exécutent. Pour qu’une requête apparaisse dans les **requêtes les plus fréquentes**, la requête doit obtenir au moins trois clics.
 
-![Rapport de requêtes les plus fréquentes avec les en-têtes de tableau : requête, nombre total de requêtes et cliquez sur taux.](media/Insights-topqueries.png)
+![Rapport de requêtes les plus fréquentes avec les en-têtes de tableau : requête, nombre total de requêtes et taux de clics.](media/Insights-topqueries.png)
 
 Un taux de clic faible signifie que les utilisateurs ne trouvent pas ce qu’ils cherchent.
 
@@ -47,7 +47,7 @@ Vous pouvez choisir différentes vues du rapport en filtrant sur le type de rép
 
 ## <a name="impression-distribution"></a>Distribution d’impression
 
-Ce rapport affiche la distribution de l’impression dans Bing dans le temps pour diverses réponses. Voici des exemples de signets, de personnes, de Q&A, de fichiers, d’emplacements, de sites de fichiers, de groupes et de conversations. 
+Ce rapport affiche la distribution de l’impression dans [Bing](https://Bing.com) dans le temps pour diverses réponses. Voici des exemples de signets, de personnes, de Q&A, de fichiers, d’emplacements, de sites de fichiers, de groupes et de conversations. 
 
 ![Rapport impressions avec 90 jours sélectionnés comme période.](media/Insights-impressions.png)
 

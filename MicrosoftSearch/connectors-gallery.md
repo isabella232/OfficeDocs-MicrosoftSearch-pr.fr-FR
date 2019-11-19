@@ -5,6 +5,7 @@ author: monaray
 manager: shohara
 ms.audience: Admin
 ms.topic: landing-page
+layout: LandingPage
 ms.service: mssearch
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Répertorie tous les connecteurs Microsoft Graph pour Microsoft Search
-ms.openlocfilehash: 6ae3ef26fc80997c9698b3fc5bd47cfceef6a32a
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: f8106c67c939d87e7ac038e665efd992a717dab7
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626551"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699502"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Galerie de connecteurs Microsoft Graph
 
