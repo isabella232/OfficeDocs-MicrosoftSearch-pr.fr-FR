@@ -12,28 +12,28 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble des connecteurs Microsoft Graph pour Microsoft Search
-ms.openlocfilehash: 8b46dc5150fa7f302f2d8abe98018465f2e4e1c3
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: f08393d5696466af72ed7b8f3e141c62adb61728
+ms.sourcegitcommit: 1255c2612aec290ae117bdc24c3b4dabd1e5ca11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626317"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39205857"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Vue d’ensemble des connecteurs Microsoft Graph
 
-Microsoft Search indexe toutes vos données Microsoft 365 de façon à ce qu’elles puissent être recherchées pour les utilisateurs. Avec les connecteurs Microsoft Graph, votre organisation peut indexer des données tierces pour apparaître dans les résultats de recherche de Microsoft. Les données tierces peuvent être hébergées sur site ou dans les nuages publics ou privés. Les connecteurs développent les types de sources de contenu pouvant faire l’objet d’une recherche dans vos applications de productivité Microsoft 365 et l’écosystème Microsoft plus large.
+Microsoft Search indexe toutes vos données [microsoft 365](https://www.microsoft.com/microsoft-365) de façon à ce qu’elles puissent être recherchées pour les utilisateurs. Avec les connecteurs Microsoft Graph, votre organisation peut indexer des données tierces pour apparaître dans les résultats de recherche de Microsoft. Les données tierces peuvent être hébergées sur site ou dans les nuages publics ou privés. Les connecteurs développent les types de sources de contenu pouvant faire l’objet d’une recherche dans vos applications de productivité Microsoft 365 et l’écosystème Microsoft plus large.
 
 > [!IMPORTANT]
-> **Clause d’exclusion de responsabilité**: les connecteurs Microsoft Graph et les API Microsoft Search (index and Search) sont actuellement en version préliminaire. Pour en savoir plus sur l’aperçu, consultez la rubrique [aperçu des connecteurs Microsoft Graph](connectors-preview.md). Pour participer à l’aperçu, vous devez d’abord envoyer le formulaire d’abonnement de l' [aperçu des connecteurs Microsoft Graph](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
+> **Clause d’exclusion de responsabilité**: les connecteurs Microsoft Graph et les API Microsoft Search (requête et index) sont actuellement en version préliminaire. Pour en savoir plus sur le programme d’aperçu, consultez la rubrique [aperçu des connecteurs Microsoft Graph](connectors-preview.md). Pour rejoindre le programme d’aperçu, envoyez le formulaire d’inscription de l' [aperçu des connecteurs Microsoft Graph](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
 
 ## <a name="architecture"></a>Architecture
 Le diagramme d’architecture suivant de la plateforme Microsoft Graph montre comment le contenu du connecteur passe par l’indexation de contenu aux résultats de l’utilisateur dans les clients [Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) . Cet article décrit chacun des blocs de construction clés du processus de flux de données des connecteurs Microsoft Graph.
 
-![](media/highlevel-connectors_FINAL.png)
+![Diagramme : les données locales et en nuage sont extraites par des connecteurs et indexées par l’API Microsoft Search, puis le service Microsoft Search fournit les résultats aux utilisateurs.](media/highlevel-connectors_FINAL.png)
 
 L’API instancie une connexion par source de données. L’API indexe et stocke les données. Les connexions établies interagissent avec Microsoft Search, afin que les utilisateurs puissent obtenir des résultats de recherche.
 
-Vous pouvez configurer tous les connecteurs créés par Microsoft dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com). Le centre d’administration simplifie la configuration de votre connecteur avec une interface utilisateur simple.
+Vous pouvez configurer tous les connecteurs créés par Microsoft dans le centre d' [administration](https://admin.microsoft.com)365 de Microsoft. Le centre d’administration simplifie la configuration de votre connecteur avec une interface utilisateur simple.
 
 Pour créer une **connexion** à une source de données, les administrateurs ont besoin d’un accès authentifié aux données et à l’intégralité du référentiel de contenu. Les données sont chargées pour l’indexation par le service connecteur Graph.
 
@@ -45,7 +45,7 @@ Pour afficher un aperçu des connecteurs de l’un de nos partenaires de l’éc
 Vous pouvez également [créer votre propre connecteur](https://docs.microsoft.com/graph/search-concept-overview).
 
 ### <a name="connectors-by-microsoft"></a>Connecteurs par Microsoft
-La version d’évaluation des connecteurs Microsoft Graph comprend 6 connecteurs créés par Microsoft. Vous pouvez les configurer dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com) et apprendre à [configurer votre connecteur créé par Microsoft](configure-connector.md).
+La version d’évaluation des connecteurs Microsoft Graph comprend 6 connecteurs créés par Microsoft. Vous pouvez les configurer dans le [Centre d’administration](https://admin.microsoft.com) et apprendre à [configurer votre connecteur créé par Microsoft](configure-connector.md).
 
 Les sections suivantes fournissent des descriptions succinctes de ces connecteurs créés par Microsoft. Vous pouvez obtenir plus d’informations dans les Articles liés à chaque connecteur.
 

@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez l’aperçu des connecteurs Microsoft Graph pour Microsoft Search.
-ms.openlocfilehash: 6080674e1a6b789cbe5b3492f93f5f932b536e53
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 054dc00bcb5cc0c110858fd329fbf2dbf16fb38b
+ms.sourcegitcommit: 1255c2612aec290ae117bdc24c3b4dabd1e5ca11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699367"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39205875"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Aperçu des connecteurs Microsoft Graph
 
-Les connecteurs Microsoft Graph, les API d’indexation et les API de recherche sont actuellement en version préliminaire. Pour accéder à la fonctionnalité connecteurs, vous devez demander à rejoindre le programme d’aperçu en envoyant le <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u" target="_blank">formulaire d’aperçu des connecteurs Microsoft Graph</a>. Il s’agit d’une préversion préliminaire et il n’existe aucune garantie de niveau de service. Nous encourageons les clients à essayer les fonctionnalités des connecteurs et à fournir des commentaires. Nous vous déconseillons d’utiliser des connecteurs à des fins de production pendant la période d’évaluation.
+Les connecteurs Microsoft Graph et les API Microsoft Search (requête et index) sont actuellement en état d’aperçu. Pour accéder à la fonctionnalité connecteurs, vous devez demander à rejoindre le programme d’aperçu en envoyant le <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u" target="_blank">formulaire d’aperçu des connecteurs Microsoft Graph</a>. Il s’agit d’une préversion préliminaire et il n’existe aucune garantie de niveau de service. Nous encourageons les clients à essayer les fonctionnalités des connecteurs et à fournir des commentaires. Nous vous déconseillons d’utiliser des connecteurs à des fins de production pendant la période d’évaluation.
 
 ## <a name="set-up-targeted-release"></a>Configurer la version ciblée
 Pour tester les connecteurs, vous devez disposer de l’option de **publication ciblée** définie pour tous les utilisateurs de votre organisation. La configuration requise de la version ciblée n’est pas l’un des environnements d’aperçu suivants que vous choisissez.
