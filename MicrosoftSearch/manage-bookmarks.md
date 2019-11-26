@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Créer et mettre à jour des signets et des méthodes pour modifier en bloc les résultats de signet pour Microsoft Search
-ms.openlocfilehash: 94e24db6643307a83ffae21e03b2ea354e209f53
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: a50be90e9590086762df7c6b0fd2e0ad3349ec5d
+ms.sourcegitcommit: 897b92bae1b905d7c47566e31c4c07cd16d44b17
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626809"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254738"
 ---
 # <a name="manage-bookmarks"></a>Gérer des signets
 
@@ -70,10 +70,17 @@ Remarques importantes concernant le fichier modèle :
 Une erreur se produit lorsqu’il manque des données obligatoires ou que celles-ci ne sont pas valides. Un fichier journal signalant les lignes et colonnes à corriger est alors généré. Apportez les modifications nécessaires et essayez à nouveau d’importer le fichier. Il est impossible d’importer ou d’enregistrer les signets tant que toutes les erreurs n’ont pas été résolues.
 
 Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement mis en forme et :
+
 - qu’il inclut la ligne d’en-tête ainsi que toutes les colonnes qui se trouvaient dans le modèle d’importation ;
 - que l’ordre des colonnes est le même que celui du modèle d’importation.
 - Toutes les colonnes comportent des valeurs, à l’exception des trois suivantes, qui peuvent être vides : *ID*, *Dernière modification* et *Dernière modification par*. 
 - La colonne *État* n’est pas vide, car il s’agit d’une information obligatoire
+
+Pour éviter les erreurs de duplication de signet à signet, suivez les meilleures pratiques suivantes :
+
+- N’utilisez pas d’URL en double pour différents signets. Si une URL est déjà affectée à un autre signet et que vous la rajoutez à partir d’un fichier d’importation, vous obtiendrez une erreur. Cela s’applique également aux URL en double pour d’autres types de réponses.
+- Utilisez la colonne ID de signet lors de la mise à jour de signets existants. Vous pouvez mettre à jour toute autre propriété d’un signet existant, telle que mot-clé ou description, mais vous devez vous assurer que l’ID de signet est dans la colonne appropriée du fichier d’importation. Si l’ID de signet est présent, le service ne le considère pas comme étant une nouvelle addition et traitera une erreur.
+
 
 ## <a name="powerapps"></a>PowerApps
 Aidez vos utilisateurs à accomplir certaines tâches, telles que la saisie de périodes de congés ou de frais, en ajoutant des applications PowerApp existantes à vos signets. 
