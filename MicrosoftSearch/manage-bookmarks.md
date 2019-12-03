@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Créer et mettre à jour des signets et des méthodes pour modifier en bloc les résultats de signet pour Microsoft Search
-ms.openlocfilehash: a50be90e9590086762df7c6b0fd2e0ad3349ec5d
-ms.sourcegitcommit: 897b92bae1b905d7c47566e31c4c07cd16d44b17
+ms.openlocfilehash: b65e61e4435e36fad5760f0a8d34bf444b51178b
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39254738"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663143"
 ---
 # <a name="manage-bookmarks"></a>Gérer des signets
 
@@ -77,10 +77,8 @@ Pour éviter les erreurs, assurez-vous que votre fichier d’importation est cor
 - La colonne *État* n’est pas vide, car il s’agit d’une information obligatoire
 
 Pour éviter les erreurs de duplication de signet à signet, suivez les meilleures pratiques suivantes :
-
 - N’utilisez pas d’URL en double pour différents signets. Si une URL est déjà affectée à un autre signet et que vous la rajoutez à partir d’un fichier d’importation, vous obtiendrez une erreur. Cela s’applique également aux URL en double pour d’autres types de réponses.
-- Utilisez la colonne ID de signet lors de la mise à jour de signets existants. Vous pouvez mettre à jour toute autre propriété d’un signet existant, telle que mot-clé ou description, mais vous devez vous assurer que l’ID de signet est dans la colonne appropriée du fichier d’importation. Si l’ID de signet est présent, le service ne le considère pas comme étant une nouvelle addition et traitera une erreur.
-
+- Utilisez la colonne *ID de signet* lors de la mise à jour de signets existants. Vous pouvez mettre à jour toute autre propriété d’un signet existant, telle que mot clé ou description, mais vous devez vous assurer que l' *ID de signet* se trouve dans la colonne appropriée du fichier d’importation. Si l' *ID de signet* est présent, le service ne le considère pas comme étant une nouvelle addition et n’est pas traité comme une erreur.
 
 ## <a name="powerapps"></a>PowerApps
 Aidez vos utilisateurs à accomplir certaines tâches, telles que la saisie de périodes de congés ou de frais, en ajoutant des applications PowerApp existantes à vos signets. 

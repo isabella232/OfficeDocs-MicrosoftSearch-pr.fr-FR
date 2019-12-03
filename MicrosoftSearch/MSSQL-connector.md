@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez Microsoft SQL Connector pour Microsoft Search.
-ms.openlocfilehash: a073a6d3f226e5f8b0ea297494a8889f1f50bab1
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: c31399e65bd4bfc154d10d2e6057fa23d11f030d
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626755"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663158"
 ---
 # <a name="microsoft-sql-server-connector"></a>Connecteur Microsoft SQL Server
 
@@ -48,6 +48,16 @@ Dans cette étape, vous configurez la requête SQL qui exécute une analyse comp
 L’exemple illustre la sélection de cinq colonnes de données qui contiennent les données pour la recherche : OrderId, OrderTitle, OrderDesc, CreatedDateTime et IsDeleted. Pour définir des autorisations d’affichage pour chaque ligne de données, vous pouvez éventuellement sélectionner les colonnes suivantes : AllowedUsers, AllowedGroups, DeniedUsers et DeniedGroups. Toutes ces colonnes de données peuvent être rendues pouvant faire l’objet d’une **requête**, d’une **recherche**ou d’une **extraction**.
 
 Sélectionnez des colonnes de données comme indiqué dans cet exemple de requête :`SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
+ 
+Pour gérer l’accès aux résultats de la recherche, vous pouvez spécifier une ou plusieurs colonnes ACL dans la requête. Le connecteur SQL vous permet de contrôler l’accès par niveau d’enregistrement. Vous pouvez choisir d’utiliser le même contrôle d’accès pour tous les enregistrements d’une table. Si les informations de la liste de contrôle d’accès sont stockées dans une table distincte, il se peut que vous deviez effectuer une jointure avec ces tables dans votre requête.
+
+L’utilisation de chacune des colonnes ACL dans la requête ci-dessus est décrite ci-dessous. La liste suivante décrit les 4 **mécanismes de contrôle d’accès**. 
+* **AllowedUsers**: spécifie la liste des ID utilisateur qui seront en mesure d’accéder aux résultats de la recherche. Dans l’exemple suivant, la liste des utilisateurs : john@contoso.com, keith@contoso.com et lisa@contoso.com n’a accès qu’à un enregistrement avec OrderId = 12. 
+* **AllowedGroups**: spécifie le groupe d’utilisateurs qui seront en mesure d’accéder aux résultats de la recherche. Dans l’exemple suivant, le groupe sales-team@contoso.com n’a accès qu’à record with OrderId = 12.
+* **DeniedUsers**: spécifie la liste des utilisateurs qui n’ont **pas** accès aux résultats de la recherche. Dans l’exemple suivant, les utilisateurs john@contoso.com et keith@contoso.com n’ont pas accès à record avec OrderId = 13, tandis que tous les autres ont accès à cet enregistrement. 
+* **DeniedGroups**: spécifie le groupe d’utilisateurs qui n’ont **pas** accès aux résultats de la recherche. Dans l’exemple suivant, les groupes engg-team@contoso.com et pm-team@contoso.com n’ont pas accès à record avec OrderId = 15, tandis que les autres utilisateurs ont accès à cet enregistrement.  
+
+![](media/MSSQL-ACL1.png)
 
 ### <a name="watermark-required"></a>Filigrane (obligatoire)
 Pour éviter de surcharger la base de données, le connecteur regroupe et reprend les requêtes d’analyse complète avec une colonne de filigrane complète. En utilisant la valeur de la colonne filigrane, chaque lot suivant est extrait et l’interrogation reprend à partir du dernier point de contrôle. Fondamentalement, il s’agit d’un mécanisme de contrôle de l’actualisation des données pour les analyses complètes.
@@ -67,6 +77,18 @@ Pour exclure les lignes supprimées (récupérables) de votre base de données d
 
 ![Paramètres de suppression douce : « colonne de suppression récupérable » et « valeur de la colonne suppression récupérable qui indique une ligne supprimée »](media/MSSQL-softdelete.png)
 
+### <a name="full-crawl-manage-search-permissions"></a>Analyse complète : gérer les autorisations de recherche
+Cliquez sur **gérer les autorisations** pour sélectionner les différentes colonnes de contrôle d’accès (ACL) qui spécifient le mécanisme de contrôle d’accès. Sélectionnez le nom de colonne que vous avez spécifié dans la requête SQL d’analyse complète. 
+
+Chacune des colonnes de liste de contrôle d’accès est censée être une colonne à valeurs multiples. Ces valeurs d’ID multiples peuvent être séparées par des séparateurs tels que des points-virgules (;), virgule (,), etc. Vous devez spécifier ce séparateur dans le champ **séparateur de valeur** .
+ 
+Les types d’ID suivants sont pris en charge pour l’utilisation en tant que listes de Contrã’le d’accès : 
+* **Nom d’utilisateur principal (UPN)**: un nom d’utilisateur principal (UPN) est le nom d’un utilisateur système dans un format d’adresse de messagerie. Un UPN (par exemple : john.doe@domain.com) est constitué du nom d’utilisateur (nom de connexion), du séparateur (symbole @) et du nom de domaine (suffixe UPN). 
+* **ID d’Azure Active Directory (AAD)**: dans AAD, chaque utilisateur ou groupe a un ID d’objet qui ressemble à « e0d3ad3d-0000-1111-2222-3c5f5c52ab9b ». 
+* **ID de sécurité Active Directory (AD)**: dans une configuration AD locale, chaque utilisateur et groupe a un identificateur de sécurité unique, non modifiable, qui ressemble à-1-5-21-3878594291-2115959936-132693609-65242.
+
+![](media/MSSQL-ACL2.png)
+
 ## <a name="incremental-crawl-optional"></a>Analyse incrémentielle (facultative)
 Dans cette étape facultative, fournissez une requête SQL pour exécuter une analyse incrémentielle de la base de données. Avec cette requête, le connecteur Microsoft SQL Server apporte des modifications aux données depuis la dernière analyse incrémentielle. Comme dans l’analyse complète, sélectionnez toutes les colonnes que vous souhaitez rendre utilisables dans une **requête**, pouvant faire l’objet d’une **recherche**ou pouvoir être **récupérées**. Spécifiez le même ensemble de colonnes de liste de contrôle d’accès que vous avez spécifié dans la requête d’analyse complète.
 
@@ -74,9 +96,11 @@ Les composants de l’image suivante ressemblent aux composants d’analyse comp
 
 ![Script d’analyse incrémentielle affichant OrderTable, AclTable et des exemples de propriétés qui peuvent être utilisés.](media/MSSQL-incrcrawl.png)
 
+## <a name="manage-search-permissions"></a>Gérer les autorisations de recherche 
+Vous pouvez choisir d’utiliser les [listes de contrã’le d’accès spécifiées dans l’écran d’analyse complète](#full-crawl-manage-search-permissions) ou de les remplacer pour rendre votre contenu visible par tous les utilisateurs.
+
 ## <a name="limitations"></a>Limites
 Le connecteur Microsoft SQL Server présente ces limitations dans la version d’évaluation :
 * La base de données locale doit exécuter SQL Server version 2008 ou une version ultérieure.
-* Les ACL sont uniquement prises en charge à l’aide d’un nom d’utilisateur principal (UPN), d’Azure Active Directory (Azure AD) ou de la sécurité Active Directory.
+* Les ACL sont uniquement prises en charge à l’aide d’un nom d’utilisateur principal (UPN), d’Azure Active Directory (Azure AD) ou de la sécurité Active Directory. 
 * L’indexation de contenu riche dans les colonnes de base de données n’est pas prise en charge. Des exemples de ce type de contenu sont les analyses HTML, JSON, XML, BLOB et de document qui existent sous forme de liens dans les colonnes de base de données.
-

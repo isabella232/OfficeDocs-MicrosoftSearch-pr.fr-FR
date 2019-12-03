@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez une vue d’ensemble de ce que fait Microsoft Search, de ses avantages et des applications qui prennent en charge Microsoft Search.
-ms.openlocfilehash: 28bd561e53bb1878c601a08e919e37f524a6470c
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 938cf8875d9cc707041b950c6c13bab27e366670
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626971"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663068"
 ---
 # <a name="overview-of-microsoft-search"></a>Vue d’ensemble de Recherche Microsoft
 
@@ -46,7 +46,7 @@ Si les suggestions de la zone de recherche ne correspondent pas à ce que les ut
 
 ## <a name="benefits-of-microsoft-search"></a>Avantages de la fonctionnalité Recherche Microsoft
 
-**Recherche au sein de Microsoft 365 à partir d’une zone de Recherche Microsoft** : les utilisateurs peuvent effectuer des recherches dans une zone de Recherche Microsoft et revenir rapidement à ce qu’ils faisaient. Microsoft Search rassemble les résultats de sources de données dans Office 365, y compris [SharePoint](http://sharepoint.com/), [Microsoft OneDrive entreprise](https://onedrive.live.com/about/en-us/business/)et [Microsoft Exchange Server](https://products.office.com/en-us/exchange/microsoft-exchange-server).
+**Recherche au sein de Microsoft 365 à partir d’une zone de Recherche Microsoft** : les utilisateurs peuvent effectuer des recherches dans une zone de Recherche Microsoft et revenir rapidement à ce qu’ils faisaient. Microsoft Search rassemble les résultats de sources de données dans Office 365, y compris [SharePoint](http://sharepoint.com/), [Microsoft OneDrive entreprise](https://onedrive.live.com/about/business/)et [Microsoft Exchange Server](https://products.office.com/exchange/microsoft-exchange-server).
 
 **Facile à rechercher** : Microsoft Search suggère des résultats en fonction de l’activité précédente des utilisateurs dans Office 365, directement dans la zone de **recherche** .
 
@@ -58,7 +58,7 @@ Si les suggestions de la zone de recherche ne correspondent pas à ce que les ut
 
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>Personnaliser Recherche Microsoft à votre organisation
 
-En tant qu’administrateur, vous pouvez créer une expérience Microsoft Search incroyable pour vos utilisateurs. 
+En tant qu’administrateur, vous pouvez créer une expérience de recherche Microsoft incroyable pour vos utilisateurs. 
 
 **Afficher un contenu utile** : les réponses fournissent des résultats faisant autorité pour les requêtes de recherche basées sur des mots clés. [Faciliter la recherche de contenu](make-content-easy-to-find.md).
 
@@ -87,7 +87,7 @@ Lorsqu’un utilisateur entre une requête de recherche dans Microsoft Search da
 Étant donné que les recherches d’entreprise peuvent être sensibles, Microsoft Search a implémenté un ensemble de mesures d’approbation qui décrivent le mode `Bing.com` de gestion de la recherche séparée des résultats publics.
 
 ### <a name="logging"></a>Logging
- - Tous `Bing.com` les journaux de recherche relatifs à Microsoft Search dans le trafic Bing sont désassociés à l’identité de votre espace de travail.
+- Tous `Bing.com` les journaux de recherche relatifs à Microsoft Search dans le trafic Bing sont désassociés à l’identité de votre espace de travail.
 - Si un ensemble de restrictions ou de seuils de fréquence est respecté, ce qui nous permet de nous assurer que la requête n’est pas spécifique à une organisation, la requête est traitée comme décrit dans la section des services Bing de la [Déclaration de confidentialité](https://privacy.microsoft.com/privacystatement). Par exemple, ces requêtes seront utilisées pour modéliser et former des fonctionnalités publiques, telles que des suggestions automatiques ou des recherches associées.
 - Les requêtes qui ne répondent pas à ces restrictions ou seuils de fréquence seront stockées séparément du trafic public, hors Recherche Microsoft.
 ### <a name="advertising"></a>Publicité 

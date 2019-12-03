@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble des connecteurs Microsoft Graph pour Microsoft Search
-ms.openlocfilehash: f08393d5696466af72ed7b8f3e141c62adb61728
-ms.sourcegitcommit: 1255c2612aec290ae117bdc24c3b4dabd1e5ca11
+ms.openlocfilehash: 8b02eadac099d75174fe849f7f2f97c26bf6c3af
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39205857"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663134"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Vue d’ensemble des connecteurs Microsoft Graph
 
 Microsoft Search indexe toutes vos données [microsoft 365](https://www.microsoft.com/microsoft-365) de façon à ce qu’elles puissent être recherchées pour les utilisateurs. Avec les connecteurs Microsoft Graph, votre organisation peut indexer des données tierces pour apparaître dans les résultats de recherche de Microsoft. Les données tierces peuvent être hébergées sur site ou dans les nuages publics ou privés. Les connecteurs développent les types de sources de contenu pouvant faire l’objet d’une recherche dans vos applications de productivité Microsoft 365 et l’écosystème Microsoft plus large.
 
 > [!IMPORTANT]
-> **Clause d’exclusion de responsabilité**: les connecteurs Microsoft Graph et les API Microsoft Search (requête et index) sont actuellement en version préliminaire. Pour en savoir plus sur le programme d’aperçu, consultez la rubrique [aperçu des connecteurs Microsoft Graph](connectors-preview.md). Pour rejoindre le programme d’aperçu, envoyez le formulaire d’inscription de l' [aperçu des connecteurs Microsoft Graph](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
+> **Clause d’exclusion de responsabilité**: les connecteurs Microsoft Graph et les API Microsoft Search (requête et index) sont actuellement en état d’aperçu. Pour utiliser des connecteurs avec la Recherche Microsoft ou pour créer des connecteurs, vous devez vous inscrire au [programme de préversion des connecteurs](connectors-preview.md). Pour rejoindre le programme d’aperçu, envoyez le formulaire d’inscription de l' [aperçu des connecteurs Microsoft Graph](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
 
 ## <a name="architecture"></a>Architecture
 Le diagramme d’architecture suivant de la plateforme Microsoft Graph montre comment le contenu du connecteur passe par l’indexation de contenu aux résultats de l’utilisateur dans les clients [Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) . Cet article décrit chacun des blocs de construction clés du processus de flux de données des connecteurs Microsoft Graph.

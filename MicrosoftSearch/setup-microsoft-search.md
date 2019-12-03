@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer la fonctionnalité Recherche Microsoft pour la première fois.
-ms.openlocfilehash: 94ee7ece8a56d599778b151d5b836240d8832762
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: d8b796e0ff61972f3e244c1a5af98319884769dc
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626908"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663059"
 ---
 # <a name="set-up-microsoft-search"></a>Configurer la fonctionnalité Recherche Microsoft
 
-La fonctionnalité Recherche Microsoft offre une interface conviviale qui permet aux utilisateurs de trouver des informations (telles que des fichiers et des documents, des sites internes et des outils professionnels, des utilisateurs et des groupes, des emplacements et des itinéraires, ou des conversations et des réponses) en accédant en toute sécurité à l’ensemble des sources de données, y compris les e-mails, les fichiers, les fichiers SharePoint, le contenu OneDrive et les autres ressources partagées, ainsi qu’à l’Internet de l’organisation de l’utilisateur.
+Microsoft Search fournit une interface conviviale qui permet aux utilisateurs de trouver des informations telles que des fichiers et des documents, des sites internes et des outils professionnels, des personnes et des groupes, des emplacements et des itinéraires, des conversations et des réponses. Pour ce faire, il accède en toute sécurité à toutes les sources de données, y compris les e-mails, les fichiers, les fichiers SharePoint, le contenu OneDrive et d’autres ressources partagées, ainsi qu’Internet dans l’organisation de l’utilisateur.
 
 Pour en savoir plus sur la fonctionnalité Recherche Microsoft, consultez [Vue d’ensemble de Recherche Microsoft](overview-microsoft-search.md).
 
