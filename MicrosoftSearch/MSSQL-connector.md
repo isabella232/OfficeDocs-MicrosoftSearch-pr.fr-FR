@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez Microsoft SQL Connector pour Microsoft Search.
-ms.openlocfilehash: c31399e65bd4bfc154d10d2e6057fa23d11f030d
-ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
+ms.openlocfilehash: b48fece5fccaf2a82ac343cd13130073ee6b3c21
+ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39663158"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "39995049"
 ---
 # <a name="microsoft-sql-server-connector"></a>Connecteur Microsoft SQL Server
 
@@ -26,7 +26,7 @@ Avec un connecteur Microsoft SQL Server, votre organisation peut découvrir et i
 Cet article est destiné aux administrateurs 365 de Microsoft ou toute personne qui configure, exécute et surveille un connecteur Microsoft SQL Server. Elle explique comment configurer les fonctionnalités de connecteur et de connecteur, ainsi que les restrictions et les techniques de résolution des problèmes.
 
 ## <a name="install-a-data-gateway"></a>Installer une passerelle de données
-Pour accéder à vos données tierces, vous devez installer et configurer une passerelle Microsoft Power BI. Pour en savoir plus [, voir Install and on-](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) premises Gateway.  
+Pour accéder à vos données tierces, vous devez installer et configurer une passerelle Microsoft Power BI. Pour en savoir plus, consultez la rubrique [Install an on-](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) premises Gateway.  
 
 ## <a name="connect-to-a-data-source"></a>Se connecter à une source de données
 Pour connecter votre Connecteur Microsoft SQL Server à une source de données, vous devez configurer le serveur de base de données que vous souhaitez analyser et la passerelle locale. Vous pouvez ensuite vous connecter à la base de données à l’aide de la méthode d’authentification requise.

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur ServiceNow pour Microsoft Search
-ms.openlocfilehash: 78b2831e9a52b6bf0204b5a6b2aba147b529b3f5
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 75e07eb82dd63e95ce17a0506f96c853a7bcea2f
+ms.sourcegitcommit: 398b9847e3041732c32af9e6087d8e6c2e96c1cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626953"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "39998565"
 ---
 # <a name="servicenow-connector"></a>Connecteur ServiceNow
 
@@ -44,7 +44,7 @@ Le tableau suivant fournit des instructions sur la façon de remplir le formulai
 Nom | Cette valeur unique identifie l’application pour laquelle vous avez besoin d’un accès OAuth. | Recherche Microsoft
 ID du client | IDENTIFICATEUR unique en lecture seule et généré automatiquement pour l’application. L’instance utilise l’ID client lorsqu’elle demande un jeton d’accès. | N/A
 Clé secrète client | Avec cette chaîne secrète partagée, l’instance de ServiceNow et Microsoft Search autorisent les communications les uns avec les autres. | Suivez les meilleures pratiques en matière de sécurité en le traitant comme un mot de passe.
-URL de redirection | URL de rappel obligatoire vers laquelle le serveur d’autorisation redirige. | Consultez la rubrique [rappel OAuth](https://gcs.office.com/v1.0/admin/oauth/callback).
+URL de redirection | URL de rappel obligatoire vers laquelle le serveur d’autorisation redirige. | https://gcs.office.com/v1.0/admin/oauth/callback
 URL du logo | URL qui contient l’image du logo de l’application. | N/A
 Actif | Activez la case à cocher pour activer le registre d’application. | Défini sur actif
 Durée de vie des jetons d’actualisation | Nombre de secondes pendant lesquelles un jeton d’actualisation est valide. Par défaut, les jetons d’actualisation expirent dans 100 jours (8640000 secondes). | 31 536 000 (1 an)

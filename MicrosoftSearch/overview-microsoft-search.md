@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez une vue d’ensemble de ce que fait Microsoft Search, de ses avantages et des applications qui prennent en charge Microsoft Search.
-ms.openlocfilehash: 938cf8875d9cc707041b950c6c13bab27e366670
-ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
+ms.openlocfilehash: 4acc3b9fcb7453f84db256cc20e839066dc94af5
+ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39663068"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "39995031"
 ---
 # <a name="overview-of-microsoft-search"></a>Vue d’ensemble de Recherche Microsoft
 
@@ -70,28 +70,16 @@ En tant qu’administrateur, vous pouvez créer une expérience de recherche Mic
 
 Microsoft Search affiche le contenu que votre organisation a stocké dans Microsoft 365 ou indexé par le biais de connecteurs. Microsoft Search ne recherche pas dans les clients ni n’affiche les résultats provenant de contenu partagé par d’autres organisations. Si votre organisation a mis en place un environnement SharePoint hybride utilisant une fonctionnalité de recherche hybride dans le cloud, Recherche Microsoft renvoie les résultats de recherche du contenu SharePoint en ligne et local, y compris tout contenu externe que vous avez connecté à votre environnement SharePoint Server. [Apprenez-en davantage sur les environnements hybrides de recherche](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
-Les utilisateurs obtiendront les mêmes résultats de recherche d’entreprise qu’ils obtiennent d’autres emplacements et obtiendront également des résultats à partir d’Internet.
+Les utilisateurs obtiendront les mêmes résultats de recherche à partir d’autres emplacements et obtiendront également des résultats à partir d’Internet.
 
 ## <a name="how-does-microsoft-search-work"></a>Comment fonctionne Recherche Microsoft ?
 
 Lorsqu’un utilisateur effectue une recherche, Recherche Microsoft traite la requête et analyse l’objectif de recherche de plus grandes phrases, à l’aide de l’Intelligence artificielle (AI) pour en savoir plus sur les phrases courantes superflues que les utilisateurs ajoutent à leurs requêtes et qui n’ont pas d’impact sur leur objectif de recherche. Par exemple, lorsqu’un utilisateur recherche « comment modifier mon mot de passe », nous extrayons les mots les moins importants de la requête, puis déclenchons la recherche en nous basant sur les mots pertinents comme par exemple, « modifier mot de passe ».  
 Les résultats de recherche que l’utilisateur est **autorisé** à voir sont présentés dans la page de résultats de recherche. Recherche Microsoft utilise des algorithmes de classement intelligent pour classer les résultats selon la pertinence.
 
-## <a name="microsoft-search-in-bing-protects-enterprise-searches"></a>La Recherche Microsoft dans Bing protège les recherches relatives à l’entreprise
+## <a name="how-does-microsoft-search-in-bing-help-protect-my-company-data"></a>Comment Microsoft Search dans Bing aide-t-il à protéger les données de mon entreprise ?
 
-Lorsqu’un utilisateur entre une requête de recherche dans Microsoft Search dans Bing, deux requêtes de recherche simultanées se produisent :
-
-- Une recherche des ressources internes de votre organisation.
-- Une recherche distincte des résultats publics à partir de Bing.com. 
-
-Étant donné que les recherches d’entreprise peuvent être sensibles, Microsoft Search a implémenté un ensemble de mesures d’approbation qui décrivent le mode `Bing.com` de gestion de la recherche séparée des résultats publics.
-
-### <a name="logging"></a>Logging
-- Tous `Bing.com` les journaux de recherche relatifs à Microsoft Search dans le trafic Bing sont désassociés à l’identité de votre espace de travail.
-- Si un ensemble de restrictions ou de seuils de fréquence est respecté, ce qui nous permet de nous assurer que la requête n’est pas spécifique à une organisation, la requête est traitée comme décrit dans la section des services Bing de la [Déclaration de confidentialité](https://privacy.microsoft.com/privacystatement). Par exemple, ces requêtes seront utilisées pour modéliser et former des fonctionnalités publiques, telles que des suggestions automatiques ou des recherches associées.
-- Les requêtes qui ne répondent pas à ces restrictions ou seuils de fréquence seront stockées séparément du trafic public, hors Recherche Microsoft.
-### <a name="advertising"></a>Publicité 
-Les publicités affichées `Bing.com` en relation avec les recherches d’entreprise sont uniquement liées au contenu des requêtes de recherche. Les publicités ne sont jamais ciblées pour les utilisateurs en fonction de leur identité professionnelle.
+[Sécurité et confidentialité pour Microsoft Search dans Bing](security-for-search.md)
 
 ## <a name="see-also"></a>Voir aussi
 

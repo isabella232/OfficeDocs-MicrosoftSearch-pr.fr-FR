@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 description: Découvrez les méthodes et les processus qui vous aident à déployer correctement Microsoft Search dans votre organisation
-ms.openlocfilehash: 135b07b7dd4e26eaaebd0c09d0d94689b83f2b16
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 4c40013297b8b7a91e589137e70716bd8e4fd326
+ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699529"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "39995004"
 ---
 # <a name="user-adoption-guide"></a>Guide d’adoption par l’utilisateur
 
@@ -38,9 +38,9 @@ Le tableau montre la hiérarchie d’équipe et ce que chaque personne contribue
 |:-----|:-----|:-----|
 |Cadre responsable  <br/> |Découvrez la vision de haut niveau et la valeur de Microsoft Search pour votre organisation.  <br/> Fournir un support de leadership à l’équipe informatique/d’entreprise.  <br/> Allouez des ressources.  <br/> Communiquez directement avec les employés.  <br/> |Leadership exécutif  <br/> |
 |Propriétaire de l’entreprise  <br/> |Identifier les scénarios de produit et d’utilisateur.  <br/> Déterminez les mesures de réussite pour les services et l’organisation.  <br/> |N'importe lequel  <br/> |
-|Équipe de gestion des modifications  <br/> |Assurez-vous que la valeur du produit est facile à comprendre.  <br/> Créez un plan pour le déploiement.  <br/> |Professionnels de l’informatique  <br/> |
+|Équipe de gestion des modifications  <br/> |Assurez-vous que la valeur du produit est facile à comprendre.  <br/> Créez un plan pour le déploiement.  <br/> |IT  <br/> |
 |Champions   <br/> |Promeut le produit à des collègues et des équipes.  <br/> |Any (personnel)  <br/> |
-|Administrateur de recherche  <br/> |Identifier les principaux membres de l’équipe.  <br/> Administrer Microsoft Search, y compris l’apparence et la convivialité de l’expérience et de la gestion continue.  <br/> Encouragez les discussions pour montrer la valeur de Microsoft Search.  <br/> |Professionnels de l’informatique  <br/> |
+|Administrateur de recherche  <br/> |Identifier les principaux membres de l’équipe.  <br/> Administrer Microsoft Search, y compris l’apparence et la convivialité de l’expérience et de la gestion continue.  <br/> Encouragez les discussions pour montrer la valeur de Microsoft Search.  <br/> |IT  <br/> |
 |Editors  <br/> |Créez du contenu dans le [Centre d’administration](https://admin.microsoft.com)Microsoft 365.  <br/> |IT/any  <br/> |
    
 ## <a name="stage-2-scenarios"></a>Étape 2 : scénarios
@@ -119,7 +119,7 @@ Toutes les communications doivent informer les utilisateurs de la façon dont il
   
 ### <a name="engage-partner-teams"></a>Impliquer des équipes partenaires
   
-En tant que partie intégrante de [microsoft 365](https://www.microsoft.com/microsoft-365), Microsoft Search est conforme aux directives RGPD et Tier-C. En fonction de votre organisation, il peut s’avérer nécessaire de partager des informations sur Microsoft Search avec vos équipes de confidentialité et de sécurité. Pour plus d’informations, consultez la rubrique [Security for Microsoft Search](overview-microsoft-search.md#microsoft-search-in-bing-protects-enterprise-searches).
+En tant que partie intégrante de [microsoft 365](https://www.microsoft.com/microsoft-365), Microsoft Search est conforme aux directives RGPD et Tier-C. En fonction de votre organisation, il peut s’avérer nécessaire de partager des informations sur Microsoft Search avec vos équipes de confidentialité et de sécurité. Pour plus d’informations, consultez la rubrique [sécurité et confidentialité pour Microsoft Search dans Bing](security-for-search.md).
   
 Assurez-vous que votre service d’assistance connaît les caractéristiques et les fonctionnalités de Microsoft Search, ainsi que les besoins des utilisateurs pour se connecter, afin qu’ils puissent mieux prendre en charge les utilisateurs. Pour plus d’informations, consultez la rubrique [en savoir plus sur Microsoft Search dans microsoft 365](https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc) et [FAQ](faqs.md).
   
