@@ -31,6 +31,7 @@
 ##[Dispositions des résultats de la recherche](customize-results-layout.md)
 ##[Recherche Microsoft dans SharePoint](get-started-search-in-sharepoint-online.md)
 ##Recherche Microsoft dans Bing
+###[Sécurité et confidentialité](security-for-search.md)
 ###[Microsoft Edge en tant que navigateur par défaut](set-default-browser.md)
 ###[Bing en tant que moteur de recherche par défaut](set-default-search-engine.md)
 ###[Bing.com en tant que page d’accueil par défaut](set-default-homepage.md)
