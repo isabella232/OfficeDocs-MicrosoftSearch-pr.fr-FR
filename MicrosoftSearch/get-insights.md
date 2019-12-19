@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
 description: Analyser les mesures et gérer le contenu à partir du tableau de bord Insights dans Microsoft Search
-ms.openlocfilehash: bbfc8b230690eeef1f7a23d70d7af29b88924e7d
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 8ed0e13b53f61c699e8cf5628341adba3b96be9c
+ms.sourcegitcommit: 26481c00963d836de4ed64a454fb6c5b49c5075d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699861"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40738052"
 ---
 # <a name="microsoft-search-insights-dashboard-reports"></a>Rapports de tableau de bord Insights Microsoft Search
 
@@ -47,7 +47,7 @@ Vous pouvez choisir différentes vues du rapport en filtrant sur le type de rép
 
 ## <a name="impression-distribution"></a>Distribution d’impression
 
-Ce rapport affiche la distribution de l’impression dans [Bing](https://Bing.com) dans le temps pour diverses réponses. Voici des exemples de signets, de personnes, de Q&A, de fichiers, d’emplacements, de sites de fichiers, de groupes et de conversations. 
+Ce rapport affiche la distribution de l’impression dans [Bing](https://Bing.com) dans le temps pour diverses réponses. Voici des exemples de signets, de personnes, de Q&A, de fichiers, d’emplacements, de sites de fichiers, de groupes et de conversations.
 
 ![Rapport impressions avec 90 jours sélectionnés comme période.](media/Insights-impressions.png)
 
