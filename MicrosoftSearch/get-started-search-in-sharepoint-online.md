@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Faire démarrer votre organisation à l’aide de Microsoft Search dans SharePoint Online
-ms.openlocfilehash: 662dc2b69f02857327cd95b0f7c162e92800ce1c
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 43cd9bce3d3d5c6f60214fcc1023bc4b8b9bfe91
+ms.sourcegitcommit: 26481c00963d836de4ed64a454fb6c5b49c5075d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626854"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "38699493"
 ---
 # <a name="get-started-with-microsoft-search-in-sharepoint"></a>Prise en main de Recherche Microsoft dans SharePoint
 
@@ -30,7 +30,7 @@ Pour faire en sorte que votre organisation passe de Microsoft Search dans ShareP
 
 ## <a name="prepare-for-microsoft-search-in-sharepoint"></a>Préparer la recherche Microsoft dans SharePoint
 
-Les utilisateurs peuvent rechercher uniquement du contenu SharePoint qui est indexé. La recherche Microsoft et la recherche classique partagent le même index pour le contenu SharePoint, qui est analysée et indexée automatiquement. 
+Les utilisateurs peuvent uniquement trouver le contenu [SharePoint](http://sharepoint.com/) qui est indexé. La recherche Microsoft et la recherche classique partagent le même index pour le contenu SharePoint, qui est analysée et indexée automatiquement. 
 
 Certaines organisations utilisent la recherche classique et Microsoft Search dans SharePoint. Pour savoir comment éviter les effets des paramètres de recherche classiques sur Microsoft Search dans SharePoint, voir [différences entre les expériences de recherche classiques et modernes dans SharePoint Online](https://docs.microsoft.com/sharepoint/differences-classic-modern-search).
 
@@ -43,7 +43,7 @@ Pour une meilleure expérience de recherche, affectez votre organisation pour es
 
 ## <a name="promote-searching-from-the-sharepoint-start-page"></a>Promouvoir la recherche à partir de la page de démarrage SharePoint
 
-Incitez vos utilisateurs à effectuer des recherches à partir de la page de démarrage de [SharePoint](http://sharepoint.com/) et non à partir du[Centre de recherche](https://docs.microsoft.com/sharepoint/manage-search-center)classique. Envisagez de masquer votre centre de recherche classique pour les utilisateurs.
+Incitez vos utilisateurs à effectuer des recherches à partir de la page de démarrage de [SharePoint](http://sharepoint.com/) et non à partir du [Centre de recherche](https://docs.microsoft.com/sharepoint/manage-search-center)classique. Envisagez de masquer votre centre de recherche classique pour les utilisateurs.
 
 ## <a name="see-also"></a>Voir aussi
 [Vue d’ensemble de Recherche Microsoft](overview-microsoft-search.md)
