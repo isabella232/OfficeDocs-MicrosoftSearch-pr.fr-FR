@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Ajouter des secteurs verticaux de recherche et personnaliser les résultats de la recherche
-ms.openlocfilehash: 28e8fdc7fe7f08abe265c53772a161b8a7095503
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 852622c0c66afb996f941c609980a0d792af7364
+ms.sourcegitcommit: c41334350654daef3a4cd45b5b18ea4401286997
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699556"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "40947025"
 ---
-# <a name="customize-the-microsoft-search-page"></a>Personnaliser la page Microsoft Search
+# <a name="customize-the-search-results-page"></a>Personnaliser la page de résultats de recherche
 
 En créant des secteurs verticaux de recherche et des types de résultats, vous pouvez personnaliser les résultats de recherche affichés par les utilisateurs lors de la recherche dans [SharePoint](http://sharepoint.com/), [Microsoft Office](https://Office.com)et Microsoft Search dans [Bing](https://Bing.com). Les secteurs verticaux permettent aux utilisateurs de trouver plus facilement les informations qu’ils sont autorisés à voir. Par exemple, vous pouvez créer un secteur vertical de recherche pour les données d’analyse marketing à partir de logiciels tiers pour vos utilisateurs dans le service marketing. Vous pouvez également définir des types de résultats et personnaliser la disposition de ces données.  
 
