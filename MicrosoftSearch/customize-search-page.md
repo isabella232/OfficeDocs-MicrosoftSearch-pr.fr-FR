@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ajouter des secteurs verticaux de recherche et personnaliser les résultats de la recherche
-ms.openlocfilehash: 852622c0c66afb996f941c609980a0d792af7364
-ms.sourcegitcommit: c41334350654daef3a4cd45b5b18ea4401286997
+ms.openlocfilehash: 198e5c85c1544b05cdc622f7b617e8bddbcd6a00
+ms.sourcegitcommit: 78dc72e99e148898455e016b4ccb110d16b3d81c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "40947025"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40987675"
 ---
 # <a name="customize-the-search-results-page"></a>Personnaliser la page de résultats de recherche
 
@@ -101,7 +101,7 @@ Une fois que vous avez démarré l’Assistant, vous pouvez définir le nom, la 
 ### <a name="view-the-vertical-after-enabling"></a>Afficher le secteur vertical après activation
 
 Une fois que vous avez activé le secteur vertical, il peut prendre un certain temps avant de pouvoir l’afficher.
-Si vous souhaitez attendre une fois l’activation effectué, vous pouvez ajouter **cacheClear = true** à l’URL dans [SharePoint](http://sharepoint.com/) et [Office](https://Office.com) pour afficher la verticale immédiatement.
+Si vous ne souhaitez pas attendre une fois l’activation effectué, vous pouvez ajouter **cacheClear = true** à l’URL dans [SharePoint](http://sharepoint.com/) et [Office](https://Office.com) pour afficher immédiatement la verticale.
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
