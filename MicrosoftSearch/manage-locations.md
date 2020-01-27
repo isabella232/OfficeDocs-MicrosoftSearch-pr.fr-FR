@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: Au fil du temps, il se peut que vous deviez mettre à jour le statut et le contenu de certains emplacements afin qu’ils restent pertinents. 
-ms.openlocfilehash: 25fa6fdb8f95c04332e8df16c7589286ecaefdb0
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 44214cc1be22c5e9e49276c69c6c4132559f7c8d
+ms.sourcegitcommit: 9784c8a99138c2f333a9fed8b71df9c4f28b2bee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626782"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41519134"
 ---
 # <a name="manage-locations"></a>Gérer les emplacements
 
@@ -40,7 +40,7 @@ Les administrateurs peuvent utiliser les fonctions d’importation ou d’export
 Utilisez la fonction d’importation/exportation pour les opérations suivantes :
 1. Ajout en bloc d’emplacements - Ajoutez des détails dans le fichier modèle de l’emplacement, puis importez-le. 
 1. Modification en bloc d’emplacements - Exportez les emplacements dans un fichier .csv, modifiez les détails des emplacements dans le fichier .csv exporté, puis importez le fichier .csv mis à jour.
-1. Sauvegarde d’emplacements - Exportez les emplacements existants dans un fichier .csv.
+1. Emplacements de sauvegarde : exportez les emplacements existants dans un fichier. csv.
 
 Pour exporter ou importer des emplacements :
 1. Dans le coin supérieur droit de l’onglet **Emplacements**, sélectionnez **Importer**.
