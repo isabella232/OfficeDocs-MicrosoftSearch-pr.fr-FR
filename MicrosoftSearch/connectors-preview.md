@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez l’aperçu des connecteurs Microsoft Graph pour Microsoft Search.
-ms.openlocfilehash: f95f6283fa875a1cfa84556640b16a902b2f2185
-ms.sourcegitcommit: c41334350654daef3a4cd45b5b18ea4401286997
+ms.openlocfilehash: 52bf174875bf3e262c0cb71d53ec209e481ee0b7
+ms.sourcegitcommit: 1e8dc8e10722ed26ba85cbb5e8c9df62f3625de6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "40947016"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41578686"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Aperçu des connecteurs Microsoft Graph
 
@@ -33,8 +33,7 @@ Pour tester les connecteurs, les API d’indexation et les API de recherche, nou
 2. **Collection de sites de test**. Si vous n’avez pas de client de test, vous pouvez créer une collection de sites de test pour tester la fonctionnalité de connecteurs. Pour afficher les résultats des connecteurs sans impact sur les pages de recherche n’importe où dans votre organisation, personnalisez l’expérience de recherche de cette collection de sites uniquement.
 
 ## <a name="preview-limitations"></a>Limitations de l’aperçu
-La version d’évaluation présente les limitations suivantes :
-* La préversion publique pour les connecteurs Microsoft Graph est uniquement disponible pour les clients des régions américaine et Europe. 
+La version d’évaluation présente les limitations suivantes : 
 * Le débit de l’ingestion est limité à quatre éléments par seconde.
 * Il n’existe pas de prise en charge des mises à jour de schéma. Une fois que vous avez créé une configuration de connexion, il n’existe aucun moyen de mettre à jour le schéma. Vous pouvez supprimer et recréer la connexion uniquement.
 * Le contenu indexé apparaît uniquement dans la page des résultats de recherche sous un secteur vertical personnalisé. Cette restriction s’applique au contenu avec des types personnalisés.
