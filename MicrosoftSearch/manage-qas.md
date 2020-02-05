@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: Recherchez et actualisez des réponses individuelles, ou servez-vous des outils de Recherche Microsoft disponibles pour les modifier tous à la fois
-ms.openlocfilehash: af5f12e759179d7a00d682575a51286e607149b2
-ms.sourcegitcommit: 5946fe6aad2331c023bedda8faf826c0248651f8
+ms.openlocfilehash: 0877de027b68589e5ba15cd8109ea7edeeae8725
+ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/04/2020
-ms.locfileid: "41711756"
+ms.locfileid: "41721740"
 ---
 # <a name="manage-qas"></a>Gérer les Q&R
 
@@ -62,8 +62,8 @@ Les administrateurs de recherche peuvent facilement créer du contenu de recherc
 
 Actuellement, des extensions de navigateur sont disponibles pour Edge et Chrome.
 
-- Pour télécharger l’extension Edge, accédez à [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) et téléchargez l’application.
-- Pour télécharger l’extension Chrome, accédez à [Chrome Web Store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) et téléchargez l’application.
+- Pour télécharger les extensions de serveur Edge, accédez à [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) et téléchargez l’application.
+- Pour télécharger les extensions chrome, accédez à la [boutique web chrome](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) et téléchargez l’application.
 
 ## <a name="bulk-add-or-edit-qas"></a>Ajouter ou modifier en bloc des questions et réponses
 
