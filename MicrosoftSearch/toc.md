@@ -8,7 +8,6 @@
 ## [Acronymes](manage-acronyms.md)
 ## [Signets](manage-bookmarks.md)
 ## [Plans d’étage](manage-floorplans.md)
-### [Bonnes pratiques](floorplans-bestpractices.md)
 ## [Emplacements](manage-locations.md)
 ## [Questions et réponses](manage-qas.md)
 # Connecteurs (préversion)
