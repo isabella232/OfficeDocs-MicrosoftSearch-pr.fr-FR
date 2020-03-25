@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créer et mettre à jour des réponses d’acronymes dans Microsoft Search
-ms.openlocfilehash: 4f47d5b743709657459ccbc6b03897c29a51e109
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: aa857cefe9a2a40a8519a91829e327d01a3f2391
+ms.sourcegitcommit: 25cdb5e6111ec6bc6c130a36aa5f13a6328e1092
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626818"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42928228"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Gérer les acronymes Answers in Microsoft Search
 
@@ -39,7 +39,7 @@ Les utilisateurs de Microsoft Search peuvent obtenir des définitions avec des a
 Les résultats suggérés incluent toutes les significations des DNN présentes dans l’organisation de l’utilisateur.
 
 > [!NOTE]
-> Les utilisateurs doivent entrer une requête qui inclut les *Mots clés* spécifiés de l’acronyme pour déclencher les réponses correspondantes.  
+> Les utilisateurs doivent entrer une requête qui inclut les *Mots clés* spécifiés de l’acronyme pour déclencher les réponses correspondantes. Les requêtes d’acronyme ne sont pas sensibles à la casse. 
 
 ## <a name="set-up-acronyms-answers"></a>Configurer des acronymes pour les réponses
 Dans le centre d' [administration](https://admin.microsoft.com)Microsoft 365, accédez à **paramètres** > **acronymes****Microsoft Search** >, puis sélectionnez **Ajouter des acronymes**. 
