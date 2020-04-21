@@ -1,8 +1,8 @@
 ---
 title: Meilleures pratiques pour les plans d’étage de Microsoft Search
-ms.author: anfowler
-author: adefowler
-manager: shohara
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Meilleures pratiques pour les plans d’étage de Microsoft Search
-ms.openlocfilehash: ddad671592ab3cf05400faa1261ee7258f3868bb
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 47eb46df48f1871f6d34d4b00787cf11ccbac1ea
+ms.sourcegitcommit: 6b1c6a4e502d95b42a030a963f9452c387d8a5cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699851"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "43571013"
 ---
+<!-- markdownlint-disable no-inline-html -->
 # <a name="best-practices-for-microsoft-search-floor-plans"></a>Meilleures pratiques pour les plans d’étage de Microsoft Search
 
 Pour implémenter correctement les plans d’étage de Microsoft Search, vous devez coordonner trois types de données :
@@ -30,6 +31,7 @@ Pour implémenter correctement les plans d’étage de Microsoft Search, vous de
 Les meilleures pratiques pour le déploiement des plans d’étage de Microsoft Search sont également décrites dans les sections suivantes.
 
 ## <a name="building-location-data"></a>Création des données d’emplacement
+
 Avant d’ajouter des plans d’étage, vous devez ajouter vos bâtiments aux emplacements de recherche Microsoft. Fournissez les données de création requises suivantes :
 
 |Génération des données requises  |Exemple  |
@@ -42,7 +44,8 @@ Avant d’ajouter des plans d’étage, vous devez ajouter vos bâtiments aux em
 Vous pouvez ajouter plusieurs bâtiments à la fois à l’aide de la fonctionnalité d' **importation** de l’onglet **emplacements** au lieu d’ajouter un par un. Avec la fonctionnalité d' **importation** , vous pouvez spécifier la latitude-longitude. Pour plus d’informations, consultez la rubrique [Manage locations](manage-locations.md).
 
 ## <a name="floor-plan-map-in-dwg-format"></a>Plan d’étage plan au format DWG
-Pour créer des cartes dans Microsoft Search, vous devez télécharger des plans d’étage au format DWG avec des informations spécifiques. Pour en savoir plus sur la création et l’affichage des fichiers au format DWG, consultez la rubrique [DWG visualisers](https://www.autodesk.in/products/dwg). 
+
+Pour créer des cartes dans Microsoft Search, vous devez télécharger des plans d’étage au format DWG avec des informations spécifiques. Pour en savoir plus sur la création et l’affichage des fichiers au format DWG, consultez la rubrique [DWG visualisers](https://www.autodesk.in/products/dwg).
 
 Les cartes de plan d’étage affichent quatre éléments :
 
@@ -60,6 +63,7 @@ Dans ce diagramme, les numéros de salle sont les éléments les plus importants
 Ces informations sont stockées dans [Azure ad](https://azure.microsoft.com/services/active-directory/) dans la propriété **PhysicalDeliveryOfficeName** . Dans le centre d' [administration](https://admin.microsoft.com)365 de Microsoft, il s’agit de la propriété **Office** qui peut être ajoutée **aux utilisateurs actifs**.
 
 ### <a name="dwg-files"></a>Fichiers DWG
+
 Microsoft Search nécessite des fichiers de plan d’étage en DWG, qui est un format de dessin [AutoCAD](https://www.autodesk.com/autocad) . Les fichiers doivent contenir des données de **disposition** et d' **étiquette** . Les **numéros de salle** représentent les étiquettes les plus importantes pour les plans d’étage.
 
 Nous vous recommandons de créer votre système de numérotation Office avec la méthode de correspondance exacte indiquée dans le tableau suivant. Mais vous n’êtes pas limité à cette étiquette. Par exemple, si l’emplacement du Bureau de l’utilisateur dans [Azure ad](https://azure.microsoft.com/services/active-directory/) est **B1 1001**, vous pouvez étiqueter le numéro de la salle dans le fichier DWG avec l’une des options suivantes.
@@ -71,6 +75,7 @@ Nous vous recommandons de créer votre système de numérotation Office avec la 
 |Respecter uniquement le numéro de la salle <br> **0,1**<br>Numéro de la salle : 1        |    ![Carte d’étage Office unique avec le numéro de bureau « 1 »](media/floorplans-layoutroomonly.png)     |
 
 ## <a name="user-account-office-location"></a>Emplacement du Bureau du compte d’utilisateur
+
 Pour mapper l’emplacement d’un employé, les numéros de pièce dans les fichiers DWG sont mappés sur les emplacements de bureau dans le compte de l’utilisateur dans [Azure ad](https://azure.microsoft.com/services/active-directory/). La propriété de l' **emplacement** du Bureau doit correspondre aux informations relatives à l’emplacement du bureau dans le fichier DWG.
 
 Le tableau suivant décrit les meilleures pratiques pour le mappage des données de localisation :
@@ -83,5 +88,6 @@ Le tableau suivant décrit les meilleures pratiques pour le mappage des données
 |
 
 ## <a name="next-steps"></a>Étapes suivantes
+
 [Gérer les emplacements](manage-locations.md)<br>
 [Gérer les plans d’étage](manage-floorplans.md)

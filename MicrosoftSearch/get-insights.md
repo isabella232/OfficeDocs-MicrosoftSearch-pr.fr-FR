@@ -1,8 +1,8 @@
 ---
 title: Rapports de tableau de bord Insights Microsoft Search
-ms.author: anfowler
-author: adefowler
-manager: shohara
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
 description: Analyser les mesures et gérer le contenu à partir du tableau de bord Insights dans Microsoft Search
-ms.openlocfilehash: 8ed0e13b53f61c699e8cf5628341adba3b96be9c
-ms.sourcegitcommit: 26481c00963d836de4ed64a454fb6c5b49c5075d
+ms.openlocfilehash: 230c1cdec9c1f6e94adf7123bc9a3ad048dee892
+ms.sourcegitcommit: 6b1c6a4e502d95b42a030a963f9452c387d8a5cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40738052"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "43571004"
 ---
 # <a name="microsoft-search-insights-dashboard-reports"></a>Rapports de tableau de bord Insights Microsoft Search
 
