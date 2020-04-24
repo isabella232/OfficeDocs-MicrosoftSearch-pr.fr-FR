@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur de sites Web d’entreprise pour Microsoft Search
-ms.openlocfilehash: 14eef035f4cc054ab87582b573cb6b7e3c12d0c7
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: de466d4cc1156f520bb6a5fe3117389bd29f3e78
+ms.sourcegitcommit: 8ccbf0ea4463d17f810c2f5b484882869a74a996
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699520"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793548"
 ---
 # <a name="enterprise-websites-connector"></a>Connecteur de sites Web d’entreprise
 
@@ -57,7 +57,25 @@ Les propriétés sources sont définies en fonction du format de données du sit
 Il n’existe pas de prise en charge des listes de contrôle d’accès (ACL). Par conséquent, nous vous recommandons de connecter uniquement les sites Web visibles par tous les utilisateurs au sein de votre organisation.
 
 ## <a name="set-the-refresh-schedule"></a>Définir la planification d’actualisation
-Le connecteur de sites Web d’entreprise ne prend en charge qu’une analyse complète. Cela signifie que le connecteur lit tout le contenu du site Web pendant chaque analyse. Pour vous assurer que le connecteur dispose de suffisamment de temps pour lire le contenu, nous vous recommandons de définir un intervalle de planification d’actualisation important. Nous vous recommandons une actualisation planifiée entre trois jours et deux semaines.
+Le connecteur de sites Web d’entreprise ne prend en charge qu’une analyse complète. Cela signifie que le connecteur lit tout le contenu du site Web pendant chaque analyse. Pour vous assurer que le connecteur dispose de suffisamment de temps pour lire le contenu, nous vous recommandons de définir un intervalle de planification d’actualisation important. Nous vous recommandons une actualisation planifiée entre trois jours et deux semaines. 
 
-## <a name="limitations"></a>Limites 
+## <a name="troubleshooting"></a>Résolution des problèmes
+Si une connexion est mal rencontrée, son statut indique failed. Pour plus d’informations sur les types d’erreurs, accédez à la page des détails de l’erreur après avoir sélectionné la connexion défectueuse.  Cliquez sur le code d’erreur pour afficher des erreurs plus détaillées. Pour en savoir plus, consultez [la rubrique gérer votre connecteur](https://docs.microsoft.com/microsoftsearch/manage-connector) .
+
+ **Code d’erreur détaillé** | **Message d’erreur**
+ --- | --- 
+ 6001   | Le site qui est essayé d’indexer est inaccessible 
+ 6005 | La page source en cours d’indexation a été bloquée par en fonction de la configuration d’robots. txt.
+ 6008 | Impossible de résoudre le DNS
+ 6009 | Pour toutes les erreurs côté client (sauf HTTP 404, 408), reportez-vous à la rubrique Codes d’erreur HTTP 4xx pour plus de détails.
+ 6013 | La page source en cours d’indexation est introuvable. (Erreur HTTP 404)
+ 6018 | La page source ne répond pas et la demande a expiré. (Erreur HTTP 408)
+ 6021 | La page source essayée d’index n’a pas de contenu textuel sur la page.
+ 6023 | La page source qui est tentée d’index n’est pas prise en charge (pas une page HTML)
+ 6024 | La page source qui est tentée d’indexer a un contenu non pris en charge.
+
+* Les erreurs 6001-6013 se produisent lorsque la source de données n’est pas accessible à cause d’un problème réseau ou lorsque la source de données elle-même est supprimée, déplacée ou renommée. Vérifiez si les détails de la source de données fournis sont toujours valides.
+* Des erreurs 6021-24 se produisent lorsque la source de données contient du contenu non textuel sur la page ou lorsque la page n’est pas au format HTML. Vérifiez la source de données et ajoutez cette page dans la liste d’exclusions ou ignorez l’erreur.
+
+## <a name="limitations"></a>Limites
 Le connecteur de sites Web d’entreprise ne prend pas en charge la recherche de données sur des pages Web dynamiques. Exemples de ces pages Web dans des systèmes de gestion de contenu [tels que le](https://www.atlassian.com/software/confluence) [Unily](https://www.unily.com/) et les bases de données qui stockent le contenu du site Web.
