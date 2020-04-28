@@ -1,8 +1,8 @@
 ---
 title: Vue d’ensemble de Recherche Microsoft
-ms.author: anfowler
-author: adefowler
-manager: shohara
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez une vue d’ensemble de ce que fait Microsoft Search, de ses avantages et des applications qui prennent en charge Microsoft Search.
-ms.openlocfilehash: 4acc3b9fcb7453f84db256cc20e839066dc94af5
-ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
+ms.openlocfilehash: fc21328f9a72ac77e37ae366bd138770509d6080
+ms.sourcegitcommit: d40d44d01b27dfed92577446fe7a30008b28deb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39995031"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43914488"
 ---
 # <a name="overview-of-microsoft-search"></a>Vue d’ensemble de Recherche Microsoft
 
@@ -58,31 +58,29 @@ Si les suggestions de la zone de recherche ne correspondent pas à ce que les ut
 
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>Personnaliser Recherche Microsoft à votre organisation
 
-En tant qu’administrateur, vous pouvez créer une expérience de recherche Microsoft incroyable pour vos utilisateurs. 
+En tant qu’administrateur, vous pouvez créer une expérience de recherche Microsoft incroyable pour vos utilisateurs.
 
-**Afficher un contenu utile** : les réponses fournissent des résultats faisant autorité pour les requêtes de recherche basées sur des mots clés. [Faciliter la recherche de contenu](make-content-easy-to-find.md).
+**Afficher un contenu utile** : les réponses fournissent des résultats faisant autorité pour les requêtes de recherche basées sur des mots clés. [Planifiez votre contenu](plan-your-content.md).
 
 **Ajout de contenu externe** : les connecteurs Microsoft Graph vous permettent d’intégrer du contenu externe à l’index. Utilisez des connecteurs pour enrichir l’expérience de recherche avec des données et des fichiers en dehors de Microsoft 365. [Vue d’ensemble des connecteurs Microsoft Graph](connectors-overview.md)
 
 **Personnaliser l’expérience utilisateur** : vous pouvez personnaliser l’expérience utilisateur en utilisant des configurations verticales et d’autres configurations. [Personnaliser la page Microsoft Search](customize-search-page.md)
 
-## <a name="what-content-is-searched"></a>Dans quel contenu la recherche est-elle effectuée ?
+## <a name="what-content-is-searched"></a>Contenu de la recherche
 
 Microsoft Search affiche le contenu que votre organisation a stocké dans Microsoft 365 ou indexé par le biais de connecteurs. Microsoft Search ne recherche pas dans les clients ni n’affiche les résultats provenant de contenu partagé par d’autres organisations. Si votre organisation a mis en place un environnement SharePoint hybride utilisant une fonctionnalité de recherche hybride dans le cloud, Recherche Microsoft renvoie les résultats de recherche du contenu SharePoint en ligne et local, y compris tout contenu externe que vous avez connecté à votre environnement SharePoint Server. [Apprenez-en davantage sur les environnements hybrides de recherche](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
 Les utilisateurs obtiendront les mêmes résultats de recherche à partir d’autres emplacements et obtiendront également des résultats à partir d’Internet.
 
-## <a name="how-does-microsoft-search-work"></a>Comment fonctionne Recherche Microsoft ?
+## <a name="how-microsoft-search-works"></a>Fonctionnement de Microsoft Search
 
 Lorsqu’un utilisateur effectue une recherche, Recherche Microsoft traite la requête et analyse l’objectif de recherche de plus grandes phrases, à l’aide de l’Intelligence artificielle (AI) pour en savoir plus sur les phrases courantes superflues que les utilisateurs ajoutent à leurs requêtes et qui n’ont pas d’impact sur leur objectif de recherche. Par exemple, lorsqu’un utilisateur recherche « comment modifier mon mot de passe », nous extrayons les mots les moins importants de la requête, puis déclenchons la recherche en nous basant sur les mots pertinents comme par exemple, « modifier mot de passe ».  
 Les résultats de recherche que l’utilisateur est **autorisé** à voir sont présentés dans la page de résultats de recherche. Recherche Microsoft utilise des algorithmes de classement intelligent pour classer les résultats selon la pertinence.
 
-## <a name="how-does-microsoft-search-in-bing-help-protect-my-company-data"></a>Comment Microsoft Search dans Bing aide-t-il à protéger les données de mon entreprise ?
+## <a name="how-microsoft-search-in-bing-protects-your-company-data"></a>Comment Microsoft Search dans Bing protège vos données d’entreprise
 
 [Sécurité et confidentialité pour Microsoft Search dans Bing](security-for-search.md)
 
 ## <a name="see-also"></a>Voir aussi
 
 [Configuration de la recherche Microsoft](setup-microsoft-search.md)
-
-[Rendre le contenu plus facilement trouvable](make-content-easy-to-find.md)
