@@ -1,8 +1,8 @@
 ---
 title: Configurer la fonctionnalité Recherche Microsoft
-ms.author: anfowler
-author: adefowler
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer la fonctionnalité Recherche Microsoft pour la première fois.
-ms.openlocfilehash: d8b796e0ff61972f3e244c1a5af98319884769dc
-ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
+ms.openlocfilehash: 37b5f33fe7b49a11c4558debac5b9acae4cc40cd
+ms.sourcegitcommit: aa48b6510883e1617aa13a50b1056fb149c47586
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39663059"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44256636"
 ---
 # <a name="set-up-microsoft-search"></a>Configurer la fonctionnalité Recherche Microsoft
 
-Microsoft Search fournit une interface conviviale qui permet aux utilisateurs de trouver des informations telles que des fichiers et des documents, des sites internes et des outils professionnels, des personnes et des groupes, des emplacements et des itinéraires, des conversations et des réponses. Pour ce faire, il accède en toute sécurité à toutes les sources de données, y compris les e-mails, les fichiers, les fichiers SharePoint, le contenu OneDrive et d’autres ressources partagées, ainsi qu’Internet dans l’organisation de l’utilisateur.
+Microsoft Search fournit une interface conviviale qui permet aux utilisateurs de trouver des informations telles que des fichiers et des documents, des sites internes et des outils professionnels, des personnes et des groupes, des emplacements et des itinéraires, des conversations et des réponses. Pour ce faire, il accède en toute sécurité à toutes les sources de données, y compris les messages électroniques, les fichiers, les fichiers SharePoint, le contenu OneDrive et d’autres ressources partagées. Avec Microsoft Search dans Bing, vous pouvez également obtenir des résultats de recherche à partir d’Internet.
 
 Pour en savoir plus sur la fonctionnalité Recherche Microsoft, consultez [Vue d’ensemble de Recherche Microsoft](overview-microsoft-search.md).
 
