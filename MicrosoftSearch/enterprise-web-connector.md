@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur de sites Web d’entreprise pour Microsoft Search
-ms.openlocfilehash: 4ed926cfdacca66d90854147afdc3c7932d1bd5f
-ms.sourcegitcommit: 49659ecd2ac47c85acc297b21e9e34701213862c
+ms.openlocfilehash: 66fd0804bf26d70208cdaca519f91dba3a1ba166
+ms.sourcegitcommit: 924bcf4dd1b4bfa5684d43a3f8e784d869c659e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43803951"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326829"
 ---
 # <a name="enterprise-websites-connector"></a>Connecteur de sites Web d’entreprise
 
@@ -26,7 +26,7 @@ Avec le connecteur de sites Web d’entreprise, votre organisation peut indexer 
 Cet article est destiné aux administrateurs [365 de Microsoft](https://www.microsoft.com/microsoft-365) ou toute personne qui configure, exécute et surveille un connecteur de sites Web d’entreprise. Elle explique comment configurer les fonctionnalités de connecteur et de connecteur, ainsi que les restrictions et les techniques de résolution des problèmes.  
 
 ## <a name="connect-to-a-data-source"></a>Se connecter à une source de données 
-Pour vous connecter à votre source de données, vous avez besoin de votre URL racine et d’une forme d’authentification : authentification de base ou OAuth 2,0 avec [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/).
+Pour vous connecter à votre source de données, vous avez besoin de votre URL racine et de votre authentification de base.
 
 ### <a name="root-url"></a>URL racine
 L’URL racine est celle qui initie l’analyse et qui est utilisée pour l’authentification. Vous pouvez obtenir l’URL à partir de la page d’accueil du site Web que vous souhaitez analyser.
