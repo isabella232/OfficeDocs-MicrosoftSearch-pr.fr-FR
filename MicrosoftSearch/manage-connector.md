@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gérer les connecteurs Microsoft Graph pour Microsoft Search.
-ms.openlocfilehash: d7bd094fdc5cea521d1ee600eea3cd70067a0386
-ms.sourcegitcommit: 897b92bae1b905d7c47566e31c4c07cd16d44b17
+ms.openlocfilehash: 04e4635a67ea35381b95c1c753a35eb640d655d4
+ms.sourcegitcommit: 1524ae5fe97350ce4294d74e381872b5b7a9f645
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39254720"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371307"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>Gérer votre connecteur pour Microsoft Search
 
@@ -25,8 +25,8 @@ Pour accéder à vos connecteurs et les gérer, vous devez être désigné en ta
 
 ## <a name="get-started"></a>Prise en main
 
-1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com).
-2. Accédez à **paramètres** > **Microsoft Search** > **Connectors**.
+1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com).
+2. Accédez à **paramètres**  >  **Microsoft Search**  >  **Connectors**.
 
 Pour chaque type de connecteur, le [Centre d’administration Microsoft 365](https://admin.microsoft.com) prend en charge les opérations indiquées dans le tableau suivant :
 
@@ -63,13 +63,15 @@ Voici la liste des différentes erreurs qui peuvent apparaître contre n’impor
 1001 | Impossible de mettre à jour les données, car la source de données limite le connecteur. | Pour ne pas limiter la source de données, vérifiez si les limites de l’étendue peuvent être augmentées ou patienter jusqu’à ce qu’un temps de trafic élevé de la journée soit moindre.
 1002 | Impossible de s’authentifier auprès de la source de données. Vérifiez que les informations d’identification associées à cette source de données sont correctes. | Cliquez sur **modifier** pour mettre à jour les informations d’identification d’authentification.
 1003 | Le compte associé au connecteur n’est pas autorisé à accéder à l’élément. |  Assurez-vous que le compte approprié a accès à l’élément que vous souhaitez indexer.
-1004 | Impossible d’atteindre la passerelle de données locale. Assurez-vous que le service de passerelle est en cours d’exécution. | Accédez à l’ordinateur qui dispose de la passerelle et vérifiez si la passerelle Power BI est en cours d’exécution en ouvrant l’application de passerelle Power BI. Vérifiez si la passerelle est connectée avec le compte d’administrateur utilisé pour Microsoft Search. 
+1004 | Impossible d’atteindre la passerelle de données locale. Assurez-vous que le service de passerelle est en cours d’exécution et que les détails de la passerelle sont mis à jour dans la configuration de connexion. | Vérifiez l’ordinateur à l’aide de la passerelle, ouvrez l’application passerelle Power BI et assurez-vous que la passerelle est en cours d’exécution. Vérifiez que la passerelle utilise le même compte d’administrateur que Microsoft Search, puis assurez-vous que tous les détails de la passerelle sont tous mis à jour dans la configuration de la connexion. 
 1005 | Les informations d’identification associées à cette source de données ont expiré. Renouvelez les informations d’identification et mettez à jour la connexion. | Cliquez sur **modifier** pour mettre à jour les informations d’identification d’authentification. 
-1006 | La version de votre passerelle est obsolète et ne prend plus en charge ce connecteur. Vous devrez mettre à jour la passerelle. | Consultez (installer une passerelle de données locale) [https://docs.microsoft.com/data-integration/gateway/service-gateway-install] pour télécharger et installer la dernière version de la passerelle Power bi sur l’ordinateur contenant la passerelle.
+1006 | La version de votre passerelle est obsolète et ne prend plus en charge ce connecteur. Vous devrez mettre à jour la passerelle. | Consultez la visite [installer une passerelle de données locale](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) pour télécharger et installer la dernière version de la passerelle Power bi sur l’ordinateur contenant la passerelle.
+1007 | Aucune licence Power BI valide détectée. Vous avez besoin d’une licence Power BI valide pour effectuer cette analyse. | Vous avez besoin d’une licence Power BI valide pour effectuer cette analyse. Vérifiez que votre organisation dispose d’une licence valide. Si c’est le cas, réessayez. Si ce n’est pas le cas, obtenez une licence, puis réessayez.
+1008 | L’utilisation totale du quota de votre client a atteint sa limite. Essayez de supprimer une connexion pour libérer une partie de votre quota ou Ajustez vos filtres d’ingestion afin de réduire le nombre de données. | Essayez de supprimer une connexion pour libérer une partie de votre quota ou Ajustez vos filtres d’ingestion afin de réduire le nombre de données. Si cela ne résout pas le problème, contactez le support Microsoft.
 2001 | L’indexation est limitée en raison d’un grand nombre de mises à jour dans la file d’attente. En fonction de la file d’attente, l’exécution des mises à jour peut prendre un certain temps. | Veuillez patienter jusqu’à ce que la file d’attente soit effacée.
 2002 | Échec de l’indexation en raison d’une mise en forme d’élément non prise en charge. | Pour plus d’informations, reportez-vous à la documentation spécifique au connecteur.
 2003 | Échec de l’indexation en raison d’un contenu d’élément non pris en charge. | Pour plus d’informations, reportez-vous à la documentation spécifique au connecteur. 
-2004 | La [taille du fichier](https://docs.microsoft.com/microsoftsearch/file-share-connector#content-requirements) est trop importante pour être indexée. Il doit être inférieur ou égal à 100 Mo avant le traitement et à 4 Mo après traitement. Le fichier est indexé partiellement dans ce cas. Il se peut que peu d’expressions présentes dans le fichier ne renvoient pas de résultat de recherche. |  
+2004 | La [taille du fichier](https://docs.microsoft.com/microsoftsearch/file-share-connector#content-requirements) est trop importante pour être indexée. Il doit être inférieur ou égal à 100 Mo avant le traitement et à 4 Mo après traitement. Le fichier est indexé partiellement dans ce cas. Il se peut que peu d’expressions présentes dans le fichier ne renvoient pas de résultat de recherche. | Pour plus d’informations, consultez [la documentation relative au partage de fichiers](https://docs.microsoft.com/MicrosoftSearch/file-share-connector#content-requirements) .
 5000 | Un problème est survenu. Si cela persiste, contactez le support technique. | 
 
 ## <a name="preview-limitations"></a>Limitations de l’aperçu
