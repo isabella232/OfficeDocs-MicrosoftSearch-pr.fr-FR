@@ -1,8 +1,8 @@
 ---
 title: Gérer les réponses des acronymes dans Microsoft Search
-ms.author: v-pamcna
-author: TrishaMc1
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,21 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Créer et mettre à jour des réponses d’acronymes dans Microsoft Search
-ms.openlocfilehash: aa857cefe9a2a40a8519a91829e327d01a3f2391
-ms.sourcegitcommit: 25cdb5e6111ec6bc6c130a36aa5f13a6328e1092
+ms.openlocfilehash: af5b82aa2c578fde67a36980cfceef131f605b4e
+ms.sourcegitcommit: d4f49d51fa7d07b3bfd9ba93ed14f4c46d310154
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928228"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412674"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Gérer les acronymes Answers in Microsoft Search
 
-Les employés utilisent souvent des acronymes et des abréviations inconnus utilisés par leur organisation ou leur équipe. Les termes propres aux organisations ou aux équipes peuvent être nouveaux pour les personnes qui passent d’une équipe à une autre, qui travaillent avec des équipes partenaires internes ou de nouveaux employés.
+Les utilisateurs ont souvent des acronymes et des abréviations inconnus utilisés par leur organisation ou leur équipe. Les termes propres aux organisations ou aux équipes peuvent être nouveaux pour les personnes qui passent d’une équipe à une autre, qui travaillent avec des équipes partenaires internes ou qui sont nouveaux dans l’organisation.
 
 Les organisations ne disposent pas toujours d’une référence unique pour leur terminologie standard. L’absence de référence unique rend difficile de trouver des définitions ou des expansions pour ces acronymes. Microsoft Search résout ce problème avec des acronymes.
 
 ## <a name="what-users-experience"></a>Expérience des utilisateurs
-Les utilisateurs de Microsoft Search peuvent obtenir des définitions avec des acronymes dans [Bing](https://Bing.com), [Microsoft Office 365](https://Office.com)et [Microsoft SharePoint Online](https://products.office.com/sharepoint/collaboration). Dans les zones de **recherche** des barres d’en-tête, les utilisateurs entrent des requêtes comme les exemples suivants :
+Les utilisateurs de Microsoft Search peuvent obtenir des définitions avec des acronymes dans [Bing](https://Bing.com). Dans la zone de **recherche** , les utilisateurs entrent des requêtes comme les exemples suivants :
 
 - *Qu’est-ce que* DNN
 - *Définir* DNN
@@ -36,13 +36,13 @@ Les utilisateurs de Microsoft Search peuvent obtenir des définitions avec des a
 - *Signification de* DNN
 - DNN *signifie*
 
-Les résultats suggérés incluent toutes les significations des DNN présentes dans l’organisation de l’utilisateur.
+Le résultat inclut toutes les significations de DNN présentes dans l’organisation de l’utilisateur.
 
 > [!NOTE]
 > Les utilisateurs doivent entrer une requête qui inclut les *Mots clés* spécifiés de l’acronyme pour déclencher les réponses correspondantes. Les requêtes d’acronyme ne sont pas sensibles à la casse. 
 
 ## <a name="set-up-acronyms-answers"></a>Configurer des acronymes pour les réponses
-Dans le centre d' [administration](https://admin.microsoft.com)Microsoft 365, accédez à **paramètres** > **acronymes****Microsoft Search** >, puis sélectionnez **Ajouter des acronymes**. 
+Dans le centre d' [administration](https://admin.microsoft.com)Microsoft 365, accédez à **paramètres**  >  **Microsoft Search**  > **acronymes**Microsoft Search, puis sélectionnez **Ajouter des acronymes**. 
 
 Microsoft Search interroge deux sources de données pour fournir des informations d’acronymes aux recherches des utilisateurs :
 
@@ -50,7 +50,7 @@ Microsoft Search interroge deux sources de données pour fournir des information
 2.  **Acronymes**de extrait. Extrait par Microsoft Search de la messagerie et des documents personnels de l’utilisateur et des données accessibles au public au sein de l’organisation.
 
 ### <a name="set-up-editorial-acronyms"></a>Configurer des acronymes éditoriaux
-Les administrateurs informatiques peuvent configurer des acronymes éditoriaux sous l' [onglet acronymes](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) dans le [centre d’administration 365 de Microsoft]( https://admin.microsoft.com). Vous pouvez ajouter des acronymes à partir de n’importe quel site ou référentiel interne vers le centre d’administration. Les acronymes éditoriaux peuvent être ajoutés à l’état **publié** ou **Brouillon** :
+Les administrateurs de recherche peuvent configurer des acronymes éditoriaux sous l' [onglet acronymes](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) dans le [centre d’administration 365 de Microsoft]( https://admin.microsoft.com). Vous pouvez ajouter des acronymes à partir de n’importe quel site ou référentiel interne vers le centre d’administration. Les acronymes éditoriaux peuvent être ajoutés à l’état **publié** ou **Brouillon** :
 
 **État publié**. Les acronymes sont disponibles pour les employés de l’organisation via Microsoft Search.
 
@@ -86,12 +86,12 @@ Il peut être difficile pour les administrateurs d’ajouter tous les acronymes 
 - Documents dans [SharePoint](https://products.office.com/sharepoint/collaboration), [Microsoft OneDrive]( https://onedrive.live.com/about/) et [Microsoft OneNote](http://www.onenote.com/).
 - Documents publics au sein de l’organisation auxquels les utilisateurs ont accès dans SharePoint, OneDrive ou OneNote.
 
-Microsoft Search garantit que seuls les utilisateurs disposant d’autorisations et d’accès à un document peuvent voir les acronymes qu’il contient. Les acronymes sont extraits de la boîte de réception d’un utilisateur et stockés dans l’utilisateur Shard. Seul l’utilisateur peut accéder aux acronymes extraits de la boîte de réception de l’utilisateur.
+Microsoft Search garantit que seuls les utilisateurs disposant d’autorisations et d’accès à un document peuvent voir les acronymes qu’il contient. Lorsqu’un acronyme provient de la boîte aux lettres d’un utilisateur, seul cet utilisateur peut voir cet acronyme.
 
 > [!NOTE]
-> Aucune installation de l’administrateur informatique n’est nécessaire pour les acronymes de l’extrait.
+> Aucune configuration n’est nécessaire pour les acronymes de l’extrait.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 **Q : comment les données éditoriales et extraites sont-elles classées ?**
 
 **A :** La fonctionnalité classe actuellement les acronymes éditoriaux par-dessus les acronymes.
@@ -102,15 +102,7 @@ Microsoft Search garantit que seuls les utilisateurs disposant d’autorisations
 
 **Q : comment les utilisateurs déclenchent-ils les réponses ?**
 
-**R**: pour obtenir les réponses des acronymes, les utilisateurs doivent entrer des modèles de requête spécifiques dans une zone de **recherche** [Bing](https://bing.com), [Office 365](https://Office.com)ou [SharePoint](https://products.office.com/sharepoint/collaboration) . Voici des exemples de requêtes qui recherchent des réponses pour le terme *DNN* :
-
-- *Qu’est-ce que* DNN
-- *Définir* DNN
-- *Définition* DNN
-- *Développez* DNN
-- *Expansion* DNN
-- *Signification de* DNN
-- DNN *signifie*
+**R**: pour obtenir les réponses des acronymes, les utilisateurs doivent entrer des modèles de requête spécifiques dans une zone de **recherche** [Bing](https://bing.com) . Actuellement, les réponses d’acronyme ne sont pas disponibles dans [Office 365](https://Office.com) ou [SharePoint](https://products.office.com/sharepoint/collaboration).
 
 **Q : combien de temps faut-il pour que les acronymes s’affichent lorsque vous recevez ou envoyez un nouveau message ou un nouveau document ?**
 
@@ -131,4 +123,4 @@ Une fois que vous avez créé un ticket de support, il prend jusqu’à 48 heure
 
 **Q : Quand recevrai-je des réponses d’acronymes dans [Office 365](https://Office.com) et [SharePoint Online](https://products.office.com/sharepoint/collaboration)?**
 
-**R**: Acronymes les réponses sont actuellement disponibles uniquement dans Microsoft Search dans [Bing](https://bing.com). Elles seront déployées dans Office 365 et SharePoint Online dans 2020.
+**R**: acronymes Answers in Office 365 et SharePoint Online font partie de notre feuille de route de produits, mais nous ne sommes actuellement pas en mesure de fournir une date ou un calendrier.
