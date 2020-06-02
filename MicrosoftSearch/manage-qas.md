@@ -12,31 +12,31 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
-description: Recherchez et actualisez des réponses individuelles, ou servez-vous des outils de Recherche Microsoft disponibles pour les modifier tous à la fois
-ms.openlocfilehash: 0877de027b68589e5ba15cd8109ea7edeeae8725
-ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
+description: Recherchez et mettez à jour les réponses individuellement ou utilisez les outils de recherche Microsoft disponibles pour modifier les&Q en une seule fois.
+ms.openlocfilehash: af966cfaae6680a063feb25d2736303106c19978
+ms.sourcegitcommit: 0050e113517a36e3ca26028a04ac5c236caaf524
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721740"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470271"
 ---
 # <a name="manage-qas"></a>Gérer les Q&R
 
-La création de Q&R s’apparente à celle de signets. Les Q&R vous permettent de répondre aux questions des utilisateurs au lieu de vous contenter de leur fournir un lien vers une page web. Les réponses peuvent être mises en forme en texte enrichi à l’aide des outils disponibles. Si un signet et un élément Q&R partagent le même mot clé, le résultat du signet est affiché en premier. Comme pour les signets, l’index des Q&R est actualisé immédiatement après l’ajout ou la modification d’un élément Q&R.
+La création de Q&R s’apparente à celle de signets. Q&en tant que vous permettent de répondre aux questions de l’utilisateur au lieu de simplement fournir un lien vers une page Web. Vous pouvez également mettre en forme la réponse en texte enrichi. Si un signet et un Q&un partage du même mot-clé, le résultat du signet est affiché en premier. Comme les signets, le Q&un index est actualisé immédiatement après qu’un Q&a est ajouté ou modifié.
 
 ## <a name="add-or-edit-a-single-qa"></a>Ajouter ou modifier un seul élément Q&R
 
 1. Accédez au **Centre d’administration Microsoft 365**.
 1. Dans le volet de navigation, accédez à **Paramètres** et sélectionnez **Recherche Microsoft**.
-1. Sélectionnez l’onglet **Q&R**. Par défaut, le premier onglet (**Signets**) est sélectionné.
+1. Sélectionnez le **Q&un** onglet.
 1. Pour ajouter un élément Q&R, sélectionnez **Ajouter nouveau**.
-Pour modifier un élément Q&R, sélectionnez-le dans la liste.
-1. Lorsque vous ajoutez ou modifiez les informations, l’aperçu est automatiquement mis à jour.
+Pour modifier un élément Q&R, sélectionnez-le dans la liste. Lorsque vous ajoutez ou modifiez les informations, l’aperçu est automatiquement mis à jour.
 1. Enregistrez vos modifications.
 
 ### <a name="supported-html-tags"></a>Balises HTML prises en charge
 
-Vous pouvez utiliser le contenu HTML existant ou ajouter des balises HTML à votre réponse (description). Les balises non prises en charge sont ignorées.  
+Vous pouvez utiliser le contenu HTML existant ou ajouter des balises HTML à votre réponse (description). Les balises non prises en charge sont ignorées.
+
 Les balises HTML suivantes sont prises en charge :
 
 - blockquote
@@ -60,40 +60,40 @@ Les balises HTML suivantes sont prises en charge :
 
 Les administrateurs de recherche peuvent facilement créer du contenu de recherche en utilisant des extensions de navigateur. Installez l’extension du navigateur, puis accédez au site à partir duquel vous souhaitez générer un Q&A. Vous pouvez ensuite créer le Q&A et inclure un lien vers le site source.
 
-Actuellement, des extensions de navigateur sont disponibles pour Edge et Chrome.
+Actuellement, les extensions de navigateur sont disponibles pour Microsoft Edge et chrome.
 
-- Pour télécharger les extensions de serveur Edge, accédez à [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) et téléchargez l’application.
-- Pour télécharger les extensions chrome, accédez à la [boutique web chrome](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) et téléchargez l’application.
+- Pour télécharger les extensions de serveur Edge, accédez à [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab).
+- Pour télécharger les extensions chrome, accédez au [magasin Web chrome](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm).
 
 ## <a name="bulk-add-or-edit-qas"></a>Ajouter ou modifier en bloc des questions et réponses
 
-Les administrateurs peuvent utiliser les fonctions d’importation ou d’exportation pour créer ou modifier des Q&R en bloc. Il s’agit d’une fonctionnalité très utile lorsque les administrateurs ont besoin d’ajouter ou de modifier un grand nombre de Q&R.
+Les administrateurs peuvent utiliser les fonctionnalités d’importation et d’exportation pour créer ou modifier en bloc des&Q en tant que.
 
-Utilisez la fonction d’importation/exportation pour les opérations suivantes :
+Utilisez la fonctionnalité importation/exportation pour :
 
-1. Ajout en bloc de Q&R - Ajoutez des détails dans le fichier modèle de l’élément Q&R, puis importez-le.
-1. Modification en bloc de Q&R - Exportez les Q&R dans un fichier .csv, modifiez les détails des Q&R dans le fichier .csv exporté, puis importez le fichier .csv.
-1. Sauvegarde de Q&R - Exportez les Q&R dans un fichier .csv.
+- Ajouter des Q&en bloc en tant que-ajoutez des détails dans le dossier Q&un fichier de modèle, puis importez-le.
+- Modifier en bloc Q&sous-exporter Q&en tant que fichier. csv, modifiez le Q&les détails du fichier exporté, puis importez le fichier.
+- Sauvegardez Q&sous-exporter Q&en tant que fichier. csv.
 
-Pour importer ou exporter des Q&R :
+Pour importer ou exporter des&Q, procédez comme suit :
 
 1. Dans le coin supérieur droit de l’onglet Q&R, sélectionnez **Importer**.
-Sélectionnez **Exporter** pour télécharger tous les Q&R existants dans un fichier .csv.
-1. Dans le volet de droite, choisissez de procéder à l’importation à l’aide d’un fichier .csv.
-Téléchargez le fichier modèle pour obtenir la liste des champs et détails requis.
-1. Ajoutez ou modifiez les détails des Q&R dans le fichier modèle et enregistrez-le sur votre ordinateur.
-1. Dans le volet **Importer des Q&R**, sélectionnez **Parcourir** et choisissez le fichier .csv à importer.
+Sélectionnez **Exporter** pour télécharger tous les&Q existants sous la forme d’un fichier. csv.
+1. Dans le volet droit, sélectionnez l’option d’importation à l’aide d’un fichier. csv. Téléchargez le fichier de modèle pour obtenir la liste des champs et détails requis.
+1. Ajouter ou modifier Q&les détails dans le fichier de modèle et l’enregistrer sur votre ordinateur.
+1. Dans le **&d’importation un** volet, sélectionnez **Parcourir**, puis sélectionnez le fichier. csv que vous souhaitez importer.
 1. Sélectionnez **Importer**.
 
-Remarques importantes concernant le fichier modèle :
+Conseils importants pour les modèles de fichiers :
 
-- Ne modifiez jamais les données dans les champs suivants : *ID*, *Dernière modification* et *Dernière modification par*.
-- Si vous incluez l’*ID* d’un signet existant, celui-ci sera remplacé par les informations contenues dans le fichier d’importation.
-- Si un signet existant comporte déjà le même titre ou la même URL, il est mis à jour avec les informations contenues dans le fichier d’importation.
-- Certains champs du fichier modèle ne sont pas obligatoires, et les champs obligatoires varient en fonction de l’état du signet.
-- En fonction du champ État, les signets sont enregistrés en tant que signets brouillons, suggérés ou programmés, ou sont automatiquement publiés.
-- Pour les partenaires qui gèrent plusieurs organisations, vous pouvez exporter vos signets d’une organisation et les importer dans un autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne *ID*.
+- Ne modifiez jamais les données dans les champs suivants : **ID**, **Dernière modification** et **Dernière modification par**.
+- Si vous incluez l’**ID** d’un signet existant, celui-ci sera remplacé par les informations contenues dans le fichier d’importation.
+- S’il existe un signet existant qui a le même titre ou URL, le signet est mis à jour avec les informations contenues dans le fichier d’importation.
+- Les champs du fichier de modèle ne sont pas tous obligatoires et les champs obligatoires varient en fonction de l’état du signet.
+- En fonction du champ **État** , les signets sont enregistrés en tant que *Brouillon*, *suggéré*ou *planifié*, ou ils sont publiés automatiquement.
+- Pour les partenaires qui gèrent plusieurs organisations : vous pouvez exporter vos signets d’une organisation et les importer dans un autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne **ID**.
 
-**Remarque :** vous ne pouvez pas importer de Q&R si le fichier modèle comporte des erreurs. Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement mis en forme et qu’il contient toutes les informations requises.
+> [!NOTE]
+> Vous ne pouvez pas importer les&Q comme s’il existe des erreurs dans le fichier de modèle. Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement mis en forme et incluez toutes les informations requises.
 
-Pour plus d’informations sur la prévention des erreurs, consultez [Éviter les erreurs d’importation](manage-bookmarks.md#prevent-import-errors).
+Pour plus d’informations sur la façon d’éviter les erreurs, voir [empêcher les erreurs d’importation](manage-bookmarks.md#prevent-import-errors).
