@@ -1,8 +1,8 @@
 ---
 title: Programmez votre contenu
-ms.author: anfowler
-author: adefowler
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
 description: Fournissez du contenu de qualité sans recourir à des ressources supplémentaires lorsque vous utilisez Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: d51fb15199a4c1aedd4af0932ce9bb5683d8abc6
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 65cc9fbec655ec849e32d7b6e14c6947ab30bbc2
+ms.sourcegitcommit: 46303c60e905c89c133278fa41e87055f81a8637
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626944"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44535346"
 ---
 # <a name="plan-your-content"></a>Programmez votre contenu
 
-**Microsoft Search** aide les utilisateurs à trouver le contenu pertinent. La fonctionnalité **Recherche Microsoft** permet d’effectuer des recherches de contenu sécurisées sur votre intranet et sur le web. Microsoft est le seul à proposer ce type d’intégration web et entreprise. 
+**Microsoft Search** aide les utilisateurs à trouver le contenu pertinent. La fonctionnalité **Recherche Microsoft** permet d’effectuer des recherches de contenu sécurisées sur votre intranet et sur le web. Microsoft est le seul à proposer ce type d’intégration web et entreprise.
 
-Les administrateurs de recherche utilisent leur connaissance de l’organisation et de ses utilisateurs pour permettre à ces derniers d’accéder facilement à du contenu pertinent. 
+Les administrateurs de recherche utilisent leur connaissance de l’organisation et de ses utilisateurs pour permettre à ces derniers d’accéder facilement à du contenu pertinent.
 
 ## <a name="step-1-identify-information-your-users-need"></a>Étape 1 : Identifier les informations dont vos utilisateurs ont besoin
 
@@ -47,19 +47,19 @@ Dans une organisation, les utilisateurs effectuent des recherches qui portent su
 
 ### <a name="leverage-smes"></a>Tirer parti des experts techniques
 
-Tirez parti des experts techniques de l’organisation, notamment des experts en ressources humaines, en assistance technique, en ventes, en technologie et autres domaines clés. Pour permettre à vos experts techniques d’apporter leur contribution au contenu, ajoutez-les en tant qu’éditeurs de recherche. 
+Tirez parti des experts techniques de l’organisation, notamment des experts en ressources humaines, en assistance technique, en ventes, en technologie et autres domaines clés. Pour permettre à vos experts techniques d’apporter leur contribution au contenu, ajoutez-les en tant qu’éditeurs de recherche.
 
 ### <a name="involve-your-users"></a>Impliquer les utilisateurs
 
 Demandez aux utilisateurs de suggérer des ressources à ajouter comme signets. Outre la suggestion de contenu, demandez aux utilisateurs de signaler les erreurs, comme les liens rompus ou non valides.
 
-## <a name="step-3-improve-findability-of-content"></a>Étape 3 : Améliorer l’accessibilité du contenu 
+## <a name="step-3-improve-findability-of-content"></a>Étape 3 : Améliorer l’accessibilité du contenu
 
 Dans **Recherche Microsoft**, l’administrateur de recherche crée des signets, des Q&R, des emplacements et des applications PowerApps pour améliorer l’accessibilité du contenu. Chacun de ces composants de recherche comprend un titre, une URL et un ensemble de mots clés qui le déclenchent.
 
 ### <a name="titles-and-descriptions"></a>Titres et descriptions
 
-Les utilisateurs s’appuient sur les titres et les descriptions pour déterminer si le résultat répond à leur requête de recherche ou s’ils doivent tenter une autre recherche. Les titres et descriptions doivent refléter l’objectif principal du résultat. Un bon exemple de titre pourrait être « Aides à la garde d’enfants », avec la description suivante : « En savoir plus sur les aides financières à la garde d’enfants ». Les utilisateurs qui effectuent une recherche sur « garde d’enfants » sont ainsi informés que des aides financières sont disponibles, et un lien leur est fourni s’ils souhaitent en savoir plus. 
+Les utilisateurs s’appuient sur les titres et les descriptions pour déterminer si le résultat répond à leur requête de recherche ou s’ils doivent tenter une autre recherche. Les titres et descriptions doivent refléter l’objectif principal du résultat. Un bon exemple de titre pourrait être « Aides à la garde d’enfants », avec la description suivante : « En savoir plus sur les aides financières à la garde d’enfants ». Les utilisateurs qui effectuent une recherche sur « garde d’enfants » sont ainsi informés que des aides financières sont disponibles, et un lien leur est fourni s’ils souhaitent en savoir plus.
 
 ### <a name="keywords"></a>Mots clés
 
@@ -112,7 +112,7 @@ Il est important que les informations faisant autorité, comme les signets et le
 - vérifier si des changements d’outil, de nom de site ou de nom d’équipe sont intervenus ;
 - déterminer si les signets ou Q&R font suffisamment autorité, ou s’ils nécessitent une description plus claire.
 
-La fonctionnalité **Recherche Microsoft** fournit des statistiques d’utilisation sur les signets, les Q&R et les emplacements. Les statistiques d’utilisation montrent l’intérêt que les utilisateurs portent aux résultats de recherche, et déterminent s’ils trouvent ce qu’ils cherchent ou s’il existe des lacunes dans le contenu disponible. Elles permettent à l’administrateur de surveiller les performances et de prendre les mesures appropriées pour affiner les résultats de la recherche. 
+La fonctionnalité **Recherche Microsoft** fournit des statistiques d’utilisation sur les signets, les Q&R et les emplacements. Les statistiques d’utilisation montrent l’intérêt que les utilisateurs portent aux résultats de recherche, et déterminent s’ils trouvent ce qu’ils cherchent ou s’il existe des lacunes dans le contenu disponible. Elles permettent à l’administrateur de surveiller les performances et de prendre les mesures appropriées pour affiner les résultats de la recherche.
 
 ### <a name="get-details-about-bookmarks-qa-and-locations"></a>Obtenir des détails sur les signets, les Q&R et les emplacements
 
@@ -126,9 +126,9 @@ Les signets, Q&R et emplacements suggérés sont un bon indicateur des lacunes d
 
 ### <a name="review-top-search-queries"></a>Examiner les principales requêtes de recherche
 
-Découvrez quelles recherches ont généré le plus d’impressions au cours des 90 derniers jours. L’impression fait référence au nombre de vues d’une page dans les résultats de la recherche. La carte **Requêtes principales** répertorie les 25 premières recherches des utilisateurs pour chaque type de résultat, avec le nombre total de recherches et leur taux de clic. Utilisez ce rapport pour déterminer le volume de requêtes de recherche et identifier les requêtes dont l’activité de recherche est faible ou élevée. 
+Découvrez quelles recherches ont généré le plus d’impressions au cours des 90 derniers jours. L’impression fait référence au nombre de vues d’une page dans les résultats de la recherche. La carte **Requêtes principales** répertorie les 25 premières recherches des utilisateurs pour chaque type de résultat, avec le nombre total de recherches et leur taux de clic. Utilisez ce rapport pour déterminer le volume de requêtes de recherche et identifier les requêtes dont l’activité de recherche est faible ou élevée.
 
-Un faible nombre de recherches peut indiquer une insatisfaction des utilisateurs, soit parce que le contenu ne correspond pas à ce qu’ils cherchent, soit parce qu’ils utilisent d’autres mots clés pour trouver ce contenu. Le taux de clic indique la fréquence à laquelle les utilisateurs sélectionnent les résultats promus ainsi que l’utilité des résultats et des règles de requête pour les utilisateurs. Un faible taux de clic indique que les utilisateurs trouvent le contenu mais que celui-ci ne correspond pas à leur recherche. Dans ce cas, les administrateurs peuvent décider d’examiner le contenu et de vérifier qu’il correspond à la recherche de l’utilisateur, puis de mettre à jour les titres, les descriptions et les mots clés afin de les aligner sur les requêtes de recherche de l’utilisateur. 
+Un faible nombre de recherches peut indiquer une insatisfaction des utilisateurs, soit parce que le contenu ne correspond pas à ce qu’ils cherchent, soit parce qu’ils utilisent d’autres mots clés pour trouver ce contenu. Le taux de clic indique la fréquence à laquelle les utilisateurs sélectionnent les résultats promus ainsi que l’utilité des résultats et des règles de requête pour les utilisateurs. Un faible taux de clic indique que les utilisateurs trouvent le contenu mais que celui-ci ne correspond pas à leur recherche. Dans ce cas, les administrateurs peuvent décider d’examiner le contenu et de vérifier qu’il correspond à la recherche de l’utilisateur, puis de mettre à jour les titres, les descriptions et les mots clés afin de les aligner sur les requêtes de recherche de l’utilisateur.
 
 ### <a name="analyze-impressions-by-result-type"></a>Analyser les impressions par type de résultat
 

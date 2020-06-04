@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créer et mettre à jour des réponses d’acronymes dans Microsoft Search
-ms.openlocfilehash: af5b82aa2c578fde67a36980cfceef131f605b4e
-ms.sourcegitcommit: d4f49d51fa7d07b3bfd9ba93ed14f4c46d310154
+ms.openlocfilehash: cd9e1a48288e6df8f5746d937684a3f2eedd65df
+ms.sourcegitcommit: 46303c60e905c89c133278fa41e87055f81a8637
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412674"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44535355"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Gérer les acronymes Answers in Microsoft Search
 
@@ -26,6 +26,7 @@ Les utilisateurs ont souvent des acronymes et des abréviations inconnus utilis�
 Les organisations ne disposent pas toujours d’une référence unique pour leur terminologie standard. L’absence de référence unique rend difficile de trouver des définitions ou des expansions pour ces acronymes. Microsoft Search résout ce problème avec des acronymes.
 
 ## <a name="what-users-experience"></a>Expérience des utilisateurs
+
 Les utilisateurs de Microsoft Search peuvent obtenir des définitions avec des acronymes dans [Bing](https://Bing.com). Dans la zone de **recherche** , les utilisateurs entrent des requêtes comme les exemples suivants :
 
 - *Qu’est-ce que* DNN
@@ -39,17 +40,19 @@ Les utilisateurs de Microsoft Search peuvent obtenir des définitions avec des a
 Le résultat inclut toutes les significations de DNN présentes dans l’organisation de l’utilisateur.
 
 > [!NOTE]
-> Les utilisateurs doivent entrer une requête qui inclut les *Mots clés* spécifiés de l’acronyme pour déclencher les réponses correspondantes. Les requêtes d’acronyme ne sont pas sensibles à la casse. 
+> Les utilisateurs doivent entrer une requête qui inclut les *Mots clés* spécifiés de l’acronyme pour déclencher les réponses correspondantes. Les requêtes d’acronyme ne sont pas sensibles à la casse.
 
 ## <a name="set-up-acronyms-answers"></a>Configurer des acronymes pour les réponses
-Dans le centre d' [administration](https://admin.microsoft.com)Microsoft 365, accédez à **paramètres**  >  **Microsoft Search**  > **acronymes**Microsoft Search, puis sélectionnez **Ajouter des acronymes**. 
+
+Dans le centre d' [administration](https://admin.microsoft.com)Microsoft 365, accédez à **paramètres**  >  **Microsoft Search**  > **acronymes**Microsoft Search, puis sélectionnez **Ajouter des acronymes**.
 
 Microsoft Search interroge deux sources de données pour fournir des informations d’acronymes aux recherches des utilisateurs :
 
-1.  **Acronymes éditorial**. Fourni par les administrateurs informatiques dans le [Centre d’administration](https://admin.microsoft.com).
-2.  **Acronymes**de extrait. Extrait par Microsoft Search de la messagerie et des documents personnels de l’utilisateur et des données accessibles au public au sein de l’organisation.
+1. **Acronymes éditorial**. Fourni par les administrateurs informatiques dans le [Centre d’administration](https://admin.microsoft.com).
+2. **Acronymes**de extrait. Extrait par Microsoft Search de la messagerie et des documents personnels de l’utilisateur et des données accessibles au public au sein de l’organisation.
 
 ### <a name="set-up-editorial-acronyms"></a>Configurer des acronymes éditoriaux
+
 Les administrateurs de recherche peuvent configurer des acronymes éditoriaux sous l' [onglet acronymes](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) dans le [centre d’administration 365 de Microsoft]( https://admin.microsoft.com). Vous pouvez ajouter des acronymes à partir de n’importe quel site ou référentiel interne vers le centre d’administration. Les acronymes éditoriaux peuvent être ajoutés à l’état **publié** ou **Brouillon** :
 
 **État publié**. Les acronymes sont disponibles pour les employés de l’organisation via Microsoft Search.
@@ -66,6 +69,7 @@ Les administrateurs peuvent ajouter des acronymes individuellement ou les import
 | *439* | *Abréviation orthographiée* |  | *URL* | *Publié ou brouillon* |
 
 ### <a name="csv-fields"></a>Champs CSV
+
 **Acronyme**. Contient la forme courte ou l’acronyme réel. Par exemple, *DNN*.
 
 **Expansion**. Contient l’expansion de l’acronyme. Il s’agit par exemple d’un *réseau neuronal profond*.
@@ -80,6 +84,7 @@ Les administrateurs peuvent ajouter des acronymes individuellement ou les import
 - **Publié**. Ajoute l’acronyme à l’État publié et le rend disponible dans Microsoft Search.
 
 ### <a name="mined-acronyms"></a>Acronymes de extrait
+
 Il peut être difficile pour les administrateurs d’ajouter tous les acronymes utilisés dans une organisation aux réponses. Cette fonctionnalité peut trouver des acronymes que les administrateurs de recherche ne tiennent pas compte de. Pour ce faire, Microsoft Search explore également des acronymes de ces sources :
 
 - Les e-mails des utilisateurs.
@@ -91,14 +96,15 @@ Microsoft Search garantit que seuls les utilisateurs disposant d’autorisations
 > [!NOTE]
 > Aucune configuration n’est nécessaire pour les acronymes de l’extrait.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+
 **Q : comment les données éditoriales et extraites sont-elles classées ?**
 
 **A :** La fonctionnalité classe actuellement les acronymes éditoriaux par-dessus les acronymes.
 
 **Q : combien de temps faut-il pour que les acronymes soient visibles dans Microsoft Search après leur publication ?**
 
-**A :**  Trois jours sont nécessaires pour que les acronymes ajoutés à l’État publié soient disponibles dans Microsoft Search. 
+**A :**  Trois jours sont nécessaires pour que les acronymes ajoutés à l’État publié soient disponibles dans Microsoft Search.
 
 **Q : comment les utilisateurs déclenchent-ils les réponses ?**
 
@@ -118,8 +124,8 @@ Microsoft Search garantit que seuls les utilisateurs disposant d’autorisations
 
 **Q : que se passe-t-il si mon organisation ne souhaite pas afficher d’acronymes extrait ? Puis-je arrêter l’affichage des acronymes d’extrait dans les résultats de recherche ?**
 
-**A**: pour désactiver l’affichage des acronymes d’extrait dans les résultats de la recherche, créez un ticket de support client en suivant les instructions indiquées sur [contacter le support technique pour les produits métiers](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support).
-Une fois que vous avez créé un ticket de support, il prend jusqu’à 48 heures pour que les acronymes d’extrait s’affichent dans les résultats de la recherche. 
+**A**: pour désactiver l’affichage des acronymes d’extrait dans les résultats de la recherche, créez un ticket de support client en suivant les instructions indiquées sur [contacter le support technique pour les produits métiers](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support).
+Une fois que vous avez créé un ticket de support, il prend jusqu’à 48 heures pour que les acronymes d’extrait s’affichent dans les résultats de la recherche.
 
 **Q : Quand recevrai-je des réponses d’acronymes dans [Office 365](https://Office.com) et [SharePoint Online](https://products.office.com/sharepoint/collaboration)?**
 
