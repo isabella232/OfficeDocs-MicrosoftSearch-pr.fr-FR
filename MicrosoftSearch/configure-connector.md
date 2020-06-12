@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer votre connecteur créé par Microsoft pour Microsoft Search
-ms.openlocfilehash: 3c54f04c1ac6cc42eef2e27a2b40b6ce92357630
-ms.sourcegitcommit: 46303c60e905c89c133278fa41e87055f81a8637
+ms.openlocfilehash: eb81f9cdc9caf2020bae64984f11ae7e1b87dae9
+ms.sourcegitcommit: a8a6c949f249d106f37103e127d2ea7df730f7a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44535308"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702757"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -34,10 +34,10 @@ Cet article vous guide tout au long de la procédure de configuration d’un con
 
 ## <a name="set-up"></a>Configurer
 
-Pour configurer les connecteurs créés par Microsoft, accédez au [Centre d’administration](https://admin.microsoft.com):
+Procédez comme suit pour configurer les connecteurs créés par Microsoft.
 
-1. Connectez-vous à votre compte avec les informations d’identification de votre client de test [Microsoft 365](https://www.microsoft.com/microsoft-365) .
-2. Accédez à **paramètres**  >  **Microsoft Search**  >  **Connectors**.
+1. Accédez à l' [onglet Connecteurs](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com).
+2. Connectez-vous à votre compte avec les informations d’identification de votre client [Microsoft 365](https://www.microsoft.com/microsoft-365) .
 3. Sélectionnez **Ajouter un connecteur**.
 4. Dans la liste des connecteurs disponibles, sélectionnez le connecteur de votre choix.
 
@@ -67,7 +67,7 @@ Les administrateurs peuvent définir les attributs du schéma de recherche pour 
 
 Les attributs de schéma de recherche incluent des **recherches pouvant**faire l’objet d’une recherche, d’une **requête**ou d’une **récupération**. Le tableau suivant répertorie chacun des attributs pris en charge par les connecteurs Microsoft Graph et explique leurs fonctions.
 
-**Attribut de schéma de recherche** | **Fonction** | **Exemple**
+Attribut de schéma de recherche | Fonction | Exemple
 --- | --- | ---
 FAIRE l’objet | Rend le texte d’une propriété pouvant faire l’objet d’une recherche. Le contenu de la propriété est inclus dans l’index de texte intégral. | Si la propriété est **title**, une requête pour **Enterprise** renvoie des réponses qui contiennent le mot **entreprise** dans n’importe quel texte ou titre.
 QUERYABLE | Recherche par requête une correspondance pour une propriété particulière. Le nom de la propriété peut ensuite être spécifié dans la requête, soit par programme, soit par mot Verbatim. |  Si la propriété **title** peut être Requery, le titre de la requête **: Enterprise** est pris en charge.
