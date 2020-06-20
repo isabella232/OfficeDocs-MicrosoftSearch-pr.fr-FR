@@ -15,16 +15,22 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: Obtenez des suggestions de recherche pertinentes et trouvez des résultats de travail plus rapidement en ajoutant la zone de recherche Microsoft à une page ou à un site intranet.
-ms.openlocfilehash: bcf1c6890415fdd9ae22f28cdf6d3dec1ffcaac4
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: af12ce4d17c2695e196f8e4d79ccd515f002f238
+ms.sourcegitcommit: 92206ea179ec00b22496f6fd2866b5406449cf40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37948905"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44798224"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>Ajout d’une zone de recherche à votre site intranet
 
-Pour accéder rapidement à des suggestions de recherche et des résultats de travail pertinents, ajoutez une zone de recherche Microsoft à des sites ou à des pages intranet.
+Pour permettre à vos utilisateurs d’accéder facilement aux résultats de votre organisation, ajoutez une zone de recherche Microsoft Search dans Bing à un site ou une page intranet. Voici quelques-uns des avantages :
+
+- Une zone de recherche sur votre portail SharePoint ou intranet constitue un point d’entrée de confiance familier pour démarrer la recherche
+- Prend en charge tous les principaux navigateurs Web, y compris Google Chrome et Microsoft Edge
+- Seules les suggestions de recherche de votre organisation apparaissent, les suggestions Web ne sont jamais incluses.
+- Permet aux utilisateurs d’accéder à une page de résultats du travail Microsoft Search dans Bing, qui exclut les publicités et les résultats Web
+- Vous contrôlez l’apparence et le comportement de la zone de recherche
   
 ## <a name="add-a-search-box-to-an-intranet-page"></a>Ajout d’une zone de recherche à une page intranet
 
@@ -88,8 +94,8 @@ Pour aider la zone de recherche à mieux s’insérer au style de votre intranet
         dropShadow: true,                       // default: true
         iconColor: "#067FA6",                   // default: #067FA6
         companyNameInGhostText: "Contoso"       // default: not specified
-                                                // when absent, ghost text will be "Search work and the web"
-                                                // when specified, text will be "Search the web and [Contoso]"
+                                                // when absent, ghost text will be "Search work"
+                                                // when specified, text will be "Search <companyNameInGhostText>"
     };
 </script>
 <script async src="https://www.bing.com/business/s?k=sb"></script>
