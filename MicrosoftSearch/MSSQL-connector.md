@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez Microsoft SQL Server ou Azure SQL Connector pour Microsoft Search.
-ms.openlocfilehash: adb923527576a72663efe3a069918f38a5e89526
-ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
+ms.openlocfilehash: e664a9a6e389531f8b5735673150839a1b106ce1
+ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44604400"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44850897"
 ---
-# <a name="microsoft-sql-server-and-azure-sql-connector"></a>Microsoft SQL Server et Azure SQL Connector
+# <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Connecteurs Azure SQL et Microsoft SQL Server
 
 Avec un connecteur Microsoft SQL Server ou Azure SQL, votre organisation peut découvrir et indexer des données à partir d’une base de données SQL Server locale ou d’une base de données hébergée dans votre instance Azure SQL dans le Cloud. Le connecteur indexe le contenu spécifié dans Microsoft Search. Pour conserver l’index à jour avec les données source, il prend en charge les analyses incrémentielles et complètes périodiques. Avec ces connecteurs SQL, vous pouvez également limiter l’accès aux résultats de recherche pour certains utilisateurs.
 
@@ -31,10 +31,10 @@ Pour accéder à vos données tierces, vous devez installer et configurer une pa
 ## <a name="connect-to-a-data-source"></a>Se connecter à une source de données
 Pour connecter votre Connecteur Microsoft SQL Server à une source de données, vous devez configurer le serveur de base de données que vous souhaitez analyser et la passerelle locale. Vous pouvez ensuite vous connecter à la base de données à l’aide de la méthode d’authentification requise.
 
-Pour Azure SQL Connector, vous devez uniquement spécifier le nom du serveur ou l’adresse IP à laquelle vous souhaitez vous connecter. Azure SQL Connector prend uniquement en charge l’authentification Azure Active Directory Open ID Connect (OIDC) pour se connecter à la base de données.
+Pour le connecteur Azure SQL, il vous suffit de spécifier le nom du serveur ou l’adresse IP à laquelle vous souhaitez vous connecter. Azure SQL Connector prend uniquement en charge l’authentification Azure Active Directory Open ID Connect (OIDC) pour se connecter à la base de données.
 
 > [!NOTE]
-> Votre base de données doit exécuter la version 2008 ou une version ultérieure de SQL Server pour que le connecteur Microsoft SQL Server puisse s’y connecter.
+> Votre base de données doit exécuter la version 2008 ou une version ultérieure de SQL Server pour que le connecteur Microsoft SQL Server puisse se connecter.
 
 Pour effectuer une recherche dans le contenu de votre base de données, vous devez spécifier des requêtes SQL lorsque vous configurez le connecteur. Ces requêtes SQL doivent nommer toutes les colonnes de base de données que vous souhaitez indexer (c.-à-d. les propriétés source), y compris toutes les jointures SQL qui doivent être effectuées pour obtenir toutes les colonnes. Pour restreindre l’accès aux résultats de la recherche, vous devez spécifier des listes de contrôle d’accès (ACL) dans les requêtes SQL lorsque vous configurez le connecteur.
 

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Répertorie tous les connecteurs Microsoft Graph pour Microsoft Search
-ms.openlocfilehash: 949a7dfcf25c51c706d2a141071d7a0e5cad2133
-ms.sourcegitcommit: f189c83c0b82e822d65cda4ac69ba9c80a1a9c33
+ms.openlocfilehash: 47782a9a429bf3ad75cffaadf6f67402638fd3a6
+ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "44838038"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44850925"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Galerie de connecteurs Microsoft Graph
 
@@ -50,6 +50,50 @@ ms.locfileid: "44838038"
             </div>
         </div>
     </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="overflow: hidden; height: 235px;">
+                    <div class="cardText">
+                        <h3>Azure DevOps</h3>
+                        <p>par <a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
+                        <p>Avec ce connecteur Microsoft Graph, les utilisateurs de votre organisation peuvent rechercher des éléments de travail dans votre instance Azure DevOps.</p>
+                        <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
+                            <div style="font-weight:500;width:150px;display:inline">
+                                <a href="azure-devops-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
+                                    <font color="0065BA">Plus de détails</font>
+                                </a>
+                             <img src="media/AzureDevOps_Medium.png" alt="Azure DevOps" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="overflow: hidden; height: 235px;">
+                    <div class="cardText">
+                        <h3>Azure SQL</h3>
+                        <p>par <a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
+                        <p>Avec ce connecteur Microsoft Graph, les utilisateurs de votre organisation peuvent rechercher des données à partir de votre base de données SQL Azure.</p>
+                        <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
+                            <div style="font-weight:500;width:150px;display:inline">
+                                <a href="MSSQL-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
+                                    <font color="0065BA">Plus de détails</font>
+                                </a>
+                             <img src="media/AzureSqlConnectorLogo_Medium.png" alt="Azure SQL" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -92,8 +136,6 @@ ms.locfileid: "44838038"
             </div>
         </div>
     </li>
-</ul>
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -115,6 +157,8 @@ ms.locfileid: "44838038"
             </div>
         </div>
     </li>
+</ul>
+<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -158,8 +202,6 @@ ms.locfileid: "44838038"
         </div>
     </li>
 </ul>
-
-
 
 ---
 

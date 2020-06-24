@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer votre connecteur créé par Microsoft pour Microsoft Search
-ms.openlocfilehash: eb81f9cdc9caf2020bae64984f11ae7e1b87dae9
-ms.sourcegitcommit: a8a6c949f249d106f37103e127d2ea7df730f7a3
+ms.openlocfilehash: e5b40326bdd83f461e7ce9a45889ad82245e20aa
+ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702757"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44850888"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -26,6 +26,8 @@ ms.locfileid: "44702757"
 Cet article vous guide tout au long de la procédure de configuration d’un connecteur créé par Microsoft. Il décrit le flux de configuration d’une connexion dans le [Centre d’administration](https://admin.microsoft.com)365 de Microsoft. Pour plus d’informations sur la configuration de connecteurs créés par Microsoft, consultez les articles suivants :
 
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
+* [Azure DevOps](azure-devops-connector.md)
+* [Azure SQL](MSSQL-connector.md)
 * [Sites web d’entreprise](enterprise-web-connector.md)
 * [Partage de fichiers](file-share-connector.md)
 * [MediaWiki](mediawiki-connector.md)

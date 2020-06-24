@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez le connecteur de partage de fichiers pour Microsoft Search.
-ms.openlocfilehash: ece8997138182c1cd4ac7230aa2a3501af912933
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 2349ad753508d5f19a70648d9cbf1df495b27108
+ms.sourcegitcommit: 7eda9b621def0659d7e7bc8b989f8adc929cce93
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699777"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861093"
 ---
-# <a name="the-file-share-connector-for-microsoft-search"></a>Connecteur de partage de fichiers pour Microsoft Search
+# <a name="file-share-connector"></a>Connecteur de partage de fichiers
 
 Avec le connecteur de partage de fichiers, les utilisateurs de votre organisation peuvent effectuer des recherches dans des partages de fichiers locaux. Les résultats de la recherche de ces partages sont fusionnés avec les résultats provenant de [SharePoint](http://sharepoint.com/) et de [Microsoft OneDrive entreprise](https://onedrive.live.com/about/business/).
 
@@ -50,7 +50,7 @@ Pour configurer votre page de résultats de recherche, procédez comme suit :
 
 2. Installez [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588).
 
-3. Ouvrez SharePoint Online Management Shell en tant qu’administrateur et importez le module **Microsoft. SharePoint. client. dll** présent à l’adresse `C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.Client\v4.0_16.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.Client.dll`.
+3. Ouvrez SharePoint Online Management Shell en tant qu’administrateur et importez le module **Microsoft.SharePoint.Client.dll** sur `C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.Client\v4.0_16.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.Client.dll` .
 
 > [!NOTE]
 > Ce chemin d’accès peut ne pas être le même pour tous les utilisateurs.
@@ -89,7 +89,7 @@ Write-Host "Success" -ForegroundColor Cyan
 Read-Host -Prompt 'Press enter to exit'
 ```
 
-5. Entrez les valeurs requises dans [Microsoft PowerShell](https://microsoft.com/powershell), telles que le nom de l’organisation, le nom d’utilisateur, le mot de passe et l’URL du site. Par **exemple**, si vos informations d’identification d’administrateur `admin@a830edad9050849823J19081300.onmicrosoft.com`sont, le nom de votre organisation est **a830edad9050849823J19081300**et l’URL de `https:// a830edad9050849823J19081300.sharepoint.com`votre site est.
+5. Entrez les valeurs requises dans [Microsoft PowerShell](https://microsoft.com/powershell), telles que le nom de l’organisation, le nom d’utilisateur, le mot de passe et l’URL du site. Par **exemple**, si vos informations d’identification d’administrateur sont `admin@a830edad9050849823J19081300.onmicrosoft.com` , le nom de votre organisation est **a830edad9050849823J19081300**et l’URL de votre site est `https:// a830edad9050849823J19081300.sharepoint.com` .
 
 > [!NOTE]
 > Le paramètre **AllProperties** ne peut être réalisé qu’au niveau d’une collection de sites (site teams/comms).
