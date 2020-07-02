@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: La fonctionnalité plans d’étage de Microsoft Search aide les utilisateurs à trouver des personnes, des bureaux et d’autres équipements dans un immeuble.
-ms.openlocfilehash: e005767c255cb899793b6b4849882c7ec0561256
-ms.sourcegitcommit: 7ad6f4b0ab6cd7b912862273a8b4d48a6507bc29
+ms.openlocfilehash: 95941e57946f49de3a0558dc2d2c59b999151b37
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44878241"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996111"
 ---
 # <a name="manage-floor-plans"></a>Gérer les plans d’étage
 
@@ -67,7 +67,7 @@ Utilisez **Microsoft Search** pour rechercher un utilisateur et vérifier que so
 
 ### <a name="step-5-add-building-locations"></a>Étape 5 : ajouter des emplacements de création
 
-Plans d’étage utilise des [emplacements](manage-locations.md) pour définir vos bâtiments. Dans le centre d' [administration](https://admin.microsoft.com)Microsoft 365, accédez à **paramètres**  >  **Microsoft Search**  >  **locations**, puis sélectionnez **Ajouter**. Entrez le nom, l’adresse et les mots clés pour le bâtiment. Ajoutez autant de bâtiments que vous le souhaitez.
+Plans d’étage utilise des [emplacements](manage-locations.md) pour définir vos bâtiments. Dans le centre d' [administration](https://admin.microsoft.com)Microsoft 365, accédez à **paramètres**  >  **Microsoft Search**  >  **Answers**  >  [**locations**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations), puis sélectionnez **Ajouter**. Entrez le nom, l’adresse et les mots clés pour le bâtiment. Ajoutez autant de bâtiments que vous le souhaitez.
 
 ![floorplans-locations.png](media/floorplans-locations.png)
 
@@ -77,13 +77,13 @@ Pour plus d’informations sur les emplacements, voir [Manage locations](manage-
 
 Pour pouvoir utiliser les plans d’étage, les emplacements de bureau doivent être indexés. Il s’agit d’une opération ponctuelle pouvant prendre jusqu’à 48 heures. La durée totale dépend de la taille de votre organisation.
 
-Dans le [Centre d’administration](https://admin.microsoft.com), accédez à **paramètres**  >  **Microsoft Search**  >  **Floor plans**, puis sélectionnez **prise en main**. Si vous ne voyez pas cette notification, cette étape a déjà été effectuée pour votre organisation.
+Dans le [Centre d’administration](https://admin.microsoft.com), accédez à **paramètres**  >  plans d’étage de**Microsoft Search**  >  **Answers**  >  [**Floor plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans), puis sélectionnez **prise en main**. Si vous ne voyez pas cette notification, cette étape a déjà été effectuée pour votre organisation.
 
 ![floorplans_hydrationstep.png](media/floorplans_hydrationstep.png)
 
 ### <a name="step-7-upload-floor-plans"></a>Étape 7 : chargement des plans d’étage
 
-1. Dans le [Centre d’administration](https://admin.microsoft.com), accédez à **paramètres**  >  **Microsoft Search**  >  **Floor plans**, puis sélectionnez **Ajouter**.
+1. Dans le [Centre d’administration](https://admin.microsoft.com), accédez à **paramètres**  >  plans d’étage de**Microsoft Search**  >  **Answers**  >  [**Floor plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans).
 2. Sélectionnez un immeuble dans la liste déroulante, puis cliquez sur **suivant**. Si le bâtiment n’est pas indiqué, revenez en arrière et [Ajoutez des emplacements de construction](#step-5-add-building-locations).
 3. Sélectionnez **Télécharger les fichiers**, puis choisissez le plan d’étage que vous téléchargez.
 4. Lorsque le téléchargement est terminé, vous devez entrer le numéro d’étage représenté dans le fichier de plan d’étage. Ensuite, sélectionnez **Suivant**.
@@ -142,7 +142,7 @@ Pour mettre à jour un plan d’étage existant, sélectionnez le plan d’étag
 
 **A :** Créez un fichier DWG dans Microsoft Visio, Autodesk AutoCAD ou dans un autre éditeur DWG. Assurez-vous que 10 salles ou plus sont étiquetées dans le fichier.
 
-**Q :** * * quelle est la meilleure mise en forme pour les étiquettes de texte dans les fichiers DWG ?
+**Q :** Quel est le meilleur format pour les étiquettes de texte dans les fichiers DWG ?
 
 **A :** Pour obtenir les meilleurs résultats, les étiquettes de texte doivent contenir les numéros de plancher et de chambre. Les exemples ci-dessous utilisent 2 ou SC pour le code de bâtiment.
 <!-- markdownlint-disable no-inline-html -->

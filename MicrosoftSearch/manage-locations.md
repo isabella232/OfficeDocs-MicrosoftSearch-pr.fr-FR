@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: Au fil du temps, il se peut que vous deviez mettre à jour le statut et le contenu de certains emplacements afin qu’ils restent pertinents. 
-ms.openlocfilehash: bb229086f7dd8c1b8d17a0b8335bb618850106be
-ms.sourcegitcommit: 063fec4a336b6b3118d4769a4bd0cc2d568ea7e2
+ms.openlocfilehash: a5d3209e2b6e9269ff2e5986cf81de705ae1cc4d
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42276987"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996066"
 ---
 # <a name="manage-locations"></a>Gérer les emplacements
 
@@ -29,8 +29,7 @@ Les emplacements permettent à vos utilisateurs de trouver des adresses et de lo
 ### <a name="add-or-edit-a-single-location"></a>Ajouter ou modifier un seul emplacement
 
 1. Accédez au **Centre d’administration Microsoft 365**.
-1. Dans le volet de navigation, accédez à **Paramètres** et sélectionnez **Recherche Microsoft**.
-1. Sélectionnez l’onglet **Emplacements**. Par défaut, l’onglet **Signets** est sélectionné sur la page **Recherche Microsoft**.
+1. Dans le volet de navigation, accédez à **paramètres**  >  **Microsoft Search**  >  **Answers**  >  [**emplacements**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations) de réponses de recherche Microsoft
 1. Pour ajouter un nouvel emplacement, sélectionnez **Ajouter nouveau**.
 1. Pour modifier un emplacement, sélectionnez-le dans la liste.
 1. Lorsque vous ajoutez ou modifiez les informations, l’aperçu est automatiquement mis à jour.
@@ -51,7 +50,7 @@ Pour exporter ou importer des emplacements :
 1. Dans le coin supérieur droit de l’onglet **Emplacements**, sélectionnez **Importer**.
 Sélectionnez **Exporter** pour télécharger les emplacements existants dans un fichier .csv.
 1. Dans le volet de droite, choisissez de procéder à l’importation à l’aide d’un fichier .csv.
-Téléchargez le fichier modèle pour obtenir la liste des champs et détails obligatoires.
+Téléchargez le fichier modèle pour obtenir la liste des champs et détails requis.
 1. Ajoutez ou modifiez les détails de l’emplacement dans le fichier modèle, puis enregistrez-le sur votre ordinateur.
 1. Dans le volet **Importer des emplacements**, sélectionnez **Parcourir** et choisissez le fichier .csv à importer.
 1. Sélectionnez **Importer**.
@@ -65,6 +64,7 @@ Remarques importantes concernant le fichier modèle :
 - En fonction du champ d' *État* , les emplacements seront enregistrés en tant que brouillon, suggéré, programmé, ou ils seront publiés automatiquement.
 - Pour les partenaires qui gèrent plusieurs organisations, vous pouvez exporter vos emplacements d’une organisation et les importer dans un autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne *ID*.
 
-**Remarque :** il est impossible d’importer des emplacements si le fichier modèle comporte des erreurs. Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement mis en forme et qu’il contient toutes les informations requises.
+> [!NOTE]
+> Vous ne pouvez pas importer d’emplacements s’il existe des erreurs dans le fichier de modèle. Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement mis en forme et qu’il contient toutes les informations requises.
 
 Pour plus d’informations sur la prévention des erreurs, consultez [Éviter les erreurs d’importation](manage-bookmarks.md#prevent-import-errors).

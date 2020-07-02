@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Créer et mettre à jour des signets et des méthodes pour modifier en bloc les résultats de signet pour Microsoft Search
-ms.openlocfilehash: 292a04714f4baa115473df86bfbeb2f3c8860114
-ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
+ms.openlocfilehash: 64e430309ef1969ab804e8d757b987332f0a6006
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721749"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996102"
 ---
 # <a name="manage-bookmarks"></a>Gérer des signets
 
@@ -29,8 +29,7 @@ Si votre organisation a promu les résultats configurés dans SharePoint, vous p
 ## <a name="add-or-edit-a-single-bookmark"></a>Ajouter ou modifier un seul signet
 
 1. Accédez au **Centre d’administration Microsoft 365**.
-1. Dans le volet de navigation, accédez à **Paramètres**, puis sélectionnez **Recherche Microsoft**.
-Par défaut, l’onglet **Signets** est sélectionné.
+1. Dans le volet de navigation, accédez à **paramètres**  >  **Microsoft Search**  >  **Answers**  >  [**signets**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)de réponses Microsoft Search.
 1. Pour ajouter un signet, sélectionnez **Ajouter nouveau**.
 Pour modifier un signet, sélectionnez-le dans la liste.
 1. Lorsque vous ajoutez ou modifiez les informations, l’aperçu est automatiquement mis à jour.
@@ -91,7 +90,7 @@ Pour éviter les erreurs de duplication de signet à signet, suivez les meilleur
 - N’utilisez pas d’URL en double pour différents signets. Si une URL est déjà affectée à un autre signet et que vous la rajoutez à partir d’un fichier d’importation, vous obtiendrez une erreur. Cela s’applique également aux URL en double pour d’autres types de réponses.
 - Utilisez la colonne *ID de signet* lors de la mise à jour de signets existants. Vous pouvez mettre à jour toute autre propriété d’un signet existant, telle que mot clé ou description, mais vous devez vous assurer que l' *ID de signet* se trouve dans la colonne appropriée du fichier d’importation. Si l' *ID de signet* est présent, le service ne le considère pas comme étant une nouvelle addition et n’est pas traité comme une erreur.
 
-## <a name="power-apps"></a>Power Apps
+## <a name="power-apps"></a>Power Apps
 
 Aidez vos utilisateurs à accomplir certaines tâches, telles que la saisie de périodes de congés ou de frais, en ajoutant des applications PowerApp existantes à vos signets.
 
@@ -106,8 +105,8 @@ Les applications Power sont un service qui vous permet de créer des application
 ### <a name="add-a-power-app-to-a-bookmark"></a>Ajouter une application d’alimentation à un signet
 
 1. Recherchez l' [ID d’application de l’application d’alimentation](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) que vous souhaitez ajouter.
-1. Connectez-vous et accédez au **Centre d’administration Microsoft 365**.
-1. Dans le volet de navigation, accédez à **Paramètres**, puis sélectionnez **Recherche Microsoft**.
+1. Connectez-vous au [**Centre d’administration Microsoft 365**](https://admin.microsoft.com).
+1. Dans le volet de navigation, accédez à **paramètres**  >  **Microsoft Search**  >  **Answers**  >  [**signets**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)de réponses Microsoft Search.
 1. Ajoutez un nouveau signet ou accédez à un signet existant auquel vous souhaitez ajouter une application **PowerApp**.
 1. Dans **Paramètres de signet**, sélectionnez **Application PowerApp**, puis **Ajouter une application PowerApp**.
 1. Entrez ou collez l’**ID de l’application**.

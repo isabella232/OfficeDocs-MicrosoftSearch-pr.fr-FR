@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ajouter des secteurs verticaux de recherche et personnaliser les résultats de la recherche
-ms.openlocfilehash: 44b1b9ff211a65313f5c5cf532334335994c486d
-ms.sourcegitcommit: 0050e113517a36e3ca26028a04ac5c236caaf524
+ms.openlocfilehash: 60ab3423db0a86982df9c4332f0f22267c49dc04
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470280"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996057"
 ---
 # <a name="customize-the-search-results-page"></a>Personnaliser la page de résultats de recherche
 
@@ -59,7 +59,7 @@ Vous pouvez utiliser un ensemble limité de [langage de requête de mot clé (KQ
 
 Pour créer le secteur vertical sur Microsoft Search dans [SharePoint](https://sharepoint.com/) famille, [Office](https://office.com)ou [Bing](https://bing.com), procédez comme suit :
 
-1. Dans le centre d' [administration](https://admin.microsoft.com)Microsoft 365, accédez à **paramètres**   >  **Microsoft Search**   >  **VERTICALS**.
+1. Dans le centre d' [administration](https://admin.microsoft.com)Microsoft 365, accédez à **paramètres**   >  **Microsoft Search**   >  **customization**  >  [**VERTICALS**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 1. Sélectionnez **Ajouter** pour commencer.  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>Créer une verticale au niveau du site
@@ -77,7 +77,7 @@ N’oubliez pas que les secteurs verticaux sont créés dans un état désactiv�
 
 Vous pouvez définir le mode d’affichage des résultats dans le secteur vertical en concevant la disposition à l’aide des types de résultat. La disposition des résultats vous permet d’afficher des informations importantes directement dans les résultats de la recherche, afin que les utilisateurs n’aient pas à sélectionner chaque résultat pour voir s’ils ont trouvé ce qu’ils cherchent.
 
-Un type de résultat de recherche est une règle qui entraîne l'affichage, sous diverses formes, de différents types de résultats de recherche. Il se compose des éléments suivants :
+A search result type is a rule that causes distinct kinds of search results to be displayed in different ways. It consists of the following:
 
 - **Une ou plusieurs conditions** pour comparer chaque résultat de recherche par rapport à, comme la source de contenu du résultat de la recherche.  
 - Une **disposition de résultats** à utiliser pour les résultats de recherche qui remplissent les conditions. La disposition des résultats contrôle la manière dont les résultats qui remplissent les conditions apparaissent et se comportent sur une page de résultats de la recherche.
@@ -88,7 +88,7 @@ Une fois que vous avez démarré l’Assistant, vous pouvez définir le nom, la 
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>Créer un type de résultat au niveau de l’Organisation
 
-1. Dans le [Centre d’administration](https://admin.microsoft.com), accédez à **configuration**de  >  **Microsoft Search**, puis sélectionnez **type de résultat**.
+1. Dans le [Centre d’administration](https://admin.microsoft.com), accédez à **définition**des  >  types de résultats de personnalisations de**Microsoft Search**  >  **Customizations**  >  [**Result types**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes).
 1. Pour ajouter un **type de résultat**, sélectionnez **Ajouter**. Pour modifier un type de résultat, sélectionnez le type de résultat dans la liste correspondante.
 
 ### <a name="create-a-results-type-at-the-site-level"></a>Créer un type de résultats au niveau du site

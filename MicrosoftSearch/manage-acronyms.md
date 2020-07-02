@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créer et mettre à jour des réponses d’acronymes dans Microsoft Search
-ms.openlocfilehash: cd9e1a48288e6df8f5746d937684a3f2eedd65df
-ms.sourcegitcommit: 46303c60e905c89c133278fa41e87055f81a8637
+ms.openlocfilehash: 9d58306751f735cef77eba4404597c73c0528c11
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44535355"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996075"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Gérer les acronymes Answers in Microsoft Search
 
@@ -44,16 +44,16 @@ Le résultat inclut toutes les significations de DNN présentes dans l’organis
 
 ## <a name="set-up-acronyms-answers"></a>Configurer des acronymes pour les réponses
 
-Dans le centre d' [administration](https://admin.microsoft.com)Microsoft 365, accédez à **paramètres**  >  **Microsoft Search**  > **acronymes**Microsoft Search, puis sélectionnez **Ajouter des acronymes**.
+Dans le centre d' [administration](https://admin.microsoft.com)Microsoft 365, accédez aux **paramètres**  >  acronymes de**Microsoft Search**  >  **Answers**  >  [**Acronyms**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms), puis sélectionnez **Ajouter des acronymes**.
 
 Microsoft Search interroge deux sources de données pour fournir des informations d’acronymes aux recherches des utilisateurs :
 
-1. **Acronymes éditorial**. Fourni par les administrateurs informatiques dans le [Centre d’administration](https://admin.microsoft.com).
+1. **Acronymes éditorial**. Fourni par les administrateurs informatiques dans le [Centre d’administration](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms).
 2. **Acronymes**de extrait. Extrait par Microsoft Search de la messagerie et des documents personnels de l’utilisateur et des données accessibles au public au sein de l’organisation.
 
 ### <a name="set-up-editorial-acronyms"></a>Configurer des acronymes éditoriaux
 
-Les administrateurs de recherche peuvent configurer des acronymes éditoriaux sous l' [onglet acronymes](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) dans le [centre d’administration 365 de Microsoft]( https://admin.microsoft.com). Vous pouvez ajouter des acronymes à partir de n’importe quel site ou référentiel interne vers le centre d’administration. Les acronymes éditoriaux peuvent être ajoutés à l’état **publié** ou **Brouillon** :
+Les administrateurs de recherche peuvent configurer des acronymes éditoriaux sous l' [onglet acronymes](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) dans le [Centre d’administration de Microsoft Search](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch). Vous pouvez ajouter des acronymes à partir de n’importe quel site ou référentiel interne vers le centre d’administration. Les acronymes éditoriaux peuvent être ajoutés à l’état **publié** ou **Brouillon** :
 
 **État publié**. Les acronymes sont disponibles pour les employés de l’organisation via Microsoft Search.
 
@@ -96,7 +96,7 @@ Microsoft Search garantit que seuls les utilisateurs disposant d’autorisations
 > [!NOTE]
 > Aucune configuration n’est nécessaire pour les acronymes de l’extrait.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Q : comment les données éditoriales et extraites sont-elles classées ?**
 
