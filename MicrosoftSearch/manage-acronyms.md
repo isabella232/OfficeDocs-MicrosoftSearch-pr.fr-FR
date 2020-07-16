@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créer et mettre à jour des réponses d’acronymes dans Microsoft Search
-ms.openlocfilehash: 9d58306751f735cef77eba4404597c73c0528c11
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: bbdd27b00be323db8d80994fe9ff6ab7fac17416
+ms.sourcegitcommit: b5142052ed17cd430b4c193b67d8f3d90d94ba6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996075"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45143864"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Gérer les acronymes Answers in Microsoft Search
 
@@ -27,7 +27,7 @@ Les organisations ne disposent pas toujours d’une référence unique pour leur
 
 ## <a name="what-users-experience"></a>Expérience des utilisateurs
 
-Les utilisateurs de Microsoft Search peuvent obtenir des définitions avec des acronymes dans [Bing](https://Bing.com). Dans la zone de **recherche** , les utilisateurs entrent des requêtes comme les exemples suivants :
+Les utilisateurs de Microsoft Search peuvent obtenir des définitions avec des acronymes dans [Bing](https://Bing.com) et [SharePoint](https://products.office.com/sharepoint/collaboration). Dans la zone de **recherche** , les utilisateurs entrent des requêtes comme les exemples suivants :
 
 - *Qu’est-ce que* DNN
 - *Définir* DNN
@@ -74,7 +74,7 @@ Les administrateurs peuvent ajouter des acronymes individuellement ou les import
 
 **Expansion**. Contient l’expansion de l’acronyme. Il s’agit par exemple d’un *réseau neuronal profond*.
 
-**Description**. Brève description de l’acronyme qui donne aux utilisateurs un aperçu rapide de ce que signifient l’acronyme et son expansion. Par exemple, *un réseau neuronal profond est un réseau neuronal avec un certain niveau de complexité, un réseau neuronal avec plus de deux couches*.
+**Description**. Brève description de l’acronyme qui donne aux utilisateurs plus d’informations sur l’acronyme et son expansion. Par exemple, *un réseau neuronal profond est un réseau neuronal avec un certain niveau de complexité, un réseau neuronal avec plus de deux couches*.
 
 **Source**. URL de la page ou du site Web où vous souhaitez que les utilisateurs accèdent à des informations supplémentaires sur l’acronyme.
 
@@ -88,7 +88,7 @@ Les administrateurs peuvent ajouter des acronymes individuellement ou les import
 Il peut être difficile pour les administrateurs d’ajouter tous les acronymes utilisés dans une organisation aux réponses. Cette fonctionnalité peut trouver des acronymes que les administrateurs de recherche ne tiennent pas compte de. Pour ce faire, Microsoft Search explore également des acronymes de ces sources :
 
 - Les e-mails des utilisateurs.
-- Documents dans [SharePoint](https://products.office.com/sharepoint/collaboration), [Microsoft OneDrive]( https://onedrive.live.com/about/) et [Microsoft OneNote](http://www.onenote.com/).
+- Documents dans [SharePoint](https://products.office.com/sharepoint/collaboration), [Microsoft OneDrive]( https://onedrive.live.com/about/)et [Microsoft OneNote](https://www.onenote.com/).
 - Documents publics au sein de l’organisation auxquels les utilisateurs ont accès dans SharePoint, OneDrive ou OneNote.
 
 Microsoft Search garantit que seuls les utilisateurs disposant d’autorisations et d’accès à un document peuvent voir les acronymes qu’il contient. Lorsqu’un acronyme provient de la boîte aux lettres d’un utilisateur, seul cet utilisateur peut voir cet acronyme.
@@ -108,7 +108,7 @@ Microsoft Search garantit que seuls les utilisateurs disposant d’autorisations
 
 **Q : comment les utilisateurs déclenchent-ils les réponses ?**
 
-**R**: pour obtenir les réponses des acronymes, les utilisateurs doivent entrer des modèles de requête spécifiques dans une zone de **recherche** [Bing](https://bing.com) . Actuellement, les réponses d’acronyme ne sont pas disponibles dans [Office 365](https://Office.com) ou [SharePoint](https://products.office.com/sharepoint/collaboration).
+**R**: pour obtenir les réponses des acronymes, les utilisateurs doivent entrer des modèles de requête spécifiques dans une zone de **recherche** [Bing](https://bing.com) ou [SharePoint](https://products.office.com/sharepoint/collaboration) . Actuellement, les réponses d’acronyme ne sont pas disponibles dans [Office 365](https://Office.com).
 
 **Q : combien de temps faut-il pour que les acronymes s’affichent lorsque vous recevez ou envoyez un nouveau message ou un nouveau document ?**
 
@@ -127,6 +127,6 @@ Microsoft Search garantit que seuls les utilisateurs disposant d’autorisations
 **A**: pour désactiver l’affichage des acronymes d’extrait dans les résultats de la recherche, créez un ticket de support client en suivant les instructions indiquées sur [contacter le support technique pour les produits métiers](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support).
 Une fois que vous avez créé un ticket de support, il prend jusqu’à 48 heures pour que les acronymes d’extrait s’affichent dans les résultats de la recherche.
 
-**Q : Quand recevrai-je des réponses d’acronymes dans [Office 365](https://Office.com) et [SharePoint Online](https://products.office.com/sharepoint/collaboration)?**
+**Q : Quand recevrai-je des réponses d’acronymes dans [Office 365](https://Office.com)?**
 
-**R**: acronymes Answers in Office 365 et SharePoint Online font partie de notre feuille de route de produits, mais nous ne sommes actuellement pas en mesure de fournir une date ou un calendrier.
+**R**: Acronymes les réponses dans Office 365 font partie de notre feuille de route des produits, mais nous ne sommes actuellement pas en mesure de fournir une date ou un calendrier.
