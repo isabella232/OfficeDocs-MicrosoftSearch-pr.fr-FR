@@ -77,7 +77,7 @@ N’oubliez pas que les secteurs verticaux sont créés dans un état désactiv�
 
 Vous pouvez définir le mode d’affichage des résultats dans le secteur vertical en concevant la disposition à l’aide des types de résultat. La disposition des résultats vous permet d’afficher des informations importantes directement dans les résultats de la recherche, afin que les utilisateurs n’aient pas à sélectionner chaque résultat pour voir s’ils ont trouvé ce qu’ils cherchent.
 
-A search result type is a rule that causes distinct kinds of search results to be displayed in different ways. It consists of the following:
+Un type de résultat de recherche est une règle qui entraîne l'affichage, sous diverses formes, de différents types de résultats de recherche. Il se compose des éléments suivants :
 
 - **Une ou plusieurs conditions** pour comparer chaque résultat de recherche par rapport à, comme la source de contenu du résultat de la recherche.  
 - Une **disposition de résultats** à utiliser pour les résultats de recherche qui remplissent les conditions. La disposition des résultats contrôle la manière dont les résultats qui remplissent les conditions apparaissent et se comportent sur une page de résultats de la recherche.
