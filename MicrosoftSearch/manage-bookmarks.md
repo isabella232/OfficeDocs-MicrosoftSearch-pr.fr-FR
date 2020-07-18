@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Créer et mettre à jour des signets et des méthodes pour modifier en bloc les résultats de signet pour Microsoft Search
-ms.openlocfilehash: 64e430309ef1969ab804e8d757b987332f0a6006
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: 926fae2a4bd6bb6a436a3b5ea46f21077a23dcab
+ms.sourcegitcommit: 996b2c0538e28b71441461a371a62339cb6d476f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996102"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45167456"
 ---
 # <a name="manage-bookmarks"></a>Gérer des signets
 
-Vous pouvez créer un signet en quelques étapes. Chaque signet comprend un titre, une URL et un ensemble de mots clés qui le déclenchent. Un signet peut comprendre plusieurs mots clés, et plusieurs signets peuvent partager le même mot clé, mais un mot clé réservé ne peut pas être partagé. Lorsqu’un signet est créé ou modifié, l’index de recherche est aussitôt actualisé et le signet est immédiatement accessible aux utilisateurs.
+Vous pouvez créer un signet en quelques étapes. Chaque signet comprend un titre, une URL et un ensemble de mots clés qui le déclenchent. Vous pouvez également ajouter des catégories à un signet qui peuvent être utilisées pour le tri et le filtrage dans le portail d’administration. Un signet peut comprendre plusieurs mots clés, et plusieurs signets peuvent partager le même mot clé, mais un mot clé réservé ne peut pas être partagé. Lorsqu’un signet est créé ou modifié, l’index de recherche est aussitôt actualisé et le signet est immédiatement accessible aux utilisateurs.
 
 Si votre organisation a promu les résultats configurés dans SharePoint, vous pouvez importer les résultats promus dans **Microsoft Search** et mettre le contenu importé à la disposition de vos utilisateurs. Cette méthode simple permet de renseigner rapidement les résultats de recherche dès que vous avez configuré la fonctionnalité **Recherche Microsoft**, et d’améliorer son efficacité pour vos utilisateurs. Nous vous recommandons d’utiliser les résultats promus de SharePoint comme référence pour apprendre à nommer et créer des résultats de recherche pertinents.
 
