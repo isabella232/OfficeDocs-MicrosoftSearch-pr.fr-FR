@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer votre connecteur créé par Microsoft pour Microsoft Search
-ms.openlocfilehash: e5b40326bdd83f461e7ce9a45889ad82245e20aa
-ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
+ms.openlocfilehash: 30c60e94e8e633bce90bbc1984eee35d3ceda771
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44850888"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387969"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -29,7 +29,6 @@ Cet article vous guide tout au long de la procédure de configuration d’un con
 * [Azure DevOps](azure-devops-connector.md)
 * [Azure SQL](MSSQL-connector.md)
 * [Sites web d’entreprise](enterprise-web-connector.md)
-* [Partage de fichiers](file-share-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [Microsoft SQL Server](MSSQL-connector.md)
 * [ServiceNow](servicenow-connector.md)
@@ -43,7 +42,7 @@ Procédez comme suit pour configurer les connecteurs créés par Microsoft.
 3. Sélectionnez **Ajouter un connecteur**.
 4. Dans la liste des connecteurs disponibles, sélectionnez le connecteur de votre choix.
 
-![Les sources de données disponibles sont les suivantes : connecteur ADLS Gen2, sites Web d’entreprise, ServiceNow, partage de fichiers, Microsoft SQL Server et MediaWiki.](media/addconnector_final.png)
+![Les sources de données disponibles sont les suivantes : Azure DevOps Connector, ServiceNow, ADLS Gen2, Enterprise Web, MediaWiki, Microsoft SQL Server et Azure SQL.](media/add_connector.png)
 
 ### <a name="name-the-connector"></a>Nommer le connecteur
 
@@ -75,7 +74,7 @@ FAIRE l’objet | Rend le texte d’une propriété pouvant faire l’objet d’
 QUERYABLE | Recherche par requête une correspondance pour une propriété particulière. Le nom de la propriété peut ensuite être spécifié dans la requête, soit par programme, soit par mot Verbatim. |  Si la propriété **title** peut être Requery, le titre de la requête **: Enterprise** est pris en charge.
 AFFICHABLE dans | Seules les propriétés récupérables peuvent être utilisées dans le type de résultat et s’afficher dans le résultat de la recherche. |
 
-Pour tous les connecteurs à l’exception du connecteur de partage de fichiers, les types personnalisés doivent être définis manuellement. Pour activer les fonctionnalités de recherche pour chaque champ, vous avez besoin d’un schéma de recherche mappé à une liste de propriétés. L’Assistant de connexion sélectionne automatiquement un schéma de recherche en fonction de l’ensemble des propriétés sources que vous choisissez. Vous pouvez modifier ce schéma en activant les cases à cocher pour chaque propriété et attribut dans la page schéma de recherche.
+Pour tous les connecteurs, les types personnalisés doivent être définis manuellement. Pour activer les fonctionnalités de recherche pour chaque champ, vous avez besoin d’un schéma de recherche mappé à une liste de propriétés. L’Assistant de connexion sélectionne automatiquement un schéma de recherche en fonction de l’ensemble des propriétés sources que vous choisissez. Vous pouvez modifier ce schéma en activant les cases à cocher pour chaque propriété et attribut dans la page schéma de recherche.
 
 ![Le schéma d’un connecteur peut être personnalisé en ajoutant ou en supprimant des fonctions de requête, de recherche et de récupération.](media/manageschema.png)
 
@@ -90,7 +89,7 @@ Ces restrictions et recommandations s’appliquent aux paramètres de schéma de
 
 ### <a name="manage-search-permissions"></a>Gérer les autorisations de recherche
 
-Les listes de contrôle d’accès déterminent les utilisateurs de votre organisation qui peuvent accéder à chaque élément de données. Le connecteur de partage de fichiers prend en charge uniquement les listes de Contrã’le d’accès qui peuvent être mappées à [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/). Tous les autres connecteurs prennent en charge les autorisations de recherche visibles par tous les utilisateurs.
+Les listes de contrôle d’accès déterminent les utilisateurs de votre organisation qui peuvent accéder à chaque élément de données. Tous les connecteurs prennent en charge les autorisations de recherche visibles par tous les utilisateurs.
 
 ### <a name="set-the-refresh-schedule"></a>Définir la planification d’actualisation
 
@@ -98,13 +97,13 @@ La planification de l’actualisation détermine la fréquence à laquelle vos d
 
 Avec une **analyse complète**, le moteur de recherche traite et indexe chaque élément dans la source de contenu, quelles que soient les analyses précédentes. L’analyse complète fonctionne de manière optimale dans les situations suivantes :
 
-* Vous devez détecter les suppressions de données.
+* Détection des suppressions de données.
 * L’analyse incrémentielle n’a pas pu analyser le contenu pour les erreurs.
-* Une mise à jour logicielle pour Microsoft Search est requise. Les mises à jour modifient le schéma de recherche.
 * Les ACL ont été modifiées.
 * Les règles d’analyse ont été modifiées.
+* Une mise à jour logicielle pour Microsoft Search est requise. Les mises à jour modifient le schéma de recherche.
 
-Avec une **analyse incrémentielle**, le moteur de recherche peut traiter et indexer uniquement les éléments qui ont été créés ou modifiés depuis la dernière analyse réussie. Par conséquent, toutes les données de la source de contenu ne sont pas réindexées. Les analyses incrémentielles conviennent mieux pour détecter le contenu, les métadonnées, les autorisations et les autres mises à jour.
+Avec une **analyse incrémentielle**, le moteur de recherche peut traiter et indexer uniquement les éléments qui ont été créés ou modifiés depuis la dernière analyse réussie. Par conséquent, toutes les données de la source de contenu ne sont pas réindexées. Les analyses incrémentielles fonctionnent mieux pour détecter le contenu, les métadonnées, les autorisations et les autres mises à jour.
 
 Les analyses incrémentielles sont beaucoup plus rapides que les analyses complètes, car les éléments inchangés ne sont pas traités. Pour maintenir une synchronisation des données précise entre la source de contenu et l’index de recherche, vous devez exécuter régulièrement les deux analyses.
 
@@ -120,10 +119,10 @@ Une fois que vous avez configuré votre connecteur, le [Centre d’administratio
 
 Avec l’interface utilisateur de Microsoft Search (IU), vos utilisateurs finals peuvent rechercher du contenu à partir de vos applications de productivité [microsoft 365](https://www.microsoft.com/microsoft-365) et de l’écosystème Microsoft plus large. Un secteur vertical de recherche fait référence aux onglets qui apparaissent lorsqu’un utilisateur affiche ses résultats de recherche dans [SharePoint](https://sharepoint.com/), [Microsoft Office](https://Office.com)et Microsoft Search dans [Bing](https://Bing.com). Vous pouvez personnaliser les secteurs verticaux de recherche pour affiner les résultats, de sorte que seul un certain type de résultats de recherche s’affiche. Ces secteurs verticaux apparaissent sous forme d’onglet dans la partie supérieure de la page des résultats de la recherche. Un type de résultat moderne (MRT) est l’interface utilisateur qui désigne le mode de présentation des résultats.
 
-Vous devez créer vos propres types de résultats verticaux et de résultats, afin que les utilisateurs finaux puissent afficher les résultats de la recherche à partir de nouvelles connexions. Sans cette étape, les données de votre connexion ne s’afficheront pas sur la page des résultats de la recherche.
+Créez vos propres types de résultat et de vertical, de sorte que les utilisateurs finaux puissent afficher les résultats de la recherche à partir de nouvelles connexions. Sans cette étape, les données de votre connexion ne s’afficheront pas sur la page des résultats de la recherche.
 
 Pour en savoir plus sur la création de vos secteurs verticaux et MRTs, voir Personnalisation de la [page de résultats de recherche](customize-search-page.md).
 
-## <a name="how-do-i-know-this-worked"></a>Comment savoir si cela a fonctionné ?
+## <a name="how-do-i-know-the-connection-setup-worked"></a>Comment puis-je savoir si l’installation de la connexion a fonctionné ?
 
 Accédez à la liste de vos connexions publiées sous l’onglet **connecteurs** dans le [Centre d’administration](https://admin.microsoft.com). Pour savoir comment effectuer des mises à jour et des suppressions, consultez [la rubrique Manage Your Connector](manage-connector.md).

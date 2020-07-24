@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Répertorie tous les connecteurs Microsoft Graph pour Microsoft Search
-ms.openlocfilehash: 47782a9a429bf3ad75cffaadf6f67402638fd3a6
-ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
+ms.openlocfilehash: 82718cdadc57bf9133b61183cdbd912e269fdc70
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44850925"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45388011"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Galerie de connecteurs Microsoft Graph
 
@@ -120,27 +120,6 @@ ms.locfileid: "44850925"
             <div class="cardPadding">
                 <div class="card" style="overflow: hidden; height: 235px;">
                     <div class="cardText">
-                        <h3>Partage de fichiers</h3>
-                        <p>par <a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>Avec ce connecteur Microsoft Graph, les utilisateurs de votre organisation peuvent rechercher des fichiers stockés sur des partages de fichiers Windows locaux.</p>
-                        <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
-                            <div style="font-weight:500;width:150px;display:inline">
-                                <a href="file-share-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
-                                    <font color="0065BA">Plus de détails</font>
-                                </a>
-                             <img src="media/FileConnectorLogo_Small.png" alt="File share" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path"  />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="overflow: hidden; height: 235px;">
-                    <div class="cardText">
                         <h3>MediaWiki</h3>
                         <p>par <a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>Avec ce connecteur Microsoft Graph, les utilisateurs peuvent rechercher des Articles de la base de connaissances sur des sites wiki créés par votre organisation avec MediaWiki.</p>
@@ -157,8 +136,6 @@ ms.locfileid: "44850925"
             </div>
         </div>
     </li>
-</ul>
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -180,6 +157,8 @@ ms.locfileid: "44850925"
             </div>
         </div>
     </li>
+</ul>
+<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -476,7 +455,7 @@ ms.locfileid: "44850925"
                     <div class="cardText">
                         <h3>Azure Data Lake</h3>
                         <p>par <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Le connecteur Azure Data Lake analyse le contenu du nuage Azure Data Lake Store à l’emplacement ou aux chemins d’accès spécifiés. Chaque fichier est soumis avec ses métadonnées (taille, emplacement, dernier accès, etc.). Les mises à jour sont découvertes automatiquement.</p>
+                        <p>Le connecteur Azure Data Lake analyse le contenu du nuage ADLS à la racine ou aux chemins d’accès spécifiés. Chaque fichier est soumis avec ses métadonnées (taille, emplacement, dernier accès, etc.). Les mises à jour sont découvertes automatiquement.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Data+Lake+Connector"><font color="0065BA">Plus de détails</font></a>
                         </p>
@@ -1104,7 +1083,7 @@ ms.locfileid: "44850925"
                     <div class="cardText">
                         <h3>Travail iManage</h3>
                         <p>par <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>Le connecteur de travail iManage offre une sécurité totale et fonctionne à haut débit afin de réduire les temps d’analyse tout en gardant un impact faible sur les performances du travail. Il ne nécessite que l’accès en lecture, et il n’est pas nécessaire d’installer le logiciel client sur un serveur iManage. Cela permet un accès transparent et simultané à tout le contenu stocké dans iManage Work.</p>
+                        <p>Le connecteur de travail iManage offre une sécurité totale et fonctionne à haut débit afin de réduire les temps d’analyse tout en conservant un impact faible sur le travail. Il ne nécessite que l’accès en lecture, et il n’est pas nécessaire d’installer le logiciel client sur un serveur iManage. Cela permet un accès transparent et simultané à tout le contenu stocké dans iManage Work.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/imanage-work-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">Plus de détails</font></a>
                         </p>
@@ -1222,7 +1201,7 @@ ms.locfileid: "44850925"
                     <div class="cardText">
                         <h3>LDAP</h3>
                         <p>par <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>Le connecteur LDAP permet aux organisations de se connecter à n’importe quel annuaire compatible LDAP et d’indexer tout enregistrement qu’il contient. Les organisations peuvent filtrer des sous-ensembles spécifiques du répertoire et récupérer uniquement des champs spécifiques, ce qui facilite la recherche des utilisateurs, des contacts ou des groupes stockés n’importe où dans votre répertoire.</p>
+                        <p>Le connecteur LDAP permet aux organisations de se connecter à n’importe quel répertoire compatible LDAP et d’indexer tout enregistrement qu’il contient. Les organisations peuvent filtrer des sous-ensembles spécifiques du répertoire et récupérer uniquement des champs spécifiques, ce qui facilite la recherche des utilisateurs, des contacts ou des groupes stockés n’importe où dans votre répertoire.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/indexing-connectors/1/"><font color="0065BA">Plus de détails</font></a>
                         </p>

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gérer les connecteurs Microsoft Graph pour Microsoft Search.
-ms.openlocfilehash: 3e652b9afad78f784ff4c726ecab34bef883d4c3
-ms.sourcegitcommit: a8a6c949f249d106f37103e127d2ea7df730f7a3
+ms.openlocfilehash: dfbc58d7e51fca0491dc7e4452ba4312ff3dfd69
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702766"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45388002"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>Gérer votre connecteur pour Microsoft Search
 
@@ -76,7 +76,6 @@ Code d’erreur | Message d’erreur | Solution
 2001 | L’indexation est limitée en raison d’un grand nombre de mises à jour dans la file d’attente. En fonction de la file d’attente, l’exécution des mises à jour peut prendre un certain temps. | Veuillez patienter jusqu’à ce que la file d’attente soit effacée.
 2002 | Échec de l’indexation en raison d’une mise en forme d’élément non prise en charge. | Pour plus d’informations, reportez-vous à la documentation spécifique au connecteur.
 2003 | Échec de l’indexation en raison d’un contenu d’élément non pris en charge. | Pour plus d’informations, reportez-vous à la documentation spécifique au connecteur.
-2004 | La [taille du fichier](https://docs.microsoft.com/microsoftsearch/file-share-connector#content-requirements) est trop importante pour être indexée. Il doit être inférieur ou égal à 100 Mo avant le traitement et à 4 Mo après traitement. Le fichier est indexé partiellement dans ce cas. Il se peut que peu d’expressions présentes dans le fichier ne renvoient pas de résultat de recherche. | Pour plus d’informations, consultez [la documentation relative au partage de fichiers](https://docs.microsoft.com/MicrosoftSearch/file-share-connector#content-requirements) .
 5000 | Un problème est survenu. Si cela persiste, contactez le support technique. |
 
 ## <a name="preview-limitations"></a>Limitations de l’aperçu

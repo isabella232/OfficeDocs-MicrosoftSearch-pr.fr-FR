@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ajouter des secteurs verticaux de recherche et personnaliser les résultats de la recherche
-ms.openlocfilehash: 60ab3423db0a86982df9c4332f0f22267c49dc04
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: 9bc0448c1105c26b0e083316db04887327d8db41
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996057"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387984"
 ---
 # <a name="customize-the-search-results-page"></a>Personnaliser la page de résultats de recherche
 
@@ -41,7 +41,7 @@ Vous pouvez ajouter des secteurs verticaux de recherche pertinents pour votre or
 
 Avant de commencer, assurez-vous que le connecteur a été indexé. Cela peut prendre jusqu’à 48 heures, en fonction de la taille du fichier.
 
-Vous ne pouvez pas créer de vertical pour le contenu qui se trouve dans [SharePoint](https://sharepoint.com/) ou à partir de contenu indexé par le [connecteur de partage de fichiers](file-share-connector.md). Découvrez comment [indexer du contenu](configure-connector.md).
+Vous ne pouvez pas créer de vertical pour le contenu qui réside dans [SharePoint](https://sharepoint.com/).
 
 Il existe trois étapes de base pour ajouter un secteur vertical :
 
@@ -107,7 +107,7 @@ Une fois que vous avez activé le secteur vertical, il peut prendre un certain t
 
 Voici une liste des problèmes courants que vous pouvez rencontrer et des actions à résoudre.
 
-|Erreur  |Action  |
+|Error  |Action  |
 |---------|---------|
 | Je vois un message d’erreur « un problème est survenu » sur le secteur vertical. | Les types vertical et de résultat sont tous deux nécessaires pour terminer l’installation. Assurez-vous que vous avez créé les deux pour la même source de contenu. |
 | Je ne vois pas ma disposition de résultats, bien que j’en ai créé un. | Ces paramètres sont généralement mis en cache. Patientez quelques minutes, puis réessayez.        |
