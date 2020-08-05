@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gérer les connecteurs Microsoft Graph pour Microsoft Search.
-ms.openlocfilehash: dfbc58d7e51fca0491dc7e4452ba4312ff3dfd69
-ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
+ms.openlocfilehash: adf98bccab703e2ae5ecd99b059e1426a50609c5
+ms.sourcegitcommit: 89484fec9af755240d5d1bc399501d51ee40571d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45388002"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46563887"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>Gérer votre connecteur pour Microsoft Search
 
@@ -58,7 +58,7 @@ Pour chaque **connecteur actif** sous l’onglet **connecteurs** , toutes les er
 
 Pour afficher les détails spécifiques d’une erreur, sélectionnez son code d’erreur. Un écran s’affiche avec les détails de l’erreur et un lien. Les erreurs les plus récentes apparaissent en haut. Voir l’exemple dans le tableau suivant.
 
-![Liste des connecteurs avec un connecteur sélectionné et volet de détails affichant la liste des erreurs pour le connecteur. ](media/errormonitoring2.png)
+![Liste des connecteurs avec un connecteur sélectionné et volet de détails affichant la liste des erreurs pour le connecteur.](media/errormonitoring2.png)
 
 Voici la liste des différentes erreurs qui peuvent apparaître contre n’importe quelle connexion. Si ces solutions ne fonctionnent pas, contactez le support technique ou envoyez-nous [vos commentaires](connectors-feedback.md).
 
@@ -78,6 +78,35 @@ Code d’erreur | Message d’erreur | Solution
 2003 | Échec de l’indexation en raison d’un contenu d’élément non pris en charge. | Pour plus d’informations, reportez-vous à la documentation spécifique au connecteur.
 5000 | Un problème est survenu. Si cela persiste, contactez le support technique. |
 
+## <a name="monitor-your-index-quota-utilization"></a>Surveiller l’utilisation de votre quota d’index 
+Pendant la période de préversion, chaque organisation dispose d’un quota fixe allant jusqu’à 2 millions éléments pour l’indexation de contenu à partir de systèmes externes sur toutes les connexions.
+
+> [!NOTE]
+> Le quota de connecteurs Graph est disponible gratuitement pendant toute la durée de l’aperçu. Cela sera modifié au niveau de la disponibilité générale. 
+
+Le quota d’index et la consommation disponibles seront affichés sur la page d’accueil des connecteurs.
+
+![Barre d’utilisation des quotas d’index.](media/quota_utilization.png)
+
+La barre d’utilisation des quotas indique les différents États en fonction de la consommation de quota par votre organisation :
+
+State | Consommation de quota
+--- | ---
+Normal | 1-69%
+Élevé | 70-89%
+Critique | 90%-99%
+Complet | 100 %
+
+Le nombre d’éléments indexés est également affiché avec chaque connexion. Le nombre d’éléments indexés par chaque connexion contribue au quota total disponible pour votre organisation.
+
+Lorsque le quota d’index est dépassé pour votre organisation, toutes les connexions actives seront affectées et ces connexions arrêteront le contenu inactif. Pour résoudre ce problème, vous pouvez effectuer l’une des opérations suivantes :
+
+* Identifiez les connexions dont le contenu est trop ingéré et mettez-les à jour pour indexer moins d’éléments afin de libérer de l’espace pour le quota. Pour mettre à jour la connexion, vous devez supprimer et créer une nouvelle connexion à l’aide d’un nouveau filtre d’ingestion qui entraîne moins d’éléments.
+
+* Supprimer définitivement une ou plusieurs connexions
+
+* Contactez Microsoft si vous devez augmenter la limite de quota d’index pour votre organisation.
+
 ## <a name="preview-limitations"></a>Limitations de l’aperçu
 
 * Lorsque vous **publiez** un connecteur créé par Microsoft, la création de la connexion peut prendre quelques minutes. Pendant ce temps, la connexion indique son état en attente. En outre, il n’existe pas d’actualisation automatique, vous devez donc procéder à une actualisation manuelle.
@@ -85,3 +114,5 @@ Code d’erreur | Message d’erreur | Solution
 * Le [Centre d’administration Microsoft 365](https://admin.microsoft.com) ne prend pas en charge l’affichage et la modification du **schéma de recherche** après la publication d’une connexion. Pour modifier le schéma de recherche, supprimez votre connexion, puis créez-en une nouvelle.
 
 * Lorsque vous gérez la planification d' **actualisation**de votre connexion, le nombre d’éléments synchronisés au cours de chaque session s’affiche. Toutefois, l’historique de synchronisation n’est pas disponible.
+
+* Lorsque l’utilisation des quotas de votre organisation atteint des limites importantes ou supérieures, vous ne serez **pas** informé via le centre de messages.  Vérifiez régulièrement la page de gestion des connecteurs pour vous assurer que les connexions configurées n’ont pas dépassé les limites de quota globales pour votre organisation.
