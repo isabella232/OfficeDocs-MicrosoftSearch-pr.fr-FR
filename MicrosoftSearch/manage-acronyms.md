@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créer et mettre à jour des réponses d’acronymes dans Microsoft Search
-ms.openlocfilehash: bbdd27b00be323db8d80994fe9ff6ab7fac17416
-ms.sourcegitcommit: b5142052ed17cd430b4c193b67d8f3d90d94ba6e
+ms.openlocfilehash: 68e62884898e3aa081fc32438ad9a80068092738
+ms.sourcegitcommit: b3738f5ab02bfba9dedf099e035f3850607be480
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45143864"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46591507"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Gérer les acronymes Answers in Microsoft Search
 
@@ -27,7 +27,7 @@ Les organisations ne disposent pas toujours d’une référence unique pour leur
 
 ## <a name="what-users-experience"></a>Expérience des utilisateurs
 
-Les utilisateurs de Microsoft Search peuvent obtenir des définitions avec des acronymes dans [Bing](https://Bing.com) et [SharePoint](https://products.office.com/sharepoint/collaboration). Dans la zone de **recherche** , les utilisateurs entrent des requêtes comme les exemples suivants :
+Les utilisateurs de Microsoft Search peuvent obtenir des définitions avec des acronymes dans [Bing](https://Bing.com), [SharePoint](https://products.office.com/sharepoint/collaboration)et [Office 365](https://Office.com). Dans la zone de **recherche** , les utilisateurs entrent des requêtes comme les exemples suivants :
 
 - *Qu’est-ce que* DNN
 - *Définir* DNN
@@ -108,7 +108,7 @@ Microsoft Search garantit que seuls les utilisateurs disposant d’autorisations
 
 **Q : comment les utilisateurs déclenchent-ils les réponses ?**
 
-**R**: pour obtenir les réponses des acronymes, les utilisateurs doivent entrer des modèles de requête spécifiques dans une zone de **recherche** [Bing](https://bing.com) ou [SharePoint](https://products.office.com/sharepoint/collaboration) . Actuellement, les réponses d’acronyme ne sont pas disponibles dans [Office 365](https://Office.com).
+**R**: pour obtenir les réponses des acronymes, les utilisateurs doivent entrer des modèles de requête spécifiques dans une zone de **recherche** [Bing](https://bing.com), [SharePoint](https://products.office.com/sharepoint/collaboration)ou [Office 365](https://Office.com) .
 
 **Q : combien de temps faut-il pour que les acronymes s’affichent lorsque vous recevez ou envoyez un nouveau message ou un nouveau document ?**
 
@@ -126,7 +126,3 @@ Microsoft Search garantit que seuls les utilisateurs disposant d’autorisations
 
 **A**: pour désactiver l’affichage des acronymes d’extrait dans les résultats de la recherche, créez un ticket de support client en suivant les instructions indiquées sur [contacter le support technique pour les produits métiers](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support).
 Une fois que vous avez créé un ticket de support, il prend jusqu’à 48 heures pour que les acronymes d’extrait s’affichent dans les résultats de la recherche.
-
-**Q : Quand recevrai-je des réponses d’acronymes dans [Office 365](https://Office.com)?**
-
-**R**: Acronymes les réponses dans Office 365 font partie de notre feuille de route des produits, mais nous ne sommes actuellement pas en mesure de fournir une date ou un calendrier.

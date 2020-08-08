@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 description: Découvrez les méthodes et les processus qui vous aident à déployer correctement Microsoft Search dans votre organisation
-ms.openlocfilehash: 4c40013297b8b7a91e589137e70716bd8e4fd326
-ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
+ms.openlocfilehash: 76079dd2db378185a999acf9cc49cd04a7f97bbe
+ms.sourcegitcommit: b3738f5ab02bfba9dedf099e035f3850607be480
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39995004"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46591516"
 ---
 # <a name="user-adoption-guide"></a>Guide d’adoption par l’utilisateur
 
@@ -36,8 +36,8 @@ Le tableau montre la hiérarchie d’équipe et ce que chaque personne contribue
   
 |**Rôle**|**Attribution**|**Department**|
 |:-----|:-----|:-----|
-|Cadre responsable  <br/> |Découvrez la vision de haut niveau et la valeur de Microsoft Search pour votre organisation.  <br/> Fournir un support de leadership à l’équipe informatique/d’entreprise.  <br/> Allouez des ressources.  <br/> Communiquez directement avec les employés.  <br/> |Leadership exécutif  <br/> |
-|Propriétaire de l’entreprise  <br/> |Identifier les scénarios de produit et d’utilisateur.  <br/> Déterminez les mesures de réussite pour les services et l’organisation.  <br/> |N'importe lequel  <br/> |
+|Sponsor exécutif  <br/> |Découvrez la vision de haut niveau et la valeur de Microsoft Search pour votre organisation.  <br/> Fournir un support de leadership à l’équipe informatique/d’entreprise.  <br/> Allouez des ressources.  <br/> Communiquez directement avec les employés.  <br/> |Leadership exécutif  <br/> |
+|Propriétaire d'entreprise  <br/> |Identifier les scénarios de produit et d’utilisateur.  <br/> Déterminez les mesures de réussite pour les services et l’organisation.  <br/> |N’importe lequel  <br/> |
 |Équipe de gestion des modifications  <br/> |Assurez-vous que la valeur du produit est facile à comprendre.  <br/> Créez un plan pour le déploiement.  <br/> |IT  <br/> |
 |Champions   <br/> |Promeut le produit à des collègues et des équipes.  <br/> |Any (personnel)  <br/> |
 |Administrateur de recherche  <br/> |Identifier les principaux membres de l’équipe.  <br/> Administrer Microsoft Search, y compris l’apparence et la convivialité de l’expérience et de la gestion continue.  <br/> Encouragez les discussions pour montrer la valeur de Microsoft Search.  <br/> |IT  <br/> |
@@ -77,7 +77,7 @@ Pour vous aider à atteindre vos objectifs de déploiement et présenter un impa
     
 ## <a name="stage-3-readiness"></a>Étape 3 : préparation
 
-Le temps nécessaire à la préparation de votre déploiement de Microsoft Search entraînera un impact positif pour votre organisation. Microsoft fournit un <a href="https://resources.techcommunity.microsoft.com/microsoft-search-in-bing-adoption-kit/">Kit d’adoption</a> qui contient des conseils de planification, des annonces de courrier électronique personnalisables, des modèles d’enquête, des présentations de cadres, et bien plus encore. Il existe également un <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Centre de ressources Microsoft Search</a> où les responsables informatiques peuvent trouver d’autres ressources de formation et d’adoption conçues pour faire en sorte que votre déploiement de Microsoft Search réussisse.
+Le temps nécessaire à la préparation de votre déploiement de Microsoft Search entraînera un impact positif pour votre organisation. Microsoft fournit un <a href="https://go.microsoft.com/fwlink/?linkid=2114710">Kit d’adoption</a> qui contient un modèle de courrier électronique d’annonce, un contenu visuel léger créé pour le partage sur vos sites de communication internes et une présentation de formation. Il existe également un <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Centre de ressources Microsoft Search</a> où vous pouvez trouver d’autres ressources de formation et d’adoption conçues pour faire en sorte que votre déploiement de Microsoft Search réussisse.
   
 ### <a name="product-and-content-readiness"></a>Préparation des produits et du contenu
   
