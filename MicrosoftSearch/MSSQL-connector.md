@@ -12,21 +12,35 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez Microsoft SQL Server ou Azure SQL Connector pour Microsoft Search.
-ms.openlocfilehash: e664a9a6e389531f8b5735673150839a1b106ce1
-ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
+ms.openlocfilehash: 55c2e86697d2159bf93bc950c47a37630739dba9
+ms.sourcegitcommit: dd082bf862414604e32d1a768e7c155c2d757f51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44850897"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46657012"
 ---
 # <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Connecteurs Azure SQL et Microsoft SQL Server
 
 Avec un connecteur Microsoft SQL Server ou Azure SQL, votre organisation peut découvrir et indexer des données à partir d’une base de données SQL Server locale ou d’une base de données hébergée dans votre instance Azure SQL dans le Cloud. Le connecteur indexe le contenu spécifié dans Microsoft Search. Pour conserver l’index à jour avec les données source, il prend en charge les analyses incrémentielles et complètes périodiques. Avec ces connecteurs SQL, vous pouvez également limiter l’accès aux résultats de recherche pour certains utilisateurs.
 
-Cet article est destiné aux administrateurs 365 de Microsoft ou toute personne qui configure, exécute et surveille un connecteur Microsoft SQL Server. Elle explique comment configurer les fonctionnalités de connecteur et de connecteur, ainsi que les restrictions et les techniques de résolution des problèmes.
+Cet article est destiné aux administrateurs 365 de Microsoft ou toute personne qui configure, exécute et surveille un serveur Microsoft SQL Server ou Azure SQL. Elle explique comment configurer les fonctionnalités de connecteur et de connecteur, ainsi que les restrictions et les techniques de résolution des problèmes. 
 
 ## <a name="install-a-data-gateway-required-for-on-premises-microsoft-sql-server-connector-only"></a>Installer une passerelle de données (requise pour le connecteur Microsoft SQL Server local uniquement)
 Pour accéder à vos données tierces, vous devez installer et configurer une passerelle Microsoft Power BI. Pour en savoir plus, consultez la rubrique [Install an on-](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) premises Gateway.  
+
+## <a name="register-an-app"></a>Inscrire une application
+Pour Azure SQL Connector, vous devez inscrire une application dans Azure Active Directory pour permettre à l’application Microsoft Search d’accéder aux données pour l’indexation. Pour en savoir plus sur l’inscription d’une application, consultez la documentation de Microsoft Graph relative à l' [enregistrement d’une application](https://docs.microsoft.com/graph/auth-register-app-v2). 
+
+Après avoir terminé l’inscription de l’application et pris note du nom de l’application, de l’ID d’application (client) et de l’ID de client, vous devez [générer une nouvelle clé secrète client](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). La clé secrète client ne s’affiche qu’une seule fois. N’oubliez pas de noter & stocker la clé secrète client en toute sécurité. Utilisez l’ID client et la clé secrète client lors de la configuration d’une nouvelle connexion dans Microsoft Search. 
+
+Pour ajouter l’application inscrite à votre base de données SQL Azure, vous devez :
+ - Connectez-vous à votre base de données SQL Azure.
+ - Ouvrir une nouvelle fenêtre de requête
+ - Créez un utilisateur en exécutant la commande « créer un utilisateur [nom de l’application] à partir du fournisseur externe »
+ - Ajouter un utilisateur à un rôle en exécutant la commande « exec sp_addrolemember » db_datareader, [nom de l’application] ou « modifier le rôle db_datareader ajouter un membre [nom de l’application] »
+
+>[!NOTE]
+>Pour révoquer l’accès à une application inscrite dans Azure Active Directory, reportez-vous à la documentation Azure sur la [Suppression d’une application inscrite](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app).
 
 ## <a name="connect-to-a-data-source"></a>Se connecter à une source de données
 Pour connecter votre Connecteur Microsoft SQL Server à une source de données, vous devez configurer le serveur de base de données que vous souhaitez analyser et la passerelle locale. Vous pouvez ensuite vous connecter à la base de données à l’aide de la méthode d’authentification requise.
@@ -59,7 +73,22 @@ L’utilisation de chacune des colonnes ACL dans la requête ci-dessus est décr
 * **DeniedUsers**: spécifie la liste des utilisateurs qui n’ont **pas** accès aux résultats de la recherche. Dans l’exemple suivant, les utilisateurs john@contoso.com et keith@contoso.com n’ont pas accès à record avec OrderId = 13, tandis que tous les autres ont accès à cet enregistrement. 
 * **DeniedGroups**: spécifie le groupe d’utilisateurs qui n’ont **pas** accès aux résultats de la recherche. Dans l’exemple suivant, les groupes engg-team@contoso.com et pm-team@contoso.com n’ont pas accès à record avec OrderId = 15, tandis que les autres utilisateurs ont accès à cet enregistrement.  
 
-![](media/MSSQL-ACL1.png)
+![Exemples de données illustrant les OrderTable et AclTable avec des exemples de propriétés](media/MSSQL-ACL1.png)
+
+### <a name="supported-data-types"></a>Types de données pris en charge
+Le tableau ci-dessous récapitule les types de données SQL qui sont pris en charge dans les connecteurs MS SQL et Azure SQL. Le tableau résume également le type de données d’indexation pour le type de données SQL pris en charge. Pour en savoir plus sur les connecteurs Microsoft Graph types de données pris en charge pour l’indexation, reportez-vous à la documentation sur les [types de ressources de propriétés](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties). 
+
+| Catégorie | Type de données source | Index, type de données |
+| ------------ | ------------ | ------------ |
+| Date et heure | date <br> DateHeure <br> datetime2 <br> smallmoney | DateHeure |
+| Numérique exact | comportant <br> int <br> type <br> entier très petit | Int64 |
+| Numérique exact | légèrement | valeur booléenne |
+| Valeur numérique approximative | flottant <br> RTA | double |
+| Chaîne de caractères | échelle <br> varchar <br> text | string |
+| Chaînes de caractères Unicode | NCHAR <br> nvarchar <br> Text | string |
+| Autres types de données | unique | string |
+
+Pour tout autre type de données actuellement non pris en charge directement, la colonne doit être explicitement convertie en un type de données pris en charge.
 
 ### <a name="watermark-required"></a>Filigrane (obligatoire)
 Pour éviter de surcharger la base de données, le connecteur regroupe et reprend les requêtes d’analyse complète avec une colonne de filigrane complète. En utilisant la valeur de la colonne filigrane, chaque lot suivant est extrait et l’interrogation reprend à partir du dernier point de contrôle. Fondamentalement, il s’agit d’un mécanisme de contrôle de l’actualisation des données pour les analyses complètes.
@@ -70,9 +99,9 @@ Créez des extraits de code de requête pour les filigranes, comme indiqué dans
 
 Dans la configuration illustrée dans l’image suivante, `CreatedDateTime` est la colonne de filigrane sélectionnée. Pour extraire le premier lot de lignes, spécifiez le type de données de la colonne de filigrane. Dans ce cas, le type de données est `DateTime` .
 
-![](media/MSSQL-watermark.png)
+![Configuration des colonnes en filigrane](media/MSSQL-watermark.png)
 
-La première requête extrait les **N** premières lignes à l’aide de : « CreatedDateTime > janvier 1, 1753 00:00:00 » (valeur minimale de type de données DateTime). Une fois le premier lot extrait, la valeur la plus élevée `CreatedDateTime` renvoyée dans le lot est enregistrée en tant que point de contrôle si les lignes sont triées par ordre croissant. Par exemple, le 1er mars 2019 03:00:00. Le prochain lot de **N** lignes est extrait en utilisant « CreatedDateTime > mars 1, 2019 03:00:00 » dans la requête.
+La première requête extrait le premier **N** nombre de lignes à l’aide de : « CreatedDateTime > janvier 1, 1753 00:00:00 » (valeur minimale de type de données DateTime). Une fois le premier lot extrait, la valeur la plus élevée `CreatedDateTime` renvoyée dans le lot est enregistrée en tant que point de contrôle si les lignes sont triées par ordre croissant. Par exemple, le 1er mars 2019 03:00:00. Le prochain lot de **N** lignes est extrait en utilisant « CreatedDateTime > mars 1, 2019 03:00:00 » dans la requête.
 
 ### <a name="skipping-soft-deleted-rows-optional"></a>Ignorer les lignes supprimées (récupérables) (facultatif)
 Pour exclure les lignes supprimées (récupérables) de votre base de données de l’indexation, spécifiez le nom et la valeur de la colonne de suppression récupérable qui indique que la ligne est supprimée.
@@ -86,10 +115,10 @@ Chacune des colonnes de liste de contrôle d’accès est censée être une colo
  
 Les types d’ID suivants sont pris en charge pour l’utilisation en tant que listes de Contrã’le d’accès : 
 * **Nom d’utilisateur principal (UPN)**: un nom d’utilisateur principal (UPN) est le nom d’un utilisateur système dans un format d’adresse de messagerie. Un UPN (par exemple : john.doe@domain.com) est constitué du nom d’utilisateur (nom de connexion), du séparateur (symbole @) et du nom de domaine (suffixe UPN). 
-* **ID d’Azure Active Directory (AAD)**: dans AAD, chaque utilisateur ou groupe a un ID d’objet qui ressemble à « e0d3ad3d-0000-1111-2222-3c5f5c52ab9b ». 
-* **ID de sécurité Active Directory (AD)**: dans une configuration AD locale, chaque utilisateur et groupe a un identificateur de sécurité unique, non modifiable, qui ressemble à-1-5-21-3878594291-2115959936-132693609-65242.
+* **ID d’Azure Active Directory (AAD)**: dans Azure ad, chaque utilisateur ou groupe possède un ID d’objet qui ressemble à « e0d3ad3d-0000-1111-2222-3c5f5c52ab9b ». 
+* **ID de sécurité Active Directory (AD)**: dans une configuration AD locale, chaque utilisateur et chaque groupe ont un identificateur de sécurité unique et non modifiable qui ressemble à-1-5-21-3878594291-2115959936-132693609-65242.
 
-![](media/MSSQL-ACL2.png)
+![Paramètres d’autorisation de recherche pour configurer les listes de contrôle d’accès](media/MSSQL-ACL2.png)
 
 ## <a name="incremental-crawl-optional"></a>Analyse incrémentielle (facultative)
 Dans cette étape facultative, fournissez une requête SQL pour exécuter une analyse incrémentielle de la base de données. Avec cette requête, le connecteur SQL détermine les modifications apportées aux données depuis la dernière analyse incrémentielle. Comme dans l’analyse complète, sélectionnez toutes les colonnes que vous souhaitez rendre utilisables dans une **requête**, pouvant faire l’objet d’une **recherche**ou pouvoir être **récupérées**. Spécifiez le même ensemble de colonnes de liste de contrôle d’accès que vous avez spécifié dans la requête d’analyse complète.
