@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer Azure DevOps Connector pour Microsoft Search
-ms.openlocfilehash: e2698d7d4a50c15bf765aa4eeada20fbc7328772
-ms.sourcegitcommit: 7eda9b621def0659d7e7bc8b989f8adc929cce93
-ms.translationtype: Auto
+ms.openlocfilehash: 1030dd2b508e5364f53f92e7c8ce8c12c040ce70
+ms.sourcegitcommit: 85d40512e8616c851da1a38c137ca0e4e8625813
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44861102"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47359720"
 ---
 # <a name="azure-devops-connector"></a>Connecteur DevOps Azure
 
@@ -44,7 +44,7 @@ Le tableau suivant fournit des instructions sur la façon de remplir le formulai
 | Nom de l’application     | Cette valeur unique identifie l’application que vous autorisez.    | Recherche Microsoft     |
 | Site Web d’application  | Ce champ obligatoire est l’URL de l’application qui demandera l’accès à votre instance Azure DevOps lors de la configuration du connecteur.  | <https://gcs.office.com/>                |
 | URL de rappel d’autorisation        | URL de rappel obligatoire vers laquelle le serveur d’autorisation redirige. | <https://gcs.office.com/v1.0/admin/oauth/callback>|
-| Étendues autorisées | Il s’agit de la portée de l’accès à l’application | Sélectionnez les étendues suivantes : identité (lecture), éléments de travail (lecture), groupes de variables (lecture), projet et équipe (lecture)|
+| Étendues autorisées | Il s’agit de la portée de l’accès à l’application | Sélectionnez les étendues suivantes : identité (lecture), éléments de travail (lecture), groupes de variables (lecture), projet et équipe (lecture), graphique (lecture)|
 
 Lors de l’inscription de l’application avec les détails ci-dessus, vous obtiendrez l’ID de l' **application** et la **clé secrète client** qui seront utilisés pour configurer le connecteur.
 
