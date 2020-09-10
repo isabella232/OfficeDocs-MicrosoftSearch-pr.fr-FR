@@ -13,20 +13,20 @@ search.appverid:
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
 description: Analyser les mesures et gérer le contenu à partir du tableau de bord Insights dans Microsoft Search
-ms.openlocfilehash: 230c1cdec9c1f6e94adf7123bc9a3ad048dee892
-ms.sourcegitcommit: 6b1c6a4e502d95b42a030a963f9452c387d8a5cd
+ms.openlocfilehash: a107be18900f1b68270e5afbeb0966eea04d656f
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2020
-ms.locfileid: "43571004"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422990"
 ---
 # <a name="microsoft-search-insights-dashboard-reports"></a>Rapports de tableau de bord Insights Microsoft Search
 
 Vous pouvez utiliser le tableau de bord Insights de Microsoft Search pour gérer les données [Bing](https://Bing.com) de vos réponses publiées. Il s’agit juste d’une des étapes nécessaires pour [faciliter la recherche de contenu](make-content-easy-to-find.md) pour vos utilisateurs.
 
-Lorsque vous accédez à Microsoft Search pour la première fois dans le [Centre d’administration](https://admin.microsoft.com)365 de Microsoft, vous devez l’entrer dans le tableau de bord Insights.
+Lorsque vous accédez à Microsoft Search pour la première fois dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com), vous devez l’entrer dans le tableau de bord Insights.
 
-![Insights-Dashboard. png](media/Insights-dashboard.png)
+![Insights-dashboard.png](media/Insights-dashboard.png)
 
 Les rapports suivants sont disponibles dans le tableau de bord Insights.
 

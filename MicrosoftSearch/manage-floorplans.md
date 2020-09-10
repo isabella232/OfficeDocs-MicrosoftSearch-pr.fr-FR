@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: La fonctionnalité plans d’étage de Microsoft Search aide les utilisateurs à trouver des personnes, des bureaux et d’autres équipements dans un immeuble.
-ms.openlocfilehash: 95941e57946f49de3a0558dc2d2c59b999151b37
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: c1a3c30f98408a6d98f34c41f4132bcca0bd316e
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996111"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422918"
 ---
 # <a name="manage-floor-plans"></a>Gérer les plans d’étage
 
@@ -51,7 +51,7 @@ Pour plus d’informations sur l’affichage et la mise à jour des fichiers DWG
 
 L’emplacement du Bureau d’un utilisateur est une combinaison d’un code de bâtiment et d’une étiquette de salle. Par exemple, si le code de bâtiment est *2* et l’étiquette de salle est *1173*, l’emplacement du bureau sera *2/1173*.
 
-Ajoutez ou mettez à jour des emplacements Office pour chaque utilisateur de votre organisation. Vous pouvez modifier l’emplacement du Bureau sur le profil utilisateur dans le [Centre d’administration](https://admin.microsoft.com) 365 de Microsoft ou vous pouvez modifier votre annuaire Active Directory local afin de le synchroniser dans Azure Active Directory. *PhysicalDeliveryOfficeName* est le champ utilisé pour l’emplacement du bureau. Si les étiquettes de votre salle n’incluent pas de numéros de plancher, consultez le Forum aux questions pour obtenir des conseils.
+Ajoutez ou mettez à jour des emplacements Office pour chaque utilisateur de votre organisation. Vous pouvez modifier l’emplacement du Bureau sur le profil utilisateur dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com) ou vous pouvez modifier votre annuaire Active Directory local afin de le synchroniser dans Azure Active Directory. *PhysicalDeliveryOfficeName* est le champ utilisé pour l’emplacement du bureau. Si les étiquettes de votre salle n’incluent pas de numéros de plancher, consultez le Forum aux questions pour obtenir des conseils.
 
 Dans cet exemple, le Bureau de Allan se trouve dans la salle 1173 sur le plancher 1 du bâtiment 2.
 ![floorplans-userlestview.png](media/floorplans-userlistview.png)
@@ -67,7 +67,7 @@ Utilisez **Microsoft Search** pour rechercher un utilisateur et vérifier que so
 
 ### <a name="step-5-add-building-locations"></a>Étape 5 : ajouter des emplacements de création
 
-Plans d’étage utilise des [emplacements](manage-locations.md) pour définir vos bâtiments. Dans le centre d' [administration](https://admin.microsoft.com)Microsoft 365, accédez à **paramètres**  >  **Microsoft Search**  >  **Answers**  >  [**locations**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations), puis sélectionnez **Ajouter**. Entrez le nom, l’adresse et les mots clés pour le bâtiment. Ajoutez autant de bâtiments que vous le souhaitez.
+Plans d’étage utilise des [emplacements](manage-locations.md) pour définir vos bâtiments. Dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com), accédez à [**emplacements**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations), puis sélectionnez **Ajouter**. Entrez le nom, l’adresse et les mots clés pour le bâtiment. Ajoutez autant de bâtiments que vous le souhaitez.
 
 ![floorplans-locations.png](media/floorplans-locations.png)
 
@@ -77,13 +77,13 @@ Pour plus d’informations sur les emplacements, voir [Manage locations](manage-
 
 Pour pouvoir utiliser les plans d’étage, les emplacements de bureau doivent être indexés. Il s’agit d’une opération ponctuelle pouvant prendre jusqu’à 48 heures. La durée totale dépend de la taille de votre organisation.
 
-Dans le [Centre d’administration](https://admin.microsoft.com), accédez à **paramètres**  >  plans d’étage de**Microsoft Search**  >  **Answers**  >  [**Floor plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans), puis sélectionnez **prise en main**. Si vous ne voyez pas cette notification, cette étape a déjà été effectuée pour votre organisation.
+Dans le [Centre d’administration](https://admin.microsoft.com), accédez à plans d' [**étage**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans), puis sélectionnez prise en **main**. Si vous ne voyez pas cette notification, cette étape a déjà été effectuée pour votre organisation.
 
 ![floorplans_hydrationstep.png](media/floorplans_hydrationstep.png)
 
 ### <a name="step-7-upload-floor-plans"></a>Étape 7 : chargement des plans d’étage
 
-1. Dans le [Centre d’administration](https://admin.microsoft.com), accédez à **paramètres**  >  plans d’étage de**Microsoft Search**  >  **Answers**  >  [**Floor plans**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans).
+1. Dans le [Centre d’administration](https://admin.microsoft.com), accédez à [**plans d’étage**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans).
 2. Sélectionnez un immeuble dans la liste déroulante, puis cliquez sur **suivant**. Si le bâtiment n’est pas indiqué, revenez en arrière et [Ajoutez des emplacements de construction](#step-5-add-building-locations).
 3. Sélectionnez **Télécharger les fichiers**, puis choisissez le plan d’étage que vous téléchargez.
 4. Lorsque le téléchargement est terminé, vous devez entrer le numéro d’étage représenté dans le fichier de plan d’étage. Ensuite, sélectionnez **Suivant**.
@@ -115,16 +115,16 @@ Pour mettre à jour un plan d’étage existant, sélectionnez le plan d’étag
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
-|**Étape**|**Message d’erreur**|**Type**|**Action**|
+|**Étape**|**Message d’erreur**|**Type (Type)**|**Action**|
 |:-----|:-----|:-----|:-----|
-|Chargement des plans d’étage|Impossible de lire CC_1. dwg. Rechargez ou supprimez le plan d’étage.|Erreur|Essayez de recharger le fichier. Si cela ne fonctionne pas, supprimez le fichier et réessayez.|
-|Chargement des plans d’étage|Il existe deux fichiers nommés CC_1. dwg. Supprimez l’un d’entre eux ou rechargez-le à l’aide d’un autre nom.|Erreur|Si le nom de fichier est incorrect, rendez le nom de fichier unique en ajoutant des informations d’étage ou d’aile, puis téléchargez de nouveau le fichier. Si vous avez accidentellement ajouté le même fichier deux fois plus simplement, supprimez-le.|
-|Chargement des plans d’étage|Aucune donnée n’a été trouvée.|Erreur|Vérifiez que le fichier est correct, puis téléchargez-le à nouveau ou supprimez-le.|
+|Chargement des plans d’étage|Impossible de lire CC_1. dwg. Rechargez ou supprimez le plan d’étage.|Error|Essayez de recharger le fichier. Si cela ne fonctionne pas, supprimez le fichier et réessayez.|
+|Chargement des plans d’étage|Il existe deux fichiers nommés CC_1. dwg. Supprimez l’un d’entre eux ou rechargez-le à l’aide d’un autre nom.|Error|Si le nom de fichier est incorrect, rendez le nom de fichier unique en ajoutant des informations d’étage ou d’aile, puis téléchargez de nouveau le fichier. Si vous avez accidentellement ajouté le même fichier deux fois plus simplement, supprimez-le.|
+|Chargement des plans d’étage|Aucune donnée n’a été trouvée.|Error|Vérifiez que le fichier est correct, puis téléchargez-le à nouveau ou supprimez-le.|
 |Chargement des plans d’étage|Des références externes sont manquantes dans ce fichier. Téléchargez CC_1_furniture. DWG ou supprimez ce fichier.|Avertissement|Télécharger des fichiers de référence externes ou supprimer.|
 |Chargement des plans d’étage|Impossible de lire les numéros de pièces ou les balises dans le fichier DWG. Veuillez supprimer ce fichier.|Avertissement|Vérifiez que les données sont incluses dans votre fichier DWG, puis supprimez le fichier, puis réessayez.|
-|Lier des emplacements de bureau|Aucun emplacement de bureau n’a été trouvé dans Azure Active Directory. Ajoutez des données de localisation à Azure Active Directory avant de configurer les plans d’étage.|Erreur|[Mettre à jour les emplacements Office dans les profils utilisateur](#step-3-update-office-locations-on-user-profiles) |
+|Lier des emplacements de bureau|Aucun emplacement de bureau n’a été trouvé dans Azure Active Directory. Ajoutez des données de localisation à Azure Active Directory avant de configurer les plans d’étage.|Error|[Mettre à jour les emplacements Office dans les profils utilisateur](#step-3-update-office-locations-on-user-profiles) |
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 **Q :** Comment afficher et modifier des fichiers DWG ?
 
@@ -148,17 +148,17 @@ Pour mettre à jour un plan d’étage existant, sélectionnez le plan d’étag
 <!-- markdownlint-disable no-inline-html -->
 |Types d’étiquettes de salle|Floor|Room|Exemple d’étiquette de texte|Emplacement du Bureau (génération de code/étiquette de texte)|
 |:-----|:-----|:-----|:-----|:-----|
-|Comprend le plancher et le numéro de la salle|1 |173|1173|2/1173|
+|Comprend le plancher et le numéro de la salle|0,1|173|1173|2/1173|
 || 21|45|21045|2/21045|
 ||23|Ko|23-100 000|2/23-100 000|
-||1 |G06-07|1G06-07|2/1G06-07|
-||2 |1024|02.1024 a|2/02.1024 a|
-||2 |1024|02.1024 a|2/02.1024 a|
-||2 |105,01|2105,01|2/2105.01|
+||0,1|G06-07|1G06-07|2/1G06-07|
+||n°2|1024|02.1024 a|2/02.1024 a|
+||n°2|1024|02.1024 a|2/02.1024 a|
+||n°2|105,01|2105,01|2/2105.01|
 |A le code de génération, le plancher et le numéro de la salle|0|X-11-M-12|2-0-X-11-M-12|2/2 -0-X-11-M-12<br/>2-0-X-11-M-12|
-||2 |128A|22128A|2/22128A<br/>22128A|
-||1 |B2-11|21-B2-11|2/21-B2-11<br/>21-B2-11|
-||2 |45|SC2045|SC/SC2045<br/>SC2045|
+||n°2|128A|22128A|2/22128A<br/>22128A|
+||0,1|B2-11|21-B2-11|2/21-B2-11<br/>21-B2-11|
+||n°2|45|SC2045|SC/SC2045<br/>SC2045|
 
 **Q :** Puis-je utiliser un fichier DWG qui n’inclut pas de numéros de plancher ?
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Créer et mettre à jour des signets et des méthodes pour modifier en bloc les résultats de signet pour Microsoft Search
-ms.openlocfilehash: 926fae2a4bd6bb6a436a3b5ea46f21077a23dcab
-ms.sourcegitcommit: 996b2c0538e28b71441461a371a62339cb6d476f
+ms.openlocfilehash: 2c0b42e4be1307aa45e4cab3f5c923a7808375e4
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45167456"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422873"
 ---
 # <a name="manage-bookmarks"></a>Gérer des signets
 
@@ -28,9 +28,8 @@ Si votre organisation a promu les résultats configurés dans SharePoint, vous p
 
 ## <a name="add-or-edit-a-single-bookmark"></a>Ajouter ou modifier un seul signet
 
-1. Accédez au **Centre d’administration Microsoft 365**.
-1. Dans le volet de navigation, accédez à **paramètres**  >  **Microsoft Search**  >  **Answers**  >  [**signets**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)de réponses Microsoft Search.
-1. Pour ajouter un signet, sélectionnez **Ajouter nouveau**.
+1. Dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com), accédez à [**signets**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks).
+1. Pour ajouter un signet, sélectionnez **Ajouter**.
 Pour modifier un signet, sélectionnez-le dans la liste.
 1. Lorsque vous ajoutez ou modifiez les informations, l’aperçu est automatiquement mis à jour.
 1. Enregistrez vos modifications.
@@ -105,8 +104,7 @@ Les applications Power sont un service qui vous permet de créer des application
 ### <a name="add-a-power-app-to-a-bookmark"></a>Ajouter une application d’alimentation à un signet
 
 1. Recherchez l' [ID d’application de l’application d’alimentation](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) que vous souhaitez ajouter.
-1. Connectez-vous au [**Centre d’administration Microsoft 365**](https://admin.microsoft.com).
-1. Dans le volet de navigation, accédez à **paramètres**  >  **Microsoft Search**  >  **Answers**  >  [**signets**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)de réponses Microsoft Search.
+1. Dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com), accédez à [**signets**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks).
 1. Ajoutez un nouveau signet ou accédez à un signet existant auquel vous souhaitez ajouter une application **PowerApp**.
 1. Dans **Paramètres de signet**, sélectionnez **Application PowerApp**, puis **Ajouter une application PowerApp**.
 1. Entrez ou collez l’**ID de l’application**.

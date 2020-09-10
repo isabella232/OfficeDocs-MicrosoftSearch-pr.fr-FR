@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: Au fil du temps, il se peut que vous deviez mettre à jour le statut et le contenu de certains emplacements afin qu’ils restent pertinents. 
-ms.openlocfilehash: a5d3209e2b6e9269ff2e5986cf81de705ae1cc4d
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: ab093cca1c340268b2fd43f7594eb48eddf32208
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996066"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422882"
 ---
 # <a name="manage-locations"></a>Gérer les emplacements
 
@@ -28,9 +28,8 @@ Les emplacements permettent à vos utilisateurs de trouver des adresses et de lo
 
 ### <a name="add-or-edit-a-single-location"></a>Ajouter ou modifier un seul emplacement
 
-1. Accédez au **Centre d’administration Microsoft 365**.
-1. Dans le volet de navigation, accédez à **paramètres**  >  **Microsoft Search**  >  **Answers**  >  [**emplacements**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations) de réponses de recherche Microsoft
-1. Pour ajouter un nouvel emplacement, sélectionnez **Ajouter nouveau**.
+1. Dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com), accédez à [**emplacements**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations) .
+1. Pour ajouter un nouvel emplacement, sélectionnez **Ajouter**.
 1. Pour modifier un emplacement, sélectionnez-le dans la liste.
 1. Lorsque vous ajoutez ou modifiez les informations, l’aperçu est automatiquement mis à jour.
 1. Enregistrez vos modifications.

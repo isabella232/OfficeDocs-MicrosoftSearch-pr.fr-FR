@@ -1,7 +1,7 @@
 ---
 title: Aperçu des connecteurs
-ms.author: mounika.narayanan
-author: monaray
+ms.author: monaray
+author: monaray97
 manager: shohara
 ms.audience: Admin
 ms.topic: article
@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez l’aperçu des connecteurs Microsoft Graph pour Microsoft Search.
-ms.openlocfilehash: 4bcd8360957be69bc701e8b356cd222de32bfc5f
-ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
+ms.openlocfilehash: 81d169074a316b6ab07f47156e0f057e50c12e3e
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44604382"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422891"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Aperçu des connecteurs Microsoft Graph
 
-Les connecteurs Microsoft Graph et les API Microsoft Search (requête et index) sont actuellement en état d’aperçu. Pour accéder à la fonctionnalité connecteurs, vous devez activer l’option publication ciblée dans votre client. Il s’agit d’une préversion préliminaire et il n’existe aucune garantie de niveau de service. Nous encourageons les clients à essayer les fonctionnalités des connecteurs et à fournir des commentaires. Nous vous déconseillons d’utiliser des connecteurs à des fins de production pendant la période d’évaluation.
+L’état actuel des connecteurs Microsoft Graph et des API Microsoft Search (requête et index) est en aperçu. Pour accéder à la fonctionnalité connecteurs, vous devez activer l’option publication ciblée dans votre client. Il s’agit d’une préversion préliminaire et il n’existe aucune garantie de niveau de service. Nous encourageons les clients à essayer les fonctionnalités des connecteurs et à fournir des commentaires. Nous vous déconseillons d’utiliser des connecteurs à des fins de production pendant la période d’évaluation.
 
 ## <a name="set-up-targeted-release"></a>Configurer la version ciblée
 

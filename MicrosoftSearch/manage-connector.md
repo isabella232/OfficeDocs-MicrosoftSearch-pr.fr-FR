@@ -1,7 +1,7 @@
 ---
 title: Gérer les connecteurs Microsoft Graph pour Microsoft Search
-ms.author: mounika.narayanan
-author: monaray
+ms.author: monaray
+author: monaray97
 manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Gérer les connecteurs Microsoft Graph pour Microsoft Search.
-ms.openlocfilehash: adf98bccab703e2ae5ecd99b059e1426a50609c5
-ms.sourcegitcommit: 89484fec9af755240d5d1bc399501d51ee40571d
+ms.openlocfilehash: f836d3efc6e52028f2b38c5131fa369f1c9e630f
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46563887"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422936"
 ---
+<!-- markdownlint-disable no-inline-html -->
 # <a name="manage-your-connector-for-microsoft-search"></a>Gérer votre connecteur pour Microsoft Search
 
 Pour accéder à vos connecteurs et les gérer, vous devez être désigné en tant qu’administrateur de recherche pour votre client. Contactez votre administrateur client pour vous approvisionner pour le rôle d’administrateur de recherche.
@@ -78,11 +79,12 @@ Code d’erreur | Message d’erreur | Solution
 2003 | Échec de l’indexation en raison d’un contenu d’élément non pris en charge. | Pour plus d’informations, reportez-vous à la documentation spécifique au connecteur.
 5000 | Un problème est survenu. Si cela persiste, contactez le support technique. |
 
-## <a name="monitor-your-index-quota-utilization"></a>Surveiller l’utilisation de votre quota d’index 
+## <a name="monitor-your-index-quota-utilization"></a>Surveiller l’utilisation de votre quota d’index
+
 Pendant la période de préversion, chaque organisation dispose d’un quota fixe allant jusqu’à 2 millions éléments pour l’indexation de contenu à partir de systèmes externes sur toutes les connexions.
 
 > [!NOTE]
-> Le quota de connecteurs Graph est disponible gratuitement pendant toute la durée de l’aperçu. Cela sera modifié au niveau de la disponibilité générale. 
+> Le quota de connecteurs Graph est disponible gratuitement pendant toute la durée de l’aperçu. Cela sera modifié au niveau de la disponibilité générale.
 
 Le quota d’index et la consommation disponibles seront affichés sur la page d’accueil des connecteurs.
 
@@ -90,7 +92,7 @@ Le quota d’index et la consommation disponibles seront affichés sur la page d
 
 La barre d’utilisation des quotas indique les différents États en fonction de la consommation de quota par votre organisation :
 
-State | Consommation de quota
+État | Consommation de quota
 --- | ---
 Normal | 1-69%
 Élevé | 70-89%

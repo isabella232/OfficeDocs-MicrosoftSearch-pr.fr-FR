@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: Recherchez et mettez à jour les réponses individuellement ou utilisez les outils de recherche Microsoft disponibles pour modifier les&Q en une seule fois.
-ms.openlocfilehash: 78a6ee0ff14f3347b0b2e2a65cc1ee0f68500981
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: 2a8b0727ef3540a35d617cf6c8bae7b0d99767a8
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996084"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422999"
 ---
 # <a name="manage-qas"></a>Gérer les Q&R
 
@@ -26,9 +26,8 @@ La création de Q&R s’apparente à celle de signets. Q&en tant que vous permet
 
 ## <a name="add-or-edit-a-single-qa"></a>Ajouter ou modifier un seul élément Q&R
 
-1. Accédez au **Centre d’administration Microsoft 365**.
-1. Dans le volet de navigation, accédez à **paramètres**  >  réponses de**recherche Microsoft**  >  **Answers**  >  [**Q&A**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
-1. Pour ajouter un élément Q&R, sélectionnez **Ajouter nouveau**.
+1. Dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com), accédez à [**Q&**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
+1. Pour ajouter un Q&A, sélectionnez **Ajouter**.
 Pour modifier un élément Q&R, sélectionnez-le dans la liste. Lorsque vous ajoutez ou modifiez les informations, l’aperçu est automatiquement mis à jour.
 1. Enregistrez vos modifications.
 

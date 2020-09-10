@@ -1,8 +1,8 @@
 ---
 title: Connecteur ServiceNow pour Microsoft Search
-ms.author: v-pamcn
-author: TrishaMc1
-manager: mnirkhe
+ms.author: monaray
+author: monaray97
+manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur ServiceNow pour Microsoft Search
-ms.openlocfilehash: 75e07eb82dd63e95ce17a0506f96c853a7bcea2f
-ms.sourcegitcommit: 398b9847e3041732c32af9e6087d8e6c2e96c1cf
+ms.openlocfilehash: 29e8e490f114ce8537ddb973ed16ccb34f24f82f
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39998565"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422864"
 ---
 # <a name="servicenow-connector"></a>Connecteur ServiceNow
 
@@ -26,12 +26,14 @@ Avec le connecteur ServiceNow, votre organisation peut indexer des Articles de l
 Cet article est destiné aux administrateurs 365 de Microsoft ou toute personne qui configure, exécute et surveille un connecteur ServiceNow. Elle explique comment configurer les fonctionnalités de connecteur et de connecteur, ainsi que les restrictions et les techniques de résolution des problèmes.
 
 ## <a name="connect-to-a-data-source"></a>Se connecter à une source de données
+
 Pour vous connecter à vos données ServiceNow, vous avez besoin de l’URL de l' **instance ServiceNow**de votre organisation, des informations d’identification de ce compte, ainsi que de l’ID client et de la clé secrète client pour l’authentification OAuth.  
 
-L’URL de l' **instance ServiceNow** de votre organisation ressemble généralement **à https://&lt;>. service-Now.com**. En plus de cette URL, vous aurez besoin d’un compte pour la configuration de la connexion à ServiceNow, ainsi que pour permettre à Microsoft Search de mettre à jour régulièrement les articles à partir de ServiceNow en fonction de la planification de l’actualisation.
+L’URL de l' **instance ServiceNow** de votre organisation ressemble généralement ** &lt; à https://>. service-Now.com**. En plus de cette URL, vous aurez besoin d’un compte pour la configuration de la connexion à ServiceNow, ainsi que pour permettre à Microsoft Search de mettre à jour régulièrement les articles à partir de ServiceNow en fonction de la planification de l’actualisation.
 
-Pour authentifier et synchroniser le contenu à partir de ServiceNow, choisissez l’une des deux méthodes prises en charge : 
-1. Authentification de base 
+Pour authentifier et synchroniser le contenu à partir de ServiceNow, choisissez l’une des deux méthodes prises en charge :
+
+1. Authentification de base
 2. OAuth (recommandé)
 
 > [!Note]
@@ -50,16 +52,20 @@ Actif | Activez la case à cocher pour activer le registre d’application. | D�
 Durée de vie des jetons d’actualisation | Nombre de secondes pendant lesquelles un jeton d’actualisation est valide. Par défaut, les jetons d’actualisation expirent dans 100 jours (8640000 secondes). | 31 536 000 (1 an)
 Durée de vie du jeton d’accès | Nombre de secondes pendant lesquelles un jeton d’accès est valide. | 43 200 (12 heures)
 
-## <a name="set-a-sync-filter"></a>Définir un filtre de synchronisation 
+## <a name="set-a-sync-filter"></a>Définir un filtre de synchronisation
+
 Avec un filtre de synchronisation, vous pouvez spécifier des conditions pour la synchronisation des articles. Il s’agit d’une clause **Where** d’une instruction **SQL SELECT** . Par exemple, vous pouvez choisir d’indexer uniquement les articles publiés et actifs. La page de configuration de SyncNow décrit la capture et la définition d’un filtre de synchronisation.
 
 ## <a name="manage-the-search-schema"></a>Gérer le schéma de recherche
+
 Une fois la connexion établie, configurez le mappage du schéma de recherche. Vous pouvez choisir les propriétés à utiliser pour les **requêtes**, les **recherches**et les **extractions**.
 
 ## <a name="manage-search-permissions"></a>Gérer les autorisations de recherche
+
 Le connecteur ServiceNow prend uniquement en charge les autorisations de recherche visibles par **tous les utilisateurs**. Les données indexées apparaissent dans les résultats de la recherche et sont visibles par tous les utilisateurs de l’organisation.
- 
-## <a name="set-the-refresh-schedule"></a>Définir la planification d’actualisation 
+
+## <a name="set-the-refresh-schedule"></a>Définir la planification d’actualisation
+
 Le connecteur ServiceNow prend en charge les planifications d’actualisation pour les analyses complètes et incrémentielles. Nous vous recommandons de définir les deux.
 
 Une planification d’analyse complète recherche les articles supprimés qui ont été précédemment synchronisés avec l’index Microsoft Search et les articles qui se sont déplacés du filtre de synchronisation. Lorsque vous vous connectez pour la première fois à ServiceNow, une analyse complète est exécutée pour synchroniser tous les Articles de la base de connaissances. Pour synchroniser de nouveaux éléments et effectuer des mises à jour, vous devez planifier des analyses incrémentielles.

@@ -1,8 +1,8 @@
 ---
 title: Connecteur Azure Data Lake pour Microsoft Search
-ms.author: mounika.narayanan
-author: monaray
-manager: shohara
+ms.author: monaray
+author: monaray97
+manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur Azure Data Lake Storage Gen2 pour Microsoft Search
-ms.openlocfilehash: d6adabc6ea40b4385059f80375f49fb73e63e65b
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: 788b7106c15cd9773c86f46f91ba0e91e38028f3
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996093"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422927"
 ---
 # <a name="azure-data-lake-storage-gen2-connector"></a>Connecteur Azure Data Lake Storage Gen2
 

@@ -1,8 +1,8 @@
 ---
 title: Recherche Microsoft
-ms.author: anfowler
-author: adefowler
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: landing-page
 layout: LandingPage
@@ -14,13 +14,14 @@ search.appverid:
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
 description: La recherche Microsoft est une expérience de recherche d’entreprise qui permet d’augmenter la productivité et de faire gagner du temps en fournissant un plus grand nombre de résultats de recherche pertinents pour votre organisation.
-ms.openlocfilehash: e6f805ae5d1f8d622d779d71d7375047ab99ce75
-ms.sourcegitcommit: 06f995ae7696a8cafcd12d19ed16a35d059b6abb
-ms.translationtype: HT
+ms.openlocfilehash: a9fe47012a5c4a97811f2a6028f0c1fa9c5037da
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33858263"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47423008"
 ---
+<!-- markdownlint-disable no-inline-html -->
 # <a name="microsoft-search"></a>Recherche Microsoft
 
 <ul class="panelContent cardsW cols cols2">

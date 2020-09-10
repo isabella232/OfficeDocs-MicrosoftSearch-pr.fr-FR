@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Trouvez les réponses à certaines des questions les plus fréquentes concernant Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 1acf4b5c4b3e771072ea67f4d807454723352c3f
-ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
+ms.openlocfilehash: c4b0d888e7765cf965832c252a79bdcf8aa5f6cf
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721758"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422963"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>Questions fréquemment posées
@@ -31,7 +31,7 @@ Voici la liste des questions fréquemment posées.
 
 Oui, Microsoft Search analyse l’intention des requêtes à partir d’expressions plus volumineuses. Cette fonctionnalité utilise l’AI pour découvrir les expressions superflues courantes que les utilisateurs ajoutent à leurs requêtes qui n’ont pas d’impact sur leur intention de recherche. Par exemple, lorsqu’un utilisateur recherche de *plus amples informations sur la modification de mon mot de passe*, Nous extrayons les mots moins importants de la requête et du déclencheur en fonction de ceux-ci, comme *modifier le mot de passe*.
   
-Cette fonctionnalité ne remplace pas les mots clés définis dans le [Centre d’administration](https://admin.microsoft.com)365 de Microsoft.
+Cette fonctionnalité ne remplace pas les mots clés définis dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com).
   
 ## <a name="can-you-search-for-files-on-premises"></a>Pouvez-vous rechercher des fichiers en local ?
 
