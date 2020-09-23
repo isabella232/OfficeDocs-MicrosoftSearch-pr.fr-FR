@@ -2,7 +2,7 @@
 title: Connecteur Azure Data Lake pour Microsoft Search
 ms.author: monaray
 author: monaray97
-manager: jameslau
+manager: shohara
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur Azure Data Lake Storage Gen2 pour Microsoft Search
-ms.openlocfilehash: 788b7106c15cd9773c86f46f91ba0e91e38028f3
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 01fea60e91af5ba321ceb00578ea2b0745c9c394
+ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422927"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48206931"
 ---
 # <a name="azure-data-lake-storage-gen2-connector"></a>Connecteur Azure Data Lake Storage Gen2
 
@@ -29,7 +29,12 @@ Cet article est destiné aux administrateurs [365 de Microsoft](https://www.micr
 ### <a name="primary-storage-connection-string"></a>Chaîne de connexion de stockage principal 
 Sur l’écran **authentification et configuration** , fournissez la chaîne de connexion de stockage principal. Cette chaîne est requise pour autoriser l’accès à votre compte de stockage. Pour rechercher votre chaîne de connexion, accédez au [portail Azure](https://ms.portal.azure.com/#home) et accédez à la section **clés** de votre compte de stockage Azure approprié. Copiez et collez la chaîne de connexion dans le champ approprié à l’écran.
 
-Si vous ne souhaitez pas fournir le **AccountKey** (un paramètre dans la chaîne de connexion de stockage principal), vous devrez accorder un accès en lecture à notre service de connecteurs Graph. Accédez à l’onglet **contrôle d’accès** de votre compte de stockage Azure et suivez les instructions pour accorder l’accès à l’application suivante :
+Si vous ne souhaitez pas fournir le **AccountKey** (un paramètre dans la chaîne de connexion de stockage principal), vous devrez accorder l’accès à notre service de connecteurs Graph pour les rôles suivants. 
+* Lecteur de données BLOB de stockage
+* Collaborateur de données de file d’attente de stockage
+* Délégation du blob de stockage (uniquement pour le stockage hiérarchique)
+
+Accédez à l’onglet **contrôle d’accès** de votre compte de stockage Azure et suivez les instructions pour accorder l’accès à l’application suivante :
 * **ID de l’application du premier groupe :** 56c1da01-2129-48f7-9355-af6d59d42766
 * **Nom de l’application de premier tiers :** Service connecteur Graph
 

@@ -1,8 +1,8 @@
 ---
 title: Connecteur ServiceNow pour Microsoft Search
-ms.author: monaray
-author: monaray97
-manager: jameslau
+ms.author: mnirkhe
+author: TrishaMc1
+manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur ServiceNow pour Microsoft Search
-ms.openlocfilehash: 29e8e490f114ce8537ddb973ed16ccb34f24f82f
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 357722f83e7f276615d231c8d3e56016bc17ba6e
+ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422864"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48206958"
 ---
 # <a name="servicenow-connector"></a>Connecteur ServiceNow
 
@@ -33,15 +33,15 @@ L’URL de l' **instance ServiceNow** de votre organisation ressemble générale
 
 Pour authentifier et synchroniser le contenu à partir de ServiceNow, choisissez l’une des deux méthodes prises en charge :
 
-1. Authentification de base
-2. OAuth (recommandé)
+ - Authentification de base
+ - OAuth (recommandé)
 
 > [!Note]
 > Pour utiliser OAuth pour l’authentification, un administrateur ServiceNow doit mettre en service un point de terminaison dans votre instance ServiceNow, afin que l’application Microsoft Search puisse accéder à l’instance. Pour plus d’informations, reportez-vous à la rubrique [créer un point de terminaison pour les clients pour accéder à l’instance](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) dans la documentation ServiceNow.
 
 Le tableau suivant fournit des instructions sur la façon de remplir le formulaire de création du point de terminaison :
 
-**Field** | **Description** | **Valeur recommandée**
+Champ | Description | Valeur recommandée
 --- | --- | ---
 Nom | Cette valeur unique identifie l’application pour laquelle vous avez besoin d’un accès OAuth. | Recherche Microsoft
 ID du client | IDENTIFICATEUR unique en lecture seule et généré automatiquement pour l’application. L’instance utilise l’ID client lorsqu’elle demande un jeton d’accès. | N/A

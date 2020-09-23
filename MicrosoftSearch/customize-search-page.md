@@ -1,7 +1,7 @@
 ---
 title: Personnaliser la page Microsoft Search
-ms.author: jypal
-author: jypal6
+ms.author: jeffkizn
+author: jypal
 manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ajouter des secteurs verticaux de recherche et personnaliser les résultats de la recherche
-ms.openlocfilehash: f9ecaa0c7aaaf75b40ed87db45f6ec4921488212
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 8b212f385d126b4f6c3513b066936db28387377f
+ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422981"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48206967"
 ---
 # <a name="customize-the-search-results-page"></a>Personnaliser la page de résultats de recherche
 
@@ -107,7 +107,7 @@ Une fois que vous avez activé le secteur vertical, il peut prendre un certain t
 
 Voici une liste des problèmes courants que vous pouvez rencontrer et des actions à résoudre.
 
-|Error  |Action  |
+|Erreur  |Action  |
 |---------|---------|
 | Je vois un message d’erreur « un problème est survenu » sur le secteur vertical. | Les types vertical et de résultat sont tous deux nécessaires pour terminer l’installation. Assurez-vous que vous avez créé les deux pour la même source de contenu. |
 | Je ne vois pas ma disposition de résultats, bien que j’en ai créé un. | Ces paramètres sont généralement mis en cache. Patientez quelques minutes, puis réessayez.        |
