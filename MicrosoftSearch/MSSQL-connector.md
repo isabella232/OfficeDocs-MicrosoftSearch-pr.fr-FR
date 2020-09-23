@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez Microsoft SQL Server ou Azure SQL Connector pour Microsoft Search.
-ms.openlocfilehash: e67b1e6175744fd741b265c056798f18dc28b1d4
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 71fd8b6cdf090c9dda9ac94973661d865536a984
+ms.sourcegitcommit: 6baf6f4b8a6466ee1a6ad142be8541f659fcf5d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422909"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214487"
 ---
 # <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Connecteurs Azure SQL et Microsoft SQL Server
 
@@ -30,17 +30,15 @@ Cet article est destiné aux administrateurs 365 de Microsoft ou toute personne 
 Pour accéder à vos données tierces, vous devez installer et configurer une passerelle Microsoft Power BI. Pour en savoir plus, consultez la rubrique [Install an on-](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) premises Gateway.  
 
 ## <a name="register-an-app"></a>Inscrire une application
+Pour Azure SQL Connector, vous devez inscrire une application dans Azure Active Directory pour permettre à l’application Microsoft Search d’accéder aux données pour l’indexation. Pour en savoir plus sur l’inscription d’une application, consultez la documentation de Microsoft Graph relative à l' [enregistrement d’une application](https://docs.microsoft.com/graph/auth-register-app-v2). 
 
-Pour Azure SQL Connector, vous devez inscrire une application dans Azure Active Directory pour permettre à l’application Microsoft Search d’accéder aux données pour l’indexation. Pour en savoir plus sur l’inscription d’une application, consultez la documentation de Microsoft Graph relative à l' [enregistrement d’une application](https://docs.microsoft.com/graph/auth-register-app-v2).
-
-Après avoir terminé l’inscription de l’application et pris note du nom de l’application, de l’ID d’application (client) et de l’ID de client, vous devez [générer une nouvelle clé secrète client](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). La clé secrète client ne s’affiche qu’une seule fois. N’oubliez pas de noter & stocker la clé secrète client en toute sécurité. Utilisez l’ID client et la clé secrète client lors de la configuration d’une nouvelle connexion dans Microsoft Search.
+Après avoir terminé l’inscription de l’application et pris note du nom de l’application, de l’ID d’application (client) et de l’ID de client, vous devez [générer une nouvelle clé secrète client](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). La clé secrète client ne s’affiche qu’une seule fois. N’oubliez pas de noter & stocker la clé secrète client en toute sécurité. Utilisez l’ID client et la clé secrète client lors de la configuration d’une nouvelle connexion dans Microsoft Search. 
 
 Pour ajouter l’application inscrite à votre base de données SQL Azure, vous devez :
-
-- Connectez-vous à votre base de données SQL Azure.
-- Ouvrir une nouvelle fenêtre de requête
-- Créez un utilisateur en exécutant la commande « créer un utilisateur [nom de l’application] à partir du fournisseur externe »
-- Ajouter un utilisateur à un rôle en exécutant la commande « exec sp_addrolemember » db_datareader, [nom de l’application] ou « modifier le rôle db_datareader ajouter un membre [nom de l’application] »
+ - Connectez-vous à votre base de données SQL Azure.
+ - Ouvrir une nouvelle fenêtre de requête
+ - Créez un utilisateur en exécutant la commande « créer un utilisateur [nom de l’application] à partir du fournisseur externe »
+ - Ajouter un utilisateur à un rôle en exécutant la commande « exec sp_addrolemember » db_datareader, [nom de l’application] ou « modifier le rôle db_datareader ajouter un membre [nom de l’application] »
 
 >[!NOTE]
 >Pour révoquer l’accès à une application inscrite dans Azure Active Directory, reportez-vous à la documentation Azure sur la [Suppression d’une application inscrite](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app).
@@ -81,22 +79,6 @@ L’utilisation de chacune des colonnes ACL dans la requête ci-dessus est décr
 * **DeniedGroups**: spécifie le groupe d’utilisateurs qui n’ont **pas** accès aux résultats de la recherche. Dans l’exemple suivant, les groupes engg-team@contoso.com et pm-team@contoso.com n’ont pas accès à record avec OrderId = 15, tandis que les autres utilisateurs ont accès à cet enregistrement.  
 
 ![Exemples de données illustrant les OrderTable et AclTable avec des exemples de propriétés](media/MSSQL-ACL1.png)
-
-### <a name="supported-data-types"></a>Types de données pris en charge
-
-Le tableau ci-dessous récapitule les types de données SQL qui sont pris en charge dans les connecteurs MS SQL et Azure SQL. Le tableau résume également le type de données d’indexation pour le type de données SQL pris en charge. Pour en savoir plus sur les connecteurs Microsoft Graph types de données pris en charge pour l’indexation, reportez-vous à la documentation sur les [types de ressources de propriétés](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties).
-<!-- markdownlint-disable no-inline-html -->
-| Catégorie | Type de données source | Index, type de données |
-| ------------ | ------------ | ------------ |
-| Date et heure | date <br> DateHeure <br> datetime2 <br> smallmoney | DateHeure |
-| Numérique exact | comportant <br> int <br> type <br> entier très petit | Int64 |
-| Numérique exact | légèrement | valeur booléenne |
-| Valeur numérique approximative | flottant <br> RTA | double |
-| Chaîne de caractères | échelle <br> varchar <br> text | string |
-| Chaînes de caractères Unicode | NCHAR <br> nvarchar <br> Text | string |
-| Autres types de données | unique | string |
-
-Pour tout autre type de données actuellement non pris en charge directement, la colonne doit être explicitement convertie en un type de données pris en charge.
 
 ### <a name="watermark-required"></a>Filigrane (obligatoire)
 
