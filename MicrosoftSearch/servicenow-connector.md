@@ -1,8 +1,8 @@
 ---
 title: Connecteur ServiceNow pour Microsoft Search
-ms.author: mnirkhe
-author: TrishaMc1
-manager: mnirkhe
+ms.author: kam1
+author: TheKarthikeyan
+manager: harshkum
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur ServiceNow pour Microsoft Search
-ms.openlocfilehash: 357722f83e7f276615d231c8d3e56016bc17ba6e
-ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
+ms.openlocfilehash: f7ae05ad00a96a6f05780acfeb8c75911505ee6f
+ms.sourcegitcommit: 2ce86461e845c3ea84feb215df17685d2ef705c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48206958"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48340855"
 ---
 # <a name="servicenow-connector"></a>Connecteur ServiceNow
 
@@ -25,23 +25,27 @@ Avec le connecteur ServiceNow, votre organisation peut indexer des Articles de l
 
 Cet article est destiné aux administrateurs 365 de Microsoft ou toute personne qui configure, exécute et surveille un connecteur ServiceNow. Elle explique comment configurer les fonctionnalités de connecteur et de connecteur, ainsi que les restrictions et les techniques de résolution des problèmes.
 
-## <a name="connect-to-a-data-source"></a>Se connecter à une source de données
+Découvrez comment accéder aux connecteurs Microsoft générés à partir de [la configuration de votre connecteur intégré Microsoft pour Microsoft Search](https://docs.microsoft.com/microsoftsearch/configure-connector). La configuration spécifique d’un connecteur ServiceNow est expliquée dans l’article ci-dessous.
 
+## <a name="connection-settings"></a>Paramètres de connexion
 Pour vous connecter à vos données ServiceNow, vous avez besoin de l’URL de l' **instance ServiceNow**de votre organisation, des informations d’identification de ce compte, ainsi que de l’ID client et de la clé secrète client pour l’authentification OAuth.  
 
-L’URL de l' **instance ServiceNow** de votre organisation ressemble généralement ** &lt; à https://>. service-Now.com**. En plus de cette URL, vous aurez besoin d’un compte pour la configuration de la connexion à ServiceNow, ainsi que pour permettre à Microsoft Search de mettre à jour régulièrement les articles à partir de ServiceNow en fonction de la planification de l’actualisation.
+L’URL de l' **instance ServiceNow** de votre organisation ressemble généralement ** &lt; à https://>. service-Now.com**. En plus de cette URL, vous aurez besoin d’un compte pour la configuration de la connexion à ServiceNow, ainsi que pour permettre à Microsoft Search de mettre à jour régulièrement les articles à partir de ServiceNow en fonction de la planification de l’actualisation. Le compte doit disposer d’un rôle de <em>connaissances</em> . [Découvrez comment attribuer des rôles pour les comptes ServiceNow](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html).
 
-Pour authentifier et synchroniser le contenu à partir de ServiceNow, choisissez l’une des deux méthodes prises en charge :
+Pour authentifier et synchroniser le contenu à partir de ServiceNow, choisissez **l’une des trois** méthodes prises en charge : 
+1. Authentification de base 
+2. ServiceNow OAuth (recommandé)
+3. Azure AD OpenID Connect
 
- - Authentification de base
- - OAuth (recommandé)
+#### <a name="basic-authentication"></a>Authentification de base
+Entrez le nom d’utilisateur et le mot de passe du compte ServiceNow avec le rôle <em>connaissances</em> pour s’authentifier auprès de votre instance.
+#### <a name="servicenow-oauth"></a>ServiceNow OAuth
 
-> [!Note]
-> Pour utiliser OAuth pour l’authentification, un administrateur ServiceNow doit mettre en service un point de terminaison dans votre instance ServiceNow, afin que l’application Microsoft Search puisse accéder à l’instance. Pour plus d’informations, reportez-vous à la rubrique [créer un point de terminaison pour les clients pour accéder à l’instance](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) dans la documentation ServiceNow.
+Pour utiliser ServiceNow OAuth pour l’authentification, un administrateur ServiceNow doit mettre en service un point de terminaison dans votre instance de ServiceNow, afin que l’application Microsoft Search puisse accéder à l’instance. Pour plus d’informations, reportez-vous à la rubrique [créer un point de terminaison pour les clients pour accéder à l’instance](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) dans la documentation ServiceNow.
 
 Le tableau suivant fournit des instructions sur la façon de remplir le formulaire de création du point de terminaison :
 
-Champ | Description | Valeur recommandée
+**Field** | **Description** | **Valeur recommandée**
 --- | --- | ---
 Nom | Cette valeur unique identifie l’application pour laquelle vous avez besoin d’un accès OAuth. | Recherche Microsoft
 ID du client | IDENTIFICATEUR unique en lecture seule et généré automatiquement pour l’application. L’instance utilise l’ID client lorsqu’elle demande un jeton d’accès. | N/A
@@ -52,22 +56,114 @@ Actif | Activez la case à cocher pour activer le registre d’application. | D�
 Durée de vie des jetons d’actualisation | Nombre de secondes pendant lesquelles un jeton d’actualisation est valide. Par défaut, les jetons d’actualisation expirent dans 100 jours (8640000 secondes). | 31 536 000 (1 an)
 Durée de vie du jeton d’accès | Nombre de secondes pendant lesquelles un jeton d’accès est valide. | 43 200 (12 heures)
 
-## <a name="set-a-sync-filter"></a>Définir un filtre de synchronisation
+Entrez l’ID client et la clé secrète client pour vous connecter à votre instance. Une fois connecté, utilisez les informations d’identification d’un compte ServiceNow pour authentifier l’autorisation d’analyse. Le compte doit disposer d’un rôle de <em>connaissances</em> . 
 
-Avec un filtre de synchronisation, vous pouvez spécifier des conditions pour la synchronisation des articles. Il s’agit d’une clause **Where** d’une instruction **SQL SELECT** . Par exemple, vous pouvez choisir d’indexer uniquement les articles publiés et actifs. La page de configuration de SyncNow décrit la capture et la définition d’un filtre de synchronisation.
+#### <a name="azure-ad-openid-connect"></a>Azure AD OpenID Connect
+
+Pour utiliser Azure AD OpenID Connect pour l’authentification, suivez les étapes ci-dessous.
+
+###### <a name="step-1-register-a-new-application-in-azure-active-directory"></a>Étape 1 : enregistrer une nouvelle application dans Azure Active Directory
+
+Pour en savoir plus sur l’enregistrement d’une nouvelle application dans Azure Active Directory, consultez la rubrique [enregistrer une application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-an-application). Sélectionnez annuaire d’organisation client unique. L’URI de redirection n’est pas nécessaire. Après l’enregistrement, notez l’ID d’application (client) et l’ID de répertoire (client).
+
+###### <a name="step-2-create-a-client-secret"></a>Étape 2 : créer une clé secrète client
+
+Pour en savoir plus sur la création d’une clé secrète client, consultez [la rubrique Création d’une clé secrète client](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Prenez note de la clé secrète client.
+
+###### <a name="step-3-retrieve-service-principal-object-identifier"></a>Étape 3 : récupérer l’identificateur d’objet principal du service
+
+Suivez la procédure pour récupérer l’identificateur d’objet principal du service.
+
+1. Exécuter PowerShell
+2. Installez Azure PowerShell à l’aide de la commande suivante :
+```<language>
+   Install-Module -Name Az -AllowClobber -Scope CurrentUser
+```
+3. Se connecter à Azure
+```<language>
+    Connect-AzAccount
+```
+4. Obtenir l’identificateur de l’objet principal du service
+```<language>
+   Get-AzADServicePrincipal -ApplicationId "Application-ID"
+```
+Remplacez « application-ID » par ID d’application (client) (sans guillemets) de l’application que vous avez inscrite à l’étape 1. Notez la valeur de l’objet ID de la sortie PowerShell. Il s’agit de l’ID du principal du service.
+
+Vous disposez maintenant de toutes les informations requises à partir du portail Azure. Un résumé rapide des informations est indiqué dans le tableau ci-dessous.
+
+**Propriété** | **Description**
+--- | ---
+ID d’annuaire (ID de client) | Il s’agit d’un ID unique qui fait référence au client Azure Active Directory (à partir de l’étape 1).
+ID de l’application (ID client) | Il s’agit d’un ID unique qui fait référence à l’application inscrite à l’étape 1.
+Clé secrète client | Il s’agit de la clé secrète de l’application (à partir de l’étape 2). Le traiter comme un mot de passe.
+ID du principal du service | Identité de l’application en cours d’exécution en tant que service. (de l’étape 3)
+
+###### <a name="step-4-register-servicenow-application"></a>Étape 4 : inscrire l’application ServiceNow
+
+La configuration suivante doit être exécutée dans l’instance ServiceNow.
+
+1. Enregistrer une nouvelle entité OIDC OAuth. Pour en savoir plus, consultez la rubrique [Create an OAUTH OIDC Provider](https://docs.servicenow.com/bundle/orlando-platform-administration/page/administer/security/task/add-OIDC-entity.html).
+2. Le tableau suivant fournit des instructions sur la façon de remplir le formulaire d’inscription du fournisseur OIDC
+
+**Field** | **Description** | **Valeur recommandée**
+--- | --- | ---
+Nom | Nom unique qui identifie l’entité OIDC OAuth. | Azure AD
+ID du client | ID client de l’application inscrite dans le serveur OIDC OAuth tiers. L’instance utilise l’ID client lors de la demande d’un jeton d’accès. | ID d’application (client) de l’étape 1
+Clé secrète client | Clé secrète client de l’application inscrite dans le serveur OIDC OAuth tiers. | Clé secrète client à partir de l’étape 2
+
+Toutes les autres valeurs peuvent être par défaut.
+
+3. Dans le formulaire d’inscription du fournisseur OIDC, vous devez ajouter une nouvelle configuration de fournisseur OIDC. Cliquez sur l’icône de recherche sur le champ de *configuration du fournisseur OIDC OAuth* pour ouvrir les enregistrements des configurations de OIDC. Cliquez sur Nouveau.
+4. Le tableau suivant fournit des instructions sur la façon de remplir le formulaire de configuration du fournisseur OIDC
+
+**Field** | **Valeur recommandée**
+--- | ---
+Fournisseur OIDC |  Azure AD
+URL de métadonnées OIDC | Il doit être au format https \: //login.microsoftonline.com/« tenandId »/.well-known/OpenID-configuration <br/>Remplacez « tenantID » par l’ID d’annuaire (locataire) de l’étape 1 (sans les guillemets).
+Durée de vie du cache de configuration OIDC |  120
+Application | Global
+Revendication utilisateur | semi
+Champ utilisateur | ID utilisateur
+Activer la vérification de revendication JTI | Désactivé
+
+5. Cliquez sur envoyer et mettez à jour le formulaire d’entité OIDC OAuth.
+
+###### <a name="step-5-create-a-servicenow-account"></a>Étape 5 : créer un compte ServiceNow
+
+Consultez les instructions pour créer un compte ServiceNow, [créez un utilisateur dans ServiceNow](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html).
+
+Le tableau suivant fournit des instructions sur la façon de renseigner l’enregistrement de compte d’utilisateur ServiceNow
+
+**Field** | **Valeur recommandée**
+--- | ---
+ID utilisateur | ID de principal de service de l’étape 3
+Accès au service Web uniquement | Checked
+
+Toutes les autres valeurs peuvent être conservées par défaut.
+
+###### <a name="step-6-enable-knowledge-role-for-the-servicenow-account"></a>Étape 6 : activer le rôle de connaissances pour le compte ServiceNow
+
+Accédez au compte ServiceNow que vous avez créé avec l’ID de principal ServiceNow en tant qu’ID d’utilisateur et attribuez le rôle de connaissances. Vous trouverez des instructions sur l’affectation d’un rôle à un compte ServiceNow ici, ainsi [qu’un rôle à un utilisateur](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html).
+
+Utilisez ID de l’application comme ID client (de l’étape 1) et clé secrète client (à partir de l’étape 2) de l’Assistant de configuration du centre d’administration pour s’authentifier auprès de votre instance ServiceNow à l’aide d’Azure AD OpenID Connect.
+
+## <a name="filter-data"></a>Filtrer les données 
+Avec une chaîne de requête ServiceNow, vous pouvez spécifier des conditions pour la synchronisation des articles. Il s’agit d’une clause **Where** d’une instruction **SQL SELECT** . Par exemple, vous pouvez choisir d’indexer uniquement les articles publiés et actifs. Pour en savoir plus sur la création de votre propre chaîne de requête, voir [générer une chaîne de requête codée à l’aide d’un filtre](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
 
 ## <a name="manage-the-search-schema"></a>Gérer le schéma de recherche
-
-Une fois la connexion établie, configurez le mappage du schéma de recherche. Vous pouvez choisir les propriétés à utiliser pour les **requêtes**, les **recherches**et les **extractions**.
+Une fois la connexion établie, configurez le mappage du schéma de recherche. Vous pouvez choisir les propriétés à utiliser pour les **requêtes**, les **recherches**et les **extractions**. Pour en savoir plus sur la gestion de votre schéma de recherche, consultez [la rubrique Manage the Search Schema](https://docs.microsoft.com/microsoftsearch/configure-connector#manage-the-search-schema).
 
 ## <a name="manage-search-permissions"></a>Gérer les autorisations de recherche
-
 Le connecteur ServiceNow prend uniquement en charge les autorisations de recherche visibles par **tous les utilisateurs**. Les données indexées apparaissent dans les résultats de la recherche et sont visibles par tous les utilisateurs de l’organisation.
 
 ## <a name="set-the-refresh-schedule"></a>Définir la planification d’actualisation
-
 Le connecteur ServiceNow prend en charge les planifications d’actualisation pour les analyses complètes et incrémentielles. Nous vous recommandons de définir les deux.
 
 Une planification d’analyse complète recherche les articles supprimés qui ont été précédemment synchronisés avec l’index Microsoft Search et les articles qui se sont déplacés du filtre de synchronisation. Lorsque vous vous connectez pour la première fois à ServiceNow, une analyse complète est exécutée pour synchroniser tous les Articles de la base de connaissances. Pour synchroniser de nouveaux éléments et effectuer des mises à jour, vous devez planifier des analyses incrémentielles.
 
 La valeur par défaut recommandée est d’un jour pour une analyse complète et de quatre heures pour une analyse incrémentielle.
+## <a name="review-and-publish"></a>Révision et publication
+Après avoir configuré votre connecteur, vous pouvez passer en revue et publier la connexion.
+
+## <a name="next-steps"></a>Étapes suivantes
+Une fois la connexion publiée, vous devez personnaliser la page des résultats de la recherche. Pour en savoir plus sur la personnalisation des résultats de recherche, voir [personnaliser la page des résultats de la recherche](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
