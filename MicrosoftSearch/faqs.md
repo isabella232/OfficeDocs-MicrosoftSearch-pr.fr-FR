@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Trouvez les réponses à certaines des questions les plus fréquentes concernant Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: c4b0d888e7765cf965832c252a79bdcf8aa5f6cf
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 5a134116c98b4feea0c04909349ce4b972c59ffe
+ms.sourcegitcommit: 0b8c3c57384cecaa93c5cbaf3b3b30f8e20d1a69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422963"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408437"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>Questions fréquemment posées
@@ -60,3 +60,7 @@ Vous trouverez des détails dans les [pages du centre de gestion de la confident
 ## <a name="can-users-earn-microsoft-rewards-points-with-their-work-or-school-account"></a>Les utilisateurs peuvent-ils gagner des points Microsoft Rewards avec leur compte professionnel ou scolaire ?
 
 La Recherche Microsoft nécessite que les utilisateurs de l’entreprise se connectent avec un compte professionnel ou scolaire, mais les utilisateurs ne peuvent pas participer ou se connecter au programme Microsoft Rewards avec ces comptes. Toutefois, il existe une instance où un utilisateur de l’entreprise peut voir un gain de points Rewards. Cela peut se produire lorsqu’un utilisateur de la Recherche Microsoft dispose d’un compte Rewards qui a été créé avec un [compte Microsoft](https://www.microsoft.com/welcome?rtc=1). (L’adresse e-mail associée à un compte Microsoft peut être un compte Outlook.com, Hotmail.com, Gmail, Yahoo ou un compte provenant d’autres fournisseurs.) Si les utilisateurs se connectent avec leur compte professionnel et leur compte Microsoft dans la même session de navigateur, ils peuvent accumuler des points à leur compte Rewards. Les utilisateurs peuvent arrêter d’accumuler des points lorsqu’ils effectuent une recherche avec la Recherche Microsoft en effaçant leur cookies.
+
+## <a name="can-guest-users-leverage-microsoft-search-in-my-organization"></a>Les utilisateurs invités peuvent-ils utiliser Microsoft Search dans mon organisation ?
+
+Microsoft 365 permet une collaboration enrichie avec des personnes extérieures à votre organisation via [l’accès invité.](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization) Ces utilisateurs peuvent effectuer des opérations de recherche sur des documents, des sites, des groupes, des listes et des bibliothèques. Toutefois, les utilisateurs invités n’obtiendront pas l’expérience complète et personnalisée de recherche Microsoft et devront peut-être utiliser la zone de recherche sur site à la place de la zone de recherche unifiée de Microsoft dans l’en-tête.
