@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer votre connecteur créé par Microsoft pour Microsoft Search
-ms.openlocfilehash: 19a0c21911a9c5410e13a36f0bcc694af4a5c41a
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: ce2515b3eaa859a8fbb00d83c4727865ab55e174
+ms.sourcegitcommit: 6aea7102c94855e9f80711c0f3d7bf5833ce8fb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422855"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464475"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -64,7 +64,17 @@ Les champs de données définis par votre source de données tierce en tant que 
 
 ### <a name="manage-the-search-schema"></a>Gérer le schéma de recherche
 
-Les administrateurs peuvent définir les attributs du schéma de recherche pour contrôler la fonctionnalité de recherche de chaque propriété source. Un schéma de recherche permet de déterminer les résultats affichés sur la page des résultats de la recherche et les informations que les utilisateurs finaux peuvent afficher et auxquels ils peuvent accéder.
+#### <a name="content-property"></a>Content, propriété
+
+Vous pouvez sélectionner la propriété source correspondant à la propriété **content** (index de texte intégral de l’élément) en sélectionnant une propriété de chaîne dans la liste déroulante de la propriété **content** . Vous pouvez également conserver la propriété sélectionnée par défaut si celle-ci est présente.
+
+Il est particulièrement important que la propriété correcte soit sélectionnée depuis que cette propriété est utilisée pour l’indexation de texte intégral de contenu, la génération d’extraits de page de résultats de recherche, la détection de langue, le support HTML/texte, le classement et la pertinence, et la formulation de requête.
+
+Si vous sélectionnez une propriété pour le **contenu**, vous aurez la possibilité d’utiliser la propriété générée par le système **ResultSnippet** lorsque vous [Créez votre type de résultat](customize-results-layout.md). Cette propriété sert d’espace réservé pour les extraits de code dynamiques générés à partir de la propriété **content** au moment de la requête. Si vous utilisez cette propriété dans votre type de résultat, des extraits de code sont générés dans les résultats de la recherche.
+
+#### <a name="search-schema-attributes"></a>Attributs du schéma de recherche
+
+Vous pouvez définir les attributs du schéma de recherche pour contrôler la fonctionnalité de recherche de chaque propriété source. Un schéma de recherche permet de déterminer les résultats affichés sur la page des résultats de la recherche et les informations que les utilisateurs finaux peuvent afficher et auxquels ils peuvent accéder.
 
 Les attributs de schéma de recherche incluent des **recherches pouvant**faire l’objet d’une recherche, d’une **requête**ou d’une **récupération**. Le tableau suivant répertorie chacun des attributs pris en charge par les connecteurs Microsoft Graph et explique leurs fonctions.
 
@@ -78,11 +88,14 @@ Pour tous les connecteurs, les types personnalisés doivent être définis manue
 
 ![Le schéma d’un connecteur peut être personnalisé en ajoutant ou en supprimant des fonctions de requête, de recherche et de récupération.](media/manageschema.png)
 
-Ces restrictions et recommandations s’appliquent aux paramètres de schéma de recherche :
+#### <a name="restrictions-and-recommendations-for-search-schema-settings"></a>Restrictions et recommandations pour les paramètres de schéma de recherche
 
-* Pour les connecteurs qui indexent des types personnalisés, nous vous recommandons de **ne pas** marquer le champ qui contient l' **extrait**de contenu principal. Des problèmes de performances significatifs se produisent lorsque les résultats de la recherche sont affichés avec cet attribut de recherche. Le champ de contenu de **texte** d’un article de la base de connaissances [ServiceNow](https://www.servicenow.com) en est un exemple.
+* La propriété **content** peut faire l’objet d’une recherche uniquement. Une fois que vous avez sélectionné dans la liste déroulante, cette **queryable**propriété ne peut pas **être sélectionnée.** Des problèmes de performances significatifs se produisent lorsque les résultats de la recherche sont affichés avec la propriété **content** . Le champ de contenu de **texte** d’un article de la base de connaissances [ServiceNow](https://www.servicenow.com) en est un exemple.
+
 * Seules les propriétés marquées comme rendu récupérables dans les résultats de la recherche et peuvent être utilisées pour créer des types de résultats modernes (MRTs).
+
 * Seules les propriétés de chaîne peuvent être marquées comme pouvant faire l’objet d’une recherche.
+
 
 > [!Note]
 > Après avoir créé une connexion, vous **ne pouvez** plus modifier le schéma. Pour ce faire, vous devez supprimer votre connexion et en créer une nouvelle.
