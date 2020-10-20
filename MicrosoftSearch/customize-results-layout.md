@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: À l’aide de cartes adaptatives, créer une disposition pour afficher vos résultats de recherche personnalisés
-ms.openlocfilehash: e31be1f9c1602fcd696c99d584388facee22df74
-ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
+ms.openlocfilehash: 0856adfd85a921cf026cd59a8ca2c5beea2ffcf2
+ms.sourcegitcommit: 7ceefb7a96ae6886145b929791c7448c139366b4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721776"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48595272"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>Créer une disposition pour personnaliser les résultats de la recherche
@@ -176,6 +176,10 @@ Vous devez mapper chaque champ de la mise en page à une propriété Result ou �
 
 Sélectionnez un champ dans la mise en page pour mettre en surbrillance les variables devant être mappées. Vous pouvez utiliser plusieurs variables pour un seul champ et tous les champs doivent être mappés sur les propriétés de résultat.
 
+### <a name="show-snippet-on-search-result"></a>Afficher l’extrait de résultats de la recherche  
+
+Les extraits de code dynamiques générés sur la propriété de **contenu** du résultat du connecteur peuvent être affichés sur le résultat de la recherche. **ResultSnippet** est la propriété système qui agit comme une propriété d’espace réservé pour les extraits de code générés pour chaque résultat de connecteur. Pour afficher les extraits de code sur la disposition des résultats, la propriété système **ResultSnippet** doit être mappée sur un champ approprié, par exemple Description, dans la disposition des résultats de la recherche. Les extraits de code générés sur chaque résultat surlignent également les correspondances dans l’extrait de code avec le terme de requête entré par l’utilisateur. 
+
 ## <a name="things-to-consider"></a>Informations importantes
 
 Avant de commencer, vous devez effectuer quelques opérations et quelques éléments que vous devez éviter pour garantir la réussite de vos mises en page.
@@ -184,16 +188,17 @@ Avant de commencer, vous devez effectuer quelques opérations et quelques élém
 
 - Modifier un modèle pour indiquer le lien du logo dans la mise en page si vous utilisez des liens statiques pour les logos et non pour les propriétés de résultat.
 - Valider la disposition des résultats pour les scénarios où aucune donnée n’est renvoyée pour une propriété Result utilisée dans le JSON résultant. Utilisez la `$when` condition pour masquer un élément si la propriété ne contient pas de données.  
-- Assurez-vous que les types `$when` de données de la condition et la propriété Result correspondent. Par exemple, ne pas `Number` Comparer `Text` avec dans `$when` la condition.  
+- Assurez-vous que les types de données de la `$when` condition et la propriété Result correspondent. Par exemple, ne pas comparer `Number` avec `Text` dans la `$when` condition.  
 - Considérez les conditions requises pour les thèmes lors de la conception d’une disposition de résultats.  
-- Assurez-vous `Textblock`  que l’élément peut gérer le contenu dynamique. Vous pouvez utiliser les `wrap` propriétés `maxLines` et de l’élément à cet effet.
+- Assurez-vous que l' `Textblock`   élément peut gérer le contenu dynamique. Vous pouvez utiliser les `wrap` `maxLines` Propriétés et de l’élément à cet effet.
 - Format correct de la date lors `{DATE()}` de l’utilisation de la démarque.  
 
 ### <a name="dont"></a>À ne pas faire
 
 - Ne définissez pas de types de données non valides lors de la liaison de valeurs. Pour plus d’informations sur les types de données, voir [Manage the Search Schema](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema).
 - Évitez de détourer le résultat sur la page de résultats en suivant la hauteur maximale du JSON de la disposition du résultat. Si vous dépassez la hauteur maximale de la disposition du résultat, le résultat sera rogné sur la page de résultats.
-- N’utilisez `px` pas de valeurs dans les propriétés de l’élément.
+- N’utilisez pas `px` de valeurs dans les propriétés de l’élément.
+- N’utilisez pas la démarque avec la propriété **ResultSnippet** dans la mise en page des résultats pour mettre en surbrillance la requête dans le résultat de la recherche. 
 
 ## <a name="resources"></a>Ressources
 
