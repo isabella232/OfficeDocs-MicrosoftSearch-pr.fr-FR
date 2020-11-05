@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble des connecteurs Microsoft Graph pour Microsoft Search
-ms.openlocfilehash: 2e3ca14b408ca6471c3163871c80fb24d62cff26
-ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
+ms.openlocfilehash: d20c576c92c0ec2d794fc6f8fd21c829e468c086
+ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48206985"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919482"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Vue d’ensemble des connecteurs Microsoft Graph
 
 Microsoft Search indexe toutes vos données [microsoft 365](https://www.microsoft.com/microsoft-365) de façon à ce qu’elles puissent être recherchées pour les utilisateurs. Les connecteurs Microsoft Graph permettent à votre organisation d’indexer des données tierces pour qu’elles apparaissent dans les résultats de recherche Microsoft. Les données tierces peuvent être hébergées sur site ou dans les nuages publics ou privés. Les connecteurs développent les types de sources de contenu pouvant faire l’objet d’une recherche dans vos applications de productivité Microsoft 365 et l’écosystème Microsoft plus large.
 
 > [!IMPORTANT]
-> **Clause d’exclusion de responsabilité**: les connecteurs Microsoft Graph et les API Microsoft Search (requête et index) sont actuellement en état d’aperçu disponibles pour les clients dans la version ciblée. Pour utiliser des connecteurs avec Microsoft Search ou pour créer des connecteurs, optez pour la [version ciblée](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide). Pour en savoir plus sur l’aperçu, consultez la rubrique [Connectors Preview Program](connectors-preview.md).
+> **Clause d’exclusion de responsabilité** : les connecteurs Microsoft Graph et les API Microsoft Search (requête et index) sont actuellement en état d’aperçu disponibles pour les clients dans la version ciblée. Pour utiliser des connecteurs avec Microsoft Search ou pour créer des connecteurs, optez pour la [version ciblée](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide). Pour en savoir plus sur l’aperçu, consultez la rubrique [Connectors Preview Program](connectors-preview.md).
 
 ## <a name="architecture"></a>Architecture
 
@@ -88,8 +88,6 @@ Une fois que les données personnalisées sont indexées, les développeurs peuv
 
 ## <a name="license-requirements"></a>Critères de licence
 
-Pour afficher les données des connecteurs dans les résultats de la recherche, les utilisateurs doivent disposer de l’un des abonnements Microsoft 365 ou Office 365 suivants :
+Pour les utilisateurs de votre organisation, vous avez besoin d’une licence Microsoft 365 ou Office 365 valide et d’un quota de connecteurs graphiques suffisant pour afficher les données des connecteurs dans les résultats de la recherche.
 
-- [Microsoft 365 ou Office 365 entreprise E3 ou E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
-
-- [Microsoft 365 ou Office 365 éducation a3 ou a5](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1)
+Pour en savoir plus, consultez la rubrique [licences requises et tarifs](licensing.md).

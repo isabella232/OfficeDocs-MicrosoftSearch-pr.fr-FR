@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: À l’aide de cartes adaptatives, créer une disposition pour afficher vos résultats de recherche personnalisés
-ms.openlocfilehash: 0856adfd85a921cf026cd59a8ca2c5beea2ffcf2
-ms.sourcegitcommit: 7ceefb7a96ae6886145b929791c7448c139366b4
+ms.openlocfilehash: 5bd42eded291781f5122cfede3759327b5222108
+ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "48595272"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919509"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>Créer une disposition pour personnaliser les résultats de la recherche
@@ -178,7 +178,7 @@ Sélectionnez un champ dans la mise en page pour mettre en surbrillance les vari
 
 ### <a name="show-snippet-on-search-result"></a>Afficher l’extrait de résultats de la recherche  
 
-Les extraits de code dynamiques générés sur la propriété de **contenu** du résultat du connecteur peuvent être affichés sur le résultat de la recherche. **ResultSnippet** est la propriété système qui agit comme une propriété d’espace réservé pour les extraits de code générés pour chaque résultat de connecteur. Pour afficher les extraits de code sur la disposition des résultats, la propriété système **ResultSnippet** doit être mappée sur un champ approprié, par exemple Description, dans la disposition des résultats de la recherche. Les extraits de code générés sur chaque résultat surlignent également les correspondances dans l’extrait de code avec le terme de requête entré par l’utilisateur. 
+Les extraits de code dynamiques générés sur la propriété de **contenu** du résultat du connecteur peuvent être affichés sur le résultat de la recherche. **ResultSnippet** est la propriété système qui agit comme une propriété d’espace réservé pour les extraits de code générés pour chaque résultat de connecteur. Pour afficher les extraits de code sur la disposition des résultats, la propriété système **ResultSnippet** doit être mappée sur un champ approprié, par exemple Description, dans la disposition des résultats de la recherche. Les extraits de code générés sur chaque résultat surlignent également les correspondances dans l’extrait de code avec le terme de requête entré par l’utilisateur.
 
 ## <a name="things-to-consider"></a>Informations importantes
 
@@ -198,7 +198,7 @@ Avant de commencer, vous devez effectuer quelques opérations et quelques élém
 - Ne définissez pas de types de données non valides lors de la liaison de valeurs. Pour plus d’informations sur les types de données, voir [Manage the Search Schema](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema).
 - Évitez de détourer le résultat sur la page de résultats en suivant la hauteur maximale du JSON de la disposition du résultat. Si vous dépassez la hauteur maximale de la disposition du résultat, le résultat sera rogné sur la page de résultats.
 - N’utilisez pas `px` de valeurs dans les propriétés de l’élément.
-- N’utilisez pas la démarque avec la propriété **ResultSnippet** dans la mise en page des résultats pour mettre en surbrillance la requête dans le résultat de la recherche. 
+- N’utilisez pas la démarque avec la propriété **ResultSnippet** dans la mise en page des résultats pour mettre en surbrillance la requête dans le résultat de la recherche.
 
 ## <a name="resources"></a>Ressources
 

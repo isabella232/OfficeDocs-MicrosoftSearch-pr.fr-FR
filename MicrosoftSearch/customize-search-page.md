@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ajouter des secteurs verticaux de recherche et personnaliser les résultats de la recherche
-ms.openlocfilehash: 8b212f385d126b4f6c3513b066936db28387377f
-ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
+ms.openlocfilehash: 8999a811b6ed0e04963a87ff0170869b38dba727
+ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48206967"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919500"
 ---
 # <a name="customize-the-search-results-page"></a>Personnaliser la page de résultats de recherche
 
@@ -30,18 +30,16 @@ Vous pouvez créer des types de résultats verticaux et de résultats aux niveau
 
 ## <a name="search-verticals-explained"></a>Explication des secteurs verticaux de recherche
 
-En haut de la page résultats de la recherche Microsoft, il existe une rangée d’onglets. Il s’agit des secteurs verticaux de recherche. Un secteur vertical de recherche affiche uniquement les résultats d’un certain type ou de certains contenus. Il s’agit par exemple des **fichiers** ou des **Actualités**. Par défaut, Microsoft Search affiche les informations verticales, les **personnes**, **les** **fichiers**, les **sites**et les **Actualités**.  
+En haut de la page résultats de la recherche Microsoft, il existe une rangée d’onglets. Il s’agit des secteurs verticaux de recherche. Un secteur vertical de recherche affiche uniquement les résultats d’un certain type ou de certains contenus. Il s’agit par exemple des **fichiers** ou des **Actualités**. Par défaut, Microsoft Search affiche les informations verticales, les **personnes** , **les** **fichiers** , les **sites** et les **Actualités**.  
 
 Vous pouvez ajouter des secteurs verticaux de recherche pertinents pour votre organisation. Celles-ci apparaissent sur la page des résultats de recherche Microsoft dans [SharePoint](https://sharepoint.com/), [Office](https://Office.com)et [Bing](https://bing.com). Par exemple, vous pouvez créer un secteur vertical pour le contenu lié au marketing et un autre pour les ventes, en fonction du type d’informations dont chaque groupe a besoin. Vous pouvez ajouter des valeurs verticales pour afficher les résultats uniquement à partir du contenu indexé via des connecteurs.  
 
 >[!NOTE]
-> Les formes verticales et les types de résultats sont actuellement en aperçu dans le cadre de l’aperçu des connecteurs Microsoft Graph. Pour plus d’informations sur l’aperçu, voir [connecteurs Preview](connectors-preview.md). Pour participer à l’aperçu, vous devez d’abord envoyer le formulaire d’abonnement de l' [aperçu des connecteurs Microsoft Graph](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
+> Les formes verticales et les types de résultats sont actuellement en aperçu dans le cadre de l’aperçu des connecteurs Microsoft Graph et ne peuvent pas être utilisés pour le contenu qui se trouve dans [SharePoint](https://sharepoint.com/). Pour plus d’informations sur l’aperçu, voir [connecteurs Preview](connectors-preview.md). Pour participer à l’aperçu, vous devez d’abord envoyer le formulaire d’abonnement de l' [aperçu des connecteurs Microsoft Graph](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
 
 ## <a name="things-to-consider"></a>Informations importantes
 
 Avant de commencer, assurez-vous que le connecteur a été indexé. Cela peut prendre jusqu’à 48 heures, en fonction de la taille du fichier.
-
-Vous ne pouvez pas créer de vertical pour le contenu qui réside dans [SharePoint](https://sharepoint.com/).
 
 Il existe trois étapes de base pour ajouter un secteur vertical :
 
@@ -59,7 +57,7 @@ Vous pouvez utiliser un ensemble limité de [langage de requête de mot clé (KQ
 
 Pour créer le secteur vertical sur Microsoft Search dans [SharePoint](https://sharepoint.com/) famille, [Office](https://office.com)ou [Bing](https://bing.com), procédez comme suit :
 
-1. Dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com), accédez à la [**barre verticale**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
+1. Dans le  [Centre d’administration Microsoft 365](https://admin.microsoft.com), accédez à la  [**barre verticale**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 1. Sélectionnez **Ajouter** pour commencer.  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>Créer une verticale au niveau du site
@@ -67,7 +65,7 @@ Pour créer le secteur vertical sur Microsoft Search dans [SharePoint](https://s
 1. Sur le site [SharePoint](https://sharepoint.com/) où vous souhaitez utiliser le secteur vertical, accédez à **paramètres**.
 1. Sélectionnez **informations sur le site** , puis **Affichez tous les paramètres du site**.
 1. Recherchez la section **Microsoft Search** , puis sélectionnez **configurer Microsoft Search pour cette collection de sites**.
-1. Dans le volet de navigation, accédez à **expérience personnalisée**, puis sélectionnez l’onglet **verticales** .
+1. Dans le volet de navigation, accédez à  **expérience personnalisée** , puis sélectionnez l’onglet **verticales** .
 1. Pour ajouter un secteur vertical, sélectionnez **Ajouter**.
   Pour modifier un secteur vertical, sélectionnez-le dans la liste.
 
@@ -89,14 +87,14 @@ Une fois que vous avez démarré l’Assistant, vous pouvez définir le nom, la 
 ### <a name="create-a-result-type-at-the-organization-level"></a>Créer un type de résultat au niveau de l’Organisation
 
 1. Dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com), accédez à [**types de résultats**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes).
-1. Pour ajouter un **type de résultat**, sélectionnez **Ajouter**. Pour modifier un type de résultat, sélectionnez le type de résultat dans la liste correspondante.
+1. Pour ajouter un **type de résultat** , sélectionnez  **Ajouter**. Pour modifier un type de résultat, sélectionnez le type de résultat dans la liste correspondante.
 
 ### <a name="create-a-results-type-at-the-site-level"></a>Créer un type de résultats au niveau du site
 
 1. Sur le site [SharePoint](https://sharepoint.com/) où vous souhaitez créer le type de résultat, accédez à **paramètres**.
 1. Sélectionnez **informations sur le site** , puis **Affichez tous les paramètres du site**.
 1. Recherchez la section Microsoft Search, puis sélectionnez **configurer Microsoft Search pour cette collection de sites**.
-1. Dans le volet de navigation, accédez à **expérience personnalisée**et sélectionnez l’onglet **type de résultat** .
+1. Dans le volet de navigation, accédez à  **expérience personnalisée** et sélectionnez l’onglet **type de résultat** .
 1. Pour ajouter un type de résultat, sélectionnez **Ajouter**.  Ou, pour modifier un type de résultat, sélectionnez le type de résultat dans la liste.
 
 ### <a name="view-the-vertical-after-its-enabled"></a>Afficher le secteur vertical une fois qu’il est activé
@@ -113,6 +111,6 @@ Voici une liste des problèmes courants que vous pouvez rencontrer et des action
 | Je ne vois pas ma disposition de résultats, bien que j’en ai créé un. | Ces paramètres sont généralement mis en cache. Patientez quelques minutes, puis réessayez.        |
 | Je ne vois aucune source de contenu sur la page de type de résultat ou vertical. | Assurez-vous que vous avez configuré les connecteurs et les données indexées.   |
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 [ÉTAPE 3 : personnaliser la disposition des résultats](customize-results-layout.md)
