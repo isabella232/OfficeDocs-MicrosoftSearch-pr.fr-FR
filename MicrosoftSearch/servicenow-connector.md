@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur ServiceNow pour Microsoft Search
-ms.openlocfilehash: f7ae05ad00a96a6f05780acfeb8c75911505ee6f
-ms.sourcegitcommit: 2ce86461e845c3ea84feb215df17685d2ef705c5
+ms.openlocfilehash: b60583e61687b13c7fd631cd1c4a9f6d663724e8
+ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48340855"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48927197"
 ---
 # <a name="servicenow-connector"></a>Connecteur ServiceNow
 
@@ -28,11 +28,11 @@ Cet article est destiné aux administrateurs 365 de Microsoft ou toute personne 
 Découvrez comment accéder aux connecteurs Microsoft générés à partir de [la configuration de votre connecteur intégré Microsoft pour Microsoft Search](https://docs.microsoft.com/microsoftsearch/configure-connector). La configuration spécifique d’un connecteur ServiceNow est expliquée dans l’article ci-dessous.
 
 ## <a name="connection-settings"></a>Paramètres de connexion
-Pour vous connecter à vos données ServiceNow, vous avez besoin de l’URL de l' **instance ServiceNow**de votre organisation, des informations d’identification de ce compte, ainsi que de l’ID client et de la clé secrète client pour l’authentification OAuth.  
+Pour vous connecter à vos données ServiceNow, vous avez besoin de l’URL de l' **instance ServiceNow** de votre organisation, des informations d’identification de ce compte, ainsi que de l’ID client et de la clé secrète client pour l’authentification OAuth.  
 
-L’URL de l' **instance ServiceNow** de votre organisation ressemble généralement ** &lt; à https://>. service-Now.com**. En plus de cette URL, vous aurez besoin d’un compte pour la configuration de la connexion à ServiceNow, ainsi que pour permettre à Microsoft Search de mettre à jour régulièrement les articles à partir de ServiceNow en fonction de la planification de l’actualisation. Le compte doit disposer d’un rôle de <em>connaissances</em> . [Découvrez comment attribuer des rôles pour les comptes ServiceNow](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html).
+L’URL de l' **instance ServiceNow** de votre organisation ressemble généralement **&lt; à https://>. service-Now.com**. En plus de cette URL, vous aurez besoin d’un compte pour la configuration de la connexion à ServiceNow, ainsi que pour permettre à Microsoft Search de mettre à jour régulièrement les articles à partir de ServiceNow en fonction de la planification de l’actualisation. Le compte doit disposer d’un rôle de <em>connaissances</em> . [Découvrez comment attribuer des rôles pour les comptes ServiceNow](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html).
 
-Pour authentifier et synchroniser le contenu à partir de ServiceNow, choisissez **l’une des trois** méthodes prises en charge : 
+Pour authentifier et synchroniser le contenu à partir de ServiceNow, choisissez **l’une des trois** méthodes prises en charge :
 1. Authentification de base 
 2. ServiceNow OAuth (recommandé)
 3. Azure AD OpenID Connect
@@ -50,7 +50,7 @@ Le tableau suivant fournit des instructions sur la façon de remplir le formulai
 Nom | Cette valeur unique identifie l’application pour laquelle vous avez besoin d’un accès OAuth. | Recherche Microsoft
 ID du client | IDENTIFICATEUR unique en lecture seule et généré automatiquement pour l’application. L’instance utilise l’ID client lorsqu’elle demande un jeton d’accès. | N/A
 Clé secrète client | Avec cette chaîne secrète partagée, l’instance de ServiceNow et Microsoft Search autorisent les communications les uns avec les autres. | Suivez les meilleures pratiques en matière de sécurité en le traitant comme un mot de passe.
-URL de redirection | URL de rappel obligatoire vers laquelle le serveur d’autorisation redirige. | https://gcs.office.com/v1.0/admin/oauth/callback
+URL de redirection | URL de rappel obligatoire vers laquelle le serveur d’autorisation redirige. | https://gcs.office.com/v1.0/admin/oauth/callback
 URL du logo | URL qui contient l’image du logo de l’application. | N/A
 Actif | Activez la case à cocher pour activer le registre d’application. | Défini sur actif
 Durée de vie des jetons d’actualisation | Nombre de secondes pendant lesquelles un jeton d’actualisation est valide. Par défaut, les jetons d’actualisation expirent dans 100 jours (8640000 secondes). | 31 536 000 (1 an)
@@ -122,7 +122,7 @@ Fournisseur OIDC |  Azure AD
 URL de métadonnées OIDC | Il doit être au format https \: //login.microsoftonline.com/« tenandId »/.well-known/OpenID-configuration <br/>Remplacez « tenantID » par l’ID d’annuaire (locataire) de l’étape 1 (sans les guillemets).
 Durée de vie du cache de configuration OIDC |  120
 Application | Global
-Revendication utilisateur | semi
+Revendication utilisateur | sub
 Champ utilisateur | ID utilisateur
 Activer la vérification de revendication JTI | Désactivé
 
@@ -150,11 +150,11 @@ Utilisez ID de l’application comme ID client (de l’étape 1) et clé secrèt
 ## <a name="filter-data"></a>Filtrer les données 
 Avec une chaîne de requête ServiceNow, vous pouvez spécifier des conditions pour la synchronisation des articles. Il s’agit d’une clause **Where** d’une instruction **SQL SELECT** . Par exemple, vous pouvez choisir d’indexer uniquement les articles publiés et actifs. Pour en savoir plus sur la création de votre propre chaîne de requête, voir [générer une chaîne de requête codée à l’aide d’un filtre](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html).
 
-## <a name="manage-the-search-schema"></a>Gérer le schéma de recherche
-Une fois la connexion établie, configurez le mappage du schéma de recherche. Vous pouvez choisir les propriétés à utiliser pour les **requêtes**, les **recherches**et les **extractions**. Pour en savoir plus sur la gestion de votre schéma de recherche, consultez [la rubrique Manage the Search Schema](https://docs.microsoft.com/microsoftsearch/configure-connector#manage-the-search-schema).
-
 ## <a name="manage-search-permissions"></a>Gérer les autorisations de recherche
 Le connecteur ServiceNow prend uniquement en charge les autorisations de recherche visibles par **tous les utilisateurs**. Les données indexées apparaissent dans les résultats de la recherche et sont visibles par tous les utilisateurs de l’organisation.
+
+## <a name="manage-the-search-schema"></a>Gérer le schéma de recherche
+Une fois la connexion établie, configurez le mappage du schéma de recherche. Vous pouvez choisir les propriétés à utiliser pour les **requêtes** , les **recherches** et les **extractions**. Pour en savoir plus sur la gestion de votre schéma de recherche, consultez [la rubrique Manage the Search Schema](https://docs.microsoft.com/microsoftsearch/configure-connector#manage-the-search-schema).
 
 ## <a name="set-the-refresh-schedule"></a>Définir la planification d’actualisation
 Le connecteur ServiceNow prend en charge les planifications d’actualisation pour les analyses complètes et incrémentielles. Nous vous recommandons de définir les deux.
@@ -162,6 +162,7 @@ Le connecteur ServiceNow prend en charge les planifications d’actualisation po
 Une planification d’analyse complète recherche les articles supprimés qui ont été précédemment synchronisés avec l’index Microsoft Search et les articles qui se sont déplacés du filtre de synchronisation. Lorsque vous vous connectez pour la première fois à ServiceNow, une analyse complète est exécutée pour synchroniser tous les Articles de la base de connaissances. Pour synchroniser de nouveaux éléments et effectuer des mises à jour, vous devez planifier des analyses incrémentielles.
 
 La valeur par défaut recommandée est d’un jour pour une analyse complète et de quatre heures pour une analyse incrémentielle.
+
 ## <a name="review-and-publish"></a>Révision et publication
 Après avoir configuré votre connecteur, vous pouvez passer en revue et publier la connexion.
 

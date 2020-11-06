@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer Azure DevOps Connector pour Microsoft Search
-ms.openlocfilehash: 1030dd2b508e5364f53f92e7c8ce8c12c040ce70
-ms.sourcegitcommit: 85d40512e8616c851da1a38c137ca0e4e8625813
+ms.openlocfilehash: a0028c3b336c2b5e3d01bb14006ee0debb4524f2
+ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47359720"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48927188"
 ---
 # <a name="azure-devops-connector"></a>Connecteur DevOps Azure
 
@@ -69,15 +69,16 @@ Ensuite, sélectionnez les champs pour lesquels vous souhaitez que la connexion 
 
 ![Choisir les propriétés](media/ADO_choose_properties.png)
 
-## <a name="manage-the-search-schema"></a>Gérer le schéma de recherche
-
-Configurez le mappage du schéma de recherche. Vous pouvez choisir les propriétés à utiliser pour les **requêtes**, les **recherches** et les **extractions**.
-
 ## <a name="manage-search-permissions"></a>Gérer les autorisations de recherche
 
 Actuellement, le connecteur Azure DevOps prend uniquement en charge les autorisations **de recherche visibles par tous les utilisateurs**. Les données indexées apparaîtront dans les résultats de recherche pour tous les utilisateurs.
 
-## <a name="set-the-refresh-schedule"></a>Définir la planification d’actualisation
+## <a name="manage-search-schema"></a>Gérer le schéma de recherche
+
+Configurez le mappage du schéma de recherche. Vous pouvez choisir les propriétés à utiliser pour les **requêtes** , les **recherches** et les **extractions**.
+
+
+## <a name="set-refresh-schedule"></a>Définir la planification d’actualisation
 
 Le connecteur Azure DevOps prend en charge les planifications d’actualisation pour les analyses complètes et incrémentielles. Une analyse complète recherche les éléments de travail supprimés qui ont été précédemment synchronisés avec l’index de recherche Microsoft. Une analyse complète est exécutée pour synchroniser tous les éléments de travail. Pour synchroniser les nouveaux éléments de travail et les mises à jour d’éléments de travail existants, vous devez planifier des analyses incrémentielles.
 

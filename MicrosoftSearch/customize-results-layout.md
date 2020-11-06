@@ -1,5 +1,5 @@
 ---
-title: Personnaliser la disposition des résultats de la recherche
+title: Gérer les dispositions des résultats de la recherche
 ms.author: jypal
 author: jypal6
 manager: jeffkizn
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: À l’aide de cartes adaptatives, créer une disposition pour afficher vos résultats de recherche personnalisés
-ms.openlocfilehash: 5bd42eded291781f5122cfede3759327b5222108
-ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
+ms.openlocfilehash: 425e5404c14d500f6ecd84ad449dafb05bbfd31b
+ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919509"
+ms.locfileid: "48927179"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>Créer une disposition pour personnaliser les résultats de la recherche
