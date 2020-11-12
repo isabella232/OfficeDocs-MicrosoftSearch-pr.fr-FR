@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Passer en revue et agir sur les commentaires des utilisateurs dans Microsoft Search
-ms.openlocfilehash: fd47403fd86be2e2fb1ba7baee7473958a8e5572
-ms.sourcegitcommit: 4b2cc0a4cd3d7cdcd8eb23a8baa9703173889a73
+ms.openlocfilehash: 332410cd29a7256cccd651c3a668fdf3eb473ba4
+ms.sourcegitcommit: 102371815e739da33d1711197cdc743ae8124baa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48986956"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48996791"
 ---
 # <a name="managing-user-feedback"></a>Gestion des commentaires des utilisateurs
 
@@ -32,7 +32,7 @@ Nous proposons désormais des outils qui vous permettront de vérifier et de gé
 
 ![Formulaire de commentaires global](media/feedback/feedback-global-dialog.png)
 
-Les utilisateurs ont également la possibilité d’envoyer leur requête et d’autres informations de diagnostic, ainsi que la catégorie et les commentaires, à Microsoft. Les informations de diagnostic incluent des données personnelles telles qu’un identificateur d’utilisateur. [En savoir plus](https://privacy.microsoft.com/en-US/privacystatement) sur la confidentialité et sur la protection de ces données. Les données de diagnostic contiennent les informations les plus importantes dont Microsoft a besoin pour utiliser l’élément de commentaires pour l’amélioration du produit.
+Les utilisateurs ont également la possibilité d’envoyer leur requête et d’autres informations de diagnostic, ainsi que la catégorie et les commentaires, à Microsoft. [En savoir plus](https://privacy.microsoft.com/en-US/privacystatement) sur la confidentialité et sur la protection de ces données. Les données de diagnostic contiennent les informations les plus importantes dont Microsoft a besoin pour utiliser l’élément de commentaires pour l’amélioration du produit.
 
 La plupart des commentaires de commentaires apparaissent dans la section [Commentaires](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) du centre d’administration de Microsoft Search. Les commentaires envoyés avec la catégorie **je souhaite suggérer une catégorie interne** apparaissent en tant que signet suggéré dans la section [signets](https://admin-ignite.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) et peuvent être vus en filtrant sur l’état **proposé** .
 
