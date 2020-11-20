@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur de sites Web d’entreprise pour Microsoft Search
-ms.openlocfilehash: b4d9f837892bcfd795421530e0571fa0509a2761
-ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
+ms.openlocfilehash: 4b9d8a8472c81c2bc647b3cef3cdb437073d36cf
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48206940"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367468"
 ---
 <!-- markdownlint-disable no-inline-html -->
 # <a name="enterprise-websites-connector"></a>Connecteur de sites Web d’entreprise
@@ -28,7 +28,11 @@ Cet article est destiné aux administrateurs [365 de Microsoft](https://www.micr
 
 ## <a name="connect-to-a-data-source"></a>Se connecter à une source de données
 
-Pour vous connecter à votre source de données, vous avez besoin de votre URL racine et d’une forme d’authentification : aucune, authentification de base ou OAuth 2,0 avec [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/).
+Pour vous connecter à votre source de données, vous devez renseigner l’URL racine du site Web et le type d’authentification que vous souhaitez utiliser : aucun, authentification de base ou OAuth 2,0 avec [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/).
+
+### <a name="url"></a>URL
+
+Utilisez le champ URL pour spécifier la racine du site Web que vous souhaitez analyser. Le connecteur de sites Web d’entreprise utilisera cette URL comme point de départ et suivra tous les liens de cette URL pour son analyse.
 
 ### <a name="authentication"></a>Authentification
 
@@ -45,21 +49,25 @@ Pour obtenir les valeurs de la ressource, client_id et client_secret, accédez �
 
 Pour plus d’informations, consultez [la rubrique QuickStart : inscrire une application avec la plateforme d’identité Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
-### <a name="root-url"></a>URL racine
+## <a name="add-urls-to-exclude"></a>Ajouter des URL à exclure
 
-L’URL racine est celle qui initie l’analyse et qui est utilisée pour l’authentification. Vous pouvez obtenir l’URL à partir de la page d’accueil du site Web que vous souhaitez analyser.
-
-## <a name="select-the-source-properties"></a>Sélectionnez les propriétés source.
-
-Les propriétés sources sont définies en fonction du format de données du site Web d’entreprise. Toutefois, vous pouvez créer une **liste d’exclusion** pour exclure certaines URL de l’analyse si ce contenu est sensible ou inutile à l’analyse. Pour créer une liste d’exclusion, parcourez l’URL racine. Vous avez la possibilité d’ajouter les URL exclues à la liste lors du processus de configuration.
+Vous pouvez éventuellement créer une **liste d’exclusion** pour exclure certaines URL de l’analyse si ce contenu est sensible ou inutile à l’analyse. Pour créer une liste d’exclusion, parcourez l’URL racine. Vous avez la possibilité d’ajouter les URL exclues à la liste lors du processus de configuration.
 
 ## <a name="manage-search-permissions"></a>Gérer les autorisations de recherche
 
-Il n’existe pas de prise en charge des listes de contrôle d’accès (ACL). Par conséquent, nous vous recommandons de connecter uniquement les sites Web visibles par tous les utilisateurs au sein de votre organisation.
+Le connecteur de sites Web d’entreprise ne prend en charge que les autorisations de recherche visibles par **tous**. Les données indexées apparaissent dans les résultats de la recherche et sont visibles par tous les utilisateurs de l’organisation.
+
+## <a name="assign-property-labels"></a>Affecter des étiquettes de propriété
+
+Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Si cette étape n’est pas obligatoire, le fait d’avoir des étiquettes de propriété améliore la pertinence de la recherche et garantit des résultats de recherche plus précis pour les utilisateurs finaux.
+
+## <a name="manage-schema"></a>Gérer le schéma
+
+Dans l' **écran gérer le schéma** , vous avez la possibilité de modifier les attributs de schéma (**Queryable**, pouvant faire l’objet d’une **recherche**, l' **extraction** et l' **refinable**) associés aux propriétés, d’ajouter des alias facultatifs et de choisir la propriété **content** .
 
 ## <a name="set-the-refresh-schedule"></a>Définir la planification d’actualisation
 
-Le connecteur de sites Web d’entreprise ne prend en charge qu’une analyse complète. Cela signifie que le connecteur lit tout le contenu du site Web pendant chaque analyse. Pour vous assurer que le connecteur dispose de suffisamment de temps pour lire le contenu, nous vous recommandons de définir un intervalle de planification d’actualisation important. Nous vous recommandons d’utiliser une actualisation planifiée entre une et deux semaines.
+Le connecteur de sites Web d’entreprise ne prend en charge qu’une actualisation complète. Cela signifie que le connecteur analysera de tout le contenu du site Web pendant chaque actualisation. Pour vous assurer que le connecteur dispose de suffisamment de temps pour analyser le contenu, nous vous recommandons de définir un intervalle de planification d’actualisation important. Nous vous recommandons d’utiliser une actualisation planifiée entre une et deux semaines.
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 

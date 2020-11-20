@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Répertorie tous les connecteurs Microsoft Graph pour Microsoft Search
-ms.openlocfilehash: 82718cdadc57bf9133b61183cdbd912e269fdc70
-ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
+ms.openlocfilehash: 6ab0518dffacb25190a0eafc20e50408fd51004b
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45388011"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367624"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Galerie de connecteurs Microsoft Graph
 
@@ -159,6 +159,27 @@ ms.locfileid: "45388011"
     </li>
 </ul>
 <ul class="panelContent cardsZ">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="overflow: hidden; height: 235px;">
+                    <div class="cardText">
+                        <h3>Salesforce</h3>
+                        <p>par <a href="https://www.microsoft.com">Microsoft</a></p>
+                        <p>Avec ce connecteur Microsoft Graph, les utilisateurs de votre organisation peuvent rechercher des objets contacts, opportunités, prospects et comptes à partir de votre instance Salesforce.</p>
+                        <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
+                            <div style="font-weight:500;width:150px;display:inline">
+                                <a href="salesforce-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
+                                    <font color="0065BA">Plus de détails</font>
+                                </a>
+                             <img src="media/Salesforce_Small.png" alt="Enterprise Website" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path"  />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -318,7 +339,7 @@ ms.locfileid: "45388011"
                     <div class="cardText">
                         <h3>Amazon S3</h3>
                         <p>par <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Le connecteur Amazon S3 analyse le contenu de n’importe quel service de stockage simple Amazon.Chaque fichier est soumis avec ses métadonnées (taille, emplacement, dernier accès, etc.). Les mises à jour sont découvertes automatiquement.</p>
+                        <p>Le connecteur Amazon S3 analyse le contenu de n’importe quel service de stockage simple Amazon. Chaque fichier est soumis avec ses métadonnées (taille, emplacement, dernier accès, etc.). Les mises à jour sont découvertes automatiquement.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Amazon+S3+Connector"><font color="0065BA">Plus de détails</font></a>
                         </p>
@@ -334,7 +355,7 @@ ms.locfileid: "45388011"
                     <div class="cardText">
                         <h3>Amazon S3</h3>
                         <p>par <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>Le connecteur Amazon S3 fonctionne avec tout le contenu stocké dans S3.Votre organisation peut utiliser le connecteur pour se connecter en toute sécurité à S3 et indexer des compartiments S3. De puissantes fonctionnalités de filtrage permettent à votre organisation de contrôler le contenu trouvé dans S3 qui doit être indexé.</p>
+                        <p>Le connecteur Amazon S3 fonctionne avec tout le contenu stocké dans S3. Votre organisation peut utiliser le connecteur pour se connecter en toute sécurité à S3 et indexer des compartiments S3. De puissantes fonctionnalités de filtrage permettent à votre organisation de contrôler le contenu trouvé dans S3 qui doit être indexé.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/amazon-s3-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">Plus de détails</font></a>
                         </p>
@@ -608,7 +629,7 @@ ms.locfileid: "45388011"
                     <div class="cardText">
                         <h3>Documentum/Documentum DQL</h3>
                         <p>par <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Le connecteur Documentum analyse le contenu à partir de n’importe quel référentiel de contenu Documentum. DQL est un langage de requête qui vous permet d’effectuer des requêtes très complexes impliquant des fonctionnalités de recherche spécialisées pour la gestion de documents et de contenu.Le connecteur de Documentum DQL va analyser le contenu de Documentum.</p>
+                        <p>Le connecteur Documentum analyse le contenu à partir de n’importe quel référentiel de contenu Documentum. DQL est un langage de requête qui vous permet d’effectuer des requêtes très complexes impliquant des fonctionnalités de recherche spécialisées pour la gestion de documents et de contenu. Le connecteur de Documentum DQL va analyser le contenu de Documentum.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Documentum+Connector"><font color="0065BA">Plus de détails</font></a>
                         </p>
@@ -659,7 +680,7 @@ ms.locfileid: "45388011"
                     <div class="cardText">
                         <h3>EMC eRoom</h3>
                         <p>par <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>Le connecteur eRoom établit une connexion sécurisée avec l’application eRoom et mappe le contenu, y compris les métadonnées et les pièces jointes, depuis le schéma eRoom vers le schéma de moteur de recherche. Il extrait ensuite le contenu et l’envoie au moteur de recherche dans un processus appelé analyse.</p>
+                        <p>Le connecteur eRoom établit une connexion sécurisée avec l’application eRoom et mappe le contenu, y compris les métadonnées et les pièces jointes, depuis le schéma eRoom vers le schéma de moteur de recherche.  Il extrait ensuite le contenu et l’envoie au moteur de recherche dans un processus appelé analyse.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/eroom-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">Plus de détails</font></a>
                         </p>
@@ -793,7 +814,7 @@ ms.locfileid: "45388011"
                     <div class="cardText">
                         <h3>SERVEURFTP</h3>
                         <p>par <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Le connecteur FTP (File Transfer Protocol) aspire fournit un accès aux fichiers et aux dossiers sur un serveur FTP.Chaque fichier est soumis avec ses métadonnées (taille, emplacement, dernier accès, etc.). Les mises à jour sont découvertes automatiquement.</p>
+                        <p>Le connecteur FTP (File Transfer Protocol) aspire fournit un accès aux fichiers et aux dossiers sur un serveur FTP. Chaque fichier est soumis avec ses métadonnées (taille, emplacement, dernier accès, etc.). Les mises à jour sont découvertes automatiquement.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/FTP+Connector"><font color="0065BA">Plus de détails</font></a>
                         </p>
@@ -1032,7 +1053,7 @@ ms.locfileid: "45388011"
                     <div class="cardText">
                         <h3>IBM Lotus Notes</h3>
                         <p>par <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>Avec le connecteur de messagerie IBM Notes d’BA Insight, les utilisateurs ont la possibilité de rechercher des messages électroniques à partir de SharePoint ou d’un autre portail.La sécurité définie dans les notes d’IBM est automatiquement reflétée dans l’expérience de recherche, afin que les utilisateurs puissent voir les résultats de la recherche à partir de leur propre boîte aux lettres, des boîtes aux lettres publiques et d’autres boîtes aux lettres pour lesquelles ils bénéficient d’un accès.</p>
+                        <p>Avec le connecteur de messagerie IBM Notes d’BA Insight, les utilisateurs ont la possibilité de rechercher des messages électroniques à partir de SharePoint ou d’un autre portail.  La sécurité définie dans les notes d’IBM est automatiquement reflétée dans l’expérience de recherche, afin que les utilisateurs puissent voir les résultats de la recherche à partir de leur propre boîte aux lettres, des boîtes aux lettres publiques et d’autres boîtes aux lettres pour lesquelles ils bénéficient d’un accès.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/lotus-notes-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">Plus de détails</font></a>
                         </p>
@@ -1935,7 +1956,7 @@ ms.locfileid: "45388011"
                     <div class="cardText">
                         <h3>SharePoint 2013</h3>
                         <p>par <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Le connecteur SharePoint 2013 analyse le contenu de n’importe quelle URL de collection de sites SharePoint 2013.Le connecteur prend en charge les listes, les pages et les sites, et les mises à jour sont identifiées automatiquement ou via le journal des modifications de SharePoint.</p>
+                        <p>Le connecteur SharePoint 2013 analyse le contenu de n’importe quelle URL de collection de sites SharePoint 2013. Le connecteur prend en charge les listes, les pages et les sites, et les mises à jour sont identifiées automatiquement ou via le journal des modifications de SharePoint.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+2013+Connector"><font color="0065BA">Plus de détails</font></a>
                         </p>
@@ -1951,7 +1972,7 @@ ms.locfileid: "45388011"
                     <div class="cardText">
                         <h3>SharePoint 2016</h3>
                         <p>par <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Le connecteur SharePoint 2016 analyse le contenu de n’importe quelle URL de collection de sites SharePoint 2016.Le connecteur prend en charge les listes, les pages et les sites, et les mises à jour sont identifiées automatiquement ou via le journal des modifications de SharePoint.</p>
+                        <p>Le connecteur SharePoint 2016 analyse le contenu de n’importe quelle URL de collection de sites SharePoint 2016. Le connecteur prend en charge les listes, les pages et les sites, et les mises à jour sont identifiées automatiquement ou via le journal des modifications de SharePoint.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+2016+Connector"><font color="0065BA">Plus de détails</font></a>
                         </p>
@@ -1967,7 +1988,7 @@ ms.locfileid: "45388011"
                     <div class="cardText">
                         <h3>SharePoint Online</h3>
                         <p>par <a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Le connecteur SharePoint Online analyse le contenu de n’importe quelle URL de collection de sites SharePoint Online.Le connecteur récupère des sites, des listes, des dossiers, des éléments de liste et des pièces jointes, ainsi que d’autres pages (au format. aspx). Ce connecteur prend en charge SharePoint en cours d’utilisation dans l’offre Microsoft O365. La prise en charge de l’analyse des offres sur site de SharePoint est prise en charge par le connecteur SharePoint 2010/2007 et le connecteur SharePoint 2013.</p>
+                        <p>Le connecteur SharePoint Online analyse le contenu de n’importe quelle URL de collection de sites SharePoint Online. Le connecteur récupère des sites, des listes, des dossiers, des éléments de liste et des pièces jointes, ainsi que d’autres pages (au format. aspx). Ce connecteur prend en charge SharePoint en cours d’utilisation dans l’offre Microsoft O365. La prise en charge de l’analyse des offres sur site de SharePoint est prise en charge par le connecteur SharePoint 2010/2007 et le connecteur SharePoint 2013.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+Online+Connector"><font color="0065BA">Plus de détails</font></a>
                         </p>
@@ -2016,7 +2037,7 @@ ms.locfileid: "45388011"
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
-                       <h3>Marge</h3>
+                       <h3>Slack</h3>
                         <p>par <a href="https://www.raytion.com">Raytion</a></p>
                         <p>Le connecteur pour une marge efficace et synchronise de manière fiable le contenu de la marge avec Microsoft Search. Il indexe de façon robuste les messages, les threads et les fichiers partagés de tous les canaux publics en temps quasi réel. Le connecteur garantit que tous les documents disposent d’un ensemble complet de métadonnées, ce qui permet le développement de la meilleure expérience de recherche. Même dans les environnements dynamiques, le connecteur de marge effectue le suivi de toutes les modifications et garantit un index de recherche mis à jour.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
@@ -2255,9 +2276,9 @@ ms.locfileid: "45388011"
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
-                       <h3>ECM windream</h3>
+                       <h3>ECM-System windream</h3>
                         <p>par <a href="https://www.raytion.com">Raytion</a></p>
-                        <p>Connecteur pour ECM-windream. Indexe les fichiers et les dossiers de l’ECM windream en temps réel. sixième génération connecteur de recherche Raytion.</p>
+                        <p>Connecteur pour ECM-windream. Indexe les fichiers et les dossiers de windream ECM-System en temps réel. sixième génération connecteur de recherche Raytion.</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.raytion.com/connectors/raytion-windream-ecm-system-connector"><font color="0065BA">Plus de détails</font></a>
                         </p>

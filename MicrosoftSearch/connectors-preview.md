@@ -12,47 +12,28 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez l’aperçu des connecteurs Microsoft Graph pour Microsoft Search.
-ms.openlocfilehash: 81d169074a316b6ab07f47156e0f057e50c12e3e
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 592e108fe0333e4faf8ff2e4618f9d5216847b8a
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422891"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367666"
 ---
-# <a name="microsoft-graph-connectors-preview"></a>Aperçu des connecteurs Microsoft Graph
+# <a name="microsoft-graph-connectors-preview-release-and-features"></a>Versions et fonctionnalités de l’aperçu des connecteurs Microsoft Graph
 
-L’état actuel des connecteurs Microsoft Graph et des API Microsoft Search (requête et index) est en aperçu. Pour accéder à la fonctionnalité connecteurs, vous devez activer l’option publication ciblée dans votre client. Il s’agit d’une préversion préliminaire et il n’existe aucune garantie de niveau de service. Nous encourageons les clients à essayer les fonctionnalités des connecteurs et à fournir des commentaires. Nous vous déconseillons d’utiliser des connecteurs à des fins de production pendant la période d’évaluation.
+Les connecteurs Microsoft Graph et les API Microsoft Search sont désormais généralement disponibles. Le déploiement initial sera destiné aux clients configurés pour la version ciblée. Une fois le déploiement terminé pour tous les clients, l’utilisation des quotas d’index à partir du contenu de connecteurs sera sujette à facturation. Pour plus d’informations, reportez-vous à la rubrique [Licensing Requirements and Pricing](licensing.md) .
 
 ## <a name="set-up-targeted-release"></a>Configurer la version ciblée
 
-Pour tester les connecteurs, vous devez disposer de l’option de **publication ciblée** définie pour tous les utilisateurs de votre organisation. Pour en savoir plus sur l’option de publication ciblée et sur la façon de la définir, consultez [la rubrique Configurer les options de publication standard ou ciblée dans Office 365](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide).
+Si vous souhaitez utiliser des connecteurs Graph dans votre client lors du déploiement, vous devez vous inscrire à la version ciblée. Pour en savoir plus sur l’option de publication ciblée et sur la façon de la définir, consultez [la rubrique Configurer les options de publication standard ou ciblée dans Office 365](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide).
 
-## <a name="choose-a-preview-environment"></a>Choisir un environnement d’aperçu
+## <a name="preview-features"></a>Fonctionnalités en préversion
 
-Pour tester les connecteurs, les API d’indexation et les API de recherche, nous vous recommandons ces deux méthodes :
+Bien que les connecteurs Microsoft Graph et les API Microsoft Search soient désormais généralement disponibles, il existe plusieurs fonctionnalités qui restent en aperçu.
 
-1. **Testez le client**.  Nous vous encourageons à utiliser un locataire de test pour essayer l’aperçu des connecteurs Microsoft Graph.
+L’ensemble de connecteurs et de fonctionnalités dans l’aperçu inclut :
 
-2. **Collection de sites de test**. Si vous n’avez pas de client de test, vous pouvez créer une collection de sites de test pour tester la fonctionnalité de connecteurs. Pour afficher les résultats des connecteurs sans impact sur les pages de recherche n’importe où dans votre organisation, personnalisez l’expérience de recherche de cette collection de sites uniquement.
-
-## <a name="preview-limitations"></a>Limitations de l’aperçu
-
-La version d’évaluation présente les limitations suivantes :
-
-* Le débit de l’ingestion est limité à quatre éléments par seconde.
-
-* Il n’existe pas de prise en charge des mises à jour de schéma. Une fois que vous avez créé une configuration de connexion, il n’existe aucun moyen de mettre à jour le schéma. Vous pouvez supprimer et recréer la connexion uniquement.
-
-* Le contenu indexé apparaît uniquement dans la page des résultats de recherche sous un secteur vertical personnalisé. Cette restriction s’applique au contenu avec des types personnalisés.
-
-* Toute connexion que vous configurez pendant la période d’aperçu doit être supprimée et recréée. Ces connexions ne fonctionneront plus si elles sont incompatibles avec les modifications apportées à l’amélioration du produit.
-
-* Il existe une limite de connexions. Chaque client peut créer jusqu’à 10 connexions.
-
-* Taille du référentiel source. Nous vous recommandons de prévisualiser les connecteurs avec un référentiel source d’environ 200 000 éléments, car il s’agit de notre limite d’étendue de recherche testée. Nous travaillons sur l’amélioration des performances de la recherche et nous prévoyons de prendre en charge des référentiels plus volumineux dans un futur proche.
-
-* La modification de la prise en charge de la connexion n’est pas disponible. Une fois que la connexion a été créée, vous ne pouvez pas la modifier ni la modifier. Si vous devez modifier des détails, vous devez supprimer et recréer la connexion.
-
-* Le contenu du connecteur ne peut être recherché que sur des secteurs verticaux personnalisés.
-
-* Le contenu du connecteur à partir d’une seule connexion peut être affiché dans chaque vertical personnalisé et nécessite une création de type de résultat.
+* [Connecteur DevOps Azure](azure-devops-connector.md)
+* [Connecteur Salesforce](salesforce-connector.md)
+* [Connecteur ServiceNow](servicenow.md) avec des autorisations de recherche qui utilisent des listes ACL sources
+* [Gérer le cluster de résultats](result-cluster.md)

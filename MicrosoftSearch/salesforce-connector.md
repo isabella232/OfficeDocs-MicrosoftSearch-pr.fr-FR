@@ -2,7 +2,7 @@
 title: Connecteur Salesforce pour Microsoft Search
 ms.author: rusamai
 author: rsamai
-manager: jameslao
+manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,23 +11,22 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Configurer le connecteur Salesforce pour Microsoft Search
-ms.openlocfilehash: 8de7784cae7d430bc385889bd836360c69492591
-ms.sourcegitcommit: 77ec27736f3c8434b2ac47e10897ac2606ee8a03
+ms.openlocfilehash: 149d1d9a297e09e9b895aeb0947c7ff4a3cbdf84
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48992867"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367648"
 ---
-# <a name="salesforce-connector"></a>Connecteur Salesforce
+# <a name="salesforce-connector-preview"></a>Connecteur Salesforce (aperçu)
 
-Avec le connecteur de graphique Salesforce, votre organisation peut indexer des contacts, des opportunités, des prospects et des objets de comptes dans votre instance Salesforce. Après avoir configuré le connecteur et le contenu d’index à partir de Salesforce, les utilisateurs finals peuvent rechercher ces éléments à partir d’un client Microsoft Search.
+Avec le connecteur de graphique Salesforce, votre organisation peut indexer des contacts, des opportunités, des prospects et des objets de comptes dans votre instance Salesforce. Une fois que vous avez configuré le connecteur et le contenu d’index à partir de Salesforce, les utilisateurs finaux peuvent rechercher ces éléments à partir de n’importe quel client Microsoft Search.
 
 Cet article est destiné aux administrateurs [365 de Microsoft](https://www.microsoft.com/microsoft-365) ou toute personne qui configure, exécute et surveille un connecteur Salesforce. Elle explique comment configurer les fonctionnalités de connecteur et de connecteur, ainsi que les restrictions et les techniques de résolution des problèmes.
 
 >[!IMPORTANT]
->Le connecteur de graphique Salesforce prend actuellement en charge les versions estivales : 20, printemps, 20, hiver 20 et été 19.
+>Le connecteur de graphique Salesforce prend actuellement en charge l’été le 19 ou une version ultérieure.
 
 ## <a name="connection-settings"></a>Paramètres de connexion
 
@@ -60,7 +59,7 @@ Pour vous connecter à votre instance Salesforce, vous avez besoin de l’URL de
 - Copiez la clé de consommateur et la clé secrète consommateur. Ceux-ci seront utilisés comme ID client et clé secrète client lorsque vous configurez les paramètres de connexion de votre connecteur Graph dans le portail d’administration Microsoft 365.
 
   ![Résultats retournés par la section API dans l’instance Salesforce une fois que l’administrateur a soumis toutes les configurations requises. La clé de client est située en haut de la colonne de gauche et la clé secrète du consommateur est située en haut de la colonne de droite.](media/salesforce-connector/clientsecret.png)
-- Avant de fermer votre instance de Salesforce, effectuez les étapes suivantes pour vous assurer que les jetons d’actualisation n’expirent pas : 
+- Avant de fermer votre instance de Salesforce, effectuez les étapes suivantes pour vous assurer que les jetons d’actualisation n’expirent pas :
     - Accédez à applications-> App Manager
     - Recherchez l’application que vous venez de créer et sélectionnez la liste déroulante sur la droite. Sélectionnez **gérer**
     - Sélectionnez **modifier les stratégies**
@@ -89,21 +88,21 @@ Configurez les paramètres de connexion de votre connecteur Graph comme suit :
   ![Capture d’écran de la connexion réussie. La bannière verte indiquant « connexion réussie » se trouve sous le champ de l’URL de votre instance de salesforce.](media/salesforce-connector/sf5.png)
 
 ## <a name="manage-search-permissions"></a>Gérer les autorisations de recherche
-Vous devrez choisir les utilisateurs qui verront les résultats de la recherche à partir de cette source de données. Si vous autorisez uniquement certains utilisateurs Azure Active Directory (AAD) ou non AAD à afficher les résultats de la recherche, vous devrez mapper les identités.
+Vous devrez choisir les utilisateurs qui verront les résultats de la recherche à partir de cette source de données. Si vous autorisez uniquement certains utilisateurs Azure Active Directory (Azure AD) ou non Azure AD à voir les résultats de la recherche, vous devrez mapper les identités.
 
 ### <a name="select-permissions"></a>Sélectionner des autorisations
-Vous pouvez choisir d’ingérer les listes de contrôle d’accès (ACL) à partir de votre instance Salesforce ou vous pouvez autoriser tous les membres de votre organisation à consulter les résultats de la recherche à partir de cette source de données. Les listes de Contrã’le d’accès peuvent inclure des identités AAD (Azure Active Directory), des identités non AAD, ou les deux.
+Vous pouvez choisir d’ingérer les listes de contrôle d’accès (ACL) à partir de votre instance Salesforce ou vous pouvez autoriser tous les membres de votre organisation à consulter les résultats de la recherche à partir de cette source de données. Les listes de Contrã’le d’accès peuvent inclure des identités AAD (Azure Active Directory) (utilisateurs fédérés d’Azure AD à la force de la force), des identités non Azure AD (utilisateurs de la force de la force de l’offre correspondante dans Azure AD) ou les deux.
 
 ![Sélectionnez l’écran autorisations qui a été complété par un administrateur. L’administrateur a sélectionné l’option « uniquement les personnes ayant accès à cette source de données » et a également sélectionné « AAD » dans un menu déroulant des types d’identité.](media/salesforce-connector/sf6.png)
 
 ### <a name="map-non-aad-identities"></a>Mapper des identités non AAD 
-Si vous avez choisi d’une liste de contrôle d’accès à partir de votre instance Salesforce et que vous avez sélectionné « non AAD » pour le type d’identité, voir [mapper vos identités non Azure ad ](map-non-aad.md) pour obtenir des instructions sur le mappage des identités.
+Si vous avez choisi d’une liste de contrôle d’accès à partir de votre instance Salesforce et que vous avez sélectionné « non AAD » pour le type d’identité, voir [mapper vos identités non Azure ad](map-non-aad.md) pour obtenir des instructions sur le mappage des identités.
 
 ### <a name="map-aad-identities"></a>Mapper des identités AAD
-Si vous avez choisi d’une liste de contrôle d’accès à partir de votre instance Salesforce et que vous avez sélectionné « AAD » pour le type d’identité, voir [mapper vos identités Azure ad](map-aad.md) pour obtenir des instructions sur le mappage des identités.
+Si vous avez choisi d’une liste de contrôle d’accès à partir de votre instance Salesforce et que vous avez sélectionné « AAD » pour le type d’identité, voir [mapper vos identités Azure ad](map-aad.md) pour obtenir des instructions sur le mappage des identités. Pour en savoir plus sur la configuration de l’authentification unique Azure AD pour Salesforce, reportez-vous à ce [didacticiel](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/salesforce-tutorial).
 
 ## <a name="assign-property-labels"></a>Affecter des étiquettes de propriété 
-Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Si cette étape n’est pas obligatoire, le fait d’avoir des étiquettes de propriété améliore la pertinence de la recherche et garantit des résultats de recherche plus précis pour les utilisateurs finaux. Par défaut, certaines étiquettes telles que « titre », « URL » et « LastModifiedBy » ont déjà reçu des propriétés source.
+Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Si cette étape n’est pas obligatoire, le fait d’avoir des étiquettes de propriété améliore la pertinence de la recherche et garantit des résultats de recherche plus précis pour les utilisateurs finaux. Par défaut, certaines étiquettes comme « titre », « URL », « CreatedBy » et « LastModifiedBy » ont déjà reçu des propriétés source.
 
 ![Écran affecter des étiquettes de propriétés affichant les propriétés de la source par défaut.](media/salesforce-connector/sf8.png)
 
@@ -126,7 +125,6 @@ La planification recommandée est d’une semaine pour une analyse complète.
 - Le connecteur Graph ne prend actuellement pas en charge le partage et le partage basés sur un apex basé sur les territoires à l’aide de groupes personnels de salesforce.
 - Il existe un bogue connu dans l’API Salesforce que le connecteur Graph utilise lorsque les valeurs par défaut à l’échelle de l’organisation privée pour les prospects ne sont pas honorées actuellement.  
 - Si un champ a une sécurité au niveau champ (FLS) définie pour un profil, le connecteur Graph n’admettra pas ce champ aux profils de cette organisation Salesforce. Par conséquent, les utilisateurs ne pourront pas Rechercher des valeurs de ces champs, ni s’afficher dans les résultats.  
-- Toutes les FLS configurées seront honorées pendant les synchronisations complètes du connecteur.
 - Dans l’écran gérer le schéma, ces noms de propriétés standard courants sont répertoriés une fois et la sélection est effectuée pour les rendre interutilisables, pouvant faire l’objet d’une recherche et d’une extraction s’appliquent à tout ou aucun.
     - Nom
     - Url 
@@ -135,7 +133,7 @@ La planification recommandée est d’une semaine pour une analyse complète.
     - Téléphone
     - MobilePhone
     - E-mail
-    - Type
+    - Tapez
     - Titre
     - AccountId
     - AccountName

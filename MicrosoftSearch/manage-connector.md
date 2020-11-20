@@ -12,15 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Gérer les connecteurs Microsoft Graph pour Microsoft Search.
-ms.openlocfilehash: f836d3efc6e52028f2b38c5131fa369f1c9e630f
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: a9b3feff3a5c289fef3f5091518d074970209b9d
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422936"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367675"
 ---
 <!-- markdownlint-disable no-inline-html -->
-# <a name="manage-your-connector-for-microsoft-search"></a>Gérer votre connecteur pour Microsoft Search
+
+# <a name="manage-your-connections-for-microsoft-search"></a>Gérer vos connexions pour Microsoft Search
 
 Pour accéder à vos connecteurs et les gérer, vous devez être désigné en tant qu’administrateur de recherche pour votre client. Contactez votre administrateur client pour vous approvisionner pour le rôle d’administrateur de recherche.
 
@@ -33,9 +34,9 @@ Pour chaque type de connecteur, le [Centre d’administration Microsoft 365](htt
 Opération | Connecteur créé par Microsoft | Connecteur partenaire ou personnalisé
 --- | --- | ---
 Ajouter une connexion | : heavy_check_mark : (voir [Configure Your Microsoft-Built Connector](configure-connector.md)) | : x : (reportez-vous à votre partenaire ou à l’expérience utilisateur d’administration des connecteurs personnalisés)
-Supprimer une connexion | : heavy_check_mark : | : heavy_check_mark :
+Supprimer une connexion | :heavy_check_mark: | :heavy_check_mark:
 Modifier une connexion publiée | : heavy_check_mark : nom<br></br> : heavy_check_mark : description<br></br> : heavy_check_mark : informations d’identification d’authentification pour votre source de données externe<br></br> : heavy_check_mark : informations d’identification de la passerelle pour votre source de données locale<br></br> : heavy_check_mark : actualiser la planification<br></br> | : heavy_check_mark : nom<br></br> : heavy_check_mark : description
-Modifier une connexion brouillon | : heavy_check_mark : | ActiveX
+Modifier une connexion brouillon | :heavy_check_mark: | :x:
 
 ## <a name="monitor-your-connection-status"></a>Surveiller l’état de votre connexion
 
@@ -50,6 +51,20 @@ Quatre États apparaissent dans la colonne d' **État** pour chaque connexion :
 * **Suspendu**. Les analyses sont suspendues par les administrateurs via l’option pause. L’analyse suivante n’est exécutée qu’en cas de reprise manuelle. Toutefois, les données de cette connexion continuent d’être recherchées.
 
 * **Échec**. Échec critique de la connexion. Cette erreur nécessite une intervention manuelle. L’administrateur doit prendre les mesures appropriées en fonction du message d’erreur qui s’affiche. Les données qui ont été indexées jusqu’à ce que l’erreur se produise soient utilisables dans une requête.
+
+### <a name="view-your-last-crawl-info"></a>Afficher vos dernières informations d’analyse
+
+Une fois la première analyse incrémentielle ou complète initiale terminée, les valeurs des données de la dernière analyse sont affichées sous l’en-tête de la dernière analyse dans le volet détail. S’il n’y a aucune dernière analyse exécutée, aucune information n’est affichée sous l’en-tête de la dernière analyse. Ces informations sur la dernière analyse vous permettront d’obtenir des informations sur la façon dont l’analyse est effectuée et de prendre les mesures nécessaires chaque fois que nécessaire.
+
+Les dernières valeurs d’analyse suivantes seront disponibles pour chaque connexion :
+
+Valeur | Description
+--- | ---
+Terminé à | Date et heure de la dernière analyse terminée
+Tapez | Analyse incrémentielle ou complète
+Durée | temps nécessaire à l’exécution de la dernière analyse
+Réussites | Nombre d’éléments qui ont été correctement ingérés lors de la dernière analyse
+Erreurs | Nombre d’éléments ayant une erreur dans la dernière analyse
 
 ### <a name="monitor-errors"></a>Surveiller les erreurs
 
@@ -81,14 +96,13 @@ Code d’erreur | Message d’erreur | Solution
 
 ## <a name="monitor-your-index-quota-utilization"></a>Surveiller l’utilisation de votre quota d’index
 
-Pendant la période de préversion, chaque organisation dispose d’un quota fixe allant jusqu’à 2 millions éléments pour l’indexation de contenu à partir de systèmes externes sur toutes les connexions.
+Le quota d’index disponible et la consommation s’affichent sur la page d’accueil des connecteurs.
 
-> [!NOTE]
-> Le quota de connecteurs Graph est disponible gratuitement pendant toute la durée de l’aperçu. Cela sera modifié au niveau de la disponibilité générale.
+![Barre d’utilisation des quotas d’index](media/quota_utilization.png)
 
-Le quota d’index et la consommation disponibles seront affichés sur la page d’accueil des connecteurs.
-
-![Barre d’utilisation des quotas d’index.](media/quota_utilization.png)
+>[!NOTE]
+>Pendant la période de préversion, toutes les organisations qui essaient des connecteurs Graph ont fourni un quota fixe gratuit d’un maximum de 2 millions éléments parmi toutes les connexions. Lorsque les connecteurs Graph sont généralement disponibles, le quota gratuit expire le 1er février, 2021 pour les organisations qui utilisent des connecteurs Graph en aperçu.
+>Les connecteurs Microsoft Graph étiquetés comme [« Aperçu »](connectors-preview.md) ne seront pas inclus dans le quota d’index facturé total pour votre organisation. Toutefois, il compte sur le nombre maximal de 10 connexions que vous pouvez configurer pour votre organisation et le nombre maximal de 7 millions éléments que votre organisation peut indexer entre les connexions.
 
 La barre d’utilisation des quotas indique les différents États en fonction de la consommation de quota par votre organisation :
 
@@ -101,20 +115,30 @@ Complet | 100 %
 
 Le nombre d’éléments indexés est également affiché avec chaque connexion. Le nombre d’éléments indexés par chaque connexion contribue au quota total disponible pour votre organisation.
 
-Lorsque le quota d’index est dépassé pour votre organisation, toutes les connexions actives seront affectées et ces connexions arrêteront le contenu inactif. Pour résoudre ce problème, vous pouvez effectuer l’une des opérations suivantes :
+Lorsque le quota d’index est dépassé pour votre organisation, toutes les connexions actives seront affectées, et ces connexions fonctionneront sur l’état de **limite dépassée** . Dans cet État, vos connexions actives  
+
+* Ne peut pas ajouter de nouveaux éléments.
+
+* Sera en mesure de mettre à jour ou supprimer des éléments existants.
+
+Pour résoudre ce problème, vous pouvez effectuer l’une des opérations suivantes :
+
+* Découvrez comment acheter un quota d’index pour votre organisation en [termes de licences et de prix](licensing.md).
 
 * Identifiez les connexions dont le contenu est trop ingéré et mettez-les à jour pour indexer moins d’éléments afin de libérer de l’espace pour le quota. Pour mettre à jour la connexion, vous devez supprimer et créer une nouvelle connexion à l’aide d’un nouveau filtre d’ingestion qui entraîne moins d’éléments.
 
 * Supprimer définitivement une ou plusieurs connexions
 
-* Contactez Microsoft si vous devez augmenter la limite de quota d’index pour votre organisation.
+## <a name="limitations"></a>Limites
 
-## <a name="preview-limitations"></a>Limitations de l’aperçu
+* Lorsque vous **publiez** un connecteur créé par Microsoft, la création de la connexion peut prendre quelques minutes. Pendant ce temps, la connexion indique son état en attente.
 
-* Lorsque vous **publiez** un connecteur créé par Microsoft, la création de la connexion peut prendre quelques minutes. Pendant ce temps, la connexion indique son état en attente. En outre, il n’existe pas d’actualisation automatique, vous devez donc procéder à une actualisation manuelle.
+* Le [Centre d’administration Microsoft 365](https://admin.microsoft.com) ne prend pas en charge la modification du **schéma de recherche** après la publication d’une connexion. Pour modifier le schéma de recherche, supprimez votre connexion, puis créez-en une nouvelle.
 
-* Le [Centre d’administration Microsoft 365](https://admin.microsoft.com) ne prend pas en charge l’affichage et la modification du **schéma de recherche** après la publication d’une connexion. Pour modifier le schéma de recherche, supprimez votre connexion, puis créez-en une nouvelle.
+* Le débit de l’ingestion est limité à quatre éléments par seconde.
 
-* Lorsque vous gérez la planification d' **actualisation**de votre connexion, le nombre d’éléments synchronisés au cours de chaque session s’affiche. Toutefois, l’historique de synchronisation n’est pas disponible.
+* Il n’existe pas de prise en charge des mises à jour de schéma. Une fois que vous avez créé une configuration de connexion, il n’existe aucun moyen de mettre à jour le schéma. Vous pouvez supprimer et recréer la connexion uniquement.
 
-* Lorsque l’utilisation des quotas de votre organisation atteint des limites importantes ou supérieures, vous ne serez **pas** informé via le centre de messages.  Vérifiez régulièrement la page de gestion des connecteurs pour vous assurer que les connexions configurées n’ont pas dépassé les limites de quota globales pour votre organisation.
+* Il existe une limite de connexions. Chaque client peut créer jusqu’à 10 connexions.
+
+* La modification de la prise en charge de la connexion n’est pas disponible. Une fois que la connexion a été créée, vous ne pouvez pas la modifier ni la modifier. Si vous devez modifier des détails, vous devez supprimer et recréer la connexion.
