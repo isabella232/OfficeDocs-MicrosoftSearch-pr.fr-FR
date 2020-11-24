@@ -17,7 +17,7 @@
 ## Connecteurs Graph par Microsoft
 ### [Vue d’ensemble de la configuration](configure-connector.md)
 ### [Configurer votre agent local (préversion)](on-prem-agent.md)
-### [Mapper les identités Active Directory non Azure (préversion)](map-non-add)
+### [Mapper les identités Active Directory non Azure (préversion)](map-non-aad.md)
 ### [Mapper vos identités Azure AD ](map-aad.md)
 ### Informations spécifiques au connecteur
 #### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
@@ -26,6 +26,7 @@
 #### [Sites web d’entreprise](enterprise-web-connector.md)
 #### [Partage de fichiers (préversion)](fileshare-connector.md)
 #### [MediaWiki](mediawiki-connector.md)
+#### [Oracle SQL (version d’évaluation)](OracleSQL-connector.md)
 #### [Salesforce (préversion)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
 ## [Gérer vos connexions](manage-connector.md)
