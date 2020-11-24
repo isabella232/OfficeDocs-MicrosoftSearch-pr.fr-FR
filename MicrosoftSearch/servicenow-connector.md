@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur ServiceNow pour Microsoft Search
-ms.openlocfilehash: 5bcc0870df7c2ad418bb2ae29e9d4d999dcbdf3f
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 520232f8055d5432ccb96a840a9466ae6a4e3b1a
+ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367594"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49382559"
 ---
 # <a name="servicenow-connector"></a>Connecteur ServiceNow
 
@@ -171,6 +171,9 @@ Avec une chaîne de requête ServiceNow, vous pouvez spécifier des conditions p
 Le connecteur ServiceNow prend en charge les autorisations de recherche visibles pour **tous** **les utilisateurs ou uniquement les personnes ayant accès à cette source de données**. Les données indexées apparaissent dans les résultats de la recherche et sont visibles par tous les utilisateurs de l’organisation ou des utilisateurs qui y ont accès respectivement. Le connecteur ServiceNow prend en charge les autorisations par défaut des critères utilisateur sans les scripts avancés. Lorsque le connecteur rencontre un critère utilisateur avec un script avancé, toutes les données utilisant ce critère utilisateur ne sont pas affichées dans les résultats de la recherche.
 
 Si vous choisissez **uniquement des personnes ayant accès à cette source de données**, vous devez préciser si votre instance ServiceNow dispose d’utilisateurs disposant d’Azure Active Directory (AAD) ou d’utilisateurs non AAD.
+
+>[!NOTE]
+>Le connecteur ServiceNow est en **Aperçu** si vous choisissez **uniquement les personnes ayant accès à cette source de données**.
 
 >[!NOTE]
 >Si vous choisissez AAD comme type de source d’identité, vérifiez que vous affectez la propriété source UPN à la propriété e-mail ciblé dans ServiceNow. Pour vérifier ou modifier vos mappages, reportez-vous à la rubrique [Customizing User Provisioning attribute-Mappings for Saas applications in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/app-provisioning/customize-application-attributes).

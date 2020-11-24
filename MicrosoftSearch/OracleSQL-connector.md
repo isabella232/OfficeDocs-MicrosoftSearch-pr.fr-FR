@@ -1,5 +1,5 @@
 ---
-title: Microsoft SQL Server et Azure SQL Connector pour Microsoft Search
+title: Connecteur Oracle SQL pour Microsoft Search
 ms.author: vivg
 author: Vivek
 manager: harshkum
@@ -12,51 +12,29 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez Oracle SQL Connector pour Microsoft Search.
-ms.openlocfilehash: 118e073f355d2ce06e63745efbf5d090ba61d582
+ms.openlocfilehash: cf7946533b3806bb730cdc6a31f7745ebad2c59d
 ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/23/2020
-ms.locfileid: "49382595"
+ms.locfileid: "49382680"
 ---
-# <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Connecteurs Azure SQL et Microsoft SQL Server
+# <a name="oracle-sql-connector"></a>Connecteur Oracle SQL
 
-Avec un connecteur Microsoft SQL Server ou Azure SQL, votre organisation peut découvrir et indexer des données à partir d’une base de données SQL Server locale ou d’une base de données hébergée dans votre instance Azure SQL dans le Cloud. Le connecteur indexe le contenu spécifié dans Microsoft Search. Pour conserver l’index à jour avec les données source, il prend en charge les analyses incrémentielles et complètes périodiques. Avec ces connecteurs SQL, vous pouvez également limiter l’accès aux résultats de recherche pour certains utilisateurs.
+Avec Oracle SQL Connector, votre organisation peut découvrir et indexer des données à partir d’une base de données Oracle locale. Le connecteur indexe le contenu spécifié dans Microsoft Search. Pour conserver l’index à jour avec les données source, il prend en charge les analyses incrémentielles et complètes périodiques. Avec Oracle SQL Connector, vous pouvez également limiter l’accès aux résultats de recherche pour certains utilisateurs.
 
-Cet article est destiné aux administrateurs 365 de Microsoft ou toute personne qui configure, exécute et surveille un serveur Microsoft SQL Server ou Azure SQL. Elle explique comment configurer les fonctionnalités de connecteur et de connecteur, ainsi que les restrictions et les techniques de résolution des problèmes. 
+Cet article est destiné aux administrateurs de Microsoft 365 ou à quiconque configure, exécute et surveille un connecteur Oracle SQL. Elle explique comment configurer les fonctionnalités de connecteur et de connecteur, ainsi que les restrictions et les techniques de résolution des problèmes.
 
-## <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>Installer l’agent de connecteur Graph (requis pour le connecteur Microsoft SQL Server local uniquement)
+## <a name="install-the-graph-connector-agent"></a>Installer l’agent de connecteur Graph
 Pour accéder à vos données tierces locales, vous devez installer et configurer l’agent connecteur Graph. Pour en savoir plus, consultez [la rubrique installer l’agent connecteur Graph](on-prem-agent.md) .  
 
-## <a name="register-an-app-for-azure-sql-connector-only"></a>Inscrire une application (pour Azure SQL Connector uniquement)
-Pour Azure SQL Connector, vous devez inscrire une application dans Azure Active Directory pour permettre à l’application Microsoft Search d’accéder aux données pour l’indexation. Pour en savoir plus sur l’inscription d’une application, consultez la documentation de Microsoft Graph relative à l' [enregistrement d’une application](https://docs.microsoft.com/graph/auth-register-app-v2). 
-
-Après avoir terminé l’inscription de l’application et pris note du nom de l’application, de l’ID d’application (client) et de l’ID de client, vous devez [générer une nouvelle clé secrète client](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). La clé secrète client ne s’affiche qu’une seule fois. N’oubliez pas de noter & stocker la clé secrète client en toute sécurité. Utilisez l’ID client et la clé secrète client lors de la configuration d’une nouvelle connexion dans Microsoft Search. 
-
-Pour ajouter l’application inscrite à votre base de données SQL Azure, vous devez :
- - Connectez-vous à votre base de données SQL Azure.
- - Ouvrir une nouvelle fenêtre de requête
- - Créez un utilisateur en exécutant la commande « créer un utilisateur [nom de l’application] à partir du fournisseur externe »
- - Ajouter un utilisateur à un rôle en exécutant la commande « exec sp_addrolemember » db_datareader, [nom de l’application] ou « modifier le rôle db_datareader ajouter un membre [nom de l’application] »
-
->[!NOTE]
->Pour révoquer l’accès à une application inscrite dans Azure Active Directory, reportez-vous à la documentation Azure sur la [Suppression d’une application inscrite](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app).
-
 ## <a name="connect-to-a-data-source"></a>Se connecter à une source de données
-Pour connecter votre Connecteur Microsoft SQL Server à une source de données, vous devez configurer le serveur de base de données que vous souhaitez analyser et l’agent local. Vous pouvez ensuite vous connecter à la base de données à l’aide de la méthode d’authentification requise.
+Pour connecter votre connecteur Oracle SQL à une source de données, vous devez configurer le serveur de base de données que vous souhaitez analyser et l’agent connecteur Graph local. Vous pouvez ensuite vous connecter à la base de données à l’aide de la méthode d’authentification requise.
+
+Pour Oracle SQL Connector, vous devez spécifier le nom d’hôte, le port et le nom de service (base de données), ainsi que la méthode d’authentification préférée, le nom d’utilisateur et le mot de passe.
 
 > [!NOTE]
-> Votre base de données doit exécuter la version 2008 ou une version ultérieure de SQL Server pour que le connecteur Microsoft SQL Server puisse se connecter.
-
-Pour le connecteur Azure SQL, il vous suffit de spécifier le nom du serveur ou l’adresse IP à laquelle vous souhaitez vous connecter. Azure SQL Connector prend uniquement en charge l’authentification Azure Active Directory Open ID Connect (OIDC) pour se connecter à la base de données.
-
-Pour plus de sécurité, vous pouvez configurer des règles de pare-feu IP pour votre serveur ou base de données Azure SQL Server. Pour en savoir plus sur la configuration des règles de pare-feu IP, consultez la documentation sur les [règles de pare-feu IP](https://docs.microsoft.com/azure/azure-sql/database/firewall-configure). Ajoutez les plages d’adresses IP client suivantes dans les paramètres de pare-feu.
-
-| Région | Plage d’adresses IP |
-| ------------ | ------------ |
-| NAM | 52.250.92.252/30, 52.224.250.216/30 |
-| EUR | 20.54.41.208/30, 51.105.159.88/30 |
-| APC | 52.139.188.212/30, 20.43.146.44/30 |
+> Votre base de données doit exécuter la version de base de données Oracle 11g ou une version ultérieure pour que le connecteur puisse se connecter. Le connecteur prend en charge la base de données Oracle hébergée sur les plateformes Windows, Linux et Azure VM.
 
 Pour effectuer une recherche dans le contenu de votre base de données, vous devez spécifier des requêtes SQL lorsque vous configurez le connecteur. Ces requêtes SQL doivent nommer toutes les colonnes de base de données que vous souhaitez indexer (c.-à-d. les propriétés source), y compris toutes les jointures SQL qui doivent être effectuées pour obtenir toutes les colonnes. Pour restreindre l’accès aux résultats de la recherche, vous devez spécifier des listes de contrôle d’accès (ACL) dans les requêtes SQL lorsque vous configurez le connecteur.
 
@@ -84,17 +62,16 @@ L’utilisation de chacune des colonnes ACL dans la requête ci-dessus est décr
 ![Exemples de données illustrant les OrderTable et AclTable avec des exemples de propriétés](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>Types de données pris en charge
-Le tableau ci-dessous récapitule les types de données SQL qui sont pris en charge dans les connecteurs MS SQL et Azure SQL. Le tableau résume également le type de données d’indexation pour le type de données SQL pris en charge. Pour en savoir plus sur les connecteurs Microsoft Graph types de données pris en charge pour l’indexation, reportez-vous à la documentation sur les [types de ressources de propriétés](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties). 
+Le tableau ci-dessous récapitule les types de données pris en charge par Oracle SQL Connector. Le tableau résume également le type de données d’indexation pour le type de données SQL pris en charge. Pour en savoir plus sur les connecteurs Microsoft Graph types de données pris en charge pour l’indexation, reportez-vous à la documentation sur les [types de ressources de propriétés](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties). 
 
 | Catégorie | Type de données source | Index, type de données |
 | ------------ | ------------ | ------------ |
-| Date et heure | date <br> DateHeure <br> datetime2 <br> smallmoney | DateHeure |
-| Numérique exact | comportant <br> int <br> type <br> entier très petit | Int64 |
-| Numérique exact | légèrement | valeur booléenne |
-| Valeur numérique approximative | float <br> RTA | double |
-| Chaîne de caractères | échelle <br> varchar <br> text | string |
-| Chaînes de caractères Unicode | NCHAR <br> nvarchar <br> Text | string |
-| Autres types de données | unique | string |
+| Type de données numérique | NOMBRE (p, 0) | Int64 (pour p <= 18) <br> double (pour p > 18) |
+| Type de données de nombre à virgule flottante | NOMBRE (p, s) <br> Virgule flottante (p) | double |
+| Type de données date | JOURS <br> DATES <br> TIMESTAMP (n) | DateHeure |
+| Type de données de caractère | CHAR (n) <br> VARCHAR <br> VARCHAR2 <br> PLUS <br> CLOB <br> NCLOB | string |
+| Type de données caractères Unicode | NCHAR <br> NVARCHAR | string |
+| Type de données RowID | ROWID <br> UROWID | string |
 
 Pour tout autre type de données actuellement non pris en charge directement, la colonne doit être explicitement convertie en un type de données pris en charge.
 
@@ -102,8 +79,8 @@ Pour tout autre type de données actuellement non pris en charge directement, la
 Pour éviter de surcharger la base de données, le connecteur regroupe et reprend les requêtes d’analyse complète avec une colonne de filigrane complète. En utilisant la valeur de la colonne filigrane, chaque lot suivant est extrait et l’interrogation reprend à partir du dernier point de contrôle. Fondamentalement, il s’agit d’un mécanisme de contrôle de l’actualisation des données pour les analyses complètes.
 
 Créez des extraits de code de requête pour les filigranes, comme indiqué dans les exemples suivants :
-* `WHERE (CreatedDateTime > @watermark)`. Citez le nom de la colonne filigrane par le mot clé réservé `@watermark` . Si l’ordre de tri de la colonne de filigrane est croissant, utilisez `>` ; sinon, utilisez `<` .
-* `ORDER BY CreatedDateTime ASC`. Trier sur la colonne filigrane dans l’ordre croissant ou décroissant.
+* `WHERE (CreatedDateTime > @watermark)`. Citez le nom de la colonne filigrane par le mot clé réservé `@watermark` . Vous ne pouvez trier la colonne de filigrane qu’en ordre croissant.
+* `ORDER BY CreatedDateTime ASC`. Trier dans l’ordre croissant sur la colonne de filigrane.
 
 Dans la configuration illustrée dans l’image suivante, `CreatedDateTime` est la colonne de filigrane sélectionnée. Pour extraire le premier lot de lignes, spécifiez le type de données de la colonne de filigrane. Dans ce cas, le type de données est `DateTime` .
 
@@ -138,13 +115,27 @@ Les composants de l’image suivante ressemblent aux composants d’analyse comp
 ## <a name="manage-search-permissions"></a>Gérer les autorisations de recherche 
 Vous pouvez choisir d’utiliser les [listes de contrã’le d’accès spécifiées dans l’écran d’analyse complète](#full-crawl-manage-search-permissions) ou de les remplacer pour rendre votre contenu visible par tous les utilisateurs.
 
+## <a name="set-the-refresh-schedule"></a>Définir la planification d’actualisation
+Oracle SQL Connector prend en charge les planifications d’actualisation pour les analyses complètes et incrémentielles. Nous vous recommandons de définir les deux.
+
+Une planification d’analyse complète recherche les lignes supprimées qui ont été précédemment synchronisées avec l’index Microsoft Search et toutes les lignes qui ont été déplacées à partir du filtre de synchronisation. Lorsque vous vous connectez pour la première fois à la base de données, une analyse complète est exécutée pour synchroniser toutes les lignes récupérées à partir de la requête d’analyse complète. Pour synchroniser de nouvelles lignes et effectuer des mises à jour, vous devez planifier des analyses incrémentielles.
+
 ## <a name="next-steps-customize-the-search-results-page"></a>Étapes suivantes : personnaliser la page de résultats de recherche
 Créez vos propres types de résultat et de vertical, de sorte que les utilisateurs finaux puissent afficher les résultats de la recherche à partir de nouvelles connexions. Sans cette étape, les données de votre connexion ne s’afficheront pas sur la page des résultats de la recherche.
 
 Pour en savoir plus sur la création de vos secteurs verticaux et MRTs, voir Personnalisation de la [page de résultats de recherche](customize-search-page.md).
 
 ## <a name="limitations"></a>Limites
-Les connecteurs SQL présentent ces limitations dans la version d’évaluation :
-* Connecteur Microsoft SQL Server : la base de données locale doit exécuter SQL Server version 2008 ou une version ultérieure.
+Le connecteur Oracle SQL présente ces limitations dans la version d’évaluation :
+* La base de données locale doit exécuter la version de base de données Oracle 11g ou ultérieure.
 * Les ACL sont uniquement prises en charge à l’aide d’un nom d’utilisateur principal (UPN), d’Azure Active Directory (Azure AD) ou de la sécurité Active Directory. 
 * L’indexation de contenu riche dans les colonnes de base de données n’est pas prise en charge. Des exemples de ce type de contenu sont les analyses HTML, JSON, XML, BLOB et de document qui existent sous forme de liens dans les colonnes de base de données.
+
+## <a name="troubleshooting-guide"></a>Guide de dépannage
+En dessous se trouve une liste des erreurs courantes observées lors de la configuration du connecteur et de leurs causes possibles.
+| Étape de configuration | Message d’erreur | Raison (s) possible (s) |
+| ------------ | ------------ | ------------ |
+| Paramètres de base de données | Erreur du serveur de base de données : expiration du délai de la demande de connexion | Nom d’hôte non valide <br> Hôte inaccessible |
+| Paramètres de base de données | Erreur du serveur de base de données : ORA-12541 : TNS : no listner | Port non valide |
+| Paramètres de base de données | Erreur du serveur de base de données : ORA-12514 : TNS : listner ne connaît pas actuellement le service demandé dans le descripteur de connecteur | Nom de service (base de données) non valide |
+| Paramètres de base de données | Erreur du serveur de base de données : échec de la connexion de l’utilisateur' `user` '. | Nom d’utilisateur ou mot de passe incorrect |
