@@ -11,13 +11,14 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
+ROBOTS: NoIndex
 description: Agent local
-ms.openlocfilehash: 30ddf0ac8c6df76d1c598606754066b3d2e93615
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 487c5b179e09fd99fa26ae7a237e89ca38b7be4d
+ms.sourcegitcommit: 69a1c544cc8db364991cb58d7818d7158ff108b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367756"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49408941"
 ---
 # <a name="on-prem-agent"></a>Agent local
 
@@ -59,7 +60,7 @@ Une fois que vous avez créé l’application pour l’agent, vous devez configu
 
 Les détails de l’authentification peuvent être fournis dans l’un des formulaires suivants.
 
-### <a name="configuring-the-client-secret-for-authentation"></a>Configuration de la clé secrète client pour authentation
+### <a name="configuring-the-client-secret-for-authentication"></a>Configuration de la clé secrète client pour l’authentification
 
 1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec les informations d’identification d’administrateur pour le client.
 2. Ouvrez **inscription** de l’application dans le volet de navigation et accédez à l’application appropriée. Sous **gérer**, sélectionnez **certificats et secrets**.
@@ -68,7 +69,7 @@ Les détails de l’authentification peuvent être fournis dans l’un des formu
 
 ## <a name="using-thumbprint-certificate-for-authentication"></a>Utilisation d’un certificat d’empreinte numérique pour l’authentification
 
-Si vous avez déjà configuré les détails de l’authentification en procédant à [la configuration de la clé secrète client pour authentation](#Configuring-the-client-secret-for-authentication) , vous pouvez passer directement à la [rubrique Configuration Overview](configure-connector.md).
+Si vous avez déjà configuré les détails d’authentification en suivant [la configuration de la clé secrète client pour l’authentification](#configuring-the-client-secret-for-authentication) , vous pouvez passer directement à la [rubrique Configuration Overview](configure-connector.md).
 
 1. Ouvrez **inscription** de l’application et sélectionnez **certificats et secrets** dans le volet de navigation. Copiez l’empreinte de certificat.
 ![Liste des certificats thumbrint lorsque l’option certificats et secrets est sélectionnée dans le volet de gauche](media/onprem-agent/certificates.png)
