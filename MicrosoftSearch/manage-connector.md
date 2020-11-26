@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gérer les connecteurs Microsoft Graph pour Microsoft Search.
-ms.openlocfilehash: a9b3feff3a5c289fef3f5091518d074970209b9d
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 04ae757e95c6d3713ad03da701f99c669fb2a59c
+ms.sourcegitcommit: 0ed8ec8b3c4e0f5f669005081fd8b2219f07b4f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367675"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49420841"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -92,6 +92,7 @@ Code d’erreur | Message d’erreur | Solution
 2001 | L’indexation est limitée en raison d’un grand nombre de mises à jour dans la file d’attente. En fonction de la file d’attente, l’exécution des mises à jour peut prendre un certain temps. | Veuillez patienter jusqu’à ce que la file d’attente soit effacée.
 2002 | Échec de l’indexation en raison d’une mise en forme d’élément non prise en charge. | Pour plus d’informations, reportez-vous à la documentation spécifique au connecteur.
 2003 | Échec de l’indexation en raison d’un contenu d’élément non pris en charge. | Pour plus d’informations, reportez-vous à la documentation spécifique au connecteur.
+2010 | Cette connexion n’est plus valide en raison d’une mise à jour effectuée par Microsoft. Veuillez supprimer la connexion et en créer une nouvelle. | Veuillez supprimer la connexion et en créer une nouvelle.
 5000 | Un problème est survenu. Si cela persiste, contactez le support technique. |
 
 ## <a name="monitor-your-index-quota-utilization"></a>Surveiller l’utilisation de votre quota d’index
