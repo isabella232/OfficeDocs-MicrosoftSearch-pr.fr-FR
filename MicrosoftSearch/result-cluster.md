@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Détails de l’expérience de cluster de résultats de connecteurs
-ms.openlocfilehash: eac4180a247fe17b4e86b57a69f2b7bdb79e56bb
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: fa6ac2dc720ed43e40454b952526734accd45ea4
+ms.sourcegitcommit: a328b9764abf5cd0c1c0a8c7def0c6e334da9a1d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367727"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "49477112"
 ---
 # <a name="graph-connectors-result-cluster"></a>Cluster de résultats de connecteurs Graph
 
 ## <a name="overview-of-the-graph-connectors-result-cluster-preview"></a>Vue d’ensemble du cluster de résultats connecteurs Graph (aperçu)  
 
- Avec les clusters de résultats des connecteurs Graph, les entreprises peuvent rechercher du contenu provenant de sources de données tierces dans leur affichage par défaut (onglet tous) dans SharePoint et Office.com.
+Avec les clusters de résultats des connecteurs Graph, les entreprises peuvent rechercher du contenu provenant de sources de données tierces dans leur affichage par défaut (onglet tous) dans SharePoint et Office.com.
 
 Les clusters de résultats aident les utilisateurs à découvrir tous les contenus tiers (previoulsy liés à un connecteur et à la verticale) à un seul endroit. Les résultats affichés dans un cluster de résultats sont regroupés en fonction de la façon dont l’administrateur client les configure dans un secteur vertical de recherche.  
 
@@ -40,14 +40,14 @@ L’expérience des résultats de recherche pour les éléments de connecteur af
 ## <a name="enable-result-clusters"></a>Activer les clusters de résultats
   
 L’expérience de cluster de résultats est désactivée par défaut.  
+
 Pour activer l’expérience au niveau de l’organisation, procédez comme suit :
 
-Centre d’administration Microsoft 365
-
 1. Dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com/), accédez à **paramètres** de  >  **recherche &** aide au secteur vertical pour la personnalisation de l’intelligence  >  **Customization**  >  **Verticals**.  
-2. Sélectionnez le secteur vertical **tout** et accédez à la section **afficher les résultats du connecteur** . Activer l’expérience au niveau du site.
+2. Sélectionnez l’option **tous** les secteurs verticaux, puis activer afficher les **résultats du connecteur**. 
 
-SharePoint
+
+Pour activer l’expérience au niveau du site, procédez comme suit :
 
 1. Sur le site SharePoint où vous souhaitez obtenir l’expérience de cluster de résultats, accédez à **paramètres**.
 2. Accédez à **informations sur le site** > **Afficher tous les paramètres du site**.
