@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Agent local
-ms.openlocfilehash: 763904f8dd96c5db8b0633e36795443502afe7d0
-ms.sourcegitcommit: 0ed8ec8b3c4e0f5f669005081fd8b2219f07b4f0
+ms.openlocfilehash: 5dbca392fefdcc11de253fd244cc98a6adcee68a
+ms.sourcegitcommit: e8d770fa72ac83e074a5de57098cb55d06d8db07
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49420832"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588366"
 ---
 # <a name="graph-connector-agent"></a>Agent de connecteur Graph
 
@@ -31,6 +31,7 @@ Téléchargez la dernière version de l’agent de connecteur Graph et installez
 Configuration recommandée :
 
 * Windows 10, Windows Server 2016 R2 et versions ultérieures
+* [.NET Core Desktop Runtime 3,1 (x64)](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 * 8 cœurs, 3 GHz
 * 16 Go de RAM, 2 Go d’espace disque
 * Accès réseau à la source de données et à Internet via 443
