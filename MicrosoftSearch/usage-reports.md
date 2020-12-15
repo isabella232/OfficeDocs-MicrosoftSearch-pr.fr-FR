@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Consulter les rapports d’utilisation de Microsoft Search
-ms.openlocfilehash: 96599ad18cb45feb53b3a786730a3ce506f49600
-ms.sourcegitcommit: 13e52d6c66c811cc7612197ba5d8cc3598309314
+ms.openlocfilehash: f34a82892818f00737d313285e6af7bce7c8a90a
+ms.sourcegitcommit: 3aa3623022270872a2c1ed8b86201c42bc313c1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49586368"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675267"
 ---
 # <a name="microsoft-search-usage-reports"></a>Rapports d’utilisation de Microsoft Search
 
 Les rapports d’utilisation de la recherche vous permettent de mieux comprendre le fonctionnement de la recherche dans votre organisation. Les informations générées à partir de ces rapports vous permettront de faire en sorte que le [contenu soit facile à trouver et à](https://docs.microsoft.com/microsoftsearch/make-content-easy-to-find) prendre des mesures qui faciliteront la recherche d’une expérience plus utile et délicieuse pour vos utilisateurs.
 
 > [!IMPORTANT]
-> Les rapports d’utilisation de Microsoft Search sont actuellement en version préliminaire.
+> Les rapports d’utilisation de la recherche Microsoft sont actuellement en phase d’évaluation et de déploiement auprès des administrateurs dans la version ciblée. Assurez-vous que votre compte d’administrateur se trouve dans l’anneau de publication ciblée pour afficher ces rapports.
 
 Les [rapports d’utilisation de la recherche Microsoft](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) incluent des graphiques et des tableaux générés à partir de recherches exécutées à partir de zones de recherche SharePoint famille et Office.com. Vous pouvez afficher les données des 31 derniers jours, par jour ou tous les mois de l’année précédente. Ces rapports sont simplement déployés afin de prendre le temps d’accumuler les données historiques.
 
@@ -41,6 +41,9 @@ Une version précédente de cette page comprenait des données de recherches ex�
 |Requêtes abandonnées|Ce rapport affiche les requêtes de recherche populaires qui reçoivent un « clic » faible. Il permet d'identifier les requêtes de recherche pouvant provoquer l'insatisfaction des utilisateurs et d'améliorer la détectabilité du contenu. Vous pouvez ensuite déterminer si la création d’une réponse, comme un signet, ou l’ingestion de nouveaux contenus via un connecteur Graph est la bonne action.|
 |Requêtes sans résultats|Ce rapport indique les requêtes de recherche populaires qui n'ont retourné aucun résultat. Il permet d'identifier les requêtes de recherche pouvant provoquer l'insatisfaction des utilisateurs et d'améliorer la détectabilité du contenu. Vous pouvez ensuite déterminer si la création d’une réponse, comme un signet, ou l’ingestion de nouveaux contenus via un connecteur Graph est la bonne action.|
 
+> [!NOTE]
+> Il y a actuellement un problème avec le CTR (clic à travers le taux) affiché pour les requêtes les plus fréquentes. La valeur affichée dans le tableau de bord est 100 fois supérieure à la valeur réelle. Pour obtenir le temps réel, divisez le numéro du tableau de bord par 100 ou utilisez le bouton Télécharger pour obtenir le rapport dans Excel où la valeur s’affiche correctement.
+
 ## <a name="viewing-reports"></a>Affichage des rapports
 
 Lorsque vous accédez à la page rapports d’utilisation, tous les rapports peuvent être consultés. Vous pouvez utiliser le filtre date pour choisir un jour ou un mois spécifique à afficher.
@@ -49,7 +52,7 @@ Le téléchargement d’un rapport vous permet d’afficher des rapports d’une
 
 Pour afficher les rapports sur les requêtes et les impressions principales de Bing, cliquez sur le lien sur la page.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Lorsque je sélectionne les 31 derniers jours ou les 12 derniers mois, pourquoi dois-je choisir un jour spécifique ou un mois spécifique.**
 
@@ -57,7 +60,7 @@ L’affichage Calendrier aujourd’hui dans les rapports d’utilisation de Micr
 
 Les tables de requête supérieure, abandonnée et ayant échoué affichent des résultats à partir du jour ou du mois que vous choisissez.
 
-**Quand recevrai-je des données agrégées pendant les 7 derniers jours, 30 derniers jours, etc., comme les rapports des premières requêtes de Bing ?**
+**Quand afficher les données agrégées pendant les 7 derniers jours, 30 jours précédents, etc... comme les rapports des premières requêtes de Bing ?**
 
 Nous envisageons ce type d’agrégation et simplifions le filtrage de plage de données pour les versions futures de ces rapports.
 
