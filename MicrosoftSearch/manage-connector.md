@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gérer les connecteurs Microsoft Graph pour Microsoft Search.
-ms.openlocfilehash: 04ae757e95c6d3713ad03da701f99c669fb2a59c
-ms.sourcegitcommit: 0ed8ec8b3c4e0f5f669005081fd8b2219f07b4f0
+ms.openlocfilehash: bf5a382ae0bd8308922599f0dfa9e087aad50c24
+ms.sourcegitcommit: b1ca58219fb16d5aff277f357dfa11ce6b0d42ca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49420841"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49695684"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -61,7 +61,7 @@ Les dernières valeurs d’analyse suivantes seront disponibles pour chaque conn
 Valeur | Description
 --- | ---
 Terminé à | Date et heure de la dernière analyse terminée
-Tapez | Analyse incrémentielle ou complète
+Type | Analyse incrémentielle ou complète
 Durée | temps nécessaire à l’exécution de la dernière analyse
 Réussites | Nombre d’éléments qui ont été correctement ingérés lors de la dernière analyse
 Erreurs | Nombre d’éléments ayant une erreur dans la dernière analyse
@@ -103,7 +103,7 @@ Le quota d’index disponible et la consommation s’affichent sur la page d’a
 
 >[!NOTE]
 >Pendant la période de préversion, toutes les organisations qui essaient des connecteurs Graph ont fourni un quota fixe gratuit d’un maximum de 2 millions éléments parmi toutes les connexions. Lorsque les connecteurs Graph sont généralement disponibles, le quota gratuit expire le 1er février, 2021 pour les organisations qui utilisent des connecteurs Graph en aperçu.
->Les connecteurs Microsoft Graph étiquetés comme [« Aperçu »](connectors-preview.md) ne seront pas inclus dans le quota d’index facturé total pour votre organisation. Toutefois, il compte sur le nombre maximal de 10 connexions que vous pouvez configurer pour votre organisation et le nombre maximal de 7 millions éléments que votre organisation peut indexer entre les connexions.
+>Les connecteurs Microsoft Graph étiquetés comme [« Aperçu »](connectors-preview.md) ne seront pas inclus dans le quota d’index facturé total pour votre organisation. Toutefois, il compte sur le nombre maximal de 10 connexions que vous pouvez configurer pour votre organisation et le nombre maximal de 7 millions éléments que votre organisation peut indexer entre les connexions ; chaque connexion est limitée à 700 000 éléments. 
 
 La barre d’utilisation des quotas indique les différents États en fonction de la consommation de quota par votre organisation :
 
