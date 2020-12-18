@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créer et mettre à jour des réponses d’acronymes dans Microsoft Search
-ms.openlocfilehash: e328ecb7604a144b51f3a1483eef1b1c3a7e0bcb
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 9de9de8287e3ddf206f93f53573922f3cf526580
+ms.sourcegitcommit: ad225af81060a2e3d7e4c953eeb6977d54698b60
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422945"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709681"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Gérer les acronymes Answers in Microsoft Search
 
@@ -49,7 +49,7 @@ Dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com
 Microsoft Search interroge deux sources de données pour fournir des informations d’acronymes aux recherches des utilisateurs :
 
 1. **Acronymes éditorial**. Fourni par les administrateurs informatiques dans le [Centre d’administration](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms).
-2. **Acronymes**de extrait. Extrait par Microsoft Search de la messagerie et des documents personnels de l’utilisateur et des données accessibles au public au sein de l’organisation.
+2. **Acronymes** de extrait. Extrait par Microsoft Search de la messagerie et des documents personnels de l’utilisateur et des données accessibles au public au sein de l’organisation.
 
 ### <a name="set-up-editorial-acronyms"></a>Configurer des acronymes éditoriaux
 
@@ -96,11 +96,11 @@ Microsoft Search garantit que seuls les utilisateurs disposant d’autorisations
 > [!NOTE]
 > Aucune configuration n’est nécessaire pour les acronymes de l’extrait.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Q : comment les données éditoriales et extraites sont-elles classées ?**
 
-**A :** La fonctionnalité classe actuellement les acronymes éditoriaux par-dessus les acronymes.
+**A :** Le classement des résultats peut varier d’une personne à l’autre lorsque les résultats sont personnalisés pour chaque utilisateur.
 
 **Q : combien de temps faut-il pour que les acronymes soient visibles dans Microsoft Search après leur publication ?**
 

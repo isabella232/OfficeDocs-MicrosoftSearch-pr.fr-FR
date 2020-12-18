@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Consulter les rapports d’utilisation de Microsoft Search
-ms.openlocfilehash: f34a82892818f00737d313285e6af7bce7c8a90a
-ms.sourcegitcommit: 3aa3623022270872a2c1ed8b86201c42bc313c1f
+ms.openlocfilehash: 04de0de08423eff1368bc2b77e48d3fc8add038d
+ms.sourcegitcommit: 1d6fcf180f427abf3d8bfa4b8b6129e39f60ceb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49675267"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712610"
 ---
 # <a name="microsoft-search-usage-reports"></a>Rapports d’utilisation de Microsoft Search
 
@@ -30,19 +30,18 @@ Les [rapports d’utilisation de la recherche Microsoft](https://admin.microsoft
 
 Une version précédente de cette page comprenait des données de recherches exécutées pour Microsoft Search dans Bing sur Bing.com. Ces données seront bientôt intégrées dans ces rapports, mais pour le moment, vous pouvez toujours voir ces rapports en cliquant sur le lien situé en bas de la page pour **afficher les requêtes et la distribution d’impression de Bing**.
 
-![Tableau de bord rapports d’utilisation de la recherche](media/usage-reports/usage_reports_v2.png)
+> [!div class="mx-imgBorder"]
+> ![Tableau de bord rapports d’utilisation de la recherche](media/usage-reports/usage_reports_v2.png)
+
 
 ## <a name="overview-of-search-reports"></a>Vue d’ensemble des rapports de recherche
 
-|**Rapport**|**Description**|
+| Rapport | Description |
 |:-----|:-----|
 |Volume de requête|Ce rapport indique le nombre de requêtes de recherche effectuées. Utilisez ce rapport pour identifier les tendances des volumes de requêtes de recherche et déterminer les périodes d’activité de recherche élevée et faible.|
 |Requêtes les plus courantes|Ce rapport indique les requêtes de recherche les plus populaires. Utilisez ce rapport pour comprendre les types d’informations recherchés par vos utilisateurs.|
 |Requêtes abandonnées|Ce rapport affiche les requêtes de recherche populaires qui reçoivent un « clic » faible. Il permet d'identifier les requêtes de recherche pouvant provoquer l'insatisfaction des utilisateurs et d'améliorer la détectabilité du contenu. Vous pouvez ensuite déterminer si la création d’une réponse, comme un signet, ou l’ingestion de nouveaux contenus via un connecteur Graph est la bonne action.|
 |Requêtes sans résultats|Ce rapport indique les requêtes de recherche populaires qui n'ont retourné aucun résultat. Il permet d'identifier les requêtes de recherche pouvant provoquer l'insatisfaction des utilisateurs et d'améliorer la détectabilité du contenu. Vous pouvez ensuite déterminer si la création d’une réponse, comme un signet, ou l’ingestion de nouveaux contenus via un connecteur Graph est la bonne action.|
-
-> [!NOTE]
-> Il y a actuellement un problème avec le CTR (clic à travers le taux) affiché pour les requêtes les plus fréquentes. La valeur affichée dans le tableau de bord est 100 fois supérieure à la valeur réelle. Pour obtenir le temps réel, divisez le numéro du tableau de bord par 100 ou utilisez le bouton Télécharger pour obtenir le rapport dans Excel où la valeur s’affiche correctement.
 
 ## <a name="viewing-reports"></a>Affichage des rapports
 
@@ -52,11 +51,11 @@ Le téléchargement d’un rapport vous permet d’afficher des rapports d’une
 
 Pour afficher les rapports sur les requêtes et les impressions principales de Bing, cliquez sur le lien sur la page.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Lorsque je sélectionne les 31 derniers jours ou les 12 derniers mois, pourquoi dois-je choisir un jour spécifique ou un mois spécifique.**
 
-L’affichage Calendrier aujourd’hui dans les rapports d’utilisation de Microsoft Search est un processus en deux étapes. Sélectionnez d’abord la plage de dates dans la liste déroulante (les 31 derniers mois ou les 12 derniers mois), puis sélectionnez le jour de début ou le mois.
+L’affichage Calendrier, aujourd’hui, dans les rapports d’utilisation de Microsoft Search est un processus en deux étapes. Sélectionnez d’abord la plage de dates dans la liste déroulante (les 31 derniers mois ou les 12 derniers mois), puis sélectionnez le jour de début ou le mois.
 
 Les tables de requête supérieure, abandonnée et ayant échoué affichent des résultats à partir du jour ou du mois que vous choisissez.
 
