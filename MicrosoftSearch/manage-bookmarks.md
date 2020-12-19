@@ -1,8 +1,8 @@
 ---
 title: Gérer des signets
-ms.author: jeffkizn
-author: jeffkizn
-manager: parulm
+ms.author: dawholl
+author: dawholl
+manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Créer et mettre à jour des signets et des méthodes pour modifier en bloc les résultats de signet pour Microsoft Search
-ms.openlocfilehash: 6a678464ec23c2d4c90190b6a02c0a73839b50ee
-ms.sourcegitcommit: 41d28060238091455c7b8b011c67ae60c8a41f1f
+ms.openlocfilehash: fee855e3d3fe780021530488dbaa5a864dcba2d8
+ms.sourcegitcommit: 9daa3c8f6eeab502b28975a308d4d1014a00eb25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49619575"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49718647"
 ---
 # <a name="manage-bookmarks"></a>Gérer des signets
 
@@ -124,7 +124,7 @@ Pour empêcher le moteur de recommandations de publier ou de suggérer un signet
 
 Un signet peut avoir plusieurs mots-clés et les signets peuvent partager le même mot-clé, mais le mot clé réservé ne peut pas être partagé. Un mot clé réservé est un terme unique ou une expression qui déclenche un signet spécifique. Un mot clé réservé ne peut être associé qu’à une seule réponse. Utilisez des mots clés réservés avec parcimonie.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Q : combien de temps faut-il pour qu’un signet soit visible dans Microsoft Search après sa publication ?**
 
@@ -144,7 +144,7 @@ Un signet peut avoir plusieurs mots-clés et les signets peuvent partager le mê
 
 **Q : Comment puis-je identifier un signet recommandé dans les résultats de recherche ou dans le centre d’administration ?**
 
-**A :** Dans les résultats de la recherche, les signets recommandés incluent l’expression « recommandé pour vous » avant l’URL. Dans le centre d’administration, les signets de type extrait auront la valeur « SYSTEM ».
+**A :** Dans les résultats de la recherche, les signets recommandés incluent l’expression « recommandé pour vous » avant l’URL. Dans le centre d’administration, les signets recommandés auront la valeur « SYSTEM ».
 
 **Q : comment l’accès à un signet recommandé est-il géré ?**
 

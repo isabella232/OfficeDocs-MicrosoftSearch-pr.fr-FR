@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ajouter des secteurs verticaux de recherche et personnaliser les résultats de la recherche
-ms.openlocfilehash: 8522a6daf05b718ee6a066272da181be6e95905e
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: edc541e902965472295a835906ef36fcd7fba730
+ms.sourcegitcommit: e1215758fd1325526e4b7b1612c3349137c6fbc3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367486"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49716984"
 ---
 # <a name="customize-the-search-results-page"></a>Personnaliser la page de résultats de recherche
 
@@ -116,13 +116,13 @@ Une fois que vous avez démarré l’Assistant, vous pouvez définir le nom, la 
 
 ## <a name="step-3-view-the-vertical-after-its-enabled"></a>ÉTAPE 3 : afficher le secteur vertical après son activation
 
-Une fois que vous avez activé le secteur vertical, il peut prendre un certain temps avant de pouvoir l’afficher. Si vous ne souhaitez pas attendre une fois l’activation effectué, vous pouvez ajouter **cacheClear = true** à l’URL dans [SharePoint](https://sharepoint.com/) et [Office](https://office.com) pour afficher immédiatement la verticale.
+Une fois que vous avez activé le secteur vertical, il peut prendre un certain temps avant de pouvoir l’afficher. Si vous ne souhaitez pas attendre une fois l’activation effectué, vous pouvez ajouter **cacheClear = true** à l’URL dans [SharePoint](https://sharepoint.com/) et [Office](https://office.com) pour afficher immédiatement la verticale. Pour [Bing](https://bing.com), ajoutez **&features = UNCACHEDVERTICALS** à l’URL de travail vertical Work pour afficher les secteurs verticaux immédiatement. 
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
 Voici une liste des problèmes courants que vous pouvez rencontrer et des actions à résoudre.
 
-|Error  |Action  |
+|Erreur  |Action  |
 |---------|---------|
 | Je vois un message d’erreur « un problème est survenu » sur le secteur vertical. | Les types vertical et de résultat sont tous deux nécessaires pour terminer l’installation. Assurez-vous que vous avez créé les deux pour la même source de contenu. |
 | Je ne vois pas ma disposition de résultats, bien que j’en ai créé un. | Ces paramètres sont généralement mis en cache. Patientez quelques minutes, puis réessayez.        |
