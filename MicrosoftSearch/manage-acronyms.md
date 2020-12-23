@@ -1,8 +1,8 @@
 ---
 title: Gérer les réponses des acronymes dans Microsoft Search
-ms.author: jeffkizn
-author: jeffkizn
-manager: parulm
+ms.author: rakkum
+author: rakeshMSFT
+manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créer et mettre à jour des réponses d’acronymes dans Microsoft Search
-ms.openlocfilehash: 9de9de8287e3ddf206f93f53573922f3cf526580
-ms.sourcegitcommit: ad225af81060a2e3d7e4c953eeb6977d54698b60
+ms.openlocfilehash: ff79e3d741e10d401873c29d86739e61c9f53329
+ms.sourcegitcommit: e6ceb07cae208648dadd5452a077414ab5a4513f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709681"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "49728005"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Gérer les acronymes Answers in Microsoft Search
 
@@ -48,21 +48,21 @@ Dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com
 
 Microsoft Search interroge deux sources de données pour fournir des informations d’acronymes aux recherches des utilisateurs :
 
-1. **Acronymes éditorial**. Fourni par les administrateurs informatiques dans le [Centre d’administration](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms).
-2. **Acronymes** de extrait. Extrait par Microsoft Search de la messagerie et des documents personnels de l’utilisateur et des données accessibles au public au sein de l’organisation.
+1. **Administrateurs-organisée**. Fourni par les administrateurs informatiques dans le [Centre d’administration](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms).
+2. **Système-organisée**. Découvertes par Microsoft Search à partir des courriers électroniques et des documents des utilisateurs et des données accessibles au public au sein de l’organisation.
 
-### <a name="set-up-editorial-acronyms"></a>Configurer des acronymes éditoriaux
+### <a name="set-up-admin-curated-acronyms"></a>Configurer des acronymes organisée par l’administrateur
 
-Les administrateurs de recherche peuvent configurer des acronymes éditoriaux sous l' [onglet acronymes](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) dans le  [Centre d’administration de Microsoft Search](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch). Vous pouvez ajouter des acronymes à partir de n’importe quel site ou référentiel interne vers le centre d’administration. Les acronymes éditoriaux peuvent être ajoutés à l’état **publié** ou **Brouillon** :
+Les administrateurs de recherche peuvent ajouter des acronymes dans l' [onglet acronymes](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) du  [Centre d’administration de Microsoft Search](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch). Vous pouvez ajouter des acronymes à partir de n’importe quel site ou référentiel interne vers le centre d’administration. Ces acronymes peuvent être ajoutés à l’état **publié** ou **Brouillon** :
 
-**État publié**. Les acronymes sont disponibles pour les employés de l’organisation via Microsoft Search.
+**État publié**. Les acronymes sont disponibles pour les utilisateurs de l’organisation via Microsoft Search.
 
 > [!NOTE]
 > Il peut falloir jusqu’à trois jours pour que les acronymes ajoutés à l’État publié soient disponibles dans Microsoft Search.
 
-**État Brouillon**. Si les administrateurs souhaitent examiner les réponses des acronymes avant de les rendre disponibles dans Microsoft Search, ils peuvent ajouter les acronymes à l’état Brouillon. Les acronymes ajoutés à l’état Brouillon ne sont pas disponibles dans Microsoft Search. Les administrateurs doivent ajouter les acronymes à l’État publié pour les rendre disponibles.
+**État Brouillon**. Si vous souhaitez examiner un acronyme avant de le rendre disponible dans Microsoft Search, vous pouvez l’ajouter à l’état Brouillon. Les acronymes de l’état Brouillon n’apparaîtront pas dans les résultats de la recherche. Vous devrez déplacer l’acronyme vers l’État publié pour qu’il apparaisse dans les résultats de la recherche.
 
-Les administrateurs peuvent ajouter des acronymes individuellement ou les importer par bloc dans un fichier CSV. Téléchargez un fichier CSV avec les champs indiqués dans le tableau suivant :
+Vous pouvez ajouter des acronymes individuellement ou les importer par bloc dans un fichier CSV. Téléchargez un fichier CSV avec les champs indiqués dans le tableau suivant :
 
 | Acronyme (obligatoire) | Expansion (obligatoire) | Description  | Source | État (obligatoire) |
 | --------- | --------- | ---------- | --------- |--------- |
@@ -83,26 +83,26 @@ Les administrateurs peuvent ajouter des acronymes individuellement ou les import
 - **Brouillon**. Ajoute l’acronyme à l’état Brouillon.
 - **Publié**. Ajoute l’acronyme à l’État publié et le rend disponible dans Microsoft Search.
 
-### <a name="mined-acronyms"></a>Acronymes de extrait
+### <a name="system-curated-acronyms"></a>Acronymes organisée par le système
 
-Il peut être difficile pour les administrateurs d’ajouter tous les acronymes utilisés dans une organisation aux réponses. Cette fonctionnalité peut trouver des acronymes que les administrateurs de recherche ne tiennent pas compte de. Pour ce faire, Microsoft Search explore également des acronymes de ces sources :
+Il peut être difficile pour les administrateurs d’ajouter tous les acronymes utilisés dans une organisation aux réponses. Cette fonctionnalité peut trouver des acronymes que les administrateurs de recherche ne tiennent pas compte de. Pour ce faire, Microsoft Search identifie et organise les acronymes de ces sources :
 
-- Les e-mails des utilisateurs.
-- Documents dans [SharePoint](https://products.office.com/sharepoint/collaboration), [Microsoft OneDrive]( https://onedrive.live.com/about/)et [Microsoft OneNote](https://www.onenote.com/).
-- Documents publics au sein de l’organisation auxquels les utilisateurs ont accès dans SharePoint, OneDrive ou OneNote.
+- Courriels des utilisateurs
+- Documents dans [SharePoint](https://products.office.com/sharepoint/collaboration), [Microsoft OneDrive]( https://onedrive.live.com/about/)et [Microsoft OneNote](https://www.onenote.com/)
+- Documents publics au sein de l’organisation auxquels les utilisateurs ont accès dans SharePoint, OneDrive ou OneNote
 
-Microsoft Search garantit que seuls les utilisateurs disposant d’autorisations et d’accès à un document peuvent voir les acronymes qu’il contient. Lorsqu’un acronyme provient de la boîte aux lettres d’un utilisateur, seul cet utilisateur peut voir cet acronyme.
+Microsoft Search garantit que seuls les utilisateurs disposant d’autorisations d’accès à un document peuvent voir les acronymes qui sont découverts à partir de celui-ci. Lorsqu’un acronyme est trouvé dans la boîte aux lettres d’un utilisateur, seul cet utilisateur peut voir cet acronyme.
 
 > [!NOTE]
-> Aucune configuration n’est nécessaire pour les acronymes de l’extrait.
+> Aucune configuration n’est nécessaire pour les acronymes organisée par l’administrateur.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
-**Q : comment les données éditoriales et extraites sont-elles classées ?**
+**Q : comment les données ordonnées par l’administrateur et celles du système sont-elles classées ?**
 
-**A :** Le classement des résultats peut varier d’une personne à l’autre lorsque les résultats sont personnalisés pour chaque utilisateur.
+**A :** Le classement des résultats peut varier d’une personne à l’autre lorsque les résultats sont personnalisés pour chaque utilisateur. Aucune de ces catégories n’aura toujours priorité sur l’autre.
 
-**Q : combien de temps faut-il pour que les acronymes soient visibles dans Microsoft Search après leur publication ?**
+**Q : combien de temps faut-il pour que les acronymes administratifs soient visibles dans Microsoft Search après leur publication ?**
 
 **A :**  Trois jours sont nécessaires pour que les acronymes ajoutés à l’État publié soient disponibles dans Microsoft Search.
 
@@ -110,19 +110,19 @@ Microsoft Search garantit que seuls les utilisateurs disposant d’autorisations
 
 **R**: pour obtenir les réponses des acronymes, les utilisateurs doivent entrer des modèles de requête spécifiques dans une zone de **recherche** [Bing](https://bing.com), [SharePoint](https://products.office.com/sharepoint/collaboration)ou [Office 365](https://Office.com) .
 
-**Q : combien de temps faut-il pour que les acronymes s’affichent lorsque vous recevez ou envoyez un nouveau message ou un nouveau document ?**
+**Q : combien de temps faut-il pour que les acronymes système s’affichent lorsque vous recevez ou envoyez un nouveau message électronique ou un nouveau document ?**
 
-**A :** Les acronymes extraites d’un nouveau message électronique ou d’un nouveau document prennent jusqu’à sept jours pour apparaître dans les résultats de Microsoft Search.
+**A :** Les acronymes figurant dans un nouveau message électronique ou dans un nouveau document prennent jusqu’à sept jours pour apparaître dans les résultats de Microsoft Search.
 
 **Q : est-ce que les documents doivent être dans un format spécifique pour que l’exploration les récupère ?**
 
 **A :** Nbre. Nous prenons en charge tous les types de fichiers, à l’exception des fichiers d’image, de dossiers et zip.
 
-**Q : les acronymes de Microsoft mien seront-ils issus de documents dans toutes les langues ?**
+**Q : Microsoft va-t-il découvrir des acronymes de documents dans toutes les langues ?**
 
 **A**: Microsoft prend uniquement en charge l’exploration des documents en anglais. La prise en charge d’autres langues sera ajoutée en plusieurs phases.
 
-**Q : que se passe-t-il si mon organisation ne souhaite pas afficher d’acronymes extrait ? Puis-je arrêter l’affichage des acronymes d’extrait dans les résultats de recherche ?**
+**Q : que se passe-t-il si mon organisation ne souhaite pas afficher d’acronymes système ? Puis-je arrêter l’affichage de ce type d’acronyme dans mes résultats de recherche ?**
 
-**A**: pour désactiver l’affichage des acronymes d’extrait dans les résultats de la recherche, créez un ticket de support client en suivant les instructions indiquées sur [contacter le support technique pour les produits métiers](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support).
-Une fois que vous avez créé un ticket de support, il prend jusqu’à 48 heures pour que les acronymes d’extrait s’affichent dans les résultats de la recherche.
+**A**: pour désactiver l’affichage des acronymes par le système dans les résultats de la recherche, créez un ticket de support client en suivant les instructions indiquées sur [contacter le support technique pour les produits métiers](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support).
+Une fois que vous avez créé un ticket de support, il prend jusqu’à 48 heures pour que les acronymes du système cessent de s’afficher dans les résultats de la recherche.
