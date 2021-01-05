@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Configurer le connecteur de partage de fichiers pour Microsoft Search
-ms.openlocfilehash: a95cfe90ca35a385bb9ce3a4c565c18c5a42ec80
-ms.sourcegitcommit: 69a1c544cc8db364991cb58d7818d7158ff108b8
+ms.openlocfilehash: bf9fb730abd4ca6e42b681893525bbe3dd8a1419
+ms.sourcegitcommit: 249f41723dd6fda1e93ee1a8f3f7571ef066454b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49408932"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750896"
 ---
 # <a name="file-share-connector"></a>Connecteur de partage de fichiers
 
@@ -63,3 +63,7 @@ Dans l' **écran gérer le schéma** , vous avez la possibilité de modifier les
 ## <a name="set-the-refresh-schedule"></a>Définir la planification d’actualisation
 
 L’intervalle de planification des actualisations par défaut recommandé est de 15 minutes, mais vous pouvez le modifier en fonction de vos préférences.
+
+## <a name="result-layout"></a>Disposition des résultats
+
+Nous vous recommandons d’utiliser la disposition des résultats par défaut pour afficher les résultats de votre connecteur de FileShare car elle comporte des icônes et des contrôles appropriés pour vous aider à accéder au chemin d’accès du fichier. Si vous créez une nouvelle disposition de résultats, elle remplace la valeur par défaut.

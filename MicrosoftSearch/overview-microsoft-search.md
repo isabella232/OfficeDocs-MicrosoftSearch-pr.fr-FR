@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez une vue d’ensemble de ce que fait Microsoft Search, de ses avantages et des applications qui prennent en charge Microsoft Search.
-ms.openlocfilehash: fc21328f9a72ac77e37ae366bd138770509d6080
-ms.sourcegitcommit: d40d44d01b27dfed92577446fe7a30008b28deb4
+ms.openlocfilehash: f06aff0ea0407983a40f60e03337d4ed281a53ad
+ms.sourcegitcommit: d6f8628be8108e6e9d6fb9efb7bd06bc2fcd561d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43914488"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749385"
 ---
 # <a name="overview-of-microsoft-search"></a>Vue d’ensemble de Recherche Microsoft
 
@@ -40,7 +40,7 @@ Lorsque les utilisateurs cliquent dans la zone de **recherche** , la recherche s
 
 ![Captures d’écran de la zone Recherche Microsoft avec une requête et des résultats suggérés](media/SERP_text_520.png)
 
-Si les suggestions de la zone de recherche ne correspondent pas à ce que les utilisateurs recherchent, **Entrez** ouvre la liste complète des résultats. Ils peuvent utiliser les métadonnées telles que : qui a modifié l’élément et quand, où se trouvent les éléments, mais aussi afficher un aperçu pour déterminer si c’est ce qu’ils cherchent.
+Si les suggestions de la zone de recherche ne correspondent pas à ce que les utilisateurs recherchent, **Entrez** ouvre la liste complète des résultats. Ils peuvent utiliser des métadonnées telles que la dernière personne qui a modifié l’élément et quand l’élément est localisé, ainsi que pour en afficher un aperçu afin de déterminer s’il s’agit de ce qu’il recherche.
 
 ![Page de résultats des captures d’écran de Recherche Microsoft](media/search_box.png)
 
