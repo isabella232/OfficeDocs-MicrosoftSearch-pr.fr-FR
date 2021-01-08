@@ -9,6 +9,7 @@
 ## [Signets](manage-bookmarks.md)
 ## [Plans d’étage](manage-floorplans.md)
 ## [Emplacements](manage-locations.md)
+## [Power BI](manage-powerbi.md)
 ## [Questions et réponses](manage-qas.md)
 # Connecteurs (préversion)
 ## [Vue d’ensemble](connectors-overview.md)
