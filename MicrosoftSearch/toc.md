@@ -18,7 +18,7 @@
 ## Connecteurs Graph par Microsoft
 ### [Vue d’ensemble de la configuration](configure-connector.md)
 ### [Mapper les identités Active Directory non Azure (préversion)](map-non-aad.md)
-### [Mapper vos identités Azure AD ](map-aad.md)
+### [Mapper les identités Active Directory Azure (préversion)](map-aad.md)
 ### Informations spécifiques au connecteur
 #### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 #### [Azure DevOps (préversion)](azure-devops-connector.md)
@@ -28,6 +28,7 @@
 #### [Salesforce (préversion)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
 ## [Gérer vos connexions](manage-connector.md)
+## [Détails et erreur de la connexion](connector-details-errors.md)
 ## [Licences](licensing.md)
 ## [Commentaires](connectors-feedback.md)
 ## [Conditions d’utilisation](terms-of-use.md)
@@ -44,7 +45,7 @@
 ## Recherche Microsoft dans Bing
 ### [Sécurité et confidentialité](security-for-search.md)
 ### [Ajouter une zone de recherche à votre site intranet](add-a-search-box-to-your-intranet-site.md)
-### [Microsoft Edge en tant que navigateur par défaut](set-default-browser.md)
+### [Microsoft Edge en tant que navigateur par défaut](/deployedge/edge-default-browser)
 ### [Bing en tant que moteur de recherche par défaut](set-default-search-engine.md)
 ### [Bing.com en tant que page d’accueil par défaut](set-default-homepage.md)
 ### [Guide d’adoption par les utilisateurs](user-adoption-guide.md)
