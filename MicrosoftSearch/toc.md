@@ -11,11 +11,11 @@
 ## [Emplacements](manage-locations.md)
 ## [Power BI](manage-powerbi.md)
 ## [Questions et réponses](manage-qas.md)
-# Connecteurs (préversion)
+# Connecteurs
 ## [Vue d’ensemble](connectors-overview.md)
 ## [Préversion](connectors-preview.md)
 ## [galerie Connecteurs](connectors-gallery.md)
-## Connecteurs Graph par Microsoft
+## Configurer les connecteurs avec Microsoft
 ### [Vue d’ensemble de la configuration](configure-connector.md)
 ### [Mapper les identités Active Directory non Azure (préversion)](map-non-aad.md)
 ### [Mapper les identités Active Directory Azure (préversion)](map-aad.md)
@@ -30,7 +30,6 @@
 ## [Gérer vos connexions](manage-connector.md)
 ## [Détails et erreur de la connexion](connector-details-errors.md)
 ## [Licences](licensing.md)
-## [Commentaires](connectors-feedback.md)
 ## [Conditions d’utilisation](terms-of-use.md)
 # Personnaliser et configurer
 ## [Gérer des secteurs verticaux et des types de résultats](customize-search-page.md)
