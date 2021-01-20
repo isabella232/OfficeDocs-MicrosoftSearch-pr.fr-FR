@@ -1,5 +1,5 @@
 ---
-title: Connecteur MediaWiki pour Microsoft Search
+title: Connecteur MediaWiki pour Microsoft Search (recherche Microsoft)
 ms.author: monaray
 author: monaray97
 manager: mnirkhe
@@ -11,45 +11,57 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurer le connecteur MediaWiki pour Microsoft Search
-ms.openlocfilehash: 7f6b34dcafc4b82ab3778ec1d7a4921383e44a44
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+description: Configurer le connecteur MediaWiki pour Microsoft Search (recherche Microsoft)
+ms.openlocfilehash: 7a22fcc84f6f435bf438aa027c42c76eb8be1eaf
+ms.sourcegitcommit: 39bf9f0db7f9bff2ab82c99a059b0ddcf1c98f5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367639"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905950"
 ---
 # <a name="mediawiki-connector"></a>Connecteur MediaWiki
 
-Avec le connecteur MediaWiki, votre organisation peut découvrir et indexer des données à partir d’un wiki créé à l’aide du logiciel MediaWiki. Ce connecteur indexe le contenu spécifié dans Microsoft Search et prend en charge les analyses périodiques pour maintenir l’index à jour.
+Avec le connecteur MediaWiki, votre organisation peut découvrir et indexer des données à partir d’un wiki créé à l’aide du logiciel MediaWiki. Ce connecteur indexe le contenu spécifié dans Microsoft Search (recherche Microsoft) et prend en charge les analyse périodiques pour maintenir l’index à jour.
 
-Cet article est destiné aux administrateurs 365 de Microsoft ou toute personne qui configure, exécute et surveille un connecteur MediaWiki. Elle explique comment configurer les fonctionnalités de connecteur et de connecteur, ainsi que les restrictions et les techniques de résolution des problèmes.
+Cet article est réservé aux administrateurs Microsoft 365 ou à toute personne qui configure, exécute et surveille un connecteur MediaWiki Graph. Il complète les instructions générales fournies dans l’article [Configurer votre connecteur Graph.](configure-connector.md) Si vous ne l’avez pas déjà fait, lisez l’intégralité de l’article Configurer votre connecteur Graph pour comprendre le processus d’installation général.
 
-## <a name="connect-to-a-data-source"></a>Se connecter à une source de données
+Chaque étape du processus d’installation est répertoriée ci-dessous avec une note qui indique que vous devez suivre les instructions d’installation générales ou d’autres instructions qui s’appliquent uniquement aux connecteurs MediaWiki Graph. Cet article inclut également des informations [sur les limitations](#limitations) des connecteurs MediaWiki Graph. 
 
-Entrez l’URL et les informations d’identification de votre MediaWiki pour authentifier la connexion. Vous aurez besoin des informations suivantes : **ID** de client, **ID de ressource**, **ID client** et **clé secrète client**.
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajoutez un connecteur Graph dans le Centre d’administration Microsoft 365.
+Suivez les instructions d’installation générales.
 
-## <a name="manage-search-permissions"></a>Gérer les autorisations de recherche
+## <a name="step-2-name-the-connection"></a>Étape 2 : Nommez la connexion.
+Suivez les instructions d’installation générales.
+ 
+## <a name="step-3-configure-the-connection-settings"></a>Étape 3 : Configurer les paramètres de connexion.
+Entrez votre **URL Wiki** et choisissez le **type d’authentification** dans le menu déroulant des options. Les options sont **None**, **Basic** et **OAuth 2.0 AAD**.
 
-Le connecteur MediaWiki prend uniquement en charge les autorisations de recherche visibles par **tous les utilisateurs**. Les données indexées apparaissent dans les résultats de la recherche et sont visibles par tous les utilisateurs de l’organisation.
+Si vous choisissez **De base** comme type d’authentification, vous devez fournir le nom d’utilisateur et le mot de **passe** du wiki. 
 
-## <a name="assign-property-labels"></a>Affecter des étiquettes de propriété
+Si vous choisissez **OAuth 2.0 AAD** comme type d’authentification, vous devez fournir l’ID de ressource de l’installation wiki.  Vous devez également fournir **l’ID client** et la secret **client** générés sur la page d’inscription de l’application AAD. 
 
-Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Si cette étape n’est pas obligatoire, le fait d’avoir des étiquettes de propriété améliore la pertinence de la recherche et garantit des résultats de recherche plus précis pour les utilisateurs finaux.
+## <a name="step-4-manage-search-permissions"></a>Étape 4 : Gérer les autorisations de recherche
+Le connecteur MediaWiki prend uniquement en charge les autorisations de recherche visibles par **Tout le monde.** Les données indexées apparaissent dans les résultats de la recherche et sont visibles par tous les utilisateurs de l’organisation.
 
-## <a name="manage-schema"></a>Gérer le schéma
+## <a name="step-5-assign-property-labels"></a>Étape 5 : Attribuer des étiquettes de propriété
+Suivez les instructions d’installation générales.
 
-Dans l' **écran gérer le schéma** , vous avez la possibilité de modifier les attributs de schéma (**Queryable**, pouvant faire l’objet d’une **recherche**, l' **extraction** et l' **refinable**) associés aux propriétés, d’ajouter des alias facultatifs et de choisir la propriété **content** .
+## <a name="step-6-manage-schema"></a>Étape 6 : Gérer le schéma
+Suivez les instructions d’installation générales.
 
-## <a name="set-the-refresh-schedule"></a>Définir la planification d’actualisation
+## <a name="step-7-choose-refresh-settings"></a>Étape 7 : Choisir les paramètres d’actualisation
+Suivez les instructions d’installation générales.
 
-Cette planification actualise les données indexées, de sorte que les modifications apportées au wiki sont reflétées dans Microsoft Search. Toutes les nouvelles pages, pages supprimées, contenu de page ou modifications de métadonnées apparaissent dans les résultats de la recherche après l’intervalle d’actualisation spécifié. La durée de l’analyse dépend de la taille du wiki. Actuellement, le connecteur analyse environ 50 pages par minute.
+## <a name="step-8-review-connection"></a>Étape 8 : Examiner la connexion
+Suivez les instructions d’installation générales.
+
+<!---## Troubleshooting-->
+<!---To be added-->
 
 ## <a name="limitations"></a>Limites
+Le connecteur MediaWiki présente les limitations ci-après dans la version préliminaire :
 
-Le connecteur MediaWiki présente ces limitations dans la version d’évaluation :
-
-* Prend en charge uniquement les wikis sur le Cloud.
-* Prend en charge uniquement les 2,0 de base ou OAuth avec Azure Active Directory ou l’authentification Azure.
-* Ne prend pas en charge la sélection d’espace de noms pour l’indexation. Indexe uniquement les espaces de noms **principal**, de **catégorie** et de **fichier** .
-* Ne prend pas en charge les listes de contrôle d’accès (ACL). Ainsi, les pages indexées sont visibles par tous les utilisateurs de l’organisation.
+* Prend en charge uniquement les wikis basés sur le cloud.
+* Prend en charge uniquement Basic ou OAuth 2.0 avec l’authentification Azure Active Directory ou Azure.
+* Ne prend pas en charge la sélection d’espace de noms pour l’indexation. Indexe uniquement les espaces de noms Principal, Catégorie et Fichier.
+* Ne prend pas en charge les listes de contrôle d’accès. Par conséquent, les pages indexées sont visibles par tous les utilisateurs de l’organisation.

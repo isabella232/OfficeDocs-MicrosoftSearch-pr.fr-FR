@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble des connecteurs Microsoft Graph pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 677c91f121185faa6dc96f80c517917f429a3ab0
-ms.sourcegitcommit: 469be70ad295a5837978d75babf5243115257f77
+ms.openlocfilehash: a45a007bbb2774caaaac90fc1549c8ba634b0580
+ms.sourcegitcommit: 39bf9f0db7f9bff2ab82c99a059b0ddcf1c98f5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49847518"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905951"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Vue d’ensemble des connecteurs Microsoft Graph
 
@@ -30,12 +30,13 @@ Le reste de cet article est destiné à aider les administrateurs Microsoft 365 
 * [Quelles sources de données peuvent être connectées à Microsoft Search (recherche Microsoft) ?](#what-data-sources-can-be-connected-to-microsoft-search)
 * [Comment gérer mes connexions ?](#how-do-i-manage-my-connections)
 * [Quelles sont les conditions d’utilisation et les conditions d’utilisation des licences pour les connecteurs Graph ?](#what-are-the-license-requirements-and-terms-of-use-for-graph-connectors)
+* [Quelles sont les fonctionnalités d’aperçu ?](#what-are-the-preview-features)
 * [Comment personnaliser et configurer les résultats de la recherche ?](#how-do-i-customize-and-configure-search-results)
 * [Comment effectuer une recherche dans les données de mon connecteur à partir d’une application personnalisée ?](#how-do-i-search-my-connector-data-from-a-custom-application)
 
-<!---Modify to another note that is more accurate--->
+<!---Modify to another note that is more accurate after rollout completion--->
 > [!IMPORTANT]
-> Les connecteurs Microsoft Graph et les API de recherche Microsoft sont désormais généralement disponibles. Les premiers déploiements seront destinés aux clients configurés pour une publication ciblée. Si vous souhaitez utiliser un connecteur Graph dans votre client, les utilisateurs et les administrateurs doivent opter pour [la version ciblée.](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true)
+> Les connecteurs Microsoft Graph et les API de recherche Microsoft sont désormais généralement disponibles. Le premier déploiement est prévu pour durer jusqu’en février 2021. En attendant, seuls les clients et [](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true) les utilisateurs qui ont choisi la version ciblée pourront utiliser les connecteurs Graph. Une fois le déploiement terminé pour tous les clients, l’utilisation du quota d’index à partir du contenu des connecteurs est soumise à facturation. Pour plus [d’informations, voir Exigences](licensing.md) et tarifs en matière de licences.
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
@@ -93,6 +94,17 @@ Vous avez besoin d’une licence Microsoft 365 ou Office 365 valide et d’un qu
 
 Pour plus d’informations, voir [Conditions d’utilisation](licensing.md) et conditions [d’utilisation des licences.](terms-of-use.md)
 
+## <a name="what-are-the-preview-features"></a>Quelles sont les fonctionnalités d’aperçu ?
+
+Bien que les connecteurs Microsoft Graph et les API de recherche Microsoft soient désormais généralement disponibles, plusieurs fonctionnalités sont en prévisualisation.
+
+L’ensemble des connecteurs et des fonctionnalités de la prévisualisation comprend les éléments suivants :
+
+* [Connecteur Azure DevOps](azure-devops-connector.md)
+* [Connecteur Salesforce](salesforce-connector.md)
+* [Connecteur ServiceNow avec](servicenow-connector.md) autorisations de recherche qui utilisent des ACA sources
+* [Gérer le cluster de résultat](result-cluster.md)
+
 ## <a name="how-do-i-customize-and-configure-search-results"></a>Comment personnaliser et configurer les résultats de la recherche ?
 
 Il existe plusieurs façons de personnaliser et de configurer les résultats de la recherche. Pour en savoir plus, consultez les articles suivants :
@@ -104,7 +116,7 @@ Il existe plusieurs façons de personnaliser et de configurer les résultats de 
 
 ## <a name="how-do-i-search-my-connector-data-from-a-custom-application"></a>Comment effectuer une recherche dans les données de mon connecteur à partir d’une application personnalisée ?
 
-Une fois les données personnalisées indexées, les développeurs peuvent [interroger ces données.](https://docs.microsoft.com/graph/search-concept-custom-types) Vous pouvez afficher vos données dans n’importe quelle application. Pour plus d’informations, voir [la vue d’ensemble de l’API recherche Microsoft dans Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
+Une fois les données personnalisées indexées, les développeurs peuvent [interroger ces données.](https://docs.microsoft.com/graph/search-concept-custom-types) Vous pouvez afficher vos données dans n’importe quelle application. Pour plus d’informations, voir la [vue d’ensemble de l’API recherche Microsoft dans Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
 
 ## <a name="limitations"></a>Limites
 

@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Détails et erreurs des connecteurs
-ms.openlocfilehash: 23b2f0745a09bffbc5ac6ad9c2163c7a5b63cb51
-ms.sourcegitcommit: d22fe2a34d7efe2dd5bbb456f0d00eb5f6c7608c
+ms.openlocfilehash: 79f6404670e6c5a655559efac7235b1e7813f8e4
+ms.sourcegitcommit: 39bf9f0db7f9bff2ab82c99a059b0ddcf1c98f5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49880599"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905974"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
-# <a name="view-connection-details-and-errors-for-microsoft-search"></a>Afficher les détails et les erreurs de connexion pour Microsoft Search (recherche Microsoft)
+# <a name="view-connection-details-and-errors"></a>Afficher les détails et les erreurs de connexion
 
-Pour accéder à vos connecteurs et les gérer, vous devez être désigné en tant qu’administrateur de recherche pour votre client. Contactez votre administrateur client pour vous fournir le rôle d’administrateur de recherche.
+Pour accéder à vos connecteurs et les gérer, vous devez être désigné comme administrateur de recherche pour votre client. Contactez votre administrateur client pour vous fournir le rôle d’administrateur de recherche.
 
 Accédez à [l’onglet Connecteurs](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) dans le [Centre d’administration Microsoft 365.](https://admin.microsoft.com)
 
@@ -31,7 +31,7 @@ Vous pouvez afficher les détails et les erreurs de connexion lorsque vous cliqu
 
 ## <a name="view-your-last-crawl-info"></a>Afficher vos dernières informations d’analyse
 
-Une fois la première analyse incrémentielle ou complète terminée, les dernières valeurs de données d’analyse sont affichées sous le dernier en-tête d’analyse dans le volet de détails. Si aucune dernière analyse n’a été en cours d’analyse, aucune information ne s’y trouvait sous le dernier en-tête d’analyse. Ces informations sur la dernière analyse vous aideront à obtenir des informations sur la façon dont l’analyse a été effectuée et à effectuer les étapes nécessaires, le cas échéant.
+Une fois la première analyse incrémentielle ou complète terminée, les dernières valeurs de données d’analyse sont affichées sous le dernier en-tête d’analyse dans le volet de détails. S’il n’y a pas eu de dernière analyse en cours d’analyse, aucune information ne s’y trouvait sous le dernier en-tête d’analyse. Ces informations sur la dernière analyse vous aideront à obtenir des informations sur la façon dont l’analyse a été effectuée et à effectuer les étapes nécessaires, le cas échéant.
 
 Les dernières valeurs d’analyse suivantes seront disponibles pour chaque connexion :
 
@@ -72,12 +72,12 @@ Code d’erreur | Message d’erreur | Solution
 1012 | L’authentification à votre connexion a échoué en raison d’un mode d’authentification non pris en compte. | Modifiez la connexion pour mettre à jour les paramètres d’authentification de votre connexion.
 2001 | L’indexation est limitée en raison d’un grand nombre de mises à jour dans la file d’attente. En fonction de la file d’attente, la fin des mises à jour peut prendre un certain temps. | Veuillez patienter jusqu’à ce que la file d’attente soit effacée.
 2002 | L’indexation a échoué en raison d’une mise en forme d’élément non pris en compte. | Pour plus d’informations, voir la documentation spécifique au connecteur.
-2003 | L’indexation a échoué en raison d’un contenu d’élément non pris en compte. | Pour plus d’informations, voir la documentation spécifique au connecteur.
+2003 | L’indexation a échoué en raison du contenu d’élément non pris en compte. | Pour plus d’informations, voir la documentation spécifique au connecteur.
 2004 | L’indexation a échoué en raison d’un élément ou d’une taille de fichier non pris en compte. | Pour plus d’informations, voir la documentation spécifique au connecteur.
 2005 | L’indexation a échoué car l’URI est trop long. | Pour plus d’informations, voir la documentation spécifique au connecteur.
 2006 | Échec du mappage utilisateur en raison d’une formule de mappage non valide ou d’aucun utilisateur Azure AD avec cette propriété. | Essayez de supprimer et de recréer la connexion avec une formule de mappage différente. 
-2007 | Cet élément ne s’affichera pas dans Recherche Microsoft, car certains utilisateurs ou groupes sans autorisation d’affichage de cet élément n’ont pas pu être indexés. | 
+2007 | Cet élément n’est pas affiché dans Recherche Microsoft, car certains utilisateurs ou groupes sans autorisation d’affichage de cet élément n’ont pas pu être indexés. | 
 2008 | Les connexions ne peuvent pas avoir de groupes non Azure AD avec plus de 50 000 membres. | Essayez de supprimer des utilisateurs d’un groupe ou essayez de supprimer des éléments ACLed avec ce groupe de l’ingestion et de recréer la connexion.
-2009 | L’indexation de groupe non Azure AD est temporairement suspendue en raison d’un grand nombre de demandes. L’indexation reprend lorsque le système termine le traitement de ces demandes. Consultez-la ultérieurement. | 
+2009 | L’indexation de groupe non Azure AD est temporairement suspendue en raison d’un grand nombre de demandes. L’indexation reprend lorsque le système termine le traitement de ces demandes. Veuillez revenir plus tard. | 
 2010 | Cette connexion n’est plus valide en raison d’une mise à jour réalisée par Microsoft. Supprimez la connexion et créez-en une. | Supprimez la connexion et créez-en une.
 5000 | Un problème s’est passé. Si cela se poursuit, contactez le support technique. |
