@@ -1,8 +1,8 @@
 ---
-title: Connecteur Salesforce pour Microsoft Search
-ms.author: rusamai
-author: rsamai
-manager: jameslau
+title: Connecteur Salesforce Graph pour Microsoft Search (recherche Microsoft)
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,129 +11,164 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurer le connecteur Salesforce pour Microsoft Search
-ms.openlocfilehash: 149d1d9a297e09e9b895aeb0947c7ff4a3cbdf84
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+description: Configurer le connecteur Salesforce Graph pour Microsoft Search (recherche Microsoft)
+ms.openlocfilehash: 0b80bf7d3296236887d1cc1bf8e75da976b6a1f1
+ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367648"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50085007"
 ---
-# <a name="salesforce-connector-preview"></a>Connecteur Salesforce (aperçu)
+<!---Previous ms.author: rusamai --->
 
-Avec le connecteur de graphique Salesforce, votre organisation peut indexer des contacts, des opportunités, des prospects et des objets de comptes dans votre instance Salesforce. Une fois que vous avez configuré le connecteur et le contenu d’index à partir de Salesforce, les utilisateurs finaux peuvent rechercher ces éléments à partir de n’importe quel client Microsoft Search.
+# <a name="salesforce-graph-connector-preview"></a>Connecteur Salesforce Graph (prévisualisation)
 
-Cet article est destiné aux administrateurs [365 de Microsoft](https://www.microsoft.com/microsoft-365) ou toute personne qui configure, exécute et surveille un connecteur Salesforce. Elle explique comment configurer les fonctionnalités de connecteur et de connecteur, ainsi que les restrictions et les techniques de résolution des problèmes.
+Le connecteur Salesforce Graph permet à votre organisation d’indexer les objets Contacts, Opportunités, Prospects et Comptes dans votre instance Salesforce. Après avoir configuré le connecteur et indexé le contenu à partir de Salesforce, les utilisateurs finaux peuvent rechercher ces éléments à partir de n’importe quel client Recherche Microsoft.
+
+> [!NOTE]
+> Lisez [**l’article Installation de votre connecteur Graph**](configure-connector.md) pour comprendre le processus d’installation général des connecteurs Graph.
+
+Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur ServiceNow Graph. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur Salesforce Graph. Cet article inclut également des informations sur [les limitations.](#limitations)
 
 >[!IMPORTANT]
->Le connecteur de graphique Salesforce prend actuellement en charge l’été le 19 ou une version ultérieure.
+>Le connecteur Salesforce Graph prend actuellement en charge Summer '19 ou une ultérieure.
 
-## <a name="connection-settings"></a>Paramètres de connexion
+## <a name="before-you-get-started"></a>Avant de commencer
 
-Pour vous connecter à votre instance Salesforce, vous avez besoin de l’URL de votre instance de Salesforce, de l’ID client et de la clé secrète client pour l’authentification OAuth. Les étapes suivantes expliquent comment vous ou votre administrateur Salesforce pouvez obtenir ces informations à partir de votre compte Salesforce :
+Pour vous connecter à votre instance Salesforce, vous avez besoin de votre URL d’instance Salesforce, de l’ID client et de la secret client pour l’authentification OAuth. Les étapes suivantes expliquent comment vous ou votre administrateur Salesforce pouvez obtenir ces informations à partir de votre compte Salesforce :
 
-- Connectez-vous à votre instance Salesforce et accédez à la configuration.
+- Connectez-vous à votre instance Salesforce et allez au programme d’installation
 
-- Accédez à applications-> gestionnaire d’applications.
+- Accédez à Apps -> App Manager.
 
-- Sélectionnez **nouvelle application connectée**.
+- Sélectionnez **Nouvelle application connectée.**
 
-- Complétez la section API comme suit :
+- Remplissez la section API comme suit :
 
-    - Activez la case à cocher **activer les paramètres OAuth**.
+    - Activez la case à **cocher Activer les paramètres Oauth.**
 
-    - Spécifiez l’URL de rappel comme suit : [https://gcs.office.com/v1.0/admin/oauth/callback](https://gcs.office.com/v1.0/admin/oauth/callback)
+    - Spécifiez l’URL de rappel comme : [https://gcs.office.com/v1.0/admin/oauth/callback](https://gcs.office.com/v1.0/admin/oauth/callback)
 
-    - Sélectionnez ces étendues OAuth requises. 
+    - Sélectionnez ces étendues OAuth requises.
 
-        - Accéder aux données et les gérer (API) 
+        - Accéder à vos données (api) et les gérer
 
-        - Effectuer des demandes en votre nom à tout moment (refresh_token, offline_access) 
+        - Effectuer des demandes en votre nom à tout moment (refresh_token, offline_access)
 
-    - Activez la case à cocher **exiger une clé secrète pour le flux de serveur Web**.
+    - Cochez la case exiger **une secret pour le flux de serveur web.**
 
     - Enregistrez l’application.
     
-      ![Section API dans l’instance Salesforce une fois que l’administrateur a entré toutes les configurations requises mentionnées ci-dessus.](media/salesforce-connector/sf1.png)
+      > [!div class="mx-imgBorder"]
+      > ![Section API dans l’instance Salesforce une fois que l’administrateur a entré toutes les configurations requises répertoriées ci-dessus.](media/salesforce-connector/sf1.png)
 
-- Copiez la clé de consommateur et la clé secrète consommateur. Ceux-ci seront utilisés comme ID client et clé secrète client lorsque vous configurez les paramètres de connexion de votre connecteur Graph dans le portail d’administration Microsoft 365.
+- Copiez la clé grand public et la clé secrète consommateur. Ces informations sont utilisées comme ID client et secret client lorsque vous configurez les paramètres de connexion de votre connecteur Graph dans le portail d’administration Microsoft 365.
 
-  ![Résultats retournés par la section API dans l’instance Salesforce une fois que l’administrateur a soumis toutes les configurations requises. La clé de client est située en haut de la colonne de gauche et la clé secrète du consommateur est située en haut de la colonne de droite.](media/salesforce-connector/clientsecret.png)
-- Avant de fermer votre instance de Salesforce, effectuez les étapes suivantes pour vous assurer que les jetons d’actualisation n’expirent pas :
-    - Accédez à applications-> App Manager
-    - Recherchez l’application que vous venez de créer et sélectionnez la liste déroulante sur la droite. Sélectionnez **gérer**
-    - Sélectionnez **modifier les stratégies**
-    - Pour la stratégie de jeton d’actualisation, sélectionnez le **jeton d’actualisation est valide jusqu’à révoqué** .
+  > [!div class="mx-imgBorder"]
+  > ![Résultats renvoyés par la section API dans l’instance Salesforce une fois que l’administrateur a soumis toutes les configurations requises. La clé consommateur se trouve en haut de la colonne gauche et la clé secrète consommateur en haut de la colonne de droite.](media/salesforce-connector/clientsecret.png)
+  
+- Avant de fermer votre instance Salesforce, suivez ces étapes pour vous assurer que les jetons d’actualisation n’expirent pas :
+    - Go to Apps -> App Manager
+    - Recherchez l’application que vous avez créée et sélectionnez la drop-down sur la droite. Sélectionnez **Gérer**
+    - Sélectionner des **stratégies de modification**
+    - Pour la stratégie de jeton d’actualisation, **sélectionnez Le jeton d’actualisation est valide jusqu’à ce qu’il soit révoqué**
 
-  ![Sélectionnez la stratégie d’actualisation des jetons nommée « actualisation du jeton est valide jusqu’à révoqué »](media/salesforce-connector/oauthpolicies.png)
+  > [!div class="mx-imgBorder"]
+  > ![Sélectionnez la stratégie de jeton d’actualisation nommée « Jeton d’actualisation est valide jusqu’à ce qu’elle soit révoquée »](media/salesforce-connector/oauthpolicies.png)
 
-Vous pouvez désormais utiliser le [Centre d’administration M365](https://admin.microsoft.com/) pour terminer le reste du processus de configuration de votre connecteur Graph.  
+Vous pouvez désormais utiliser le [Centre d’administration M365](https://admin.microsoft.com/) pour terminer le reste du processus de configuration de votre connecteur Graph.
 
-Configurez les paramètres de connexion de votre connecteur Graph comme suit :
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
 
-- Pour l’URL d’instance, utilisez https://[domaine]. My. salesforce. com où Domain serait le domaine Salesforce de votre organisation. 
-- Entrez l’ID client et la clé secrète client que vous avez obtenus à partir de votre instance Salesforce et sélectionnez connexion.
-- S’il s’agit de la première fois que vous tentez de vous connecter avec ces paramètres, une fenêtre contextuelle s’affiche pour vous demander de vous connecter à la force de connexion avec votre nom d’utilisateur et votre mot de passe d’administrateur. La capture d’écran ci-dessous montre le menu contextuel. Entrez vos informations d’identification et sélectionnez connexion.
+Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-  ![Ouverture de session contextuelle demandant le nom d’utilisateur et le mot de passe.](media/salesforce-connector/sf4.png)
+## <a name="step-2-name-the-connection"></a>Étape 2 : Nommer la connexion
+
+Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## <a name="step-3-configure-the-connection-settings"></a>Étape 3 : Configurer les paramètres de connexion
+
+Pour l’URL de l’instance, utilisez https://[domaine].my.salesforce.com où le domaine serait le domaine Salesforce de votre organisation.
+
+Entrez l’ID client et la secret client que vous avez obtenus à partir de votre instance Salesforce, puis sélectionnez Se connectez.
+
+La première fois que vous tentez de vous connecter à l’aide de ces paramètres, une fenêtre vous demande de vous connecter à Salesforce avec votre nom d’utilisateur et votre mot de passe d’administrateur. La capture d’écran ci-dessous montre la fenêtre pop-up. Entrez vos informations d’identification, puis sélectionnez « Se connecter ».
+
+  ![Fenêtre de connexion pour demander le nom d’utilisateur et le mot de passe.](media/salesforce-connector/sf4.png)
 
   >[!NOTE]
-  >Si la fenêtre contextuelle ne s’affiche pas, elle peut être bloquée dans votre navigateur, vous devez donc autoriser les fenêtres publicitaires intempestives et les redirections.
+  >Si la fenêtre pop-up n’apparaît pas, elle risque d’être bloquée dans votre navigateur. Vous devez donc autoriser les fenêtres pop-up et les redirections.
 
-  >[!NOTE]
-  >Si votre organisation utilise l’authentification unique (SSO), vous pouvez sélectionner **utiliser un domaine personnalisé** dans le coin inférieur droit de l’interface de connexion. Entrez le domaine, puis cliquez sur **Continuer**. Il accède à la page de connexion spécifique de votre organisation où vous pouvez vous connecter à l’aide de l’authentification unique.
+Vérifiez que la connexion a réussi en recherchant une bannière verte qui indique « Connexion réussie », comme indiqué dans la capture d’écran ci-dessous.
 
-- Vérifiez que la connexion a réussi en recherchant une bannière verte indiquant « connexion réussie » comme illustré dans la capture d’écran ci-dessous.
+  > [!div class="mx-imgBorder"]
+  > ![Capture d’écran de la connexion réussie. La bannière verte qui indique « Connexion réussie » se trouve sous le champ de votre URL d’instance Salesforce](media/salesforce-connector/sf5.png)
 
-  ![Capture d’écran de la connexion réussie. La bannière verte indiquant « connexion réussie » se trouve sous le champ de l’URL de votre instance de salesforce.](media/salesforce-connector/sf5.png)
+## <a name="step-4-manage-search-permissions"></a>Étape 4 : Gérer les autorisations de recherche
 
-## <a name="manage-search-permissions"></a>Gérer les autorisations de recherche
-Vous devrez choisir les utilisateurs qui verront les résultats de la recherche à partir de cette source de données. Si vous autorisez uniquement certains utilisateurs Azure Active Directory (Azure AD) ou non Azure AD à voir les résultats de la recherche, vous devrez mapper les identités.
+Vous devez choisir les utilisateurs qui voient les résultats de la recherche à partir de cette source de données. Si vous autorisez uniquement certains utilisateurs d’Azure Active Directory (Azure AD) ou non Azure AD à voir les résultats de la recherche, assurez-vous de ma cartographier les identités.
 
-### <a name="select-permissions"></a>Sélectionner des autorisations
-Vous pouvez choisir d’ingérer les listes de contrôle d’accès (ACL) à partir de votre instance Salesforce ou vous pouvez autoriser tous les membres de votre organisation à consulter les résultats de la recherche à partir de cette source de données. Les listes de Contrã’le d’accès peuvent inclure des identités AAD (Azure Active Directory) (utilisateurs fédérés d’Azure AD à la force de la force), des identités non Azure AD (utilisateurs de la force de la force de l’offre correspondante dans Azure AD) ou les deux.
+## <a name="step-4a-select-permissions"></a>Étape 4a : Sélectionner les autorisations
 
-![Sélectionnez l’écran autorisations qui a été complété par un administrateur. L’administrateur a sélectionné l’option « uniquement les personnes ayant accès à cette source de données » et a également sélectionné « AAD » dans un menu déroulant des types d’identité.](media/salesforce-connector/sf6.png)
+Vous pouvez choisir d’ingèrer des listes de contrôle d’accès à partir de votre instance Salesforce ou autoriser tous les membres de votre organisation à voir les résultats de la recherche à partir de cette source de données. Les ALA peuvent inclure des identités Azure Active Directory (AAD) (utilisateurs fédérés d’Azure AD à Salesforce), des identités non Azure AD (utilisateurs Salesforce natifs ayant des identités correspondantes dans Azure AD) ou les deux.
 
-### <a name="map-non-aad-identities"></a>Mapper des identités non AAD 
-Si vous avez choisi d’une liste de contrôle d’accès à partir de votre instance Salesforce et que vous avez sélectionné « non AAD » pour le type d’identité, voir [mapper vos identités non Azure ad](map-non-aad.md) pour obtenir des instructions sur le mappage des identités.
+>[!NOTE]
+>Si vous utilisez un fournisseur d’identité tiers comme Ping ID ou secureAuth, vous devez sélectionner « non-AAD » comme type d’identité.
 
-### <a name="map-aad-identities"></a>Mapper des identités AAD
-Si vous avez choisi d’une liste de contrôle d’accès à partir de votre instance Salesforce et que vous avez sélectionné « AAD » pour le type d’identité, voir [mapper vos identités Azure ad](map-aad.md) pour obtenir des instructions sur le mappage des identités. Pour en savoir plus sur la configuration de l’authentification unique Azure AD pour Salesforce, reportez-vous à ce [didacticiel](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/salesforce-tutorial).
+> [!div class="mx-imgBorder"]
+> ![Écran Sélectionner les autorisations qui ont été effectuées par un administrateur. L’administrateur a sélectionné l’option « Uniquement les personnes ayant accès à cette source de données » et a également sélectionné « AAD » dans un menu déroulant de types d’identité.](media/salesforce-connector/sf6.png)
 
-## <a name="assign-property-labels"></a>Affecter des étiquettes de propriété 
-Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Si cette étape n’est pas obligatoire, le fait d’avoir des étiquettes de propriété améliore la pertinence de la recherche et garantit des résultats de recherche plus précis pour les utilisateurs finaux. Par défaut, certaines étiquettes comme « titre », « URL », « CreatedBy » et « LastModifiedBy » ont déjà reçu des propriétés source.
+Si vous avez choisi d’ing d’une ACL à partir de votre instance Salesforce et que vous avez sélectionné « non-AAD » pour le type d’identité, voir Mappage de vos [identités non Azure AD](map-non-aad.md) pour obtenir des instructions sur le mappage des identités.
 
-![Écran affecter des étiquettes de propriétés affichant les propriétés de la source par défaut.](media/salesforce-connector/sf8.png)
+## <a name="step-4b-map-aad-identities"></a>Étape 4b : Maser les identités AAD
 
-## <a name="manage-schema"></a>Gérer le schéma
-Vous pouvez sélectionner les propriétés sources à indexer pour qu’elles puissent apparaître dans les résultats de la recherche. Par défaut, l’Assistant Connexion sélectionne un schéma de recherche en fonction d’un ensemble de propriétés source. Vous pouvez le modifier en activant les cases à cocher de chaque propriété et attribut dans la page schéma de recherche. Les attributs de schéma de recherche incluent la recherche, la requête, l’extraction et l’affinement. Affiner vous permet de définir les propriétés qui peuvent être utilisées ultérieurement en tant qu’affinements personnalisés ou filtres dans l’expérience de recherche.  
+Si vous avez choisi d’ing d’une ACL à partir de votre instance Salesforce et que vous avez sélectionné « AAD » pour le type d’identité, voir Mappage de vos [identités Azure AD](map-aad.md) pour obtenir des instructions sur le mappage des identités. Pour savoir comment configurer Azure AD SSO pour Salesforce, consultez ce [didacticiel.](https://docs.microsoft.com/azure/active-directory/saas-apps/salesforce-tutorial)
 
-![Sélectionnez le schéma pour chaque propriété source. Les options sont Query, Search, Retrieve et refinent](media/salesforce-connector/sf9.png)
+## <a name="step-5-assign-property-labels"></a>Étape 5 : Attribuer des étiquettes de propriété
 
-## <a name="set-the-refresh-schedule"></a>Définir la planification d’actualisation
+Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Bien que cette étape ne soit pas obligatoire, le fait d’avoir des étiquettes de propriétés améliorera la pertinence de la recherche et garantira de meilleurs résultats de recherche pour les utilisateurs finaux. Par défaut, certaines étiquettes telles que « Titre », « URL », « CreatedBy » et « LastModifiedBy » se sont déjà vu attribuer des propriétés source.
 
-Le connecteur Salesforce prend uniquement en charge l’actualisation des planifications pour les analyses complètes actuellement.
+## <a name="step-6-manage-schema"></a>Étape 6 : Gérer le schéma
+
+Vous pouvez sélectionner les propriétés source qui doivent être indexées afin qu’elles s’afficheront dans les résultats de la recherche. L’Assistant Connexion sélectionne par défaut un schéma de recherche basé sur un ensemble de propriétés source. Vous pouvez le modifier en élecntant les cases à cocher de chaque propriété et attribut de la page de schéma de recherche. Les attributs de schéma de recherche incluent recherche, requête, récupération et affiner.
+Affiner vous permet de définir les propriétés qui peuvent être utilisées ultérieurement en tant qu’affinements ou filtres personnalisés dans l’expérience de recherche.  
+
+> [!div class="mx-imgBorder"]
+> ![Sélectionnez le schéma pour chaque propriété source. Les options sont Requête, Recherche, Récupérer et Affiner](media/salesforce-connector/sf9.png)
+
+## <a name="step-7-set-the-refresh-schedule"></a>Étape 7 : Définir la planification d’actualisation
+
+Le connecteur Salesforce prend uniquement en charge les planifications d’actualisation pour les analyse complètes actuellement.
 
 >[!IMPORTANT]
->Une analyse complète recherche les objets et les utilisateurs supprimés qui ont été précédemment synchronisés avec l’index de recherche Microsoft.
+>Une analyse complète recherche des objets et des utilisateurs supprimés qui ont été précédemment synchronisés avec l’index recherche Microsoft.
 
 La planification recommandée est d’une semaine pour une analyse complète.
 
+## <a name="step-8-review-connection"></a>Étape 8 : Examiner la connexion
+
+Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+<!---## Troubleshooting-->
+<!---Insert troubleshooting recommendations for this data source-->
+
 ## <a name="limitations"></a>Limites
 
-- Le connecteur Graph ne prend actuellement pas en charge le partage et le partage basés sur un apex basé sur les territoires à l’aide de groupes personnels de salesforce.
-- Il existe un bogue connu dans l’API Salesforce que le connecteur Graph utilise lorsque les valeurs par défaut à l’échelle de l’organisation privée pour les prospects ne sont pas honorées actuellement.  
-- Si un champ a une sécurité au niveau champ (FLS) définie pour un profil, le connecteur Graph n’admettra pas ce champ aux profils de cette organisation Salesforce. Par conséquent, les utilisateurs ne pourront pas Rechercher des valeurs de ces champs, ni s’afficher dans les résultats.  
-- Dans l’écran gérer le schéma, ces noms de propriétés standard courants sont répertoriés une fois et la sélection est effectuée pour les rendre interutilisables, pouvant faire l’objet d’une recherche et d’une extraction s’appliquent à tout ou aucun.
+- Le connecteur Graph ne prend actuellement pas en charge le partage et le partage basés sur un territoire à l’aide de groupes personnels de Salesforce.
+- Il existe un bogue connu dans l’API Salesforce que le connecteur Graph utilise, où les valeurs par défaut privées à l’échelle de l’organisation pour les prospects ne sont pas honorées actuellement.  
+- Si un champ a la sécurité au niveau du champ (FLS) définie pour un profil, le connecteur Graph n’ing aura pas ce champ pour les profils dans cette organisation Salesforce. Par conséquent, les utilisateurs ne pourront pas rechercher sur les valeurs de ces champs, ni s’afficher dans les résultats.  
+- Dans l’écran Gérer le schéma, ces noms de propriétés standard communs sont répertoriés une seule fois, les options sont **Requête,** **Rechercher,** Récupérer **et** **Affiner,** et s’appliquent à tout ou aucun.
     - Nom
-    - Url 
+    - Url
     - Description
     - Fax
     - Téléphone
     - MobilePhone
     - E-mail
-    - Tapez
+    - Type
     - Titre
     - AccountId
     - AccountName
@@ -142,9 +177,9 @@ La planification recommandée est d’une semaine pour une analyse complète.
     - AccountOwnerUrl
     - Propriétaire
     - OwnerUrl
-    - CreatedBy 
-    - CreatedByUrl 
-    - LastModifiedBy 
-    - LastModifiedByUrl 
+    - CreatedBy
+    - CreatedByUrl
+    - LastModifiedBy
+    - LastModifiedByUrl
     - LastModifiedDate
-    - ObjectName 
+    - ObjectName

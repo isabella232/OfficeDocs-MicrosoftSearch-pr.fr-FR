@@ -1,8 +1,8 @@
 ---
-title: Connecteur de sites Web d’entreprise pour Microsoft Search
-ms.author: monaray
-author: monaray97
-manager: mnirkhe
+title: Connecteur Graph pour les sites web d’entreprise pour Microsoft Search (recherche Microsoft)
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,101 +11,127 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurer le connecteur de sites Web d’entreprise pour Microsoft Search
-ms.openlocfilehash: 443e903e0fa371d2a056fd4bf06310eb2627b11c
-ms.sourcegitcommit: 031e7c595496d9faed9038725b04f3c8b5f9ccbd
+description: Configurer le connecteur Graph des sites web d’entreprise pour Microsoft Search (recherche Microsoft)
+ms.openlocfilehash: bf706399ec55fafbe96ce53622ce8502c81c2190
+ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604772"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084883"
 ---
+<!---Previous ms.author: monaray --->
+
 <!-- markdownlint-disable no-inline-html -->
-# <a name="enterprise-websites-connector"></a>Connecteur de sites Web d’entreprise
 
-Avec le connecteur de sites Web d’entreprise, votre organisation peut indexer des articles et du **contenu à partir de ses sites Web internes**. Une fois que vous avez configuré le connecteur et synchronisé le contenu à partir du site Web, les utilisateurs finaux peuvent rechercher ce contenu à partir de n’importe quel client Microsoft Search.
+# <a name="enterprise-websites-graph-connector"></a>Connecteur Graph pour les sites web d’entreprise
 
-Cet article est destiné aux administrateurs [365 de Microsoft](https://www.microsoft.com/microsoft-365) ou toute personne qui configure, exécute et surveille un connecteur de sites Web d’entreprise. Elle explique comment configurer les fonctionnalités de connecteur et de connecteur, ainsi que les restrictions et les techniques de résolution des problèmes.  
+Le connecteur Graph des sites web d’entreprise permet à votre organisation d’indexer des articles et du contenu à partir de ses sites web **internes.** Après avoir configuré le connecteur et synchronisé le contenu à partir du site web, les utilisateurs finaux peuvent rechercher ce contenu à partir de n’importe quel client Recherche Microsoft.
 
-## <a name="connection-settings"></a>Paramètres de connexion
+> [!NOTE]
+> Lisez [**l’article Configurer votre connecteur Graph**](configure-connector.md) pour comprendre le processus d’installation général des connecteurs Graph.
 
-Pour vous connecter à votre source de données, vous devez renseigner l’URL racine du site Web, sélectionner une source d’analyse et le type d’authentification que vous souhaitez utiliser : aucun, authentification de base ou OAuth 2,0 avec [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/). Une fois ces informations terminées, cliquez sur tester la connexion pour vérifier vos paramètres.
+Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur ServiceNow Graph. Il complète le processus d’installation général et affiche des instructions qui s’appliquent uniquement au connecteur ServiceNow Graph. Cet article inclut également des informations [sur la résolution des problèmes](#troubleshooting) et les [limitations.](#limitations)
+
+<!---## Before you get started-->
+
+<!---Insert "Before you get started" recommendations for this data source-->
+
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
+
+Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## <a name="step-2-name-the-connection"></a>Étape 2 : Nommer la connexion
+
+Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## <a name="step-3-configure-the-connection-settings"></a>Étape 3 : Configurer les paramètres de connexion
+
+Pour vous connecter à votre source de données, vous devez remplir l’URL racine du site web, sélectionner une source d’analyse et le type d’authentification que vous souhaitez utiliser : Aucune, Authentification de base ou OAuth 2.0 avec [Azure Active Directory (Azure AD).](https://docs.microsoft.com/azure/active-directory/) Une fois ces informations terminées, sélectionnez Connexion de test pour vérifier vos paramètres.
 
 ### <a name="url"></a>URL
 
-Utilisez le champ URL pour spécifier la racine du site Web que vous souhaitez analyser. Le connecteur de sites Web d’entreprise utilisera cette URL comme point de départ et suivra tous les liens de cette URL pour son analyse.
+Utilisez le champ URL pour spécifier la racine du site web que vous souhaitez analyser. Le connecteur de sites web d’entreprise utilisera cette URL comme point de départ et suivra tous les liens de cette URL pour son analyse.
 
-### <a name="crawl-mode-cloud-or-on-premises-preview"></a>Mode d’analyse : Cloud ou local (aperçu)
+### <a name="crawl-mode-cloud-or-on-premises-preview"></a>Mode d’analyse : cloud ou local (prévisualisation)
 
-Le mode d’analyse détermine le type de sites Web que vous souhaitez indexer, sur le Cloud ou sur site. Pour vos sites Web Cloud, sélectionnez **Cloud** comme mode d’analyse.
+Le mode d’analyse détermine le type de sites web que vous souhaitez indexer, en nuage ou en local. Pour vos sites web cloud, sélectionnez **Cloud** comme mode d’analyse.
 
-De plus, le connecteur prend désormais en charge l’analyse des sites Web locaux. Ce mode est en mode aperçu. Pour accéder à vos données locales, vous devez d’abord installer et configurer l’agent connecteur Graph. Pour en savoir plus, consultez la rubrique [Graph Connector agent](https://docs.microsoft.com/microsoftsearch/on-prem-agent).
+En outre, le connecteur prend désormais en charge l’analyse des sites web locaux. Ce mode est en prévisualisation. Pour accéder à vos données sur site, vous devez d’abord installer et configurer l’agent de connecteur Graph. Pour en savoir plus, consultez [l’agent de connecteur Graph.](https://docs.microsoft.com/microsoftsearch/on-prem-agent)
 
-Pour vos sites Web locaux, sélectionnez **agent** comme mode d’analyse et, dans le champ **agent local** , sélectionnez l’agent connecteur Graph que vous avez installé et configuré précédemment.  
+Pour vos sites web locaux, sélectionnez **Agent** comme mode d’analyse et, dans le champ **Agent** local, choisissez l’agent de connecteur Graph que vous avez installé et configuré précédemment.  
 
-![Capture d’écran du volet Paramètres de connexion pour Enterprise Web Connector](media/enterprise-web-connector/connectors-enterpriseweb-settings.png)
+> [!div class="mx-imgBorder"]
+> ![Capture d’écran du volet Paramètres de connexion pour le connecteur Web d’entreprise](media/enterprise-web-connector/connectors-enterpriseweb-settings.png)
 
 ### <a name="authentication"></a>Authentification
 
-L’authentification de base nécessite un nom d’utilisateur et un mot de passe. Créez ce compte bot à l’aide du [Centre d’administration Microsoft 365](https://admin.microsoft.com).
+L’authentification de base nécessite un nom d’utilisateur et un mot de passe. Créez ce compte de bot à l’aide du [Centre d’administration Microsoft 365.](https://admin.microsoft.com)
 
-OAuth 2,0 avec [Azure ad](https://docs.microsoft.com/azure/active-directory/) requiert un ID de ressource, un ID client et une clé secrète client. OAuth 2,0 fonctionne uniquement avec le mode Cloud.
+OAuth 2.0 avec [Azure AD](https://docs.microsoft.com/azure/active-directory/) nécessite un ID de ressource, un ID client et une secret client. OAuth 2.0 fonctionne uniquement avec le mode Cloud.
 
-Pour plus d’informations, consultez la rubrique [autoriser l’accès aux applications Web Azure Active Directory à l’aide du flux d’octroi de code OAuth 2,0](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code). Inscrivez-vous avec les valeurs suivantes :
+Pour plus d’informations, voir Autoriser l’accès aux applications web Azure Active Directory à l’aide du flux d’octroi de [code OAuth 2.0.](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code) Inscrivez-vous avec les valeurs suivantes :
 
-**Nom :** Microsoft Search <br/>
-**Redirect_URI :**`https://gcs.office.com/v1.0/admin/oauth/callback`
+**Nom :** Recherche Microsoft <br/>
+**Redirect_URI :**`https://gcs.office.com/v1.0/admin/oauth/callback`
 
-Pour obtenir les valeurs de la ressource, client_id et client_secret, accédez à **utiliser le code d’autorisation pour demander un jeton d’accès** sur la page Web URL de redirection.
+Pour obtenir les valeurs de la ressource, client_id et client_secret, accédez à Utiliser le **code** d’autorisation pour demander un jeton d’accès sur la page web de l’URL de redirection.
 
-Pour plus d’informations, consultez [la rubrique QuickStart : inscrire une application avec la plateforme d’identité Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+Pour plus d’informations, voir Démarrage rapide : inscrire [une application avec la plateforme d’identités Microsoft.](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
 
-## <a name="support-for-robotstxt"></a>Prise en charge des robots.txt
+## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>Étape 3a : Ajouter des URL à exclure (restrictions d’analyse facultatives)
 
-Le connecteur vérifie s’il existe un fichier de robots.txt pour votre site racine et, s’il en existe un, il suit et respecte les instructions contenues dans ce fichier. Si vous ne souhaitez pas que le connecteur analyse certaines pages ou certains répertoires de votre site, vous pouvez appeler ces pages ou répertoires dans les déclarations « Disallow » figurant dans votre fichier robots.txt.
+Il existe deux façons d’empêcher l’analyse des pages : les empêcher dans votre fichier robots.txt ou les ajouter à la liste d’exclusions.
 
-## <a name="add-urls-to-exclude"></a>Ajouter des URL à exclure
+### <a name="support-for-robotstxt"></a>Prise en charge des robots.txt
 
-Vous pouvez éventuellement créer une **liste d’exclusion** pour exclure certaines URL de l’analyse si ce contenu est sensible ou inutile à l’analyse. Pour créer une liste d’exclusion, parcourez l’URL racine. Vous avez la possibilité d’ajouter les URL exclues à la liste lors du processus de configuration.
+Le connecteur vérifie s’il existe un fichier robots.txt pour votre site racine et, s’il en existe un, il suit et respecte les instructions trouvées dans ce fichier. Si vous ne souhaitez pas que le connecteur analyse certaines pages ou répertoires sur votre site, vous pouvez appeler ces pages ou répertoires dans les déclarations « Disallow » dans votre fichier robots.txt.
 
-## <a name="manage-search-permissions"></a>Gérer les autorisations de recherche
+### <a name="add-urls-to-exclude"></a>Ajouter des URL à exclure
 
-Le connecteur de sites Web d’entreprise ne prend en charge que les autorisations de recherche visibles par **tous**. Les données indexées apparaissent dans les résultats de la recherche et sont visibles par tous les utilisateurs de l’organisation.
+Vous pouvez éventuellement créer une liste **d’exclusions** pour exclure certaines URL de l’analyse si ce contenu est sensible ou ne vaut pas la peine d’être analyser. Pour créer une liste d’exclusions, parcourez l’URL racine. Vous pouvez ajouter les URL exclues à la liste pendant le processus de configuration.
 
-## <a name="assign-property-labels"></a>Affecter des étiquettes de propriété
+## <a name="step-4-assign-property-labels"></a>Étape 4 : Attribuer des étiquettes de propriété
 
-Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Si cette étape n’est pas obligatoire, le fait d’avoir des étiquettes de propriété améliore la pertinence de la recherche et garantit des résultats de recherche plus précis pour les utilisateurs finaux.
+Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Bien que cette étape ne soit pas obligatoire, l’emploi d’étiquettes de propriétés améliorera la pertinence de la recherche et garantira des résultats de recherche plus précis pour les utilisateurs finaux.
 
-## <a name="manage-schema"></a>Gérer le schéma
+## <a name="step-5-manage-schema"></a>Étape 5 : Gérer le schéma
 
-Dans l' **écran gérer le schéma** , vous avez la possibilité de modifier les attributs de schéma (**Queryable**, pouvant faire l’objet d’une **recherche**, l' **extraction** et l' **refinable**) associés aux propriétés, d’ajouter des alias facultatifs et de choisir la propriété **content** .
+Dans  l’écran Gérer le schéma, vous pouvez modifier les attributs de schéma (les options sont **Requête,** **Rechercher,** Récupérer et **Affiner)** associés aux propriétés, ajouter des alias facultatifs et choisir la propriété **Content.**
 
-## <a name="set-the-refresh-schedule"></a>Définir la planification d’actualisation
+## <a name="step-6-manage-search-permissions"></a>Étape 6 : Gérer les autorisations de recherche
 
-Le connecteur de sites Web d’entreprise ne prend en charge qu’une actualisation complète. Cela signifie que le connecteur analysera de tout le contenu du site Web pendant chaque actualisation. Pour vous assurer que le connecteur dispose de suffisamment de temps pour analyser le contenu, nous vous recommandons de définir un intervalle de planification d’actualisation important. Nous vous recommandons d’utiliser une actualisation planifiée entre une et deux semaines.
+Le connecteur de sites web d’entreprise prend uniquement en charge les autorisations de recherche visibles par **Tout le monde.** Les données indexées apparaissent dans les résultats de la recherche et sont visibles par tous les utilisateurs de l’organisation.
+
+## <a name="step-7-set-the-refresh-schedule"></a>Étape 7 : Définir la planification de l’actualisation
+
+Le connecteur de sites web d’entreprise prend uniquement en charge une actualisation complète. Cela signifie que le connecteur va réacrader tout le contenu du site web pendant chaque actualisation. Pour vous assurer que le connecteur obtient suffisamment de temps pour analyser le contenu, nous vous recommandons de définir un intervalle de planification d’actualisation important. Nous vous recommandons une actualisation programmée entre une et deux semaines.
+
+## <a name="step-8-review-connection"></a>Étape 8 : Examiner la connexion
+
+Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
-Lors de la lecture du contenu du site Web, l’analyse peut rencontrer des erreurs source, qui sont représentées par les codes d’erreur détaillés ci-dessous. Pour plus d’informations sur les types d’erreurs, accédez à la page des détails de l' **erreur** après avoir sélectionné la connexion. Cliquez sur le **code d’erreur** pour afficher des erreurs plus détaillées. Pour en savoir plus, consultez [la rubrique gérer votre connecteur](https://docs.microsoft.com/microsoftsearch/manage-connector) .
+Lors de la lecture du contenu du site web, l’analyse peut rencontrer des erreurs sources, qui sont représentées par les codes d’erreur détaillés ci-dessous. Pour obtenir plus d’informations sur les types d’erreurs, allez à la page détails des **erreurs** après avoir sélectionné la connexion. Sélectionnez le **code d’erreur** pour voir les erreurs plus détaillées. Reportez-vous [également à Gérer votre connecteur pour](https://docs.microsoft.com/microsoftsearch/manage-connector) en savoir plus.
 
  Code d’erreur détaillé | Message d’erreur
  --- | ---
- 6001 | Le site qui est essayé d’indexer est inaccessible
- 6005 | La page source qui est tentée d’indexer a été bloquée par la configuration par robots.txt.
+ 6001 | Le site en cours d’indexation n’est pas accessible
+ 6005 | La page source en cours d’indexation a été bloquée par la configuration robots.txt'indexation.
  6008 | Impossible de résoudre le DNS
- 6009 | Pour toutes les erreurs côté client (sauf HTTP 404, 408), consultez la rubrique Codes d’erreur HTTP 4xx pour plus d’informations.
- 6013 | La page source en cours d’indexation est introuvable. (Erreur HTTP 404)
- 6018 | La page source ne répond pas et la demande a expiré. (Erreur HTTP 408)
- 6021 | La page source essayée d’index n’a pas de contenu textuel sur la page.
- 6023 | La page source qui est tentée d’index n’est pas prise en charge (pas une page HTML)
- 6024 | La page source qui est tentée d’indexer a un contenu non pris en charge.
+ 6009 | Pour toutes les erreurs côté client (à l’exception de HTTP 404, 408), reportez-vous aux codes d’erreur HTTP 4xx pour plus d’informations.
+ 6013 | La page source en cours d’indexation est in trouvée. (Erreur HTTP 404)
+ 6018 | La page source ne répond pas et la demande a pris fin. (Erreur HTTP 408)
+ 6021 | La page source tentée d’indexer n’a pas de contenu textuel sur la page.
+ 6023 | La page source tentée d’indexer n’est pas pris en charge (pas une page HTML)
+ 6024 | La page source en cours d’indexation a un contenu non pris en compte.
 
-* Les erreurs 6001-6013 se produisent lorsque la source de données n’est pas accessible à cause d’un problème réseau ou lorsque la source de données elle-même est supprimée, déplacée ou renommée. Vérifiez si les détails de la source de données fournis sont toujours valides.
-* Les erreurs 6021-6024 se produisent lorsque la source de données contient du contenu non textuel sur la page ou lorsque la page n’est pas au format HTML. Vérifiez la source de données et ajoutez cette page dans la liste d’exclusions ou ignorez l’erreur.
+* Les erreurs 6001-6013 se produisent lorsque la source de données n’est pas accessible en raison d’un problème réseau ou lorsque la source de données elle-même est supprimée, déplacée ou renommée. Vérifiez si les détails de la source de données fournis sont toujours valides.
+* Les erreurs 6021-6024 se produisent lorsque la source de données contient du contenu non textuel sur la page ou lorsque la page n’est pas un code HTML. Vérifiez la source de données et ajoutez cette page dans la liste d’exclusions ou ignorez l’erreur.
 
 ## <a name="limitations"></a>Limites
 
-Le connecteur de sites Web d’entreprise ne prend pas en charge la recherche de données sur des **pages Web dynamiques**. Exemples de ces pages Web dans des systèmes de gestion de contenu [tels que le](https://www.atlassian.com/software/confluence) [Unily](https://www.unily.com/) et les bases de données qui stockent le contenu du site Web.
-
-## <a name="next-steps"></a>Étapes suivantes
-
-Une fois la connexion publiée, vous devez personnaliser la page des résultats de la recherche. Pour en savoir plus sur la personnalisation des résultats de recherche, voir [personnaliser la page des résultats de la recherche](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page).
+Le connecteur de sites web d’entreprise ne prend pas en charge la recherche de données sur **des pages web dynamiques.** Des exemples de ces pages web sont stockés dans des systèmes de gestion de contenu tels que [Cas](https://www.atlassian.com/software/confluence) et [Unily,](https://www.unily.com/) ou des bases de données qui stockent du contenu de site web.
