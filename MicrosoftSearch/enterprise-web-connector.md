@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur Graph des sites web d’entreprise pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: bf706399ec55fafbe96ce53622ce8502c81c2190
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 526b36a798f50bed457832d576ffebd15820184d
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084883"
+ms.locfileid: "50097429"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -30,7 +30,7 @@ Le connecteur Graph des sites web d’entreprise permet à votre organisation d�
 > [!NOTE]
 > Lisez [**l’article Configurer votre connecteur Graph**](configure-connector.md) pour comprendre le processus d’installation général des connecteurs Graph.
 
-Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur ServiceNow Graph. Il complète le processus d’installation général et affiche des instructions qui s’appliquent uniquement au connecteur ServiceNow Graph. Cet article inclut également des informations [sur la résolution des problèmes](#troubleshooting) et les [limitations.](#limitations)
+Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur de sites web d’entreprise. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur de sites web d’entreprise. Cet article inclut également des informations [sur la résolution des problèmes](#troubleshooting) et les [limitations.](#limitations)
 
 <!---## Before you get started-->
 
@@ -58,7 +58,7 @@ Utilisez le champ URL pour spécifier la racine du site web que vous souhaitez a
 
 Le mode d’analyse détermine le type de sites web que vous souhaitez indexer, en nuage ou en local. Pour vos sites web cloud, sélectionnez **Cloud** comme mode d’analyse.
 
-En outre, le connecteur prend désormais en charge l’analyse des sites web locaux. Ce mode est en prévisualisation. Pour accéder à vos données sur site, vous devez d’abord installer et configurer l’agent de connecteur Graph. Pour en savoir plus, consultez [l’agent de connecteur Graph.](https://docs.microsoft.com/microsoftsearch/on-prem-agent)
+En outre, le connecteur prend désormais en charge l’analyse des sites web locaux. Ce mode est en prévisualisation. Pour accéder à vos données sur site, vous devez d’abord installer et configurer l’agent du connecteur Graph. Pour en savoir plus, consultez [l’agent de connecteur Graph.](https://docs.microsoft.com/microsoftsearch/on-prem-agent)
 
 Pour vos sites web locaux, sélectionnez **Agent** comme mode d’analyse et, dans le champ **Agent** local, choisissez l’agent de connecteur Graph que vous avez installé et configuré précédemment.  
 
@@ -94,17 +94,17 @@ Vous pouvez éventuellement créer une liste **d’exclusions** pour exclure cer
 
 ## <a name="step-4-assign-property-labels"></a>Étape 4 : Attribuer des étiquettes de propriété
 
-Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Bien que cette étape ne soit pas obligatoire, l’emploi d’étiquettes de propriétés améliorera la pertinence de la recherche et garantira des résultats de recherche plus précis pour les utilisateurs finaux.
+Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Bien que cette étape ne soit pas obligatoire, le fait d’avoir des étiquettes de propriétés améliorera la pertinence de la recherche et garantira des résultats de recherche plus précis pour les utilisateurs finaux.
 
 ## <a name="step-5-manage-schema"></a>Étape 5 : Gérer le schéma
 
-Dans  l’écran Gérer le schéma, vous pouvez modifier les attributs de schéma (les options sont **Requête,** **Rechercher,** Récupérer et **Affiner)** associés aux propriétés, ajouter des alias facultatifs et choisir la propriété **Content.**
+Dans  l’écran Gérer le schéma, vous pouvez modifier les attributs de schéma (les options sont **Requête,** **Rechercher,** Récupérer et **Affiner)** associées aux propriétés, ajouter des alias facultatifs et choisir la propriété **Content.**
 
 ## <a name="step-6-manage-search-permissions"></a>Étape 6 : Gérer les autorisations de recherche
 
 Le connecteur de sites web d’entreprise prend uniquement en charge les autorisations de recherche visibles par **Tout le monde.** Les données indexées apparaissent dans les résultats de la recherche et sont visibles par tous les utilisateurs de l’organisation.
 
-## <a name="step-7-set-the-refresh-schedule"></a>Étape 7 : Définir la planification de l’actualisation
+## <a name="step-7-set-the-refresh-schedule"></a>Étape 7 : Définir la planification d’actualisation
 
 Le connecteur de sites web d’entreprise prend uniquement en charge une actualisation complète. Cela signifie que le connecteur va réacrader tout le contenu du site web pendant chaque actualisation. Pour vous assurer que le connecteur obtient suffisamment de temps pour analyser le contenu, nous vous recommandons de définir un intervalle de planification d’actualisation important. Nous vous recommandons une actualisation programmée entre une et deux semaines.
 
@@ -120,7 +120,7 @@ Lors de la lecture du contenu du site web, l’analyse peut rencontrer des erreu
  Code d’erreur détaillé | Message d’erreur
  --- | ---
  6001 | Le site en cours d’indexation n’est pas accessible
- 6005 | La page source en cours d’indexation a été bloquée par la configuration robots.txt'indexation.
+ 6005 | La page source tentée d’indexer a été bloquée par la configuration robots.txt'indexation.
  6008 | Impossible de résoudre le DNS
  6009 | Pour toutes les erreurs côté client (à l’exception de HTTP 404, 408), reportez-vous aux codes d’erreur HTTP 4xx pour plus d’informations.
  6013 | La page source en cours d’indexation est in trouvée. (Erreur HTTP 404)
@@ -134,4 +134,4 @@ Lors de la lecture du contenu du site web, l’analyse peut rencontrer des erreu
 
 ## <a name="limitations"></a>Limites
 
-Le connecteur de sites web d’entreprise ne prend pas en charge la recherche de données sur **des pages web dynamiques.** Des exemples de ces pages web sont stockés dans des systèmes de gestion de contenu tels que [Cas](https://www.atlassian.com/software/confluence) et [Unily,](https://www.unily.com/) ou des bases de données qui stockent du contenu de site web.
+Le connecteur de sites web d’entreprise ne prend pas en charge la recherche de données sur **des pages web dynamiques.** Des exemples de ces pages web sont stockés dans des systèmes de gestion de contenu tels que [Contrôle](https://www.atlassian.com/software/confluence) et [Unily,](https://www.unily.com/) ou des bases de données qui stockent du contenu de site web.

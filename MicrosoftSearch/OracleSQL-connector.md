@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Configurer le connecteur Oracle SQL Graph pour Microsoft Search (recherche Microsoft).
-ms.openlocfilehash: a13c9ea71b115e84d313489214d424f77337a062
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 01e4cd6b04d2997ea11ef006e94ea09b03280f41
+ms.sourcegitcommit: 6a7f36769e92b714588b47efb0c185eddabe6953
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084973"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099334"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -29,7 +29,7 @@ Le connecteur Oracle SQL Graph permet à votre organisation de découvrir et d�
 > [!NOTE]
 > Lisez [**l’article Installation de votre connecteur Graph**](configure-connector.md) pour comprendre le processus d’installation général des connecteurs Graph.
 
-Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur ServiceNow Graph. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur ServiceNow Graph. Cet article inclut également des informations [sur la résolution des problèmes](#troubleshooting) et les [limitations.](#limitations)
+Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur Oracle SQL Graph. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur Oracle SQL Graph. Cet article inclut également des informations [sur la résolution des problèmes](#troubleshooting) et les [limitations.](#limitations)
 
 ## <a name="before-you-get-started"></a>Avant de commencer
 
@@ -69,7 +69,7 @@ Dans cette étape, vous configurez la requête SQL qui exécute une analyse comp
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a>Sélectionner des colonnes de données (obligatoire) et des colonnes ACL (facultatif)
 
-L’exemple illustre la sélection de cinq colonnes de données qui détiennent les données de la recherche : OrderId, OrderTitle, OrderDesc, CreatedDateTime et IsDeleted. Pour définir des autorisations d’affichage pour chaque ligne de données, vous pouvez éventuellement sélectionner ces colonnes de la ACL : AllowedUsers, AllowedGroups, DeniedUsers et DeniedGroups. Pour toutes ces colonnes de données, vous pouvez sélectionner les options **de** **requête,** de recherche ou de **récupération.**
+L’exemple illustre la sélection de cinq colonnes de données qui détiennent les données de la recherche : OrderId, OrderTitle, OrderDesc, CreatedDateTime et IsDeleted. Pour définir des autorisations d’affichage pour chaque ligne de données, vous pouvez éventuellement sélectionner ces colonnes de la ACL : AllowedUsers, AllowedGroups, DeniedUsers et DeniedGroups. Pour toutes ces colonnes de données, vous pouvez sélectionner les options **de requête,** de **recherche** ou de **récupération.**
 
 Sélectionnez des colonnes de données comme illustré dans cet exemple de requête : `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
 
@@ -80,7 +80,7 @@ L’utilisation de chacune des colonnes ACL dans la requête ci-dessus est décr
 * **AllowedUsers**: cette option spécifie la liste des ID d’utilisateur qui pourront accéder aux résultats de la recherche. Dans l’exemple suivant, la liste des utilisateurs : john@contoso.com, keith@contoso.com et lisa@contoso.com n’ont accès qu’à un enregistrement avec OrderId = 12.
 * **AllowedGroups**: cette option spécifie le groupe d’utilisateurs qui pourront accéder aux résultats de la recherche. Dans l’exemple suivant, les sales-team@contoso.com n’ont accès qu’à l’enregistrement avec OrderId = 12.
 * **DeniedUsers**: cette option spécifie la liste des utilisateurs qui **n’ont** pas accès aux résultats de la recherche. Dans l’exemple suivant, les utilisateurs john@contoso.com et keith@contoso.com n’ont pas accès à l’enregistrement avec OrderId = 13, alors que tous les autres utilisateurs ont accès à cet enregistrement.
-* **DeniedGroups**: cette option spécifie le groupe d’utilisateurs qui **n’ont** pas accès aux résultats de la recherche. Dans l’exemple suivant, les groupes engg-team@contoso.com et pm-team@contoso.com n’ont pas accès à l’enregistrement avec OrderId = 15, alors que tous les autres ont accès à cet enregistrement.  
+* **DeniedGroups :** cette option spécifie le groupe d’utilisateurs qui **n’ont** pas accès aux résultats de la recherche. Dans l’exemple suivant, les groupes engg-team@contoso.com et pm-team@contoso.com n’ont pas accès à l’enregistrement avec OrderId = 15, alors que tous les autres ont accès à cet enregistrement.  
 
 ![Exemple de données montrant les propriétés OrderTable et AclTable avec des exemples de propriétés](media/MSSQL-ACL1.png)
 
@@ -105,7 +105,7 @@ Pour éviter la surcharge de la base de données, le connecteur par lots et repr
 
 Créez des extraits de requête pour les filigranes, comme illustré dans les exemples suivants :
 
-* `WHERE (CreatedDateTime > @watermark)`. Nommez le nom de colonne en filigrane avec le mot clé `@watermark` réservé. Vous ne pouvez trier la colonne filigrane que par ordre croissant.
+* `WHERE (CreatedDateTime > @watermark)`. Nommez le nom de colonne de filigrane avec le mot clé `@watermark` réservé. Vous ne pouvez trier la colonne filigrane que par ordre croissant.
 * `ORDER BY CreatedDateTime ASC`. Trier la colonne filigrane dans l’ordre croissant.
 
 Dans la configuration présentée dans l’image suivante, se trouve `CreatedDateTime` la colonne filigrane sélectionnée. Pour extraire le premier lot de lignes, spécifiez le type de données de la colonne filigrane. Dans ce cas, le type de données est `DateTime` .
@@ -124,7 +124,7 @@ Pour exclure l’indexation des lignes supprimées (ou non) dans votre base de d
 
 Sélectionnez **Gérer les autorisations** pour choisir les différentes colonnes de contrôle d’accès qui spécifient le mécanisme de contrôle d’accès. Sélectionnez le nom de colonne que vous avez spécifié dans l’analyse complète SQL requête.
 
-Chacune des colonnes ACL est attendue comme une colonne à valeurs multiples. Ces valeurs d’ID multiples peuvent être séparées par des séparateurs tels que des points-virgules (;), virgule (,), etc. Vous devez spécifier ce séparateur dans le champ **séparateur de** valeurs.
+Chacune des colonnes de la ACL est attendue comme une colonne à valeurs multiples. Ces valeurs d’ID multiples peuvent être séparées par des séparateurs tels que des points-virgules (;), virgule (,), etc. Vous devez spécifier ce séparateur dans le champ **séparateur de** valeurs.
 
 Les types d’ID suivants sont pris en charge pour l’utilisation en tant que listes de contrôle d’appel :
 
@@ -179,7 +179,7 @@ Sous-dessous se trouve une liste des erreurs courantes observées lors de la con
 
 | Étape de configuration | Message d’erreur | Raisons possibles |
 | ------------ | ------------ | ------------ |
-| Paramètres de base de données | Erreur du serveur de base de données : la demande de connexion a été mise à l’heure | Hostname non valide <br> Hôte non accessible |
+| Paramètres de base de données | Erreur du serveur de base de données : la demande de connexion a été hors délai | Hostname non valide <br> Hôte non accessible |
 | Paramètres de base de données | Erreur du serveur de base de données : ORA-12541 : TNS : pas d’écoute | Port non valide |
 | Paramètres de base de données | Erreur du serveur de base de données : ORA-12514 : TNS : l’écoute ne connaît pas actuellement le service demandé dans le descripteur de connecteur | Nom de service (base de données) non valide |
 | Paramètres de base de données | Erreur du serveur de base de données : échec de connexion pour l’utilisateur ' `user` '. | Nom d’utilisateur ou mot de passe non valide |

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur Azure DevOps Graph pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 3d922a5384de8bf0ef3c6dfd80bd67ad9170eb66
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 8fe783c847c672223e051f4433af3e41678fe367
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084937"
+ms.locfileid: "50097402"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -28,7 +28,7 @@ Le connecteur Graph Azure DevOps permet à votre organisation d’indexer des é
 > [!NOTE]
 > Lisez [**l’article Installation de votre connecteur Graph**](configure-connector.md) pour comprendre le processus d’installation général des connecteurs Graph.
 
-Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur ServiceNow Graph. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur ServiceNow Graph.
+Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur Graph Azure DevOps. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur Graph Azure DevOps.
 
 >[!IMPORTANT]
 >Le connecteur Azure DevOps prend uniquement en charge le service cloud Azure DevOps. Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015 et TFS 2013 ne sont pas pris en charge par ce connecteur.
@@ -65,7 +65,7 @@ Champs obligatoires | Description | Valeur recommandée
 | Nom de l’application     | Valeur unique qui identifie l’application que vous autorisez.    | Recherche Microsoft     |
 | Site web d’application  | URL de l’application qui demande l’accès à votre instance Azure DevOps lors de l’installation du connecteur. (Obligatoire).  | https://<span>gcs.office.</span> com/
 | URL de rappel d’autorisation        | URL de rappel requise vers qui le serveur d’autorisation redirige. | https://<span>gcs.office.</span> com/v1.0/admin/oauth/callback|
-| Étendues autorisées | Étendue de l’accès pour l’application | Sélectionnez les étendues suivantes : Identité (lecture), Éléments de travail (lecture), Groupes variables (lecture), Projet et équipe (lecture), Graph (lecture)|
+| Étendues autorisées | Étendue de l’accès pour l’application | Sélectionnez les étendues suivantes : Identité (lecture), Éléments de travail (lecture), Groupes de variables (lecture), Projet et équipe (lecture), Graph (lecture)|
 
 Lors de l’inscription de l’application avec les détails ci-dessus, vous obtenez **l’ID** d’application et la secret **client** qui seront utilisés pour configurer le connecteur.
 
@@ -86,15 +86,15 @@ Si vous choisissez d’indexer l’ensemble de l’organisation, les éléments 
 
 Si vous choisissez des projets individuels, seuls les éléments de travail de ces projets seront indexés.
 
-![Configurer les données](media/ADO_Configure_data.png)
+![Configurer des données](media/ADO_Configure_data.png)
 
 Ensuite, sélectionnez les champs que vous souhaitez que la connexion indexe et affiche un aperçu des données dans ces champs avant de poursuivre.
 
-![Choisir des propriétés](media/ADO_choose_properties.png)
+![Choisir les propriétés](media/ADO_choose_properties.png)
 
 ## <a name="step-4-manage-search-permissions"></a>Étape 4 : Gérer les autorisations de recherche
 
-Le connecteur Azure DevOps prend en charge les autorisations de recherche visibles uniquement pour les personnes ayant accès à  **cette source** de données ou Tout le **monde.** Si vous choisissez uniquement les personnes ayant accès à cette **source** de données, les données indexées apparaissent dans les résultats de recherche pour les utilisateurs qui y ont accès en fonction des autorisations accordées aux utilisateurs ou groupes au niveau de l’organisation, du projet ou du chemin d’accès de la zone dans Azure DevOps. Si vous choisissez **Tout le** monde, les données indexées apparaissent dans les résultats de recherche pour tous les utilisateurs.
+Le connecteur Azure DevOps prend en charge les autorisations de recherche visibles uniquement pour les personnes ayant accès à  **cette source** de données ou Tout le **monde.** Si vous choisissez uniquement les personnes ayant accès à cette **source** de données, les données indexées apparaissent dans les résultats de recherche pour les utilisateurs qui y ont accès en fonction des autorisations accordées aux utilisateurs ou groupes au niveau du chemin d’accès Organisation, Projet ou Zone dans Azure DevOps. Si vous choisissez **Tout le** monde, les données indexées apparaissent dans les résultats de recherche pour tous les utilisateurs.
 
 ## <a name="step-5-assign-property-labels"></a>Étape 5 : Attribuer des étiquettes de propriété
 

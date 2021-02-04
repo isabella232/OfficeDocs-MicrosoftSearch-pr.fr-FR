@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur Salesforce Graph pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 0b80bf7d3296236887d1cc1bf8e75da976b6a1f1
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 6771bc0b234bc2570a8b1fa7174b9b9244cf3958
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50085007"
+ms.locfileid: "50097447"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -28,7 +28,7 @@ Le connecteur Salesforce Graph permet à votre organisation d’indexer les obje
 > [!NOTE]
 > Lisez [**l’article Installation de votre connecteur Graph**](configure-connector.md) pour comprendre le processus d’installation général des connecteurs Graph.
 
-Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur ServiceNow Graph. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur Salesforce Graph. Cet article inclut également des informations sur [les limitations.](#limitations)
+Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur Salesforce Graph. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur Salesforce Graph. Cet article inclut également des informations sur [les limitations.](#limitations)
 
 >[!IMPORTANT]
 >Le connecteur Salesforce Graph prend actuellement en charge Summer '19 ou une ultérieure.
@@ -51,7 +51,7 @@ Pour vous connecter à votre instance Salesforce, vous avez besoin de votre URL 
 
     - Sélectionnez ces étendues OAuth requises.
 
-        - Accéder à vos données (api) et les gérer
+        - Accéder et gérer vos données (api)
 
         - Effectuer des demandes en votre nom à tout moment (refresh_token, offline_access)
 
@@ -104,11 +104,11 @@ La première fois que vous tentez de vous connecter à l’aide de ces paramètr
 Vérifiez que la connexion a réussi en recherchant une bannière verte qui indique « Connexion réussie », comme indiqué dans la capture d’écran ci-dessous.
 
   > [!div class="mx-imgBorder"]
-  > ![Capture d’écran de la connexion réussie. La bannière verte qui indique « Connexion réussie » se trouve sous le champ de votre URL d’instance Salesforce](media/salesforce-connector/sf5.png)
+  > ![Capture d’écran de la connexion réussie. La bannière verte « Connexion réussie » se trouve sous le champ de votre URL d’instance Salesforce](media/salesforce-connector/sf5.png)
 
 ## <a name="step-4-manage-search-permissions"></a>Étape 4 : Gérer les autorisations de recherche
 
-Vous devez choisir les utilisateurs qui voient les résultats de la recherche à partir de cette source de données. Si vous autorisez uniquement certains utilisateurs d’Azure Active Directory (Azure AD) ou non Azure AD à voir les résultats de la recherche, assurez-vous de ma cartographier les identités.
+Vous devez choisir les utilisateurs qui voient les résultats de la recherche à partir de cette source de données. Si vous autorisez uniquement certains utilisateurs Azure Active Directory (Azure AD) ou non Azure AD à voir les résultats de la recherche, assurez-vous de ma cartographier les identités.
 
 ## <a name="step-4a-select-permissions"></a>Étape 4a : Sélectionner les autorisations
 
@@ -132,13 +132,13 @@ Vous pouvez affecter une propriété source à chaque étiquette en choisissant 
 
 ## <a name="step-6-manage-schema"></a>Étape 6 : Gérer le schéma
 
-Vous pouvez sélectionner les propriétés source qui doivent être indexées afin qu’elles s’afficheront dans les résultats de la recherche. L’Assistant Connexion sélectionne par défaut un schéma de recherche basé sur un ensemble de propriétés source. Vous pouvez le modifier en élecntant les cases à cocher de chaque propriété et attribut de la page de schéma de recherche. Les attributs de schéma de recherche incluent recherche, requête, récupération et affiner.
+Vous pouvez sélectionner les propriétés source qui doivent être indexées afin qu’elles s’afficheront dans les résultats de la recherche. L’Assistant Connexion sélectionne par défaut un schéma de recherche basé sur un ensemble de propriétés source. Vous pouvez le modifier en élecant les cases à cocher de chaque propriété et attribut de la page de schéma de recherche. Les attributs de schéma de recherche incluent recherche, requête, récupération et affiner.
 Affiner vous permet de définir les propriétés qui peuvent être utilisées ultérieurement en tant qu’affinements ou filtres personnalisés dans l’expérience de recherche.  
 
 > [!div class="mx-imgBorder"]
 > ![Sélectionnez le schéma pour chaque propriété source. Les options sont Requête, Recherche, Récupérer et Affiner](media/salesforce-connector/sf9.png)
 
-## <a name="step-7-set-the-refresh-schedule"></a>Étape 7 : Définir la planification d’actualisation
+## <a name="step-7-set-the-refresh-schedule"></a>Étape 7 : Définir la planification de l’actualisation
 
 Le connecteur Salesforce prend uniquement en charge les planifications d’actualisation pour les analyse complètes actuellement.
 
@@ -159,7 +159,7 @@ Suivez les [instructions d’installation générales.](https://docs.microsoft.c
 
 - Le connecteur Graph ne prend actuellement pas en charge le partage et le partage basés sur un territoire à l’aide de groupes personnels de Salesforce.
 - Il existe un bogue connu dans l’API Salesforce que le connecteur Graph utilise, où les valeurs par défaut privées à l’échelle de l’organisation pour les prospects ne sont pas honorées actuellement.  
-- Si un champ a la sécurité au niveau du champ (FLS) définie pour un profil, le connecteur Graph n’ing aura pas ce champ pour les profils dans cette organisation Salesforce. Par conséquent, les utilisateurs ne pourront pas rechercher sur les valeurs de ces champs, ni s’afficher dans les résultats.  
+- Si un champ a la sécurité au niveau du champ (FLS) définie pour un profil, le connecteur Graph n’inserre pas ce champ pour les profils dans cette organisation Salesforce. Par conséquent, les utilisateurs ne pourront pas rechercher sur les valeurs de ces champs, ni s’afficher dans les résultats.  
 - Dans l’écran Gérer le schéma, ces noms de propriétés standard communs sont répertoriés une seule fois, les options sont **Requête,** **Rechercher,** Récupérer **et** **Affiner,** et s’appliquent à tout ou aucun.
     - Nom
     - Url
