@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Agent sur place
-ms.openlocfilehash: 31220196849fe90ab2611e9c2b83a1cec0a02b34
-ms.sourcegitcommit: a04f1df14a3221776ccd141f6060328612d80e06
+ms.openlocfilehash: 7aef2ea57c92929d4d4f45e1a738c84e6a3f4bba
+ms.sourcegitcommit: ab4f81ded967168689e6e81c90e115b94719335c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876497"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50173061"
 ---
 # <a name="graph-connector-agent"></a>Agent de connecteur Graph
 
@@ -36,6 +36,15 @@ Configuration recommandée :
 * 16 Go de RAM, 2 Go d’espace disque
 * Accès réseau à la source de données et à Internet via 443
 
+Après avoir installé l’agent, si les serveurs proxy ou les pare-feu de votre organisation bloquent la communication vers des domaines inconnus, ajoutez ceux ci-dessous à la liste d’accès.
+
+1. *.servicebus.windows.net
+2. *.events.data.microsoft.com
+3. https://login.microsoftonline.com
+4. https://gcs.office.com
+5. https://graph.microsoft.com/
+
+
 ## <a name="create-and-configure-an-app-for-the-agent"></a>Créer et configurer une application pour l’agent  
 
 Tout d’abord, connectez-vous et notez que le privilège minimal requis sur le compte est administrateur de recherche. L’agent vous demandera ensuite de fournir des détails d’authentification. Utilisez les étapes ci-dessous pour créer une application et générer les détails d’authentification requis.
@@ -49,7 +58,7 @@ Tout d’abord, connectez-vous et notez que le privilège minimal requis sur le 
 5. Ouvrez **les autorisations d’API** à partir du volet de navigation et **sélectionnez Ajouter une autorisation.**
 6. Sélectionnez **Microsoft Graph,** puis les **autorisations d’application.**
 7. Recherchez « ExternalItem.ReadWrite.All » et « Directory.Read.All » dans les autorisations, puis sélectionnez **Ajouter des autorisations.**
-8. Sélectionnez **Accorder le consentement administrateur pour [TenantName]** et confirmer en sélectionnant **Oui**.
+8. Sélectionnez **Accorder le consentement de l’administrateur pour [TenantName]** et confirmez en sélectionnant **Oui**.
 9. Vérifiez que les autorisations sont dans l’état « accordé ».
      ![Autorisations affichées en vert sur la colonne de droite.](media/onprem-agent/granted-state.png)
 
@@ -96,7 +105,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 1. Ouvrez l’application et accédez à la section Certificats et secrets à partir du volet gauche
 1. Sélectionnez « Télécharger le certificat » et téléchargez le fichier .cer
-1. Ouvrez **l’inscription** de **l’application et sélectionnez Certificats et secrets** dans le volet de navigation. Copiez l’empreinte numérique du certificat.
+1. Ouvrez **l’inscription de** **l’application et sélectionnez Certificats et secrets** dans le volet de navigation. Copiez l’empreinte numérique du certificat.
 
 ![Liste des certificats miniatures lorsque certificats et secrets sont sélectionnés dans le volet gauche](media/onprem-agent/certificates.png)
 
@@ -109,6 +118,6 @@ Si vous avez utilisé l’exemple de script pour générer un certificat, le fic
 1. Sélectionnez « Ordinateur local » pour l’emplacement du magasin lors de l’installation du certificat.
 1. Après avoir installé le certificat, ouvrez « Gérer les certificats d’ordinateur » via le menu Démarrer
 1. Sélectionnez le certificat nouvellement installé sous « Personnel » > « Certificats »
-1. Cliquez avec le bouton droit sur le cert et sélectionnez « Toutes les tâches » > « Gérer les clés privées... » Option
+1. Cliquez avec le bouton droit sur le cert, puis sélectionnez « Toutes les tâches > gérer les clés privées... » Option
 1. Dans la boîte de dialogue Autorisations, sélectionnez ajouter une option. Dans la boîte de dialogue de sélection de l’utilisateur, écrivez : « NT Service\GcaHostService » et cliquez sur « OK ». Ne cliquez pas sur le bouton « Vérifier les noms ».
 1. Cliquez sur OK dans la boîte de dialogue Autorisations. L’ordinateur de l’agent est maintenant configuré pour que l’agent génère des jetons à l’aide du certificat.
