@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Agent sur place
-ms.openlocfilehash: 7aef2ea57c92929d4d4f45e1a738c84e6a3f4bba
-ms.sourcegitcommit: ab4f81ded967168689e6e81c90e115b94719335c
+ms.openlocfilehash: bd5212d42fe21583aa6a4e0dc8060d5e191a7292
+ms.sourcegitcommit: 35b4246cb3e38c6fe21540686e28fe54154b33f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50173061"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50259428"
 ---
 # <a name="graph-connector-agent"></a>Agent de connecteur Graph
 
-L’utilisation de connecteurs Graph sur site nécessite l’installation du logiciel *d’agent du connecteur Graph.* Il permet un transfert de données sécurisé entre les données sur site et les API du connecteur Graph. Cet article vous guide tout au long de l’installation et de la configuration de l’agent.
+L’utilisation de connecteurs Graph sur site nécessite l’installation du logiciel *d’agent du connecteur Graph.* Il permet de sécuriser le transfert de données entre les données sur site et les API du connecteur Graph. Cet article vous guide tout au long de l’installation et de la configuration de l’agent.
 
 ## <a name="installation"></a>Installation
 
@@ -36,13 +36,13 @@ Configuration recommandée :
 * 16 Go de RAM, 2 Go d’espace disque
 * Accès réseau à la source de données et à Internet via 443
 
-Après avoir installé l’agent, si les serveurs proxy ou les pare-feu de votre organisation bloquent la communication vers des domaines inconnus, ajoutez ceux ci-dessous à la liste d’accès.
+Après avoir installé l’agent, si les serveurs proxy ou les pare-feu de votre organisation bloquent la communication vers des domaines inconnus, ajoutez-en ci-dessous à la liste d’accès.
 
 1. *.servicebus.windows.net
 2. *.events.data.microsoft.com
-3. https://login.microsoftonline.com
-4. https://gcs.office.com
-5. https://graph.microsoft.com/
+3. https://<span>login.microsoftonline.</span>com
+4. https://<span>gcs.office.</span> com/
+5. https://<span>graph.microsoft.</span> com/
 
 
 ## <a name="create-and-configure-an-app-for-the-agent"></a>Créer et configurer une application pour l’agent  
@@ -69,7 +69,7 @@ Les détails de l’authentification peuvent être fournis à l’aide d’une s
 #### <a name="configuring-the-client-secret-for-authentication"></a>Configuration de la secret client pour l’authentification
 
 1. Go to the [Azure portal](https://portal.azure.com) and sign in with admin credentials for the tenant.
-2. Ouvrez **l’inscription** de l’application à partir du volet de navigation et allez à l’application appropriée. Sous **Gérer,** sélectionnez **Certificats et secrets.**
+2. Ouvrez **l’inscription** de l’application à partir du volet de navigation et allez à l’application appropriée. Sous **Gérer,** **sélectionnez Certificats et secrets.**
 3. Sélectionnez **Nouvelle secret client** et sélectionnez une période d’expiration pour la secret. Copiez la secret généré et enregistrez-le, car il ne sera pas affiché à nouveau.
 4. Utilisez cette question secrète client avec l’ID d’application pour configurer l’agent. Vous ne pouvez pas utiliser d’espaces vides dans **le champ Nom** de l’agent. Les caractères numériques alpha sont acceptés.
 
@@ -118,6 +118,9 @@ Si vous avez utilisé l’exemple de script pour générer un certificat, le fic
 1. Sélectionnez « Ordinateur local » pour l’emplacement du magasin lors de l’installation du certificat.
 1. Après avoir installé le certificat, ouvrez « Gérer les certificats d’ordinateur » via le menu Démarrer
 1. Sélectionnez le certificat nouvellement installé sous « Personnel » > « Certificats »
-1. Cliquez avec le bouton droit sur le cert, puis sélectionnez « Toutes les tâches > gérer les clés privées... » Option
+1. Cliquez avec le bouton droit sur le cert et sélectionnez « Toutes les tâches » > « Gérer les clés privées... » Option
 1. Dans la boîte de dialogue Autorisations, sélectionnez ajouter une option. Dans la boîte de dialogue de sélection de l’utilisateur, écrivez : « NT Service\GcaHostService » et cliquez sur « OK ». Ne cliquez pas sur le bouton « Vérifier les noms ».
 1. Cliquez sur OK dans la boîte de dialogue Autorisations. L’ordinateur de l’agent est maintenant configuré pour que l’agent génère des jetons à l’aide du certificat.
+
+## <a name="troubleshooting"></a>Résolution des problèmes
+1. Si une connexion échoue avec l’erreur « 1011 : l’agent du connecteur Graph n’est pas accessible ou hors connexion ». Connectez-vous à l’ordinateur où l’agent est installé et démarrez l’application de l’agent si elle n’est pas déjà en cours d’exécution. Si la connexion continue d’échouer, vérifiez que le certificat ou la secret client fourni à l’agent lors de l’inscription n’a pas expiré et qu’il dispose des autorisations requises.
