@@ -17,7 +17,8 @@
 ## [galerie Connecteurs](connectors-gallery.md)
 ## Configurer les connecteurs avec Microsoft
 ### [Vue d’ensemble de la configuration](configure-connector.md)
-### [Mapper les identités Active Directory non Azure (préversion)](map-non-aad.md)
+### [Configurer l'agent connecteur graphique (préversion)](on-prem-agent.md)
+### [Mapper les non-identités Active Directory Azure (préversion)](map-non-aad.md)
 ### [Mapper les identités Active Directory Azure (préversion)](map-aad.md)
 ### Informations spécifiques au connecteur
 #### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
@@ -28,8 +29,8 @@
 #### [Oracle SQL (version d’évaluation)](OracleSQL-connector.md)
 #### [Salesforce (préversion)](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
-## Gérer vos connexions
-### [Surveiller vos connexions](manage-connector.md)
+## Gérer les connexions
+### [Surveiller la connectivité](manage-connector.md)
 ### [Afficher les détails et erreurs de connexion](connector-details-errors.md)
 ## [Licences](licensing.md)
 ## [Conditions d’utilisation](terms-of-use.md)
