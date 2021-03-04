@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Configurer le connecteur Graph de partage de fichiers pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: e8a68a1c6b9c2c8a8592fb915fe9bf846a758e77
-ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
+ms.openlocfilehash: ed1c148a018ba9492a8a93685327bf43153d65d3
+ms.sourcegitcommit: 6a7522d9aeaedeedaac096c485d3f343ce98d3d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097420"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421074"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -65,7 +65,13 @@ Lorsque le connecteur tente d’analyser un fichier, le champ « Heure du dernie
 
 ## <a name="step-4-manage-search-permissions"></a>Étape 4 : Gérer les autorisations de recherche
 
-Vous pouvez restreindre l’autorisation de rechercher n’importe quel fichier en fonction des listes de contrôle d’accès de partage ou des listes de contrôle d’accès NTFS (New Technology File System). Si vous souhaitez utiliser les listes de contrôle d’accès de partage, sélectionnez l’option appropriée dans la page **Paramètres avancés.** Si vous souhaitez utiliser des listes de contrôle d’accès NTFS, sélectionnez l’option appropriée dans la page Gérer les **autorisations de recherche.**
+Vous pouvez restreindre l’autorisation de rechercher n’importe quel fichier basé sur les listes de contrôle d’accès de partage ou les listes de contrôle d’accès NTFS (New Technology File System), en sélectionnant l’option souhaitée dans la page Gérer les **autorisations** de recherche. Les comptes et groupes d’utilisateurs fournis dans ces listes de contrôle d’accès doivent être gérés par Active Directory (AD). Si vous utilisez un autre système pour la gestion des comptes d’utilisateurs, vous pouvez sélectionner l’option « tout le monde » qui permet aux utilisateurs de rechercher tous les fichiers sans restrictions d’accès. Toutefois, lorsque les utilisateurs tentent d’ouvrir le fichier, les contrôles d’accès définies au niveau de la source s’appliquent.
+
+Notez que windows fournit par défaut l’autorisation « Lecture » à « Tout le monde » dans les AAL de partage lorsqu’un dossier est partagé sur le réseau. Par extension, si vous choisissez partager des ACA dans Gérer les autorisations de recherche, les **utilisateurs** pourront rechercher tous les fichiers. Si vous souhaitez restreindre l’accès, supprimez l’accès « Lecture » pour « Tout le monde » dans les partages de fichiers et fournissez l’accès uniquement aux utilisateurs et groupes souhaités. Le connecteur lit ensuite ces restrictions d’accès et les applique à la recherche.
+
+Vous pouvez choisir les AAL de partage uniquement si le chemin d’accès de partage que vous avez fourni suit le format de chemin d’accès UNC. Vous pouvez créer un chemin d’accès au format UNC en allant à « Partage avancé » sous l’option « Partage ».
+
+![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
 
 ## <a name="step-5-assign-property-labels"></a>Étape 5 : Attribuer des étiquettes de propriété
 

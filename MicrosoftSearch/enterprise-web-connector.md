@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur Graph des sites web d’entreprise pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 526b36a798f50bed457832d576ffebd15820184d
-ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
+ms.openlocfilehash: 7d71e6e3d775c97d8916e20ab032c312c269c5f1
+ms.sourcegitcommit: 6a7522d9aeaedeedaac096c485d3f343ce98d3d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097429"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421098"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -50,6 +50,9 @@ Suivez les [instructions d’installation générales.](https://docs.microsoft.c
 
 Pour vous connecter à votre source de données, vous devez remplir l’URL racine du site web, sélectionner une source d’analyse et le type d’authentification que vous souhaitez utiliser : Aucune, Authentification de base ou OAuth 2.0 avec [Azure Active Directory (Azure AD).](https://docs.microsoft.com/azure/active-directory/) Une fois ces informations terminées, sélectionnez Connexion de test pour vérifier vos paramètres.
 
+> [!NOTE]
+> Si un plan de site est défini sur le site que vous souhaitez analyser, le connecteur analyse uniquement les URL répertoriées dans le plan de site. Si aucune carte de site n’est définie, le connecteur analysera en profondeur tous les liens trouvés sur l’URL racine du site.
+
 ### <a name="url"></a>URL
 
 Utilisez le champ URL pour spécifier la racine du site web que vous souhaitez analyser. Le connecteur de sites web d’entreprise utilisera cette URL comme point de départ et suivra tous les liens de cette URL pour son analyse.
@@ -58,7 +61,7 @@ Utilisez le champ URL pour spécifier la racine du site web que vous souhaitez a
 
 Le mode d’analyse détermine le type de sites web que vous souhaitez indexer, en nuage ou en local. Pour vos sites web cloud, sélectionnez **Cloud** comme mode d’analyse.
 
-En outre, le connecteur prend désormais en charge l’analyse des sites web locaux. Ce mode est en prévisualisation. Pour accéder à vos données sur site, vous devez d’abord installer et configurer l’agent du connecteur Graph. Pour en savoir plus, consultez [l’agent de connecteur Graph.](https://docs.microsoft.com/microsoftsearch/on-prem-agent)
+En outre, le connecteur prend désormais en charge l’analyse des sites web locaux. Ce mode est en prévisualisation. Pour accéder à vos données sur site, vous devez d’abord installer et configurer l’agent de connecteur Graph. Pour en savoir plus, consultez [l’agent de connecteur Graph.](https://docs.microsoft.com/microsoftsearch/on-prem-agent)
 
 Pour vos sites web locaux, sélectionnez **Agent** comme mode d’analyse et, dans le champ **Agent** local, choisissez l’agent de connecteur Graph que vous avez installé et configuré précédemment.  
 
@@ -98,13 +101,13 @@ Vous pouvez affecter une propriété source à chaque étiquette en choisissant 
 
 ## <a name="step-5-manage-schema"></a>Étape 5 : Gérer le schéma
 
-Dans  l’écran Gérer le schéma, vous pouvez modifier les attributs de schéma (les options sont **Requête,** **Rechercher,** Récupérer et **Affiner)** associées aux propriétés, ajouter des alias facultatifs et choisir la propriété **Content.**
+Dans  l’écran Gérer le schéma, vous pouvez modifier les attributs de schéma (les options sont **Requête,** **Rechercher,** Récupérer et **Affiner)** associés aux propriétés, ajouter des alias facultatifs et choisir la propriété **Content.**
 
 ## <a name="step-6-manage-search-permissions"></a>Étape 6 : Gérer les autorisations de recherche
 
 Le connecteur de sites web d’entreprise prend uniquement en charge les autorisations de recherche visibles par **Tout le monde.** Les données indexées apparaissent dans les résultats de la recherche et sont visibles par tous les utilisateurs de l’organisation.
 
-## <a name="step-7-set-the-refresh-schedule"></a>Étape 7 : Définir la planification d’actualisation
+## <a name="step-7-set-the-refresh-schedule"></a>Étape 7 : Définir la planification de l’actualisation
 
 Le connecteur de sites web d’entreprise prend uniquement en charge une actualisation complète. Cela signifie que le connecteur va réacrader tout le contenu du site web pendant chaque actualisation. Pour vous assurer que le connecteur obtient suffisamment de temps pour analyser le contenu, nous vous recommandons de définir un intervalle de planification d’actualisation important. Nous vous recommandons une actualisation programmée entre une et deux semaines.
 
