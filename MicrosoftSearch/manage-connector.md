@@ -12,24 +12,24 @@ search.appverid:
 - MET150
 - MOE150
 description: Gérer les connecteurs Microsoft Graph pour Microsoft Search (recherche Microsoft).
-ms.openlocfilehash: 5258f26a5c97be4ee9f90c7a8b2b9bb8fec447bc
-ms.sourcegitcommit: 39bf9f0db7f9bff2ab82c99a059b0ddcf1c98f5f
+ms.openlocfilehash: 488b6e9452e381f8fc64ad06c6f063aa170ca7f5
+ms.sourcegitcommit: 3ed4d21510020045d25e8c5b7e168013d96c1b7e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905929"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50464039"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
 # <a name="monitor-your-connections"></a>Surveiller vos connexions
 
-Pour accéder à vos connecteurs et les gérer, vous devez être désigné comme administrateur de recherche pour votre client. Contactez votre administrateur client pour vous fournir le rôle d’administrateur de recherche.
+Pour accéder à vos connecteurs et les gérer, vous devez être désigné en tant qu’administrateur de recherche pour votre client. Contactez votre administrateur client pour vous fournir le rôle d’administrateur de recherche.
 
 ## <a name="connection-operations"></a>Opérations de connexion
 
 Accédez à [l’onglet Connecteurs](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) dans le [Centre d’administration Microsoft 365.](https://admin.microsoft.com)
 
-Pour chaque type de connecteur, le Centre [d’administration Microsoft 365](https://admin.microsoft.com) prend en charge les opérations indiquées dans le tableau suivant :
+Pour chaque type de connecteur, le Centre d’administration [Microsoft 365](https://admin.microsoft.com) prend en charge les opérations indiquées dans le tableau suivant :
 
 Opération | Connecteur créé par Microsoft | Connecteur partenaire ou personnalisé
 --- | --- | ---
@@ -59,7 +59,7 @@ Le quota d’index et la consommation disponibles sont affichés sur la page d�
 ![Barre d’utilisation du quota d’index](media/quota_utilization.png)
 
 >[!NOTE]
->Pendant la période d’aperçu, chaque organisation qui essaie des connecteurs Graph a été fournie avec un quota fixe gratuit de 2 millions d’éléments sur toutes les connexions. Les connecteurs Graph étant généralement disponibles, le quota gratuit expirera le 1er février 2021 pour les organisations qui ont utilisé des connecteurs Graph en prévisualisation.
+>Pendant la période d’aperçu, chaque organisation qui essaie des connecteurs Graph a été fournie avec un quota fixe gratuit de 2 millions d’éléments sur toutes les connexions. Les connecteurs Graph étant généralement disponibles, le quota gratuit expirera le 1er avril 2021 pour les organisations qui ont utilisé des connecteurs Graph en prévisualisation.
 >Les connecteurs Graph créés [](connectors-preview.md) par Microsoft et étiquetés comme « Aperçu » ne seront pas inclus dans le quota d’index facturé total pour votre organisation. Toutefois, il est comptabilisé dans le nombre maximum de 10 connexions que vous pouvez configurer pour votre organisation et le nombre maximum de 7 millions d’éléments que votre organisation peut indexer entre les connexions ; Chaque connexion est limitée à 700 000 éléments. 
 
 La barre d’utilisation des quotas indiquera différents états en fonction de la consommation de quota par votre organisation :
@@ -83,6 +83,6 @@ Pour résoudre ce problème, vous pouvez :
 
 * Découvrez comment acheter un quota d’index pour votre organisation selon les exigences de licence [et la tarification.](licensing.md)
 
-* Identifiez les connexions qui ont trop de contenu en cours d’ingestion et mettez-les à jour pour indexer moins d’éléments afin de faire de l’espace pour le quota. Pour mettre à jour la connexion, vous devez supprimer et créer une connexion avec un nouveau filtre d’ingestion qui apporte moins d’éléments.
+* Identifiez les connexions qui ont trop de contenu en cours d’ingestion et mettez-les à jour pour indexer moins d’éléments afin de faire de la place pour le quota. Pour mettre à jour la connexion, vous devez supprimer et créer une connexion avec un nouveau filtre d’ingestion qui apporte moins d’éléments.
 
 * Supprimer définitivement une ou plusieurs connexions
