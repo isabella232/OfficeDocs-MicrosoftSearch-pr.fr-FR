@@ -3,6 +3,7 @@ title: Agent local
 ms.author: rusamai
 author: rsamai
 manager: jameslau
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,16 +14,16 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Agent sur place
-ms.openlocfilehash: bd5212d42fe21583aa6a4e0dc8060d5e191a7292
-ms.sourcegitcommit: 35b4246cb3e38c6fe21540686e28fe54154b33f3
+ms.openlocfilehash: 5134c0c4459f9d38825451f274e67469956756d2
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50259428"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508804"
 ---
 # <a name="graph-connector-agent"></a>Agent de connecteur Graph
 
-L’utilisation de connecteurs Graph sur site nécessite l’installation du logiciel *d’agent du connecteur Graph.* Il permet de sécuriser le transfert de données entre les données sur site et les API du connecteur Graph. Cet article vous guide tout au long de l’installation et de la configuration de l’agent.
+L’utilisation de connecteurs Graph sur site nécessite l’installation du logiciel *d’agent du connecteur Graph.* Il permet un transfert de données sécurisé entre les données sur site et les API du connecteur Graph. Cet article vous guide tout au long de l’installation et de la configuration de l’agent.
 
 ## <a name="installation"></a>Installation
 
@@ -118,9 +119,9 @@ Si vous avez utilisé l’exemple de script pour générer un certificat, le fic
 1. Sélectionnez « Ordinateur local » pour l’emplacement du magasin lors de l’installation du certificat.
 1. Après avoir installé le certificat, ouvrez « Gérer les certificats d’ordinateur » via le menu Démarrer
 1. Sélectionnez le certificat nouvellement installé sous « Personnel » > « Certificats »
-1. Cliquez avec le bouton droit sur le cert et sélectionnez « Toutes les tâches » > « Gérer les clés privées... » Option
+1. Cliquez avec le bouton droit sur le cert, puis sélectionnez « Toutes les tâches > gérer les clés privées... » Option
 1. Dans la boîte de dialogue Autorisations, sélectionnez ajouter une option. Dans la boîte de dialogue de sélection de l’utilisateur, écrivez : « NT Service\GcaHostService » et cliquez sur « OK ». Ne cliquez pas sur le bouton « Vérifier les noms ».
 1. Cliquez sur OK dans la boîte de dialogue Autorisations. L’ordinateur de l’agent est maintenant configuré pour que l’agent génère des jetons à l’aide du certificat.
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
-1. Si une connexion échoue avec l’erreur « 1011 : l’agent du connecteur Graph n’est pas accessible ou hors connexion ». Connectez-vous à l’ordinateur où l’agent est installé et démarrez l’application de l’agent si elle n’est pas déjà en cours d’exécution. Si la connexion continue d’échouer, vérifiez que le certificat ou la secret client fourni à l’agent lors de l’inscription n’a pas expiré et qu’il dispose des autorisations requises.
+1. Si une connexion échoue avec l’erreur « 1011 : l’agent du connecteur Graph n’est pas accessible ou hors connexion ». Connectez-vous à l’ordinateur où l’agent est installé et démarrez l’application de l’agent si elle n’est pas déjà en cours d’exécution. Si la connexion continue d’échouer, vérifiez que le certificat ou la secret client fourni à l’agent lors de l’inscription n’a pas expiré et qu’il dispose des autorisations requises.

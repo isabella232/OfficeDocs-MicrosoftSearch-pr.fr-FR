@@ -3,6 +3,7 @@ title: Connecteur Graph Azure DevOps pour Microsoft Search (recherche Microsoft)
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur Azure DevOps Graph pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 8fe783c847c672223e051f4433af3e41678fe367
-ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
+ms.openlocfilehash: 9307aabbf5ea1565e083abfefb90c590d356ae58
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097402"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508859"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -26,7 +27,7 @@ ms.locfileid: "50097402"
 Le connecteur Graph Azure DevOps permet à votre organisation d’indexer des éléments de travail dans son instance du service Azure DevOps. Après avoir configuré le connecteur et indexé le contenu à partir d’Azure DevOps, les utilisateurs finaux peuvent rechercher ces éléments dans Microsoft Search (recherche Microsoft).
 
 > [!NOTE]
-> Lisez [**l’article Installation de votre connecteur Graph**](configure-connector.md) pour comprendre le processus d’installation général des connecteurs Graph.
+> Lisez [**l’article Configuration de votre connecteur Graph**](configure-connector.md) pour comprendre les instructions générales d’installation des connecteurs Graph.
 
 Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur Graph Azure DevOps. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur Graph Azure DevOps.
 
@@ -78,7 +79,7 @@ Après avoir inscrit l’application Recherche Microsoft auprès d’Azure DevOp
 
 ![Paramètres de l’application de connexion](media/ADO_Connection_settings_2.png)
 
-### <a name="configure-data-select-projects-and-fields"></a>Configurer des données : sélectionner des projets et des champs
+### <a name="configure-data-select-projects-and-fields"></a>Configurer les données : sélectionner des projets et des champs
 
 Vous pouvez choisir la connexion pour indexer l’ensemble de l’organisation ou des projets spécifiques.
 
@@ -86,11 +87,11 @@ Si vous choisissez d’indexer l’ensemble de l’organisation, les éléments 
 
 Si vous choisissez des projets individuels, seuls les éléments de travail de ces projets seront indexés.
 
-![Configurer des données](media/ADO_Configure_data.png)
+![Configurer les données](media/ADO_Configure_data.png)
 
 Ensuite, sélectionnez les champs que vous souhaitez que la connexion indexe et affiche un aperçu des données dans ces champs avant de poursuivre.
 
-![Choisir les propriétés](media/ADO_choose_properties.png)
+![Choisir des propriétés](media/ADO_choose_properties.png)
 
 ## <a name="step-4-manage-search-permissions"></a>Étape 4 : Gérer les autorisations de recherche
 
@@ -107,7 +108,7 @@ Suivez les [instructions d’installation générales.](https://docs.microsoft.c
 ## <a name="step-7-choose-refresh-settings"></a>Étape 7 : Choisir les paramètres d’actualisation
 
 Le connecteur Azure DevOps prend en charge les planifications d’actualisation pour les analyse complètes et incrémentielles.
-La planification recommandée est une heure pour une analyse incrémentielle et un jour pour une analyse complète.
+La planification recommandée est d’une heure pour une analyse incrémentielle et d’un jour pour une analyse complète.
 
 ## <a name="step-8-review-connection"></a>Étape 8 : Examiner la connexion
 

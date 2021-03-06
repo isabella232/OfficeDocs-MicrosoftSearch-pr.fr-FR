@@ -1,8 +1,9 @@
 ---
-title: Configurer votre connecteur microsoft pour Microsoft Search (recherche Microsoft)
-ms.author: monaray
-author: monaray97
-manager: jameslau
+title: Configurer votre connecteur Graph créé par Microsoft pour Microsoft Search (recherche Microsoft)
+ms.author: mecampos
+author: mecampos
+manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,52 +12,70 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurer votre connecteur microsoft pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 61a7d444ddc4c290b5098c327faa8e70f0ef1049
-ms.sourcegitcommit: 469be70ad295a5837978d75babf5243115257f77
+description: Vue d’ensemble du programme d’installation des connecteurs Graph par Microsoft
+ms.openlocfilehash: e97b930f627a6336cc93b3a1f33e390cae4ff0aa
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49847545"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508871"
 ---
+<!-- Previous ms.author: monaray -->
+
 <!-- markdownlint-disable no-trailing-punctuation -->
 
 # <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Vue d’ensemble du programme d’installation des connecteurs Graph par Microsoft 
 
-Cet article récapitule le processus de base requis pour utiliser le Centre d’administration [Microsoft 365](https://admin.microsoft.com) pour configurer l’un des connecteurs Graph par Microsoft. Le processus de base comprend les étapes suivantes :  
+Cet article présente le processus de base requis pour configurer les connecteurs Graph par **Microsoft** dans le Centre d’administration [Microsoft 365.](https://admin.microsoft.com) Le processus de base comprend les étapes suivantes :  
 <!---Add links to each section in the doc--->
 
-1. Ajoutez un connecteur Graph dans le Centre d’administration Microsoft 365.
-2. Nommez la connexion.
-3. Configurez les paramètres de connexion.
-4. Gérer les autorisations de recherche.
-5. Attribuez des étiquettes de propriété.
-6. Gérer le schéma.
-7. Choisissez les paramètres d’actualisation.
-8. Examinez la connexion.
+1. [Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
+2. [Nommer la connexion](#step-2-name-the-connection)
+3. [Configurer les paramètres de connexion](#step-3-configure-the-connection-settings)
+4. [Gérer les autorisations de recherche](#step-4-manage-search-permissions)
+5. [Attribuer des étiquettes de propriété](#step-5-assign-property-labels)
+6. [Gérer le schéma](#step-6-manage-schema)
+7. [Actualiser les paramètres](#step-7-refresh-settings)
+8. [Passer en revue la connexion](#step-8-review-connection)
 
-Il est important de noter que le processus d’installation est très similaire pour tous les connecteurs Graph par Microsoft, mais n’est pas exactement le même. **En plus de lire cet article, n’oubliez pas de lire les informations spécifiques au connecteur pour votre source de données.**  
+Cet article inclut également des informations sur la résolution des problèmes, les limitations et les étapes suivantes :
+
+* [Résolution des problèmes](#troubleshooting)
+* [Limites](#limitations)
+* [Étapes suivantes](#next-steps)
+
+> [!NOTE]
+> Le processus de configuration est similaire pour tous les connecteurs Graph par Microsoft, mais n’est pas exactement le même. **En plus de lire cet article, n’oubliez pas de lire les informations spécifiques au connecteur pour votre source de données.**  
+
+<!---## Before you get started-->
+
+<!---Insert "Before you get started" recommendations for this data source-->
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
 
-Pour configurer l’un des connecteurs créés par Microsoft, complétez les étapes suivantes.
+Pour configurer l’un des connecteurs Graph créés par Microsoft, complétez les étapes suivantes :
 
-1. Connectez-vous à votre compte d’administrateur dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com)
+1. Connectez-vous à votre compte d’administrateur dans le [Centre d’administration Microsoft 365.](https://admin.microsoft.com)
+
 2. Dans le volet de navigation, sélectionnez **Paramètres,** puis **recherchez & intelligence.** Sélectionnez [l’onglet Connecteurs.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)
+
 3. Sélectionnez **+Ajouter,** puis sélectionnez la source de données de votre choix dans le menu des options disponibles.
 
-![Les sources de données disponibles sont les suivantes : ADLS Gen2, les sites web d’entreprise, le serveur Microsoft SQL, Azure SQL, la base de données Oracle SQL, ServiceNow, le partage de fichiers, Azure DevOps et MediaWiki.](media/add-connector.png)
+   > [!div class="mx-imgBorder"]
+   > ![Les sources de données disponibles sont les suivantes : ADLS Gen2, les sites web d’entreprise, le serveur Microsoft SQL, Azure SQL, la base de données Oracle SQL, ServiceNow, le partage de fichiers, Azure DevOps et MediaWiki.](media/add-connector.png)
 
->[! Remarque :] Vous pouvez ajouter un maximum de dix connexions Graph à chaque client.
+> [!NOTE]
+> Vous pouvez ajouter un maximum de dix connexions Graph à chaque client.
 
 ## <a name="step-2-name-the-connection"></a>Étape 2 : Nommer la connexion
-Vous devez spécifier les attributs ci-après : 
 
-* Nom  
-* ID de connexion 
-* Description (facultatif) 
+Spécifiez les attributs ci-après :
 
-L’ID de connexion crée des propriétés implicites pour votre connecteur. Il ne doit contenir que des caractères alphanumériques et un maximum de 32 caractères. 
+* Name (obligatoire)
+* ID de connexion (obligatoire)
+* Description (facultatif)
+
+L’ID de connexion crée des propriétés implicites pour votre connecteur. Il ne doit contenir que des caractères alphanumériques et un maximum de 32 caractères.
 
 ## <a name="step-3-configure-the-connection-settings"></a>Étape 3 : Configurer les paramètres de connexion
 
@@ -73,23 +92,24 @@ Certains connecteurs tels que [Microsoft SQL](MSSQL-connector.md) azure Data Lak
 D’autres connecteurs tels [que ServiceNow,](servicenow-connector.md) [Azure DevOps](azure-devops-connector.md)et [Salesforce](salesforce-connector.md) prise en charge la synchronisation des utilisateurs et groupes non Azure AD.  
 
 ## <a name="step-5-assign-property-labels"></a>Étape 5 : Attribuer des étiquettes de propriété
-Vous pouvez affecter des étiquettes sémantiques à vos propriétés source sur la page « Attribuer des étiquettes de propriétés ». Les étiquettes sont des balises bien connues fournies par Microsoft qui fournissent une signification sémantique. Ils permettent à Microsoft d’intégrer vos données de connecteur dans des expériences Microsoft 365 telles que la recherche améliorée, les cartes de personnes, la découverte intelligente, etc.  
+
+Vous pouvez affecter des étiquettes sémantiques à vos propriétés source sur la page « Attribuer des étiquettes de propriétés ». Les étiquettes sont des balises connues fournies par Microsoft qui fournissent une signification sémantique. Ils permettent à Microsoft d’intégrer vos données de connecteur dans des expériences Microsoft 365 telles que la recherche améliorée, les cartes de personnes, la découverte intelligente, etc.  
 
 Le tableau suivant répertorie les étiquettes actuellement pris en charge et leurs descriptions.  
 
 Étiquette | Description
 --- | ---  
-**title** | Titre de l’élément que vous souhaitez voir dans la recherche et d’autres expériences 
-**url** | URL cible de l’élément dans le système source 
-**createdBy** | Nom de la personne qui a créé l’élément 
-**lastModifiedBy** | Nom de la personne qui a modifié l’élément le plus récemment 
-**authors** | Nom des personnes qui ont participé/ont participé à l’élément 
-**createdDateTime** | Quand l’élément a-t-il été créé ? 
-**lastModifiedDateTime** | Quand l’élément a-t-il été modifié le plus récemment 
-**fileName** | Nom de l’élément de fichier 
-**fileExtension** | Type d’élément de fichier tel que .pdf ou .word 
+**title** | Titre de l’élément que vous souhaitez voir dans la recherche et d’autres expériences
+**url** | URL cible de l’élément dans le système source
+**createdBy** | Nom de la personne qui a créé l’élément
+**lastModifiedBy** | Nom de la personne qui a modifié l’élément le plus récemment
+**authors** | Nom des personnes qui ont participé/ont participé à l’élément
+**createdDateTime** | Quand l’élément a-t-il été créé ?
+**lastModifiedDateTime** | Quand l’élément a-t-il été modifié le plus récemment ?
+**fileName** | Nom de l’élément de fichier
+**fileExtension** | Type d’élément de fichier tel que .pdf ou .word
 
-Les propriétés de cette page sont pré-sélectionnées en fonction de votre source de données, mais vous pouvez modifier cette sélection s’il existe une autre propriété mieux adaptée à une étiquette particulière.  
+Les propriétés de cette page sont pré-sélectionnées en fonction de votre source de données, mais vous pouvez modifier cette sélection si une autre propriété convient mieux à une étiquette particulière.  
 
 Le titre **de l’étiquette** est l’étiquette la plus importante. Il est **vivement recommandé d’avoir** une propriété affectée à cette étiquette afin que votre connexion participe à l’expérience [de cluster de résultats.](result-cluster.md)
 
@@ -99,34 +119,35 @@ Un mappage incorrect des étiquettes entraîne une expérience de recherche ins�
 
 ### <a name="content-property"></a>Propriété de contenu
 
-Il est vivement recommandé de sélectionner une **propriété de contenu » dans le menu déroulant des options, ou de conserver la valeur par défaut si elle est présente. Cette propriété est utilisée pour l’indexation de texte intégral du contenu, la génération d’extraits de page de résultats de recherche, la participation au [cluster](result-cluster.md) de résultats, la détection de langue, la prise en charge HTML/texte, le classement et la pertinence, ainsi que la formulation des requêtes.
+Il est recommandé de  sélectionner une propriété de contenu dans le menu déroulant des options ou de conserver la valeur par défaut si elle est présente. Cette propriété est utilisée pour l’indexation de texte intégral du contenu, la génération d’extraits de page de résultats de recherche, la participation au [cluster](result-cluster.md) de résultats, la détection de langue, la prise en charge HTML/texte, le classement et la pertinence, ainsi que la formulation des requêtes.
 
 Si vous sélectionnez une propriété de contenu, vous avez la possibilité d’utiliser la propriété générée par le système **ResultSnippet** lorsque vous créez [votre type de résultat.](customize-results-layout.md) Cette propriété sert d’espace réservé pour les extraits de code dynamiques générés à partir de la propriété de contenu au moment de la requête. Si vous utilisez cette propriété dans votre type de résultat, des extraits de code sont générés dans vos résultats de recherche.
 
 ### <a name="creating-aliases-for-source-properties"></a>Création d’alias pour les propriétés source
 
-Vous pouvez ajouter des alias à vos propriétés sous la colonne « Alias » dans la page Gérer le schéma. Les alias sont des noms convivial pour vos propriétés. Ils sont utilisés dans les requêtes et dans la création de filtres. Ils sont également utilisés pour normaliser les propriétés source à partir de plusieurs connexions de telle façon qu’elles ont le même nom. Ainsi, vous pouvez créer un filtre unique pour un secteur vertical avec plusieurs connexions. Pour plus [d’informations, voir](customize-search-page.md) Personnaliser la page des résultats de la recherche.  
+Vous pouvez ajouter des alias à vos propriétés sous la colonne « Alias » dans la page Gérer le schéma. Les alias sont des noms convivial pour vos propriétés et sont également utilisés dans les requêtes et dans la création de filtres. Ils sont également utilisés pour normaliser les propriétés source à partir de plusieurs connexions de telle façon qu’elles ont le même nom. Ainsi, vous pouvez créer un filtre unique pour un secteur vertical avec plusieurs connexions. Pour plus d’informations, voir [Personnaliser la page des résultats de la recherche.](customize-search-page.md)  
 
 ### <a name="search-schema-attributes"></a>Attributs de schéma de recherche
 
-Vous pouvez définir les attributs de schéma de recherche pour contrôler les fonctionnalités de recherche de chaque propriété source. Un schéma de recherche permet de déterminer les résultats affichés sur la page des résultats de la recherche et les informations que les utilisateurs finaux peuvent afficher et consulter.
+Vous pouvez définir les attributs de schéma de recherche pour contrôler la fonctionnalité de recherche de chaque propriété source. Un schéma de recherche permet de déterminer les résultats affichés sur la page des résultats de la recherche et les informations que les utilisateurs finaux peuvent afficher et consulter.
 
-Les attributs de schéma de recherche incluent **les** attributs utilisables dans une **recherche,** utilisables dans une requête, **récupérables** et **utilisables dans une recherche.** Le tableau suivant répertorie chacun des attributs que les connecteurs Microsoft Graph supportent et explique leurs fonctions.
+Les attributs de schéma de recherche incluent des options **pour interroger,** **rechercher,** **récupérer** et **affiner**. Le tableau suivant répertorie chacun des attributs que les connecteurs Microsoft Graph supportent et explique leurs fonctions.
 
 Attribut de schéma de recherche | Fonction | Exemple
 --- | --- | ---
-UTILISABLE DANS UNE RECHERCHE | Rend le contenu de texte d’une propriété utilisable dans une recherche. Le contenu de la propriété est inclus dans l’index de texte intégral. | Si la propriété est un  **titre,** une requête entreprise renvoie des réponses qui contiennent le mot **Entreprise** dans un texte ou un titre.
-QUERYABLE | Recherche par requête une correspondance pour une propriété particulière. Le nom de la propriété peut ensuite être spécifié dans la requête par programme ou en verbatim. |  Si la **propriété Title** est utilisable dans une requête, la requête **Title: Enterprise** est prise en charge. 
-RÉCUPÉRABLE | Seules les propriétés récupérables peuvent être utilisées dans le type de résultat et s’afficher dans le résultat de recherche. |
-UTILISABLE DANS UNE REFINABLE | Les propriétés utilisables dans une recherche refinable peuvent être utilisées comme dans la page des résultats de recherche Microsoft. | Les utilisateurs de votre [organisation](custom-filters.md) peuvent filtrer **par lastModifiedDateTime** dans la page des résultats de la recherche si la propriété est marquée comme utilisable dans une recherche dans une recherche dans le cadre de la configuration de la connexion.
+SEARCH | Rend le contenu de texte d’une propriété utilisable dans une recherche. Le contenu de la propriété est inclus dans l’index de texte intégral. | Si la propriété est un  **titre,** une requête entreprise renvoie des réponses qui contiennent le mot **Entreprise** dans un texte ou un titre.
+REQUÊTE | Recherche par requête une correspondance pour une propriété particulière. Le nom de la propriété peut ensuite être spécifié dans la requête par programme ou par mot. |  Si la **propriété Title** peut être interrogé, la requête **Title: Enterprise** est prise en charge.
+RETRIEVE | Seules les propriétés récupérables peuvent être utilisées dans le type de résultat et s’afficher dans le résultat de recherche. |
+AFFINER | L’option d’affinment peut être utilisée comme dans la page des résultats de recherche Microsoft. | Les utilisateurs de votre organisation peuvent [filtrer](custom-filters.md) par **URL** dans la page des résultats de la recherche si la propriété Affiner est marquée lors de la configuration de la connexion
 
 Pour tous les connecteurs à l’exception du connecteur de partage de fichiers, les types personnalisés doivent être définies manuellement. Pour activer les fonctionnalités de recherche pour chaque champ, vous avez besoin d’un schéma de recherche mappé à une liste de propriétés. L’Assistant Connexion sélectionne automatiquement un schéma de recherche basé sur l’ensemble des propriétés source que vous choisissez. Vous pouvez modifier ce schéma en sélectionnant les cases à cocher pour chaque propriété et attribut dans la page de schéma de recherche.
 
-![Le schéma d’un connecteur peut être personnalisé en ajoutant ou en supprimant des fonctions Requête, Recherche et Récupération.](media/manageschema.png)
- 
+> [!div class="mx-imgBorder"]
+> ![Le schéma d’un connecteur peut être personnalisé en ajoutant ou en supprimant des fonctions Requête, Recherche et Récupération.](media/manageschema.png)
+
 ### <a name="restrictions-and-recommendations-for-search-schema-settings"></a>Restrictions et recommandations pour les paramètres de schéma de recherche
 
-* La **propriété de** contenu est uniquement utilisable dans une recherche. Une fois sélectionnée dans la dropdown, cette propriété ne peut pas être marquée **comme récupérable** ou **utilisable dans une requête.**
+* La **propriété de** contenu est uniquement utilisable dans une recherche. Une fois sélectionnée dans ladown, cette propriété ne peut pas être utilisée avec les options **retrieve** ou **query**.
 
 * Des problèmes de performances importants se produisent lorsque les résultats de la recherche s’restituer avec la **propriété de** contenu. Par exemple, le **champ de** contenu Texte d’un article de la base de connaissances [ServiceNow.](https://www.servicenow.com)
 
@@ -146,23 +167,41 @@ Il existe deux types d’intervalles d’actualisation: l’actualisation compl�
 Avec une actualisation complète, le moteur de recherche traite et indexe chaque élément de la source de contenu, quelles que soient les analyses précédentes. Une actualisation complète est la meilleure pour les situations ci-après :
 
 * Détection de suppressions de données.
-* L’actualisation incrémentielle n’a pas réussi à mettre à jour le contenu en raison d’erreurs.
+* L’actualisation incrémentielle a trouvé des erreurs et a échoué.
 * Les ACA ont été modifiées.
 * Les règles d’analyse ont été modifiées.
-* Lorsque le schéma de la connexion a été mis à jour (les mises à jour de schéma ne sont pas encore pris en charge)
+* Le schéma de la connexion a été mis à jour (les mises à jour de schéma ne sont pas encore pris en charge).
 
-Avec une actualisation **incrémentielle,** le moteur de recherche peut traiter et indexer uniquement les éléments qui ont été créés ou modifiés depuis la dernière analyse réussie. Par conséquent, toutes les données de la source de contenu ne sont pas ré-indexées. Les actualisations incrémentielles fonctionnent mieux pour détecter le contenu, les métadonnées, les autorisations et d’autres mises à jour.
+Avec une actualisation **incrémentielle,** le moteur de recherche peut traiter et indexer uniquement les éléments qui ont été créés ou modifiés depuis la dernière analyse réussie. Par conséquent, toutes les données de la source de contenu ne sont pas réindexées. Les actualisations incrémentielles fonctionnent mieux pour détecter le contenu, les métadonnées, les autorisations et d’autres mises à jour.
 
-Les actualisations incrémentielles sont beaucoup plus rapides que les actualisations complètes, car les éléments inchangés ne sont pas traitées. Toutefois, si vous choisissez d’exécuter des actualisations incrémentielles, vous devrez toujours exécuter régulièrement des actualisations complètes pour maintenir une synchronisation précise des données entre la source de contenu et l’index de recherche.
+Les actualisations incrémentielles sont beaucoup plus rapides que les actualisations complètes, car les éléments inchangés ne sont pas traitées. Toutefois, si vous choisissez d’exécuter des actualisations incrémentielles, vous devez toujours exécuter régulièrement des actualisations complètes pour maintenir une synchronisation correcte des données entre la source de contenu et l’index de recherche.
 
-![Paramètres d’analyse incrémentielle et d’intervalle d’analyse complète indiquant Incrémentielle à 15 minutes et analyse complète à 1 semaine.](media/refreshschedule.png)
+> [!div class="mx-imgBorder"]
+> ![Paramètres d’analyse incrémentielle et d’intervalle d’analyse complète indiquant Incrémentielle à 15 minutes et analyse complète à 1 semaine.](media/refreshschedule.png)
 
 <!---Change screenshot for one that shows both options in new UI (try ServiceNow)--->
 
 ## <a name="step-8-review-connection"></a>Étape 8 : Examiner la connexion
 
-Vous pouvez passer en revue l’intégralité de votre configuration et modifier les paramètres selon vos besoins avant d’achever la connexion. **N’oubliez pas de lire les informations spécifiques au connecteur pour votre source de données si vous ne l’avez pas déjà fait.** Sélectionnez **Terminer la mise** à jour lorsque vous êtes prêt à terminer la connexion.
+Vous pouvez passer en revue l’intégralité de votre configuration et modifier les paramètres selon vos besoins avant d’achever la connexion. **N’oubliez pas de lire les informations spécifiques au connecteur pour votre source de données si vous ne l’avez pas déjà fait.** Sélectionnez **Terminer la** mise à jour lorsque vous êtes prêt à terminer la connexion.
 
-## <a name="how-do-i-know-the-connection-setup-worked"></a>Comment savoir si la configuration de la connexion a fonctionné ?
+### <a name="confirm-if-the-connection-setup-worked"></a>Vérifier si la configuration de la connexion a fonctionné
 
 Go to the list of your published connections under the **Connectors** tab in the [admin center](https://admin.microsoft.com). Pour découvrir comment effectuer des mises à jour et des suppressions, voir [Gérer votre connecteur.](manage-connector.md)
+
+## <a name="troubleshooting"></a>Résolution des problèmes
+<!---Insert troubleshooting recommendations for this data source-->
+Lisez les informations spécifiques au connecteur pour votre source de données. 
+
+> [!NOTE]
+> À ce stade, certains articles spécifiques au connecteur n’incluent pas de recommandations de résolution des problèmes.
+
+## <a name="limitations"></a>Limites
+<!---Insert limitations for this data source-->
+Pour en savoir plus sur les limitations qui s’appliquent à toutes les sources de données, consultez l’article Vue d’ensemble des [connecteurs Microsoft Graph.](connectors-overview.md)
+
+Consultez les informations spécifiques au connecteur pour votre source de données afin de savoir si d’autres limitations s’appliquent à ce connecteur Graph particulier.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Après avoir publié la connexion, vous devez personnaliser la page des résultats de la recherche. Pour en savoir plus sur la personnalisation des résultats de recherche, voir [Personnaliser la page des résultats de la recherche.](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page)

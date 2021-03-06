@@ -3,6 +3,7 @@ title: Connecteur Graph pour les sites web d’entreprise pour Microsoft Search 
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,23 +13,23 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur Graph des sites web d’entreprise pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 7d71e6e3d775c97d8916e20ab032c312c269c5f1
-ms.sourcegitcommit: 6a7522d9aeaedeedaac096c485d3f343ce98d3d2
+ms.openlocfilehash: b0ed7cc4148dba6c7555fcf7c9c930184cdbc24c
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421098"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508795"
 ---
 <!---Previous ms.author: monaray --->
 
 <!-- markdownlint-disable no-inline-html -->
 
-# <a name="enterprise-websites-graph-connector"></a>Connecteur Graph pour les sites web d’entreprise
+# <a name="enterprise-websites-graph-connector"></a>Connecteur Graph de sites web d’entreprise
 
 Le connecteur Graph des sites web d’entreprise permet à votre organisation d’indexer des articles et du contenu à partir de ses sites web **internes.** Après avoir configuré le connecteur et synchronisé le contenu à partir du site web, les utilisateurs finaux peuvent rechercher ce contenu à partir de n’importe quel client Recherche Microsoft.
 
 > [!NOTE]
-> Lisez [**l’article Configurer votre connecteur Graph**](configure-connector.md) pour comprendre le processus d’installation général des connecteurs Graph.
+> Lisez [**l’article Configurer votre connecteur Graph**](configure-connector.md) pour comprendre les instructions générales d’installation des connecteurs Graph.
 
 Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur de sites web d’entreprise. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur de sites web d’entreprise. Cet article inclut également des informations [sur la résolution des problèmes](#troubleshooting) et les [limitations.](#limitations)
 
@@ -50,18 +51,18 @@ Suivez les [instructions d’installation générales.](https://docs.microsoft.c
 
 Pour vous connecter à votre source de données, vous devez remplir l’URL racine du site web, sélectionner une source d’analyse et le type d’authentification que vous souhaitez utiliser : Aucune, Authentification de base ou OAuth 2.0 avec [Azure Active Directory (Azure AD).](https://docs.microsoft.com/azure/active-directory/) Une fois ces informations terminées, sélectionnez Connexion de test pour vérifier vos paramètres.
 
-> [!NOTE]
-> Si un plan de site est défini sur le site que vous souhaitez analyser, le connecteur analyse uniquement les URL répertoriées dans le plan de site. Si aucune carte de site n’est définie, le connecteur analysera en profondeur tous les liens trouvés sur l’URL racine du site.
-
 ### <a name="url"></a>URL
 
 Utilisez le champ URL pour spécifier la racine du site web que vous souhaitez analyser. Le connecteur de sites web d’entreprise utilisera cette URL comme point de départ et suivra tous les liens de cette URL pour son analyse.
+
+> [!NOTE]
+> Si un plan de site est défini sur le site que vous souhaitez analyser, le connecteur analyse uniquement les URL répertoriées dans le plan de site. Si aucune carte de site n’est définie, le connecteur analysera en profondeur tous les liens trouvés sur l’URL racine du site.
 
 ### <a name="crawl-mode-cloud-or-on-premises-preview"></a>Mode d’analyse : cloud ou local (prévisualisation)
 
 Le mode d’analyse détermine le type de sites web que vous souhaitez indexer, en nuage ou en local. Pour vos sites web cloud, sélectionnez **Cloud** comme mode d’analyse.
 
-En outre, le connecteur prend désormais en charge l’analyse des sites web locaux. Ce mode est en prévisualisation. Pour accéder à vos données sur site, vous devez d’abord installer et configurer l’agent de connecteur Graph. Pour en savoir plus, consultez [l’agent de connecteur Graph.](https://docs.microsoft.com/microsoftsearch/on-prem-agent)
+En outre, le connecteur prend désormais en charge l’analyse des sites web locaux. Ce mode est en prévisualisation. Pour accéder à vos données sur site, vous devez d’abord installer et configurer l’agent du connecteur Graph. Pour en savoir plus, consultez [l’agent de connecteur Graph.](https://docs.microsoft.com/microsoftsearch/on-prem-agent)
 
 Pour vos sites web locaux, sélectionnez **Agent** comme mode d’analyse et, dans le champ **Agent** local, choisissez l’agent de connecteur Graph que vous avez installé et configuré précédemment.  
 
@@ -123,7 +124,7 @@ Lors de la lecture du contenu du site web, l’analyse peut rencontrer des erreu
  Code d’erreur détaillé | Message d’erreur
  --- | ---
  6001 | Le site en cours d’indexation n’est pas accessible
- 6005 | La page source tentée d’indexer a été bloquée par la configuration robots.txt'indexation.
+ 6005 | La page source en cours d’indexation a été bloquée par la configuration robots.txt'indexation.
  6008 | Impossible de résoudre le DNS
  6009 | Pour toutes les erreurs côté client (à l’exception de HTTP 404, 408), reportez-vous aux codes d’erreur HTTP 4xx pour plus d’informations.
  6013 | La page source en cours d’indexation est in trouvée. (Erreur HTTP 404)
@@ -137,4 +138,4 @@ Lors de la lecture du contenu du site web, l’analyse peut rencontrer des erreu
 
 ## <a name="limitations"></a>Limites
 
-Le connecteur de sites web d’entreprise ne prend pas en charge la recherche de données sur **des pages web dynamiques.** Des exemples de ces pages web sont stockés dans des systèmes de gestion de contenu tels que [Contrôle](https://www.atlassian.com/software/confluence) et [Unily,](https://www.unily.com/) ou des bases de données qui stockent du contenu de site web.
+Le connecteur de sites web d’entreprise ne prend pas en charge la recherche de données sur **les pages web dynamiques.** Des exemples de ces pages web sont stockés dans des systèmes de gestion de contenu tels que [Contrôle](https://www.atlassian.com/software/confluence) et [Unily,](https://www.unily.com/) ou des bases de données qui stockent du contenu de site web.

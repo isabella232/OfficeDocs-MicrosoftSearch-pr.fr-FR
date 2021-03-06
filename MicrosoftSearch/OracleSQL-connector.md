@@ -3,6 +3,7 @@ title: Connecteur Oracle SQL Graph pour Microsoft Search (recherche Microsoft)
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Configurer le connecteur Oracle SQL Graph pour Microsoft Search (recherche Microsoft).
-ms.openlocfilehash: 01e4cd6b04d2997ea11ef006e94ea09b03280f41
-ms.sourcegitcommit: 6a7f36769e92b714588b47efb0c185eddabe6953
+ms.openlocfilehash: 901b772def7585606a090d8a7696a32ff028e2a0
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099334"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508894"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -27,7 +28,7 @@ ms.locfileid: "50099334"
 Le connecteur Oracle SQL Graph permet à votre organisation de découvrir et d’indexer des données à partir d’une base de données Oracle sur site. Le connecteur indexe le contenu spécifié dans Microsoft Search (recherche Microsoft). Pour maintenir l’index à jour avec les données sources, il prend en charge des analyses complètes et incrémentielles périodiques. Avec le connecteur SQL Oracle, vous pouvez également restreindre l’accès aux résultats de recherche pour certains utilisateurs.
 
 > [!NOTE]
-> Lisez [**l’article Installation de votre connecteur Graph**](configure-connector.md) pour comprendre le processus d’installation général des connecteurs Graph.
+> Lisez [**l’article Configuration de votre connecteur Graph**](configure-connector.md) pour comprendre les instructions générales d’installation des connecteurs Graph.
 
 Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur Oracle SQL Graph. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur Oracle SQL Graph. Cet article inclut également des informations [sur la résolution des problèmes](#troubleshooting) et les [limitations.](#limitations)
 
@@ -51,7 +52,7 @@ Suivez les [instructions d’installation générales.](https://docs.microsoft.c
 
 Pour connecter votre connecteur SQL Oracle à une source de données, vous devez configurer le serveur de base de données que vous souhaitez analyser et l’agent de connecteur Graph local. Vous pouvez ensuite vous connecter à la base de données avec la méthode d’authentification requise.
 
-Pour le connecteur SQL Oracle, vous devez spécifier le nom d’hôte, le nom de port et de service (base de données) avec la méthode d’authentification préférée, le nom d’utilisateur et le mot de passe.
+Pour le connecteur SQL Oracle, vous devez spécifier le nom d’hôte, le nom de port et de service (base de données) ainsi que la méthode d’authentification préférée, le nom d’utilisateur et le mot de passe.
 
 > [!NOTE]
 > Votre base de données doit exécuter la base de données Oracle version 11g ou ultérieure pour que le connecteur puisse se connecter. Le connecteur prend en charge la base de données Oracle hébergée sur les plateformes d’ordinateurs VM Windows, Linux et Azure.
@@ -69,7 +70,7 @@ Dans cette étape, vous configurez la requête SQL qui exécute une analyse comp
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a>Sélectionner des colonnes de données (obligatoire) et des colonnes ACL (facultatif)
 
-L’exemple illustre la sélection de cinq colonnes de données qui détiennent les données de la recherche : OrderId, OrderTitle, OrderDesc, CreatedDateTime et IsDeleted. Pour définir des autorisations d’affichage pour chaque ligne de données, vous pouvez éventuellement sélectionner ces colonnes de la ACL : AllowedUsers, AllowedGroups, DeniedUsers et DeniedGroups. Pour toutes ces colonnes de données, vous pouvez sélectionner les options **de requête,** de **recherche** ou de **récupération.**
+L’exemple illustre la sélection de cinq colonnes de données qui détiennent les données de la recherche : OrderId, OrderTitle, OrderDesc, CreatedDateTime et IsDeleted. Pour définir des autorisations d’affichage pour chaque ligne de données, vous pouvez éventuellement sélectionner ces colonnes de la ACL : AllowedUsers, AllowedGroups, DeniedUsers et DeniedGroups. Pour toutes ces colonnes de données, vous pouvez sélectionner les options **de** **requête,** de recherche ou de **récupération.**
 
 Sélectionnez des colonnes de données comme illustré dans cet exemple de requête : `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
 
@@ -101,11 +102,11 @@ Pour tout autre type de données actuellement non directement pris en charge, la
 
 ### <a name="watermark-required"></a>Filigrane (obligatoire)
 
-Pour éviter la surcharge de la base de données, le connecteur par lots et reprend les requêtes d’analyse complète avec une colonne filigrane d’analyse complète. À l’aide de la valeur de la colonne filigrane, chaque lot suivant est récupéré et l’interrogation reprend à partir du dernier point de contrôle. Il s’agit essentiellement d’un mécanisme permettant de contrôler l’actualisation des données pour les analyse complètes.
+Pour éviter la surcharge de la base de données, le connecteur par lots et reprend les requêtes d’analyse complète avec une colonne filigrane d’analyse complète. En utilisant la valeur de la colonne filigrane, chaque lot suivant est récupéré et l’interrogation reprend à partir du dernier point de contrôle. Il s’agit essentiellement d’un mécanisme permettant de contrôler l’actualisation des données pour les analyse complètes.
 
 Créez des extraits de requête pour les filigranes, comme illustré dans les exemples suivants :
 
-* `WHERE (CreatedDateTime > @watermark)`. Nommez le nom de colonne de filigrane avec le mot clé `@watermark` réservé. Vous ne pouvez trier la colonne filigrane que par ordre croissant.
+* `WHERE (CreatedDateTime > @watermark)`. Nommez le nom de colonne en filigrane avec le mot clé `@watermark` réservé. Vous ne pouvez trier la colonne filigrane que par ordre croissant.
 * `ORDER BY CreatedDateTime ASC`. Trier la colonne filigrane dans l’ordre croissant.
 
 Dans la configuration présentée dans l’image suivante, se trouve `CreatedDateTime` la colonne filigrane sélectionnée. Pour extraire le premier lot de lignes, spécifiez le type de données de la colonne filigrane. Dans ce cas, le type de données est `DateTime` .
@@ -116,7 +117,7 @@ La première requête récupère le premier **N** nombre de lignes à l’aide d
 
 ### <a name="skipping-soft-deleted-rows-optional"></a>Ignorer les lignes supprimées (facultatif)
 
-Pour exclure l’indexation des lignes supprimées (ou non) dans votre base de données, spécifiez le nom et la valeur de la colonne de suppression (suppression totale) qui indiquent que la ligne est supprimée.
+Pour exclure l’indexation des lignes supprimées (à l’aide d’une suppression indélémentée) dans votre base de données, spécifiez le nom et la valeur de la colonne de suppression (suppression totale) qui indiquent que la ligne est supprimée.
 
 ![Paramètres de suppression souple : « Supprimer (suppression) » et « Valeur de la colonne suppression (suppression) qui indique une ligne supprimée »](media/MSSQL-softdelete.png)
 
@@ -167,11 +168,11 @@ Une planification d’analyse complète trouve les lignes supprimées qui ont é
 Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="next-steps-customize-the-search-results-page"></a>Étapes suivantes : personnaliser la page des résultats de la recherche
+<!--- ## Next steps: Customize the search results page
 
-Créez vos propres secteurs verticaux et types de résultats, afin que les utilisateurs finaux peuvent afficher les résultats de recherche à partir de nouvelles connexions. Sans cette étape, les données de votre connexion ne s’affichent pas sur la page des résultats de la recherche.
+Create your own verticals and result types, so end users can view search results from new connections. Without this step, data from your connection won't show up on the search results page.
 
-Pour en savoir plus sur la création de vos secteurs verticaux et MRT, voir Personnalisation de la page de résultats [de recherche.](customize-search-page.md)
+To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md). -->
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 

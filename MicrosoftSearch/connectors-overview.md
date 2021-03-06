@@ -3,6 +3,7 @@ title: Vue d’ensemble des connecteurs Microsoft Graph
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble des connecteurs Microsoft Graph pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 13127d092fe4e624ed448037d83f16f83ddc560a
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 1b3ea74cf571b1b5a048695633f6b9f698a21bf5
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084874"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508912"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -35,6 +36,8 @@ Cet article est destiné à aider les administrateurs Microsoft 365 à trouver l
 * [Quelles sont les fonctionnalités d’aperçu ?](#what-are-the-preview-features)
 * [Comment personnaliser et configurer les résultats de la recherche ?](#how-do-i-customize-and-configure-search-results)
 * [Comment effectuer une recherche dans les données de mon connecteur à partir d’une application personnalisée ?](#how-do-i-search-my-connector-data-from-a-custom-application)
+* [Comment personnaliser les résultats de recherche ?](#how-do-i-customize-search-results)
+* [Quelles sont les limitations du connecteur ?](#what-are-the-connector-limitations)
 
 <!---Modify to another note that is more accurate after rollout completion--->
 > [!IMPORTANT]
@@ -71,11 +74,11 @@ Vous pouvez vous connecter aux sources de données suivantes à l’aide de conn
 * [Sites web d’entreprise](enterprise-web-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [Partage de fichiers](fileshare-connector.md)
-* [Oracle SQL (prévisualisation)](OracleSQL-connector.md)
+* [Oracle SQL (version d’évaluation)](OracleSQL-connector.md)
 * [Salesforce (préversion)](salesforce-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
-La [galerie de connecteurs Graph](connectors-gallery.md) contient une brève description de chacun de ces connecteurs Graph. Si vous êtes prêt à connecter l’une de ces sources [](configure-connector.md) de données à votre client, n’oubliez pas de lire la vue d’ensemble du programme d’installation et les autres articles de la section Connecteurs d’installation par Microsoft qui s’appliquent à votre source de données.
+La [galerie de connecteurs Graph](connectors-gallery.md) contient une brève description de chacun de ces connecteurs Graph. Si vous êtes prêt à connecter l’une de ces sources [](configure-connector.md) de données à votre client, n’oubliez pas de lire la vue d’ensemble du programme d’installation et tous les autres articles de la section Connecteurs d’installation par Microsoft qui s’appliquent à votre source de données.
 
 ### <a name="graph-connectors-by-our-partners"></a>Connecteurs graph par nos partenaires
 
@@ -99,7 +102,7 @@ Pour plus d’informations, voir [Conditions d’utilisation](licensing.md) et c
 
 Bien que les connecteurs Microsoft Graph et les API de recherche Microsoft soient désormais généralement disponibles, plusieurs fonctionnalités sont en prévisualisation.
 
-L’ensemble de connecteurs et de fonctionnalités en prévisualisation inclut :
+L’ensemble des connecteurs et des fonctionnalités de la prévisualisation comprend les éléments suivants :
 
 * [Connecteur Azure DevOps](azure-devops-connector.md)
 * [Connecteur Salesforce](salesforce-connector.md)
@@ -117,13 +120,13 @@ Il existe de nombreuses façons de personnaliser et de configurer les résultats
 
 ## <a name="how-do-i-search-my-connector-data-from-a-custom-application"></a>Comment effectuer une recherche dans les données de mon connecteur à partir d’une application personnalisée ?
 
-Une fois les données personnalisées indexées, les développeurs peuvent [interroger ces données.](https://docs.microsoft.com/graph/search-concept-custom-types) Vous pouvez afficher vos données dans n’importe quelle application. Pour plus d’informations, voir la [vue d’ensemble de l’API recherche Microsoft dans Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
+Une fois les données personnalisées indexées, les développeurs peuvent [interroger ces données.](https://docs.microsoft.com/graph/search-concept-custom-types) Vous pouvez afficher vos données dans n’importe quelle application. Pour plus d’informations, voir [la vue d’ensemble de l’API recherche Microsoft dans Microsoft Graph](https://docs.microsoft.com/graph/search-concept-overview).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="how-do-i-customize-search-results"></a>Comment personnaliser les résultats de recherche ?
 
-Veillez à personnaliser les résultats de la recherche comme recommandé dans cet article Comment personnaliser et [configurer les résultats de recherche ?](#how-do-i-customize-and-configure-search-results) Pour en savoir plus sur la personnalisation des résultats de recherche, voir [Personnaliser la page des résultats de la recherche.](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page)
+L’étape suivante consiste à personnaliser les résultats de recherche comme recommandé dans cet article Comment personnaliser et configurer [les résultats de la recherche ?](#how-do-i-customize-and-configure-search-results) Pour en savoir plus sur la personnalisation des résultats de recherche, voir [Personnaliser la page des résultats de la recherche.](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page)
 
-## <a name="limitations"></a>Limites
+## <a name="what-are-the-connector-limitations"></a>Quelles sont les limitations du connecteur ?
 
 * Lorsque vous **publiez** un connecteur microsoft, la création de la connexion peut prendre quelques minutes. Pendant ce temps, la connexion affiche son état en attente.
 
@@ -133,6 +136,6 @@ Veillez à personnaliser les résultats de la recherche comme recommandé dans c
 
 * Il n’existe aucune prise en charge des mises à jour de schéma. Après avoir créé une configuration de connexion, il n’existe aucun moyen de mettre à jour le schéma. Vous pouvez uniquement supprimer et re-créer la connexion.
 
-* Il existe une limite de connexions. Chaque client peut créer jusqu’à 10 connexions.
+* Il existe une limite de connexion. Chaque client peut créer jusqu’à 10 connexions.
 
 * La prise en charge de la modification de la connexion n’est pas disponible. Une fois la connexion créée, vous ne pouvez pas la modifier. Si vous devez modifier des détails, vous devez supprimer et recréer la connexion.

@@ -3,6 +3,7 @@ title: Connecteur MediaWiki Graph pour Microsoft Search (recherche Microsoft)
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur MediaWiki Graph pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: e2b2b7c506d92623dd0f68801312c1820b5b9d4e
-ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
+ms.openlocfilehash: 1c2908de859056ccb26b862820e8b3be7a158569
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097393"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508768"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -26,7 +27,7 @@ ms.locfileid: "50097393"
 Le connecteur MediaWiki Graph permet à votre organisation de découvrir et d’indexer des données à partir d’un wiki créé à l’aide du logiciel MediaWiki. Ce connecteur indexe le contenu spécifié dans Microsoft Search (recherche Microsoft) et prend en charge les analyse périodiques pour maintenir l’index à jour.
 
 > [!NOTE]
-> Lisez [**l’article Installation de votre connecteur Graph**](configure-connector.md) pour comprendre le processus d’installation général des connecteurs Graph.
+> Lisez [**l’article Configuration de votre connecteur Graph**](configure-connector.md) pour comprendre les instructions générales d’installation des connecteurs Graph.
 
 Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur MediaWiki Graph. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur MediaWiki Graph. Cet article inclut également des informations sur [les limitations.](#limitations)
 

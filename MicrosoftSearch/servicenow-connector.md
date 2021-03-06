@@ -3,6 +3,7 @@ title: Connecteur ServiceNow Graph pour Microsoft Search (recherche Microsoft)
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur ServiceNow Graph pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: d1fdfb5f1aec5091fd526152de2bdc86932cfdb9
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: eaf8014876b03c0b64c012cf7e83c4e4b84838b9
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084892"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508678"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -26,7 +27,7 @@ ms.locfileid: "50084892"
 Le connecteur ServiceNow Graph permet à votre organisation d’indexer les articles basés sur les connaissances visibles par les utilisateurs en fonction des autorisations des critères utilisateur au sein de votre organisation. Après avoir configuré le connecteur et indexé le contenu à partir de ServiceNow, les utilisateurs peuvent rechercher les articles à partir de n’importe quel client Recherche Microsoft.
 
 > [!NOTE]
-> Lisez [**l’article Installation de votre connecteur Graph**](configure-connector.md) pour comprendre le processus d’installation général des connecteurs Graph.
+> Lisez [**l’article Configuration de votre connecteur Graph**](configure-connector.md) pour comprendre les instructions générales d’installation des connecteurs Graph.
 
 Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur ServiceNow Graph. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur ServiceNow Graph. Cet article inclut également des informations [sur la résolution des problèmes](#troubleshooting) et les [limitations.](#limitations)
   
@@ -82,7 +83,7 @@ ID du client | ID unique généré automatiquement en lecture seule pour l’app
 Secret client | Avec cette chaîne secrète partagée, l’instance ServiceNow et Microsoft Search (recherche Microsoft) autorisent les communications entre eux. | Suivez les meilleures pratiques en matière de sécurité en traitant le secret comme un mot de passe.
 URL de redirection | URL de rappel requise vers qui le serveur d’autorisation redirige. | https://gcs.office.com/v1.0/admin/oauth/callback
 Logo URL | URL qui contient l’image du logo de l’application. | N/A
-Actif | Activez la case à cocher pour que le Registre de l’application soit actif. | Définir sur actif
+Actif | Activez la case à cocher pour rendre le Registre d’application actif. | Définir sur actif
 Durée de vie du jeton d’actualisation | Nombre de secondes de validité d’un jeton d’actualisation. Par défaut, les jetons d’actualisation expirent dans 100 jours (8 640 000 secondes). | 31 536 000 (1 an)
 Durée de vie du jeton d’accès | Nombre de secondes de validité d’un jeton d’accès. | 43 200 (12 heures)
 
@@ -157,10 +158,10 @@ L’instance ServiceNow a besoin de la configuration suivante :
    Champ | Valeur recommandée
    --- | ---
    Fournisseur OIDC |  Azure AD
-   URL de métadonnées OIDC | L’URL doit prendre la forme https \: //login.microsoftonline.com/<tenandId">/.well-known/openid-configuration <br/>Remplacez « tenantID » par l’ID d’annuaire (client) de l’étape 3.a.
+   URL des métadonnées OIDC | L’URL doit être au formulaire https \: //login.microsoftonline.com/<tenandId">/.well-known/openid-configuration <br/>Remplacez « tenantID » par l’ID d’annuaire (client) de l’étape 3.a.
    Durée de vie du cache de configuration OIDC |  120
    Application | Global
-   Revendication utilisateur | sub
+   Revendication de l’utilisateur | sub
    Champ Utilisateur | ID utilisateur
    Activer la vérification des revendications JTI | Désactivé
 
