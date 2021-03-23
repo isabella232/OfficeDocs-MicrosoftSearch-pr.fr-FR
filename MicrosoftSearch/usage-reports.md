@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Consulter les rapports d’utilisation de Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: ad349e60794f219fa757861081b12a33c6806091
-ms.sourcegitcommit: 25b82bce1eaec5803111161b04ee9fd9e82a0bd8
+ms.openlocfilehash: 2237fc978ad7b0d7b94b342a9f2646c9da6b73a4
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50072238"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031745"
 ---
 # <a name="microsoft-search-usage-reports"></a>Rapports d’utilisation de Microsoft Search (recherche Microsoft)
 
-Les rapports d’utilisation de la recherche vous permettent de mieux comprendre le fonctionnement de la recherche dans votre organisation. Les informations générées à partir [](https://docs.microsoft.com/microsoftsearch/make-content-easy-to-find) de ces rapports vous aideront à faciliter la recherche de contenu et à prendre des mesures qui donnent à vos utilisateurs une expérience plus utile et agréable.
+Les rapports d’utilisation de la recherche vous permettent de mieux comprendre le fonctionnement de la recherche dans votre organisation. Les informations générées à partir [](./make-content-easy-to-find.md) de ces rapports vous aideront à faciliter la recherche de contenu et à prendre des mesures qui donnent à vos utilisateurs une expérience plus utile et agréable.
 
-Les [rapports d’utilisation](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) de Microsoft Search (recherche Microsoft) incluent des graphiques et des tableaux générés à partir de recherches qui sont exécutées à partir de l’accueil SharePoint et Office.com zones de recherche. Vous pouvez voir les données des 31 derniers jours, par jour ou par mois de l’année précédente. Ces rapports sont simplement en cours de déploiement, de sorte que l’ensemble des données historiques prendra du temps.
+Les [rapports d’utilisation](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) de Microsoft Search (recherche Microsoft) incluent des graphiques et des tableaux générés à partir de recherches qui sont exécutées à partir de l’accueil SharePoint et Office.com zones de recherche. Vous pouvez voir les données des 31 derniers jours, par jour ou par mois de l’année précédente. Ces rapports sont simplement en cours de déploiement afin que l’ensemble des données historiques prennent du temps.
 
 Une version précédente de cette page incluait les données des recherches exécutées pour Microsoft Search (recherche Microsoft) dans Bing sur Bing.com. Ces données seront bientôt intégrées dans ces rapports, mais pour **l’instant,** vous pouvez toujours voir ces rapports en cliquant sur le lien en bas de la page pour afficher les requêtes les plus récentes de Bing et la distribution des impressions.
 
@@ -41,7 +41,7 @@ Une version précédente de cette page incluait les données des recherches exé
 
 ## <a name="viewing-reports"></a>Affichage des rapports
 
-Lorsque vous accédez à la page rapports d’utilisation, tous les rapports sont disponibles. Vous pouvez utiliser le filtre de date pour sélectionner un jour ou un mois spécifique à afficher.
+Lorsque vous accédez à la page Rapports d’utilisation, tous les rapports sont disponibles. Vous pouvez utiliser le filtre de date pour sélectionner un jour ou un mois spécifique à afficher.
 
 Le téléchargement d’un rapport vous permettra de voir les rapports à partir d’un plus large éventail de temps. Cliquez sur la flèche de téléchargement et sélectionnez **les 31 derniers jours** ou **les 12 derniers mois.** Le rapport est téléchargé en tant que feuille de calcul Excel. Si vous avez sélectionné au-delà de 31 jours, la feuille de calcul aura un onglet individuel pour chaque jour. Le téléchargement des 12 derniers mois aura un onglet pour chaque mois.
 

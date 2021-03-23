@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Créer et mettre à jour des signets et des méthodes pour modifier en bloc les résultats des signets pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: b801e75f772a585c2ddfedd09aff3b74c1d909b5
-ms.sourcegitcommit: 2f770de12b27546b18b2e86517d2c25522eb9022
+ms.openlocfilehash: e8488146a041e7165596dafff8012adfa1122341
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929606"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031727"
 ---
 # <a name="manage-bookmarks"></a>Gérer des signets
 
@@ -124,7 +124,7 @@ Pour empêcher le moteur de recommandation de publier ou de suggérer un signet 
 
 Un signet peut avoir plusieurs mots clés et partager le même mot clé, mais le mot clé réservé ne peut pas être partagé. Un mot clé réservé est un terme ou une expression unique qui déclenche un signet spécifique. Un mot clé réservé peut être associé à une seule réponse. Utilisez les mots clés réservés avec parcimonie.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Q : Combien de temps faut-il pour qu’un signet soit visible dans Microsoft Search (recherche Microsoft) après sa publication ?**
 
@@ -160,4 +160,4 @@ Un signet peut avoir plusieurs mots clés et partager le même mot clé, mais le
 
 **Q : Où trouver l’ID d’application pour une application Power App ?**
 
-**R**: Go to the Power Apps site and view the Details pane for the app. En savoir plus sur [l’obtention d’un ID d’application.](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)
+**R**: Go to the Power Apps site and view the Details pane for the app. En savoir plus sur [l’obtention d’un ID d’application.](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)

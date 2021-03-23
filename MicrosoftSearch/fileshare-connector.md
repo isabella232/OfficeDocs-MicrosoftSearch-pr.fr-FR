@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Configurer le connecteur Graph de partage de fichiers pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: cd3f28356e41d24182e2da712d476ce2223b39b2
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 792e853e5d2b7a23835dc031ff4ba4c09d619f9c
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508786"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031610"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -48,12 +48,12 @@ La taille maximale de fichier prise en charge est de 100 Mo. Les fichiers dont l
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>Étape 2 : Nommer la connexion
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>Étape 3 : Configurer les paramètres de connexion
@@ -66,7 +66,7 @@ Lorsque le connecteur tente d’analyser un fichier, le champ « Heure du dernie
 
 ## <a name="step-4-manage-search-permissions"></a>Étape 4 : Gérer les autorisations de recherche
 
-Vous pouvez restreindre l’autorisation de rechercher n’importe quel fichier basé sur les listes de contrôle d’accès de partage ou les listes de contrôle d’accès NTFS (New Technology File System), en sélectionnant l’option souhaitée dans la page Gérer les **autorisations** de recherche. Les comptes et groupes d’utilisateurs fournis dans ces listes de contrôle d’accès doivent être gérés par Active Directory (AD). Si vous utilisez un autre système pour la gestion des comptes d’utilisateurs, vous pouvez sélectionner l’option « tout le monde » qui permet aux utilisateurs de rechercher tous les fichiers sans restrictions d’accès. Toutefois, lorsque les utilisateurs tentent d’ouvrir le fichier, les contrôles d’accès définies au niveau de la source s’appliquent.
+Vous pouvez restreindre l’autorisation de rechercher n’importe quel fichier en fonction des listes de contrôle d’accès de partage ou des listes de contrôle d’accès NTFS (New Technology File System), en sélectionnant l’option souhaitée dans la page Gérer les **autorisations de** recherche. Les comptes et groupes d’utilisateurs fournis dans ces listes de contrôle d’accès doivent être gérés par Active Directory (AD). Si vous utilisez un autre système pour la gestion des comptes d’utilisateurs, vous pouvez sélectionner l’option « tout le monde » qui permet aux utilisateurs de rechercher tous les fichiers sans restrictions d’accès. Toutefois, lorsque les utilisateurs tentent d’ouvrir le fichier, les contrôles d’accès définies au niveau de la source s’appliquent.
 
 Notez que windows fournit par défaut l’autorisation « Lecture » à « Tout le monde » dans les AAL de partage lorsqu’un dossier est partagé sur le réseau. Par extension, si vous choisissez partager des ACA dans Gérer les autorisations de recherche, les **utilisateurs** pourront rechercher tous les fichiers. Si vous souhaitez restreindre l’accès, supprimez l’accès « Lecture » pour « Tout le monde » dans les partages de fichiers et fournissez l’accès uniquement aux utilisateurs et groupes souhaités. Le connecteur lit ensuite ces restrictions d’accès et les applique à la recherche.
 
@@ -76,22 +76,22 @@ Vous pouvez choisir les AAL de partage uniquement si le chemin d’accès de par
 
 ## <a name="step-5-assign-property-labels"></a>Étape 5 : Attribuer des étiquettes de propriété
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-6-manage-schema"></a>Étape 6 : Gérer le schéma
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-7-choose-refresh-settings"></a>Étape 7 : Choisir les paramètres d’actualisation
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-8-review-connection"></a>Étape 8 : Examiner la connexion
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 

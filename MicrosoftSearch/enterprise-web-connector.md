@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur Graph des sites web d’entreprise pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: b0ed7cc4148dba6c7555fcf7c9c930184cdbc24c
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 42c3f0a80b21e23bb625db06c4f9e89f2c10de4a
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508795"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031628"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -39,17 +39,17 @@ Cet article est réservé à toute personne qui configure, exécute et surveille
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>Étape 2 : Nommer la connexion
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>Étape 3 : Configurer les paramètres de connexion
 
-Pour vous connecter à votre source de données, vous devez remplir l’URL racine du site web, sélectionner une source d’analyse et le type d’authentification que vous souhaitez utiliser : Aucune, Authentification de base ou OAuth 2.0 avec [Azure Active Directory (Azure AD).](https://docs.microsoft.com/azure/active-directory/) Une fois ces informations terminées, sélectionnez Connexion de test pour vérifier vos paramètres.
+Pour vous connecter à votre source de données, vous devez remplir l’URL racine du site web, sélectionner une source d’analyse et le type d’authentification que vous souhaitez utiliser : Aucune, Authentification de base ou OAuth 2.0 avec [Azure Active Directory (Azure AD).](/azure/active-directory/) Une fois ces informations terminées, sélectionnez Connexion de test pour vérifier vos paramètres.
 
 ### <a name="url"></a>URL
 
@@ -62,7 +62,7 @@ Utilisez le champ URL pour spécifier la racine du site web que vous souhaitez a
 
 Le mode d’analyse détermine le type de sites web que vous souhaitez indexer, en nuage ou en local. Pour vos sites web cloud, sélectionnez **Cloud** comme mode d’analyse.
 
-En outre, le connecteur prend désormais en charge l’analyse des sites web locaux. Ce mode est en prévisualisation. Pour accéder à vos données sur site, vous devez d’abord installer et configurer l’agent du connecteur Graph. Pour en savoir plus, consultez [l’agent de connecteur Graph.](https://docs.microsoft.com/microsoftsearch/on-prem-agent)
+En outre, le connecteur prend désormais en charge l’analyse des sites web locaux. Ce mode est en prévisualisation. Pour accéder à vos données sur site, vous devez d’abord installer et configurer l’agent du connecteur Graph. Pour en savoir plus, consultez [l’agent de connecteur Graph.](./on-prem-agent.md)
 
 Pour vos sites web locaux, sélectionnez **Agent** comme mode d’analyse et, dans le champ **Agent** local, choisissez l’agent de connecteur Graph que vous avez installé et configuré précédemment.  
 
@@ -73,16 +73,16 @@ Pour vos sites web locaux, sélectionnez **Agent** comme mode d’analyse et, da
 
 L’authentification de base nécessite un nom d’utilisateur et un mot de passe. Créez ce compte de bot à l’aide du [Centre d’administration Microsoft 365.](https://admin.microsoft.com)
 
-OAuth 2.0 avec [Azure AD](https://docs.microsoft.com/azure/active-directory/) nécessite un ID de ressource, un ID client et une secret client. OAuth 2.0 fonctionne uniquement avec le mode Cloud.
+OAuth 2.0 avec [Azure AD](/azure/active-directory/) nécessite un ID de ressource, un ID client et une secret client. OAuth 2.0 fonctionne uniquement avec le mode Cloud.
 
-Pour plus d’informations, voir Autoriser l’accès aux applications web Azure Active Directory à l’aide du flux d’octroi de [code OAuth 2.0.](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code) Inscrivez-vous avec les valeurs suivantes :
+Pour plus d’informations, voir Autoriser l’accès aux applications web Azure Active Directory à l’aide du flux d’octroi de [code OAuth 2.0.](/azure/active-directory/develop/v1-protocols-oauth-code) Inscrivez-vous avec les valeurs suivantes :
 
 **Nom :** Recherche Microsoft <br/>
 **Redirect_URI :**`https://gcs.office.com/v1.0/admin/oauth/callback`
 
 Pour obtenir les valeurs de la ressource, client_id et client_secret, accédez à Utiliser le **code** d’autorisation pour demander un jeton d’accès sur la page web de l’URL de redirection.
 
-Pour plus d’informations, voir Démarrage rapide : inscrire [une application avec la plateforme d’identités Microsoft.](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
+Pour plus d’informations, voir Démarrage rapide : inscrire [une application avec la plateforme d’identités Microsoft.](/azure/active-directory/develop/quickstart-register-app)
 
 ## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>Étape 3a : Ajouter des URL à exclure (restrictions d’analyse facultatives)
 
@@ -98,11 +98,11 @@ Vous pouvez éventuellement créer une liste **d’exclusions** pour exclure cer
 
 ## <a name="step-4-assign-property-labels"></a>Étape 4 : Attribuer des étiquettes de propriété
 
-Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Bien que cette étape ne soit pas obligatoire, le fait d’avoir des étiquettes de propriétés améliorera la pertinence de la recherche et garantira des résultats de recherche plus précis pour les utilisateurs finaux.
+Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Bien que cette étape ne soit pas obligatoire, l’emploi d’étiquettes de propriétés améliorera la pertinence de la recherche et garantira des résultats de recherche plus précis pour les utilisateurs finaux.
 
 ## <a name="step-5-manage-schema"></a>Étape 5 : Gérer le schéma
 
-Dans  l’écran Gérer le schéma, vous pouvez modifier les attributs de schéma (les options sont **Requête,** **Rechercher,** Récupérer et **Affiner)** associés aux propriétés, ajouter des alias facultatifs et choisir la propriété **Content.**
+Dans  l’écran Gérer le schéma, vous pouvez modifier les attributs de schéma (les options sont **Requête,** **Rechercher,** Récupérer et **Affiner)** associées aux propriétés, ajouter des alias facultatifs et choisir la propriété **Content.**
 
 ## <a name="step-6-manage-search-permissions"></a>Étape 6 : Gérer les autorisations de recherche
 
@@ -114,12 +114,12 @@ Le connecteur de sites web d’entreprise prend uniquement en charge une actuali
 
 ## <a name="step-8-review-connection"></a>Étape 8 : Examiner la connexion
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
-Lors de la lecture du contenu du site web, l’analyse peut rencontrer des erreurs sources, qui sont représentées par les codes d’erreur détaillés ci-dessous. Pour obtenir plus d’informations sur les types d’erreurs, allez à la page détails des **erreurs** après avoir sélectionné la connexion. Sélectionnez le **code d’erreur** pour voir les erreurs plus détaillées. Reportez-vous [également à Gérer votre connecteur pour](https://docs.microsoft.com/microsoftsearch/manage-connector) en savoir plus.
+Lors de la lecture du contenu du site web, l’analyse peut rencontrer des erreurs sources, qui sont représentées par les codes d’erreur détaillés ci-dessous. Pour obtenir plus d’informations sur les types d’erreurs, allez à la page détails des **erreurs** après avoir sélectionné la connexion. Sélectionnez le **code d’erreur** pour voir les erreurs plus détaillées. Reportez-vous [également à Gérer votre connecteur pour](./manage-connector.md) en savoir plus.
 
  Code d’erreur détaillé | Message d’erreur
  --- | ---
@@ -138,4 +138,4 @@ Lors de la lecture du contenu du site web, l’analyse peut rencontrer des erreu
 
 ## <a name="limitations"></a>Limites
 
-Le connecteur de sites web d’entreprise ne prend pas en charge la recherche de données sur **les pages web dynamiques.** Des exemples de ces pages web sont stockés dans des systèmes de gestion de contenu tels que [Contrôle](https://www.atlassian.com/software/confluence) et [Unily,](https://www.unily.com/) ou des bases de données qui stockent du contenu de site web.
+Le connecteur de sites web d’entreprise ne prend pas en charge la recherche de données sur **les pages web dynamiques.** Des exemples de ces pages web sont stockés dans des systèmes de gestion de contenu tels que [Cas](https://www.atlassian.com/software/confluence) et [Unily,](https://www.unily.com/) ou des bases de données qui stockent du contenu de site web.

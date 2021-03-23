@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Trouvez les réponses à certaines des questions les plus fréquentes concernant Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: abaa1a232b08ba586dd6cd777f7e54c323159dee
-ms.sourcegitcommit: aa7774d2bdff2bd9e1b7f51fcda90fa6b0c3a5ca
+ms.openlocfilehash: 98128297047d50e2d418a8ed062066ab9e86749e
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867377"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031619"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>Questions fréquemment posées
@@ -29,7 +29,7 @@ Voici la liste des questions fréquemment posées.
 
 ## <a name="is-advanced-query-understanding-supported"></a>La compréhension de recherche avancée est-elle prise en charge ?
 
-Oui, Microsoft Search (recherche Microsoft) recherche l’intention de la requête à partir d’expressions plus grandes. Cette fonctionnalité utilise l’IA pour découvrir les expressions superflues courantes que les utilisateurs ajoutent à leurs requêtes qui n’ont pas d’impact sur leur objectif de recherche. Par exemple, lorsqu’un utilisateur recherche des informations sur la modification de mon mot de *passe,* nous extrayons les mots les moins importants de la requête et le déclencheur en fonction des mots pertinents tels que le mot de passe de *modification.*
+Oui, Microsoft Search (recherche Microsoft) recherche l’intention de la requête à partir d’expressions plus grandes. Cette fonctionnalité utilise l’IA pour découvrir les expressions superflues courantes que les utilisateurs ajoutent à leurs requêtes qui n’ont pas d’impact sur leur intention de recherche. Par exemple, lorsqu’un utilisateur recherche des informations sur la modification de mon mot de *passe,* nous extrayons les mots les moins importants de la requête et nous déclenchant un déclencheur en fonction des mots pertinents tels que le mot de passe de *modification.*
   
 Cette fonctionnalité ne remplacera pas les mots clés définies dans le Centre d’administration [Microsoft 365.](https://admin.microsoft.com)
   
@@ -47,7 +47,7 @@ Voici les instructions pour définir le moteur de recherche par défaut, la page
 
 ## <a name="how-are-my-search-results-protected"></a>Quel est le niveau de protection de mes résultats de recherche ?
 
-Nous avons [besoin de l’authentification Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) pour accéder aux résultats à partir du cloud approuvé. Seul est présenté le contenu auquel les utilisateurs authentifiés ont accès. Les requêtes de recherche sont dé identifiées et les journaux sont séparés du trafic de recherche [Bing](https://Bing.com) public lorsque vous utilisez Microsoft Search (recherche Microsoft) dans Bing.
+Nous avons [besoin de l’authentification Azure Active Directory](/azure/active-directory/) pour accéder aux résultats à partir du cloud approuvé. Seul est présenté le contenu auquel les utilisateurs authentifiés ont accès. Les requêtes de recherche sont dé identifiées et les journaux sont séparés du trafic de recherche [Bing](https://Bing.com) public lorsque vous utilisez Microsoft Search (recherche Microsoft) dans Bing.
 
 ## <a name="can-i-search-across-federated-organizations"></a>Puis-je effectuer des recherches dans les organisations fédérées ?
 
@@ -63,4 +63,4 @@ La Recherche Microsoft nécessite que les utilisateurs de l’entreprise se conn
 
 ## <a name="can-guest-users-leverage-microsoft-search-in-my-organization"></a>Les utilisateurs invités peuvent-ils tirer parti de Microsoft Search (recherche Microsoft) dans mon organisation ?
 
-Microsoft 365 permet une collaboration enrichie avec des personnes extérieures à votre organisation via [l’accès invité.](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization) Ces utilisateurs pourront effectuer des opérations de recherche sur des documents, des sites, des groupes, des listes et des bibliothèques. Toutefois, les utilisateurs invités ne pourront pas profiter de l’expérience recherche Microsoft complète et personnalisée et devront peut-être utiliser la zone de recherche sur la page au lieu de la zone recherche Microsoft unifiée dans l’en-tête.
+Microsoft 365 permet une collaboration enrichie avec des personnes extérieures à votre organisation via [l’accès invité.](/microsoft-365/solutions/collaborate-with-people-outside-your-organization) Ces utilisateurs pourront effectuer des opérations de recherche sur des documents, des sites, des groupes, des listes et des bibliothèques. Toutefois, les utilisateurs invités ne pourront pas profiter de l’expérience recherche Microsoft complète et personnalisée et devront peut-être utiliser la zone de recherche sur la page au lieu de la zone recherche Microsoft unifiée dans l’en-tête.

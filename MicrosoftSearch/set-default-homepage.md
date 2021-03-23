@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 description: Découvrez comment configurer un navigateur par défaut pour votre entreprise avec Microsoft Search (recherche Microsoft).
-ms.openlocfilehash: 2b88d92d02261ec1756b811e5078206301229cbd
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 0d8fac0302e672c603853185ff0810bf6d42371c
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626926"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031673"
 ---
 # <a name="make-bingcom-the-default-home-page"></a>Configurer Bing.com en tant que page d’accueil par défaut
 
@@ -42,7 +42,7 @@ L’article du Support de Windows sur la gestion des fichiers ADMX et les dernie
 
 Vous devez également utiliser le fichier de stratégie Google le plus récent, que vous trouverez sur[Aide Google Chrome Enterprise](https://support.google.com/chrome/a/answer/187202).
   
-Si les paramètres décrits dans cette section sont introuvables dans le GPMC, téléchargez l’ ADMX approprié et les copier dans le [magasin central](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Le magasin central relatif au contrôleur est un dossier avec la convention de dénomination suivante :
+Si les paramètres décrits dans cette section sont introuvables dans le GPMC, téléchargez l’ ADMX approprié et les copier dans le [magasin central](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29). Le magasin central relatif au contrôleur est un dossier avec la convention de dénomination suivante :
   
  **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
   
@@ -51,14 +51,14 @@ Chaque domaine que votre contrôleur gère doit avoir un dossier séparé. La co
  `Copy <path_to_ADMX.ADMX> %systemroot%\sysvol\<domain>\policies\PolicyDefinitions`
   
 1. Ouvrez la Console de gestion des stratégies de groupe (gpmc.msc) et basculez vers modifier toute stratégie existante ou créer un nouveau.
-1. Assurez-vous que les dossiers suivants apparaissent dans la section**Modèles Administratifs** des deux*Utilisateur/Configuration Ordinateur*:Google Chrome et Google Chrome- Paramètres par défaut (les utilisateurs peuvent y déroger).
+1. Assurez-vous que les dossiers suivants apparaissent dans la section **Modèles Administratifs** des deux *Utilisateur/Configuration Ordinateur*:Google Chrome et Google Chrome- Paramètres par défaut (les utilisateurs peuvent y déroger).
    - Les paramètres de la première section sont fixes et l’administrateur local ne pourra pas les modifier.
    - Les paramètres de la dernière section de stratégies peuvent être modifiés par les utilisateurs dans leurs paramètres de navigateur. Vous devez décider si les utilisateurs peuvent remplacer votre paramètre par défaut. Dans les étapes suivantes, modifiez dans le paramètre dans le dossier qui correspond à la stratégie de l’organisation et aux besoins. Les étapes ci-dessous utilisent Google Chrome- les paramètres par défaut comme paramètre par défaut.
 
-1. Accédez à**&lt;Ordinateur/Configuration utilisateur&gt;\Modèles Administratifs\Google Chrome- Paramétrage par défaut\Page d’Accueil**. 
-1. Double-cliquez sur la**Page du Nouvel Onglet utilisation en tant que Page d’Accueil**et définissez-le comme**Activé**. 
-1. Accédez à**&lt;Ordinateur/Configuration Utilisateur&gt;\Modèles Administratifs\Google Chrome-Paramétrage par défaut\Page du Nouvel Onglet**. 
-1. Double-cliquez sur **Configurer le Nouvel URL de la Pages d’Onglet**, définissez-la comme**Activé**, puis entrez `https://www.bing.com/business?form=BFBSPR` 
+1. Accédez à **&lt;Ordinateur/Configuration utilisateur&gt;\Modèles Administratifs\Google Chrome- Paramétrage par défaut\Page d’Accueil**. 
+1. Double-cliquez sur la **Page du Nouvel Onglet utilisation en tant que Page d’Accueil** et définissez-le comme **Activé**. 
+1. Accédez à **&lt;Ordinateur/Configuration Utilisateur&gt;\Modèles Administratifs\Google Chrome-Paramétrage par défaut\Page du Nouvel Onglet**. 
+1. Double-cliquez sur **Configurer le Nouvel URL de la Pages d’Onglet**, définissez-la comme **Activé**, puis entrez `https://www.bing.com/business?form=BFBSPR` 
 1. Appliquez la stratégie de groupe résultante GPO en les reliant au domaine approprié.
 
 ## <a name="internet-explorer-50-or-later"></a>Internet Explorer 5.0 ou version ultérieure
@@ -68,7 +68,7 @@ Les utilisateurs peuvent encore modifier la page d’accueil une fois cette stra
     
 2. Accédez à **Configuration utilisateur\Préférences\Paramètres de Panneau de contrôle\Paramètres Internet**.
     
-3. Avec le bouton droit, cliquez sur**Paramètres Internet** et sélectionnez **Internet Explorer 10**.
+3. Avec le bouton droit, cliquez sur **Paramètres Internet** et sélectionnez **Internet Explorer 10**.
     
     > [!NOTE]
     > Vous devez sélectionner l’option d’Internet Explorer 10 pour appliquer les paramètres Internet Explorer 11 comme les mêmes paramètres s’appliquent à Internet Explorer 11. 
@@ -83,10 +83,10 @@ Les utilisateurs peuvent encore modifier la page d’accueil une fois cette stra
     
     F8-Désactiver tous les paramètres sous l’onglet actif
     
-5. Appuyez sur**F8** pour désactiver tous les paramètres avant de configurer quoi que ce soit. L’écran doit ressembler à ceci : 
+5. Appuyez sur **F8** pour désactiver tous les paramètres avant de configurer quoi que ce soit. L’écran doit ressembler à ceci : 
     
     ![Boîte de dialogue Propriétés Internet Explorer 10](media/2fd55755-5007-4e33-a795-c42ce2fcef4a.jpg)
   
-6. Appuyez sur**F6** sur les paramètres de la page d’accueil et entrez `https://www.bing.com/business?form=BFBSPR`
+6. Appuyez sur **F6** sur les paramètres de la page d’accueil et entrez `https://www.bing.com/business?form=BFBSPR`
     
-7. Appliquez la stratégie de groupe résultante GPO en la reliant au domaine approprié.
+7. Appliquez la stratégie de groupe résultante GPO en les reliant au domaine approprié.

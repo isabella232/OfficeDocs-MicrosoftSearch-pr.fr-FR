@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Utilisation de Microsoft Search (recherche Microsoft) sur les pages SharePoint classiques
-ms.openlocfilehash: 9a5aeb2e683297faccfb55d3407653c1791b3961
-ms.sourcegitcommit: 7133d46ca9c3a5216ee9159db781febd17e5a831
+ms.openlocfilehash: 33215c730d34c14f8ce1d55e93730615688f1e2a
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49863173"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031430"
 ---
 # <a name="classic-pages-and-microsoft-search"></a>Pages classiques et Recherche Microsoft
 
@@ -42,9 +42,9 @@ Après le passage à Recherche Microsoft, les pages classiques du site commencen
 
 Si votre site répond aux critères répertoriés ci-dessus, mais que vous ne souhaitez pas qu’il bascule vers l’expérience Recherche Microsoft, vous pouvez choisir d’utiliser les commandes suivantes, en tant que propriétaire du site ou de la collection de sites.
 
-Vous pouvez utiliser cette commande à tout moment, avant ou après le basculement. Il est donc facile de revenir à l’expérience de recherche que vous aviez précédemment.
+Vous pouvez utiliser cette commande à tout moment, avant ou après le basculement, il est donc facile de revenir à l’expérience de recherche que vous aviez précédemment.
 
-Pour exécuter les commandes ci-dessous, vous allez utiliser PowerShell avec les extensions PowerShell PnP SharePoint. Vous pouvez installer et en savoir plus sur la façon de commencer [ici.](https://docs.microsoft.com/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps) Vous vous connectez à votre site ou collection de sites à l’aide de cette commande :
+Pour exécuter les commandes ci-dessous, vous allez utiliser PowerShell avec les extensions PowerShell PnP SharePoint. Vous pouvez installer et en savoir plus sur la façon de commencer [ici.](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps) Vous vous connectez à votre site ou collection de sites à l’aide de cette commande :
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin

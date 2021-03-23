@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Détails de l’expérience du cluster de résultats connecteurs
-ms.openlocfilehash: fb29fb9c14811698fb7c5d043853b57231c76a0b
-ms.sourcegitcommit: d1bc6c41ecf47584373ce57543502bed55753d0c
+ms.openlocfilehash: ae5528f2e12c9e331b66e821f2a9c03947d788df
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080836"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031772"
 ---
 # <a name="graph-connectors-result-cluster"></a>Cluster de résultats de connecteurs graphiques
 
@@ -35,7 +35,7 @@ Pour garantir la découverte de contenu à partir des secteurs verticaux de rech
 
 La fréquence d’utilisation d’un cluster de résultats varie selon des facteurs tels que le nombre de secteurs verticaux de recherche que vous configurez et le type de contenu. En interagissant ou en ignorant un cluster de résultats, les utilisateurs fournissent implicitement des conseils qui ajusteront son déclenchement au fil du temps.
 
-L’expérience de résultat de recherche pour les éléments de connecteur affichés dans votre cluster de résultats utilise les types de [résultats](https://docs.microsoft.com/microsoftsearch/customize-search-page#create-your-own-result-type) que vous avez définis. Si aucun type de résultat n’est configuré, une [disposition générée par le](https://docs.microsoft.com/microsoftsearch/customize-search-page#default-search-result-layout) système est utilisée. 
+L’expérience de résultat de recherche pour les éléments de connecteur affichés dans votre cluster de résultats utilise les types de [résultats](./customize-search-page.md#create-your-own-result-type) que vous avez définis. Si aucun type de résultat n’est configuré, une [disposition générée par le](./customize-search-page.md#default-search-result-layout) système est utilisée. 
 
 Nous vous recommandons d’utiliser la propriété « title » comme titre de résultat de recherche et la propriété « content » comme description de recherche. Cela permet à vos utilisateurs de tirer le meilleur résultat du cluster de résultats avec précision et les résultats les plus pertinents dans le cluster. 
 
@@ -51,7 +51,7 @@ Suivez ces étapes pour activer l’expérience au niveau de l’organisation :
 
 Suivez ces étapes pour activer l’expérience au niveau du site SharePoint :
 
-1. Sur le site SharePoint où vous souhaitez l’expérience de cluster de résultats, go to **Settings**.
+1. Sur le site SharePoint où vous souhaitez l’expérience de cluster de résultats, allez à **Paramètres.**
 2. Go to **Site information** View all > **site settings**.
 3. Go to the Microsoft Search section, then select **Configure Microsoft Search for this site collection**.
 4. Dans le volet de navigation, sélectionnez **Expérience personnalisée,** puis sélectionnez **Verticals**.
@@ -59,4 +59,4 @@ Suivez ces étapes pour activer l’expérience au niveau du site SharePoint :
 
 ## <a name="view-the-result-cluster-experience-after-it-is-enabled"></a>Afficher l’expérience de cluster de résultats une fois qu’elle est activée
 
-Une fois que vous avez mis en place l’expérience de cluster de résultats, l’affichage du cluster de résultats peut prendre jusqu’à 12 heures. Si vous souhaitez que l’expérience soit immédiatement disponible, vous pouvez l’appendre *à l’URL* dans SharePoint et Office.
+Une fois que vous avez mis en place l’expérience de cluster de résultats, l’affichage du cluster de résultats peut prendre jusqu’à 12 heures. Si vous souhaitez que l’expérience soit immédiatement disponible, vous pouvez l’appendre à *l’URL* dans SharePoint et Office.

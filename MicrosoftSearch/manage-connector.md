@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gérer les connecteurs Microsoft Graph pour Microsoft Search (recherche Microsoft).
-ms.openlocfilehash: 1c152f23e9b9d9982b957830d5f4bef0eef41347
-ms.sourcegitcommit: 2f770de12b27546b18b2e86517d2c25522eb9022
+ms.openlocfilehash: cba50d8eb558b4d74ed46554dc155d4f275b1332
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929583"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031718"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -61,7 +61,7 @@ Le quota d’index et la consommation disponibles sont affichés sur la page d�
  
 >[!NOTE]
 >Pendant la période d’aperçu, chaque organisation qui essaie des connecteurs Graph a été fournie avec un quota fixe gratuit de 2 millions d’éléments sur toutes les connexions. Les connecteurs Graph étant généralement disponibles, le quota gratuit expirera le 1er avril 2021 pour les organisations qui ont utilisé des connecteurs Graph en prévisualisation.
->Les connecteurs Graph créés par Microsoft et étiquetés comme « [Aperçu](connectors-preview.md) » ne seront pas inclus dans le quota d’index facturé total pour votre organisation. Toutefois, il est comptabilisé dans le nombre maximum de 10 connexions que vous pouvez configurer pour votre organisation et le nombre maximum de 7 millions d’éléments que votre organisation peut indexer entre les connexions ; Chaque connexion est limitée à 700 000 éléments. 
+>Les connecteurs Graph créés [](./connectors-overview.md) par Microsoft et étiquetés comme « Aperçu » ne seront pas inclus dans le quota d’index facturé total pour votre organisation. Toutefois, il est comptabilisé dans le nombre maximum de 10 connexions que vous pouvez configurer pour votre organisation et le nombre maximum de 7 millions d’éléments que votre organisation peut indexer entre les connexions ; Chaque connexion est limitée à 700 000 éléments. 
 
 La barre d’utilisation des quotas indiquera différents états en fonction de la consommation de quota par votre organisation :
 
@@ -86,7 +86,7 @@ Lorsque le quota d’index est dépassé pour votre organisation, toutes les con
 
 Pour résoudre ce problème, vous pouvez :
 
-* Découvrez comment acheter un quota d’index pour votre organisation selon les exigences de licence [et la tarification.](licensing.md)
+* Découvrez comment acheter un quota d’index pour votre organisation en matière de [licences et de tarification.](licensing.md)
 
 * Identifiez les connexions qui ont trop de contenu en cours d’ingestion et mettez-les à jour pour indexer moins d’éléments afin de faire de la place pour le quota. Pour mettre à jour la connexion, vous devez supprimer et créer une connexion avec un nouveau filtre d’ingestion qui apporte moins d’éléments.
 

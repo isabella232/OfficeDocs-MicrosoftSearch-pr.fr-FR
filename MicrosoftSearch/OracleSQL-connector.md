@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Configurer le connecteur Oracle SQL Graph pour Microsoft Search (recherche Microsoft).
-ms.openlocfilehash: 901b772def7585606a090d8a7696a32ff028e2a0
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 7ad3d03c73ce051c43f3b3ea094130a837d3177f
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508894"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031421"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -40,19 +40,19 @@ Pour accéder à vos données tierces sur site, vous devez installer et configur
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>Étape 2 : Nommer la connexion
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>Étape 3 : Configurer les paramètres de connexion
 
 Pour connecter votre connecteur SQL Oracle à une source de données, vous devez configurer le serveur de base de données que vous souhaitez analyser et l’agent de connecteur Graph local. Vous pouvez ensuite vous connecter à la base de données avec la méthode d’authentification requise.
 
-Pour le connecteur SQL Oracle, vous devez spécifier le nom d’hôte, le nom de port et de service (base de données) ainsi que la méthode d’authentification préférée, le nom d’utilisateur et le mot de passe.
+Pour le connecteur SQL Oracle, vous devez spécifier le nom d’hôte, le nom de port et de service (base de données) avec la méthode d’authentification préférée, le nom d’utilisateur et le mot de passe.
 
 > [!NOTE]
 > Votre base de données doit exécuter la base de données Oracle version 11g ou ultérieure pour que le connecteur puisse se connecter. Le connecteur prend en charge la base de données Oracle hébergée sur les plateformes d’ordinateurs VM Windows, Linux et Azure.
@@ -61,7 +61,7 @@ Pour rechercher le contenu de votre base de données, vous devez spécifier SQL 
 
 ## <a name="step-3a-full-crawl-required"></a>Étape 3a : analyse complète (obligatoire)
 
-Dans cette étape, vous configurez la requête SQL qui exécute une analyse complète de la base de données. L’analyse complète sélectionne toutes les colonnes ou propriétés dans laquelle vous souhaitez sélectionner les options **Requête,** Rechercher **ou** **Récupérer.** Vous pouvez également spécifier des colonnes ACL pour restreindre l’accès des résultats de recherche à des utilisateurs ou des groupes spécifiques.
+Dans cette étape, vous allez configurer la requête SQL qui exécute une analyse complète de la base de données. L’analyse complète sélectionne toutes les colonnes ou propriétés dans laquelle vous souhaitez sélectionner les options **Requête,** Rechercher **ou** **Récupérer.** Vous pouvez également spécifier des colonnes ACL pour restreindre l’accès des résultats de recherche à des utilisateurs ou des groupes spécifiques.
 
 > [!Tip]
 > Pour obtenir toutes les colonnes dont vous avez besoin, vous pouvez joindre plusieurs tables.
@@ -70,7 +70,7 @@ Dans cette étape, vous configurez la requête SQL qui exécute une analyse comp
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a>Sélectionner des colonnes de données (obligatoire) et des colonnes ACL (facultatif)
 
-L’exemple illustre la sélection de cinq colonnes de données qui détiennent les données de la recherche : OrderId, OrderTitle, OrderDesc, CreatedDateTime et IsDeleted. Pour définir des autorisations d’affichage pour chaque ligne de données, vous pouvez éventuellement sélectionner ces colonnes de la ACL : AllowedUsers, AllowedGroups, DeniedUsers et DeniedGroups. Pour toutes ces colonnes de données, vous pouvez sélectionner les options **de** **requête,** de recherche ou de **récupération.**
+L’exemple illustre la sélection de cinq colonnes de données qui détiennent les données de la recherche : OrderId, OrderTitle, OrderDesc, CreatedDateTime et IsDeleted. Pour définir des autorisations d’affichage pour chaque ligne de données, vous pouvez éventuellement sélectionner ces colonnes de la ACL : AllowedUsers, AllowedGroups, DeniedUsers et DeniedGroups. Pour toutes ces colonnes de données, vous pouvez sélectionner les options **de requête,** de **recherche** ou de **récupération.**
 
 Sélectionnez des colonnes de données comme illustré dans cet exemple de requête : `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
 
@@ -87,7 +87,7 @@ L’utilisation de chacune des colonnes ACL dans la requête ci-dessus est décr
 
 ### <a name="supported-data-types"></a>Types de données pris en charge
 
-Le tableau ci-dessous récapitule les types de données pris en charge par le connecteur SQL Oracle. Le tableau récapitule également le type de données d’indexation pour le type SQL données pris en charge. Pour en savoir plus sur les types de données pris en charge par les connecteurs Microsoft Graph pour l’indexation, consultez la documentation sur les [types de ressources de propriété.](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties&preserve-view=true)
+Le tableau ci-dessous récapitule les types de données pris en charge par le connecteur SQL Oracle. Le tableau récapitule également le type de données d’indexation pour le type SQL données pris en charge. Pour en savoir plus sur les types de données pris en charge par les connecteurs Microsoft Graph pour l’indexation, consultez la documentation sur les [types de ressources de propriété.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
 
 | Catégorie | Type de données source | Type de données d’indexation |
 | ------------ | ------------ | ------------ |
@@ -106,8 +106,8 @@ Pour éviter la surcharge de la base de données, le connecteur par lots et repr
 
 Créez des extraits de requête pour les filigranes, comme illustré dans les exemples suivants :
 
-* `WHERE (CreatedDateTime > @watermark)`. Nommez le nom de colonne en filigrane avec le mot clé `@watermark` réservé. Vous ne pouvez trier la colonne filigrane que par ordre croissant.
-* `ORDER BY CreatedDateTime ASC`. Trier la colonne filigrane dans l’ordre croissant.
+* `WHERE (CreatedDateTime > @watermark)`. Nommez le nom de colonne de filigrane avec le mot clé `@watermark` réservé. Vous ne pouvez trier la colonne filigrane que par ordre croissant.
+* `ORDER BY CreatedDateTime ASC`. Tri dans la colonne filigrane dans l’ordre croissant.
 
 Dans la configuration présentée dans l’image suivante, se trouve `CreatedDateTime` la colonne filigrane sélectionnée. Pour extraire le premier lot de lignes, spécifiez le type de données de la colonne filigrane. Dans ce cas, le type de données est `DateTime` .
 
@@ -117,7 +117,7 @@ La première requête récupère le premier **N** nombre de lignes à l’aide d
 
 ### <a name="skipping-soft-deleted-rows-optional"></a>Ignorer les lignes supprimées (facultatif)
 
-Pour exclure l’indexation des lignes supprimées (à l’aide d’une suppression indélémentée) dans votre base de données, spécifiez le nom et la valeur de la colonne de suppression (suppression totale) qui indiquent que la ligne est supprimée.
+Pour exclure l’indexation des lignes supprimées (ou non) dans votre base de données, spécifiez le nom et la valeur de la colonne de suppression (suppression totale) qui indiquent que la ligne est supprimée.
 
 ![Paramètres de suppression souple : « Supprimer (suppression) » et « Valeur de la colonne suppression (suppression) qui indique une ligne supprimée »](media/MSSQL-softdelete.png)
 
@@ -125,7 +125,7 @@ Pour exclure l’indexation des lignes supprimées (à l’aide d’une suppress
 
 Sélectionnez **Gérer les autorisations** pour choisir les différentes colonnes de contrôle d’accès qui spécifient le mécanisme de contrôle d’accès. Sélectionnez le nom de colonne que vous avez spécifié dans l’analyse complète SQL requête.
 
-Chacune des colonnes de la ACL est attendue comme une colonne à valeurs multiples. Ces valeurs d’ID multiples peuvent être séparées par des séparateurs tels que des points-virgules (;), virgule (,), etc. Vous devez spécifier ce séparateur dans le champ **séparateur de** valeurs.
+Chacune des colonnes ACL est attendue comme une colonne à valeurs multiples. Ces valeurs d’ID multiples peuvent être séparées par des séparateurs tels que des points-virgules (;), virgule (,), etc. Vous devez spécifier ce séparateur dans le champ **séparateur de** valeurs.
 
 Les types d’ID suivants sont pris en charge pour l’utilisation en tant que listes de contrôle d’appel :
 
@@ -145,12 +145,12 @@ Les composants de l’image suivante ressemblent aux composants d’analyse comp
 
 ## <a name="step-4-assign-property-labels"></a>Étape 4 : Attribuer des étiquettes de propriété
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-5-manage-schema"></a>Étape 5 : Gérer le schéma
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-6-manage-search-permissions"></a>Étape 6 : Gérer les autorisations de recherche
@@ -165,7 +165,7 @@ Une planification d’analyse complète trouve les lignes supprimées qui ont é
 
 ## <a name="step-8-review-connection"></a>Étape 8 : Examiner la connexion
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!--- ## Next steps: Customize the search results page

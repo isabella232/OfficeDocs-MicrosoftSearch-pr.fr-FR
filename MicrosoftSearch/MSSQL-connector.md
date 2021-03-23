@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur Azure SQL et Microsoft SQL Graph pour Microsoft Search (recherche Microsoft).
-ms.openlocfilehash: 499c0fad93f97e634086ff9025d947c4f70336fb
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 81951dab058a14d687f81f7611ee624b079f0822
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508903"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031403"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -40,13 +40,13 @@ Pour accéder à vos données tierces sur site, vous devez installer et configur
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>Étape 2 : Nommer la connexion
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
@@ -54,9 +54,9 @@ instructions.-->
 
 ### <a name="register-an-app-for-azure-sql-connector-only"></a>Inscrire une application (pour le connecteur azure SQL uniquement)
 
-Pour le connecteur SQL Azure, vous devez inscrire une application dans Azure Active Directory pour permettre à l’application Recherche Microsoft d’accéder aux données pour l’indexation. Pour en savoir plus sur l’inscription d’une application, consultez la documentation Microsoft Graph sur [l’inscription d’une application.](https://docs.microsoft.com/graph/auth-register-app-v2)
+Pour le connecteur SQL Azure, vous devez inscrire une application dans Azure Active Directory pour permettre à l’application Recherche Microsoft d’accéder aux données pour l’indexation. Pour en savoir plus sur l’inscription d’une application, consultez la documentation Microsoft Graph sur [l’inscription d’une application.](/graph/auth-register-app-v2)
 
-Après avoir terminé l’inscription de l’application et pris note du nom de l’application, de l’ID d’application (client) et de l’ID de locataire, vous devez générer une [nouvelle secret client](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). La secret client ne s’affichera qu’une seule fois. N’oubliez pas & stocker la secret client en toute sécurité. Utilisez l’ID client et la secret client lors de la configuration d’une nouvelle connexion dans Microsoft Search (recherche Microsoft).
+Après avoir terminé l’inscription de l’application et pris note du nom de l’application, de l’ID d’application (client) et de l’ID de client, vous devez générer une [nouvelle secret client](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). La secret client ne s’affichera qu’une seule fois. N’oubliez pas & stocker la secret client en toute sécurité. Utilisez l’ID client et la secret client lors de la configuration d’une nouvelle connexion dans Microsoft Search (recherche Microsoft).
 
 Pour ajouter l’application inscrite à votre base de données Azure SQL, vous devez :
 
@@ -66,7 +66,7 @@ Pour ajouter l’application inscrite à votre base de données Azure SQL, vous 
 - Ajouter un utilisateur au rôle en exécutant la commande « exec sp_addrolemember ' db_datareader ', [nom de l’application] » ou « ALTER ROLE db_datareader ADD MEMBER [nom de l’application] »
 
 >[!NOTE]
->Pour révoquer l’accès à toute application inscrite dans Azure Active Directory, reportez-vous à la documentation Azure pour supprimer [une application inscrite.](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app)
+>Pour révoquer l’accès à toute application inscrite dans Azure Active Directory, reportez-vous à la documentation Azure pour supprimer [une application inscrite.](/azure/active-directory/develop/quickstart-remove-app)
 
 ### <a name="connection-settings"></a>Paramètres de connexion
 
@@ -77,7 +77,7 @@ Pour connecter votre connecteur de serveur Microsoft SQL à une source de donné
 
 Pour le connecteur Azure SQL, vous devez uniquement spécifier le nom du serveur ou l’adresse IP à qui vous souhaitez vous connecter. Le connecteur azure SQL prend uniquement en charge l’authentification Azure Active Directory Open ID connect (OIDC) pour se connecter à la base de données.
 
-Pour une sécurité renforcée, vous pouvez configurer des règles de pare-feu IP pour votre serveur SQL base de données Azure. Pour en savoir plus sur la configuration des règles de pare-feu IP, consultez la documentation sur les [règles de pare-feu IP.](https://docs.microsoft.com/azure/azure-sql/database/firewall-configure) Ajoutez les plages IP clientes suivantes dans les paramètres de pare-feu.
+Pour une sécurité renforcée, vous pouvez configurer des règles de pare-feu IP pour votre serveur SQL base de données Azure. Pour en savoir plus sur la configuration des règles de pare-feu IP, consultez la documentation sur les [règles de pare-feu IP.](/azure/azure-sql/database/firewall-configure) Ajoutez les plages IP clientes suivantes dans les paramètres de pare-feu.
 
 | Région | Plage d’adresses IP |
 | ------------ | ------------ |
@@ -115,13 +115,13 @@ L’utilisation de chacune des colonnes ACL dans la requête ci-dessus est décr
 
 ### <a name="supported-data-types"></a>Types de données pris en charge
 
-Le tableau ci-dessous récapitule SQL types de données pris en charge dans les connecteurs MS SQL et Azure SQL. Le tableau récapitule également le type de données d’indexation pour le type SQL données pris en charge. Pour en savoir plus sur les types de données pris en charge par les connecteurs Microsoft Graph pour l’indexation, consultez la documentation sur les [types de ressources de propriété.](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties&preserve-view=true)
+Le tableau ci-dessous récapitule SQL types de données pris en charge dans les connecteurs MS SQL et Azure SQL. Le tableau récapitule également le type de données d’indexation pour le type SQL données pris en charge. Pour en savoir plus sur les types de données pris en charge par les connecteurs Microsoft Graph pour l’indexation, consultez la documentation sur les [types de ressources de propriété.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
 
 | Catégorie | Type de données source | Type de données d’indexation |
 | ------------ | ------------ | ------------ |
 | Date et heure | date <br> DateHeure <br> datetime2 <br> smalldatetime | DateHeure |
-| Numérique exact | bigint <br> int <br> smallint <br> tinyint | int64 |
-| Numérique exact | bit | valeur booléenne |
+| Numérique exact | bigint <br> entier <br> smallint <br> tinyint | int64 |
+| Numérique exact | bit | booléen |
 | Nombre approximatif | float <br> real | double |
 | Chaîne de caractères | char <br> varchar <br> text | string |
 | Chaînes de caractères Unicode | nchar <br> nvarchar <br> ntext | string |
@@ -174,14 +174,14 @@ Les composants de l’image suivante ressemblent aux composants d’analyse comp
 
 ## <a name="step-4-assign-property-labels"></a>Étape 4 : Attribuer des étiquettes de propriété
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## <a name="step-5-manage-schema"></a>Étape 5 : Gérer le schéma
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
@@ -191,13 +191,13 @@ Vous pouvez choisir d’utiliser les [listes](#full-crawl-manage-search-permissi
 
 ## <a name="step-7-choose-refresh-settings"></a>Étape 7 : Choisir les paramètres d’actualisation
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
 ## <a name="step-8-review-connection"></a>Étape 8 : Examiner la connexion
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
@@ -218,4 +218,4 @@ Les connecteurs SQL ont les limitations ci-après dans la version préliminaire 
 - Connecteur SQL Microsoft : la base de données sur site doit être SQL version 2008 ou ultérieure du serveur.
 - L’abonnement M365 et l’abonnement Azure (hébergeant azure SQL base de données) doivent se trouver dans le même Azure Active Directory.
 - Les ACA sont uniquement pris en charge à l’aide d’un nom d’utilisateur principal (UPN), d’Azure Active Directory (Azure AD) ou d’Active Directory Security.
-- L’indexation de contenu enrichi dans les colonnes de base de données n’est pas prise en charge. Les exemples de contenu de ce type sont HTML, JSON, XML, blobs et les parsings de document qui existent en tant que liens à l’intérieur des colonnes de base de données.
+- L’indexation de contenu enrichi dans les colonnes de base de données n’est pas prise en charge. Les exemples de contenu de ce type sont html, JSON, XML, blobs et les parsings de document qui existent en tant que liens à l’intérieur des colonnes de base de données.

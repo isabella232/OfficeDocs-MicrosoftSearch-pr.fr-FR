@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Ajouter des secteurs verticaux de recherche et personnaliser les résultats de recherche
-ms.openlocfilehash: 4896fdb9923c93602acc48c2360039d512e4d72e
-ms.sourcegitcommit: a86265684871da86562a76c4961d0a6c1869f517
+ms.openlocfilehash: 75dd6193308f52e7bfbb787d8f8dc27def834751
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790333"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031646"
 ---
 # <a name="customize-the-search-results-page"></a>Personnaliser la page des résultats de la recherche
 
-Vous pouvez créer des secteurs verticaux de recherche et des types de résultats pour personnaliser les résultats de recherche que les utilisateurs voient lorsqu’ils recherchent dans Microsoft [SharePoint,](https://sharepoint.com/) [Microsoft Office](https://office.com)et Recherche Microsoft dans [Bing.](https://bing.com) Les secteurs verticaux facilitent la recherche des informations qu’ils sont autorisés à voir. Par exemple, vous pouvez créer un secteur vertical de recherche pour les données d’analyse marketing à partir de logiciels tiers pour vos utilisateurs au service marketing. Vous pouvez également définir des types de résultats et personnaliser la disposition de ces données.  
+Vous pouvez créer des secteurs verticaux de recherche et des types de résultats pour personnaliser les résultats de recherche que les utilisateurs voient lorsqu’ils recherchent dans Microsoft [SharePoint,](https://sharepoint.com/) [Microsoft Office](https://office.com)et Recherche Microsoft dans [Bing](https://bing.com). Les secteurs verticaux facilitent la recherche des informations qu’ils sont autorisés à voir. Par exemple, vous pouvez créer un secteur vertical de recherche pour les données d’analyse marketing à partir de logiciels tiers pour vos utilisateurs au service marketing. Vous pouvez également définir des types de résultats et personnaliser la disposition de ces données.  
 
 Vous pouvez créer des secteurs verticaux et des types de résultats à ces niveaux :
 
@@ -32,7 +32,7 @@ Vous pouvez créer des secteurs verticaux et des types de résultats à ces nive
 
 En haut de la page des résultats de la recherche Microsoft, une ligne d’onglets s’offre à vous. Voici les secteurs verticaux de recherche. Un secteur vertical de recherche affiche uniquement les résultats d’un certain type ou d’un certain contenu. Fichiers **ou** Actualités en sont des **exemples.** Par défaut, Recherche Microsoft affiche les secteurs verticaux **Tous,** **Personnes,** **Fichiers,** **Sites** et **Actualités**.  
 
-Vous pouvez ajouter des secteurs verticaux de recherche pertinents pour votre organisation. Ceux-ci apparaissent sur la page des résultats de la recherche Microsoft [dans SharePoint,](https://sharepoint.com/) [Office](https://Office.com)et [Bing](https://bing.com). Par exemple, vous pouvez créer un secteur vertical pour le contenu marketing et un autre pour les ventes, en fonction du type d’informations dont chaque groupe a besoin. Vous pouvez ajouter des secteurs verticaux pour afficher les résultats uniquement à partir du contenu indexé via des connecteurs.  
+Vous pouvez ajouter des secteurs verticaux de recherche pertinents pour votre organisation. Ceux-ci apparaissent sur la page des résultats de recherche Microsoft dans [SharePoint,](https://sharepoint.com/) [Office](https://Office.com)et [Bing](https://bing.com). Par exemple, vous pouvez créer un secteur vertical pour le contenu marketing et un autre pour les ventes, en fonction du type d’informations dont chaque groupe a besoin. Vous pouvez ajouter des secteurs verticaux pour afficher les résultats uniquement à partir du contenu indexé via des connecteurs.  
 
 ### <a name="multiple-connections-in-a-vertical"></a>Connexions multiples dans un secteur vertical
 
@@ -62,11 +62,11 @@ Il existe trois étapes de base pour ajouter un secteur vertical :
 
 Après avoir commencé l’Assistant, vous êtes guidé dans les étapes de définition du nom, de la source de contenu et de l’étendue du contenu à rechercher. Le secteur vertical est créé dans un état désactivé. Vous l’activerez ultérieurement.
 
-Vous pouvez utiliser un ensemble limité de langage de requête de mot [clé (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) pour limiter l’étendue. Cette page répertorie les propriétés disponibles. Nous vous recommandons d’utiliser des mots clés de texte libre et des restrictions de propriété avec des opérateurs booléens pour créer le KQL.
+Vous pouvez utiliser un ensemble limité de langages [KQL (Keyword Query Language)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) pour limiter l’étendue. Cette page répertorie les propriétés disponibles. Nous vous recommandons d’utiliser des mots clés de texte libre et des restrictions de propriété avec des opérateurs booléens pour créer le KQL.
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>Créer un secteur vertical au niveau de l’organisation
 
-Pour créer le secteur vertical sur Microsoft Search (recherche Microsoft) dans La maison [SharePoint,](https://sharepoint.com/) [Office](https://office.com)ou [Bing,](https://bing.com)suivez les étapes suivantes :
+Pour créer le secteur vertical sur La recherche Microsoft dans la maison [SharePoint,](https://sharepoint.com/) [Office](https://office.com)ou [Bing,](https://bing.com)suivez les étapes suivantes :
 
 1. Dans le [Centre d’administration Microsoft 365,](https://admin.microsoft.com)allez à [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 2. Sélectionnez **Ajouter** pour commencer.  
@@ -84,7 +84,7 @@ N’oubliez pas que les secteurs verticaux sont créés dans un état désactiv�
 
 ## <a name="step-2-create-the-result-types"></a>ÉTAPE 2 : Créer les types de résultats
 
-Vous pouvez définir la façon dont les résultats sont affichés dans le secteur vertical en concevant la disposition à l’aide de types de résultats. La disposition des résultats vous permet d’afficher des informations importantes directement dans les résultats de la recherche, afin que les utilisateurs n’ont pas à sélectionner chaque résultat pour voir s’ils ont trouvé ce qu’ils cherchent.
+Vous pouvez définir la façon dont les résultats sont affichés dans le secteur vertical en concevant la disposition à l’aide de types de résultats. La disposition des résultats vous permet d’afficher des informations importantes directement dans les résultats de la recherche, afin que les utilisateurs n’ont pas à sélectionner chaque résultat pour voir s’ils ont trouvé ce qu’ils recherchent.
 
 ### <a name="default-search-result-layout"></a>Disposition des résultats de recherche par défaut
 
@@ -110,7 +110,7 @@ Après avoir démarrer l’Assistant, vous êtes guidé dans les étapes pour d�
 
 1. Sur le site [SharePoint](https://sharepoint.com/) où vous souhaitez créer le type de résultat, allez à **Paramètres.**
 2. Sélectionnez **les informations du site,** **puis affichez tous les paramètres du site.**
-3. Recherchez la section Recherche Microsoft, puis **sélectionnez Configurer Recherche Microsoft pour cette collection de sites.**
+3. Recherchez la section Recherche Microsoft, puis sélectionnez Configurer La recherche **Microsoft pour cette collection de sites.**
 4. Dans le volet de navigation, sélectionnez **Expérience personnalisée** et sélectionnez **l’onglet Type de** résultat.
 5. Pour ajouter un type de résultat, sélectionnez **Ajouter.**  Ou, pour modifier un type de résultat, sélectionnez le type de résultat dans la liste.
 
@@ -125,7 +125,7 @@ Voici une liste des problèmes courants que vous pouvez rencontrer et des action
 |Erreur  |Action  |
 |---------|---------|
 | Je vois un message d’erreur « Un problème s’est passé » sur le secteur vertical. | Les types de résultat et vertical sont nécessaires pour terminer l’installation. Assurez-vous que vous avez créé les deux pour la même source de contenu. |
-| Je ne vois pas ma disposition des résultats, même si j’en ai créé une. | Cela prend quelques minutes, car ces paramètres sont généralement mis en cache. Patientez quelques minutes et essayez à nouveau.        |
+| Je ne vois pas ma disposition des résultats, même si j’en ai créé une. | Cela prend quelques minutes, car ces paramètres sont généralement mis en cache. Patientez quelques minutes, puis recommencez.        |
 | Je ne vois aucune source de contenu dans la page de type vertical ou de résultat. | Assurez-vous que vous avez configuré des connecteurs et des données indexées.   |
 
 ## <a name="next-steps"></a>Étapes suivantes

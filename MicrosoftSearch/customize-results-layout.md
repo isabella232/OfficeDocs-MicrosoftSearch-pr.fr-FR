@@ -11,38 +11,38 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: À l’aide de cartes adaptatives, créer une disposition pour afficher vos résultats de recherche personnalisés
-ms.openlocfilehash: 425e5404c14d500f6ecd84ad449dafb05bbfd31b
-ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
+description: À l’aide de cartes adaptatives, créez une disposition pour afficher vos résultats de recherche personnalisés
+ms.openlocfilehash: d29b1a45f11079f4b71f71a387cf43cbf2f48e7d
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48927179"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031736"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
-# <a name="create-a-layout-to-customize-search-results"></a>Créer une disposition pour personnaliser les résultats de la recherche
+# <a name="create-a-layout-to-customize-search-results"></a>Créer une disposition pour personnaliser les résultats de recherche
 
-Vous pouvez concevoir la disposition des résultats pour un secteur vertical personnalisé à l’aide du concepteur de mise en page. Vous pouvez commencer à concevoir la disposition en choisissant des modèles proposés dans le concepteur de mise en page et en les utilisant si elles répondent à vos besoins. Ou vous pouvez choisir de modifier ces modèles de différentes manières pour répondre à vos besoins. Par exemple, ajouter/supprimer des images, ajouter/supprimer du texte et modifier du texte. Si aucun des modèles ne répond à vos besoins, vous pouvez choisir de commencer à concevoir votre disposition à l’aide d’un modèle vide.  
+Vous pouvez concevoir la disposition des résultats pour un secteur vertical personnalisé à l’aide du concepteur de disposition de recherche. Vous pouvez commencer à concevoir la disposition en choisissant les modèles proposés dans le concepteur de disposition et en les utilisant s’ils correspondent à vos besoins. Vous pouvez également choisir de modifier ces modèles de différentes manières pour vous adapter à vos besoins. Par exemple, ajoutez/supprimez des images, ajoutez/supprimez du texte et modifiez du texte. Si aucun des modèles ne répond à vos besoins, vous pouvez choisir de commencer à concevoir votre disposition à l’aide d’un modèle vide.  
 
-Une fois la mise en page prête, utilisez le [langage de modèle cartes adaptatives](https://docs.microsoft.com/adaptive-cards/templating/language) pour créer un JSON de mise en page de résultat utilisé pour définir un type de résultat. Vous mappez les propriétés de résultat à la mise en page à l’aide de l’étape de mappage du concepteur de mise en page.  
+Une fois la disposition prête, utilisez le langage [de](/adaptive-cards/templating/language) modèle de cartes adaptatives pour créer un JSON de disposition de résultat qui est utilisé pour définir un type de résultat. Vous mappagez les propriétés de résultat à la disposition à l’aide de l’étape Mappage dans le concepteur de disposition.  
 
-## <a name="create-a-layout-on-your-own"></a>Créer une mise en page
+## <a name="create-a-layout-on-your-own"></a>Créer une disposition par vous-même
 
-La création d’une mise en page personnelle nécessite de connaître les [cartes adaptatives](https://docs.microsoft.com/adaptive-cards/authoring-cards/getting-started) et leur [schéma](https://adaptivecards.io/explorer/). La disposition des résultats de la recherche utilise un sous-ensemble des éléments proposés par des cartes adaptatives, et vous pouvez utiliser le concepteur de mise en page pour en savoir plus sur l’ensemble d’éléments pris en charge.  
+La création d’une disposition par vous-même nécessite une connaissance des [cartes adaptatives](/adaptive-cards/authoring-cards/getting-started) et de [leur schéma.](https://adaptivecards.io/explorer/) La disposition des résultats de recherche utilise un sous-ensemble des éléments offerts par les cartes adaptatives, et vous pouvez utiliser le concepteur de disposition pour en savoir plus sur l’ensemble d’éléments pris en charge.  
 
-Lors de la création de votre propre disposition, créez la disposition de la carte adaptative à l’aide des données de votre connecteur, puis finalisez la mise en page.
-La création de votre propre disposition comporte deux étapes principales :
+Lors de la création de votre propre disposition, créez la disposition de carte adaptative à l’aide des données de votre connecteur, puis finalisez la disposition.
+Il existe deux étapes principales pour créer votre propre disposition :
 
 - Concevez la disposition.
 - Séparez les données du modèle.
 
 ### <a name="design-the-layout"></a>Conception de la mise en page
 
-Dans cet exemple, nous affichons une disposition avec un en-tête, un lien et un texte descriptif.
+Dans cet exemple, nous montrons une disposition avec un en-tête, un lien et un texte descriptif.
 
-![Exemple de mise en page avec un en-tête, un lien et une description.](media/Verts-ExampleLayout.png)
+![Exemple de disposition avec un en-tête, un lien et une description.](media/Verts-ExampleLayout.png)
 
-Et voici le fichier JSON associé à la mise en page :
+Et voici le fichier JSON associé à la disposition :
 
 ```json
 {
@@ -98,11 +98,11 @@ Et voici le fichier JSON associé à la mise en page :
 }
 ```
 
-### <a name="separate-the-data-from-the-layout"></a>Séparer les données de la mise en page
+### <a name="separate-the-data-from-the-layout"></a>Séparer les données de la disposition
 
-Vous pouvez séparer les données de la mise en page et lier les données.
+Vous pouvez séparer les données de la disposition et les lier.
 
-Voici la disposition JSON après avoir lié les données :
+Voici la disposition JSON après la liaison des données :
 
 ```json
 {
@@ -155,7 +155,7 @@ Voici la disposition JSON après avoir lié les données :
 }
 ```
 
-Exemples de données : spécifiez des exemples de données dans l' **éditeur de données exemple** pour afficher la carte liée aux données en **mode aperçu**.
+Exemple de données :  spécifiez des exemples de données dans l’exemple d’éditeur de données pour afficher la carte liée aux données en **mode Aperçu.**
 
 ```json
 {
@@ -168,44 +168,44 @@ Exemples de données : spécifiez des exemples de données dans l' **éditeur d
 }
 ```
 
-## <a name="map-the-layout-to-the-result-properties"></a>Mapper la disposition aux propriétés de résultat
+## <a name="map-the-layout-to-the-result-properties"></a>Ma cartographier la disposition sur les propriétés des résultats
 
-Vous devez mapper chaque champ de la mise en page à une propriété Result ou à une propriété Connector pour générer le JSON de la disposition du résultat.
+Vous devez maque chaque champ de la disposition sur une propriété de résultat ou une propriété de connecteur pour générer la disposition des résultats JSON.
 
-![Capture d’écran d’un exemple de mise en page sur la page du concepteur de mise en page de recherche avec un champ sélectionné et le volet de propriétés ouvert.](media/Verts-SearchLayoutDesigner.png)
+![Capture d’écran d’un exemple de mise en page sur la page Concepteur de disposition de recherche avec un champ sélectionné et le volet de propriétés ouvert.](media/Verts-SearchLayoutDesigner.png)
 
-Sélectionnez un champ dans la mise en page pour mettre en surbrillance les variables devant être mappées. Vous pouvez utiliser plusieurs variables pour un seul champ et tous les champs doivent être mappés sur les propriétés de résultat.
+Sélectionnez un champ dans la disposition pour mettre en évidence les variables qui doivent être mappées. Vous pouvez utiliser plusieurs variables pour un seul champ, et tous les champs doivent être mappés aux propriétés de résultat.
 
-### <a name="show-snippet-on-search-result"></a>Afficher l’extrait de résultats de la recherche  
+### <a name="show-snippet-on-search-result"></a>Afficher l’extrait de code sur le résultat de la recherche  
 
-Les extraits de code dynamiques générés sur la propriété de **contenu** du résultat du connecteur peuvent être affichés sur le résultat de la recherche. **ResultSnippet** est la propriété système qui agit comme une propriété d’espace réservé pour les extraits de code générés pour chaque résultat de connecteur. Pour afficher les extraits de code sur la disposition des résultats, la propriété système **ResultSnippet** doit être mappée sur un champ approprié, par exemple Description, dans la disposition des résultats de la recherche. Les extraits de code générés sur chaque résultat surlignent également les correspondances dans l’extrait de code avec le terme de requête entré par l’utilisateur.
+Les extraits de code dynamiques générés sur **la** propriété de contenu du résultat du connecteur peuvent être affichés sur le résultat de recherche. **ResultSnippet est** la propriété système qui agit comme une propriété d’espace réservé pour les extraits de code générés pour chaque résultat de connecteur. Pour afficher les extraits de code sur la disposition des résultats, la propriété système **ResultSnippet** doit être mappée sur un champ approprié, par exemple Description, dans la disposition des résultats de la recherche. Les extraits de code générés sur chaque résultat mettent également en évidence les correspondances dans l’extrait de code avec le terme de requête entré par l’utilisateur.
 
 ## <a name="things-to-consider"></a>Informations importantes
 
-Avant de commencer, vous devez effectuer quelques opérations et quelques éléments que vous devez éviter pour garantir la réussite de vos mises en page.
+Avant de commencer, vous devez faire quelques opérations et éviter d’avoir à faire en sorte que vos dispositions soient réussies.
 
 ### <a name="do"></a>À faire
 
-- Modifier un modèle pour indiquer le lien du logo dans la mise en page si vous utilisez des liens statiques pour les logos et non pour les propriétés de résultat.
-- Valider la disposition des résultats pour les scénarios où aucune donnée n’est renvoyée pour une propriété Result utilisée dans le JSON résultant. Utilisez la `$when` condition pour masquer un élément si la propriété ne contient pas de données.  
-- Assurez-vous que les types de données de la `$when` condition et la propriété Result correspondent. Par exemple, ne pas comparer `Number` avec `Text` dans la `$when` condition.  
-- Considérez les conditions requises pour les thèmes lors de la conception d’une disposition de résultats.  
-- Assurez-vous que l' `Textblock`   élément peut gérer le contenu dynamique. Vous pouvez utiliser les `wrap` `maxLines` Propriétés et de l’élément à cet effet.
-- Format correct de la date lors `{DATE()}` de l’utilisation de la démarque.  
+- Modifiez un modèle pour fournir le lien de logo dans la disposition si vous utilisez des liens statiques pour les logos et non pour les propriétés de résultat.
+- Validez la disposition des résultats pour les scénarios dans lequel aucune donnée n’est renvoyée pour une propriété de résultat utilisée dans le résultat JSON. Utilisez la `$when` condition pour masquer un élément si la propriété ne contient pas de données.  
+- Assurez-vous que les types de données de `$when` la condition et de la propriété de résultat correspondent. Par exemple, ne comparez pas `Number` avec `Text` dans la `$when` condition.  
+- Pensez aux exigences de thème lors de la conception d’une disposition des résultats.  
+- Assurez-vous que `Textblock`   l’élément peut gérer le contenu dynamique. Vous pouvez utiliser les `wrap` propriétés et `maxLines` les propriétés d’élément à cet effet.
+- Formatez correctement la date lors de `{DATE()}` l’utilisation dans Markdown.  
 
 ### <a name="dont"></a>À ne pas faire
 
-- Ne définissez pas de types de données non valides lors de la liaison de valeurs. Pour plus d’informations sur les types de données, voir [Manage the Search Schema](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema).
-- Évitez de détourer le résultat sur la page de résultats en suivant la hauteur maximale du JSON de la disposition du résultat. Si vous dépassez la hauteur maximale de la disposition du résultat, le résultat sera rogné sur la page de résultats.
-- N’utilisez pas `px` de valeurs dans les propriétés de l’élément.
-- N’utilisez pas la démarque avec la propriété **ResultSnippet** dans la mise en page des résultats pour mettre en surbrillance la requête dans le résultat de la recherche.
+- Ne définissez pas de types de données non valides lors de la liaison de valeurs. Pour plus d’informations sur les types de données, voir [Gérer le schéma de recherche.](/sharepoint/search/manage-the-search-schema)
+- Évitez de rogler le résultat sur la page de résultats en suivant la hauteur maximale de la disposition des résultats JSON. Si vous dépassez la hauteur maximale de la mise en page des résultats, le résultat est rogé sur la page de résultats.
+- N’utilisez pas de `px` valeurs dans les propriétés de l’élément.
+- N’utilisez pas markdown avec la **propriété ResultSnippet** dans la disposition des résultats pour mettre en évidence la correspondance de requête dans le résultat de recherche.
 
 ## <a name="resources"></a>Ressources
 
-[Personnaliser la page des résultats de recherche](customize-search-page.md)
+[Personnaliser la page des résultats de la recherche](customize-search-page.md)
 
-[Cartes adaptatives](https://docs.microsoft.com/adaptive-cards/authoring-cards/getting-started)
+[Cartes adaptatives](/adaptive-cards/authoring-cards/getting-started)
 
-[Langue du modèle cartes adaptatives](https://docs.microsoft.com/adaptive-cards/templating/language)
+[Langage du modèle de cartes adaptatives](/adaptive-cards/templating/language)
 
 [Schéma de carte adaptative](https://adaptivecards.io/explorer/)

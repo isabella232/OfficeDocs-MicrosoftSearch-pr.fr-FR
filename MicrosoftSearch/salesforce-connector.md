@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur Salesforce Graph pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 86140a4650593e08188f171be54f1753b73ecf7a
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 59cc321a40655a1c1e5edf615dd43a2a56c8ddbc
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508822"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031682"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -29,7 +29,7 @@ Le connecteur Salesforce Graph permet à votre organisation d’indexer les obje
 > [!NOTE]
 > Lisez [**l’article Configuration de votre connecteur Graph**](configure-connector.md) pour comprendre les instructions générales d’installation des connecteurs Graph.
 
-Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur Salesforce Graph. Il complète le processus d’installation général et affiche des instructions qui s’appliquent uniquement au connecteur Salesforce Graph. Cet article inclut également des informations sur [les limitations.](#limitations)
+Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur Salesforce Graph. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur Salesforce Graph. Cet article inclut également des informations sur [les limitations.](#limitations)
 
 >[!IMPORTANT]
 >Le connecteur Salesforce Graph prend actuellement en charge Summer '19 ou une ultérieure.
@@ -52,7 +52,7 @@ Pour vous connecter à votre instance Salesforce, vous avez besoin de votre URL 
 
     - Sélectionnez les étendues OAuth requises.
 
-        - Accéder à vos données (api) et les gérer
+        - Accéder et gérer vos données (api)
 
         - Effectuer des demandes en votre nom à tout moment (refresh_token, offline_access)
 
@@ -81,17 +81,17 @@ Vous pouvez désormais utiliser le [Centre d’administration M365](https://admi
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-2-name-the-connection"></a>Étape 2 : Nommer la connexion
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>Étape 3 : Configurer les paramètres de connexion
 
-Pour l’URL de l’instance, utilisez https://[domaine].my.salesforce.com où le domaine serait le domaine Salesforce de votre organisation.
+Pour l’URL d’instance, utilisez https://[domaine].my.salesforce.com où le domaine serait le domaine Salesforce de votre organisation.
 
 Entrez l’ID client et la secret client que vous avez obtenus à partir de votre instance Salesforce, puis sélectionnez Se connectez.
 
@@ -125,7 +125,7 @@ Si vous avez choisi d’ing d’une ACL à partir de votre instance Salesforce e
 
 ## <a name="step-4b-map-aad-identities"></a>Étape 4b : Maser les identités AAD
 
-Si vous avez choisi d’ing d’une ACL à partir de votre instance Salesforce et que vous avez sélectionné « AAD » pour le type d’identité, voir Mappage de vos [identités Azure AD](map-aad.md) pour obtenir des instructions sur le mappage des identités. Pour savoir comment configurer Azure AD SSO pour Salesforce, consultez ce [didacticiel.](https://docs.microsoft.com/azure/active-directory/saas-apps/salesforce-tutorial)
+Si vous avez choisi d’ing d’une ACL à partir de votre instance Salesforce et que vous avez sélectionné « AAD » pour le type d’identité, voir Mappage de vos [identités Azure AD](map-aad.md) pour obtenir des instructions sur le mappage des identités. Pour savoir comment configurer Azure AD SSO pour Salesforce, consultez ce [didacticiel.](/azure/active-directory/saas-apps/salesforce-tutorial)
 
 ## <a name="step-5-assign-property-labels"></a>Étape 5 : Attribuer des étiquettes de propriété
 
@@ -133,13 +133,13 @@ Vous pouvez affecter une propriété source à chaque étiquette en choisissant 
 
 ## <a name="step-6-manage-schema"></a>Étape 6 : Gérer le schéma
 
-Vous pouvez sélectionner les propriétés source qui doivent être indexées afin qu’elles s’afficheront dans les résultats de la recherche. L’Assistant Connexion sélectionne par défaut un schéma de recherche basé sur un ensemble de propriétés source. Vous pouvez le modifier en élecant les cases à cocher de chaque propriété et attribut de la page de schéma de recherche. Les attributs de schéma de recherche incluent recherche, requête, récupération et affiner.
+Vous pouvez sélectionner les propriétés source qui doivent être indexées afin qu’elles s’afficheront dans les résultats de la recherche. L’Assistant Connexion sélectionne par défaut un schéma de recherche basé sur un ensemble de propriétés source. Vous pouvez le modifier en élecntant les cases à cocher de chaque propriété et attribut de la page de schéma de recherche. Les attributs de schéma de recherche incluent recherche, requête, récupération et affiner.
 L’affinement vous permet de définir les propriétés qui peuvent être utilisées ultérieurement en tant qu’affinements ou filtres personnalisés dans l’expérience de recherche.  
 
 > [!div class="mx-imgBorder"]
 > ![Sélectionnez le schéma pour chaque propriété source. Les options sont Requête, Recherche, Récupérer et Affiner](media/salesforce-connector/sf9.png)
 
-## <a name="step-7-set-the-refresh-schedule"></a>Étape 7 : Définir la planification de l’actualisation
+## <a name="step-7-set-the-refresh-schedule"></a>Étape 7 : Définir la planification d’actualisation
 
 Le connecteur Salesforce prend uniquement en charge les planifications d’actualisation pour les analyse complètes actuellement.
 
@@ -150,7 +150,7 @@ La planification recommandée est d’une semaine pour une analyse complète.
 
 ## <a name="step-8-review-connection"></a>Étape 8 : Examiner la connexion
 
-Suivez les [instructions d’installation générales.](https://docs.microsoft.com/microsoftsearch/configure-connector)
+Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!---## Troubleshooting-->

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez une vue d’ensemble de la recherche Microsoft, de ses avantages et des applications qui la prise en charge.
-ms.openlocfilehash: a7250bccd3f77eb3ad2f3c91bdfd176a2141fd98
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 23bc07766bd5fb00bed21c7e739b22e7d1333630
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508813"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031781"
 ---
 # <a name="overview-of-microsoft-search"></a>Vue d’ensemble de Recherche Microsoft
 
@@ -68,9 +68,9 @@ En tant qu’administrateur, vous pouvez créer une expérience de recherche Mic
 
 ## <a name="what-content-is-searched"></a>Contenu recherché
 
-Recherche Microsoft affiche le contenu que votre organisation a stocké dans Microsoft 365 ou indexé via des connecteurs. Microsoft Search (recherche Microsoft) ne recherche pas sur les clients ou n’affiche pas les résultats à partir du contenu partagé par d’autres organisations. Si votre organisation a mis en place un environnement SharePoint hybride à l’aide de la recherche hybride sur le cloud, Recherche Microsoft renvoie les résultats de recherche à partir du contenu SharePoint en ligne et local, y compris tout contenu externe que vous avez connecté à votre environnement SharePoint Server. [Apprenez-en davantage sur les environnements hybrides de recherche](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
+Recherche Microsoft affiche le contenu que votre organisation a stocké dans Microsoft 365 ou indexé via des connecteurs. Microsoft Search (recherche Microsoft) ne recherche pas sur les clients ou n’affiche pas les résultats à partir du contenu partagé par d’autres organisations. Si votre organisation a mis en place un environnement SharePoint hybride à l’aide de la recherche hybride sur le cloud, Recherche Microsoft renvoie les résultats de recherche à partir du contenu SharePoint en ligne et local, y compris tout contenu externe que vous avez connecté à votre environnement SharePoint Server. [Apprenez-en davantage sur les environnements hybrides de recherche](/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
-Les utilisateurs obtiennent les mêmes résultats de recherche qu’ils obtiennent à partir d’autres emplacements et obtiennent également des résultats à partir d’Internet.
+Les utilisateurs obtiennent les mêmes résultats de recherche qu’ils obtiennent à partir d’autres emplacements et ils obtiennent également des résultats à partir d’Internet.
 
 ## <a name="how-microsoft-search-works"></a>Fonctionnement de Microsoft Search (recherche Microsoft)
 

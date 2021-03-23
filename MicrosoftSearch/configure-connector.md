@@ -1,5 +1,5 @@
 ---
-title: Configurer votre connecteur Graph créé par Microsoft pour Microsoft Search (recherche Microsoft)
+title: Configurer votre connecteur Graph intégré à Microsoft pour Microsoft Search (recherche Microsoft)
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble du programme d’installation des connecteurs Graph par Microsoft
-ms.openlocfilehash: e97b930f627a6336cc93b3a1f33e390cae4ff0aa
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 5c674f6b9253af1145be983e5713f65be1c2b022
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508871"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031376"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -45,7 +45,7 @@ Cet article inclut également des informations sur la résolution des problèmes
 * [Étapes suivantes](#next-steps)
 
 > [!NOTE]
-> Le processus de configuration est similaire pour tous les connecteurs Graph par Microsoft, mais n’est pas exactement le même. **En plus de lire cet article, n’oubliez pas de lire les informations spécifiques au connecteur pour votre source de données.**  
+> Le processus d’installation est similaire pour tous les connecteurs Graph par Microsoft, mais n’est pas exactement le même. **En plus de lire cet article, n’oubliez pas de lire les informations spécifiques au connecteur pour votre source de données.**  
 
 <!---## Before you get started-->
 
@@ -53,7 +53,7 @@ Cet article inclut également des informations sur la résolution des problèmes
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
 
-Pour configurer l’un des connecteurs Graph créés par Microsoft, complétez les étapes suivantes :
+Pour configurer l’un des connecteurs Graph créés par Microsoft, vous pouvez effectuer les étapes suivantes :
 
 1. Connectez-vous à votre compte d’administrateur dans le [Centre d’administration Microsoft 365.](https://admin.microsoft.com)
 
@@ -81,13 +81,13 @@ L’ID de connexion crée des propriétés implicites pour votre connecteur. Il 
 
 Le processus de configuration des paramètres de connexion varie en fonction du type de source de données. Consultez les informations spécifiques au connecteur pour le type de source de données que vous souhaitez ajouter à votre client pour effectuer cette étape du processus d’installation.  
 
-Pour en savoir plus sur la connexion à une source de données sur site, voir Installer une passerelle [de données sur site.](https://aka.ms/configuregateway)
+Pour en savoir plus sur la connexion à une source de données sur site, voir Installer une passerelle [de données sur site.](/data-integration/gateway/service-gateway-install)
 
 ## <a name="step-4-manage-search-permissions"></a>Étape 4 : Gérer les autorisations de recherche
 
 Les listes de contrôle d’accès déterminent les utilisateurs de votre organisation qui peuvent accéder à chaque élément de données.  
 
-Certains connecteurs tels que [Microsoft SQL](MSSQL-connector.md) azure Data Lake [Storage Gen2](azure-data-lake-connector.md) supportent en natif les AD Azure [Active Directory (Azure AD).](https://docs.microsoft.com/azure/active-directory/)
+Certains connecteurs tels que [Microsoft SQL](MSSQL-connector.md) azure Data Lake [Storage Gen2](azure-data-lake-connector.md) supportent en natif les AD Azure [Active Directory (Azure AD).](/azure/active-directory/)
 
 D’autres connecteurs tels [que ServiceNow,](servicenow-connector.md) [Azure DevOps](azure-devops-connector.md)et [Salesforce](salesforce-connector.md) prise en charge la synchronisation des utilisateurs et groupes non Azure AD.  
 
@@ -105,7 +105,7 @@ Le tableau suivant répertorie les étiquettes actuellement pris en charge et le
 **lastModifiedBy** | Nom de la personne qui a modifié l’élément le plus récemment
 **authors** | Nom des personnes qui ont participé/ont participé à l’élément
 **createdDateTime** | Quand l’élément a-t-il été créé ?
-**lastModifiedDateTime** | Quand l’élément a-t-il été modifié le plus récemment ?
+**lastModifiedDateTime** | Quand l’élément a-t-il été modifié le plus récemment
 **fileName** | Nom de l’élément de fichier
 **fileExtension** | Type d’élément de fichier tel que .pdf ou .word
 
@@ -136,7 +136,7 @@ Les attributs de schéma de recherche incluent des options **pour interroger,** 
 Attribut de schéma de recherche | Fonction | Exemple
 --- | --- | ---
 SEARCH | Rend le contenu de texte d’une propriété utilisable dans une recherche. Le contenu de la propriété est inclus dans l’index de texte intégral. | Si la propriété est un  **titre,** une requête entreprise renvoie des réponses qui contiennent le mot **Entreprise** dans un texte ou un titre.
-REQUÊTE | Recherche par requête une correspondance pour une propriété particulière. Le nom de la propriété peut ensuite être spécifié dans la requête par programme ou par mot. |  Si la **propriété Title** peut être interrogé, la requête **Title: Enterprise** est prise en charge.
+REQUÊTE | Recherche par requête une correspondance pour une propriété particulière. Le nom de la propriété peut ensuite être spécifié dans la requête par programme ou en verbatim. |  Si la **propriété Title** peut être interrogé, la requête **Title: Enterprise** est prise en charge.
 RETRIEVE | Seules les propriétés récupérables peuvent être utilisées dans le type de résultat et s’afficher dans le résultat de recherche. |
 AFFINER | L’option d’affinment peut être utilisée comme dans la page des résultats de recherche Microsoft. | Les utilisateurs de votre organisation peuvent [filtrer](custom-filters.md) par **URL** dans la page des résultats de la recherche si la propriété Affiner est marquée lors de la configuration de la connexion
 
@@ -204,4 +204,4 @@ Consultez les informations spécifiques au connecteur pour votre source de donn�
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Après avoir publié la connexion, vous devez personnaliser la page des résultats de la recherche. Pour en savoir plus sur la personnalisation des résultats de recherche, voir [Personnaliser la page des résultats de la recherche.](https://docs.microsoft.com/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page)
+Après avoir publié la connexion, vous devez personnaliser la page des résultats de la recherche. Pour en savoir plus sur la personnalisation des résultats de recherche, voir [Personnaliser la page des résultats de la recherche.](#next-steps-customize-the-search-results-page)

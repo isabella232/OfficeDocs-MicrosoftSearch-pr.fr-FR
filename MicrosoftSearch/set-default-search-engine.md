@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 description: Découvrez comment définir Bing comme moteur de recherche par défaut de votre entreprise à l’aide de Microsoft Search (recherche Microsoft).
-ms.openlocfilehash: 1ac2f23a8263c01901e252e7dd830e7373380669
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 346bf3bf2da10178a8bd19390920db2d9de2629e
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508669"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031754"
 ---
 # <a name="make-bing-the-default-search-engine"></a>Définir Bing en tant que moteur de recherche par défaut
   
@@ -30,7 +30,7 @@ Bien que vous puissiez définir Bing en tant que moteur de recherche par défaut
   
 Concernant les fichiers récents d’ADMX relatifs aux différentes versions de Windows, reportez-vous à l’article [Comment créer et gérer le magasin central des modèles d’administration de stratégie de groupe dans Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
   
-Si le paramètre décrit dans cette section est in trouver dans gpMC, téléchargez le ADMX approprié et copiez-le dans le magasin central. Pour plus d’informations, voir [Modification de Domain-Based de groupe à l’aide de fichiers ADMX.](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29) Le magasin central sur le contrôleur est un dossier avec la convention d’attribution de noms suivante : **%systemroot%\sysvol \\<domain \> \policies\PolicyDefinitions**
+Si le paramètre décrit dans cette section est in trouver dans gpMC, téléchargez le ADMX approprié et copiez-le dans le magasin central. Pour plus d’informations, voir [Modification de Domain-Based de groupe à l’aide de fichiers ADMX.](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29) Le magasin central sur le contrôleur est un dossier avec la convention d’attribution de noms suivante : **%systemroot%\sysvol \\<domain \> \policies\PolicyDefinitions**
   
 Chaque domaine que votre contrôleur gère doit avoir un dossier séparé. La commande suivante peut être utilisée pour copier le fichier ADMX à partir de la commande rapide:
   
@@ -48,7 +48,7 @@ Une fois cette stratégie définie, les utilisateurs ne pourront plus modifier l
   
 Chrome est fourni avec son propre ensemble de paramètres de stratégie de groupe qui peuvent être téléchargés sous la forme d’un fichier ADMX à partir de l’aide de [Google Chrome Enterprise](https://support.google.com/chrome/a/answer/187202).
   
-Copiez le fichier modèle dans un magasin central pour les fichiers ADMX sur le contrôleur de domaine. Pour plus d’informations, voir [Modification de Domain-Based de groupe à l’aide de fichiers ADMX.](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29) Le magasin central sur le contrôleur est un dossier avec la convention d’attribution de noms suivante : **%systemroot%\sysvol \\<domain \> \policies\PolicyDefinitions**
+Copiez le fichier modèle dans un magasin central pour les fichiers ADMX sur le contrôleur de domaine. Pour plus d’informations, voir [Modification de Domain-Based de groupe à l’aide de fichiers ADMX.](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29) Le magasin central sur le contrôleur est un dossier avec la convention d’attribution de noms suivante : **%systemroot%\sysvol \\<domain \> \policies\PolicyDefinitions**
   
 Chaque domaine que votre contrôleur gère doit avoir un dossier séparé. La commande suivante peut être utilisée pour copier le fichier ADMX à partir de la commande rapide:
   
