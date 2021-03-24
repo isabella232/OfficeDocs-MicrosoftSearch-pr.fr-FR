@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble du programme d’installation des connecteurs Graph par Microsoft
-ms.openlocfilehash: 5c674f6b9253af1145be983e5713f65be1c2b022
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 169e78fd4a0148d8bb4e52968b2efd785045806e
+ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031376"
+ms.locfileid: "51042582"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -53,7 +53,7 @@ Cet article inclut également des informations sur la résolution des problèmes
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
 
-Pour configurer l’un des connecteurs Graph créés par Microsoft, vous pouvez effectuer les étapes suivantes :
+Pour configurer l’un des connecteurs Graph créés par Microsoft, complétez les étapes suivantes :
 
 1. Connectez-vous à votre compte d’administrateur dans le [Centre d’administration Microsoft 365.](https://admin.microsoft.com)
 
@@ -87,7 +87,7 @@ Pour en savoir plus sur la connexion à une source de données sur site, voir In
 
 Les listes de contrôle d’accès déterminent les utilisateurs de votre organisation qui peuvent accéder à chaque élément de données.  
 
-Certains connecteurs tels que [Microsoft SQL](MSSQL-connector.md) azure Data Lake [Storage Gen2](azure-data-lake-connector.md) supportent en natif les AD Azure [Active Directory (Azure AD).](/azure/active-directory/)
+Certains connecteurs tels que [Microsoft SQL](MSSQL-connector.md) et Azure Data Lake [Storage Gen2](azure-data-lake-connector.md) supportent en natif les AD Azure [Active Directory (Azure AD).](/azure/active-directory/)
 
 D’autres connecteurs tels [que ServiceNow,](servicenow-connector.md) [Azure DevOps](azure-devops-connector.md)et [Salesforce](salesforce-connector.md) prise en charge la synchronisation des utilisateurs et groupes non Azure AD.  
 
@@ -129,15 +129,15 @@ Vous pouvez ajouter des alias à vos propriétés sous la colonne « Alias » da
 
 ### <a name="search-schema-attributes"></a>Attributs de schéma de recherche
 
-Vous pouvez définir les attributs de schéma de recherche pour contrôler la fonctionnalité de recherche de chaque propriété source. Un schéma de recherche permet de déterminer les résultats affichés sur la page des résultats de la recherche et les informations que les utilisateurs finaux peuvent afficher et consulter.
+Vous pouvez définir les attributs de schéma de recherche pour contrôler les fonctionnalités de recherche de chaque propriété source. Un schéma de recherche permet de déterminer les résultats affichés sur la page des résultats de la recherche et les informations que les utilisateurs finaux peuvent afficher et consulter.
 
 Les attributs de schéma de recherche incluent des options **pour interroger,** **rechercher,** **récupérer** et **affiner**. Le tableau suivant répertorie chacun des attributs que les connecteurs Microsoft Graph supportent et explique leurs fonctions.
 
 Attribut de schéma de recherche | Fonction | Exemple
 --- | --- | ---
 SEARCH | Rend le contenu de texte d’une propriété utilisable dans une recherche. Le contenu de la propriété est inclus dans l’index de texte intégral. | Si la propriété est un  **titre,** une requête entreprise renvoie des réponses qui contiennent le mot **Entreprise** dans un texte ou un titre.
-REQUÊTE | Recherche par requête une correspondance pour une propriété particulière. Le nom de la propriété peut ensuite être spécifié dans la requête par programme ou en verbatim. |  Si la **propriété Title** peut être interrogé, la requête **Title: Enterprise** est prise en charge.
-RETRIEVE | Seules les propriétés récupérables peuvent être utilisées dans le type de résultat et s’afficher dans le résultat de recherche. |
+REQUÊTE | Recherche par requête une correspondance pour une propriété particulière. Le nom de la propriété peut ensuite être spécifié dans la requête par programme ou par mot. |  Si la **propriété Title** peut être interrogé, la requête **Title: Enterprise** est prise en charge.
+RETRIEVE | Seules les propriétés récupérables peuvent être utilisées dans le type de résultat et affichées dans le résultat de recherche. |
 AFFINER | L’option d’affinment peut être utilisée comme dans la page des résultats de recherche Microsoft. | Les utilisateurs de votre organisation peuvent [filtrer](custom-filters.md) par **URL** dans la page des résultats de la recherche si la propriété Affiner est marquée lors de la configuration de la connexion
 
 Pour tous les connecteurs à l’exception du connecteur de partage de fichiers, les types personnalisés doivent être définies manuellement. Pour activer les fonctionnalités de recherche pour chaque champ, vous avez besoin d’un schéma de recherche mappé à une liste de propriétés. L’Assistant Connexion sélectionne automatiquement un schéma de recherche basé sur l’ensemble des propriétés source que vous choisissez. Vous pouvez modifier ce schéma en sélectionnant les cases à cocher pour chaque propriété et attribut dans la page de schéma de recherche.
@@ -183,7 +183,7 @@ Les actualisations incrémentielles sont beaucoup plus rapides que les actualisa
 
 ## <a name="step-8-review-connection"></a>Étape 8 : Examiner la connexion
 
-Vous pouvez passer en revue l’intégralité de votre configuration et modifier les paramètres selon vos besoins avant d’achever la connexion. **N’oubliez pas de lire les informations spécifiques au connecteur pour votre source de données si vous ne l’avez pas déjà fait.** Sélectionnez **Terminer la** mise à jour lorsque vous êtes prêt à terminer la connexion.
+Vous pouvez passer en revue l’intégralité de votre configuration et modifier les paramètres selon vos besoins avant d’effectuer la connexion. **N’oubliez pas de lire les informations spécifiques au connecteur pour votre source de données si vous ne l’avez pas déjà fait.** Sélectionnez **Terminer la** mise à jour lorsque vous êtes prêt à terminer la connexion.
 
 ### <a name="confirm-if-the-connection-setup-worked"></a>Vérifier si la configuration de la connexion a fonctionné
 
@@ -204,4 +204,4 @@ Consultez les informations spécifiques au connecteur pour votre source de donn�
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Après avoir publié la connexion, vous devez personnaliser la page des résultats de la recherche. Pour en savoir plus sur la personnalisation des résultats de recherche, voir [Personnaliser la page des résultats de la recherche.](#next-steps-customize-the-search-results-page)
+Après avoir publié la connexion, vous devez personnaliser la page des résultats de la recherche. Pour en savoir plus sur la personnalisation des résultats de recherche, voir [Personnaliser la page des résultats de la recherche.](customize-search-page.md)

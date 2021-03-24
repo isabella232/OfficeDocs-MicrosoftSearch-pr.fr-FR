@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble des connecteurs Microsoft Graph pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 2d49471c703b765f6e99324f39dbe730f6dea814
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 77f145f58cf06e49f88af25bcb4d28cfa7d2bd56
+ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031655"
+ms.locfileid: "51042573"
 ---
 <!---Previous ms.author: monaray --->
 
 # <a name="overview-of-microsoft-graph-connectors"></a>Vue d’ensemble des connecteurs Microsoft Graph
 
-[Microsoft Search](./overview-microsoft-search.md) indexe toutes vos [données Microsoft 365](https://www.microsoft.com/microsoft-365) pour les rendre accessibles aux utilisateurs. Avec les connecteurs Microsoft Graph, votre organisation peut indexer des données tierces afin qu’elles apparaissent dans les résultats de recherche Microsoft. Cette fonctionnalité étend les types de sources de contenu utilisables dans vos applications de productivité Microsoft 365 et dans l’écosystème Microsoft plus large. Les données tierces peuvent être hébergées en local ou dans les clouds publics ou privés.
+[Recherche Microsoft](./overview-microsoft-search.md) indexe toutes [vos données Microsoft 365](https://www.microsoft.com/microsoft-365) pour les rendre utilisables dans une recherche pour les utilisateurs. Avec les connecteurs Microsoft Graph, votre organisation peut indexer des données tierces afin qu’elles apparaissent dans les résultats de recherche Microsoft. Cette fonctionnalité étend les types de sources de contenu utilisables dans vos applications de productivité Microsoft 365 et dans l’écosystème Microsoft plus large. Les données tierces peuvent être hébergées en local ou dans les clouds publics ou privés.
 
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
 
@@ -102,7 +102,7 @@ Pour plus d’informations, voir [Conditions d’utilisation](licensing.md) et c
 
 Bien que les connecteurs Microsoft Graph et les API de recherche Microsoft soient désormais généralement disponibles, plusieurs fonctionnalités sont en prévisualisation.
 
-L’ensemble de connecteurs et de fonctionnalités en prévisualisation inclut :
+L’ensemble des connecteurs et des fonctionnalités de la prévisualisation comprend les éléments suivants :
 
 * [Connecteur Azure DevOps](azure-devops-connector.md)
 * [Connecteur Salesforce](salesforce-connector.md)
@@ -120,11 +120,11 @@ Il existe de nombreuses façons de personnaliser et de configurer les résultats
 
 ## <a name="how-do-i-search-my-connector-data-from-a-custom-application"></a>Comment effectuer une recherche dans les données de mon connecteur à partir d’une application personnalisée ?
 
-Une fois les données personnalisées indexées, les développeurs peuvent [interroger ces données.](/graph/search-concept-custom-types) Vous pouvez afficher vos données dans n’importe quelle application. Pour plus d’informations, voir la [vue d’ensemble de l’API recherche Microsoft dans Microsoft Graph](/graph/search-concept-overview).
+Une fois les données personnalisées indexées, les développeurs peuvent [interroger ces données.](/graph/search-concept-custom-types) Vous pouvez afficher vos données dans n’importe quelle application. Pour plus d’informations, voir [la vue d’ensemble de l’API recherche Microsoft dans Microsoft Graph](/graph/search-concept-overview).
 
 ## <a name="how-do-i-customize-search-results"></a>Comment personnaliser les résultats de recherche ?
 
-L’étape suivante consiste à personnaliser les résultats de la recherche comme recommandé dans cet article Comment personnaliser et [configurer les résultats de recherche ?](#how-do-i-customize-and-configure-search-results) Pour en savoir plus sur la personnalisation des résultats de recherche, voir [Personnaliser la page des résultats de la recherche.](./configure-connector.md#next-steps-customize-the-search-results-page)
+L’étape suivante consiste à personnaliser les résultats de la recherche comme recommandé dans cet article Comment personnaliser et [configurer les résultats de recherche ?](#how-do-i-customize-and-configure-search-results) Pour en savoir plus sur la personnalisation des résultats de recherche, voir [Personnaliser la page des résultats de la recherche.](customize-search-page.md)
 
 ## <a name="what-are-the-connector-limitations"></a>Quelles sont les limitations du connecteur ?
 
