@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Conditions de licence et tarification pour la prévisualisation publique des connecteurs Microsoft Graph pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: efee543ff864b72e39df228ac2c577d911ff31e4
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 23eed2c107b8b0ee04d772b3d2a77fb5db9c1902
+ms.sourcegitcommit: 62cb7b8c6a311760cc728f2c70a9a22ca76e977e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508777"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408704"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="license-requirements-and-pricing"></a>Conditions requises et tarification des licences
+# <a name="license-requirements-and-pricing"></a>Conditions requises et tarification pour les licences
 
 Cet article s’adresse aux administrateurs globaux ou de facturation qui souhaitent en savoir plus sur l’achat d’un quota de connecteurs Graph pour leur organisation.
 
@@ -34,11 +34,11 @@ Toute licence **Microsoft 365 ou Office 365** valide vous permet d’afficher le
 >[!IMPORTANT]
 >Tous les connecteurs Graph de Microsoft sont gratuits. Toutefois, vous devez avoir un quota d’index suffisant pour ingévrier le contenu de ces connecteurs.
 
-Pour indexer le contenu à l’aide de connecteurs Graph, vous devez avoir un quota d’index suffisant. Le quota d’index des connecteurs graphiques est disponible via :
+Pour indexer du contenu à l’aide de connecteurs Graph, vous devez avoir un quota d’index suffisant. Le quota d’index des connecteurs graphiques est disponible via :
 
 ## <a name="entitlement-built-into-microsoft-365-or-office-365-e5-licenses"></a>Droits intégrés aux licences Microsoft 365 ou Office 365 E5
 
-Le type de licence Microsoft 365 E5 ou Office 365 E5 inclut le droit à 500 éléments du quota d’index, qui est comptabilisé dans le quota de votre organisation pour l’ingéré du contenu à partir de connecteurs Graph.
+Le type de licence Microsoft 365 E5 ou Office 365 E5 inclut le droit à 500 éléments du quota d’index, qui est comptabilisé dans le quota de votre organisation pour l’ingéré du contenu à partir de connecteurs Graph. Notez qu’il n’est pas inclus dans Microsoft 365 A5 ou Office 365 A5.
 
 Par exemple, si votre organisation possède 100 licences Microsoft 365 E5, votre organisation dispose de 100 x 500 = 50 000 éléments correspondant au quota d’index des connecteurs Graph.
 
