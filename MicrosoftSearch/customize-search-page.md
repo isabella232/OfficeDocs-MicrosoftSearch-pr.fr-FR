@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Ajouter des secteurs verticaux de recherche et personnaliser les résultats de recherche
-ms.openlocfilehash: 75dd6193308f52e7bfbb787d8f8dc27def834751
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: c6104383698203fde48d217506da57941efa680f
+ms.sourcegitcommit: 0aca0a5c9152b1b5e8345c91edadfae0b30f57c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031646"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587738"
 ---
 # <a name="customize-the-search-results-page"></a>Personnaliser la page des résultats de la recherche
 
-Vous pouvez créer des secteurs verticaux de recherche et des types de résultats pour personnaliser les résultats de recherche que les utilisateurs voient lorsqu’ils recherchent dans Microsoft [SharePoint,](https://sharepoint.com/) [Microsoft Office](https://office.com)et Recherche Microsoft dans [Bing](https://bing.com). Les secteurs verticaux facilitent la recherche des informations qu’ils sont autorisés à voir. Par exemple, vous pouvez créer un secteur vertical de recherche pour les données d’analyse marketing à partir de logiciels tiers pour vos utilisateurs au service marketing. Vous pouvez également définir des types de résultats et personnaliser la disposition de ces données.  
+Vous pouvez créer des secteurs verticaux de recherche et des types de résultats pour personnaliser les résultats de recherche que les utilisateurs voient lorsqu’ils recherchent dans Microsoft [SharePoint,](https://sharepoint.com/) [Microsoft Office](https://office.com)et Recherche Microsoft dans [Bing.](https://bing.com) Les secteurs verticaux facilitent la recherche des informations qu’ils sont autorisés à voir. Par exemple, vous pouvez créer un secteur vertical de recherche pour les données d’analyse marketing à partir de logiciels tiers pour vos utilisateurs au service marketing. Vous pouvez également définir des types de résultats et personnaliser la disposition de ces données.  
 
 Vous pouvez créer des secteurs verticaux et des types de résultats à ces niveaux :
 
@@ -34,7 +34,7 @@ En haut de la page des résultats de la recherche Microsoft, une ligne d’ongle
 
 Vous pouvez ajouter des secteurs verticaux de recherche pertinents pour votre organisation. Ceux-ci apparaissent sur la page des résultats de recherche Microsoft dans [SharePoint,](https://sharepoint.com/) [Office](https://Office.com)et [Bing](https://bing.com). Par exemple, vous pouvez créer un secteur vertical pour le contenu marketing et un autre pour les ventes, en fonction du type d’informations dont chaque groupe a besoin. Vous pouvez ajouter des secteurs verticaux pour afficher les résultats uniquement à partir du contenu indexé via des connecteurs.  
 
-### <a name="multiple-connections-in-a-vertical"></a>Connexions multiples dans un secteur vertical
+### <a name="multiple-connections-in-a-vertical"></a>Plusieurs connexions dans un secteur vertical
 
 Un secteur vertical de recherche peut maintenant faire surface des résultats provenant de plusieurs sources de connecteur. Cela offre une plus grande flexibilité dans la conception de votre page de résultats de recherche. L’expérience administrative existante de la configuration verticale vous permet de sélectionner plusieurs connexions à l’étape « Source de contenu ».
 Si vous nommez avec précision autant d’étiquettes sémantiques que possible, cette expérience sera améliorée. Vous pouvez ajouter des étiquettes sémantiques lors de la définition et de l’ingestion du schéma.
@@ -62,11 +62,11 @@ Il existe trois étapes de base pour ajouter un secteur vertical :
 
 Après avoir commencé l’Assistant, vous êtes guidé dans les étapes de définition du nom, de la source de contenu et de l’étendue du contenu à rechercher. Le secteur vertical est créé dans un état désactivé. Vous l’activerez ultérieurement.
 
-Vous pouvez utiliser un ensemble limité de langages [KQL (Keyword Query Language)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) pour limiter l’étendue. Cette page répertorie les propriétés disponibles. Nous vous recommandons d’utiliser des mots clés de texte libre et des restrictions de propriété avec des opérateurs booléens pour créer le KQL.
+Vous pouvez utiliser un ensemble limité de langage de requête de mot [clé (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) pour limiter l’étendue. Cette page répertorie les propriétés disponibles. Nous vous recommandons d’utiliser des mots clés de texte libre et des restrictions de propriété avec des opérateurs booléens pour créer le KQL.
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>Créer un secteur vertical au niveau de l’organisation
 
-Pour créer le secteur vertical sur La recherche Microsoft dans la maison [SharePoint,](https://sharepoint.com/) [Office](https://office.com)ou [Bing,](https://bing.com)suivez les étapes suivantes :
+Pour créer le secteur vertical sur Microsoft Search (recherche Microsoft) dans La maison [SharePoint,](https://sharepoint.com/) [Office](https://office.com)ou [Bing,](https://bing.com)suivez les étapes suivantes :
 
 1. Dans le [Centre d’administration Microsoft 365,](https://admin.microsoft.com)allez à [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 2. Sélectionnez **Ajouter** pour commencer.  
@@ -75,7 +75,7 @@ Pour créer le secteur vertical sur La recherche Microsoft dans la maison [Share
 
 1. Sur le site [SharePoint](https://sharepoint.com/) où vous souhaitez le secteur vertical, allez à **Paramètres**.
 2. Sélectionnez **les informations du site,** **puis affichez tous les paramètres du site.**
-3. Recherchez la section **Recherche Microsoft,** puis **sélectionnez Configurer Recherche Microsoft pour cette collection de sites.**
+3. Recherchez la section **Recherche Microsoft,** puis sélectionnez Configurer La recherche **Microsoft pour cette collection de sites.**
 4. Dans le volet de navigation, sélectionnez **Expérience personnalisée,** puis sélectionnez **l’onglet Verticals.**
 5. Pour ajouter un secteur vertical, sélectionnez **Ajouter.**
   Ou, pour modifier un secteur vertical, sélectionnez-le dans la liste.
@@ -116,7 +116,10 @@ Après avoir démarrer l’Assistant, vous êtes guidé dans les étapes pour d�
 
 ## <a name="step-3-view-the-vertical-after-its-enabled"></a>ÉTAPE 3 : Afficher le secteur vertical une fois activé
 
-Après avoir activé le secteur vertical, l’affichage du secteur vertical peut prendre un certain temps. Si vous ne souhaitez pas attendre après l’avoir mise en place, vous pouvez l’appendre à **l’URL** dans [SharePoint](https://sharepoint.com/) et [Office](https://office.com) pour afficher immédiatement le secteur vertical. Pour [Bing,](https://bing.com)&**features=uncachedVerticals** à l’URL de secteur vertical de travail pour afficher les secteurs verticaux immédiatement.
+Une fois que vous avez activé le secteur vertical, il faudra quelques heures avant de pouvoir l’afficher. Si vous ne souhaitez pas attendre après l’avoir mise en place, vous pouvez l’appendre à **l’URL** dans [SharePoint](https://sharepoint.com/) et [Office](https://office.com) pour afficher immédiatement le secteur vertical. Pour [Bing](https://bing.com),&**features=uncachedVerticals** à l’URL de secteur vertical de travail pour afficher les secteurs verticaux immédiatement. 
+
+> [!NOTE]
+> Les secteurs verticaux ajoutés ne sont pas visibles sur [SharePoint](https://sharepoint.com/) et [Office](https://office.com) lorsqu’ils sont visibles à partir de navigateurs web mobiles.
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
