@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Ajouter des secteurs verticaux de recherche et personnaliser les résultats de recherche
-ms.openlocfilehash: c6104383698203fde48d217506da57941efa680f
-ms.sourcegitcommit: 0aca0a5c9152b1b5e8345c91edadfae0b30f57c8
+ms.openlocfilehash: e5c4ab8d507e0e6096a5b9d52dc0e818faebefb6
+ms.sourcegitcommit: a07c957dfa1d31542f0362379251bc9679dfae41
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587738"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51639852"
 ---
 # <a name="customize-the-search-results-page"></a>Personnaliser la page des résultats de la recherche
 
-Vous pouvez créer des secteurs verticaux de recherche et des types de résultats pour personnaliser les résultats de recherche que les utilisateurs voient lorsqu’ils recherchent dans Microsoft [SharePoint,](https://sharepoint.com/) [Microsoft Office](https://office.com)et Recherche Microsoft dans [Bing.](https://bing.com) Les secteurs verticaux facilitent la recherche des informations qu’ils sont autorisés à voir. Par exemple, vous pouvez créer un secteur vertical de recherche pour les données d’analyse marketing à partir de logiciels tiers pour vos utilisateurs au service marketing. Vous pouvez également définir des types de résultats et personnaliser la disposition de ces données.  
+Vous pouvez créer des secteurs verticaux de recherche et des types de résultats pour personnaliser les résultats de recherche que les utilisateurs voient lorsqu’ils recherchent dans Microsoft [SharePoint,](https://sharepoint.com/) [Microsoft Office](https://office.com)et Recherche Microsoft dans [Bing](https://bing.com). Les secteurs verticaux facilitent la recherche des informations qu’ils sont autorisés à voir. Par exemple, vous pouvez créer un secteur vertical de recherche pour les données d’analyse marketing à partir de logiciels tiers pour vos utilisateurs au service marketing. Vous pouvez également définir des types de résultats et personnaliser la disposition de ces données.  
 
 Vous pouvez créer des secteurs verticaux et des types de résultats à ces niveaux :
 
@@ -30,9 +30,9 @@ Vous pouvez créer des secteurs verticaux et des types de résultats à ces nive
 
 ## <a name="search-verticals-explained"></a>Secteurs verticaux de recherche expliqués
 
-En haut de la page des résultats de la recherche Microsoft, une ligne d’onglets s’offre à vous. Voici les secteurs verticaux de recherche. Un secteur vertical de recherche affiche uniquement les résultats d’un certain type ou d’un certain contenu. Fichiers **ou** Actualités en sont des **exemples.** Par défaut, Recherche Microsoft affiche les secteurs verticaux **Tous,** **Personnes,** **Fichiers,** **Sites** et **Actualités**.  
+En haut de la page des résultats de recherche Microsoft, une ligne d’onglets s’offre à vous. Voici les secteurs verticaux de recherche. Un secteur vertical de recherche affiche uniquement les résultats d’un certain type ou d’un certain contenu. Fichiers **ou** Actualités en sont des **exemples.** Par défaut, Recherche Microsoft affiche les secteurs verticaux **Tous,** **Personnes,** **Fichiers,** **Sites** et **Actualités**.  
 
-Vous pouvez ajouter des secteurs verticaux de recherche pertinents pour votre organisation. Ceux-ci apparaissent sur la page des résultats de recherche Microsoft dans [SharePoint,](https://sharepoint.com/) [Office](https://Office.com)et [Bing](https://bing.com). Par exemple, vous pouvez créer un secteur vertical pour le contenu marketing et un autre pour les ventes, en fonction du type d’informations dont chaque groupe a besoin. Vous pouvez ajouter des secteurs verticaux pour afficher les résultats uniquement à partir du contenu indexé via des connecteurs.  
+Vous pouvez ajouter des secteurs verticaux de recherche pertinents pour votre organisation. Ceux-ci apparaissent sur la page des résultats de la recherche Microsoft [dans SharePoint,](https://sharepoint.com/) [Office](https://Office.com)et [Bing](https://bing.com). Par exemple, vous pouvez créer un secteur vertical pour le contenu marketing et un autre pour les ventes, en fonction du type d’informations dont chaque groupe a besoin. Vous pouvez ajouter des secteurs verticaux pour afficher les résultats uniquement à partir du contenu indexé via des connecteurs.  
 
 ### <a name="multiple-connections-in-a-vertical"></a>Plusieurs connexions dans un secteur vertical
 
@@ -40,6 +40,9 @@ Un secteur vertical de recherche peut maintenant faire surface des résultats pr
 Si vous nommez avec précision autant d’étiquettes sémantiques que possible, cette expérience sera améliorée. Vous pouvez ajouter des étiquettes sémantiques lors de la définition et de l’ingestion du schéma.
 
 [Voici](configure-connector.md#step-5-assign-property-labels) des informations supplémentaires sur la création et la gestion d’étiquettes sémantiques.
+
+> [!NOTE]
+> Plusieurs connexions dans un secteur vertical sont actuellement en prévisualisation. Pour plus d’informations sur la prévisualisation, voir [Les fonctionnalités d’aperçu des connecteurs.](connectors-overview.md#what-are-the-preview-features)
 
 ### <a name="things-you-should-know"></a>Ce que vous devez savoir
 
@@ -62,11 +65,11 @@ Il existe trois étapes de base pour ajouter un secteur vertical :
 
 Après avoir commencé l’Assistant, vous êtes guidé dans les étapes de définition du nom, de la source de contenu et de l’étendue du contenu à rechercher. Le secteur vertical est créé dans un état désactivé. Vous l’activerez ultérieurement.
 
-Vous pouvez utiliser un ensemble limité de langage de requête de mot [clé (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) pour limiter l’étendue. Cette page répertorie les propriétés disponibles. Nous vous recommandons d’utiliser des mots clés de texte libre et des restrictions de propriété avec des opérateurs booléens pour créer le KQL.
+Vous pouvez utiliser un ensemble limité de langages [KQL (Keyword Query Language)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) pour limiter l’étendue. Cette page répertorie les propriétés disponibles. Nous vous recommandons d’utiliser des mots clés de texte libre et des restrictions de propriété avec des opérateurs booléens pour créer le KQL.
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>Créer un secteur vertical au niveau de l’organisation
 
-Pour créer le secteur vertical sur Microsoft Search (recherche Microsoft) dans La maison [SharePoint,](https://sharepoint.com/) [Office](https://office.com)ou [Bing,](https://bing.com)suivez les étapes suivantes :
+Pour créer le secteur vertical sur La recherche Microsoft dans la maison [SharePoint,](https://sharepoint.com/) [Office](https://office.com)ou [Bing,](https://bing.com)suivez les étapes suivantes :
 
 1. Dans le [Centre d’administration Microsoft 365,](https://admin.microsoft.com)allez à [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 2. Sélectionnez **Ajouter** pour commencer.  
@@ -99,7 +102,7 @@ Vous pouvez décider de créer votre propre disposition des résultats de recher
 
 **Si le mappage approprié n’est pas effectué pour afficher la disposition des résultats de recherche par défaut, vous devez créer au moins un type de résultat pour que les résultats s’affichent sur le secteur vertical.** Vous pouvez créer plusieurs types de résultats pour chaque secteur vertical, ce qui vous permet d’utiliser différentes dispositions pour différents types de résultats. Par exemple, vous pouvez personnaliser les incidents de gravité *1* pour qu’ils ont des couleurs plus visibles et une police plus grande que les incidents de gravité *3.*
 
-Après avoir démarrer l’Assistant, vous êtes guidé dans les étapes pour définir le nom, la source de contenu et les conditions du type de résultat. Vous pouvez définir la priorité du type de résultat à partir de l’affichage Liste.
+Après avoir commencé l’Assistant, vous êtes guidé à travers les étapes pour définir le nom, la source de contenu et les conditions du type de résultat. Vous pouvez définir la priorité du type de résultat à partir de l’affichage Liste.
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>Créer un type de résultat au niveau de l’organisation
 

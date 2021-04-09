@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble des connecteurs Microsoft Graph pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 77f145f58cf06e49f88af25bcb4d28cfa7d2bd56
-ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
+ms.openlocfilehash: ccf1e746c2a8bf97429bf5b13c8340db015e3eb1
+ms.sourcegitcommit: a07c957dfa1d31542f0362379251bc9679dfae41
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042573"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51639861"
 ---
 <!---Previous ms.author: monaray --->
 
 # <a name="overview-of-microsoft-graph-connectors"></a>Vue d’ensemble des connecteurs Microsoft Graph
 
-[Recherche Microsoft](./overview-microsoft-search.md) indexe toutes [vos données Microsoft 365](https://www.microsoft.com/microsoft-365) pour les rendre utilisables dans une recherche pour les utilisateurs. Avec les connecteurs Microsoft Graph, votre organisation peut indexer des données tierces afin qu’elles apparaissent dans les résultats de recherche Microsoft. Cette fonctionnalité étend les types de sources de contenu utilisables dans vos applications de productivité Microsoft 365 et dans l’écosystème Microsoft plus large. Les données tierces peuvent être hébergées en local ou dans les clouds publics ou privés.
+[Microsoft Search](./overview-microsoft-search.md) indexe toutes vos [données Microsoft 365](https://www.microsoft.com/microsoft-365) pour les rendre accessibles aux utilisateurs. Avec les connecteurs Microsoft Graph, votre organisation peut indexer des données tierces afin qu’elles apparaissent dans les résultats de recherche Microsoft. Cette fonctionnalité étend les types de sources de contenu utilisables dans vos applications de productivité Microsoft 365 et dans l’écosystème Microsoft plus large. Les données tierces peuvent être hébergées en local ou dans les clouds publics ou privés.
 
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
 
@@ -78,11 +78,11 @@ Vous pouvez vous connecter aux sources de données suivantes à l’aide de conn
 * [Salesforce (préversion)](salesforce-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
-La [galerie de connecteurs Graph](connectors-gallery.md) contient une brève description de chacun de ces connecteurs Graph. Si vous êtes prêt à connecter l’une de ces sources [](configure-connector.md) de données à votre client, n’oubliez pas de lire la vue d’ensemble du programme d’installation et tous les autres articles de la section Connecteurs d’installation par Microsoft qui s’appliquent à votre source de données.
+La [galerie de connecteurs Graph](connectors-gallery.md) contient une brève description de chacun de ces connecteurs Graph. Si vous êtes prêt à connecter l’une de ces sources [](configure-connector.md) de données à votre client, n’oubliez pas de lire la vue d’ensemble du programme d’installation et les autres articles de la section Connecteurs d’installation par Microsoft qui s’appliquent à votre source de données.
 
 ### <a name="graph-connectors-by-our-partners"></a>Connecteurs graph par nos partenaires
 
-La [galerie de connecteurs Microsoft Graph](connectors-gallery.md) inclut une brève description de chacun des connecteurs Graph créés par nos partenaires et un lien vers le site web de chaque partenaire. Pour en savoir plus, contactez directement chaque partenaire.
+La [galerie de connecteurs Microsoft Graph](connectors-gallery.md) comprend une brève description de chacun des connecteurs Graph créés par nos partenaires et un lien vers le site web de chaque partenaire. Pour en savoir plus, contactez directement chaque partenaire.
 
 ### <a name="build-your-own-graph-connector"></a>Créer votre propre connecteur Graph
 
@@ -108,6 +108,7 @@ L’ensemble des connecteurs et des fonctionnalités de la prévisualisation com
 * [Connecteur Salesforce](salesforce-connector.md)
 * [Connecteur ServiceNow avec](servicenow-connector.md) autorisations de recherche qui utilisent des ACA sources
 * [Gérer le cluster de résultat](result-cluster.md)
+* [Plusieurs connexions dans un secteur vertical](customize-search-page.md#multiple-connections-in-a-vertical)
 
 ## <a name="how-do-i-customize-and-configure-search-results"></a>Comment personnaliser et configurer les résultats de la recherche ?
 
@@ -124,13 +125,11 @@ Une fois les données personnalisées indexées, les développeurs peuvent [inte
 
 ## <a name="how-do-i-customize-search-results"></a>Comment personnaliser les résultats de recherche ?
 
-L’étape suivante consiste à personnaliser les résultats de la recherche comme recommandé dans cet article Comment personnaliser et [configurer les résultats de recherche ?](#how-do-i-customize-and-configure-search-results) Pour en savoir plus sur la personnalisation des résultats de recherche, voir [Personnaliser la page des résultats de la recherche.](customize-search-page.md)
+L’étape suivante consiste à personnaliser les résultats de recherche comme recommandé dans cet article Comment personnaliser et configurer [les résultats de la recherche ?](#how-do-i-customize-and-configure-search-results) Pour en savoir plus sur la personnalisation des résultats de recherche, voir [Personnaliser la page des résultats de la recherche.](customize-search-page.md)
 
 ## <a name="what-are-the-connector-limitations"></a>Quelles sont les limitations du connecteur ?
 
 * Lorsque vous **publiez** un connecteur microsoft, la création de la connexion peut prendre quelques minutes. Pendant ce temps, la connexion affiche son état en attente.
-
-* Le [Centre d’administration Microsoft 365](https://admin.microsoft.com) ne prend pas en charge la modification du schéma de recherche après la publication d’une connexion.  Pour modifier le schéma de recherche, supprimez votre connexion, puis créez-en une nouvelle.
 
 * Le débit d’ingestion est limitée à environ quatre éléments par seconde.
 
@@ -138,4 +137,4 @@ L’étape suivante consiste à personnaliser les résultats de la recherche com
 
 * Il existe une limite de connexion. Chaque client peut créer jusqu’à 10 connexions.
 
-* La prise en charge de la modification de la connexion n’est pas disponible. Une fois la connexion créée, vous ne pouvez pas la modifier. Si vous devez modifier des détails, vous devez supprimer et recréer la connexion.
+* Vous ne pouvez pas modifier ou modifier une connexion après sa création. Si vous devez modifier des détails, vous devez supprimer et recréer la connexion.
