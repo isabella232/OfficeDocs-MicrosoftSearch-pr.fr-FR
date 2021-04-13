@@ -3,21 +3,23 @@ title: Rapports d’utilisation de la recherche
 ms.author: ankmis
 author: jeffkizn
 manager: parulm
-ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
+audience: Admin
+ms.audience: Admin
+ms.date: 04/09/2021
 localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Consulter les rapports d’utilisation de Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 2237fc978ad7b0d7b94b342a9f2646c9da6b73a4
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 8e46b1bdc2143dd3f7c53643e3ee89446a18cbbf
+ms.sourcegitcommit: 74356701eac9d5deccd01b142e7e6fb083cd3871
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031745"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51656779"
 ---
 # <a name="microsoft-search-usage-reports"></a>Rapports d’utilisation de Microsoft Search (recherche Microsoft)
 
@@ -35,9 +37,12 @@ Une version précédente de cette page incluait les données des recherches exé
 | Rapport | Description |
 |:-----|:-----|
 |Volume de requête|Ce rapport indique le nombre de requêtes de recherche effectuées. Utilisez ce rapport pour identifier les tendances des volumes de requêtes de recherche et pour déterminer les périodes d’activité de recherche élevée et faible.|
-|Requêtes les plus courantes|Ce rapport indique les requêtes de recherche les plus populaires. Utilisez ce rapport pour comprendre les types d’informations que vos utilisateurs recherchent.|
-|Requêtes abandonnées|Ce rapport affiche les requêtes de recherche les plus populaires qui reçoivent un faible clic. Il permet d'identifier les requêtes de recherche pouvant provoquer l'insatisfaction des utilisateurs et d'améliorer la détectabilité du contenu. Vous pouvez ensuite déterminer si la création d’une réponse, comme un signet, ou l’ing d’un nouveau contenu via un connecteur Graph est l’action la plus appropriées.|
+|Requêtes les plus courantes|Ce rapport indique les requêtes de recherche les plus populaires. Une requête est ajoutée à ce rapport lorsqu’elle est recherché au moins trois fois avec un clic sur un résultat. Utilisez ce rapport pour comprendre les types d’informations que vos utilisateurs recherchent.|
+|Requêtes abandonnées|Ce rapport affiche les requêtes de recherche les plus populaires qui reçoivent un faible clic. Il permet d'identifier les requêtes de recherche pouvant provoquer l'insatisfaction des utilisateurs et d'améliorer la détectabilité du contenu. Vous pouvez ensuite déterminer si la création d’une réponse, telle qu’un signet, ou l’ing d’un nouveau contenu via un connecteur Graph est l’action la plus appropriées.|
 |Requêtes sans résultats|Ce rapport indique les requêtes de recherche populaires qui n'ont retourné aucun résultat. Il permet d'identifier les requêtes de recherche pouvant provoquer l'insatisfaction des utilisateurs et d'améliorer la détectabilité du contenu. Vous pouvez ensuite déterminer si la création d’une réponse, telle qu’un signet, ou l’ing d’un nouveau contenu via un connecteur Graph est l’action la plus appropriées.|
+
+>[!NOTE]
+>Il existe actuellement un problème connu où les requêtes satisfaites par une réponse telle qu’un signet sont comptabilisées comme une requête abandonnée.
 
 ## <a name="viewing-reports"></a>Affichage des rapports
 
@@ -55,7 +60,7 @@ L’affichage Calendrier, aujourd’hui, dans les rapports d’utilisation de la
 
 Les tables de requête en haut, abandonnées et échouées indiquent les résultats du jour ou du mois que vous choisissez.
 
-**Quand vais-je voir les données agrégées pour les 7 derniers jours, les 30 derniers jours, etc... like Bing’s top queries reports?**
+**Quand puis-je voir les données agrégées des 7 derniers jours, des 30 derniers jours, et ainsi de suite... like Bing’s top queries reports?**
 
 Nous envisageons ce type d’agrégation et simplifions le filtrage des plages de données pour les futures versions de ces rapports.
 
