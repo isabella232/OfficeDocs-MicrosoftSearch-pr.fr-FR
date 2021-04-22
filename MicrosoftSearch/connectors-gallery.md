@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Répertorie tous les connecteurs Microsoft Graph pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: e3d28aa9db3053fc47b03304e211956e366b6aa9
-ms.sourcegitcommit: 2a178850c521189a221879151faa7b3b0aff95d2
+ms.openlocfilehash: c5eaa19f599598066929b8c45da47a5ac3426928
+ms.sourcegitcommit: 2a24caf029caa97feeabaf7345aebaf28de4b2d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51905602"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51928577"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Galerie de connecteurs Microsoft Graph
 
@@ -1604,7 +1604,7 @@ Le connecteur de base de données repose sur des méthodes d'accès standard aux
 
 ---
 
-### <a name="microsoft-teams"></a>Microsoft Teams
+### <a name="microsoft-teams"></a>Microsoft Teams
 
 par [BA Insight](https://www.bainsight.com/)
 
@@ -1688,7 +1688,7 @@ Le connecteur d'annuaire d'entreprise honore la sécurité du système source et
 
 ---
 
-### <a name="notes"></a>Remarques
+### <a name="notes"></a>Notes
 
 par [Raytion](https://www.raytion.com/)
 
@@ -2198,9 +2198,9 @@ Sécuriser le connecteur de recherche d'entreprise pour indexer de manière fiab
 
 par [Accenture](https://www.accenture.com/)
 
+Le connecteur Service Now analyse le contenu à partir de ServiceNow.
 
-
-[Plus de détails]()
+[Plus de détails](https://contentanalytics.digital.accenture.com/display/aspire40/ServiceNow+Connector)
 
    :::column-end:::
 
@@ -2220,9 +2220,9 @@ par [Accenture](https://www.accenture.com/)
 
 par [BA Insight](https://www.bainsight.com/)
 
+ ServiceNow Connector honore la sécurité du système source et fournit des analyses complètes et incrémentielles, afin que les utilisateurs disposent toujours des dernières informations disponibles.
 
-
-[Plus de détails]()
+[Plus de détails](https://www.bainsight.com/connectors/servicenow-connector-sharepoint-azure-elasticsearch)
 
 :::column-end:::
 :::column span="":::
@@ -2765,7 +2765,7 @@ Le connecteur Yammer établit une connexion sécurisée à l'application Yammer 
 
 par [Raytion](https://www.raytion.com/)
 
-Sécuriser le connecteur de recherche d’entreprise pour indexer de manière fiable le contenu de Microsoft Yammer et le rechercher de manière intelligente avec Microsoft Graph. Il indexe de manière fiable les canaux, les publications, les réponses, les pièces jointes, les sondages et les annonces Yammer en temps quasi réel. Le connecteur prend entièrement en charge la gestion intégrée des utilisateurs et des groupes de Microsoft Yammer et en particulier l’authentification fédérée contre Microsoft 365.
+Sécuriser le connecteur de recherche d'entreprise pour indexer de manière fiable le contenu de Microsoft Yammer et le rechercher de manière intelligente avec Microsoft Graph. Il indexe de manière fiable les canaux, les publications, les réponses, les pièces jointes, les sondages et les annonces Yammer en temps quasi réel. Le connecteur prend entièrement en charge la gestion intégrée des utilisateurs et des groupes de Microsoft Yammer et en particulier l'authentification fédérée contre Microsoft 365.
 
 [Plus de détails](https://www.raytion.com/connectors/raytion-yammer-connector)
 
