@@ -1,6 +1,6 @@
 ---
 title: Gérer les connecteurs Microsoft Graph pour Microsoft Search (recherche Microsoft)
-ms.author: monaray
+ms.author: mecampos
 author: monaray97
 manager: mnirkhe
 audience: Admin
@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Gérer les connecteurs Microsoft Graph pour Microsoft Search (recherche Microsoft).
-ms.openlocfilehash: cba50d8eb558b4d74ed46554dc155d4f275b1332
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 685b501f3afe25d75c13a1fe6cc2c1b5db8a3511
+ms.sourcegitcommit: e5d695c40b68c2f1fa082fa9de20b9aa6d5b8050
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031718"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52325167"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
 # <a name="monitor-your-connections"></a>Surveiller vos connexions
 
-Pour accéder à vos connecteurs et les gérer, vous devez être désigné en tant qu’administrateur de recherche pour votre client. Contactez votre administrateur client pour vous fournir le rôle d’administrateur de recherche.
+Pour accéder à vos connecteurs et les gérer, vous devez être désigné comme administrateur de recherche pour votre client. Contactez votre administrateur client pour vous fournir le rôle d’administrateur de recherche.
 
 ## <a name="connection-operations"></a>Opérations de connexion
 
@@ -43,7 +43,7 @@ Modifier un brouillon de connexion | :heavy_check_mark: | :x:
 
 Après avoir créé une connexion, le nombre d’éléments **traitées** s’affiche sous l’onglet Connecteurs de la page **Recherche Microsoft.** Une fois l’analyse complète initiale terminée, la progression des analyses incrémentielles périodiques s’affiche. Cette page fournit des informations sur les opérations quotidiennes du connecteur et une vue d’ensemble des journaux et de l’historique des erreurs.
 
-Quatre états s’affiche dans la colonne **État** par rapport à chaque connexion :
+Cinq états s’affiche dans la colonne **État** par rapport à chaque connexion :
 
 * **Synchronisation.** Le connecteur analyse les données de la source pour indexer les éléments existants et effectuer des mises à jour.
 
@@ -53,6 +53,8 @@ Quatre états s’affiche dans la colonne **État** par rapport à chaque connex
 
 * **Échec**. La connexion a connu une défaillance critique. Cette erreur nécessite une intervention manuelle. L’administrateur doit prendre les mesures appropriées en fonction du message d’erreur affiché. Les données qui ont été indexées jusqu’à ce que l’erreur se soit produite sont utilisables dans une recherche.
 
+* **Suppression échouée.** La suppression de la connexion a échoué. Selon la raison de l’échec, les données peuvent toujours être indexées, le quota d’élément peut toujours être consommé et les analyses peuvent encore s’exécuter pour la connexion. Il est recommandé d’essayer de supprimer à nouveau la connexion dans cet état.
+
 ## <a name="monitor-your-index-quota-utilization"></a>Surveiller l’utilisation de votre quota d’index
 
 Le quota d’index et la consommation disponibles sont affichés sur la page d’accueil des connecteurs.
@@ -61,7 +63,7 @@ Le quota d’index et la consommation disponibles sont affichés sur la page d�
  
 >[!NOTE]
 >Pendant la période d’aperçu, chaque organisation qui essaie des connecteurs Graph a été fournie avec un quota fixe gratuit de 2 millions d’éléments sur toutes les connexions. Les connecteurs Graph étant généralement disponibles, le quota gratuit expirera le 1er avril 2021 pour les organisations qui ont utilisé des connecteurs Graph en prévisualisation.
->Les connecteurs Graph créés [](./connectors-overview.md) par Microsoft et étiquetés comme « Aperçu » ne seront pas inclus dans le quota d’index facturé total pour votre organisation. Toutefois, il est comptabilisé dans le nombre maximum de 10 connexions que vous pouvez configurer pour votre organisation et le nombre maximum de 7 millions d’éléments que votre organisation peut indexer entre les connexions ; Chaque connexion est limitée à 700 000 éléments. 
+>Les connecteurs Graph créés par Microsoft et étiquetés comme « [Aperçu](./connectors-overview.md) » ne seront pas inclus dans le quota d’index facturé total pour votre organisation. Toutefois, il est comptabilisé dans le nombre maximum de 10 connexions que vous pouvez configurer pour votre organisation et le nombre maximum de 7 millions d’éléments que votre organisation peut indexer entre les connexions ; Chaque connexion est limitée à 700 000 éléments. 
 
 La barre d’utilisation des quotas indiquera différents états en fonction de la consommation de quota par votre organisation :
 
