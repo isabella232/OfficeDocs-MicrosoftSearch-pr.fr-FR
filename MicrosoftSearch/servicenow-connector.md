@@ -1,5 +1,5 @@
 ---
-title: Connecteur ServiceNow Graph pour Microsoft Search (recherche Microsoft)
+title: Connecteur Graph ServiceNow pour Microsoft Search (recherche Microsoft)
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,26 +12,26 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurer le connecteur ServiceNow Graph pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 692170ef6f8332418efc7d56a56c6fa1b1cce76c
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: Configurer le connecteur serviceNow Graph pour Microsoft Search (recherche Microsoft)
+ms.openlocfilehash: 08947381dff7cd06007c68a7f1614b23c53f7510
+ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031763"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52720963"
 ---
 <!---Previous ms.author: kam1 --->
 
 # <a name="servicenow-graph-connector"></a>ServiceNow Graph Connector
 
-Le connecteur ServiceNow Graph permet à votre organisation d’indexer les articles basés sur les connaissances visibles par les utilisateurs en fonction des autorisations des critères utilisateur au sein de votre organisation. Après avoir configuré le connecteur et indexé le contenu à partir de ServiceNow, les utilisateurs peuvent rechercher les articles à partir de n’importe quel client Recherche Microsoft.
+Le connecteur Graph ServiceNow permet à votre organisation d’indexer les articles basés sur les connaissances visibles par les utilisateurs en fonction des autorisations des critères utilisateur au sein de votre organisation. Après avoir configuré le connecteur et indexé le contenu à partir de ServiceNow, les utilisateurs peuvent rechercher les articles à partir de n’importe quel client Recherche Microsoft.
 
 > [!NOTE]
-> Lisez [**l’article Configuration de votre connecteur Graph**](configure-connector.md) pour comprendre les instructions générales d’installation des connecteurs Graph.
+> Lisez [**l’article**](configure-connector.md) Installation de votre connecteur Graph pour comprendre les instructions générales Graph d’installation des connecteurs.
 
-Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur ServiceNow Graph. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur ServiceNow Graph. Cet article inclut également des informations [sur la résolution des problèmes](#troubleshooting) et les [limitations.](#limitations)
-  
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
+Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur Graph ServiceNow. Il complète le processus d’installation général et affiche des instructions qui s’appliquent uniquement au connecteur Graph ServiceNow. Cet article inclut également des informations [sur la résolution des problèmes](#troubleshooting) et les [limitations.](#limitations)
+
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le centre d Microsoft 365'administration
 
 Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -41,14 +41,14 @@ Suivez les [instructions d’installation générales.](./configure-connector.md
 Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-3-connection-settings"></a>Étape 3 : Paramètres de connexion
+## <a name="step-3-connection-settings"></a>Étape 3 : Connexion Paramètres
 
 Pour vous connecter à vos données ServiceNow, utilisez les informations d’identification de **l’URL d’instance ServiceNow** de votre organisation pour ce compte, l’ID client et la question secrète client pour l’authentification OAuth.  
 
 L’URL de **l’instance ServiceNow** de votre organisation ressemble généralement **https:// &lt;>.service-now.com**. Avec cette URL, vous avez besoin d’un compte pour la configuration de la connexion à ServiceNow et pour permettre à Microsoft Search (recherche Microsoft) de mettre à jour les articles à partir de ServiceNow en fonction de la planification d’actualisation. Le compte doit au moins avoir un <em>rôle de</em> connaissance. [Découvrez comment attribuer un rôle pour les comptes ServiceNow.](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)
 
 >[!NOTE]
->Si vous souhaitez analyser les identités des utilisateurs et des groupes afin d’honorer les autorisations d’accès des articles de la base de connaissances dans les résultats de recherche Microsoft, le compte doit avoir accès pour lire les enregistrements de tableau suivants dans ServiceNow :
+>Si vous souhaitez analyser les identités des utilisateurs et des groupes afin d’honorer les autorisations d’accès des articles de la base de connaissances dans les résultats de recherche Microsoft, le compte doit avoir accès à la lecture des enregistrements de tableau suivants dans ServiceNow :
 >* kb_uc_can_contribute_mtom
 >* kb_uc_can_read_mtom
 >* kb_uc_cannot_read_mtom
@@ -64,7 +64,7 @@ Pour authentifier et synchroniser le contenu à partir de ServiceNow, choisissez
 
 1. Authentification de base
 1. ServiceNow OAuth (recommandé)
-1. Azure AD OpenID Connect
+1. Azure AD OpenID Connecter
 
 ### <a name="basic-authentication"></a>Authentification de base
 
@@ -72,7 +72,7 @@ Entrez le nom d’utilisateur et le mot de passe du compte ServiceNow avec le r�
 
 ### <a name="servicenow-oauth"></a>ServiceNow OAuth
 
-Pour utiliser ServiceNow OAuth pour l’authentification, provisionnez un point de terminaison dans votre instance ServiceNow. L’application Recherche Microsoft l’utilisera pour accéder à l’instance. Pour plus d’informations, voir [Créer un point de terminaison pour que les clients accèdent](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) à l’instance dans la documentation ServiceNow.
+Pour utiliser ServiceNow OAuth pour l’authentification, provisionnez un point de terminaison dans votre instance ServiceNow. L’application Recherche Microsoft l’utilisera pour accéder à l’instance. Pour plus d’informations, voir [Créer un point de terminaison](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) pour que les clients accèdent à l’instance dans la documentation ServiceNow.
 
 Le tableau suivant fournit des instructions sur la façon de remplir le formulaire de création de point de terminaison :
 
@@ -83,15 +83,15 @@ ID du client | ID unique généré automatiquement en lecture seule pour l’app
 Secret client | Avec cette chaîne secrète partagée, l’instance ServiceNow et Microsoft Search (recherche Microsoft) autorisent les communications entre eux. | Suivez les meilleures pratiques en matière de sécurité en traitant le secret comme un mot de passe.
 URL de redirection | URL de rappel requise vers qui le serveur d’autorisation redirige. | https://gcs.office.com/v1.0/admin/oauth/callback
 Logo URL | URL qui contient l’image du logo de l’application. | N/A
-Actif | Activez la case à cocher pour rendre le Registre d’application actif. | Définir sur actif
-Durée de vie du jeton d’actualisation | Nombre de secondes de validité d’un jeton d’actualisation. Par défaut, les jetons d’actualisation expirent dans les 100 jours (8 640 000 secondes). | 31 536 000 (1 an)
+Actif | Activez la case à cocher pour que le Registre de l’application soit actif. | Définir sur actif
+Durée de vie du jeton d’actualisation | Nombre de secondes de validité d’un jeton d’actualisation. Par défaut, les jetons d’actualisation expirent dans 100 jours (8 640 000 secondes). | 31 536 000 (1 an)
 Durée de vie du jeton d’accès | Nombre de secondes de validité d’un jeton d’accès. | 43 200 (12 heures)
 
 Entrez l’ID client et la secret client pour vous connecter à votre instance. Une fois connecté, utilisez les informations d’identification d’un compte ServiceNow pour authentifier l’autorisation d’analyse. Le compte doit au moins avoir un **rôle de** connaissance.
 
-### <a name="azure-ad-openid-connect"></a>Azure AD OpenID Connect
+### <a name="azure-ad-openid-connect"></a>Azure AD OpenID Connecter
 
-Pour utiliser Azure AD OpenID Connect pour l’authentification, suivez les étapes ci-dessous.
+Pour utiliser Azure AD OpenID Connecter pour l’authentification, suivez les étapes ci-dessous.
 
 ## <a name="step-3a-register-a-new-application-in-azure-active-directory"></a>Étape 3.a : Inscrire une nouvelle application dans Azure Active Directory
 
@@ -113,7 +113,7 @@ Suivez les étapes pour récupérer l’identificateur d’objet principal du se
    Install-Module -Name Az -AllowClobber -Scope CurrentUser
    ```
 
-3. Connectez-vous à Azure.
+3. Connecter azure.
 
    ```powershell
    Connect-AzAccount
@@ -158,10 +158,10 @@ L’instance ServiceNow a besoin de la configuration suivante :
    Champ | Valeur recommandée
    --- | ---
    Fournisseur OIDC |  Azure AD
-   URL des métadonnées OIDC | L’URL doit être au formulaire https \: //login.microsoftonline.com/<tenandId">/.well-known/openid-configuration <br/>Remplacez « tenantID » par l’ID d’annuaire (client) de l’étape 3.a.
+   URL de métadonnées OIDC | L’URL doit prendre la forme https \: //login.microsoftonline.com/<tenandId">/.well-known/openid-configuration <br/>Remplacez « tenantID » par l’ID d’annuaire (client) de l’étape 3.a.
    Durée de vie du cache de configuration OIDC |  120
    Application | Global
-   Revendication de l’utilisateur | sub
+   Revendication utilisateur | sub
    Champ Utilisateur | ID utilisateur
    Activer la vérification des revendications JTI | Désactivé
 
@@ -184,7 +184,7 @@ Toutes les autres valeurs peuvent être laissées à la valeur par défaut.
 
 Accédez au compte ServiceNow que vous avez créé avec l’ID principal ServiceNow en tant qu’ID d’utilisateur et attribuez le rôle de connaissance. Vous pouvez trouver des instructions sur l’attribution d’un rôle à un compte ServiceNow ici : attribuez un rôle [à un utilisateur.](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)
 
-Utilisez l’ID d’application comme ID client de l’étape 3.a et la secret client de l’étape 3.b pour vous authentifier auprès de votre instance ServiceNow à l’aide d’Azure AD OpenID Connect.
+Utilisez l’ID d’application comme ID client de l’étape 3.a et la secret client de l’étape 3.b pour vous authentifier auprès de votre instance ServiceNow à l’aide d’Azure AD OpenID Connecter.
 
 ## <a name="step-4-select-properties-and-filter-data"></a>Étape 4 : sélectionner les propriétés et filtrer les données
 
@@ -198,15 +198,21 @@ Utilisez le bouton aperçu des résultats pour vérifier les exemples de valeurs
 
 Le connecteur ServiceNow prend en  charge les autorisations de recherche visibles par tout le monde ou uniquement par les personnes ayant **accès à cette source de données.** Les données indexées apparaissent dans les résultats de la recherche et sont visibles par les utilisateurs de l’organisation qui y ont accès respectivement. ServiceNow Connector prend en charge les autorisations de critères utilisateur par défaut sans scripts avancés. Lorsque le connecteur trouve un critère utilisateur avec un script avancé, toutes les données utilisant ces critères utilisateur ne sont pas affichées dans les résultats de la recherche.
 
-Si vous sélectionnez uniquement les personnes ayant accès à cette **source** de données, vous devez choisir si votre instance ServiceNow dispose d’utilisateurs azure Active Directory (AAD) ou d’utilisateurs non-AAD.
+Si vous sélectionnez uniquement les personnes ayant accès à cette **source** de données, vous devez choisir si votre instance ServiceNow dispose d’utilisateurs Azure Active Directory (AAD) ou d’utilisateurs non AAD.
 
 >[!NOTE]
 >Le connecteur ServiceNow est en **prévisualisation** si vous choisissez uniquement les personnes ayant **accès à cette source de données.**
 
 >[!NOTE]
->Si vous choisissez AAD comme type de source d’identité, assurez-vous que vous affectez la propriété source UPN à la propriété ciblée de messagerie dans ServiceNow. Pour vérifier ou modifier vos mappages, voir Personnalisation des mappages d’attributs de mise en service des utilisateurs pour les [applications SaaS dans Azure Active Directory.](/azure/active-directory/app-provisioning/customize-application-attributes)
+>Si vous choisissez AAD comme type de source d’identité, assurez-vous que vous affectez la propriété source UPN à la propriété ciblée de messagerie dans ServiceNow. Pour vérifier ou modifier vos mappages, voir Personnalisation des mappages d’attributs de mise en service utilisateur pour les [applications SaaS dans Azure Active Directory](/azure/active-directory/app-provisioning/customize-application-attributes).
 
 Si vous avez choisi d’ing d’une ACL à partir de votre instance ServiceNow et que vous avez sélectionné « non-AAD » pour le type d’identité, voir Mappage de vos [identités non Azure AD](map-non-aad.md) pour obtenir des instructions sur le mappage des identités.
+
+### <a name="managing-search-permissions-in-microsoft-search"></a>Gestion des autorisations de recherche dans Microsoft Search (recherche Microsoft)
+
+Dans la vidéo suivante, vous pouvez voir comment utiliser le connecteur Servicenow pour indexer les articles de la base de connaissances, définir les autorisations des critères utilisateur et synchroniser en toute transparence les modifications entre l’index ServiceNow et l’index De recherche Microsoft.
+
+> [!VIDEO https://www.youtube.com/watch?v=TVSkJpk1RiE]
 
 ## <a name="step-6-assign-property-labels"></a>Étape 6 : Attribuer des étiquettes de propriété
 
@@ -233,11 +239,11 @@ Suivez les [instructions d’installation générales.](./configure-connector.md
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
-Après avoir publié votre connexion, personnalisé la page des résultats, vous pouvez passer en revue l’état sous l’onglet **Connecteurs** dans le [Centre d’administration.](https://admin.microsoft.com) Pour découvrir comment effectuer des mises à jour et des suppressions, voir [Gérer votre connecteur.](manage-connector.md)
+Après avoir publié votre connexion, en personnalisant la page des résultats, vous pouvez passer en revue l’état sous l’onglet **Connecteurs** dans le [Centre d’administration.](https://admin.microsoft.com) Pour découvrir comment effectuer des mises à jour et des suppressions, voir [Gérer votre connecteur.](manage-connector.md)
 
 ## <a name="limitations"></a>Limites
 
-Le connecteur ServiceNow Graph présente les limitations suivantes dans sa dernière version :
+Le connecteur Graph ServiceNow présente les limitations suivantes dans sa dernière version :
 
 - L’indexation des articles de la base de connaissances accessibles à tous les membres d’une organisation est une fonctionnalité généralement disponible.
 - *Seules les personnes ayant accès à cette fonctionnalité de source* de données dans l’étape Gérer les autorisations de recherche sont en prévisualisation et traitent uniquement les autorisations des [critères](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) utilisateur. Tout autre type d’autorisation d’accès ne sera pas appliqué dans les résultats de la recherche.

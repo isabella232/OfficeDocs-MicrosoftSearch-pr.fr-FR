@@ -1,5 +1,5 @@
 ---
-title: Configurer votre connecteur Graph intégré à Microsoft pour Microsoft Search (recherche Microsoft)
+title: Configurer votre connecteur d’Graph Microsoft pour Microsoft Search (recherche Microsoft)
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,24 +12,24 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Vue d’ensemble du programme d’installation des connecteurs Graph par Microsoft
-ms.openlocfilehash: 169e78fd4a0148d8bb4e52968b2efd785045806e
-ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
+description: Vue d’ensemble du Graph de configuration par Microsoft
+ms.openlocfilehash: ef94d530af63d8b8b33dfae3c4b411164ef31feb
+ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042582"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52720942"
 ---
 <!-- Previous ms.author: monaray -->
 
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Vue d’ensemble du programme d’installation des connecteurs Graph par Microsoft 
+# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Vue d’ensemble du Graph de configuration par Microsoft 
 
-Cet article présente le processus de base requis pour configurer les connecteurs Graph par **Microsoft** dans le Centre d’administration [Microsoft 365.](https://admin.microsoft.com) Le processus de base comprend les étapes suivantes :  
+Cet article montre le processus de base requis pour configurer les connecteurs Graph par **Microsoft** dans le centre d Microsoft 365'administration. [](https://admin.microsoft.com) Ce processus simple comprend les étapes suivantes :  
 <!---Add links to each section in the doc--->
 
-1. [Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
+1. [Ajouter un connecteur Graph dans le centre d’administration Microsoft 365 de gestion](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
 2. [Nommer la connexion](#step-2-name-the-connection)
 3. [Configurer les paramètres de connexion](#step-3-configure-the-connection-settings)
 4. [Gérer les autorisations de recherche](#step-4-manage-search-permissions)
@@ -51,21 +51,21 @@ Cet article inclut également des informations sur la résolution des problèmes
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le centre d Microsoft 365'administration
 
-Pour configurer l’un des connecteurs Graph créés par Microsoft, complétez les étapes suivantes :
+Pour configurer l’un des connecteurs Graph Microsoft, vous pouvez effectuer les étapes suivantes :
 
-1. Connectez-vous à votre compte d’administrateur dans le [Centre d’administration Microsoft 365.](https://admin.microsoft.com)
+1. Connectez-vous à votre compte d’administrateur dans [Microsoft 365 centre d’administration.](https://admin.microsoft.com)
 
-2. Dans le volet de navigation, sélectionnez **Paramètres,** puis **recherchez & intelligence.** Sélectionnez [l’onglet Connecteurs.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)
+2. Dans le volet de navigation, **sélectionnez Paramètres,** puis **recherchez & intelligence.** Sélectionnez [l’onglet Connecteurs.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)
 
 3. Sélectionnez **+Ajouter,** puis sélectionnez la source de données de votre choix dans le menu des options disponibles.
 
    > [!div class="mx-imgBorder"]
-   > ![Les sources de données disponibles sont les suivantes : ADLS Gen2, les sites web d’entreprise, le serveur Microsoft SQL, Azure SQL, la base de données Oracle SQL, ServiceNow, le partage de fichiers, Azure DevOps et MediaWiki.](media/add-connector.png)
+   > ![Les sources de données disponibles sont les suivantes : ADLS Gen2, les sites web Enterprise, le serveur Microsoft SQL, Azure SQL, la base de données Oracle SQL, ServiceNow, le partage de fichiers, Azure DevOps et MediaWiki.](media/add-connector.png)
 
 > [!NOTE]
-> Vous pouvez ajouter un maximum de dix connexions Graph à chaque client.
+> Vous pouvez ajouter un maximum de dix Graph connexions à chaque client.
 
 ## <a name="step-2-name-the-connection"></a>Étape 2 : Nommer la connexion
 
@@ -87,13 +87,13 @@ Pour en savoir plus sur la connexion à une source de données sur site, voir In
 
 Les listes de contrôle d’accès déterminent les utilisateurs de votre organisation qui peuvent accéder à chaque élément de données.  
 
-Certains connecteurs tels que [Microsoft SQL](MSSQL-connector.md) et Azure Data Lake [Storage Gen2](azure-data-lake-connector.md) supportent en natif les AD Azure [Active Directory (Azure AD).](/azure/active-directory/)
+Certains connecteurs tels que [Microsoft SQL](MSSQL-connector.md) et Azure Data Lake [Stockage Gen2](azure-data-lake-connector.md) Azure Active Directory [(Azure AD)](/azure/active-directory/) en natif.
 
-D’autres connecteurs tels [que ServiceNow,](servicenow-connector.md) [Azure DevOps](azure-devops-connector.md)et [Salesforce](salesforce-connector.md) prise en charge la synchronisation des utilisateurs et groupes non Azure AD.  
+D’autres connecteurs tels que [ServiceNow,](servicenow-connector.md) [Azure DevOps](azure-devops-connector.md)et [Salesforce](salesforce-connector.md) prise en charge la synchronisation des utilisateurs et groupes non Azure AD.  
 
 ## <a name="step-5-assign-property-labels"></a>Étape 5 : Attribuer des étiquettes de propriété
 
-Vous pouvez affecter des étiquettes sémantiques à vos propriétés source sur la page « Attribuer des étiquettes de propriétés ». Les étiquettes sont des balises connues fournies par Microsoft qui fournissent une signification sémantique. Ils permettent à Microsoft d’intégrer vos données de connecteur dans des expériences Microsoft 365 telles que la recherche améliorée, les cartes de personnes, la découverte intelligente, etc.  
+Vous pouvez affecter des étiquettes sémantiques à vos propriétés source sur la page « Attribuer des étiquettes de propriétés ». Les étiquettes sont des balises connues fournies par Microsoft qui fournissent une signification sémantique. Ils permettent à Microsoft d’intégrer vos données de connecteur dans Microsoft 365 expériences telles que la recherche améliorée, les cartes de personnes, la découverte intelligente et bien plus encore.  
 
 Le tableau suivant répertorie les étiquettes actuellement pris en charge et leurs descriptions.  
 
@@ -105,7 +105,7 @@ Le tableau suivant répertorie les étiquettes actuellement pris en charge et le
 **lastModifiedBy** | Nom de la personne qui a modifié l’élément le plus récemment
 **authors** | Nom des personnes qui ont participé/ont participé à l’élément
 **createdDateTime** | Quand l’élément a-t-il été créé ?
-**lastModifiedDateTime** | Quand l’élément a-t-il été modifié le plus récemment
+**lastModifiedDateTime** | Quand l’élément a-t-il été modifié le plus récemment ?
 **fileName** | Nom de l’élément de fichier
 **fileExtension** | Type d’élément de fichier tel que .pdf ou .word
 
@@ -129,18 +129,18 @@ Vous pouvez ajouter des alias à vos propriétés sous la colonne « Alias » da
 
 ### <a name="search-schema-attributes"></a>Attributs de schéma de recherche
 
-Vous pouvez définir les attributs de schéma de recherche pour contrôler les fonctionnalités de recherche de chaque propriété source. Un schéma de recherche permet de déterminer les résultats affichés sur la page des résultats de la recherche et les informations que les utilisateurs finaux peuvent afficher et consulter.
+Vous pouvez définir les attributs de schéma de recherche pour contrôler la fonctionnalité de recherche de chaque propriété source. Un schéma de recherche permet de déterminer les résultats affichés sur la page des résultats de la recherche et les informations que les utilisateurs finaux peuvent afficher et consulter.
 
-Les attributs de schéma de recherche incluent des options **pour interroger,** **rechercher,** **récupérer** et **affiner**. Le tableau suivant répertorie chacun des attributs que les connecteurs Microsoft Graph supportent et explique leurs fonctions.
+Les attributs de schéma de recherche incluent des options **pour interroger,** **rechercher,** **récupérer** et **affiner**. Le tableau suivant répertorie chacun des attributs que les connecteurs Graph Microsoft Graph et explique leurs fonctions.
 
 Attribut de schéma de recherche | Fonction | Exemple
 --- | --- | ---
-SEARCH | Rend le contenu de texte d’une propriété utilisable dans une recherche. Le contenu de la propriété est inclus dans l’index de texte intégral. | Si la propriété est un  **titre,** une requête entreprise renvoie des réponses qui contiennent le mot **Entreprise** dans un texte ou un titre.
+SEARCH | Rend le contenu de texte d’une propriété utilisable dans une recherche. Le contenu de la propriété est inclus dans l’index de texte intégral. | Si la propriété est **un titre,** une requête de **Enterprise** renvoie des réponses qui contiennent le mot Enterprise **dans** n’importe quel texte ou titre.
 REQUÊTE | Recherche par requête une correspondance pour une propriété particulière. Le nom de la propriété peut ensuite être spécifié dans la requête par programme ou par mot. |  Si la **propriété Title** peut être interrogé, la requête **Title: Enterprise** est prise en charge.
 RETRIEVE | Seules les propriétés récupérables peuvent être utilisées dans le type de résultat et affichées dans le résultat de recherche. |
 AFFINER | L’option d’affinment peut être utilisée comme dans la page des résultats de recherche Microsoft. | Les utilisateurs de votre organisation peuvent [filtrer](custom-filters.md) par **URL** dans la page des résultats de la recherche si la propriété Affiner est marquée lors de la configuration de la connexion
 
-Pour tous les connecteurs à l’exception du connecteur de partage de fichiers, les types personnalisés doivent être définies manuellement. Pour activer les fonctionnalités de recherche pour chaque champ, vous avez besoin d’un schéma de recherche mappé à une liste de propriétés. L’Assistant Connexion sélectionne automatiquement un schéma de recherche basé sur l’ensemble des propriétés source que vous choisissez. Vous pouvez modifier ce schéma en sélectionnant les cases à cocher pour chaque propriété et attribut dans la page de schéma de recherche.
+Pour tous les connecteurs à l’exception du connecteur de partage de fichiers, les types personnalisés doivent être définies manuellement. Pour activer les fonctionnalités de recherche pour chaque champ, vous avez besoin d’un schéma de recherche mappé à une liste de propriétés. L’Assistant Connexion sélectionne automatiquement un schéma de recherche basé sur l’ensemble des propriétés sources que vous choisissez. Vous pouvez modifier ce schéma en sélectionnant les cases à cocher pour chaque propriété et attribut dans la page de schéma de recherche.
 
 > [!div class="mx-imgBorder"]
 > ![Le schéma d’un connecteur peut être personnalisé en ajoutant ou en supprimant des fonctions Requête, Recherche et Récupération.](media/manageschema.png)
@@ -149,7 +149,7 @@ Pour tous les connecteurs à l’exception du connecteur de partage de fichiers,
 
 * La **propriété de** contenu est uniquement utilisable dans une recherche. Une fois sélectionnée dans ladown, cette propriété ne peut pas être utilisée avec les options **retrieve** ou **query**.
 
-* Des problèmes de performances importants se produisent lorsque les résultats de la recherche s’restituer avec la **propriété de** contenu. Par exemple, le **champ de** contenu Texte d’un article de la base de connaissances [ServiceNow.](https://www.servicenow.com)
+* Des problèmes de performances importants se produisent lorsque les résultats de la recherche s’restituer avec **la propriété de** contenu. Par exemple, le **champ de** contenu Texte d’un article de la base de connaissances [ServiceNow.](https://www.servicenow.com)
 
 * Seules les propriétés marquées comme récupérables sont restituer dans les résultats de la recherche et peuvent être utilisées pour créer des types de résultats modernes (MRT).
 
@@ -164,7 +164,7 @@ L’intervalle d’actualisation détermine la fréquence de synchronisation de 
 
 Il existe deux types d’intervalles d’actualisation: l’actualisation complète et l’actualisation incrémentielle, mais les actualisations incrémentielles ne sont pas disponibles pour certaines sources de données.  
 
-Avec une actualisation complète, le moteur de recherche traite et indexe chaque élément de la source de contenu, quelles que soient les analyses précédentes. Une actualisation complète est la meilleure pour les situations ci-après :
+Avec une actualisation complète, le moteur de recherche traite et indexe les éléments qui ont été modifiés dans la source de contenu, quelles que soient les analyses précédentes. Une actualisation complète est la meilleure pour les situations ci-après :
 
 * Détection de suppressions de données.
 * L’actualisation incrémentielle a trouvé des erreurs et a échoué.
@@ -177,7 +177,7 @@ Avec une actualisation **incrémentielle,** le moteur de recherche peut traiter 
 Les actualisations incrémentielles sont beaucoup plus rapides que les actualisations complètes, car les éléments inchangés ne sont pas traitées. Toutefois, si vous choisissez d’exécuter des actualisations incrémentielles, vous devez toujours exécuter régulièrement des actualisations complètes pour maintenir une synchronisation correcte des données entre la source de contenu et l’index de recherche.
 
 > [!div class="mx-imgBorder"]
-> ![Paramètres d’analyse incrémentielle et d’intervalle d’analyse complète indiquant Incrémentielle à 15 minutes et analyse complète à 1 semaine.](media/refreshschedule.png)
+> ![Paramètres d’intervalle d’analyse incrémentielle et d’analyse complète indiquant Incrémentielle à 15 minutes et analyse complète à 1 semaine.](media/refreshschedule.png)
 
 <!---Change screenshot for one that shows both options in new UI (try ServiceNow)--->
 
@@ -198,10 +198,10 @@ Lisez les informations spécifiques au connecteur pour votre source de données.
 
 ## <a name="limitations"></a>Limites
 <!---Insert limitations for this data source-->
-Pour en savoir plus sur les limitations qui s’appliquent à toutes les sources de données, consultez l’article Vue d’ensemble des [connecteurs Microsoft Graph.](connectors-overview.md)
+Pour en savoir plus sur les limitations qui s’appliquent à toutes les sources de données, consultez l’article Vue [d’ensemble de Microsoft Graph connecteurs.](connectors-overview.md)
 
-Consultez les informations spécifiques au connecteur pour votre source de données afin de savoir si d’autres limitations s’appliquent à ce connecteur Graph particulier.
+Consultez les informations spécifiques au connecteur pour votre source de données afin de savoir si d’autres limitations s’appliquent à ce connecteur Graph spécifique.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Après avoir publié la connexion, vous devez personnaliser la page des résultats de la recherche. Pour en savoir plus sur la personnalisation des résultats de recherche, voir [Personnaliser la page des résultats de la recherche.](customize-search-page.md)
