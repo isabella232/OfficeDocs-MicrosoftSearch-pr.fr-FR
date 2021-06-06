@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur serviceNow Graph pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 08947381dff7cd06007c68a7f1614b23c53f7510
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+ms.openlocfilehash: 31b581af2c51a5c26b161e778b242e396afe91fd
+ms.sourcegitcommit: 6cffa2d29448be9a22514e7b4c3009c522af0860
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720963"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52774079"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -45,7 +45,7 @@ Suivez les [instructions d’installation générales.](./configure-connector.md
 
 Pour vous connecter à vos données ServiceNow, utilisez les informations d’identification de **l’URL d’instance ServiceNow** de votre organisation pour ce compte, l’ID client et la question secrète client pour l’authentification OAuth.  
 
-L’URL de **l’instance ServiceNow** de votre organisation ressemble généralement **https:// &lt;>.service-now.com**. Avec cette URL, vous avez besoin d’un compte pour la configuration de la connexion à ServiceNow et pour permettre à Microsoft Search (recherche Microsoft) de mettre à jour les articles à partir de ServiceNow en fonction de la planification d’actualisation. Le compte doit au moins avoir un <em>rôle de</em> connaissance. [Découvrez comment attribuer un rôle pour les comptes ServiceNow.](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)
+L’URL de **l’instance ServiceNow** de votre organisation ressemble généralement **https:// &lt;>.service-now.com**. En plus de cette URL, vous avez besoin d’un compte pour la configuration de la connexion à ServiceNow et pour permettre à Microsoft Search (recherche Microsoft) de mettre à jour les articles à partir de ServiceNow en fonction de la planification d’actualisation. Le compte doit au moins avoir un <em>rôle de</em> connaissance. [Découvrez comment attribuer un rôle pour les comptes ServiceNow.](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)
 
 >[!NOTE]
 >Si vous souhaitez analyser les identités des utilisateurs et des groupes afin d’honorer les autorisations d’accès des articles de la base de connaissances dans les résultats de recherche Microsoft, le compte doit avoir accès à la lecture des enregistrements de tableau suivants dans ServiceNow :
@@ -72,7 +72,7 @@ Entrez le nom d’utilisateur et le mot de passe du compte ServiceNow avec le r�
 
 ### <a name="servicenow-oauth"></a>ServiceNow OAuth
 
-Pour utiliser ServiceNow OAuth pour l’authentification, provisionnez un point de terminaison dans votre instance ServiceNow. L’application Recherche Microsoft l’utilisera pour accéder à l’instance. Pour plus d’informations, voir [Créer un point de terminaison](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) pour que les clients accèdent à l’instance dans la documentation ServiceNow.
+Pour utiliser ServiceNow OAuth pour l’authentification, provisionnez un point de terminaison dans votre instance ServiceNow. L’application Recherche Microsoft l’utilisera pour accéder à l’instance. Pour plus d’informations, voir [Créer un point de terminaison pour que les clients accèdent](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) à l’instance dans la documentation ServiceNow.
 
 Le tableau suivant fournit des instructions sur la façon de remplir le formulaire de création de point de terminaison :
 
@@ -83,7 +83,7 @@ ID du client | ID unique généré automatiquement en lecture seule pour l’app
 Secret client | Avec cette chaîne secrète partagée, l’instance ServiceNow et Microsoft Search (recherche Microsoft) autorisent les communications entre eux. | Suivez les meilleures pratiques en matière de sécurité en traitant le secret comme un mot de passe.
 URL de redirection | URL de rappel requise vers qui le serveur d’autorisation redirige. | https://gcs.office.com/v1.0/admin/oauth/callback
 Logo URL | URL qui contient l’image du logo de l’application. | N/A
-Actif | Activez la case à cocher pour que le Registre de l’application soit actif. | Définir sur actif
+Actif | Activez la case à cocher pour rendre le Registre d’application actif. | Définir sur actif
 Durée de vie du jeton d’actualisation | Nombre de secondes de validité d’un jeton d’actualisation. Par défaut, les jetons d’actualisation expirent dans 100 jours (8 640 000 secondes). | 31 536 000 (1 an)
 Durée de vie du jeton d’accès | Nombre de secondes de validité d’un jeton d’accès. | 43 200 (12 heures)
 
@@ -161,7 +161,7 @@ L’instance ServiceNow a besoin de la configuration suivante :
    URL de métadonnées OIDC | L’URL doit prendre la forme https \: //login.microsoftonline.com/<tenandId">/.well-known/openid-configuration <br/>Remplacez « tenantID » par l’ID d’annuaire (client) de l’étape 3.a.
    Durée de vie du cache de configuration OIDC |  120
    Application | Global
-   Revendication utilisateur | sub
+   Revendication de l’utilisateur | sub
    Champ Utilisateur | ID utilisateur
    Activer la vérification des revendications JTI | Désactivé
 
@@ -210,9 +210,9 @@ Si vous avez choisi d’ing d’une ACL à partir de votre instance ServiceNow e
 
 ### <a name="managing-search-permissions-in-microsoft-search"></a>Gestion des autorisations de recherche dans Microsoft Search (recherche Microsoft)
 
-Dans la vidéo suivante, vous pouvez voir comment utiliser le connecteur Servicenow pour indexer les articles de la base de connaissances, définir les autorisations des critères utilisateur et synchroniser en toute transparence les modifications entre l’index ServiceNow et l’index De recherche Microsoft.
+Dans la vidéo suivante, vous pouvez voir comment utiliser le connecteur Servicenow pour indexer les articles de la base de connaissances, définir les autorisations des critères utilisateur et synchroniser en toute transparence les modifications entre l’index ServiceNow et Microsoft Search (recherche Microsoft).
 
-> [!VIDEO https://www.youtube.com/watch?v=TVSkJpk1RiE]
+> [!VIDEO https://www.youtube-nocookie.com/embed/TVSkJpk1RiE]
 
 ## <a name="step-6-assign-property-labels"></a>Étape 6 : Attribuer des étiquettes de propriété
 
@@ -241,7 +241,7 @@ Suivez les [instructions d’installation générales.](./configure-connector.md
 
 Après avoir publié votre connexion, en personnalisant la page des résultats, vous pouvez passer en revue l’état sous l’onglet **Connecteurs** dans le [Centre d’administration.](https://admin.microsoft.com) Pour découvrir comment effectuer des mises à jour et des suppressions, voir [Gérer votre connecteur.](manage-connector.md)
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 
 Le connecteur Graph ServiceNow présente les limitations suivantes dans sa dernière version :
 

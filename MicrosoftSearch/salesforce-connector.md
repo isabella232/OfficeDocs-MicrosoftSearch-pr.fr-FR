@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur d’Graph Salesforce pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: d4d19c05f82ddb28c4dc3e6719bf8ea8d7284cc3
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+ms.openlocfilehash: 7d73454fb909db24514c969f34158e3f2be5e34c
+ms.sourcegitcommit: 6cffa2d29448be9a22514e7b4c3009c522af0860
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720987"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52774088"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -50,13 +50,13 @@ Pour vous connecter à votre instance Salesforce, vous avez besoin de votre URL 
 
     - Spécifiez l’URL de rappel comme : [https://gcs.office.com/v1.0/admin/oauth/callback](https://gcs.office.com/v1.0/admin/oauth/callback)
 
-    - Sélectionnez ces étendues OAuth requises.
+    - Sélectionnez les étendues OAuth requises.
 
-        - Accéder et gérer vos données (api)
+        - Accéder à vos données (api) et les gérer
 
         - Effectuer des demandes en votre nom à tout moment (refresh_token, offline_access)
 
-    - Cochez la case **Exiger une secret pour le flux de serveur web.**
+    - Cochez la case exiger **une secret pour le flux de serveur web.**
 
     - Enregistrez l’application.
     
@@ -105,7 +105,7 @@ La première fois que vous tentez de vous connecter à l’aide de ces paramètr
 Vérifiez que la connexion a réussi en recherchant une bannière verte qui indique « Connexion réussie », comme indiqué dans la capture d’écran ci-dessous.
 
   > [!div class="mx-imgBorder"]
-  > ![Capture d’écran de la connexion réussie. La bannière verte « Connexion réussie » se trouve sous le champ de votre URL d’instance Salesforce](media/salesforce-connector/sf5.png)
+  > ![Capture d’écran de la connexion réussie. La bannière verte qui indique « Connexion réussie » se trouve sous le champ de votre URL d’instance Salesforce](media/salesforce-connector/sf5.png)
 
 ## <a name="step-4-manage-search-permissions"></a>Étape 4 : Gérer les autorisations de recherche
 
@@ -113,7 +113,7 @@ Vous devez choisir les utilisateurs qui voient les résultats de la recherche à
 
 ### <a name="step-4a-select-permissions"></a>Étape 4.a : Sélectionner les autorisations
 
-Vous pouvez choisir d’ingèrer des listes de contrôle d’accès à partir de votre instance Salesforce ou autoriser tous les membres de votre organisation à voir les résultats de la recherche à partir de cette source de données. Les ALA peuvent inclure des identités Azure Active Directory (AAD) (utilisateurs fédérés d’Azure AD à Salesforce), des identités non Azure AD (utilisateurs Salesforce natifs ayant des identités correspondantes dans Azure AD) ou les deux.
+Vous pouvez choisir d’ingèrer des listes de contrôle d’accès à partir de votre instance Salesforce ou autoriser tous les membres de votre organisation à voir les résultats de recherche provenant de cette source de données. Les ALA peuvent inclure des identités Azure Active Directory (AAD) (utilisateurs fédérés d’Azure AD à Salesforce), des identités non Azure AD (utilisateurs Salesforce natifs ayant des identités correspondantes dans Azure AD) ou les deux.
 
 >[!NOTE]
 >Si vous utilisez un fournisseur d’identité tiers comme Ping ID ou secureAuth, vous devez sélectionner « non-AAD » comme type d’identité.
@@ -131,16 +131,16 @@ Si vous avez choisi d’ing d’une ACL à partir de votre instance Salesforce e
 
 Dans cette vidéo, vous pouvez voir le processus d’authentification à votre instance Salesforce, synchroniser vos identités non-Azure Active Directory avec vos identités Azure Active Directory et appliquer les trimmings de sécurité appropriés à vos éléments Salesforce.
 
-> [!VIDEO https://www.youtube.com/watch?v=SZYiFxZMKcM]
+> [!VIDEO https://www.youtube-nocookie.com/embed/SZYiFxZMKcM]
 
 ## <a name="step-5-assign-property-labels"></a>Étape 5 : Attribuer des étiquettes de propriété
 
-Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Bien que cette étape ne soit pas obligatoire, le fait d’avoir des étiquettes de propriétés améliorera la pertinence de la recherche et garantira de meilleurs résultats de recherche pour les utilisateurs finaux. Par défaut, certaines étiquettes telles que « Titre », « URL », « CreatedBy » et « LastModifiedBy » se sont déjà vu attribuer des propriétés source.
+Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Bien que cette étape ne soit pas obligatoire, le fait d’avoir certaines étiquettes de propriétés améliorera la pertinence de la recherche et garantira de meilleurs résultats de recherche pour les utilisateurs finaux. Par défaut, certaines étiquettes telles que « Titre », « URL », « CreatedBy » et « LastModifiedBy » se sont déjà vu attribuer des propriétés source.
 
 ## <a name="step-6-manage-schema"></a>Étape 6 : Gérer le schéma
 
-Vous pouvez sélectionner les propriétés source qui doivent être indexées afin qu’elles s’afficheront dans les résultats de la recherche. L’Assistant Connexion sélectionne par défaut un schéma de recherche basé sur un ensemble de propriétés source. Vous pouvez le modifier en élecant les cases à cocher de chaque propriété et attribut de la page de schéma de recherche. Les attributs de schéma de recherche incluent recherche, requête, récupération et affiner.
-Affiner vous permet de définir les propriétés qui peuvent être utilisées ultérieurement en tant qu’affinements ou filtres personnalisés dans l’expérience de recherche.  
+Vous pouvez sélectionner les propriétés source qui doivent être indexées afin qu’elles s’afficheront dans les résultats de la recherche. L’Assistant Connexion sélectionne par défaut un schéma de recherche basé sur un ensemble de propriétés source. Vous pouvez le modifier en élecntant les cases à cocher de chaque propriété et attribut de la page de schéma de recherche. Les attributs de schéma de recherche incluent recherche, requête, récupération et affiner.
+L’affinement vous permet de définir les propriétés qui peuvent être utilisées ultérieurement en tant qu’affinements ou filtres personnalisés dans l’expérience de recherche.  
 
 > [!div class="mx-imgBorder"]
 > ![Sélectionnez le schéma pour chaque propriété source. Les options sont Requête, Recherche, Récupérer et Affiner](media/salesforce-connector/sf9.png)
@@ -162,12 +162,12 @@ Suivez les [instructions d’installation générales.](./configure-connector.md
 <!---## Troubleshooting-->
 <!---Insert troubleshooting recommendations for this data source-->
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 
 - Le connecteur Graph ne prend actuellement pas en charge le partage basé sur apex basé sur un territoire et le partage à l’aide de groupes personnels de Salesforce.
 - Il existe un bogue connu dans l’API Salesforce que le connecteur Graph utilise, où les valeurs par défaut privées à l’échelle de l’organisation pour les prospects ne sont pas honorées actuellement.  
-- Si un champ a la sécurité de niveau de champ (FLS) définie pour un profil, le connecteur Graph n’ing aura pas ce champ pour les profils dans cette organisation Salesforce. Par conséquent, les utilisateurs ne pourront pas rechercher sur les valeurs de ces champs, ni s’afficher dans les résultats.  
-- Dans l’écran Gérer le schéma, ces noms de propriétés standard communs sont répertoriés une seule fois, les options sont **Requête,** **Rechercher,** Récupérer **et** **Affiner,** et s’appliquent à tout ou aucun.
+- Si un champ a la sécurité au niveau du champ (FLS) définie pour un profil, le connecteur Graph n’ing aura pas ce champ pour les profils dans cette organisation Salesforce. Par conséquent, les utilisateurs ne pourront pas rechercher sur les valeurs de ces champs, ni s’afficher dans les résultats.  
+- Dans l’écran Gérer le schéma, ces noms de propriété standard communs sont répertoriés une seule fois, les options sont **Requête,** **Rechercher,** Récupérer **et** **Affiner,** et s’appliquent à tout ou aucun.
     - Nom
     - Url
     - Description
