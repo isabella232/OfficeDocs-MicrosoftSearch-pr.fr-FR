@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur ServiceNow Graph pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 0b7e752ec67a7c14e4afc2e3bad32124694f8f39
-ms.sourcegitcommit: 668930032e77a065c23551b3e8820dcc2c63c0f8
+ms.openlocfilehash: ac5d0b23547ce7ccd0d8bb6399b092f9bc9e5303
+ms.sourcegitcommit: f12e7ff0a94d30a9de1f93266715180e7530de3f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52853813"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879307"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -64,17 +64,17 @@ Vous pouvez **créer et attribuer un rôle** pour le compte de service que vous 
 
 Pour authentifier et synchroniser le contenu à partir de ServiceNow, choisissez **l’une des trois méthodes** prise en charge : 
  
-1. Authentification de base 
-1. ServiceNow OAuth (recommandé)
-1. Azure AD OpenID Connecter
+- Authentification de base 
+- ServiceNow OAuth (recommandé)
+- Azure AD OpenID Connecter
 
-### <a name="basic-authentication"></a>Authentification de base
+## <a name="step-31-basic-authentication"></a>Étape 3.1 : Authentification de base
 
 Entrez le nom d’utilisateur et le mot de passe du compte ServiceNow avec le rôle **de** connaissance pour vous authentifier auprès de votre instance.
 
-### <a name="servicenow-oauth"></a>ServiceNow OAuth
+## <a name="step-32-servicenow-oauth"></a>Étape 3.2 : ServiceNow OAuth
 
-Pour utiliser ServiceNow OAuth pour l’authentification, un administrateur ServiceNow doit mettre en service un point de terminaison dans votre instance ServiceNow, afin que l’application Microsoft Search puisse y accéder. Pour plus d’informations, voir [Créer un point de terminaison pour que les clients accèdent](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) à l’instance dans la documentation ServiceNow.
+Pour utiliser ServiceNow OAuth pour l’authentification, un administrateur ServiceNow doit mettre en service un point de terminaison dans votre instance ServiceNow, afin que l’application Microsoft Search puisse y accéder. Pour plus d’informations, voir [Créer un point de terminaison](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) pour que les clients accèdent à l’instance dans la documentation ServiceNow.
 
 Le tableau suivant fournit des instructions sur la façon de remplir le formulaire de création de point de terminaison :
 
@@ -91,19 +91,19 @@ Durée de vie du jeton d’accès | Nombre de secondes de validité d’un jeton
 
 Entrez l’ID client et la secret client pour vous connecter à votre instance. Une fois connecté, utilisez les informations d’identification d’un compte ServiceNow pour authentifier l’autorisation d’analyse. Le compte doit au moins avoir un **rôle de** connaissance. Reportez-vous au tableau au début de l’étape 3 : [paramètres](#step-3-connection-settings) de connexion pour fournir un accès en lecture à d’autres enregistrements de table ServiceNow et indexer les autorisations des critères utilisateur.
 
-### <a name="azure-ad-openid-connect"></a>Azure AD OpenID Connecter
+## <a name="step-33-azure-ad-openid-connect"></a>Étape 3.3 : Azure AD OpenID Connecter
 
 Pour utiliser Azure AD OpenID Connecter pour l’authentification, suivez les étapes ci-dessous.
 
-## <a name="step-3a-register-a-new-application-in-azure-active-directory"></a>Étape 3.a : Inscrire une nouvelle application dans Azure Active Directory
+### <a name="step-331-register-a-new-application-in-azure-active-directory"></a>Étape 3.3.1 : inscrire une nouvelle application dans Azure Active Directory
 
 Pour en savoir plus sur l’inscription d’une nouvelle application dans Azure Active Directory, voir [Inscrire une application.](/azure/active-directory/develop/quickstart-register-app#register-an-application) Sélectionnez l’annuaire d’organisation client unique. L’URI de redirection n’est pas nécessaire. Après l’inscription, notez l’ID de l’application (client) et l’ID d’annuaire (client).
 
-## <a name="step-3b-create-a-client-secret"></a>Étape 3.b : Créer une secret client
+### <a name="step-332-create-a-client-secret"></a>Étape 3.3.2 : Créer une secret client
 
 Pour en savoir plus sur la création d’une secret client, voir [Création d’une question secrète client.](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret) Prenez note de la secret client.
 
-## <a name="step-3c-retrieve-service-principal-object-identifier"></a>Étape 3.c : Récupérer l’identificateur d’objet principal du service
+### <a name="step-333-retrieve-service-principal-object-identifier"></a>Étape 3.3.3 : Récupérer l’identificateur d’objet principal du service
 
 Suivez les étapes pour récupérer l’identificateur d’objet principal du service
 
@@ -137,7 +137,7 @@ ID d’application (ID client) | ID unique de l’application inscrite à l’é
 Clé secrète client | Clé secrète de l’application (à partir de l’étape 3.b). Traitez-le comme un mot de passe.
 Service Principal ID | Identité de l’application en cours d’exécution en tant que service. (à partir de l’étape 3.c)
 
-## <a name="step-3d-register-servicenow-application"></a>Étape 3.d : inscrire l’application ServiceNow
+### <a name="step-334-register-servicenow-application"></a>Étape 3.3.4 : inscrire l’application ServiceNow
 
 L’instance ServiceNow a besoin de la configuration suivante :
 
@@ -169,7 +169,7 @@ L’instance ServiceNow a besoin de la configuration suivante :
 
 5. Sélectionnez Envoyer et mettre à jour le formulaire d’entité OAuth OIDC.
 
-## <a name="step-3e-create-a-servicenow-account"></a>Étape 3.e : Créer un compte ServiceNow
+### <a name="step-335-create-a-servicenow-account"></a>Étape 3.3.5 : Créer un compte ServiceNow
 
 Reportez-vous aux instructions pour créer un compte ServiceNow, [créer un utilisateur dans ServiceNow](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html).
 
@@ -182,7 +182,7 @@ Accès au service Web uniquement | Checked
 
 Toutes les autres valeurs peuvent être laissées à la valeur par défaut.
 
-##### <a name="step-36-enable-knowledge-role-for-the-servicenow-account"></a>Étape 3.6 : activer le rôle De connaissances pour le compte ServiceNow
+### <a name="step-336-enable-knowledge-role-for-the-servicenow-account"></a>Étape 3.3.6 : activer le rôle De connaissances pour le compte ServiceNow
 
 Accédez au compte ServiceNow que vous avez créé avec l’ID principal ServiceNow en tant qu’ID d’utilisateur et attribuez le rôle de connaissance. Vous pouvez trouver des instructions sur l’attribution d’un rôle à un compte ServiceNow ici, attribuer [un rôle à un utilisateur.](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html) Reportez-vous au tableau au début de l’étape 3 : [paramètres](#step-3-connection-settings) de connexion pour fournir un accès en lecture à d’autres enregistrements de table ServiceNow et indexer les autorisations des critères utilisateur.
 
@@ -208,7 +208,7 @@ ServiceNow Graph Connector prend en charge les autorisations de critères utilis
 Si vous choisissez uniquement les personnes ayant accès à cette **source** de données, vous devez choisir si votre instance ServiceNow dispose d’utilisateurs Azure Active Directory (AAD) ou d’utilisateurs non AAD.
 
 >[!NOTE]
->Si vous choisissez AAD comme type de source d’identité, assurez-vous d’affecter la propriété source UserPrincipalName (UPN) à la propriété ciblée de messagerie dans ServiceNow. Pour vérifier ou modifier vos mappages, voir Personnalisation des mappages d’attributs de mise en service utilisateur pour les [applications SaaS dans Azure Active Directory](/azure/active-directory/app-provisioning/customize-application-attributes).
+>Si vous choisissez AAD comme type de source d’identité, assurez-vous que vous affectez la propriété source UserPrincipalName (UPN) à la propriété ciblée de messagerie dans ServiceNow. Pour vérifier ou modifier vos mappages, voir Personnalisation des mappages d’attributs de mise en service utilisateur pour les [applications SaaS dans Azure Active Directory](/azure/active-directory/app-provisioning/customize-application-attributes).
 
 Si vous avez choisi « non-AAD » pour le type d’identité, voir Mappage de vos [identités non-Azure AD](map-non-aad.md) pour obtenir des instructions sur le mappage des identités. 
 
@@ -258,7 +258,7 @@ Si votre organisation a activé l'Sign-On (SSO) sur ServiceNow, vous risquez de 
 Si vous voyez une réponse interdite ou non autorisée dans l’état de connexion, vérifiez si le compte de service a requis l’accès aux tables mentionnées à l’étape [3 : paramètres de connexion.](#step-3-connection-settings) Vérifiez si toutes les colonnes des tableaux ont un accès en lecture.
 
 #### <a name="22-check-if-servicenow-instance-behind-firewall"></a>2.2. Vérifier si l’instance ServiceNow est derrière le pare-feu
-Graph Le connecteur peut ne pas être en mesure d’atteindre votre instance ServiceNow si elle se trouve derrière un pare-feu réseau. Vous devez autoriser explicitement l’accès Graph service Connecteur. Vous trouverez la plage d’adresses IP publiques Graph Connector Service dans le tableau ci-dessous. En fonction de votre région de client, ajoutez-la à votre liste blanche réseau d’instances ServiceNow.
+Graph Le connecteur peut ne pas être en mesure d’atteindre votre instance ServiceNow si elle se trouve derrière un pare-feu réseau. Vous devez autoriser explicitement l’accès Graph service Connecteur. Vous trouverez la plage d’adresses IP publiques Graph Service Connecteur dans le tableau ci-dessous. En fonction de votre région de client, ajoutez-la à votre liste blanche réseau d’instances ServiceNow.
 
 **Environnement** | **Région** | **Range**
 --- | --- | ---
@@ -267,4 +267,4 @@ PROD | Europe | 20.54.41.208/30, 51.105.159.88/30
 PROD | Asie-Pacifique | 52.139.188.212/30, 20.43.146.44/30 
 
 
-Si vous avez d’autres problèmes ou souhaitez nous faire part de vos commentaires, écrivez-nous aka.ms/TalkToGraphConnectors
+Si vous avez d’autres problèmes ou souhaitez nous faire part de vos commentaires, écrivez-nous [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)
