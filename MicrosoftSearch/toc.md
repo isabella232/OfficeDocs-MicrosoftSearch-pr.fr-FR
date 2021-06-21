@@ -9,31 +9,34 @@
 ## [Signets](manage-bookmarks.md)
 ## [Plans d’étage](manage-floorplans.md)
 ## [Emplacements](manage-locations.md)
-## [Power BI](manage-powerbi.md)
+## [Power BI](manage-powerbi.md)
 ## [Questions et réponses](manage-qas.md)
-# Connecteurs
-## [Vue d’ensemble](connectors-overview.md)
-## [galerie Connecteurs](connectors-gallery.md)
-## Configurer les connecteurs avec Microsoft
-### [Vue d’ensemble de la configuration](configure-connector.md)
-### [Configurer l'agent connecteur graphique](on-prem-agent.md)
-### [Mapper les non-identités Active Directory Azure (préversion)](map-non-aad.md)
-### [Mapper les identités Active Directory Azure (préversion)](map-aad.md)
-### Informations spécifiques au connecteur
-#### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
-#### [Azure DevOps (préversion)](azure-devops-connector.md)
-#### [Azure SQL et Microsoft SQL Server](MSSQL-connector.md)
-#### [Sites web d’entreprise](enterprise-web-connector.md)
-#### [Partage de fichiers](fileshare-connector.md)
-#### [MediaWiki](mediawiki-connector.md)
-#### [Oracle SQL](OracleSQL-connector.md)
-#### [Salesforce (préversion)](salesforce-connector.md)
-#### [ServiceNow](servicenow-connector.md)
-## Gérer les connexions
-### [Surveiller la connectivité](manage-connector.md)
-### [Afficher les détails et erreurs de connexion](connector-details-errors.md)
-## [Licences](licensing.md)
-## [Conditions d’utilisation](terms-of-use.md)
+# Sources de données
+## Connecteurs graphiques
+### [Vue d’ensemble](connectors-overview.md)
+### [galerie Connecteurs](connectors-gallery.md)
+### Configurer les connecteurs avec Microsoft
+#### [Vue d’ensemble de la configuration](configure-connector.md)
+#### [Configurer l'agent connecteur graphique](on-prem-agent.md)
+#### [Mapper les non-identités Active Directory Azure (préversion)](map-non-aad.md)
+#### [Mapper les identités Active Directory Azure (préversion)](map-aad.md)
+#### Informations spécifiques au connecteur
+##### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
+##### [Azure DevOps (préversion)](azure-devops-connector.md)
+##### [Azure SQL et Microsoft SQL Server](MSSQL-connector.md)
+##### [Sites web d’entreprise](enterprise-web-connector.md)
+##### [Partage de fichiers](fileshare-connector.md)
+##### [MediaWiki](mediawiki-connector.md)
+##### [Oracle SQL](OracleSQL-connector.md)
+##### [Salesforce (préversion)](salesforce-connector.md)
+##### [ServiceNow](servicenow-connector.md)
+### Gérer les connexions
+#### [Surveiller la connectivité](manage-connector.md)
+#### [Afficher les détails et erreurs de connexion](connector-details-errors.md)
+### [Licences](licensing.md)
+### [Conditions d’utilisation](terms-of-use.md)
+## Connecteurs de fédération
+### [Dynamics 365](manage-dynamics365.md)
 # Personnaliser et configurer
 ## [Gérer des secteurs verticaux et des types de résultats](customize-search-page.md)
 ## [Gérer les dispositions des résultats de la recherche](customize-results-layout.md)
