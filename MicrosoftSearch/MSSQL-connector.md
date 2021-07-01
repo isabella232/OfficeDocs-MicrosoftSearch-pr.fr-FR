@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur Azure SQL et Microsoft SQL Graph pour Recherche Microsoft.
-ms.openlocfilehash: 1cc28561d7572c3a554f1cf93b582b4787414f48
-ms.sourcegitcommit: a8867bbdfa8c5fd3debde8e6b2bba4f79768e3f6
+ms.openlocfilehash: 0f8501e36754235b43846b80d60d4b0156a504b9
+ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52955617"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53230915"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -30,7 +30,7 @@ Le connecteur Graph indexe le contenu spécifié dans Recherche Microsoft. Pour 
 > [!NOTE]
 > Lisez [**l’article Configurer votre connecteur Graph pour**](configure-connector.md) comprendre les instructions générales Graph d’installation des connecteurs.
 
-Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur SQL et Microsoft SQL Server Graph Azure. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur Azure SQL et Microsoft SQL Server Graph.. Cet article inclut également des informations [sur les limitations](#limitations) pour les connecteurs Microsoft SQL Server et Azure SQL.
+Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur d’SQL azure et de serveur Microsoft SQL Graph. Il complète le processus d’installation général et affiche des instructions qui s’appliquent uniquement au connecteur d’installation SQL Azure et Microsoft SQL server Graph. Cet article inclut également des informations [sur les limitations](#limitations) pour le serveur Microsoft SQL et les connecteurs SQL Azure.
 
 ## <a name="before-you-get-started"></a>Avant de commencer
 
@@ -220,6 +220,7 @@ Voici une erreur courante observée lors de la configuration du connecteur et sa
 Les connecteurs SQL ont les limitations ci-après dans la version préliminaire :
 
 - Microsoft SQL Server : la base de données sur site doit être SQL Server version 2008 ou ultérieure.
+
 - L’Microsoft 365 et l’abonnement Azure (hébergeant la base de données Azure SQL) doivent se trouver dans le même Azure Active Directory.
 - Les ACA sont uniquement pris en charge à l’aide d’un nom d’utilisateur principal (UPN), d Azure Active Directory (Azure AD) ou d’Active Directory Security.
 - L’indexation de contenu enrichi dans les colonnes de base de données n’est pas prise en charge. Les exemples de contenu de ce type sont HTML, JSON, XML, blobs et les parsings de document qui existent en tant que liens à l’intérieur des colonnes de base de données.

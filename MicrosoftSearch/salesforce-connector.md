@@ -1,5 +1,5 @@
 ---
-title: Connecteur d’Graph Salesforce pour Microsoft Search (recherche Microsoft)
+title: Connecteur d’Graph Salesforce pour Recherche Microsoft
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,19 +12,19 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurer le connecteur d’Graph Salesforce pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 7d73454fb909db24514c969f34158e3f2be5e34c
-ms.sourcegitcommit: 6cffa2d29448be9a22514e7b4c3009c522af0860
+description: Configurer le connecteur Graph Salesforce pour Recherche Microsoft
+ms.openlocfilehash: 4bef771538934722deaa5deac3959f21246e4529
+ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52774088"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53230933"
 ---
 <!---Previous ms.author: rusamai --->
 
 # <a name="salesforce-graph-connector-preview"></a>Connecteur Graph Salesforce (prévisualisation)
 
-Le connecteur Graph Salesforce permet à votre organisation d’indexer les objets Contacts, Opportunités, Prospects et Comptes dans votre instance Salesforce. Après avoir configuré le connecteur et indexé le contenu à partir de Salesforce, les utilisateurs finaux peuvent rechercher ces éléments à partir de n’importe quel client Recherche Microsoft.
+Le connecteur Graph Salesforce permet à votre organisation d’indexer les objets Contacts, Opportunités, Prospects et Comptes dans votre instance Salesforce. Après avoir configuré le connecteur et indexé le contenu à partir de Salesforce, les utilisateurs finaux peuvent rechercher ces éléments à partir de n’importe quel client Recherche Microsoft client.
 
 > [!NOTE]
 > Lisez [**l’article**](configure-connector.md) Installation de votre connecteur Graph pour comprendre les instructions générales Graph d’installation des connecteurs.
@@ -46,7 +46,7 @@ Pour vous connecter à votre instance Salesforce, vous avez besoin de votre URL 
 
 - Remplissez la section API comme suit :
 
-    - Activez la case à cocher **pour activer la Paramètres Oauth.**
+    - Activez la case à cocher **pour activer Oauth Paramètres**.
 
     - Spécifiez l’URL de rappel comme : [https://gcs.office.com/v1.0/admin/oauth/callback](https://gcs.office.com/v1.0/admin/oauth/callback)
 
@@ -66,7 +66,7 @@ Pour vous connecter à votre instance Salesforce, vous avez besoin de votre URL 
 - Copiez la clé grand public et la clé secrète consommateur. Ces informations sont utilisées comme ID client et secret client lorsque vous configurez le Paramètres de connexion pour votre connecteur Graph dans le portail d’administration Microsoft 365.
 
   > [!div class="mx-imgBorder"]
-  > ![Résultats renvoyés par la section API dans l’instance Salesforce une fois que l’administrateur a soumis toutes les configurations requises. La clé consommateur se trouve en haut de la colonne gauche et la clé secrète consommateur en haut de la colonne de droite.](media/salesforce-connector/clientsecret.png)
+  > ![Résultats renvoyés par la section API dans l’instance Salesforce après que l’administrateur a soumis toutes les configurations requises. La clé consommateur se trouve en haut de la colonne gauche et la clé secrète consommateur en haut de la colonne de droite.](media/salesforce-connector/clientsecret.png)
   
 - Avant de fermer votre instance Salesforce, suivez ces étapes pour vous assurer que les jetons d’actualisation n’expirent pas :
     - Go to Apps -> App Manager
@@ -77,9 +77,9 @@ Pour vous connecter à votre instance Salesforce, vous avez besoin de votre URL 
   > [!div class="mx-imgBorder"]
   > ![Sélectionnez la stratégie de jeton d’actualisation nommée « Jeton d’actualisation est valide jusqu’à ce qu’elle soit révoquée »](media/salesforce-connector/oauthpolicies.png)
 
-Vous pouvez désormais utiliser le [Centre d’administration M365](https://admin.microsoft.com/) pour terminer le reste du processus d’installation de Graph connecteur.
+Vous pouvez désormais utiliser le [centre Administration Microsoft 365 pour](https://admin.microsoft.com/) terminer le reste du processus d’installation de votre connecteur Graph de connexion.
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le centre d Microsoft 365'administration
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
 
 Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -109,7 +109,7 @@ Vérifiez que la connexion a réussi en recherchant une bannière verte qui indi
 
 ## <a name="step-4-manage-search-permissions"></a>Étape 4 : Gérer les autorisations de recherche
 
-Vous devez choisir les utilisateurs qui voient les résultats de la recherche à partir de cette source de données. Si vous autorisez uniquement certains utilisateurs Azure Active Directory (Azure AD) ou non Azure AD à voir les résultats de la recherche, assurez-vous de ma cartographier les identités.
+Vous devez choisir les utilisateurs qui voient les résultats de la recherche à partir de cette source de données. Si vous autorisez uniquement certains utilisateurs Azure Active Directory (Azure AD) ou non-Azure AD à voir les résultats de la recherche, assurez-vous de ma cartographier les identités.
 
 ### <a name="step-4a-select-permissions"></a>Étape 4.a : Sélectionner les autorisations
 
@@ -145,12 +145,12 @@ L’affinement vous permet de définir les propriétés qui peuvent être utilis
 > [!div class="mx-imgBorder"]
 > ![Sélectionnez le schéma pour chaque propriété source. Les options sont Requête, Recherche, Récupérer et Affiner](media/salesforce-connector/sf9.png)
 
-## <a name="step-7-set-the-refresh-schedule"></a>Étape 7 : Définir la planification d’actualisation
+## <a name="step-7-set-the-refresh-schedule"></a>Étape 7 : Définir la planification de l’actualisation
 
 Le connecteur Salesforce prend uniquement en charge les planifications d’actualisation pour les analyse complètes actuellement.
 
 >[!IMPORTANT]
->Une analyse complète recherche des objets et des utilisateurs supprimés qui ont été précédemment synchronisés avec l’index recherche Microsoft.
+>Une analyse complète recherche les objets et les utilisateurs supprimés qui ont été précédemment synchronisés avec l Recherche Microsoft index.
 
 La planification recommandée est d’une semaine pour une analyse complète.
 
@@ -162,10 +162,10 @@ Suivez les [instructions d’installation générales.](./configure-connector.md
 <!---## Troubleshooting-->
 <!---Insert troubleshooting recommendations for this data source-->
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 
 - Le connecteur Graph ne prend actuellement pas en charge le partage basé sur apex basé sur un territoire et le partage à l’aide de groupes personnels de Salesforce.
-- Il existe un bogue connu dans l’API Salesforce que le connecteur Graph utilise, où les valeurs par défaut privées à l’échelle de l’organisation pour les prospects ne sont pas honorées actuellement.  
+- Il existe un bogue connu dans l’API Salesforce que le connecteur Graph utilise, où les valeurs par défaut à l’échelle de l’organisation privée pour les prospects ne sont pas honorées actuellement.  
 - Si un champ a la sécurité au niveau du champ (FLS) définie pour un profil, le connecteur Graph n’ing aura pas ce champ pour les profils dans cette organisation Salesforce. Par conséquent, les utilisateurs ne pourront pas rechercher sur les valeurs de ces champs, ni s’afficher dans les résultats.  
 - Dans l’écran Gérer le schéma, ces noms de propriété standard communs sont répertoriés une seule fois, les options sont **Requête,** **Rechercher,** Récupérer **et** **Affiner,** et s’appliquent à tout ou aucun.
     - Nom
