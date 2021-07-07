@@ -1,5 +1,5 @@
 ---
-title: Personnaliser la page Recherche Microsoft
+title: Personnaliser la page Recherche Microsoft page
 ms.author: jeffkizn
 author: jypal
 manager: jeffkizn
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ajouter des secteurs verticaux de recherche et personnaliser les résultats de recherche
-ms.openlocfilehash: e5c4ab8d507e0e6096a5b9d52dc0e818faebefb6
-ms.sourcegitcommit: a07c957dfa1d31542f0362379251bc9679dfae41
+ms.openlocfilehash: 6b6f0593a668e9c2c5c7fc5a62f7b5dd4a43a8bb
+ms.sourcegitcommit: ea6905626de67090141039565282e4e0c53b43ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51639852"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314018"
 ---
 # <a name="customize-the-search-results-page"></a>Personnaliser la page des résultats de la recherche
 
@@ -25,16 +25,16 @@ Vous pouvez créer des secteurs verticaux de recherche et des types de résultat
 
 Vous pouvez créer des secteurs verticaux et des types de résultats à ces niveaux :
 
-- **Niveau organisation** : lorsque vous ajoutez un secteur vertical au niveau de l’organisation, il apparaît sur la page des résultats de la recherche lorsque les utilisateurs recherchent à partir de leur page d’accueil [SharePoint,](https://sharepoint.com/) sur [Office](https://office.com)ou [sur Bing](https://bing.com).
+-  Niveau organisation : lorsque vous ajoutez un secteur vertical au niveau de l’organisation, il apparaît sur la page des résultats de la recherche lorsque les utilisateurs recherchent à partir de leur page d’accueil [SharePoint,](https://sharepoint.com/) sur [Office](https://office.com)ou [sur Bing](https://bing.com).
 - **Niveau du** site : par exemple, vous souhaitez peut-être permettre aux employés de votre service clientèle de rechercher des incidents de gravité *1* directement à partir du site SharePoint de leur service.
 
 ## <a name="search-verticals-explained"></a>Secteurs verticaux de recherche expliqués
 
-En haut de la page des résultats de recherche Microsoft, une ligne d’onglets s’offre à vous. Voici les secteurs verticaux de recherche. Un secteur vertical de recherche affiche uniquement les résultats d’un certain type ou d’un certain contenu. Fichiers **ou** Actualités en sont des **exemples.** Par défaut, Recherche Microsoft affiche les secteurs verticaux **Tous,** **Personnes,** **Fichiers,** **Sites** et **Actualités**.  
+En haut de la page Recherche Microsoft résultats, il existe une ligne d’onglets. Voici les secteurs verticaux de recherche. Un secteur vertical de recherche affiche uniquement les résultats d’un certain type ou d’un certain contenu. Fichiers **ou** Actualités en sont des **exemples.** Par défaut, Recherche Microsoft affiche les secteurs verticaux **Tous,** **Personnes,** **Fichiers,** **Sites** et **Actualités.**  
 
-Vous pouvez ajouter des secteurs verticaux de recherche pertinents pour votre organisation. Ceux-ci apparaissent sur la page des résultats de la recherche Microsoft [dans SharePoint,](https://sharepoint.com/) [Office](https://Office.com)et [Bing](https://bing.com). Par exemple, vous pouvez créer un secteur vertical pour le contenu marketing et un autre pour les ventes, en fonction du type d’informations dont chaque groupe a besoin. Vous pouvez ajouter des secteurs verticaux pour afficher les résultats uniquement à partir du contenu indexé via des connecteurs.  
+Vous pouvez ajouter des secteurs verticaux de recherche pertinents pour votre organisation. Ceux-ci apparaissent sur la page Recherche Microsoft résultats dans [SharePoint,](https://sharepoint.com/) [Office](https://Office.com)et [Bing](https://bing.com). Par exemple, vous pouvez créer un secteur vertical pour le contenu marketing et un autre pour les ventes, en fonction du type d’informations dont chaque groupe a besoin. Vous pouvez ajouter des secteurs verticaux pour afficher les résultats uniquement à partir du contenu indexé via des connecteurs.  
 
-### <a name="multiple-connections-in-a-vertical"></a>Plusieurs connexions dans un secteur vertical
+### <a name="multiple-connections-in-a-vertical"></a>Connexions multiples dans un secteur vertical
 
 Un secteur vertical de recherche peut maintenant faire surface des résultats provenant de plusieurs sources de connecteur. Cela offre une plus grande flexibilité dans la conception de votre page de résultats de recherche. L’expérience administrative existante de la configuration verticale vous permet de sélectionner plusieurs connexions à l’étape « Source de contenu ».
 Si vous nommez avec précision autant d’étiquettes sémantiques que possible, cette expérience sera améliorée. Vous pouvez ajouter des étiquettes sémantiques lors de la définition et de l’ingestion du schéma.
@@ -42,7 +42,7 @@ Si vous nommez avec précision autant d’étiquettes sémantiques que possible,
 [Voici](configure-connector.md#step-5-assign-property-labels) des informations supplémentaires sur la création et la gestion d’étiquettes sémantiques.
 
 > [!NOTE]
-> Plusieurs connexions dans un secteur vertical sont actuellement en prévisualisation. Pour plus d’informations sur la prévisualisation, voir [Les fonctionnalités d’aperçu des connecteurs.](connectors-overview.md#what-are-the-preview-features)
+> Plusieurs connexions dans un secteur vertical sont actuellement en prévisualisation. Pour plus d’informations sur la prévisualisation, voir [les fonctionnalités d’aperçu des connecteurs.](connectors-overview.md#what-are-the-preview-features)
 
 ### <a name="things-you-should-know"></a>Ce que vous devez savoir
 
@@ -51,9 +51,9 @@ Si vous nommez avec précision autant d’étiquettes sémantiques que possible,
 
 ## <a name="things-to-consider"></a>Informations importantes
 
-Avant de commencer, assurez-vous que le connecteur a été indexé. Cela peut prendre jusqu’à 48 heures, en fonction de la taille du fichier.
+Avant de commencer, assurez-vous que le connecteur a été indexé. Cela peut prendre jusqu’à 48 heures, selon la taille du fichier.
 
-Vous ne pouvez pas créer de secteur vertical pour le contenu qui réside dans [SharePoint.](https://sharepoint.com/)
+Vous ne pouvez pas créer de secteur vertical pour le contenu qui réside dans [SharePoint](https://sharepoint.com/).
 
 Il existe trois étapes de base pour ajouter un secteur vertical :
 
@@ -66,19 +66,20 @@ Il existe trois étapes de base pour ajouter un secteur vertical :
 Après avoir commencé l’Assistant, vous êtes guidé dans les étapes de définition du nom, de la source de contenu et de l’étendue du contenu à rechercher. Le secteur vertical est créé dans un état désactivé. Vous l’activerez ultérieurement.
 
 Vous pouvez utiliser un ensemble limité de langages [KQL (Keyword Query Language)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) pour limiter l’étendue. Cette page répertorie les propriétés disponibles. Nous vous recommandons d’utiliser des mots clés de texte libre et des restrictions de propriété avec des opérateurs booléens pour créer le KQL.
+KQL prend également en charge l’utilisation de [variables de requête](#profile-query-variables) de profil pour affiner les résultats sous le secteur vertical.
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>Créer un secteur vertical au niveau de l’organisation
 
-Pour créer le secteur vertical sur La recherche Microsoft dans la maison [SharePoint,](https://sharepoint.com/) [Office](https://office.com)ou [Bing,](https://bing.com)suivez les étapes suivantes :
+Pour créer le secteur vertical [](https://sharepoint.com/) sur Recherche Microsoft dans SharePoint d’accueil, [Office](https://office.com)ou [Bing,](https://bing.com)suivez les étapes suivantes :
 
-1. Dans le [Centre d’administration Microsoft 365,](https://admin.microsoft.com)allez à [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
+1. Dans la [Centre d’administration Microsoft 365,](https://admin.microsoft.com)allez à [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 2. Sélectionnez **Ajouter** pour commencer.  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>Créer un secteur vertical au niveau du site
 
-1. Sur le site [SharePoint](https://sharepoint.com/) où vous souhaitez le secteur vertical, allez à **Paramètres**.
+1. Sur le [SharePoint](https://sharepoint.com/) où vous souhaitez le secteur vertical, Paramètres **.**
 2. Sélectionnez **les informations du site,** **puis affichez tous les paramètres du site.**
-3. Recherchez la section **Recherche Microsoft,** puis sélectionnez Configurer La recherche **Microsoft pour cette collection de sites.**
+3. Recherchez la section **Recherche Microsoft,** puis **sélectionnez Configurer Recherche Microsoft pour cette collection de sites.**
 4. Dans le volet de navigation, sélectionnez **Expérience personnalisée,** puis sélectionnez **l’onglet Verticals.**
 5. Pour ajouter un secteur vertical, sélectionnez **Ajouter.**
   Ou, pour modifier un secteur vertical, sélectionnez-le dans la liste.
@@ -98,7 +99,7 @@ Une disposition des résultats de recherche  par  défaut s’affiche pour le co
 Vous pouvez décider de créer votre propre disposition des résultats de recherche et de remplacer la disposition des résultats de recherche par défaut en créant un **type de résultat.** Un type de résultat de recherche est une règle qui entraîne l'affichage, sous diverses formes, de différents types de résultats de recherche. Il se compose des éléments suivants :
 
 - **Une ou plusieurs conditions à** comparer à chaque résultat de recherche, telles que la source de contenu du résultat de la recherche.  
-- Disposition **des résultats à** utiliser pour les résultats de recherche qui répondent aux conditions. La disposition des résultats contrôle la façon dont tous les résultats qui répondent aux conditions apparaissent et se comportent sur une page de résultats de recherche.
+- Disposition **des résultats à** utiliser pour les résultats de recherche qui répondent aux conditions. La disposition qui en résulte contrôle la façon dont tous les résultats qui répondent aux conditions apparaissent et se comportent sur une page de résultats de recherche.
 
 **Si le mappage approprié n’est pas effectué pour afficher la disposition des résultats de recherche par défaut, vous devez créer au moins un type de résultat pour que les résultats s’affichent sur le secteur vertical.** Vous pouvez créer plusieurs types de résultats pour chaque secteur vertical, ce qui vous permet d’utiliser différentes dispositions pour différents types de résultats. Par exemple, vous pouvez personnaliser les incidents de gravité *1* pour qu’ils ont des couleurs plus visibles et une police plus grande que les incidents de gravité *3.*
 
@@ -106,23 +107,89 @@ Après avoir commencé l’Assistant, vous êtes guidé à travers les étapes p
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>Créer un type de résultat au niveau de l’organisation
 
-1. Dans le [Centre d’administration Microsoft 365,](https://admin.microsoft.com)allez à [**Types de résultats.**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)
+1. Dans la [Centre d’administration Microsoft 365,](https://admin.microsoft.com)allez à [**Types de résultats.**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)
 2. Pour ajouter un **type de résultat,** sélectionnez **Ajouter.** Pour modifier un type de résultat, sélectionnez-le dans la liste concernée.
 
 ### <a name="create-a-results-type-at-the-site-level"></a>Créer un type de résultats au niveau du site
 
-1. Sur le site [SharePoint](https://sharepoint.com/) où vous souhaitez créer le type de résultat, allez à **Paramètres.**
+1. Sur le [SharePoint](https://sharepoint.com/) site où vous souhaitez créer le type de résultat, Paramètres **.**
 2. Sélectionnez **les informations du site,** **puis affichez tous les paramètres du site.**
-3. Recherchez la section Recherche Microsoft, puis sélectionnez Configurer La recherche **Microsoft pour cette collection de sites.**
+3. Recherchez la section Recherche Microsoft, puis **sélectionnez Configurer Recherche Microsoft pour cette collection de sites.**
 4. Dans le volet de navigation, sélectionnez **Expérience personnalisée** et sélectionnez **l’onglet Type de** résultat.
 5. Pour ajouter un type de résultat, sélectionnez **Ajouter.**  Ou, pour modifier un type de résultat, sélectionnez le type de résultat dans la liste.
 
 ## <a name="step-3-view-the-vertical-after-its-enabled"></a>ÉTAPE 3 : Afficher le secteur vertical une fois activé
 
-Une fois que vous avez activé le secteur vertical, il faudra quelques heures avant de pouvoir l’afficher. Si vous ne souhaitez pas attendre après l’avoir mise en place, vous pouvez l’appendre à **l’URL** dans [SharePoint](https://sharepoint.com/) et [Office](https://office.com) pour afficher immédiatement le secteur vertical. Pour [Bing](https://bing.com),&**features=uncachedVerticals** à l’URL de secteur vertical de travail pour afficher les secteurs verticaux immédiatement. 
+Une fois que vous avez activé le secteur vertical, il faudra quelques heures avant de pouvoir l’afficher. Si vous ne souhaitez pas attendre après l’avoir mise en place, vous pouvez l’appendre à **l’URL** dans [SharePoint](https://sharepoint.com/) et [Office](https://office.com) pour afficher immédiatement le secteur vertical. Pour [Bing,](https://bing.com)&**features=uncachedVerticals** à l’URL de secteur vertical de travail pour afficher les secteurs verticaux immédiatement.
 
 > [!NOTE]
-> Les secteurs verticaux ajoutés ne sont pas visibles sur [SharePoint](https://sharepoint.com/) et [Office](https://office.com) lorsqu’ils sont visibles à partir de navigateurs web mobiles.
+> Les secteurs verticaux ajoutés ne sont pas visibles [sur SharePoint](https://sharepoint.com/) et [Office](https://office.com) lorsqu’ils sont visibles à partir de navigateurs web mobiles.
+
+## <a name="profile-query-variables"></a>Variables de requête de profil
+
+Les variables de requête sont utilisées dans la section de requête KQL d’un secteur vertical pour fournir des données dynamiques en tant qu’entrées à la requête d’un secteur vertical. Vous pouvez utiliser des variables de requête de profil pour rendre les résultats de la recherche contextuels pour l’utilisateur. Les variables de requête de profil récupèrent les valeurs du profil de [l’utilisateur.](/graph/api/resources/profile?view=graph-rest-beta)
+
+Par exemple, si vous souhaitez créer un secteur vertical « Tickets » dans lequel un utilisateur inscrit peut rechercher des tickets de support qui lui sont affectés, vous pouvez spécifier la requête suivante sous la section « Requête » lors de la création verticale dans la page d’administration.  
+
+**AssignedTo:{Profile.accounts.userPrincipalName}**
+
+Cela réduit les résultats de la recherche pour afficher uniquement les éléments pour lequel la personne assignée est l’utilisateur qui effectue la recherche.
+
+[La ressource de profil](https://graph.microsoft.com/graph/api/resources/profile?view=graph-rest-beta) expose les propriétés en tant que collections. Par exemple, les informations relatives aux adresses de messagerie sont exposées via la collecte de courriers électroniques, les postes de travail en tant que collection de positions, etc. Toutes les propriétés disponibles dans le profil utilisateur, qui ont AAD comme type source, sont exposées en tant que variables de requête.
+
+Considérons un utilisateur qui dispose de 3 adresses de messagerie disponibles dans la collection de courriers électroniques, comme illustré ci-dessous.
+
+```json
+"emails": [{ 
+
+        "address": "Megan.Bowen@contoso.com",
+        "id": "xyz", 
+        "source": { 
+            "CreatedBy": "xyz", 
+            "CreatedOn": "2222", 
+            "Type": "official" 
+        },
+        "type": "main" 
+    }, { 
+        "address": "meganb@hotmail.com",
+        "id": "abc", 
+        "source": { 
+            "CreatedBy": "abc",
+            "CreatedOn": "3333", 
+            "Type": "non-official",
+        },
+        "type": "work"
+    }, { 
+        "address": "meganb@outlook.com",
+        "id": "pqr", 
+        "source": { 
+            "CreatedBy": "pqr", 
+            "CreatedOn": "4444", 
+            "Type": "personal" 
+        },
+        "type": "personal" 
+    } 
+] 
+```
+
+- La requête **MyProperty: {Profile.emails.address}** est résolue en MyProperty : « Megan.Bowen@contoso.com ».  
+
+- Si vous souhaitez résoudre toutes les valeurs de l’attribut d’adresse, vous devez utiliser la syntaxe d’extension à valeurs multiples. Requête **{| MyProperty:{Profile.emails.address}}** sera résolu en ((MyProperty:"Megan.Bowen@contoso.com ») OR (MyProperty: « meganb@hotmail.com ») OR (MyProperty:"meganb@outlook.com »))  
+
+L’opérateur « | » doit être utilisé pour résoudre les variables à valeurs multiples. Pour plus d’exemples sur l’extension de profil, reportez-vous au tableau ci-dessous.
+
+| #         | Syntaxe |  Valeur renvoyée  |
+| --------- | ------ | --- |
+| 1    | MyProperty:{Profile.emails.address}  |   « Megan.Bowen@contoso.com »  |
+| 2 | MyProperty:{Profile.emails}   |    {Profile.emails} This will not resolve because emails are an object.|
+| 3    | {? MyProperty:{Profile.emails}}  |  Cela ne sera pas résolu car les e-mails sont un objet. Le « ? » ignore les variables de requête qui ne sont pas résolues. Cette variable est supprimée lorsqu’elle est passée plus bas dans la pile de requêtes.   |
+| 4  | {&#124;MyProperty : {Profile.emails.source.Type}}    |  ((MyProperty:"official ») OR (MyProperty:"non-official ») OR (MyProperty:"personal »))    |
+
+> [!NOTE]
+>
+> - Les variables de requête de profil sont uniquement pris en charge pour les secteurs verticaux personnalisés utilisant [un connecteur](connectors-overview.md) comme source de contenu.
+> - Les variables de requête de profil sont définies dans la section « Requête » du [processus de mise en place verticale.](customize-search-page.md#step-1-create-the-search-vertical)
+> - Les variables de requête de profil sont actuellement en prévisualisation. Pour plus d’informations sur la prévisualisation, voir [les fonctionnalités d’aperçu des connecteurs.](connectors-overview.md#what-are-the-preview-features)
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
