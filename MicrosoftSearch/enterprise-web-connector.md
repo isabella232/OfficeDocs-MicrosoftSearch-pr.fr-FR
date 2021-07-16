@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur Enterprise sites web Graph pour Recherche Microsoft
-ms.openlocfilehash: f986736218768b4979e6e8aa474081c6aa87cb75
-ms.sourcegitcommit: 56e6c0706067e383d826ec97feb80f0742a726e0
+ms.openlocfilehash: 32e38c9bef036556dae2734e23b1d26ba4fe2c27
+ms.sourcegitcommit: 38a0f09596c2bca0e12bf4cada7b4c64fd4c48e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419891"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53449045"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -26,12 +26,12 @@ ms.locfileid: "53419891"
 
 # <a name="enterprise-websites-graph-connector"></a>Enterprise sites web Graph connecteur
 
-Le connecteur Enterprise sites web Graph permet à votre organisation d’indexer des articles et du contenu à partir de ses sites web **internes.** Après avoir configuré le connecteur et synchronisé le contenu à partir du site web, les utilisateurs finaux peuvent rechercher ce contenu à partir de n’Recherche Microsoft client.
+Le connecteur Enterprise sites web Graph permet à votre organisation d’indexer des articles et du contenu à partir de ses sites web **internes.** Après avoir configuré le connecteur et synchronisé le contenu à partir du site web, les utilisateurs finaux peuvent rechercher ce contenu à partir de n’importe quel client Recherche Microsoft client.
 
 > [!NOTE]
 > Lisez [**l’article Configurer votre connecteur Graph pour**](configure-connector.md) comprendre les instructions générales Graph d’installation des connecteurs.
 
-Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur Enterprise sites web. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur Enterprise sites web. Cet article inclut également des informations [sur la résolution des problèmes](#troubleshooting) et les [limitations.](#limitations)
+Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur Enterprise sites web. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur Enterprise sites web. Cet article inclut également des informations [sur la résolution des problèmes.](#troubleshooting)
 
 <!---## Before you get started-->
 
@@ -59,8 +59,21 @@ Utilisez le champ URL pour spécifier la racine du site web que vous souhaitez a
 
 Lorsqu’il est sélectionné, le connecteur analyse uniquement les URL répertoriées dans le plan de site. S’il n’est pas sélectionné ou si aucun plan de site n’est trouvé, le connecteur analyse en profondeur tous les liens trouvés sur l’URL racine du site.
 
+### <a name="dynamic-site-configuration"></a>Configuration de site dynamique
+
+Si votre site web contient du contenu dynamique, par exemple des pages web qui se trouve dans des systèmes de gestion de contenu tels que Contrôle ou Unily, vous pouvez activer un robot dynamique. Pour l’activer, **sélectionnez Activer l’analyse pour les sites dynamiques.** Le robot attend le rendu du contenu dynamique avant de commencer l’analyse.
+
 > [!div class="mx-imgBorder"]
-> ![Capture d’écran du volet Paramètres connexion pour Enterprise Web Connector](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-with-sitemap.png)
+> ![Capture d’écran du volet Paramètres connexion pour Enterprise Web Connector](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
+
+Outre la case à cocher, trois champs facultatifs sont disponibles :
+
+1. **DOM prêt :** entrez l’élément DOM que le robot doit utiliser comme signal signalant que le contenu est entièrement restituer et que l’analyse doit commencer.
+1. **En-têtes à ajouter :** spécifiez les en-têtes HTTP que le robot doit inclure lors de l’envoi de cette URL web spécifique. Vous pouvez définir plusieurs en-têtes pour différents sites web. Nous vous suggérons d’inclure des valeurs de jeton d’th.
+1. **En-têtes à ignorer**: spécifiez les en-têtes inutiles qui doivent être exclus des demandes d’analyse dynamiques.
+
+> [!NOTE]
+> L’analyse dynamique est uniquement prise en charge pour le mode d’analyse agent.
 
 ### <a name="crawl-mode-cloud-or-on-premises"></a>Mode d’analyse : cloud ou local
 
@@ -83,7 +96,7 @@ Pour plus d’informations, voir [Authorize access to Azure Active Directory web
 
 Pour obtenir les valeurs de la ressource, client_id et client_secret, accédez à Utiliser le **code** d’autorisation pour demander un jeton d’accès sur la page web de l’URL de redirection.
 
-Pour plus d’informations, voir Démarrage rapide : inscrire [une application avec le Plateforme d’identités Microsoft](/azure/active-directory/develop/quickstart-register-app).
+Pour plus d’informations, voir Démarrage rapide : inscrire [une application auprès du Plateforme d’identités Microsoft](/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>Étape 3a : Ajouter des URL à exclure (restrictions d’analyse facultatives)
 
@@ -103,13 +116,13 @@ Vous pouvez affecter une propriété source à chaque étiquette en choisissant 
 
 ## <a name="step-5-manage-schema"></a>Étape 5 : Gérer le schéma
 
-Dans  l’écran Gérer le schéma, vous pouvez modifier les attributs de schéma (les options sont **Requête,** **Rechercher,** Récupérer et **Affiner)** associés aux propriétés, ajouter des alias facultatifs et choisir la propriété **Content.**
+Dans  l’écran Gérer le schéma, vous pouvez modifier les attributs de schéma (les options sont **Requête,** **Rechercher,** Récupérer et **Affiner)** associées aux propriétés, ajouter des alias facultatifs et choisir la propriété **Content.**
 
 ## <a name="step-6-manage-search-permissions"></a>Étape 6 : Gérer les autorisations de recherche
 
 Le connecteur Enterprise sites web prend uniquement en charge les autorisations de recherche visibles par **Tout le monde.** Les données indexées apparaissent dans les résultats de la recherche et sont visibles par tous les utilisateurs de l’organisation.
 
-## <a name="step-7-set-the-refresh-schedule"></a>Étape 7 : Définir la planification de l’actualisation
+## <a name="step-7-set-the-refresh-schedule"></a>Étape 7 : Définir la planification d’actualisation
 
 Le connecteur Enterprise sites web prend uniquement en charge une actualisation complète. Cela signifie que le connecteur va réacrader tout le contenu du site web pendant chaque actualisation. Pour vous assurer que le connecteur obtient suffisamment de temps pour analyser le contenu, nous vous recommandons de définir un intervalle de planification d’actualisation important. Nous vous recommandons une actualisation programmée entre une et deux semaines.
 
@@ -136,7 +149,3 @@ Lors de la lecture du contenu du site web, l’analyse peut rencontrer des erreu
 
 * Les erreurs 6001-6013 se produisent lorsque la source de données n’est pas accessible en raison d’un problème réseau ou lorsque la source de données elle-même est supprimée, déplacée ou renommée. Vérifiez si les détails de la source de données fournis sont toujours valides.
 * Les erreurs 6021-6024 se produisent lorsque la source de données contient du contenu non textuel sur la page ou lorsque la page n’est pas un code HTML. Vérifiez la source de données et ajoutez cette page dans la liste d’exclusions ou ignorez l’erreur.
-
-## <a name="limitations"></a>Limites
-
-Le connecteur Enterprise sites web ne prend pas en charge la recherche de données sur **les pages web dynamiques.** Des exemples de ces pages web sont stockés dans des systèmes de gestion de contenu tels que [Cas](https://www.atlassian.com/software/confluence) et [Unily,](https://www.unily.com/) ou des bases de données qui stockent du contenu de site web.
