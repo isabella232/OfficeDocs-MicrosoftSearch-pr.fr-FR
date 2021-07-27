@@ -12,17 +12,17 @@ search.appverid:
 - MET150
 - MOE150
 description: À l’aide de cartes adaptatives, créez une disposition pour afficher vos résultats de recherche personnalisés
-ms.openlocfilehash: d29b1a45f11079f4b71f71a387cf43cbf2f48e7d
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 1badb5bb34d746b22de8ddb91cd26c813fe9f67f
+ms.sourcegitcommit: 8270e4271b1eeb57b988ea5265e5b6d9d6ef64a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031736"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53529361"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>Créer une disposition pour personnaliser les résultats de recherche
 
-Vous pouvez concevoir la disposition des résultats pour un secteur vertical personnalisé à l’aide du concepteur de disposition de recherche. Vous pouvez commencer à concevoir la disposition en choisissant les modèles proposés dans le concepteur de disposition et en les utilisant s’ils correspondent à vos besoins. Vous pouvez également choisir de modifier ces modèles de différentes manières pour vous adapter à vos besoins. Par exemple, ajoutez/supprimez des images, ajoutez/supprimez du texte et modifiez du texte. Si aucun des modèles ne répond à vos besoins, vous pouvez choisir de commencer à concevoir votre disposition à l’aide d’un modèle vide.  
+Vous pouvez concevoir la disposition des résultats pour un secteur vertical personnalisé à l’aide du concepteur de disposition de recherche. Vous pouvez commencer à concevoir la disposition en choisissant les modèles proposés dans le concepteur de disposition et en les utilisant s’ils correspondent à vos besoins. Vous pouvez également choisir de modifier ces modèles de différentes manières pour les adapter à vos besoins. Par exemple, ajoutez/supprimez des images, ajoutez/supprimez du texte et modifiez du texte. Si aucun des modèles ne répond à vos besoins, vous pouvez choisir de commencer à concevoir votre disposition à l’aide d’un modèle vide.  
 
 Une fois la disposition prête, utilisez le langage [de](/adaptive-cards/templating/language) modèle de cartes adaptatives pour créer un JSON de disposition de résultat qui est utilisé pour définir un type de résultat. Vous mappagez les propriétés de résultat à la disposition à l’aide de l’étape Mappage dans le concepteur de disposition.  
 
@@ -47,53 +47,44 @@ Et voici le fichier JSON associé à la disposition :
 ```json
 {
     "type": "AdaptiveCard",
-    "version": "1.0",
-     "body": [
-{
-
+    "version": "1.3",
+    "body": [
+        {
             "type": "ColumnSet",
-             "columns": [
-                 {
-                     "type": "Column",
-                     "width": 8,
-                     "items": [
-                         {
-                             "type": "TextBlock",
-                             "text": "Contoso Marketing Analysis - Q3 FY18",
-                             "color": "Accent",
-                             "size": "Medium",
-                             "spacing": "None",
-                             "$when": "{title != \"\"}",
-                             "weight": "Bolder"
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 8,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Contoso Marketing Analysis - Q3 FY18",
+                            "color": "Accent",
+                            "size": "Medium",
+                            "spacing": "None",
+                            "weight": "Bolder"
                         },
                         {
-                        "type": "TextBlock",  
-                        "text": "https://contoso.com/hr/link",
-                        "spacing": "None",  
-                        "color": "Dark",
-                        "weight": "Bolder"
-
+                            "type": "TextBlock",
+                            "text": "https://contoso.com/hr/link",
+                            "spacing": "None",
+                            "color": "Dark",
+                            "weight": "Bolder"
                         },
-
-                        {  
-                        "type": "TextBlock",
-                        "text": "Marketing team at Contoso.., and looking at the Contoso Marketing documents on the team site. This contains the data from FY20 and will taken over to FY21...Marketing Planning is ongoing for FY20..",  
-                        "wrap": true,
-                        "maxLines": 2,
-                        "spacing": "Medium"
+                        {
+                            "type": "TextBlock",
+                            "text": "Marketing team at Contoso.., and looking at the Contoso Marketing documents on the team site. This contains the data from FY20 and will taken over to FY21...Marketing Planning is ongoing for FY20..",
+                            "wrap": true,
+                            "maxLines": 2,
+                            "spacing": "Medium"
                         }
-                        ],
-
+                    ],
                     "horizontalAlignment": "Center",
                     "spacing": "None"
-
                 }
-
             ]
-
         }
-        ],
-
+    ],
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
 }
 ```
@@ -106,51 +97,45 @@ Voici la disposition JSON après la liaison des données :
 
 ```json
 {
-
     "type": "AdaptiveCard",
-    "version": "1.0",
+    "version": "1.3",
     "body": [
-    {
-    "type": "ColumnSet",
-"columns": [
-
+        {
+            "type": "ColumnSet",
+            "columns": [
                 {
-                "type": "Column",
-                "width": 8,
-                "items": [
-                {
-                "type": "TextBlock",
-                "text": "[{title}]({titleUrl})",
-                "color": "Accent",
-                "size": "Medium",
-                "spacing": "None",
-                "weight": "Bolder"
-
-                 },
-                 {
-                 "type": "TextBlock",
-                 "text": "{link}",
-                 "spacing": "None",
-                 "color": "Dark",
-                 "weight": "Bolder"
-                 },
-                 {
-                 "type": "TextBlock",
-                 "text": "{description}",
-                 "wrap": true,
-                 "maxLines": 2,
-                 "spacing": "Medium"
-                 }
-                 ],
-                 "horizontalAlignment": "Center",
-                 "spacing": "None"
-                 }
-                 ]
-
+                    "type": "Column",
+                    "width": 8,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "[${title}](${titleUrl})",
+                            "color": "Accent",
+                            "size": "Medium",
+                            "spacing": "None",
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${link}",
+                            "spacing": "None",
+                            "color": "Dark",
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${description}",
+                            "wrap": true,
+                            "maxLines": 2,
+                            "spacing": "Medium"
+                        }
+                    ],
+                    "horizontalAlignment": "Center",
+                    "spacing": "None"
+                }
+            ]
         }
-
     ],
-
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
 }
 ```
@@ -168,7 +153,7 @@ Exemple de données :  spécifiez des exemples de données dans l’exemple d’
 }
 ```
 
-## <a name="map-the-layout-to-the-result-properties"></a>Ma cartographier la disposition sur les propriétés des résultats
+## <a name="map-the-layout-to-the-result-properties"></a>Ma cartographier la disposition sur les propriétés de résultat
 
 Vous devez maque chaque champ de la disposition sur une propriété de résultat ou une propriété de connecteur pour générer la disposition des résultats JSON.
 
@@ -196,9 +181,9 @@ Avant de commencer, vous devez faire quelques opérations et éviter d’avoir �
 ### <a name="dont"></a>À ne pas faire
 
 - Ne définissez pas de types de données non valides lors de la liaison de valeurs. Pour plus d’informations sur les types de données, voir [Gérer le schéma de recherche.](/sharepoint/search/manage-the-search-schema)
-- Évitez de rogler le résultat sur la page de résultats en suivant la hauteur maximale de la disposition des résultats JSON. Si vous dépassez la hauteur maximale de la mise en page des résultats, le résultat est rogé sur la page de résultats.
+- Évitez de rogler le résultat sur la page de résultats en suivant la hauteur maximale de la disposition des résultats JSON. Si vous dépassez la hauteur maximale de la disposition des résultats, le résultat sera rogé sur la page de résultats.
 - N’utilisez pas de `px` valeurs dans les propriétés de l’élément.
-- N’utilisez pas markdown avec la **propriété ResultSnippet** dans la disposition des résultats pour mettre en évidence la correspondance de requête dans le résultat de recherche.
+- N’utilisez pas markdown avec la **propriété ResultSnippet** dans la disposition des résultats pour mettre en évidence la correspondance de requête dans le résultat de la recherche.
 
 ## <a name="resources"></a>Ressources
 

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur Azure SQL et Microsoft SQL Graph pour Recherche Microsoft.
-ms.openlocfilehash: 0f8501e36754235b43846b80d60d4b0156a504b9
-ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
+ms.openlocfilehash: ae17b99fa0b83b38c8681652af0fdfdb32969f28
+ms.sourcegitcommit: 9cfe9b7f6d4ddf783ee31a6d2a02a73f0c0aef79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230915"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590260"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -28,7 +28,7 @@ Le connecteur Microsoft SQL Server ou Azure SQL Graph permet à votre organisati
 Le connecteur Graph indexe le contenu spécifié dans Recherche Microsoft. Pour maintenir l’index à jour avec les données sources, il prend en charge des analyses complètes et incrémentielles périodiques. Avec ces connecteurs SQL, vous pouvez également restreindre l’accès aux résultats de recherche pour certains utilisateurs.
 
 > [!NOTE]
-> Lisez [**l’article Configurer votre connecteur Graph pour**](configure-connector.md) comprendre les instructions générales Graph d’installation des connecteurs.
+> Lisez [**l’article Configurer votre connecteur Graph pour**](configure-connector.md) comprendre les instructions générales Graph’installation des connecteurs.
 
 Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur d’SQL azure et de serveur Microsoft SQL Graph. Il complète le processus d’installation général et affiche des instructions qui s’appliquent uniquement au connecteur d’installation SQL Azure et Microsoft SQL server Graph. Cet article inclut également des informations [sur les limitations](#limitations) pour le serveur Microsoft SQL et les connecteurs SQL Azure.
 
@@ -36,7 +36,10 @@ Cet article est réservé à toute personne qui configure, exécute et surveille
 
 ### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>Installer l’agent Graph connecteur local (requis pour le connecteur Microsoft SQL Server local uniquement)
 
-Pour accéder à vos données tierces sur site, vous devez installer et configurer l’agent Graph connecteur local. Pour plus [d’informations, voir Installer Graph connecteur](on-prem-agent.md) d’installation.  
+Pour accéder à vos données tierces sur site, vous devez installer et configurer l’agent Graph connecteur local. Pour plus [d’informations, voir Installer Graph’agent](on-prem-agent.md) connecteur de connexion.
+
+>[!NOTE]
+>Si vous utilisez l’authentification Windows lors de la configuration du connecteur Microsoft SQL Server Graph, l’utilisateur avec lequel vous essayez de vous connecter doit avoir des droits de connexion interactifs sur l’ordinateur sur lequel l’agent de connecteur Graph est installé. Reportez-vous à la documentation sur la [gestion des stratégies d’accès](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) pour vérifier les droits d’accès.
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
 
@@ -52,11 +55,11 @@ instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>Étape 3 : Configurer les paramètres de connexion
 
-### <a name="register-an-app-for-azure-sql-connector-only"></a>Inscrire une application (pour le connecteur azure SQL uniquement)
+### <a name="register-an-app-for-azure-sql-connector-only"></a>Inscrire une application (pour le connecteur Azure SQL uniquement)
 
 Pour le connecteur SQL Azure, vous devez inscrire une application dans Azure Active Directory pour permettre Recherche Microsoft’accès aux données pour l’indexation. Pour en savoir plus sur l’inscription d’une application, consultez la documentation microsoft Graph sur l’inscription [d’une application.](/graph/auth-register-app-v2)
 
-Après avoir terminé l’inscription de l’application et pris note du nom de l’application, de l’ID d’application (client) et de l’ID de locataire, vous devez générer une [nouvelle secret client](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). La secret client ne s’affichera qu’une seule fois. N’oubliez pas & stocker la secret client en toute sécurité. Utilisez l’ID client et la secret client lors de la configuration d’une nouvelle connexion dans Recherche Microsoft.
+Après avoir terminé l’inscription de l’application et pris note du nom de l’application, de l’ID d’application (client) et de l’ID de client, vous devez générer une [nouvelle secret client](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret). La secret client ne s’affichera qu’une seule fois. N’oubliez pas & stocker la secret client en toute sécurité. Utilisez l’ID client et la secret client lors de la configuration d’une nouvelle connexion dans Recherche Microsoft.
 
 Pour ajouter l’application inscrite à votre Azure SQL Database, vous devez :
 
@@ -75,7 +78,7 @@ Pour connecter votre connecteur Microsoft SQL Server à une source de données, 
 > [!NOTE] 
 > Votre base de données doit SQL Server version 2008 ou ultérieure pour que le connecteur Microsoft SQL Server puisse se connecter.
 
-Pour le connecteur Azure SQL, vous devez uniquement spécifier le nom du serveur ou l’adresse IP à connecter. Le connecteur azure SQL prend uniquement en charge Azure Active Directory’authentification Open ID connect (OIDC) pour se connecter à la base de données.
+Pour le connecteur Azure SQL, vous devez uniquement spécifier le nom du serveur ou l’adresse IP à qui vous souhaitez vous connecter. Le connecteur azure SQL prend uniquement en charge Azure Active Directory’authentification Open ID connect (OIDC) pour se connecter à la base de données.
 
 Pour une sécurité renforcée, vous pouvez configurer des règles de pare-feu IP pour votre base de données ou SQL Server Azure. Pour en savoir plus sur la configuration des règles de pare-feu IP, consultez la documentation sur les [règles de pare-feu IP.](/azure/azure-sql/database/firewall-configure) Ajoutez les plages IP clientes suivantes dans les paramètres de pare-feu.
 
@@ -115,7 +118,7 @@ L’utilisation de chacune des colonnes ACL dans la requête ci-dessus est décr
 
 ### <a name="supported-data-types"></a>Types de données pris en charge
 
-Le tableau ci-dessous récapitule les types SQL données pris en charge dans les connecteurs MS SQL et Azure SQL. Le tableau récapitule également le type de données d’indexation pour le type SQL données pris en charge. Pour en savoir plus sur les connecteurs Graph Microsoft pris en charge pour l’indexation, reportez-vous à la documentation sur les [types de ressources de propriété.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
+Le tableau ci-dessous récapitule SQL types de données pris en charge dans les connecteurs MS SQL et Azure SQL. Le tableau récapitule également le type de données d’indexation pour le type SQL données pris en charge. Pour en savoir plus sur les connecteurs microsoft Graph pris en charge les types de données pour l’indexation, reportez-vous à la documentation sur les [types de ressources de propriété.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
 
 | Catégorie | Type de données source | Type de données d’indexation |
 | ------------ | ------------ | ------------ |
@@ -124,18 +127,18 @@ Le tableau ci-dessous récapitule les types SQL données pris en charge dans les
 | Numérique exact | bit | valeur booléenne |
 | Nombre approximatif | float <br> real | double |
 | Chaîne de caractères | char <br> varchar <br> text | string |
-| Chaînes de caractères Unicode | nchar <br> nvarchar <br> ntext | chaîne |
-| Autres types de données | uniqueidentifier | chaîne |
+| Chaînes de caractères Unicode | nchar <br> nvarchar <br> ntext | string |
+| Autres types de données | uniqueidentifier | string |
 
 Pour tout autre type de données actuellement non directement pris en charge, la colonne doit être explicitement castée vers un type de données pris en charge.
 
 ### <a name="watermark-required"></a>Filigrane (obligatoire)
 
-Pour éviter la surcharge de la base de données, le connecteur par lots et reprend les requêtes d’analyse complète avec une colonne filigrane d’analyse complète. En utilisant la valeur de la colonne filigrane, chaque lot suivant est récupéré et l’interrogation reprend à partir du dernier point de contrôle. Essentiellement, ces mécanismes contrôlent l’actualisation des données pour les analyse complètes.
+Pour éviter la surcharge de la base de données, le connecteur par lots et reprend les requêtes d’analyse complète avec une colonne filigrane d’analyse complète. À l’aide de la valeur de la colonne filigrane, chaque lot suivant est récupéré et l’interrogation reprend à partir du dernier point de contrôle. Essentiellement, ces mécanismes contrôlent l’actualisation des données pour les analyse complètes.
 
 Créez des extraits de requête pour les filigranes, comme illustré dans les exemples suivants :
 
-- `WHERE (CreatedDateTime > @watermark)`. Nommez le nom de colonne en filigrane avec le mot clé `@watermark` réservé. Si l’ordre de tri de la colonne de filigrane est croissant, utilisez `>` ; dans le cas contraire, utilisez `<` .
+- `WHERE (CreatedDateTime > @watermark)`. Nommez le nom de colonne de filigrane avec le mot clé `@watermark` réservé. Si l’ordre de tri de la colonne de filigrane est croissant, utilisez `>` ; dans le cas contraire, utilisez `<` .
 - `ORDER BY CreatedDateTime ASC`. Trier sur la colonne filigrane dans l’ordre croissant ou décroit.
 
 Dans la configuration présentée dans l’image suivante, se trouve `CreatedDateTime` la colonne filigrane sélectionnée. Pour extraire le premier lot de lignes, spécifiez le type de données de la colonne filigrane. Dans ce cas, le type de données est `DateTime` .
@@ -146,7 +149,7 @@ La première requête récupère le premier **N** nombre de lignes à l’aide d
 
 ### <a name="skipping-soft-deleted-rows-optional"></a>Ignorer les lignes supprimées (facultatif)
 
-Pour exclure l’indexation des lignes supprimées (à l’aide d’une suppression indélémentée) dans votre base de données, spécifiez le nom et la valeur de la colonne de suppression (suppression totale) qui indiquent que la ligne est supprimée.
+Pour exclure l’indexation des lignes supprimées (ou non) dans votre base de données, spécifiez le nom et la valeur de la colonne de suppression (suppression totale) qui indiquent que la ligne est supprimée.
 
 ![Paramètres de suppression souple : « Supprimer (suppression) » et « Valeur de la colonne suppression (suppression) qui indique une ligne supprimée »](media/MSSQL-softdelete.png)
 
@@ -220,7 +223,6 @@ Voici une erreur courante observée lors de la configuration du connecteur et sa
 Les connecteurs SQL ont les limitations ci-après dans la version préliminaire :
 
 - Microsoft SQL Server : la base de données sur site doit être SQL Server version 2008 ou ultérieure.
-
-- L’Microsoft 365 et l’abonnement Azure (hébergeant la base de données Azure SQL) doivent se trouver dans le même Azure Active Directory.
+- L Microsoft 365 et l’abonnement Azure (hébergeant la base de données Azure SQL) doivent se trouver dans le même Azure Active Directory.
 - Les ACA sont uniquement pris en charge à l’aide d’un nom d’utilisateur principal (UPN), d Azure Active Directory (Azure AD) ou d’Active Directory Security.
 - L’indexation de contenu enrichi dans les colonnes de base de données n’est pas prise en charge. Les exemples de contenu de ce type sont HTML, JSON, XML, blobs et les parsings de document qui existent en tant que liens à l’intérieur des colonnes de base de données.
