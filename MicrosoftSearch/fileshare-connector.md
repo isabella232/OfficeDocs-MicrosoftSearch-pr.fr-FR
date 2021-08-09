@@ -1,5 +1,5 @@
 ---
-title: Connecteur Graph de partage de fichiers pour Microsoft Search (recherche Microsoft)
+title: Connecteur d’Graph de partage de fichiers pour Recherche Microsoft
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -13,28 +13,28 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: Configurer le connecteur Graph de partage de fichiers pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 792e853e5d2b7a23835dc031ff4ba4c09d619f9c
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: Configurer le connecteur d’Graph de fichiers pour Recherche Microsoft
+ms.openlocfilehash: af4c3996fdc8ac753404f4b4519175a9054fa18bce3862b0c5841c7bd5369cdd
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031610"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533022"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="file-share-graph-connector"></a>Connecteur Graph de partage de fichiers
+# <a name="file-share-graph-connector"></a>Connecteur d’Graph partage de fichiers
 
-Le connecteur Graph de partage de fichiers permet aux utilisateurs de votre organisation de rechercher des partages de fichiers Windows locaux.
+Le connecteur de partage de Graph permet aux utilisateurs de votre organisation de rechercher des partages de fichiers Windows locaux.
 
 > [!NOTE]
-> Lisez [**l’article Installation de votre connecteur Graph**](configure-connector.md) pour comprendre le processus d’installation général des connecteurs Graph.
+> Lisez [**l’article**](configure-connector.md) Installation de votre connecteur Graph pour comprendre le processus d’installation Graph des connecteurs.
 
 ## <a name="before-you-get-started"></a>Avant de commencer
 
-### <a name="install-the-graph-connector-agent"></a>Installer l’agent de connecteur Graph
+### <a name="install-the-graph-connector-agent"></a>Installer l’agent Graph connecteur d’installation
 
-Pour indexer vos partages de fichiers Windows, vous devez installer et inscrire l’agent de connecteur Graph. Pour plus [d’informations, voir Installer l’agent de](on-prem-agent.md) connecteur Graph.  
+Pour indexer vos partages Windows de fichiers, vous devez installer et inscrire l’agent Graph connecteur. Pour plus [d’informations, voir Installer Graph’agent](graph-connector-agent.md) connecteur de connexion.  
 
 ### <a name="content-requirements"></a>Exigences en matière de contenu
 
@@ -58,7 +58,7 @@ Suivez les [instructions d’installation générales.](./configure-connector.md
 
 ## <a name="step-3-configure-the-connection-settings"></a>Étape 3 : Configurer les paramètres de connexion
 
-Dans la page **Se connecter à la source de données,** sélectionnez **Partage** de fichiers et indiquez le nom, l’ID de connexion et la description. Sur la page suivante, indiquez le chemin d’accès au partage de fichiers et sélectionnez votre agent de connecteur Graph précédemment installé. Entrez les informations d’identification d’un [compte d’utilisateur Microsoft Windows](https://microsoft.com/windows) avec un accès en lecture à tous les fichiers du partage de fichiers.
+Dans la page **Connecter** source de  données, sélectionnez Partage de fichiers et indiquez le nom, l’ID de connexion et la description. Sur la page suivante, fournissez le chemin d’accès au partage de fichiers et sélectionnez votre agent de connecteur Graph précédemment installé. Entrez les informations d’identification [d’un Windows](https://microsoft.com/windows) d’utilisateur Microsoft avec un accès en lecture à tous les fichiers du partage de fichiers.
 
 ### <a name="preserve-last-access-time"></a>Conserver l’heure du dernier accès
 
@@ -70,7 +70,7 @@ Vous pouvez restreindre l’autorisation de rechercher n’importe quel fichier 
 
 Notez que windows fournit par défaut l’autorisation « Lecture » à « Tout le monde » dans les AAL de partage lorsqu’un dossier est partagé sur le réseau. Par extension, si vous choisissez partager des ACA dans Gérer les autorisations de recherche, les **utilisateurs** pourront rechercher tous les fichiers. Si vous souhaitez restreindre l’accès, supprimez l’accès « Lecture » pour « Tout le monde » dans les partages de fichiers et fournissez l’accès uniquement aux utilisateurs et groupes souhaités. Le connecteur lit ensuite ces restrictions d’accès et les applique à la recherche.
 
-Vous pouvez choisir les AAL de partage uniquement si le chemin d’accès de partage que vous avez fourni suit le format de chemin d’accès UNC. Vous pouvez créer un chemin d’accès au format UNC en allant à « Partage avancé » sous l’option « Partage ».
+Vous pouvez choisir les ACA de partage uniquement si le chemin d’accès au partage que vous avez fourni suit le format de chemin d’accès UNC. Vous pouvez créer un chemin d’accès au format UNC en allant à « Partage avancé » sous l’option « Partage ».
 
 ![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
 

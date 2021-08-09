@@ -1,5 +1,5 @@
 ---
-title: Configurer votre connecteur d’Graph Microsoft pour Microsoft Search (recherche Microsoft)
+title: Configurer votre connecteur de Graph Microsoft pour Recherche Microsoft
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,31 +12,31 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Vue d’ensemble du Graph de configuration par Microsoft
-ms.openlocfilehash: ef94d530af63d8b8b33dfae3c4b411164ef31feb
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+description: Vue d’ensemble de la configuration des connecteurs Graph par Microsoft
+ms.openlocfilehash: 0c67081d3efab421b563e82dba506da85e65cb91d34b31f128f3bcff945c68a1
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720942"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533304"
 ---
 <!-- Previous ms.author: monaray -->
 
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Vue d’ensemble du Graph de configuration par Microsoft 
+# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Vue d’ensemble de la configuration des connecteurs Graph par Microsoft 
 
-Cet article montre le processus de base requis pour configurer les connecteurs Graph par **Microsoft** dans le centre d Microsoft 365'administration. [](https://admin.microsoft.com) Ce processus simple comprend les étapes suivantes :  
+Cet article montre le processus de base requis pour configurer les connecteurs Graph par **Microsoft** dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com). Ce processus simple comprend les étapes suivantes :  
 <!---Add links to each section in the doc--->
 
-1. [Ajouter un connecteur Graph dans le centre d’administration Microsoft 365 de gestion](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
+1. [Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
 2. [Nommer la connexion](#step-2-name-the-connection)
 3. [Configurer les paramètres de connexion](#step-3-configure-the-connection-settings)
 4. [Gérer les autorisations de recherche](#step-4-manage-search-permissions)
 5. [Attribuer des étiquettes de propriété](#step-5-assign-property-labels)
 6. [Gérer le schéma](#step-6-manage-schema)
-7. [Actualiser les paramètres](#step-7-refresh-settings)
-8. [Passer en revue la connexion](#step-8-review-connection)
+7. [Rafraîchir les paramètres](#step-7-refresh-settings)
+8. [Examiner la connexion](#step-8-review-connection)
 
 Cet article inclut également des informations sur la résolution des problèmes, les limitations et les étapes suivantes :
 
@@ -51,11 +51,11 @@ Cet article inclut également des informations sur la résolution des problèmes
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le centre d Microsoft 365'administration
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
 
 Pour configurer l’un des connecteurs Graph Microsoft, vous pouvez effectuer les étapes suivantes :
 
-1. Connectez-vous à votre compte d’administrateur dans [Microsoft 365 centre d’administration.](https://admin.microsoft.com)
+1. Connectez-vous à votre compte d’administrateur dans [le Centre d’administration Microsoft 365](https://admin.microsoft.com).
 
 2. Dans le volet de navigation, **sélectionnez Paramètres,** puis **recherchez & intelligence.** Sélectionnez [l’onglet Connecteurs.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)
 
@@ -138,7 +138,7 @@ Attribut de schéma de recherche | Fonction | Exemple
 SEARCH | Rend le contenu de texte d’une propriété utilisable dans une recherche. Le contenu de la propriété est inclus dans l’index de texte intégral. | Si la propriété est **un titre,** une requête de **Enterprise** renvoie des réponses qui contiennent le mot Enterprise **dans** n’importe quel texte ou titre.
 REQUÊTE | Recherche par requête une correspondance pour une propriété particulière. Le nom de la propriété peut ensuite être spécifié dans la requête par programme ou par mot. |  Si la **propriété Title** peut être interrogé, la requête **Title: Enterprise** est prise en charge.
 RETRIEVE | Seules les propriétés récupérables peuvent être utilisées dans le type de résultat et affichées dans le résultat de recherche. |
-AFFINER | L’option d’affinment peut être utilisée comme dans la page des résultats de recherche Microsoft. | Les utilisateurs de votre organisation peuvent [filtrer](custom-filters.md) par **URL** dans la page des résultats de la recherche si la propriété Affiner est marquée lors de la configuration de la connexion
+AFFINER | L’option d’affinment peut être utilisée comme dans la page Recherche Microsoft résultats. | Les utilisateurs de votre organisation peuvent [filtrer](custom-filters.md) par **URL** dans la page des résultats de la recherche si la propriété Affiner est marquée lors de la configuration de la connexion
 
 Pour tous les connecteurs à l’exception du connecteur de partage de fichiers, les types personnalisés doivent être définies manuellement. Pour activer les fonctionnalités de recherche pour chaque champ, vous avez besoin d’un schéma de recherche mappé à une liste de propriétés. L’Assistant Connexion sélectionne automatiquement un schéma de recherche basé sur l’ensemble des propriétés sources que vous choisissez. Vous pouvez modifier ce schéma en sélectionnant les cases à cocher pour chaque propriété et attribut dans la page de schéma de recherche.
 
@@ -160,7 +160,7 @@ Pour tous les connecteurs à l’exception du connecteur de partage de fichiers,
 
 ## <a name="step-7-refresh-settings"></a>Étape 7 : Actualiser les paramètres
 
-L’intervalle d’actualisation détermine la fréquence de synchronisation de vos données entre la source de données et Microsoft Search (recherche Microsoft). Chaque type de source de données possède un ensemble différent de planifications d’actualisation optimales en fonction de la fréquence de modification des données et du type de modifications.
+L’intervalle d’actualisation détermine la fréquence de synchronisation de vos données entre la source de données et Recherche Microsoft. Chaque type de source de données possède un ensemble différent de planifications d’actualisation optimales en fonction de la fréquence de modification des données et du type de modifications.
 
 Il existe deux types d’intervalles d’actualisation: l’actualisation complète et l’actualisation incrémentielle, mais les actualisations incrémentielles ne sont pas disponibles pour certaines sources de données.  
 
@@ -202,6 +202,6 @@ Pour en savoir plus sur les limitations qui s’appliquent à toutes les sources
 
 Consultez les informations spécifiques au connecteur pour votre source de données afin de savoir si d’autres limitations s’appliquent à ce connecteur Graph spécifique.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Après avoir publié la connexion, vous devez personnaliser la page des résultats de la recherche. Pour en savoir plus sur la personnalisation des résultats de recherche, voir [Personnaliser la page des résultats de la recherche.](customize-search-page.md)

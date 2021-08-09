@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur Graph Atlassian Jira pour Recherche Microsoft
-ms.openlocfilehash: 55457adf9c507ba9f551732cdb014b48b5df4d9f
-ms.sourcegitcommit: 9cfe9b7f6d4ddf783ee31a6d2a02a73f0c0aef79
+ms.openlocfilehash: 6023e8ec4539bd37358a3e801ef81947fe9f87ff38736344347d5634d0527753
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53590272"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533688"
 ---
 # <a name="atlassian-jira-graph-connector-preview"></a>Connecteur d’Graph Atlassian Jira (prévisualisation)
 
@@ -30,7 +30,7 @@ Le connecteur de Graph atlassien permet à votre organisation d’indexer les pr
 Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur d’Graph Atlassian. Il complète le processus d’installation général et affiche des instructions qui s’appliquent uniquement au connecteur Graph Atlassian.
 
 >[!IMPORTANT]
->Le connecteur d’Graph atlassian Jira prend en charge uniquement les instances hébergées dans le cloud Jira. Les versions Jira Server et Jira Data Center ne sont pas pris en charge par ce connecteur.
+>Le connecteur d’Graph atlassian Jira prend en charge uniquement les instances hébergées dans le cloud Jira. Les versions de Jira Server et du centre de données Jira ne sont pas pris en charge par ce connecteur.
 
 ## <a name="before-you-get-started"></a>Avant de commencer
 Vous devez être l’administrateur du client M365 de votre organisation, ainsi que l’administrateur du site Jira de votre organisation.
@@ -52,7 +52,7 @@ Inscrivez une application dans atlassian Jira afin que l’Recherche Microsoft�
 
 Les étapes suivantes fournissent des instructions sur la façon d’inscrire l’application :
 
-1. Connectez-vous [à la console Atlassian Developer avec](https://developer.atlassian.com/console/myapps/) votre compte d’administrateur Atlassian Jira.
+1. Connectez-vous à [la console Atlassian Developer avec](https://developer.atlassian.com/console/myapps/) votre compte d’administrateur Atlassian Jira.
 2. Cliquez dessus `Create` et sélectionnez `OAuth 2.0 integration`
 3. Fournissez un nom approprié pour l’application et créez-la.
 4. Accédez `Permissions` au volet de navigation à gauche. Cliquez `Add` pour `Jira platform REST API` . Une fois ajouté, cliquez sur `Configure` et ajoutez les étendues suivantes `View Jira issue data` : et `Manage Jira global settings` `View user profiles` .
@@ -77,7 +77,7 @@ Vous pouvez également choisir de filtrer les problèmes de Jira qui seront inde
 
 ### <a name="step-3b-configure-data-select-properties"></a>Étape 3b : Configurer les données : sélectionner les propriétés
 
-Sélectionnez les champs que vous souhaitez que la connexion indexe et prévisualiser les données de ces champs avant de poursuivre. Certains champs sont déjà sélectionnés par défaut et ne peuvent pas être supprimés.
+Sélectionnez les champs que vous souhaitez que la connexion indexe et prévisualiser les données dans ces champs avant de poursuivre. Certains champs sont déjà sélectionnés par défaut et ne peuvent pas être supprimés.
 
 Le connecteur d’Graph atlassien peut indexer à la fois les champs de problème par défaut ainsi que les champs de problèmes créés personnalisés.
 

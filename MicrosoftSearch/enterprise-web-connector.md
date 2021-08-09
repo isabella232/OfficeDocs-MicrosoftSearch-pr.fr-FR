@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurer le connecteur Enterprise sites web Graph pour Recherche Microsoft
-ms.openlocfilehash: 32e38c9bef036556dae2734e23b1d26ba4fe2c27
-ms.sourcegitcommit: 38a0f09596c2bca0e12bf4cada7b4c64fd4c48e4
+description: Configurer le connecteur de Enterprise web Graph pour Recherche Microsoft
+ms.openlocfilehash: 7e308c8239fbc4ea0da5449731d25442490270f9d604a40944d17cd2bf367a0c
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53449045"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533077"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -29,7 +29,7 @@ ms.locfileid: "53449045"
 Le connecteur Enterprise sites web Graph permet à votre organisation d’indexer des articles et du contenu à partir de ses sites web **internes.** Après avoir configuré le connecteur et synchronisé le contenu à partir du site web, les utilisateurs finaux peuvent rechercher ce contenu à partir de n’importe quel client Recherche Microsoft client.
 
 > [!NOTE]
-> Lisez [**l’article Configurer votre connecteur Graph pour**](configure-connector.md) comprendre les instructions générales Graph d’installation des connecteurs.
+> Lisez [**l’article Configurer votre connecteur Graph pour**](configure-connector.md) comprendre les instructions générales Graph’installation des connecteurs.
 
 Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur Enterprise sites web. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur Enterprise sites web. Cet article inclut également des informations [sur la résolution des problèmes.](#troubleshooting)
 
@@ -79,7 +79,7 @@ Outre la case à cocher, trois champs facultatifs sont disponibles :
 
 Le mode d’analyse détermine le type de sites web que vous souhaitez indexer, en nuage ou en local. Pour vos sites web cloud, sélectionnez **Cloud** comme mode d’analyse.
 
-En outre, le connecteur prend désormais en charge l’analyse des sites web locaux. Pour accéder à vos données sur site, vous devez d’abord installer et configurer l’agent Graph connecteur. Pour plus d’informations, [voir Graph agent connecteur.](./on-prem-agent.md)
+En outre, le connecteur prend désormais en charge l’analyse des sites web locaux. Pour accéder à vos données sur site, vous devez d’abord installer et configurer l’agent Graph connecteur. Pour plus d’informations, [voir Graph agent connecteur.](./graph-connector-agent.md)
 
 Pour vos sites web locaux, sélectionnez **Agent** comme mode d’analyse et, dans le champ **Agent** local, choisissez l’agent de connecteur Graph que vous avez installé et configuré précédemment.  
 
@@ -112,7 +112,7 @@ Vous pouvez éventuellement créer une liste **d’exclusions** pour exclure cer
 
 ## <a name="step-4-assign-property-labels"></a>Étape 4 : Attribuer des étiquettes de propriété
 
-Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Bien que cette étape ne soit pas obligatoire, le fait d’avoir certaines étiquettes de propriétés améliorera la pertinence de la recherche et garantira des résultats de recherche plus précis pour les utilisateurs finaux.
+Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Bien que cette étape ne soit pas obligatoire, le fait d’avoir des étiquettes de propriétés améliorera la pertinence de la recherche et garantira des résultats de recherche plus précis pour les utilisateurs finaux.
 
 ## <a name="step-5-manage-schema"></a>Étape 5 : Gérer le schéma
 
@@ -138,7 +138,7 @@ Lors de la lecture du contenu du site web, l’analyse peut rencontrer des erreu
  Code d’erreur détaillé | Message d’erreur
  --- | ---
  6001 | Le site en cours d’indexation n’est pas accessible
- 6005 | La page source en cours d’indexation a été bloquée par la configuration robots.txt'indexation.
+ 6005 | La page source tentée d’indexer a été bloquée par la configuration robots.txt'indexation.
  6008 | Impossible de résoudre le DNS
  6009 | Pour toutes les erreurs côté client (à l’exception de HTTP 404, 408), reportez-vous aux codes d’erreur HTTP 4xx pour plus d’informations.
  6013 | La page source en cours d’indexation est in trouvée. (Erreur HTTP 404)

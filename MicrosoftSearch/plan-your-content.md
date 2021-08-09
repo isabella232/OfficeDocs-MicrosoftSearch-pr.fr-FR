@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
 description: Fournissez du contenu de qualité sans recourir à des ressources supplémentaires lorsque vous utilisez Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 65cc9fbec655ec849e32d7b6e14c6947ab30bbc2
-ms.sourcegitcommit: 46303c60e905c89c133278fa41e87055f81a8637
+ms.openlocfilehash: 3b22fcc8bd1f399baf5879fa1eb7461a58c5165e6b9f6f5c39ff4c154eaba98a
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44535346"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532685"
 ---
 # <a name="plan-your-content"></a>Programmez votre contenu
 
-**Microsoft Search** aide les utilisateurs à trouver le contenu pertinent. La fonctionnalité **Recherche Microsoft** permet d’effectuer des recherches de contenu sécurisées sur votre intranet et sur le web. Microsoft est le seul à proposer ce type d’intégration web et entreprise.
+**Recherche Microsoft** permet aux utilisateurs de trouver du contenu pertinent. La fonctionnalité **Recherche Microsoft** permet d’effectuer des recherches de contenu sécurisées sur votre intranet et sur le web. Microsoft est le seul à proposer ce type d’intégration web et entreprise.
 
 Les administrateurs de recherche utilisent leur connaissance de l’organisation et de ses utilisateurs pour permettre à ces derniers d’accéder facilement à du contenu pertinent.
 

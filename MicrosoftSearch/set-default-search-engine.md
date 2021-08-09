@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 description: Découvrez comment définir Bing comme moteur de recherche par défaut de votre entreprise à l’aide de Microsoft Search (recherche Microsoft).
-ms.openlocfilehash: 346bf3bf2da10178a8bd19390920db2d9de2629e
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 7ad9ff2a0fde5ad5d84a7a51785767fd2e5d21df6654a76b09e9796917a92a0f
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031754"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54534183"
 ---
 # <a name="make-bing-the-default-search-engine"></a>Définir Bing en tant que moteur de recherche par défaut
   
@@ -42,11 +42,11 @@ Chaque domaine que votre contrôleur gère doit avoir un dossier séparé. La co
 4. Appliquez la stratégie de groupe résultante GPO en les reliant au domaine approprié.
 
 
-## <a name="google-chrome-on-windows-10-version-1507-or-later"></a>Google Chrome sur Windows 10, version 1507 ou ultérieure
+## <a name="google-chrome-on-windows-10-version-1507-or-later"></a>Google Chrome sur Windows 10 version 1507 ou ultérieure
 
 Une fois cette stratégie définie, les utilisateurs ne pourront plus modifier le moteur de recherche par défaut.
   
-Chrome est fourni avec son propre ensemble de paramètres de stratégie de groupe qui peuvent être téléchargés sous la forme d’un fichier ADMX à partir de l’aide de [Google Chrome Enterprise](https://support.google.com/chrome/a/answer/187202).
+Chrome est fourni avec son propre ensemble de paramètres de stratégie de groupe qui peuvent être téléchargés sous la forme d’un fichier ADMX à partir de l’aide de [Google Chrome Enterprise.](https://support.google.com/chrome/a/answer/187202)
   
 Copiez le fichier modèle dans un magasin central pour les fichiers ADMX sur le contrôleur de domaine. Pour plus d’informations, voir [Modification de Domain-Based de groupe à l’aide de fichiers ADMX.](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29) Le magasin central sur le contrôleur est un dossier avec la convention d’attribution de noms suivante : **%systemroot%\sysvol \\<domain \> \policies\PolicyDefinitions**
   

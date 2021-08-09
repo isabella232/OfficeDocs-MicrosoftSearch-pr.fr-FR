@@ -12,17 +12,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: Gérer la façon dont les Power BI et les données apparaissent dans les résultats de recherche
-ms.openlocfilehash: 4b2251bdb8039c25fb1ec5290f3374a9f4eb3fd1
-ms.sourcegitcommit: 4b72a31910753d46373a829a64ffec77fe6bc855
+description: Gérer la façon dont Power BI et les données apparaissent dans les résultats de la recherche
+ms.openlocfilehash: a9148ab621703d89ddbe0f225ac2b0697748d8a2e85ffe96cec1763e04deeda9
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547699"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533613"
 ---
 # <a name="manage-power-bi-answers"></a>Gérer Power BI réponses
 
-Pour faciliter la recherche des données et des analyses dont ils ont besoin pour prendre des décisions éclairées, Microsoft Search (recherche Microsoft) a ajouté la prise en charge de Power BI tableaux de bord et de rapports. Voici quelques-uns des avantages de la Power BI recherche :
+Pour que vos utilisateurs trouvent plus facilement les données et les analyses dont ils ont besoin pour prendre des décisions éclairées, Recherche Microsoft a ajouté la prise en charge des tableaux de bord et des rapports Power BI de données. Voici quelques-uns des avantages de la Power BI recherche :
 
 * **Facile à utiliser :** Cette expérience de recherche out-of-box permet aux utilisateurs de trouver facilement et rapidement Power BI tableaux de bord et rapports au sein de votre organisation.
 * **Contenu enrichi :** Pour rendre les Power BI de recherche plus utiles, ils incluent des informations clés telles que le type de contenu (tableau de bord ou rapport), ainsi que l’équipe ou la personne qui en est propriétaire.
@@ -31,7 +31,7 @@ Pour faciliter la recherche des données et des analyses dont ils ont besoin pou
 
 ## <a name="what-users-experience"></a>Expérience des utilisateurs
 
-Les utilisateurs de Microsoft Search (recherche Microsoft) peuvent trouver Power BI résultats en recherchant à partir de la zone de recherche Windows, SharePoint, Office 365 et Bing. Les utilisateurs peuvent rechercher des rapports et des tableaux de bord avec des requêtes comme celles-ci :
+Recherche Microsoft utilisateurs peuvent trouver Power BI résultats en recherchant dans la zone de recherche Windows, SharePoint, Office 365 et Bing. Les utilisateurs peuvent rechercher des rapports et des tableaux de bord avec des requêtes comme celles-ci :
 
 * Power BI à propos de`<topic>`
 * Power BI for`<topic>`
@@ -51,13 +51,13 @@ Power BI résultats sont activés pour votre organisation par défaut. Votre adm
 :::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="Capture d’écran du paramètre pour activer Power BI de réponse" border="true":::
 
 > [!NOTE]
-> Lorsque vous utilisez La recherche Microsoft, votre requête de recherche et les résultats renvoyés par Power BI peuvent être traitées dans une région ou une zone géographique différente de l’emplacement où se trouvent vos données client Power BI.
+> Lorsque vous utilisez Recherche Microsoft, votre requête de recherche et les résultats renvoyés par Power BI peuvent être traitées dans une région ou une zone géographique différente de l’emplacement où se trouvent vos données client Power BI.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Forum Aux Questions
 
 **Q : La recherche Power BI est-elle activée par défaut ?**
 
-**R :** Oui. Power BI recherche est activée par défaut pour Microsoft Search (recherche Microsoft). Aucune configuration initiale n’est requise par l’administrateur client pour cette fonctionnalité.
+**R :** Oui. Power BI recherche est activée par défaut pour Recherche Microsoft. Aucune configuration initiale n’est requise par l’administrateur client pour cette fonctionnalité.
 
 **Q : La recherche Power BI peut-elle être activée ou désactivée pour des groupes ou des utilisateurs spécifiques ?**
 
@@ -69,12 +69,12 @@ Power BI résultats sont activés pour votre organisation par défaut. Votre adm
 
 **Q : Est-ce que je vais voir la page Power BI résultats de la recherche si je n’ai pas Power BI licence ?**
 
-**R :** Non. Si un utilisateur de recherche n’a pas de licence Power BI, la page Power BI résultats de recherche n’apparaît pas dans les résultats de recherche Microsoft.
+**R :** Non. Si un utilisateur de recherche n’a pas de licence Power BI, la page Power BI résultats de la recherche n’apparaîtra pas dans Recherche Microsoft résultats.
 
 **Q : Est-ce que je vais voir Power BI résultats de recherche que je ne peux pas accéder ?**
 
-**R :** Non. Microsoft Search (recherche Microsoft) retourne uniquement Power BI résultats que vous avez accès.
+**R :** Non. Recherche Microsoft renvoyer uniquement les Power BI que vous avez accès.
 
 **Q : Puis-je personnaliser les résultats Power BI recherche (par exemple, le type de rapport ou le propriétaire du rapport) ?**
 
-**R :** Actuellement, nous ne personnalisations pas les champs inclus dans les résultats Power BI recherche.
+**R :** Actuellement, nous ne personnalisations pas les champs inclus dans les Power BI de recherche.

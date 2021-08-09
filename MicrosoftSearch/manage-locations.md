@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: Au fil du temps, il se peut que vous deviez mettre à jour le statut et le contenu de certains emplacements afin qu’ils restent pertinents. 
-ms.openlocfilehash: ab093cca1c340268b2fd43f7594eb48eddf32208
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 5e9d88fc08458e928e52988124ee94c60829c7bb71ed13f8534b71ca08e2d50c
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422882"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532874"
 ---
 # <a name="manage-locations"></a>Gérer les emplacements
 
@@ -28,8 +28,8 @@ Les emplacements permettent à vos utilisateurs de trouver des adresses et de lo
 
 ### <a name="add-or-edit-a-single-location"></a>Ajouter ou modifier un seul emplacement
 
-1. Dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com), accédez à [**emplacements**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations) .
-1. Pour ajouter un nouvel emplacement, sélectionnez **Ajouter**.
+1. Dans la [Centre d’administration Microsoft 365](https://admin.microsoft.com), allez à [**Emplacements**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)
+1. Pour ajouter un nouvel emplacement, sélectionnez **Ajouter.**
 1. Pour modifier un emplacement, sélectionnez-le dans la liste.
 1. Lorsque vous ajoutez ou modifiez les informations, l’aperçu est automatiquement mis à jour.
 1. Enregistrez vos modifications.
@@ -42,7 +42,7 @@ Utilisez la fonction d’importation/exportation pour les opérations suivantes�
 
 1. Ajout en bloc d’emplacements - Ajoutez des détails dans le fichier modèle de l’emplacement, puis importez-le.
 1. Modification en bloc d’emplacements - Exportez les emplacements dans un fichier .csv, modifiez les détails des emplacements dans le fichier .csv exporté, puis importez le fichier .csv mis à jour.
-1. Emplacements de sauvegarde : exportez les emplacements existants dans un fichier. csv.
+1. Emplacements de sauvegarde : exportez les emplacements existants vers .csv fichier.
 
 Pour exporter ou importer des emplacements :
 
@@ -57,13 +57,13 @@ Téléchargez le fichier modèle pour obtenir la liste des champs et détails re
 Remarques importantes concernant le fichier modèle :
 
 - Ne modifiez jamais les données dans les champs suivants : *ID*, *Dernière modification* et *Dernière modification par*.
-- Si vous incluez l' *ID* d’un emplacement existant, il sera remplacé par les informations du fichier d’importation.
-- S’il existe un emplacement existant portant le même nom, l’emplacement est mis à jour avec les informations contenues dans le fichier d’importation.
-- Les champs du fichier de modèle ne sont pas tous obligatoires et les champs obligatoires varient en fonction de l’état de l’emplacement.
-- En fonction du champ d' *État* , les emplacements seront enregistrés en tant que brouillon, suggéré, programmé, ou ils seront publiés automatiquement.
-- Pour les partenaires qui gèrent plusieurs organisations, vous pouvez exporter vos emplacements d’une organisation et les importer dans un autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne *ID*.
+- Si vous incluez *l’ID* d’un emplacement existant, il sera remplacé par les informations dans le fichier d’importation.
+- S’il existe un emplacement du même nom, l’emplacement est mis à jour avec les informations dans le fichier d’importation.
+- Tous les champs du fichier modèle ne sont pas obligatoires et les champs requis varient en fonction de l’état de l’emplacement.
+- En fonction du *champ État,* les emplacements sont enregistrés en tant que brouillons, suggérés, programmés ou publiés automatiquement.
+- Pour les partenaires qui gèrent plusieurs organisations, vous pouvez exporter vos emplacements à partir d’une organisation et les importer dans une autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne *ID*.
 
 > [!NOTE]
-> Vous ne pouvez pas importer d’emplacements s’il existe des erreurs dans le fichier de modèle. Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement mis en forme et qu’il contient toutes les informations requises.
+> Vous ne pouvez pas importer des emplacements s’il existe des erreurs dans le fichier modèle. Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement mis en forme et qu’il contient toutes les informations requises.
 
 Pour plus d’informations sur la prévention des erreurs, consultez [Éviter les erreurs d’importation](manage-bookmarks.md#prevent-import-errors).

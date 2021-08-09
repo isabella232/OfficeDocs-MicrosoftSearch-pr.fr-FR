@@ -12,26 +12,26 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer la fonctionnalité Recherche Microsoft pour la première fois.
-ms.openlocfilehash: 98499c2df1d8d732cdc1961116cafaaffeb4c5d6
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 9a52695f3a7494b27849ff21798302777716b9bda755ff372e605ec45a6d94b5
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031664"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54534121"
 ---
 # <a name="set-up-microsoft-search"></a>Configurer la fonctionnalité Recherche Microsoft
 
-Microsoft Search (recherche Microsoft) fournit une interface conviviale pour aider les utilisateurs à trouver des informations telles que des fichiers et des documents, sites internes et outils d’entreprise, personnes et groupes, emplacements et instructions, conversations et réponses. Pour ce faire, il accède en toute sécurité à toutes les sources de données, y compris les e-mails, les fichiers, les fichiers SharePoint, le contenu OneDrive et d’autres ressources partagées. Avec Recherche Microsoft dans Bing, vous pouvez également obtenir des résultats de recherche à partir d’Internet.
+Recherche Microsoft fournit une interface conviviale pour aider les utilisateurs à trouver des informations telles que des fichiers et des documents, des sites internes et des outils d’entreprise, des personnes et des groupes, des emplacements et des instructions, des conversations et des réponses. Pour ce faire, il accède en toute sécurité à toutes les sources de données, y compris les e-mails, les fichiers, les fichiers SharePoint, le contenu OneDrive et d’autres ressources partagées. Avec Recherche Microsoft’Bing vous pouvez également obtenir des résultats de recherche à partir d’Internet.
 
 Pour en savoir plus sur la fonctionnalité Recherche Microsoft, consultez [Vue d’ensemble de Recherche Microsoft](overview-microsoft-search.md).
 
 ## <a name="get-started"></a>Prise en main
 
-La fonctionnalité Recherche Microsoft est activée par défaut pour toutes les applications Microsoft qui la prennent en charge, dans le cadre de Microsoft 365. Aucune configuration n’est requise, mais vous pouvez améliorer l’expérience globale de Recherche Microsoft par le biais de certaines tâches administratives de base.
+La fonctionnalité Recherche Microsoft est activée par défaut pour toutes les applications Microsoft qui la prennent en charge, dans le cadre de Microsoft 365. Aucune configuration n’est requise, mais vous pouvez améliorer l’expérience Recherche Microsoft globale via certaines tâches d’administration de base.
 
 Vous gérez Recherche Microsoft à partir du Centre d’administration Microsoft 365.
 
-1. Dans le Centre d’administration Microsoft 365, go to **Settings**  >  [**Search & intelligence**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch).
+1. In Centre d’administration Microsoft 365, go to **Paramètres**  >  [**Search & intelligence**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch).
 
 En tant qu’administrateur, vous devez tenir compte de certains éléments pour rendre l’expérience Recherche Microsoft efficace et conviviale au sein de votre organisation.
 
@@ -48,16 +48,16 @@ Les administrateurs de recherche ont une influence directe sur l’expérience d
 
 ## <a name="step-2-create-answers"></a>Étape 2 : Créer des réponses
 
-La fonctionnalité Recherche Microsoft fournit aux administrateurs des outils qui leur permettent de créer une expérience de recherche robuste pour leurs utilisateurs. Dans Microsoft Search (recherche Microsoft), les administrateurs ont trois contenus de recherche différents qu’ils peuvent créer pour une meilleure expérience de recherche et pour améliorer la « findability » du contenu :
+La fonctionnalité Recherche Microsoft fournit aux administrateurs des outils qui leur permettent de créer une expérience de recherche robuste pour leurs utilisateurs. Dans Recherche Microsoft, les administrateurs ont trois contenus de recherche différents qu’ils peuvent créer pour une meilleure expérience de recherche et pour améliorer la « capacité de recherche » du contenu :
 
 Les signets sont le type de réponse le plus couramment utilisé. Ils promeuvent les meilleurs résultats possibles pour les requêtes de vos utilisateurs en haut des résultats de recherche et leur permet de trouver facilement ce qu’ils recherchent.
-Contenu d’information disponible pour tout le monde ; par exemple, des informations sur l’entreprise, de l’aide pour les applications Windows et Office, etc. Contenu que les membres de l’organisation recherchent généralement dans leur travail quotidien. Dans ce domaine, les recherches les plus courantes concernent les avantages sociaux des employés, les fiches de présence et les notes de frais, l’envoi de bons de commande et l’obtention d’aide auprès des services informatiques.
+Contenu d’information disponible pour tout le monde ; par exemple, des informations sur la société, de l’aide Windows et Office applications, etc. Contenu que les membres de l’organisation recherchent généralement dans leur travail quotidien. Dans ce domaine, les recherches les plus courantes concernent les avantages sociaux des employés, les fiches de présence et les notes de frais, l’envoi de bons de commande et l’obtention d’aide auprès des services informatiques.
 
 Pour créer et gérer les réponses, voir [Planifier votre contenu.](plan-your-content.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Si vous souhaitez en savoir plus sur la façon dont vos utilisateurs utiliseront Microsoft Search (recherche Microsoft), consultez les articles suivants :
+Si vous souhaitez en savoir plus sur la façon dont vos utilisateurs utiliseront Recherche Microsoft, consultez les articles suivants :
 
 - [Trouvez ce dont vous avez besoin avec la fonctionnalité Recherche Microsoft d’Office](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446)
 - [Centre de formation Office 365](https://support.office.com/office-training-center)

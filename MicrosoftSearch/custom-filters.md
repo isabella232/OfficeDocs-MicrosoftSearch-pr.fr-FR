@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Gérer les filtres personnalisés
-ms.openlocfilehash: a050921058eac50d7588f1e71f5b0f56cc8e5752
-ms.sourcegitcommit: a86265684871da86562a76c4961d0a6c1869f517
+ms.openlocfilehash: 339c7e96a00860a044a4e1af7382932f8e440e01b8b6d12445c24c1ea9b8cad0
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790329"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533127"
 ---
 # <a name="manage-custom-filters"></a>Gérer les filtres personnalisés
 
-Vous pouvez utiliser des filtres pour personnaliser l’expérience Recherche Microsoft. Les filtres permettent aux utilisateurs d’affiner rapidement l’ensemble des résultats de leur requête de recherche.
+Vous pouvez utiliser des filtres pour personnaliser l Recherche Microsoft expérience utilisateur. Les filtres permettent aux utilisateurs d’affiner rapidement l’ensemble des résultats de leur requête de recherche.
 
 Un filtre personnalisé peut être créé à l’intérieur d’un secteur vertical basé sur une propriété de connexion. Par exemple, vous pouvez créer un **filtre Publié sur** pour la connexion ServiceNow à l’intérieur d’un secteur vertical.
 
@@ -29,7 +29,7 @@ Un filtre personnalisé peut être créé à l’intérieur d’un secteur verti
 
 Pour créer un filtre sur la recherche Microsoft, suivez les étapes suivantes :
 
-1. Dans le Centre d’administration Microsoft 365, allez à [Verticals](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
+1. Dans la Centre d’administration Microsoft 365, allez à [Verticals](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 1. Créer/modifier le secteur vertical dans lequel vous souhaitez créer le filtre
 1. Accédez à l’étape « Filtres » de l’Assistant
 1. Cliquez sur « Ajouter un filtre » et commencer
@@ -49,7 +49,7 @@ Pour créer un filtre sur la recherche Microsoft, suivez les étapes suivantes :
 
 1. Les filtres existent dans l’étendue d’un secteur vertical.
 
-    - Si un filtre est créé dans un secteur vertical au niveau de l’organisation, le filtre n’est visible qu’au niveau de l’organisation.
+    - Si un filtre est créé dans un secteur vertical qui se trouve au niveau de l’organisation, le filtre n’est visible qu’au niveau de l’organisation.
     - Si un filtre est créé dans un secteur vertical qui se trouve au niveau du site, le filtre n’est visible qu’au niveau du site.
 
 ## <a name="known-limitations"></a>Limitations connues

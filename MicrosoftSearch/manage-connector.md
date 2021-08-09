@@ -1,5 +1,5 @@
 ---
-title: Gérer les connecteurs Microsoft Graph pour Microsoft Search (recherche Microsoft)
+title: Gérer les connecteurs Graph Microsoft pour Recherche Microsoft
 ms.author: mecampos
 author: monaray97
 manager: mnirkhe
@@ -12,27 +12,27 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Gérer les connecteurs Microsoft Graph pour Microsoft Search (recherche Microsoft).
-ms.openlocfilehash: 685b501f3afe25d75c13a1fe6cc2c1b5db8a3511
-ms.sourcegitcommit: e5d695c40b68c2f1fa082fa9de20b9aa6d5b8050
+description: Gérer les connecteurs Graph Microsoft pour Recherche Microsoft.
+ms.openlocfilehash: e8cf01cb3af3dea96ba98ab65e12d54a027ab77fa92e00c354331ac887578b0f
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52325167"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532905"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
 # <a name="monitor-your-connections"></a>Surveiller vos connexions
 
-Pour accéder à vos connecteurs et les gérer, vous devez être désigné comme administrateur de recherche pour votre client. Contactez votre administrateur client pour vous fournir le rôle d’administrateur de recherche.
+Pour accéder à vos connecteurs et les gérer, vous devez être désigné en tant qu’administrateur de recherche pour votre client. Contactez votre administrateur client pour vous fournir le rôle d’administrateur de recherche.
 
 ## <a name="connection-operations"></a>Opérations de connexion
 
-Accédez à [l’onglet Connecteurs](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) dans le [Centre d’administration Microsoft 365.](https://admin.microsoft.com)
+Accédez à [l’onglet Connecteurs](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) dans [la Centre d’administration Microsoft 365](https://admin.microsoft.com).
 
-Pour chaque type de connecteur, le Centre [d’administration Microsoft 365](https://admin.microsoft.com) prend en charge les opérations indiquées dans le tableau suivant :
+Pour chaque type de connecteur, la [Centre d’administration Microsoft 365](https://admin.microsoft.com) prend en charge les opérations indiquées dans le tableau suivant :
 
-Opération | Connecteurs Graph par Microsoft | Connecteurs partenaires ou Graph
+Opération | Connecteurs Graph par Microsoft | Connecteurs partenaires Graph de connexion
 --- | --- | ---
 Ajouter une connexion | :heavy_check_mark : (voir [vue d’ensemble du programme d’installation)](configure-connector.md) | :x : (faire référence à l’UX de votre partenaire ou de votre connecteur personnalisé)
 Supprimer une connexion | :heavy_check_mark: | :heavy_check_mark:
@@ -41,7 +41,7 @@ Modifier un brouillon de connexion | :heavy_check_mark: | :x:
 
 ## <a name="monitor-your-connection-state"></a>Surveiller l’état de votre connexion
 
-Après avoir créé une connexion, le nombre d’éléments **traitées** s’affiche sous l’onglet Connecteurs de la page **Recherche Microsoft.** Une fois l’analyse complète initiale terminée, la progression des analyses incrémentielles périodiques s’affiche. Cette page fournit des informations sur les opérations quotidiennes du connecteur et une vue d’ensemble des journaux et de l’historique des erreurs.
+Après avoir créé une connexion, le nombre d’éléments traitées s’affiche sous l’onglet **Connecteurs** **de Recherche Microsoft** page. Une fois l’analyse complète initiale terminée, la progression des analyses incrémentielles périodiques s’affiche. Cette page fournit des informations sur les opérations quotidiennes du connecteur et une vue d’ensemble des journaux et de l’historique des erreurs.
 
 Cinq états s’affiche dans la colonne **État** par rapport à chaque connexion :
 
@@ -62,8 +62,8 @@ Le quota d’index et la consommation disponibles sont affichés sur la page d�
 ![Barre d’utilisation du quota d’index](media/quota_utilization.png)
  
 >[!NOTE]
->Pendant la période d’aperçu, chaque organisation qui essaie des connecteurs Graph a été fournie avec un quota fixe gratuit de 2 millions d’éléments sur toutes les connexions. Les connecteurs Graph étant généralement disponibles, le quota gratuit expirera le 1er avril 2021 pour les organisations qui ont utilisé des connecteurs Graph en prévisualisation.
->Les connecteurs Graph créés par Microsoft et étiquetés comme « [Aperçu](./connectors-overview.md) » ne seront pas inclus dans le quota d’index facturé total pour votre organisation. Toutefois, il est comptabilisé dans le nombre maximum de 10 connexions que vous pouvez configurer pour votre organisation et le nombre maximum de 7 millions d’éléments que votre organisation peut indexer entre les connexions ; Chaque connexion est limitée à 700 000 éléments. 
+>Pendant la période d’aperçu, chaque organisation qui Graph des connecteurs de connexion a été fournie avec un quota fixe gratuit de 2 millions d’éléments sur toutes les connexions. Les connecteurs Graph étant généralement disponibles, le quota gratuit expirera le 1er avril 2021 pour les organisations qui ont utilisé des connecteurs Graph en prévisualisation.
+>Les connecteurs Graph microsoft étiquetés [](./connectors-overview.md) comme « Aperçu » ne seront pas inclus dans le quota d’index facturé total pour votre organisation. Toutefois, il est comptabilisé dans le nombre maximum de 10 connexions que vous pouvez configurer pour votre organisation et le nombre maximum de 7 millions d’éléments que votre organisation peut indexer entre les connexions ; Chaque connexion est limitée à 700 000 éléments. 
 
 La barre d’utilisation des quotas indiquera différents états en fonction de la consommation de quota par votre organisation :
 
@@ -88,7 +88,7 @@ Lorsque le quota d’index est dépassé pour votre organisation, toutes les con
 
 Pour résoudre ce problème, vous pouvez :
 
-* Découvrez comment acheter un quota d’index pour votre organisation en matière de [licences et de tarification.](licensing.md)
+* Découvrez comment acheter un quota d’index pour votre organisation selon les exigences de licence [et la tarification.](licensing.md)
 
 * Identifiez les connexions qui ont trop de contenu en cours d’ingestion et mettez-les à jour pour indexer moins d’éléments afin de faire de la place pour le quota. Pour mettre à jour la connexion, vous devez supprimer et créer une connexion avec un nouveau filtre d’ingestion qui apporte moins d’éléments.
 

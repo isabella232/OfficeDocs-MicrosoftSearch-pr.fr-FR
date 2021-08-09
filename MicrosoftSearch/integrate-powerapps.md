@@ -1,5 +1,5 @@
 ---
-title: Intégrer Power Apps
+title: Intégrer des Power Apps
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,21 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
-description: Inclure des applications basées sur le navigateur dans les résultats des signets pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 52fa78c54ab6db74ef1e3679d3d32151a3f5ac10
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: Inclure des applications basées sur le navigateur dans les résultats des signets pour Recherche Microsoft
+ms.openlocfilehash: 4571862919c2f8bd92f1756a70baef908eaa0eade649e6890c1ba56d314398c2
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031700"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532956"
 ---
-# <a name="integrate-power-apps-in-microsoft-search-bookmarks"></a>Intégration de Power Apps dans les signets de Recherche Microsoft
+# <a name="integrate-power-apps-in-microsoft-search-bookmarks"></a>Intégrer Power Apps dans Recherche Microsoft signets
    
-Aidez vos utilisateurs à effectuer des tâches, telles que la saisie de congés ou de rapports de dépenses, en intégrant des [applications Microsoft Power Apps](https://products.office.com/business/microsoft-powerapps) existantes dans vos signets Recherche Microsoft. Les applications Power Apps intégrées apparaissent dans un résultat de signet, ce qui élimine la nécessité d’aller sur un autre site ou d’ouvrir un outil distinct, ce qui permet d’économiser du temps et des efforts.
+Aidez vos utilisateurs à effectuer des tâches, telles que la saisie de congés ou de rapports de dépenses, en intégrant des Power Apps [Microsoft](https://products.office.com/business/microsoft-powerapps) dans vos signets Recherche Microsoft de travail. Les Power Apps intégrées apparaissent dans un résultat de signet, ce qui élimine la nécessité d’aller sur un autre site ou d’ouvrir un outil distinct, ce qui permet d’économiser du temps et des efforts.
   
-## <a name="what-are-power-apps"></a>Qu’est-ce que Power Apps ?
+## <a name="what-are-power-apps"></a>Quelles sont les Power Apps ?
 
-[Power Apps est](https://products.office.com/business/microsoft-powerapps) un service qui vous permet de créer des applications métier qui s’exécutent dans un navigateur ou sur un téléphone ou une tablette sans expérience de codage requise. En savoir plus :
+[Power Apps](https://products.office.com/business/microsoft-powerapps) est un service qui vous permet de créer des applications métier qui s’exécutent dans un navigateur ou sur un téléphone ou une tablette sans expérience de codage requise. En savoir plus :
   
 - [Formation guidée](/learn/browse/?products=powerapps)
     
@@ -34,11 +34,11 @@ Aidez vos utilisateurs à effectuer des tâches, telles que la saisie de congés
     
 ## <a name="add-a-power-app-to-a-bookmark"></a>Ajouter une application Power App à un signet
 
-[Power Apps( fonctionne dans n’importe quel navigateur et sur n’importe quel appareil et https://products.office.com/business/microsoft-powerapps) prend moins d’une minute pour l’ajouter.
+[Power Apps( fonctionnent dans n’importe quel navigateur et sur n’importe quel appareil et prennent moins https://products.office.com/business/microsoft-powerapps) d’une minute pour l’ajouter.
   
 1. [Recherchez l’ID de l’application Power App](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) que vous souhaitez intégrer.
     
-2. Dans le Centre d’administration Microsoft 365, go to **Bookmarks**. [](https://admin.microsoft.com)
+2. Dans le Microsoft 365 [d’administration,](https://admin.microsoft.com)allez à **Signets.**
     
 3. Ajoutez un signet ou recherchez un signet existant à ajouter à une application Power App.
     
@@ -54,4 +54,4 @@ Aidez vos utilisateurs à effectuer des tâches, telles que la saisie de congés
     
 7. Sélectionnez **Publier**.
     
-Lorsqu’un utilisateur microsoft search (recherche Microsoft) autorisé recherche sur [Bing](https://Bing.com) l’un des mots clés du signet ou des mots clés réservés, l’application Power apparaît dans le résultat du signet.
+Lorsqu’un utilisateur autorisé Recherche Microsoft recherche sur [Bing](https://Bing.com) l’un des mots clés ou des mots clés réservés du signet, Power App apparaît dans le résultat du signet.

@@ -1,5 +1,5 @@
 ---
-title: Connecteur MediaWiki Graph pour Microsoft Search (recherche Microsoft)
+title: Connecteur d’Graph MediaWiki pour Recherche Microsoft
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,24 +12,24 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurer le connecteur MediaWiki Graph pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: 5922cf76aa112430f9f6e857066acd054182058c
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: Configurer le connecteur d’Graph MediaWiki pour Recherche Microsoft
+ms.openlocfilehash: fff24ce918e3eab6a50d78977749a030ef17d0aef235e6d98e02bdf54fc63a0c
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031691"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532693"
 ---
 <!---Previous ms.author: monaray --->
 
-# <a name="mediawiki-graph-connector"></a>Connecteur MediaWiki Graph
+# <a name="mediawiki-graph-connector"></a>Connecteur d’Graph MediaWiki
 
-Le connecteur MediaWiki Graph permet à votre organisation de découvrir et d’indexer des données à partir d’un wiki créé à l’aide du logiciel MediaWiki. Ce connecteur indexe le contenu spécifié dans Microsoft Search (recherche Microsoft) et prend en charge les analyse périodiques pour maintenir l’index à jour.
+Le connecteur Graph MediaWiki permet à votre organisation de découvrir et d’indexer des données à partir d’un wiki créé à l’aide du logiciel MediaWiki. Ce connecteur indexe le contenu spécifié dans Recherche Microsoft et prend en charge les analyse périodiques pour maintenir l’index à jour.
 
 > [!NOTE]
-> Lisez [**l’article Configuration de votre connecteur Graph**](configure-connector.md) pour comprendre les instructions générales d’installation des connecteurs Graph.
+> Lisez [**l’article**](configure-connector.md) Installation de votre connecteur Graph pour comprendre les instructions générales Graph d’installation des connecteurs.
 
-Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur MediaWiki Graph. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur MediaWiki Graph. Cet article inclut également des informations sur [les limitations.](#limitations)
+Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur Graph MediaWiki. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur Graph MediaWiki. Cet article inclut également des informations sur [les limitations.](#limitations)
 
 <!---## Before you get started-->
 
@@ -49,7 +49,7 @@ Suivez les [instructions d’installation générales.](./configure-connector.md
 
 Entrez votre **URL Wiki** et choisissez le **type d’authentification** dans le menu déroulant des options. Les options sont **None**, **Basic** et **OAuth 2.0 AAD**.
 
-Si vous choisissez **De base** comme type d’authentification, vous devez fournir le nom d’utilisateur et le mot de **passe** du wiki. 
+Si vous choisissez **De base** comme type d’authentification, vous devez fournir le nom d’utilisateur et le mot de passe **du** wiki. 
 
 Si vous choisissez **OAuth 2.0 AAD** comme type d’authentification, vous devez fournir l’ID de ressource de l’installation wiki.  Vous devez également fournir **l’ID client** et la secret **client** générés sur la page d’inscription de l’application AAD.
 
@@ -85,6 +85,6 @@ Suivez les [instructions d’installation générales.](./configure-connector.md
 Le connecteur MediaWiki présente les limitations ci-après dans la version préliminaire :
 
 * Prend en charge uniquement les wikis basés sur le cloud.
-* Prend en charge uniquement Basic ou OAuth 2.0 avec l’authentification Azure Active Directory ou Azure.
+* Prend en charge uniquement Basic ou OAuth 2.0 avec l’authentification Azure Active Directory azure.
 * Ne prend pas en charge la sélection d’espace de noms pour l’indexation. Indexe uniquement les espaces de noms Principal, Catégorie et Fichier.
 * Ne prend pas en charge les listes de contrôle d’accès. Par conséquent, les pages indexées sont visibles par tous les utilisateurs de l’organisation.

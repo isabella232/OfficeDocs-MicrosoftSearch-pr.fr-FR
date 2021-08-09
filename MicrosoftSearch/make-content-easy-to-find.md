@@ -12,30 +12,30 @@ search.appverid:
 - MET150
 - MOE150
 description: Créez des signets, des emplacements et des Q&R pour accéder facilement au contenu de votre organisation.
-ms.openlocfilehash: 0617108d0bdcefe417290a1a3ccf37ad50eb2415
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 0cf3152e7fb47f0cb1b1fa3fe0df43645a2536e171fd8211050a1773ec86a490
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031592"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532938"
 ---
 # <a name="make-content-easy-to-find"></a>Faciliter l’accès au contenu
 
-La fonctionnalité Recherche Microsoft aide les utilisateurs à accéder à du contenu pertinent. Il s’agit d’un moyen sécurisé de rechercher à la fois votre contenu intranet et le contenu web. Ce type d’intégration sur le web et les organisations est uniquement disponible auprès de Microsoft. Avec Microsoft Search (recherche Microsoft), les administrateurs peuvent utiliser leurs connaissances d’une organisation pour faciliter la recherche de contenu pertinent pour les utilisateurs. 
+La fonctionnalité Recherche Microsoft aide les utilisateurs à accéder à du contenu pertinent. Façon sécuritaire d’effectuer des recherches sur votre intranet autant que du contenu web. Ce type d’intégration web et sur les organisations est uniquement disponible auprès de Microsoft. Avec la recherche Microsoft, les administrateurs utilisent leur connaissance de l’organisation pour permettre à ses utilisateurs d’accéder facilement à du contenu pertinent. 
 
 ## <a name="components-that-find-content"></a>Composants qui trouvent du contenu
-Dans Recherche Microsoft, les administrateurs créent des signets, [](manage-bookmarks.md) [PowerApps,](integrate-powerapps.md) [Q&A](manage-qas.md)et des emplacements qui facilitent la recherche de contenu. [](manage-locations.md) Chacun de ces composants de recherche comprend un titre, une URL et un ensemble de mots clés qui le déclenchent.
+Dans Recherche Microsoft, les administrateurs créent des signets, [](manage-bookmarks.md) [PowerApps,](integrate-powerapps.md) [](manage-locations.md) [Q&A](manage-qas.md)et des emplacements qui facilitent la recherche de contenu. Chacun de ces composants de recherche comprend un titre, une URL et un ensemble de mots clés qui le déclenchent.
 
 ## <a name="bookmarks"></a>Signets
 Vous pouvez créer [des signets](manage-bookmarks.md) en quelques étapes seulement. Chaque signet comprend un titre, une URL et un ensemble de mots clés qui le déclenchent. Un signet peut avoir plusieurs mots clés et plusieurs signets peuvent partager le même mot clé. Toutefois, les mots clés réservés ne peuvent pas être partagés. Lorsque vous créez ou modifiez un signet, l’index de recherche est actualisé et le signet est immédiatement disponible pour les utilisateurs.
 
-Si votre organisation a **mis en** place des résultats promus dans [SharePoint,](http://sharepoint.com/)vous pouvez importer ces résultats dans Microsoft Search (recherche Microsoft). Grâce aux résultats promus, vous pouvez rapidement remplir les résultats de la recherche, mettre le contenu à la disposition des utilisateurs et rendre Microsoft Search (recherche Microsoft) plus efficace dès que vous le définissez. Nous vous recommandons d’utiliser les résultats promus de SharePoint comme référence pour apprendre à nommer et créer des résultats de recherche pertinents. 
+Si votre organisation a **mis en** place des résultats promus dans [SharePoint,](http://sharepoint.com/)vous pouvez importer ces résultats dans Recherche Microsoft. Avec les résultats promus, vous pouvez rapidement remplir les résultats de recherche, mettre le contenu à la disposition des utilisateurs et rendre Recherche Microsoft plus efficace dès que vous le définissez. Nous vous recommandons d’utiliser les résultats promus de SharePoint comme référence pour apprendre à nommer et créer des résultats de recherche pertinents. 
 
 ### <a name="add-or-edit-bookmarks-by-using-browser-extensions"></a>Ajouter ou modifier des signets à l’aide d’extensions de navigateur
 Les administrateurs de recherche peuvent facilement créer du contenu de recherche en utilisant des extensions de navigateur. Pour ajouter le site en tant que signet, installez l’extension de navigateur. Ensuite, allez sur le site et ajoutez-le en tant que signet. Pour plus d’informations, [voir Gérer les signets.](manage-bookmarks.md)
 
-Actuellement, les extensions de navigateur sont disponibles [pour Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) et Google [Chrome](https://www.google.com): 
-- Pour télécharger l’extension Edge, allez dans [le Microsoft Store.](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)
+Actuellement, les extensions de navigateur sont disponibles [pour Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) et [Google Chrome](https://www.google.com): 
+- Pour télécharger l’extension Edge, go to the [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab).
 - Pour télécharger l’extension Chrome, allez dans le [magasin web Chrome.](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)
 
 ## <a name="powerapps"></a>PowerApps
@@ -49,16 +49,16 @@ Avec [PowerApps,](integrate-powerapps.md)vous pouvez créer des applications d�
 
 ### <a name="add-a-powerapp-to-a-bookmark"></a>Ajouter une application PowerApp à un signet
 
-1. Recherchez [l’ID d’application](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) pour l’application PowerApp que vous souhaitez ajouter.
-1. Dans le Centre d’administration Microsoft 365, go to **Settings** Microsoft [](https://admin.microsoft.com)  >  **Search**. 
+1. Recherchez [l’ID de](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) l’application PowerApp que vous souhaitez ajouter.
+1. Dans le Microsoft 365 [d’administration,](https://admin.microsoft.com) Paramètres  >  **Recherche Microsoft**. 
 1. Ajoutez un nouveau signet ou accédez à un signet existant auquel vous souhaitez ajouter une application PowerApp.
-1. Dans **les paramètres de signet,** **sélectionnez Power App.** Ensuite, **sélectionnez Ajouter une application Power.**
+1. Dans **les paramètres de signet,** **sélectionnez Power App.** Ensuite, **sélectionnez Ajouter une application Power App.**
 1. Entrez **l’ID de l’application.** La hauteur et la largeur s’ajustent automatiquement. [Les signets](manage-bookmarks.md) peuvent prendre en charge les orientations portrait et paysage, mais actuellement la taille ne peut pas être modifiée. Pour faciliter le test, l’aperçu de signet affiche un PowerApp entièrement fonctionnel.
 1. Sélectionnez **Publier** ou **Enregistrer en tant que brouillon**.
 
 ## <a name="qa"></a>Q&R
 
-La création [d’une&A est](manage-qas.md) comme la création [de signets.](manage-bookmarks.md) Avec Q&R, vous pouvez fournir des réponses aux questions des utilisateurs au lieu d’un simple lien vers une page web. Vous pouvez formater les réponses en texte enrichi à l’aide des outils disponibles. Si un signet et un signet&un partage du même mot clé, le résultat du signet s’affiche en premier. Comme les signets, l’index de&A est actualisé immédiatement après l’ajout ou la modification d’une&A. 
+La création [d’une&A est](manage-qas.md) comme la création [de signets.](manage-bookmarks.md) Avec Q&R, vous pouvez fournir des réponses aux questions des utilisateurs au lieu d’un simple lien vers une page web. Vous pouvez formater les réponses en texte enrichi à l’aide des outils disponibles. Si un signet et un signet&A partagent le même mot clé, le résultat du signet s’affiche en premier. Comme les signets, l’index de&A est actualisé immédiatement après l’ajout ou la modification d’une&A. 
 
 ### <a name="supported-html-tags"></a>Balises HTML pris en charge
 
@@ -88,7 +88,7 @@ Les balises non pris en compte sont ignorées ou affichées en tant que texte. V
 
 ## <a name="locations"></a>Emplacements
 
-Avec [Locations,](manage-locations.md)vos utilisateurs peuvent trouver des adresses et localiser les bâtiments de votre organisation. La **fonctionnalité Emplacements** fournit un emplacement précis pour les bureaux, les campus et les bâtiments, ainsi que des instructions et la navigation. Pour obtenir de meilleurs résultats, les administrateurs doivent ajouter tous les emplacements importants de leur organisation à Microsoft Search (recherche Microsoft). Contrairement [aux signets](manage-bookmarks.md) [et aux signets&A,](manage-qas.md)l’index des emplacements n’est pas actualisé immédiatement. L’apparition d’emplacements nouveaux ou modifiés dans les résultats de la recherche peut prendre plusieurs heures.
+Avec [l’emplacement,](manage-locations.md)vos utilisateurs peuvent trouver des adresses et localiser les bâtiments de votre organisation. La **fonctionnalité Emplacements** fournit un emplacement précis pour les bureaux, les campus et les bâtiments, ainsi que des instructions et la navigation. Pour obtenir de meilleurs résultats, les administrateurs doivent ajouter tous les emplacements importants de leur organisation Recherche Microsoft. Contrairement [aux signets](manage-bookmarks.md) [et aux&A,](manage-qas.md)l’index emplacements ne s’actualise pas immédiatement. L’apparition d’emplacements nouveaux ou modifiés dans les résultats de la recherche peut prendre plusieurs heures.
 
 ## <a name="get-started"></a>Prise en main
 Pour savoir ce dont vos utilisateurs ont besoin et faciliter la découverte de ces informations, essayez certaines des méthodes ci-après :
@@ -110,7 +110,7 @@ Dans une organisation, les utilisateurs recherchent une gamme de sujets simples 
 La plupart des administrateurs de recherche n’ont pas de connaissances spécifiques sur chaque sujet. Pour mettre à l’échelle la quantité de contenu disponible sans l’aide de ressources externes, recherchez des connaissances et des connaissances d’autres membres de votre organisation.
 
 ### <a name="get-content-from-smes"></a>Obtenir du contenu à partir de PME
-Tirez parti des experts techniques de votre organisation, notamment des experts en ressources humaines, en support technique, en ventes, en technologie et dans d’autres domaines clés. Les PME peuvent contribuer directement au contenu si vous les ajoutez en tant qu’éditeurs de recherche Microsoft. 
+Tirez parti des experts techniques de votre organisation, notamment des experts en ressources humaines, en support technique, en ventes, en technologie et dans d’autres domaines clés. Les PME peuvent contribuer directement au contenu si vous les ajoutez en tant Recherche Microsoft éditeurs. 
 
 ### <a name="involve-your-users"></a>Impliquer les utilisateurs
 Demandez aux utilisateurs de suggérer des ressources à ajouter comme signets. Demandez également aux utilisateurs de signaler des erreurs telles que des liens rompus ou non valides.
@@ -119,9 +119,9 @@ Demandez aux utilisateurs de suggérer des ressources à ajouter comme signets. 
 Pour ajouter ou modifier des [signets](manage-bookmarks.md)simples ou en bloc, [Q&A](manage-qas.md)et [Emplacements,](manage-locations.md)prenez les étapes des sections suivantes. 
 
 ### <a name="add-or-edit-a-single-bookmark-qa-or-location-component"></a>Ajouter ou modifier un seul signet, Q&A ou un composant d’emplacement
-1. Dans le Centre d’administration Microsoft 365, go to **Settings** Microsoft [](https://admin.microsoft.com)  >  **Search**. Sélectionnez l’onglet nommé du composant. **L’onglet Signets** est sélectionné par défaut.
+1. Dans le Microsoft 365 [d’administration,](https://admin.microsoft.com) Paramètres  >  **Recherche Microsoft**. Sélectionnez l’onglet nommé du composant. **L’onglet Signets** est sélectionné par défaut.
 1. Pour ajouter un composant, sélectionnez **Ajouter nouveau**. 
-1. Pour modifier un composant, sélectionnez le signet dans la liste des composants concernée. 
+1. Pour modifier un composant, sélectionnez le signet dans la liste des composants appropriés. 
 1. Lorsque vous ajoutez ou modifiez les informations, l’aperçu est automatiquement mis à jour.
 
 ### <a name="bulk-add-or-edit-components"></a>Ajout ou modification en bloc de composants
@@ -130,13 +130,13 @@ Avec les  **fonctionnalités d’importation** et d’exportation, les administr
 Les fonctionnalités d’importation et d’exportation fournissent les fonctions ci-après :
 - **Ajout en bloc**. Ajoutez des détails dans le fichier de modèle du composant, puis importez-le.
 - **Modification en bloc**. Exportez les composants vers un fichier CSV, modifiez les détails du signet dans le fichier CSV exporté, puis importez le fichier CSV mis à jour.
-- **Importer des sites promus à partir [de SharePoint.](http://sharepoint.com/)** Cette fonctionnalité s’applique uniquement [aux signets](manage-bookmarks.md).
+- **Importer des sites promus à [partir SharePoint](http://sharepoint.com/)**. Cette fonctionnalité s’applique uniquement [aux signets](manage-bookmarks.md).
 - **Sauvegarde**. Exporter des composants vers un fichier CSV.
 
 Pour importer ou exporter des composants, prenez les mesures suivantes :
 1. Dans le coin supérieur droit de l’onglet nommé du composant, sélectionnez **Importer.** 
 1. Pour télécharger tous les composants existants dans un fichier CSV, sélectionnez **Exporter.**
-1. Dans le volet droit, choisissez l’option à importer à l’aide d’un fichier CSV ou à partir [de SharePoint.](http://sharepoint.com/)
+1. Dans le volet droit, choisissez l’option à importer à l’aide d’un fichier CSV ou à [partir de SharePoint](http://sharepoint.com/).
 1. Pour obtenir la liste des champs et détails requis, téléchargez le fichier de modèle du composant. 
 1. Ajoutez ou modifiez les détails du composant dans le fichier de modèle. Enregistrez-le sur votre ordinateur. 
 1. Dans le volet Importation **du** composant, sélectionnez **Parcourir.** Sélectionnez ensuite le fichier CSV de votre choix, puis sélectionnez **Importer.**
@@ -151,7 +151,7 @@ Ez compte des recommandations et restrictions suivantes lorsque vous travaillez 
 - Si vous gérez plusieurs organisations, vous pouvez exporter vos signets d’une organisation et les importer dans une autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne *ID*.
 
 > [!Note]
-> Vous ne pouvez pas importer d’éléments de composant en cas d’erreurs dans le fichier modèle. Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement formaté et qu’il inclut toutes les informations requises.
+> Vous ne pouvez pas importer d’éléments de composant en cas d’erreurs dans le fichier de modèle. Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement formaté et qu’il inclut toutes les informations requises.
 
 ### <a name="prevent-import-errors"></a>Éviter les erreurs d’importation
 
@@ -167,26 +167,26 @@ Pour éviter les erreurs, assurez-vous que votre fichier d’importation est cor
 Les titres et descriptions connectés aident les utilisateurs à déterminer si les résultats répondent à leur requête de recherche. De bons titres et descriptions reflètent l’objectif principal du résultat. Par exemple, le titre Avantages de la garde **d’enfants** avec la description *Découvrez les avantages pour vous aider à payer les coûts liés à la garde d’enfants.* Grâce à ces données connectées, les utilisateurs qui recherchent une garde d’enfants peuvent trouver des avantages monétaires et obtenir un lien pour en savoir plus. 
 
 ### <a name="keywords"></a>Mots-clés
-Avec les mots clés, les utilisateurs de votre organisation peuvent rechercher et trouver du contenu pertinent. Vous devez associer des termes de mot clé à leurs résultats de recherche associés. Recherche Microsoft suggère des mots clés basés sur le titre et l’URL de votre contenu. Pour identifier d’autres mots clés, obtenez des réponses à ces questions :
+Avec les mots clés, les utilisateurs de votre organisation peuvent rechercher et trouver du contenu pertinent. Vous devez associer des termes de mot clé à leurs résultats de recherche associés. Recherche Microsoft des mots clés en fonction du titre et de l’URL de votre contenu. Pour identifier d’autres mots clés, obtenez des réponses à ces questions :
 
 1. **Quels termes de recherche peuvent trouver les informations que vous avez identifiées ?** Reportez-vous à toute terminologie existante dans votre organisation, ainsi qu’aux variantes, acronymes, sujets et rubriques connexes.
 1. **Quelles variantes ou mots les personnes utilisent-ils pour parler de ces informations ?** Demandez à votre équipe de support de fournir ces mots clés.
 
-Par exemple, si vous créez un résultat qui crée des  liens  vers un outil permettant d’envoyer des demandes de vacances, les mots clés vacances et envoyer une demande de vacances sont de bonnes options à inclure. Les utilisateurs de votre organisation peuvent également rechercher des informations relatives aux vacances avec **des congés** **ou des congés.** Pour faciliter la recherche de contenu pertinent pour les  utilisateurs, ajoutez ces mots clés et d’autres comme envoyer une demande de congé et demander des **congés.**
+Par exemple, si vous créez un résultat lié à un  outil  permettant d’envoyer des demandes de vacances, les mots clés vacances et envoyer une demande de vacances sont de bonnes options à inclure. Les utilisateurs de votre organisation peuvent également rechercher des informations relatives aux vacances avec **des congés** **ou des congés.** Pour faciliter la recherche de contenu pertinent pour les  utilisateurs, ajoutez ces mots clés et d’autres comme envoyer une demande de congé et demander des **congés.**
 
 ### <a name="reserved-keywords"></a>Mots clés réservés
  Un mot clé réservé est un terme ou une expression unique qui déclenche un résultat. Contrairement aux autres mots clés, les mots clés réservés sont associés à un seul résultat. Utilisez les mots clés réservés avec parcimonie pour permettre à la fonctionnalité Recherche Microsoft d’apprendre en se basant sur l’utilisation.
 
-Par exemple, un signet pour un site pour l’envoi de vos heures. Si **l’heure du** journal est un mot  clé réservé, les utilisateurs de votre organisation qui recherchent l’heure du journal voient ce site comme le seul signet dans la zone Recherche Microsoft. 
+Par exemple, un signet pour un site pour l’envoi de vos heures. Si **l’heure du** journal est un mot  clé réservé, les utilisateurs de votre organisation qui recherchent l’heure du journal voient ce site comme le seul signet dans la Recherche Microsoft. 
 
 ### <a name="group-related-content-with-keywords"></a>Grouper le contenu associé à l’aide de mots clés
 Si vous souhaitez que les utilisateurs trouvent des ensembles de contenu associé lorsqu’ils recherchent un terme spécifique, affectez le même mot clé à tout le contenu connexe. Par exemple, une recherche de processus et d’outils autour des changements d’état de vie. Pour grouper des réponses sur la mise à jour des avantages, des informations fiscales et des changements de nom et d’alias, incluez un mot clé comme **le mariage.**
 
 ### <a name="search-settings"></a>Paramètres de recherche
-Grâce aux paramètres de recherche, vous pouvez personnaliser votre contenu et cibler des groupes d’utilisateurs spécifiques. Ces paramètres microsoft search (recherche Microsoft) contrôlent quand un résultat de recherche s’affiche et qui peut le voir :
+Grâce aux paramètres de recherche, vous pouvez personnaliser votre contenu et cibler des groupes d’utilisateurs spécifiques. Ces Recherche Microsoft contrôlent quand un résultat de recherche s’affiche et qui peut le voir :
 
 - **Date**. Pour contrôler la disponibilité ou l’indisponibilité du contenu, définissez une date de début et une date de fin. Par exemple, les documents sensibles au temps apparaissent dans les résultats de la recherche lorsqu’ils sont pertinents.
-- **Pays ou région**. Vous pouvez sélectionner des pays ou des régions, afin que seuls les utilisateurs de ces emplacements voient certains contenus. Par exemple, les informations spécifiques au pays apparaissent uniquement dans les résultats de la recherche dans ces pays.
+- **Pays ou région**. Vous pouvez sélectionner des pays ou des régions, de sorte que seuls les utilisateurs de ces emplacements voient certains contenus. Par exemple, les informations spécifiques au pays apparaissent uniquement dans les résultats de la recherche dans ces pays.
 - **Les paramètres** de groupe rendent les résultats disponibles uniquement pour les membres des groupes sélectionnés. Par exemple, si vous créez des sites qui concernent uniquement les employés du service ressources humaines, map faites le map m me ce paramètre au groupe de sécurité RH approprié.
 - **Appareil ou système d’exploitation**. Sélectionnez les types d’appareils ou les systèmes d’exploitation, de sorte que seuls les utilisateurs qui recherchent sur ces appareils ou utilisent ces systèmes voient ce signet.
 - **Variantes ciblées.** Ce paramètre varie le contenu d’un signet en fonction de l’appareil et de l’emplacement d’un utilisateur.
@@ -196,12 +196,12 @@ Après avoir créé [des signets](manage-bookmarks.md) et [des&R,](manage-qas.md
 - Le signet ou le signet Q&A s’affiche.
 - Tout le contenu regroupé avec des mots clés apparaît ensemble comme prévu.
 - Rien d’inattendu n’apparaît dans les réponses de recherche.
-- Le signet ou le signet&A a suffisamment d’informations.
+- Le signet ou le signet&A possède suffisamment d’informations.
 
 Les utilisateurs et les PME qui contribuent à la création de contenu peuvent aider à tester et valider les résultats de la recherche.
 
 ## <a name="review-and-update-periodically"></a>Vérification et mise à jour de manière périodique
-Les informations faisant autorité [telles](manage-bookmarks.md) que les signets [et les&A doivent](manage-qas.md) rester à jour. Prenez régulièrement les mesures suivantes :
+Les informations faisant autorité [telles que](manage-bookmarks.md) les signets [et les&A doivent](manage-qas.md) rester à jour. Prenez régulièrement les mesures suivantes :
 - Corriger ou supprimer les URL incorrectes et non valides.
 - Supprimez les signets ou les&A qui ne sont plus pertinents.
 - vérifier si des changements d’outil, de nom de site ou de nom d’équipe sont intervenus ;
@@ -209,7 +209,7 @@ Les informations faisant autorité [telles](manage-bookmarks.md) que les signets
 
 ## <a name="get-insights-about-bookmarks-qa-and-locations"></a>Obtenir des informations sur les signets, les&A et les emplacements
 
-Recherche Microsoft vous indique le nombre de signets, Q [&A](manage-qas.md)et emplacements sont publiés, programmés ou suggérés. [](manage-bookmarks.md) [](manage-locations.md) Le [tableau de bord Insights affiche](./usage-reports.md) les signets, les&A et les totaux d’emplacement par état :
+Recherche Microsoft indique le nombre de signets, de Q [](manage-locations.md) [&A](manage-qas.md)et d’emplacements publiés, programmés ou suggérés. [](manage-bookmarks.md) Le [tableau Informations de bord](./usage-reports.md) affiche les signets, les&A et les totaux d’emplacement par état :
 
 - **Publiés :** nombre de résultats publiés accessibles aux utilisateurs.
 - **Programmés :** nombre de résultats programmés dans le pipeline de publication.
@@ -219,12 +219,12 @@ Les [signets suggérés,](manage-bookmarks.md) [les&](manage-qas.md) [](manage-l
 
 ### <a name="review-top-search-queries"></a>Examiner les principales requêtes de recherche.
 
-Pour connaître les recherches qui ont généré le plus d’impressions au cours des 90 derniers jours, examinez vos requêtes de recherche les plus importantes. *Impression* signifie le nombre de fois qu’une page a été vue dans les résultats de la recherche. La **carte** Requêtes principales du tableau de bord Insights affiche les 25 [premières](./usage-reports.md) recherches d’utilisateurs pour chaque type de résultat, le nombre total de recherches et le taux de clics(CTR). Avec ce rapport, vous pouvez identifier le volume de requête de recherche et déterminer les requêtes avec une activité de recherche élevée et faible.
+Pour connaître les recherches qui ont généré le plus d’impressions au cours des 90 derniers jours, examinez vos requêtes de recherche les plus importantes. *Impression* signifie le nombre de fois qu’une page a été vue dans les résultats de la recherche. La **carte** Requêtes principales du tableau de bord [Informations](./usage-reports.md) affiche les 25 premières recherches d’utilisateurs pour chaque type de résultat, le nombre total de recherches et le taux de clic(CTR). Avec ce rapport, vous pouvez identifier le volume de requête de recherche et déterminer les requêtes avec une activité de recherche élevée et faible.
 
 Un faible nombre de recherches peut indiquer une insatisfaction de l’utilisateur. Les utilisateurs ne recherchent pas ce contenu ou utilisent des mots clés différents pour le trouver. Le taux de clic indique la fréquence à laquelle les utilisateurs sélectionnent les résultats promus ainsi que l’utilité des résultats et des règles de requête pour les utilisateurs. Un taux de temps de travail faible indique que les utilisateurs trouvent le contenu, mais qu’il ne répond pas à leurs besoins. Dans ce cas, examinez le contenu. Pour aligner le contenu sur les requêtes de recherche, assurez-vous qu’il correspond aux titres, descriptions et mots clés de recherche et de mise à jour des utilisateurs. 
 
 ### <a name="analyze-impressions-by-result-type"></a>Analyser les impressions par type de résultat
 
-Les graphiques faciles à lire de la carte **de distribution Impression** du tableau de bord [Insights](./usage-reports.md) montrent des impressions sur différentes périodes. La chronologie indique le nombre d’impressions quotidien pour un type de résultat. Avec ces graphiques, vous pouvez déterminer le type de résultat le plus fréquemment ou rarement utilisé. L’utilisation rare d’un type de résultat particulier ne signifie pas nécessairement que le type de résultat n’est pas bon. Elle montre simplement comment les utilisateurs utilisent les résultats de la recherche.
+Les graphiques faciles à lire de la carte de **distribution Impression** du tableau [Informations tableau](./usage-reports.md) de bord montrent des impressions sur différentes périodes. La chronologie indique le nombre d’impressions quotidien pour un type de résultat. Avec ces graphiques, vous pouvez déterminer le type de résultat le plus fréquemment ou rarement utilisé. L’utilisation rare d’un type de résultat particulier ne signifie pas nécessairement que le type de résultat n’est pas bon. Elle montre simplement comment les utilisateurs utilisent les résultats de la recherche.
 
  Si un type de résultat particulier est préféré par les utilisateurs, vous pouvez créer d’autres résultats de recherche du même type. Pour vous assurer que les mots clés sont appropriés, examinez les mots clés des types de résultats avec une faible utilisation. Avec ce rapport, vous pouvez également voir les modifications apportées au comportement des utilisateurs au fil du temps.

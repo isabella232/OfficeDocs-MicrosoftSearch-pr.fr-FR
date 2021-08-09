@@ -1,5 +1,5 @@
 ---
-title: Sécurité et confidentialité pour Microsoft Search dans Bing
+title: Sécurité et confidentialité pour les Recherche Microsoft dans Bing
 ms.author: jeffkizn
 author: jeffkizn
 manager: parulm
@@ -11,61 +11,61 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Protégez les données et les utilisateurs finaux de votre entreprise tout en fournissant des informations aux utilisateurs autorisés à l’aide de Microsoft Search dans Bing
-ms.openlocfilehash: 1cc00a3b14b1918903c9aa34a24f13b1761b64b6
-ms.sourcegitcommit: 5946fe6aad2331c023bedda8faf826c0248651f8
+description: Protéger les données de votre entreprise et les utilisateurs finaux tout en fournissant des informations aux utilisateurs autorisés Recherche Microsoft dans Bing
+ms.openlocfilehash: 181a06ecb9c009d03c71e3e7f8ecfc7d675faa659967bc6a6c1560513a45a5ac
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41711750"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532676"
 ---
-# <a name="security-and-privacy-for-microsoft-search-in-bing"></a>Sécurité et confidentialité pour Microsoft Search dans Bing
+# <a name="security-and-privacy-for-microsoft-search-in-bing"></a>Sécurité et confidentialité pour les Recherche Microsoft dans Bing
 
-Avec des mesures de confidentialité et de sécurité améliorées, Microsoft Search dans Bing contribue à protéger vos utilisateurs et vos données d’espace de travail.
+Grâce à l’amélioration des mesures de confidentialité et de sécurité, Recherche Microsoft en Bing vous permet de protéger vos utilisateurs et vos données de l’espace de travail.
 
-## <a name="secure-by-default"></a>Sécurise par défaut.
+## <a name="secure-by-default"></a>Sécurisé par défaut.
 
-Les requêtes Microsoft Search dans Bing sont effectuées via HTTPs. La connexion est chiffrée de bout en bout pour renforcer la sécurité.
+Recherche Microsoft dans Bing requêtes sont réalisées sur HTTPS. La connexion est chiffrée de bout en bout pour une sécurité renforcée.
   
 ## <a name="authentication-and-authorization-with-azure-active-directory"></a>Authentification et autorisation avec Azure Active Directory
 
-L’authentification pour Microsoft Search dans Bing est liée à Azure Active Directory. Lorsque les utilisateurs de Microsoft Search accèdent à Bing, l’en-tête Bing affiche les options de connexion pour un compte Microsoft, ainsi qu’un compte professionnel ou scolaire. Si Bing ne peut pas déterminer si un utilisateur est un participant éligible, les utilisateurs peuvent accéder à la page [Explorer Microsoft Search](https://www.bing.com/business/explore) , où ils sont automatiquement redirigés vers la page de connexion de votre organisation.
+L’authentification Recherche Microsoft dans Bing est liée à Azure Active Directory. Lorsque Recherche Microsoft les utilisateurs peuvent Bing, l’en-tête Bing affiche les options de Bing pour un compte Microsoft, ainsi qu’un compte scolaire ou scolaire. Si Bing ne peut pas déterminer si un utilisateur est un participant éligible, les utilisateurs peuvent se rendre sur la page Explorer [Recherche Microsoft,](https://www.bing.com/business/explore) où ils seront automatiquement redirigés vers la page de signature de votre organisation.
 
 Les utilisateurs peuvent accéder à Microsoft Search (recherche Microsoft) uniquement par le biais d’un compte professionnel ou scolaire. Ils doivent se connecter avec les mêmes informations d’identification qu’ils utilisent pour accéder aux services Office 365 tels que SharePoint ou Outlook. Un compte Microsoft personnel ne peut pas être utilisé pour se connecter à Microsoft Search (recherche Microsoft).
 
 ## <a name="single-sign-on"></a>Authentification unique
 
-Si un utilisateur est déjà authentifié avec son compte professionnel ou scolaire dans un autre service, tel qu’Outlook ou SharePoint, il est automatiquement connecté au même compte professionnel ou scolaire lorsqu’il accède à Bing dans le même navigateur. De même, lorsque l’utilisateur se déconnecte de son compte professionnel ou scolaire, il se déconnecte automatiquement des autres services Microsoft Office dans le même navigateur.
+Si un utilisateur est déjà authentifié avec son compte scolaire ou scolaire dans un autre service, tel que Outlook ou SharePoint, il est automatiquement inscrit au même compte scolaire ou scolaire lorsqu’il passe à Bing dans le même navigateur. En outre, lorsque l’utilisateur se résigne à son compte scolaire ou scolaire, il est automatiquement signé à partir d’autres services Microsoft Office dans le même navigateur.
   
-## <a name="communicates-with-the-microsoft-cloud-from-the-browser"></a>Communique avec Microsoft Cloud à partir du navigateur
+## <a name="communicates-with-the-microsoft-cloud-from-the-browser"></a>Communique avec le cloud Microsoft à partir du navigateur
 
-Lorsqu’un utilisateur se connecte avec son compte professionnel ou scolaire, Bing télécharge les bibliothèques client nécessaires dans le navigateur pour activer les résultats de la recherche Microsoft. Ensuite, lorsqu’ils recherchent, le code dans le navigateur appelle le nuage Office 365 pour obtenir des résultats. Pour ce faire, Microsoft Search utilise une API dédiée qui est gérée conformément aux objectifs de contrôle de SSAE 18 SOC2 type 1. Cela signifie que les résultats professionnels et les données de travail ne transitent pas via les systèmes Bing qui sont soumis à des objectifs de contrôle de traitement des données moins stricts que les résultats du travail eux-mêmes ne sont soumis à une fois traités dans les services en ligne Office 365 Core.
+Lorsqu’un utilisateur se signe avec son compte professionnel ou scolaire, Bing télécharge les bibliothèques clientes nécessaires dans le navigateur pour activer Recherche Microsoft résultats. Ensuite, lorsqu’ils recherchent, le code dans le navigateur appelle le cloud Office 365 pour obtenir des résultats de travail. Pour ce faire, Recherche Microsoft utilise une API dédiée qui est gérée conformément aux objectifs de contrôle de SSAE 18 SOC2 Type 1. Cela signifie que les résultats du travail et les données de travail ne circulent pas dans les systèmes Bing soumis à des objectifs de contrôle de traitement des données moins stricts que les résultats de travail eux-mêmes qui sont soumis lors du traitement dans Office 365 Core Online Services.
   
 ## <a name="permissions"></a>Autorisations
 
 Les résultats travail récupérées à partir de charges de travail Office 365 telles que SharePoint et OneDrive entreprise sont coupés à la source par sécurité. Les utilisateurs ne peuvent pas voir les ressources telles que des documents Word ou présentations PowerPoint qu’ils ne peuvent pas voir et accéder via Office 365. Elles ne peuvent voir que leurs propres fichiers et les fichiers qui ont été partagés avec eux par l’auteur de manière explicite ou implicite (via un appartenance au groupe, par exemple) dans SharePoint.
 
-## <a name="microsoft-search-in-bing-protects-workplace-searches"></a>Microsoft Search dans Bing protège les recherches sur un lieu de travail
+## <a name="microsoft-search-in-bing-protects-workplace-searches"></a>Recherche Microsoft dans Bing les recherches de l’espace de travail
 
-Lorsqu’un utilisateur entre une requête de recherche dans Microsoft Search dans Bing, deux requêtes de recherche simultanées se produisent :
+Lorsqu’un utilisateur entre une requête de recherche dans Recherche Microsoft dans Bing, deux demandes de recherche simultanées se produisent :
 
-- Une recherche des ressources internes de votre organisation.
-- Une recherche distincte des résultats publics à partir de Bing.com.
+- Recherche des ressources internes de votre organisation.
+- Recherche distincte des résultats publics à partir de Bing.com.
 
-Étant donné que les recherches Workplace peuvent être sensibles, Microsoft Search a implémenté un ensemble de mesures d’approbation qui décrivent le mode de gestion de la recherche séparée des résultats publics d’Bing.com.
+Étant donné que les recherches sur le lieu de travail peuvent être sensibles, Recherche Microsoft a implémenté un ensemble de mesures d’confiance qui décrivent comment la recherche distincte de résultats publics à partir de Bing.com est gérée.
 
 ### <a name="logging"></a>Logging
 
-- Tous les journaux de recherche Bing.com relatifs à Microsoft Search dans le trafic Bing sont désassociés à l’identité de votre espace de travail.
-- Si un ensemble de restrictions ou de seuils de fréquence est atteint, ce qui nous donne la certitude que la requête n’est pas propre à une organisation particulière, la requête est traitée comme décrit dans la section recherche et intelligence artificielle de la [déclaration de confidentialité](https://privacy.microsoft.com/privacystatement). Par exemple, ces requêtes seront utilisées pour modéliser et former des fonctionnalités publiques, telles que des suggestions automatiques ou des recherches associées.
+- Tous Bing de recherche .com qui se rapportent à Recherche Microsoft dans Bing trafic sont dissociés de votre identité de lieu de travail.
+- Si un ensemble de restrictions ou de seuils de fréquence est atteint, ce qui nous donne la certitude que la requête n’est pas spécifique à une organisation particulière, la requête sera traitée comme décrit dans la section Recherche et intelligence artificielle de la déclaration de [confidentialité.](https://privacy.microsoft.com/privacystatement) Par exemple, ces requêtes seront utilisées pour modéliser et former des fonctionnalités publiques, telles que les recherches de déboiement automatique ou les recherches associées.
 - Les requêtes qui ne répondent pas à ces restrictions ou seuils de fréquence seront stockées séparément du trafic public, hors Recherche Microsoft.
 
 ### <a name="advertising"></a>Publicité
 
-La publicité affichée sur Bing.com dans le cadre des recherches Workplace est uniquement liée au contenu des requêtes de recherche. Les publicités ne sont jamais ciblées pour les utilisateurs en fonction de leur identité professionnelle.
+Les publicités affichées Bing.com dans le cadre des recherches sur l’espace de travail sont uniquement liées au contenu des requêtes de recherche. Les publicités ne sont jamais ciblées pour les utilisateurs en fonction de leur identité professionnelle.
 
 ## <a name="gdpr"></a>RGPD
 
-Le [21 mai, 2018,](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/) billet de blog de Microsoft reflète notre engagement envers la conformité RGPD et la façon dont Microsoft aide les entreprises et les organisations à respecter leurs obligations de conformité RGPD. Vous trouverez des détails supplémentaires dans le [Forum aux questions du centre](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)de gestion de la confidentialité Microsoft.
+Le billet de blog du [21 mai 2018](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/) de Microsoft reflète notre engagement en matière de conformité au R GDPR et la façon dont Microsoft aide les entreprises et les organisations avec leurs propres obligations de conformité au R GDPR. Vous trouverez des détails supplémentaires dans le FAQ du Centre [de confidentialité](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)Microsoft.
 
-Les requêtes Microsoft Search exécutées sur les ressources internes d’un client et les résultats renvoyés sont considérées comme des données client et, en tant que telles, satisfont également aux engagements de processeur décrits dans l’article 28, comme indiqué dans le [Forum aux questions du centre](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)de gestion de la confidentialité. En ce qui concerne les requêtes de Microsoft Search qui accèdent à public Bing, Microsoft respecte ses obligations RGPD comme un contrôleur de données.
+Recherche Microsoft requêtes exécutées sur les ressources internes et les résultats renvoyés d’un client sont considérées comme des données client et, en tant que telles, répondent également aux engagements du sous-processeur décrits dans l’article 28, comme indiqué dans la [FAQ](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)du Centre de gestion de la confidentialité. En ce qui concerne les requêtes provenant de Recherche Microsoft qui sont Bing publiques, Microsoft respecte ses obligations en tant que contrôleur de données en tant que contrôleur de données.

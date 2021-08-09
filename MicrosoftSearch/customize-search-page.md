@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ajouter des secteurs verticaux de recherche et personnaliser les résultats de recherche
-ms.openlocfilehash: 4dd3f08f6d7e3df0aa983684eb0d4f649bc409a1
-ms.sourcegitcommit: 1e766e1f549c46882f47df6679f5a3cdf48d70d6
+ms.openlocfilehash: 0bcb8d8588edf44d4291802d1d9c73b75fd6bf327b19f9a9b1ef0555baca38ad
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53463225"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533064"
 ---
 # <a name="customize-the-search-results-page"></a>Personnaliser la page des résultats de la recherche
 
@@ -34,7 +34,7 @@ En haut de la page Recherche Microsoft résultats, il existe une ligne d’ongle
 
 Vous pouvez ajouter des secteurs verticaux de recherche pertinents pour votre organisation. Ceux-ci apparaissent sur la page Recherche Microsoft résultats dans [SharePoint,](https://sharepoint.com/) [Office](https://Office.com)et [Bing](https://bing.com). Par exemple, vous pouvez créer un secteur vertical pour le contenu marketing et un autre pour les ventes, en fonction du type d’informations dont chaque groupe a besoin. Vous pouvez ajouter des secteurs verticaux pour afficher les résultats uniquement à partir du contenu indexé via des connecteurs.  
 
-### <a name="multiple-connections-in-a-vertical"></a>Plusieurs connexions dans un secteur vertical
+### <a name="multiple-connections-in-a-vertical"></a>Connexions multiples dans un secteur vertical
 
 Un secteur vertical de recherche peut maintenant faire surface des résultats provenant de plusieurs sources de connecteur. Cela offre une plus grande flexibilité dans la conception de votre page de résultats de recherche. L’expérience administrative existante de la configuration verticale vous permet de sélectionner plusieurs connexions à l’étape « Source de contenu ».
 Si vous nommez avec précision autant d’étiquettes sémantiques que possible, cette expérience sera améliorée. Vous pouvez ajouter des étiquettes sémantiques lors de la définition et de l’ingestion du schéma.
@@ -42,11 +42,11 @@ Si vous nommez avec précision autant d’étiquettes sémantiques que possible,
 [Voici](configure-connector.md#step-5-assign-property-labels) des informations supplémentaires sur la création et la gestion d’étiquettes sémantiques.
 
 > [!NOTE]
-> Plusieurs connexions dans un secteur vertical sont actuellement en prévisualisation. Pour plus d’informations sur la prévisualisation, voir [Les fonctionnalités d’aperçu des connecteurs.](connectors-overview.md#what-are-the-preview-features)
+> Plusieurs connexions dans un secteur vertical sont actuellement en prévisualisation. Pour plus d’informations sur la prévisualisation, voir [les fonctionnalités d’aperçu des connecteurs.](connectors-overview.md#what-are-the-preview-features)
 
 ### <a name="things-you-should-know"></a>Ce que vous devez savoir
 
-1. Une connexion peut être ajoutée en tant que source de contenu uniquement sous un secteur vertical. La réutilisation de connexions sous plusieurs secteurs verticaux n’est pas autorisée.
+1. Une connexion ne peut être ajoutée en tant que source de contenu que sous un secteur vertical. La réutilisation de connexions sous plusieurs secteurs verticaux n’est pas autorisée.
 2. Si vous devez configurer une requête pour un secteur vertical de recherche où plusieurs sources de connexion ont été ajoutées, les propriétés sources communes doivent être utilisées pour créer une telle requête.
 
 ## <a name="things-to-consider"></a>Informations importantes
@@ -65,12 +65,12 @@ Il existe trois étapes de base pour ajouter un secteur vertical :
 
 Après avoir commencé l’Assistant, vous êtes guidé dans les étapes de définition du nom, de la source de contenu et de l’étendue du contenu à rechercher. Le secteur vertical est créé dans un état désactivé. Vous l’activerez ultérieurement.
 
-Vous pouvez utiliser un ensemble limité de langage de requête de mot [clé (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) pour limiter l’étendue. Cette page répertorie les propriétés disponibles. Nous vous recommandons d’utiliser des mots clés de texte libre et des restrictions de propriété avec des opérateurs booléens pour créer le KQL.
+Vous pouvez utiliser un ensemble limité de langages [KQL (Keyword Query Language)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) pour limiter l’étendue. Cette page répertorie les propriétés disponibles. Nous vous recommandons d’utiliser des mots clés de texte libre et des restrictions de propriété avec des opérateurs booléens pour créer le KQL.
 KQL prend également en charge l’utilisation de [variables de requête](#profile-query-variables) de profil pour affiner les résultats sous le secteur vertical.
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>Créer un secteur vertical au niveau de l’organisation
 
-Pour créer le secteur vertical sur Recherche Microsoft dans [SharePoint](https://sharepoint.com/) d’accueil, [Office](https://office.com)ou [Bing,](https://bing.com)suivez les étapes suivantes :
+Pour créer le secteur vertical [](https://sharepoint.com/) sur Recherche Microsoft dans SharePoint d’accueil, [Office](https://office.com)ou [Bing,](https://bing.com)suivez les étapes suivantes :
 
 1. Dans la [Centre d’administration Microsoft 365](https://admin.microsoft.com), allez à [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 2. Sélectionnez **Ajouter** pour commencer.  
@@ -107,7 +107,7 @@ Après avoir démarrer l’Assistant, vous êtes guidé dans les étapes pour d�
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>Créer un type de résultat au niveau de l’organisation
 
-1. Dans la [Centre d’administration Microsoft 365](https://admin.microsoft.com), allez à [**Types de résultats.**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)
+1. Dans la [Centre d’administration Microsoft 365,](https://admin.microsoft.com)allez à [**Types de résultats.**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)
 2. Pour ajouter un **type de résultat,** sélectionnez **Ajouter.** Pour modifier un type de résultat, sélectionnez-le dans la liste concernée.
 
 ### <a name="create-a-results-type-at-the-site-level"></a>Créer un type de résultats au niveau du site
@@ -123,7 +123,7 @@ Après avoir démarrer l’Assistant, vous êtes guidé dans les étapes pour d�
 Une fois que vous avez activé le secteur vertical, il faudra quelques heures avant de pouvoir l’afficher. Si vous ne souhaitez pas attendre après l’avoir mise en place, vous pouvez l’appendre à **l’URL** dans [SharePoint](https://sharepoint.com/) et [Office](https://office.com) pour afficher immédiatement le secteur vertical. Pour [Bing,](https://bing.com)&**features=uncachedVerticals** à l’URL de secteur vertical de travail pour afficher les secteurs verticaux immédiatement.
 
 > [!NOTE]
-> Les secteurs verticaux ajoutés ne seront pas visibles [SharePoint](https://sharepoint.com/) et [Office](https://office.com) lors de l’affichage à partir des navigateurs web mobiles.
+> Les secteurs verticaux ajoutés ne sont pas visibles [sur SharePoint](https://sharepoint.com/) et [Office](https://office.com) lorsqu’ils sont visibles à partir de navigateurs web mobiles.
 
 ## <a name="profile-query-variables"></a>Variables de requête de profil
 
@@ -189,7 +189,7 @@ L’opérateur « | » doit être utilisé pour résoudre les variables à valeu
 >
 > - Les variables de requête de profil sont uniquement pris en charge pour les secteurs verticaux personnalisés utilisant [un connecteur](connectors-overview.md) comme source de contenu.
 > - Les variables de requête de profil sont définies dans la section « Requête » du [processus de mise en place verticale.](customize-search-page.md#step-1-create-the-search-vertical)
-> - Les variables de requête de profil sont actuellement en prévisualisation. Pour plus d’informations sur la prévisualisation, voir [Les fonctionnalités d’aperçu des connecteurs.](connectors-overview.md#what-are-the-preview-features)
+> - Les variables de requête de profil sont actuellement en prévisualisation. Pour plus d’informations sur la prévisualisation, voir [les fonctionnalités d’aperçu des connecteurs.](connectors-overview.md#what-are-the-preview-features)
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 

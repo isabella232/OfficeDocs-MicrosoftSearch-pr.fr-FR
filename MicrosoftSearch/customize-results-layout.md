@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 description: À l’aide de cartes adaptatives, créez une disposition pour afficher vos résultats de recherche personnalisés
-ms.openlocfilehash: 1badb5bb34d746b22de8ddb91cd26c813fe9f67f
-ms.sourcegitcommit: 8270e4271b1eeb57b988ea5265e5b6d9d6ef64a6
+ms.openlocfilehash: 79c10236bf2eb797afb99b1c7e78925e7cc2361a5fe7d4f695eb739eaed13532
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53529361"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533946"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>Créer une disposition pour personnaliser les résultats de recherche
 
 Vous pouvez concevoir la disposition des résultats pour un secteur vertical personnalisé à l’aide du concepteur de disposition de recherche. Vous pouvez commencer à concevoir la disposition en choisissant les modèles proposés dans le concepteur de disposition et en les utilisant s’ils correspondent à vos besoins. Vous pouvez également choisir de modifier ces modèles de différentes manières pour les adapter à vos besoins. Par exemple, ajoutez/supprimez des images, ajoutez/supprimez du texte et modifiez du texte. Si aucun des modèles ne répond à vos besoins, vous pouvez choisir de commencer à concevoir votre disposition à l’aide d’un modèle vide.  
 
-Une fois la disposition prête, utilisez le langage [de](/adaptive-cards/templating/language) modèle de cartes adaptatives pour créer un JSON de disposition de résultat qui est utilisé pour définir un type de résultat. Vous mappagez les propriétés de résultat à la disposition à l’aide de l’étape Mappage dans le concepteur de disposition.  
+Une fois la disposition [](/adaptive-cards/templating/language) prête, utilisez le langage de modèle de cartes adaptatives pour créer un JSON de disposition de résultat qui est utilisé pour définir un type de résultat. Vous mappagez les propriétés de résultat à la disposition à l’aide de l’étape Mappage dans le concepteur de disposition.  
 
 ## <a name="create-a-layout-on-your-own"></a>Créer une disposition par vous-même
 
@@ -183,7 +183,7 @@ Avant de commencer, vous devez faire quelques opérations et éviter d’avoir �
 - Ne définissez pas de types de données non valides lors de la liaison de valeurs. Pour plus d’informations sur les types de données, voir [Gérer le schéma de recherche.](/sharepoint/search/manage-the-search-schema)
 - Évitez de rogler le résultat sur la page de résultats en suivant la hauteur maximale de la disposition des résultats JSON. Si vous dépassez la hauteur maximale de la disposition des résultats, le résultat sera rogé sur la page de résultats.
 - N’utilisez pas de `px` valeurs dans les propriétés de l’élément.
-- N’utilisez pas markdown avec la **propriété ResultSnippet** dans la disposition des résultats pour mettre en évidence la correspondance de requête dans le résultat de la recherche.
+- N’utilisez pas markdown avec la **propriété ResultSnippet** dans la disposition des résultats pour mettre en évidence la correspondance de requête dans le résultat de recherche.
 
 ## <a name="resources"></a>Ressources
 

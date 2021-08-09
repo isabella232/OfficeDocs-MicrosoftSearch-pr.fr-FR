@@ -1,5 +1,5 @@
 ---
-title: Gestion de la zone de recherche dans les sites SharePoint
+title: Gestion de la zone de recherche dans SharePoint sites
 ms.author: keremy
 author: jeffkizn
 manager: parulm
@@ -11,24 +11,24 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Comment personnaliser l’expérience de zone de recherche sur les sites SharePoint
-ms.openlocfilehash: c58e7cf0a47d22fa9c6fd3abd93cc97087625690
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: Comment personnaliser l’expérience de zone de recherche sur SharePoint sites
+ms.openlocfilehash: 151b5b066cd0164d4f7689192c37867d75b6eb6c57c82588cee654871c5e32b0
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031358"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533580"
 ---
-# <a name="search-box-settings-on-sharepoint-sites"></a>Paramètres de zone de recherche sur les sites SharePoint
+# <a name="search-box-settings-on-sharepoint-sites"></a>Paramètres de zone de recherche sur SharePoint sites
 
-L’une des différentes façons de personnaliser Recherche Microsoft sur les sites SharePoint consiste à personnaliser le fonctionnement de la zone de recherche dans la barre de navigation de suite dans les sites SharePoint pour mieux répondre à vos besoins.
+L’une des différentes façons de personnaliser Recherche Microsoft sites SharePoint consiste à personnaliser le fonctionnement de la zone de recherche dans la barre de navigation de suite dans les sites SharePoint en fonction de vos besoins.
 
-Pour d’autres options de personnalisation, voir Modifier la page des résultats de recherche Microsoft pour ajouter des secteurs verticaux [personnalisés,](customize-search-page.md)des types de résultats et des dispositions, et Créer une page de résultats [de recherche personnalisée.](create-search-results-pages.md)
+Pour d’autres options de personnalisation, voir Modification de la page de résultats Recherche Microsoft pour ajouter des secteurs verticaux [personnalisés, des types](customize-search-page.md)de résultats et des dispositions, et Création d’une page de résultats de recherche [personnalisée.](create-search-results-pages.md)
 
 > [!NOTE]
 > La zone de recherche de la barre de navigation de suite n’est pas disponible pour tous les clients pour le moment, mais ces options peuvent toujours être définies maintenant et elles prennent effet dès qu’elles sont disponibles.
 
-Pour les tâches répertoriées ci-dessous, vous allez utiliser PowerShell avec les extensions PowerShell PnP SharePoint. Vous pouvez installer et en savoir plus sur la façon de commencer [ici.](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps) Vous vous connectez à votre site ou collection de sites à l’aide de cette commande :
+Pour les tâches répertoriées ci-dessous, vous utiliserez PowerShell avec SharePoint extensions PowerShell PnP. Vous pouvez installer et en savoir plus sur la façon de commencer [ici.](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps) Vous vous connectez à votre site ou collection de sites à l’aide de la commande ci-après :
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
@@ -37,7 +37,7 @@ Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
 
 ## <a name="changing-the-scope-of-search"></a>Modification de l’étendue de la recherche
 
-Lorsque vous créez un site dans SharePoint Online aujourd’hui et que vous tapez dans la zone de recherche, vous êtes conduit à la page des résultats de recherche Microsoft. Cette page affiche les résultats de votre site actuel par défaut et vous permet d’étendre l’étendue de votre recherche au hub associé au site actuel (s’il en existe un) ou à l’ensemble de l’organisation.
+Lorsque vous créez un site dans SharePoint Online aujourd’hui et que vous tapez dans la zone de recherche, vous êtes conduit à la page Recherche Microsoft résultats. Cette page affiche les résultats de votre site actuel par défaut et vous permet d’étendre l’étendue de votre recherche au hub associé au site actuel (s’il en existe un) ou à l’ensemble de l’organisation.
 
 L’étendue que la zone de recherche utilise, par défaut, dépend du type de site.
 
@@ -86,9 +86,9 @@ Plusieurs points sont à prendre en considération :
 
 * Une fois que vous avez désactivé la zone de recherche dans la barre de navigation, si vous souhaitez une fonctionnalité de recherche dans votre site, vous devez la fournir vous-même à l’aide d’un élément Web Part personnalisé ou d’une extension SharePoint Framework.
 
-* Cette solution supprime également la zone de recherche des listes et des bibliothèques de votre site. Votre solution de recherche personnalisée doit prendre en compte les recherches contextuelles pour les listes et les bibliothèques SharePoint, en plus de la recherche à l’échelle du site.
+* Cette solution supprime également la zone de recherche des listes et des bibliothèques de votre site. Votre solution de recherche personnalisée doit prendre en compte les recherches contextuelles pour SharePoint listes et bibliothèques, en plus de la recherche à l’échelle du site.
 
-* Si vous appliquez le paramètre au site racine de votre domaine, la page d’accueil SharePoint cesse également d’afficher la zone de recherche.
+* Si vous appliquez le paramètre au site racine de votre domaine, la page SharePoint de démarrage cessera également d’afficher la zone de recherche.
 
 ## <a name="changing-the-hint-displayed-in-the-search-box"></a>Modification de l’indication affichée dans la zone de recherche
 

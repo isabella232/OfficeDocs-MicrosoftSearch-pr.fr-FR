@@ -1,5 +1,5 @@
 ---
-title: Présentation de l’intelligence de la & de recherche
+title: Présentation de search & Intelligence
 ms.author: jeffkizn
 author: jeffkizn
 manager: parulm
@@ -12,30 +12,30 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: Changement du nom de Microsoft Search dans la navigation d’administrateur en intelligence de & de recherche
-ms.openlocfilehash: 272bcd95a701c0e86c6296f2945ec5080c0ab287
-ms.sourcegitcommit: 404a4c9125f10235675b318f0dcf22742e7a7f4b
+description: Changement de Recherche Microsoft dans la navigation de l’administrateur pour Rechercher & intelligence
+ms.openlocfilehash: b0a5912ba02c74daffe677f3fbd22c0fb3df12289f155ad4beef69484771fcf3
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868716"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533967"
 ---
-# <a name="search--intelligence"></a>Intelligence de la & de recherche
+# <a name="search--intelligence"></a>Veille sur les & recherche
 
-L’administration de Microsoft Search est actuellement disponible dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com) sous **paramètres**  >  **[Microsoft Search](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch).** Nous renommeons la navigation pour ** [Rechercher & intelligence](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch).**
+Recherche Microsoft’administration est actuellement disponible dans la [Centre d’administration Microsoft 365](https://admin.microsoft.com) sous **Paramètres**  >  **[Recherche Microsoft](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch).** Nous renommons la navigation en **[Search & intelligence](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch).**
 
 > [!Important]
-> Cette modification commencera à être mise en place auprès des clients le 1er octobre 2020 et atteindra tous les clients en une seule semaine.
+> Cette modification commence à être mise en place pour les clients le 1er octobre 2020 et atteint tous les clients en quelques semaines.
 
-## <a name="why-we-are-making-this-change"></a>Pourquoi ce changement est-il apporté ?
+## <a name="why-we-are-making-this-change"></a>Pourquoi a-t-on fait cette modification ?
 
-Microsoft Search rend votre organisation plus productive en aidant les utilisateurs à trouver ce dont ils ont besoin, rapidement. À mesure que nous continuons à améliorer et à faire évoluer Microsoft Search, nous croissons les fonctions qui dépassent la découverte des informations pour les domaines comme la gestion des connaissances, la fin des tâches, les contrôles de confidentialité, etc.
-Ce que nous avons appris en collaboration avec les clients, c’est que les personnes qui effectuent l’administration dans ces domaines sont la même personne, dans la plupart des cas.
+Recherche Microsoft votre organisation est plus productive en aidant les personnes à trouver rapidement ce dont elles ont besoin. À mesure que nous continuons d’améliorer et d’Recherche Microsoft, nous recoupons des fonctions qui vont au-delà de la découverte d’informations dans des domaines tels que la gestion des connaissances, l’achèvement des tâches, les contrôles de confidentialité, etc.
+Ce que nous avons appris en travaillant avec des clients, c’est que les personnes qui font l’administration dans ces domaines sont la même personne, dans la plupart des cas.
 
-L’un de nos principes de base est d’organiser l’administration des personnes et des expériences, et non de la technologie. Cela, combiné à un ensemble de contrôles d’administration qui s’étendront sur les expériences, nous nous sommes rendus.
+L’un de nos principes fondamentaux consiste à organiser l’administration autour des personnes et des expériences, et non de la technologie. Cela, combiné à un ensemble de contrôles d’administration qui couvrent les expériences, nous a conduit ici.
 
-Le futur commence par ce changement de nom pour effectuer des recherches & intelligence qui seront suivies au cours des prochaines semaines, mois et au-delà pour inclure la gestion des connaissances et plus encore.
+L’avenir commence par ce changement de nom en Search & Intelligence qui sera suivi au cours des prochaines semaines, mois et au-delà pour inclure la gestion des connaissances et bien plus encore.
 
-## <a name="no-change-in-the-brand"></a>Aucune modification dans la marque
+## <a name="no-change-in-the-brand"></a>Aucune modification de la marque
 
-Le changement de navigation ne représente pas une modification du produit et/ou de la marque Microsoft Search et est conçu pour fournir un emplacement pour la consolidation future des produits et technologies associés.
+La modification de la navigation ne représente pas une modification du produit Recherche Microsoft et/ou de la marque et est conçue pour fournir un emplacement pour la consolidation future des produits et technologies associés.

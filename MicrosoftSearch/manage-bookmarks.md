@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: Créer et mettre à jour des signets et des méthodes pour modifier en bloc les résultats des signets pour Microsoft Search (recherche Microsoft)
-ms.openlocfilehash: e8488146a041e7165596dafff8012adfa1122341
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: Créer et mettre à jour des signets et des méthodes pour modifier en bloc les résultats des signets pour Recherche Microsoft
+ms.openlocfilehash: 1362082bf33bd4a30ff2ae76e2fa05a3ccd8962c4ef5f5cb15f41fc183d0c4b9
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031727"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533800"
 ---
 # <a name="manage-bookmarks"></a>Gérer des signets
 
@@ -29,7 +29,7 @@ Les signets aident les personnes à trouver rapidement des sites et des outils i
 Un grand signet possède quatre éléments clés :
 
 1. Titre fort et **informatif.** Ne pas atteindre plus de huit mots ou environ 60 caractères au maximum. Vous souhaitez que vos utilisateurs cliquent sur le titre et visualisent le contenu, mais évitez les clics évidents :
-    - Bon : essayez les favoris de cette semaine à partir du menu de la menu. Le titre est clair, concis et intéressant, mais peut être surpromising.
+    - Bonne : essayez les favoris de cette semaine à partir du menu de la menu. Le titre est clair, concis et intéressant, mais il peut s’agit d’un surpromising.
     - Meilleure : menu de la semaine. N’est pas surpromise ou son comme une ad.
     - Évitez : vous ne pensez pas ce qui arrive au menu de la menu de la semaine. Utilise des clichés clickbait qui ressemblent à une nouvelle.
 2. Description **succincte**, d’environ 300 caractères, qui résume l’objectif ou la fonctionnalité de la ressource liée.
@@ -38,49 +38,49 @@ Un grand signet possède quatre éléments clés :
 
 ## <a name="create-bookmark-answers"></a>Créer des réponses de signet
 
-Dans le [Centre d’administration Microsoft 365,](https://admin.microsoft.com/)sélectionnez Signets et choisissez comment créer de nouveaux signets : [](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)
+Dans la [Centre d’administration Microsoft 365,](https://admin.microsoft.com/)sélectionnez [Signets](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) et choisissez la façon dont vous souhaitez créer de nouveaux signets :
 
 - Ajouter des signets
-- Importer les résultats SharePoint
+- Importer les SharePoint résultats
 - Ajouter des signets par défaut et des signets suggérés
 - Importer des signets
 - Publier ou réviser les signets recommandés
 
 ### <a name="add-bookmarks"></a>Ajouter des signets
 
-Les administrateurs et les éditeurs de recherche peuvent ajouter des signets dans le Centre d’administration Microsoft 365 et les publier ou les enregistrer dans un brouillon. La publication d’un signet actualisé immédiatement l’index de recherche, le rendant immédiatement accessible aux utilisateurs. Vous pouvez également planifier un signet en spécifiant la date et l’heure de sa publication.
+Les administrateurs et les éditeurs de recherche peuvent ajouter des signets dans le Centre d’administration Microsoft 365 et les publier ou les enregistrer dans un brouillon. La publication d’un signet actualise immédiatement l’index de recherche, le rendant immédiatement accessible aux utilisateurs. Vous pouvez également planifier un signet en spécifiant la date et l’heure de sa publication.
 
-- **Publié**: les signets sont disponibles pour les utilisateurs de l’organisation via Microsoft Search (recherche Microsoft).
+- **Publié**: les signets sont disponibles pour les utilisateurs de l’organisation via Recherche Microsoft.
 - **Brouillon**: les signets enregistrés en tant que brouillons ne sont pas disponibles pour vos utilisateurs. Utilisez cet état si vous ou d’autres parties prenantes souhaitez consulter ou mettre à jour les signets avant de les publier.
 - **Scheduled**: signets qui seront publiés à la date et à l’heure spécifiées.
 
-Vous pouvez utiliser l’extension de navigateur créateur de contenu Microsoft Search pour ajouter facilement des signets. Pour installer l’extension de navigateur, allez sur le site que vous souhaitez ajouter en tant que signet, puis cliquez sur Ajouter dans l’extension.
+Vous pouvez utiliser l’extension Recherche Microsoft navigateur créateur de contenu pour ajouter facilement des signets. Pour installer l’extension de navigateur, allez sur le site que vous souhaitez ajouter en tant que signet, puis cliquez sur Ajouter dans l’extension.
 Installez l’extension pour Edge et Chrome :
 
-- Pour Chromium Edge ou Chrome : allez dans le [magasin web Chrome](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) et ajoutez l’extension.
-- Pour edge hérité : allez dans le [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) et ajoutez l’extension.
+- For Chromium Edge or Chrome: go to the [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) and add the extension.
+- Pour edge hérité : go to the [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) and add the extension.
 
-### <a name="import-sharepoint-results"></a>Importer les résultats SharePoint
+### <a name="import-sharepoint-results"></a>Importer les SharePoint résultats
 
-Si votre organisation a mis en place des résultats promus dans SharePoint, vous pouvez importer les titres, les URL et les descriptions des résultats promus pour votre client dans Recherche Microsoft et mettre le contenu importé à la disposition de vos utilisateurs. Dans la plupart des cas, l’importation des résultats SharePoint ne prend que quelques minutes. Si vous importez un grand nombre de résultats, cela peut prendre jusqu’à 48 heures. Il s’agit d’un moyen simple pour remplir rapidement les résultats de la recherche et le rendre plus efficace pour vos utilisateurs. Nous vous recommandons d’utiliser des résultats promus de SharePoint comme référence pour comprendre comment nommer et créer des résultats de recherche pertinents.
+Si votre organisation a installé les résultats promus dans SharePoint, vous pouvez importer les titres, les URL et les descriptions des résultats promus pour votre client dans Recherche Microsoft et mettre le contenu importé à la disposition de vos utilisateurs. Dans la plupart des cas, l’importation SharePoint résultats ne prend que quelques minutes. Si vous importez un grand nombre de résultats, cela peut prendre jusqu’à 48 heures. Il s’agit d’un moyen simple pour remplir rapidement les résultats de la recherche et le rendre plus efficace pour vos utilisateurs. Nous vous recommandons d’utiliser les résultats promus de SharePoint comme référence pour comprendre comment nommer et créer des résultats de recherche pertinents.
 
 ### <a name="add-default-and-suggested-bookmarks"></a>Ajouter des signets par défaut et suggérés
 
 Nous avons inclus des signets suggérés par défaut que vos utilisateurs peuvent trouver utiles, notamment des signets pour les ressources humaines, les avantages, le support technique, la gestion des mots de passe, etc. Examinez, mettez à jour et publiez ces signets suggérés pour fournir des résultats de haute qualité immédiatement à vos utilisateurs.
 
-Vos utilisateurs peuvent également suggérer des signets que vous souhaitez voir ajoutés à l’aide de liens de commentaires dans Microsoft Search (recherche Microsoft). Leurs recommandations apparaissent sous la mesure de signets suggérés.
+Vos utilisateurs peuvent également suggérer des signets que vous souhaitez voir ajoutés à l’aide de liens de commentaires dans Recherche Microsoft. Leurs recommandations apparaissent sous la mesure de signets suggérés.
 
 ### <a name="import-bookmarks"></a>Importer des signets
 
 Utilisez la fonctionnalité d’importation pour faciliter l’ajout ou la modification d’un grand nombre de signets. Utilisez-le pour :
 
 - Ajout en bloc de signets : ajoutez des détails dans le fichier de modèle de signet, puis importez-le.
-- Modification en bloc de signets : exportez des signets dans un fichier .csv, modifiez les détails du signet dans le fichier exporté, puis importez le fichier modifié.
+- Modification en bloc de signets : exportez des signets vers un fichier .csv, modifiez les détails du signet dans le fichier exporté, puis importez le fichier modifié.
 
 Quelques points importants sur le fichier de modèle :
 
 - Ne modifiez jamais les données dans ces champs *: ID,* *Dernière modification* et Dernière *modification par*
-- Si vous incluez *l’ID* d’un signet existant, il sera remplacé par les informations dans le fichier d’importation.
+- Si vous incluez *l’ID* d’un signet existant, il sera remplacé par les informations du fichier d’importation.
 - Pour les signets existants avec le même titre ou url, le signet est mis à jour avec les informations dans le fichier d’importation.
 - Certains champs du fichier modèle ne sont pas obligatoires, et les champs obligatoires varient en fonction de l’état du signet.
 - En fonction du *champ État,* les signets sont enregistrés en tant que brouillons, suggérés, programmés, exclus, ou ils seront publiés automatiquement.
@@ -106,15 +106,15 @@ Pour éviter les erreurs de duplication de signet à signet :
 
 ### <a name="publish-or-review-recommended-bookmarks"></a>Publier ou réviser les signets recommandés
 
-Pour réduire l’effort manuel requis pour ajouter des signets, Recherche Microsoft peut évaluer les liens SharePoint de votre organisation et recommander des signets. Vous pouvez les consulter avant de les publier ou les configurer pour les publier automatiquement. Aucune configuration n’est nécessaire pour les signets recommandés, ils sont activés et configurés sur l’autopublish par défaut. Pour modifier ces paramètres à tout moment, sélectionnez Gérer les **signets** pour ouvrir le panneau Paramètres du signet.
+Pour réduire l’effort manuel requis pour ajouter des signets, Recherche Microsoft pouvez évaluer les liens SharePoint de votre organisation et recommander des signets. Vous pouvez les consulter avant de les publier ou les configurer pour les publier automatiquement. Aucune configuration n’est nécessaire pour les signets recommandés, ils sont activés et configurés sur autopublish par défaut. Pour modifier ces paramètres à tout moment, sélectionnez Gérer les **signets** pour ouvrir le panneau Paramètres du signet.
 
-![Capture d’écran des paramètres de signet recommandés dans le portail d’administration Microsoft 365](media/bookmarks-recommendedsettings.png)
+![Capture d’écran des paramètres de signet recommandés dans le portail Microsoft 365'administration](media/bookmarks-recommendedsettings.png)
 
-Si les signets recommandés sont activés, le moteur de recommandation évalue les sites SharePoint de votre organisation pour identifier les liens à fort trafic. Après une période d’évaluation initiale, les signets recommandés seront publiés automatiquement ou ajoutés à la liste des signets suggérés. Le cycle suivant ,une période d’évaluation de 30 jours suivie de l’autopublishing ou de l’ajout de signets suggérés, commence.
+Si les signets recommandés sont activés, le moteur de recommandation évalue SharePoint sites de votre organisation pour identifier les liens à trafic élevé. Après une période d’évaluation initiale, les signets recommandés seront publiés automatiquement ou ajoutés à la liste des signets suggérés. Le cycle suivant( une période d’évaluation de 30 jours suivie de l’autopublishing ou de l’ajout de signets suggérés) commencera ensuite.
 
 Nous vous suggérons d’examiner régulièrement ces signets publiés automatiquement ou suggérés par les administrateurs ou les éditeurs de recherche. En outre, les signets recommandés n’incluent jamais les URL trouvées dans les signets publiés, suggérés, programmés ou exclus existants.
 
-Pour vous assurer que seuls les utilisateurs ayant accès voient un signet recommandé dans les résultats de travail, une fonctionnalité de vérification d’accès est incluse pour tous les signets recommandés. Les utilisateurs ne voient jamais un signet recommandé pour un site SharePoint à qui ils ne peuvent pas accéder. Cette vérification d’accès est  contrôlée par l’option Uniquement les personnes ayant accès à ce lien dans le paramètre Groupes pour chaque signet recommandé.
+Pour vous assurer que seuls les utilisateurs ayant accès voient un signet recommandé dans les résultats de travail, une fonctionnalité de vérification d’accès est incluse pour tous les signets recommandés. Les utilisateurs ne voient jamais de signet recommandé pour un site SharePoint’ils ne peuvent pas y accéder. Cette vérification d’accès est  contrôlée par l’option Uniquement les personnes ayant accès à ce lien dans le paramètre Groupes pour chaque signet recommandé.
 
 La vérification d’accès s’arrête si l’URL du signet recommandé ou le paramètre Groupes est modifié.
 
@@ -126,21 +126,21 @@ Un signet peut avoir plusieurs mots clés et partager le même mot clé, mais le
 
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 
-**Q : Combien de temps faut-il pour qu’un signet soit visible dans Microsoft Search (recherche Microsoft) après sa publication ?**
+**Q : Combien de temps faut-il pour qu’un signet soit visible dans Recherche Microsoft après sa publication ?**
 
-**R :**  Un signet est disponible dans Recherche Microsoft immédiatement après la publication.
+**R :**  Un signet est disponible dans la Recherche Microsoft immédiatement après la publication.
 
 **Q : Combien de temps faut-il pour qu’un signet recommandé apparaisse ?**
 
-**R :**  Les signets recommandés apparaissent uniquement dans Recherche Microsoft si les signets recommandés et l’autopublishing sont activés. Pendant la période d’évaluation initiale, le moteur de recommandation évalue le trafic SharePoint pour identifier les signets appropriés, puis les autopublier. Une fois publiés, ils sont immédiatement disponibles dans Microsoft Search (recherche Microsoft).
+**R :**  Les signets recommandés apparaissent uniquement dans Recherche Microsoft si les signets recommandés et l’autopublishing sont activés. Pendant la période d’évaluation initiale, le moteur de recommandation évaluera SharePoint trafic pour identifier les signets appropriés, puis les autopublier. Une fois publiés, ils sont immédiatement disponibles Recherche Microsoft.
 
-**Q : Combien de temps faut-il pour qu’un signet supprimé soit supprimé des résultats de recherche Microsoft ?**
+**Q : Combien de temps faut-il pour qu’un signet supprimé soit supprimé de Recherche Microsoft résultats ?**
 
 **R**: Les signets supprimés sont immédiatement supprimés des résultats du travail.
 
-**Q : Microsoft Search (recherche Microsoft) recommandera-t-il des signets à partir de sites dans toutes les langues ?**
+**Q : Est-ce Recherche Microsoft recommander des signets à partir de sites dans toutes les langues ?**
 
-**R**: Oui, Microsoft Search (recherche Microsoft) peut recommander des signets à partir de n’importe quel site SharePoint interne, quelle que soit la langue.
+**R**: Oui, Recherche Microsoft pouvez recommander des signets à partir de n’importe quel site SharePoint interne, quelle que soit la langue.
 
 **Q : Puis-je arrêter d’afficher les signets recommandés dans les résultats de la recherche ?**
 
