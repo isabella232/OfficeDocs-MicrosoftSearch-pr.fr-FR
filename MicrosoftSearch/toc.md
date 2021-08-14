@@ -17,7 +17,7 @@
 ### [galerie Connecteurs](connectors-gallery.md)
 ### Configurer les connecteurs avec Microsoft
 #### [Vue d’ensemble de la configuration](configure-connector.md)
-#### [Configurer l'agent connecteur graphique](on-prem-agent.md)
+#### [Configurer l'agent connecteur graphique](graph-connector-agent.md)
 #### [Mapper des identités non Azure AD](map-non-aad.md)
 #### [Mapper Azure AD identités](map-aad.md)
 #### Informations spécifiques au connecteur

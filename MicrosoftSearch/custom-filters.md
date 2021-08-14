@@ -12,18 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Gérer les filtres personnalisés
-ms.openlocfilehash: 339c7e96a00860a044a4e1af7382932f8e440e01b8b6d12445c24c1ea9b8cad0
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 256cf9748aa3050aacf48c3562f6f84b4ba2e460
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533127"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235920"
 ---
 # <a name="manage-custom-filters"></a>Gérer les filtres personnalisés
 
 Vous pouvez utiliser des filtres pour personnaliser l Recherche Microsoft expérience utilisateur. Les filtres permettent aux utilisateurs d’affiner rapidement l’ensemble des résultats de leur requête de recherche.
 
 Un filtre personnalisé peut être créé à l’intérieur d’un secteur vertical basé sur une propriété de connexion. Par exemple, vous pouvez créer un **filtre Publié sur** pour la connexion ServiceNow à l’intérieur d’un secteur vertical.
+
+> [!NOTE]
+> Les filtres personnalisés sont actuellement en prévisualisation pour les administrateurs et les utilisateurs finaux dans la version ciblée. Pour plus d’informations sur la prévisualisation, voir [les fonctionnalités d’aperçu des connecteurs.](connectors-overview.md#what-are-the-preview-features)
 
 ## <a name="create-a-filter-in-an-organizational-level-vertical"></a>Créer un filtre dans un secteur vertical au niveau de l’organisation
 
@@ -45,7 +48,7 @@ Pour créer un filtre sur la recherche Microsoft, suivez les étapes suivantes :
     | Connection | Propriété | Alias |
     | --- | --- | --- |
     | Service Now | Propriétaire | Auteur |
-    | Jira | Éditeur | Auteur |
+    | Jira | Publisher | Auteur |
 
 1. Les filtres existent dans l’étendue d’un secteur vertical.
 

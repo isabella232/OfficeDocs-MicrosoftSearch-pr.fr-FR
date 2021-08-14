@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble des connecteurs Graph Microsoft pour Recherche Microsoft
-ms.openlocfilehash: 42bcdfbd8d2b00a54a1fa73c41331bb36cc90e3c903ad52cb7b37888a4fb317e
-ms.sourcegitcommit: cd773596e613bf9a8d64990807c1078d8953cda1
+ms.openlocfilehash: 8b7c4545022765a5e903f2ba98490dae0cd40e85
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57801956"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235864"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -74,7 +74,7 @@ Vous pouvez vous connecter aux sources de données suivantes à l’aide de conn
 * [Salesforce (préversion)](salesforce-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
-La [galerie de connecteurs Graph](https://www.microsoft.com/microsoft-search/connectors) Microsoft contient une brève description de chacun de ces connecteurs. Si vous êtes prêt à connecter l’une de ces sources [](configure-connector.md) de données à votre client, n’oubliez pas de lire la vue d’ensemble du programme d’installation et tous les autres articles de la section Connecteurs d’installation par Microsoft qui s’appliquent à votre source de données.
+La [galerie de connecteurs Graph](https://www.microsoft.com/microsoft-search/connectors) Microsoft contient une brève description de chacun de ces connecteurs. Si vous êtes prêt à connecter l’une de ces sources [](configure-connector.md) de données à votre client, n’oubliez pas de lire la vue d’ensemble du programme d’installation et les autres articles de la section Connecteurs d’installation par Microsoft qui s’appliquent à votre source de données.
 
 ### <a name="microsoft-graph-connectors-by-our-partners"></a>Connecteurs Graph Microsoft par nos partenaires
 
@@ -82,7 +82,7 @@ La [galerie de connecteurs](https://www.microsoft.com/microsoft-search/connector
 
 ### <a name="build-your-own-microsoft-graph-connector"></a>Créer votre propre connecteur Microsoft Graph
 
-Vous pouvez créer votre propre connecteur si vous préférez. Pour plus d’informations sur la création de connecteurs, voir Créer votre premier connecteur [Microsoft Graph personnalisé.](/graph/connecting-external-content-build-quickstart)
+Vous pouvez créer votre propre connecteur si vous préférez. Pour plus d’informations sur la création de connecteurs, voir Créer votre premier connecteur [microsoft Graph personnalisé.](/graph/connecting-external-content-build-quickstart)
 
 ## <a name="how-do-i-manage-my-connections"></a>Comment gérer mes connexions ?
 
@@ -96,19 +96,19 @@ Pour plus d’informations, voir [Conditions d’utilisation](licensing.md) et c
 
 ## <a name="what-are-the-preview-features"></a>Quelles sont les fonctionnalités d’aperçu ?
 
-Bien que les connecteurs Graph microsoft et les API Recherche Microsoft soient désormais généralement disponibles, plusieurs fonctionnalités sont disponibles en prévisualisation.
+Bien que les connecteurs Graph microsoft et Recherche Microsoft API soient désormais généralement disponibles, plusieurs fonctionnalités sont disponibles en prévisualisation.
 
-L’ensemble de connecteurs et de fonctionnalités en prévisualisation inclut :
+L’ensemble des connecteurs et des fonctionnalités de la prévisualisation comprend les éléments suivants :
 
 * [Azure DevOps connecteur](azure-devops-connector.md)
 * [Connecteur Salesforce](salesforce-connector.md)
 * [Connecteur ServiceNow avec](servicenow-connector.md) autorisations de recherche qui utilisent des ACA sources
 * [Gérer les filtres personnalisés](custom-filters.md)
-* [Connexions multiples dans un secteur vertical](customize-search-page.md#multiple-connections-in-a-vertical)
+* [Plusieurs connexions dans un secteur vertical](customize-search-page.md#multiple-connections-in-a-vertical)
 
 ## <a name="how-do-i-customize-and-configure-search-results"></a>Comment personnaliser et configurer les résultats de la recherche ?
 
-Il existe de nombreuses façons de personnaliser et de configurer les résultats de la recherche. Pour en savoir plus, consultez les articles suivants :
+Il existe de nombreuses façons de personnaliser et de configurer les résultats de recherche. Pour en savoir plus, consultez les articles suivants :
 
 * [Gérer des secteurs verticaux et des types de résultats](customize-search-page.md)
 * [Gérer les dispositions des résultats de la recherche](customize-results-layout.md)

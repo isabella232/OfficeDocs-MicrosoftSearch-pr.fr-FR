@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Détails et erreurs des connecteurs
-ms.openlocfilehash: b3fe584447191476d4100d5be9d5f23ca641d31a69d71f4e25698735190e78ed
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: f7ae7f66aa1ec00c3178bec91b15304459666d5e
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533262"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235953"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
 # <a name="view-connection-details-and-errors"></a>Afficher les détails et erreurs de connexion
 
-Pour accéder à vos connecteurs et les gérer, vous devez être désigné en tant qu’administrateur de recherche pour votre client. Contactez votre administrateur client pour vous fournir le rôle d’administrateur de recherche.
+Pour accéder à vos connecteurs et les gérer, vous devez être désigné comme administrateur de recherche pour votre client. Contactez votre administrateur client pour vous fournir le rôle d’administrateur de recherche.
 
 Accédez à [l’onglet Connecteurs](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) dans [la Centre d’administration Microsoft 365](https://admin.microsoft.com).
 
@@ -31,7 +31,7 @@ Vous pouvez afficher les détails et les erreurs de connexion lorsque vous cliqu
 
 ## <a name="view-your-last-crawl-info"></a>Afficher vos dernières informations d’analyse
 
-Une fois la première analyse incrémentielle ou complète terminée, les dernières valeurs de données d’analyse sont affichées sous le dernier en-tête d’analyse dans le volet de détails. Si aucune dernière analyse n’a été en cours d’analyse, aucune information ne s’y trouvait sous le dernier en-tête d’analyse. Ces informations sur la dernière analyse vous aideront à obtenir des informations sur la façon dont l’analyse a été effectuée et à effectuer les étapes nécessaires, le cas échéant.
+Une fois la première analyse incrémentielle ou complète terminée, les dernières valeurs de données d’analyse sont affichées sous le dernier en-tête d’analyse dans le volet de détails. S’il n’y a pas eu de dernière analyse en cours d’analyse, aucune information ne s’y trouvait sous le dernier en-tête d’analyse. Ces informations sur la dernière analyse vous aideront à obtenir des informations sur la façon dont l’analyse a été effectuée et à effectuer les étapes nécessaires, le cas échéant.
 
 Les dernières valeurs d’analyse suivantes seront disponibles pour chaque connexion :
 
@@ -68,7 +68,7 @@ Code d’erreur | Message d’erreur | Solution
 1008 | L’utilisation totale du quota de votre client a atteint sa limite. | Essayez de supprimer une connexion pour libérer une partie de votre quota ou ajustez vos filtres d’ingestion afin d’apporter moins de données. Si ceux-ci ne résolvent pas le problème, contactez le support Microsoft.
 1009 | L’utilisation totale du quota pour votre connexion a atteint sa limite. | Essayez d’ajuster vos filtres d’ingestion pour apporter moins de données. Si cela ne résout pas le problème, contactez le support Microsoft.
 1010 | L’utilisation totale du quota pour l’indexation de groupes non Azure AD a atteint sa limite de 100 000. | Essayez de supprimer une connexion pour libérer une partie de votre quota ou ajustez vos filtres d’ingestion afin d’apporter moins de données. Si ceux-ci ne résolvent pas le problème, contactez le support Microsoft.
-1011 | L’agent Graph [connecteur](graph-connector-agent.md) de connexion n’est pas accessible ou hors connexion. | 
+1011 | [L’agent](graph-connector-agent.md) Graph connecteur de connexion n’est pas accessible ou hors connexion. | 
 1012 | L’authentification à votre connexion a échoué en raison d’un mode d’authentification non pris en compte. | Modifiez la connexion pour mettre à jour les paramètres d’authentification de votre connexion.
 2001 | L’indexation est limitée en raison d’un grand nombre de mises à jour dans la file d’attente. En fonction de la file d’attente, la fin des mises à jour peut prendre un certain temps. | Veuillez patienter jusqu’à ce que la file d’attente soit effacée.
 2002 | L’indexation a échoué en raison d’une mise en forme d’élément non pris en compte. | Pour plus d’informations, voir la documentation spécifique au connecteur.
@@ -78,6 +78,6 @@ Code d’erreur | Message d’erreur | Solution
 2006 | Échec du mappage utilisateur en raison d’une formule de mappage non valide ou d’aucun utilisateur Azure AD avec cette propriété. | Essayez de supprimer et de recréer la connexion avec une formule de mappage différente. 
 2007 | Cet élément ne s’affichera pas dans Recherche Microsoft car certains utilisateurs ou groupes sans autorisation d’affichage de cet élément n’ont pas pu être indexés. | 
 2008 | Les connexions ne peuvent pas avoir de groupes non Azure AD avec plus de 50 000 membres. | Essayez de supprimer des utilisateurs d’un groupe ou essayez de supprimer des éléments ACLed avec ce groupe de l’ingestion et de recréer la connexion.
-2009 | L’indexation de groupe non Azure AD est temporairement suspendue en raison d’un grand nombre de demandes. L’indexation reprend lorsque le système termine le traitement de ces demandes. Consultez-la ultérieurement. | 
+2009 | L’indexation de groupe non Azure AD est temporairement suspendue en raison d’un grand nombre de demandes. L’indexation reprend lorsque le système termine le traitement de ces demandes. Veuillez revenir plus tard. | 
 2010 | Cette connexion n’est plus valide en raison d’une mise à jour réalisée par Microsoft. Supprimez la connexion et créez-en une. | Supprimez la connexion et créez-en une.
 5000 | Un problème s’est passé. Si cela se poursuit, contactez le support technique. |

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Configurer le connecteur d’Graph de fichiers pour Recherche Microsoft
-ms.openlocfilehash: 387a04c435045d620f8e35aa9fbdd37e23da32a61489d0102dc7bda09920e980
-ms.sourcegitcommit: 07d04a81d30b04d1f7e3c556bd711dc7efd710d9
+ms.openlocfilehash: 71bcc86c2a1bf2f3d20693028ce006812aa170b5
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57823013"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235915"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -28,13 +28,13 @@ ms.locfileid: "57823013"
 Le connecteur de partage de Graph permet aux utilisateurs de votre organisation de rechercher des partages de fichiers Windows locaux.
 
 > [!NOTE]
-> Lisez [**l’article**](configure-connector.md) Installation de votre connecteur Graph pour comprendre le processus d’installation Graph des connecteurs.
+> Lisez [**l’article**](configure-connector.md) Installation de votre connecteur Graph pour comprendre le processus d’installation Graph connecteurs.
 
 ## <a name="before-you-get-started"></a>Avant de commencer
 
 ### <a name="install-the-graph-connector-agent"></a>Installer l’agent Graph connecteur d’installation
 
-Pour indexer vos partages Windows de fichiers, vous devez installer et inscrire l’agent Graph connecteur. Pour plus [d’informations, voir Installer Graph’agent](graph-connector-agent.md) connecteur de connexion.  
+Pour indexer vos partages Windows de fichiers, vous devez installer et inscrire l’agent Graph connecteur. Pour plus [d’informations, voir Installer Graph connecteur](graph-connector-agent.md) d’installation.  
 
 ### <a name="content-requirements"></a>Exigences en matière de contenu
 
@@ -76,7 +76,7 @@ Seul le contenu textuel de ces formats est indexé : DOC, DOCM, DOCX, DOTX, EML,
 
 #### <a name="full-network-path-of-filefolder-or-regular-expression-to-limit-indexing"></a>Chemin d’accès réseau complet du fichier/dossier ou de l’expression régulière pour limiter l’indexation 
 
-Dans le chemin d’accès réseau, utilisez le caractère d’échappatoire ( \\ ) avant les caractères spéciaux tels que \\ . Exemple : pour le chemin \\ \\ d’accès CONTOSO FILE SHAREDFOLDER, la façon correcte d’entrer est \\ \\ \\ \\ \\ \\ CONTOSO \\ \\ FILE \\ \\ SHAREDFOLDER
+Dans le chemin d’accès réseau, utilisez le caractère d’échappatoire ( \\ ) avant les caractères spéciaux comme \\ . Exemple : pour le chemin \\ \\ d’accès CONTOSO FILE SHAREDFOLDER, la façon correcte d’entrer est \\ \\ \\ \\ \\ \\ CONTOSO \\ \\ FILE \\ \\ SHAREDFOLDER
 
 Vous pouvez trouver les règles d’écriture d’expression [régulière ici](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)
 
@@ -86,11 +86,11 @@ L’administrateur aurait également la possibilité d’accorder une exception 
 
 ## <a name="step-5-manage-search-permissions"></a>Étape 5 : Gérer les autorisations de recherche
 
-Vous pouvez restreindre l’autorisation de rechercher n’importe quel fichier en fonction des listes de contrôle d’accès de partage ou des listes de contrôle d’accès NTFS (New Technology File System), en sélectionnant l’option souhaitée dans la page Gérer les **autorisations de** recherche. Les comptes et groupes d’utilisateurs fournis dans ces listes de contrôle d’accès doivent être gérés par Active Directory (AD). Si vous utilisez un autre système pour la gestion des comptes d’utilisateurs, vous pouvez sélectionner l’option « tout le monde » qui permet aux utilisateurs de rechercher tous les fichiers sans restrictions d’accès. Toutefois, lorsque les utilisateurs tentent d’ouvrir le fichier, les contrôles d’accès définies au niveau de la source s’appliquent.
+Vous pouvez restreindre l’autorisation de rechercher n’importe quel fichier basé sur les listes de contrôle d’accès de partage ou les listes de contrôle d’accès NTFS (New Technology File System), en sélectionnant l’option souhaitée dans la page Gérer les **autorisations** de recherche. Les comptes et groupes d’utilisateurs fournis dans ces listes de contrôle d’accès doivent être gérés par Active Directory (AD). Si vous utilisez un autre système pour la gestion des comptes d’utilisateurs, vous pouvez sélectionner l’option « tout le monde » qui permet aux utilisateurs de rechercher tous les fichiers sans restrictions d’accès. Toutefois, lorsque les utilisateurs tentent d’ouvrir le fichier, les contrôles d’accès définies au niveau de la source s’appliquent.
 
 Notez que windows fournit par défaut l’autorisation « Lecture » à « Tout le monde » dans les AAL de partage lorsqu’un dossier est partagé sur le réseau. Par extension, si vous choisissez partager des ACA dans Gérer les autorisations de recherche, les **utilisateurs** pourront rechercher tous les fichiers. Si vous souhaitez restreindre l’accès, supprimez l’accès « Lecture » pour « Tout le monde » dans les partages de fichiers et fournissez l’accès uniquement aux utilisateurs et groupes souhaités. Le connecteur lit ensuite ces restrictions d’accès et les applique à la recherche.
 
-Vous pouvez choisir les ACA de partage uniquement si le chemin d’accès au partage que vous avez fourni suit le format de chemin d’accès UNC. Vous pouvez créer un chemin d’accès au format UNC en allant à « Partage avancé » sous l’option « Partage ».
+Vous pouvez choisir les AAL de partage uniquement si le chemin d’accès de partage que vous avez fourni suit le format de chemin d’accès UNC. Vous pouvez créer un chemin d’accès au format UNC en allant à « Partage avancé » sous l’option « Partage ».
 
 ![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
 

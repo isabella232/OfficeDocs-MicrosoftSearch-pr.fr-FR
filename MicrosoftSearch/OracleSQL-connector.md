@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Configurer le connecteur SQL Graph Oracle pour Recherche Microsoft.
-ms.openlocfilehash: 5c45998796a606c61f1fa4a63693fe7a32bb8da7a5267bd1456452ed4872dc84
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 21585d1d60e5dcd73a45a3ccda151fbb144e85eb
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533445"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58236023"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -36,7 +36,7 @@ Cet article est réservé à toute personne qui configure, exécute et surveille
 
 ### <a name="install-the-graph-connector-agent"></a>Installer l’agent Graph connecteur d’installation
 
-Pour accéder à vos données tierces sur site, vous devez installer et configurer l’agent Graph connecteur local. Pour plus [d’informations, voir Installer Graph’agent](graph-connector-agent.md) connecteur de connexion.  
+Pour accéder à vos données tierces sur site, vous devez installer et configurer l’agent Graph connecteur local. Pour plus [d’informations, voir Installer Graph connecteur](graph-connector-agent.md) d’installation.  
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
 
@@ -70,7 +70,7 @@ Dans cette étape, vous configurez la requête SQL qui exécute une analyse comp
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a>Sélectionner des colonnes de données (obligatoire) et des colonnes ACL (facultatif)
 
-L’exemple illustre la sélection de cinq colonnes de données qui détiennent les données de la recherche : OrderId, OrderTitle, OrderDesc, CreatedDateTime et IsDeleted. Pour définir des autorisations d’affichage pour chaque ligne de données, vous pouvez éventuellement sélectionner ces colonnes de la ACL : AllowedUsers, AllowedGroups, DeniedUsers et DeniedGroups. Pour toutes ces colonnes de données, vous pouvez sélectionner les options **de requête,** de **recherche** ou de **récupération.**
+L’exemple illustre la sélection de cinq colonnes de données qui détiennent les données de la recherche : OrderId, OrderTitle, OrderDesc, CreatedDateTime et IsDeleted. Pour définir des autorisations d’affichage pour chaque ligne de données, vous pouvez éventuellement sélectionner ces colonnes de la ACL : AllowedUsers, AllowedGroups, DeniedUsers et DeniedGroups. Pour toutes ces colonnes de données, vous pouvez sélectionner les options **de** **requête,** de recherche ou de **récupération.**
 
 Sélectionnez des colonnes de données comme illustré dans cet exemple de requête : `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
 
@@ -87,7 +87,7 @@ L’utilisation de chacune des colonnes ACL dans la requête ci-dessus est décr
 
 ### <a name="supported-data-types"></a>Types de données pris en charge
 
-Le tableau ci-dessous récapitule les types de données pris en charge par le connecteur SQL Oracle. Le tableau récapitule également le type de données d’indexation pour le type SQL données pris en charge. Pour en savoir plus sur les connecteurs microsoft Graph pris en charge les types de données pour l’indexation, reportez-vous à la documentation sur les [types de ressources de propriété.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
+Le tableau ci-dessous récapitule les types de données pris en charge par le connecteur SQL Oracle. Le tableau récapitule également le type de données d’indexation pour le type SQL données pris en charge. Pour en savoir plus sur les connecteurs Graph Microsoft pris en charge pour l’indexation, reportez-vous à la documentation sur les [types de ressources de propriété.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
 
 | Catégorie | Type de données source | Type de données d’indexation |
 | ------------ | ------------ | ------------ |
@@ -102,12 +102,12 @@ Pour tout autre type de données actuellement non directement pris en charge, la
 
 ### <a name="watermark-required"></a>Filigrane (obligatoire)
 
-Pour éviter la surcharge de la base de données, le connecteur par lots et reprend les requêtes d’analyse complète avec une colonne filigrane d’analyse complète. À l’aide de la valeur de la colonne filigrane, chaque lot suivant est récupéré et l’interrogation reprend à partir du dernier point de contrôle. Il s’agit essentiellement d’un mécanisme permettant de contrôler l’actualisation des données pour les analyse complètes.
+Pour éviter la surcharge de la base de données, le connecteur par lots et reprend les requêtes d’analyse complète avec une colonne filigrane d’analyse complète. En utilisant la valeur de la colonne filigrane, chaque lot suivant est récupéré et l’interrogation reprend à partir du dernier point de contrôle. Il s’agit essentiellement d’un mécanisme permettant de contrôler l’actualisation des données pour les analyse complètes.
 
 Créez des extraits de requête pour les filigranes, comme illustré dans les exemples suivants :
 
 * `WHERE (CreatedDateTime > @watermark)`. Nommez le nom de colonne de filigrane avec le mot clé `@watermark` réservé. Vous ne pouvez trier la colonne filigrane que par ordre croissant.
-* `ORDER BY CreatedDateTime ASC`. Trier la colonne filigrane dans l’ordre croissant.
+* `ORDER BY CreatedDateTime ASC`. Tri dans la colonne filigrane dans l’ordre croissant.
 
 Dans la configuration présentée dans l’image suivante, se trouve `CreatedDateTime` la colonne filigrane sélectionnée. Pour extraire le premier lot de lignes, spécifiez le type de données de la colonne filigrane. Dans ce cas, le type de données est `DateTime` .
 
@@ -117,7 +117,7 @@ La première requête récupère le premier **N** nombre de lignes à l’aide d
 
 ### <a name="skipping-soft-deleted-rows-optional"></a>Ignorer les lignes supprimées (facultatif)
 
-Pour exclure l’indexation des lignes supprimées (ou non) dans votre base de données, spécifiez le nom et la valeur de la colonne de suppression (suppression totale) qui indiquent que la ligne est supprimée.
+Pour exclure l’indexation des lignes supprimées (à l’aide d’une suppression indélémentée) dans votre base de données, spécifiez le nom et la valeur de la colonne de suppression (suppression totale) qui indiquent que la ligne est supprimée.
 
 ![Paramètres de suppression souple : « Supprimer (suppression) » et « Valeur de la colonne suppression (suppression) qui indique une ligne supprimée »](media/MSSQL-softdelete.png)
 
@@ -180,7 +180,7 @@ Sous-dessous se trouve une liste des erreurs courantes observées lors de la con
 
 | Étape de configuration | Message d’erreur | Raisons possibles |
 | ------------ | ------------ | ------------ |
-| Paramètres de base de données | Erreur du serveur de base de données : la demande de connexion a été mise à l’heure | Hostname non valide <br> Hôte non accessible |
+| Paramètres de base de données | Erreur du serveur de base de données : la demande de connexion a été hors délai | Hostname non valide <br> Hôte non accessible |
 | Paramètres de base de données | Erreur du serveur de base de données : ORA-12541 : TNS : pas d’écoute | Port non valide |
 | Paramètres de base de données | Erreur du serveur de base de données : ORA-12514 : TNS : l’écoute ne connaît pas actuellement le service demandé dans le descripteur de connecteur | Nom de service (base de données) non valide |
 | Paramètres de base de données | Erreur du serveur de base de données : échec de connexion pour l’utilisateur ' `user` '. | Nom d’utilisateur ou mot de passe non valide |
@@ -191,4 +191,4 @@ Le connecteur SQL Oracle présente les limitations ci-après dans la version pr�
 
 * La base de données sur site doit exécuter la base de données Oracle version 11g ou ultérieure.
 * Les ACA sont uniquement pris en charge à l’aide d’un nom d’utilisateur principal (UPN), d Azure Active Directory (Azure AD) ou d’Active Directory Security.
-* L’indexation de contenu enrichi dans les colonnes de base de données n’est pas prise en charge. Les exemples de contenu de ce type sont html, JSON, XML, blobs et les parsings de document qui existent en tant que liens à l’intérieur des colonnes de base de données.
+* L’indexation de contenu enrichi dans les colonnes de base de données n’est pas prise en charge. Les exemples de contenu de ce type sont HTML, JSON, XML, blobs et les parsings de document qui existent en tant que liens à l’intérieur des colonnes de base de données.

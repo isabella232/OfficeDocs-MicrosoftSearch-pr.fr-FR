@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur de Enterprise web Graph pour Recherche Microsoft
-ms.openlocfilehash: 7e308c8239fbc4ea0da5449731d25442490270f9d604a40944d17cd2bf367a0c
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 002a1504915c2c882492c894595e39598c692bcf
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533077"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235933"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -26,12 +26,12 @@ ms.locfileid: "54533077"
 
 # <a name="enterprise-websites-graph-connector"></a>Enterprise sites web Graph connecteur
 
-Le connecteur Enterprise sites web Graph permet à votre organisation d’indexer des articles et du contenu à partir de ses sites web **internes.** Après avoir configuré le connecteur et synchronisé le contenu à partir du site web, les utilisateurs finaux peuvent rechercher ce contenu à partir de n’importe quel client Recherche Microsoft client.
+Le connecteur Enterprise sites web Graph permet à votre organisation d’indexer des articles et du contenu à partir de ses sites web **internes.** Après avoir configuré le connecteur et synchronisé le contenu à partir du site web, les utilisateurs finaux peuvent rechercher ce contenu à partir de n’Recherche Microsoft client.
 
 > [!NOTE]
 > Lisez [**l’article Configurer votre connecteur Graph pour**](configure-connector.md) comprendre les instructions générales Graph’installation des connecteurs.
 
-Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur Enterprise sites web. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur Enterprise sites web. Cet article inclut également des informations [sur la résolution des problèmes.](#troubleshooting)
+Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur Enterprise sites web. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur Enterprise sites web. Cet article inclut également des informations sur [la résolution des problèmes.](#troubleshooting)
 
 <!---## Before you get started-->
 
@@ -61,7 +61,7 @@ Lorsqu’il est sélectionné, le connecteur analyse uniquement les URL réperto
 
 ### <a name="dynamic-site-configuration"></a>Configuration de site dynamique
 
-Si votre site web contient du contenu dynamique, par exemple des pages web qui se trouve dans des systèmes de gestion de contenu tels que Contrôle ou Unily, vous pouvez activer un robot dynamique. Pour l’activer, **sélectionnez Activer l’analyse pour les sites dynamiques.** Le robot attend le rendu du contenu dynamique avant de commencer l’analyse.
+Si votre site web contient du contenu dynamique, par exemple des pages web qui se trouve dans des systèmes de gestion de contenu tels que Contrôle ou Unily, vous pouvez activer un robot dynamique. Pour l’activer, sélectionnez **Activer l’analyse pour les sites dynamiques.** Le robot attend le rendu du contenu dynamique avant de commencer l’analyse.
 
 > [!div class="mx-imgBorder"]
 > ![Capture d’écran du volet Paramètres connexion pour Enterprise Web Connector](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
@@ -112,17 +112,17 @@ Vous pouvez éventuellement créer une liste **d’exclusions** pour exclure cer
 
 ## <a name="step-4-assign-property-labels"></a>Étape 4 : Attribuer des étiquettes de propriété
 
-Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Bien que cette étape ne soit pas obligatoire, le fait d’avoir des étiquettes de propriétés améliorera la pertinence de la recherche et garantira des résultats de recherche plus précis pour les utilisateurs finaux.
+Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Bien que cette étape ne soit pas obligatoire, le fait d’avoir certaines étiquettes de propriétés améliorera la pertinence de la recherche et garantira des résultats de recherche plus précis pour les utilisateurs finaux.
 
 ## <a name="step-5-manage-schema"></a>Étape 5 : Gérer le schéma
 
-Dans  l’écran Gérer le schéma, vous pouvez modifier les attributs de schéma (les options sont **Requête,** **Rechercher,** Récupérer et **Affiner)** associées aux propriétés, ajouter des alias facultatifs et choisir la propriété **Content.**
+Dans  l’écran Gérer le schéma, vous pouvez modifier les attributs de schéma (les options sont **Requête,** **Rechercher,** Récupérer et **Affiner)** associés aux propriétés, ajouter des alias facultatifs et choisir la propriété **Content.**
 
 ## <a name="step-6-manage-search-permissions"></a>Étape 6 : Gérer les autorisations de recherche
 
 Le connecteur Enterprise sites web prend uniquement en charge les autorisations de recherche visibles par **Tout le monde.** Les données indexées apparaissent dans les résultats de la recherche et sont visibles par tous les utilisateurs de l’organisation.
 
-## <a name="step-7-set-the-refresh-schedule"></a>Étape 7 : Définir la planification d’actualisation
+## <a name="step-7-set-the-refresh-schedule"></a>Étape 7 : Définir la planification de l’actualisation
 
 Le connecteur Enterprise sites web prend uniquement en charge une actualisation complète. Cela signifie que le connecteur va réacrader tout le contenu du site web pendant chaque actualisation. Pour vous assurer que le connecteur obtient suffisamment de temps pour analyser le contenu, nous vous recommandons de définir un intervalle de planification d’actualisation important. Nous vous recommandons une actualisation programmée entre une et deux semaines.
 

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer le connecteur Azure SQL et Microsoft SQL Graph pour Recherche Microsoft.
-ms.openlocfilehash: ed9284de968921f40003e011348e3e6d4321b59d86207b6c7d054765c6837a1e
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 9e8a9784c139873b4584f9be0a42e51f101bd7d6
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533508"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58236032"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -36,10 +36,10 @@ Cet article est réservé à toute personne qui configure, exécute et surveille
 
 ### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>Installer l’agent Graph connecteur local (requis pour le connecteur Microsoft SQL Server local uniquement)
 
-Pour accéder à vos données tierces sur site, vous devez installer et configurer l’agent Graph connecteur local. Pour plus [d’informations, voir Installer Graph’agent](graph-connector-agent.md) connecteur de connexion.
+Pour accéder à vos données tierces sur site, vous devez installer et configurer l’agent Graph connecteur local. Pour plus [d’informations, voir Installer Graph connecteur](graph-connector-agent.md) d’installation.
 
 >[!NOTE]
->Si vous utilisez l’authentification Windows lors de la configuration du connecteur Microsoft SQL Server Graph, l’utilisateur avec lequel vous essayez de vous connecter doit avoir des droits d’accès interactifs à l’ordinateur sur lequel l’agent de connecteur Graph est installé. Reportez-vous à la documentation sur la [gestion des stratégies](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) d’logo pour vérifier les droits d’accès.
+>Si vous utilisez l’authentification Windows lors de la configuration du connecteur Microsoft SQL Server Graph, l’utilisateur avec lequel vous essayez de vous connecter doit avoir des droits d’accès interactifs à l’ordinateur sur lequel l’agent de connecteur Graph est installé. Reportez-vous à la documentation sur la [gestion des stratégies d’accès](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) pour vérifier les droits d’accès.
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
 
@@ -78,9 +78,9 @@ Pour connecter votre connecteur Microsoft SQL Server à une source de données, 
 > [!NOTE] 
 > Votre base de données doit SQL Server version 2008 ou ultérieure pour que le connecteur Microsoft SQL Server puisse se connecter.
 
-Pour le connecteur Azure SQL, vous devez uniquement spécifier le nom du serveur ou l’adresse IP à qui vous souhaitez vous connecter. Le connecteur azure SQL prend uniquement en charge Azure Active Directory’authentification Open ID connect (OIDC) pour se connecter à la base de données.
+Pour le connecteur Azure SQL, vous devez uniquement spécifier le nom du serveur ou l’adresse IP à connecter. Le connecteur azure SQL prend uniquement en charge Azure Active Directory’authentification Open ID connect (OIDC) pour se connecter à la base de données.
 
-Pour une sécurité supplémentaire, vous pouvez configurer des règles de pare-feu IP pour votre base de données ou SQL Server Azure. Pour en savoir plus sur la configuration des règles de pare-feu IP, consultez la documentation sur les [règles de pare-feu IP.](/azure/azure-sql/database/firewall-configure) Ajoutez les plages IP clientes suivantes dans les paramètres de pare-feu.
+Pour une sécurité renforcée, vous pouvez configurer des règles de pare-feu IP pour votre base de données ou SQL Server Azure. Pour en savoir plus sur la configuration des règles de pare-feu IP, consultez la documentation sur les [règles de pare-feu IP.](/azure/azure-sql/database/firewall-configure) Ajoutez les plages IP clientes suivantes dans les paramètres de pare-feu.
 
 | Région | Plage d’adresses IP |
 | ------------ | ------------ |
@@ -118,13 +118,13 @@ L’utilisation de chacune des colonnes ACL dans la requête ci-dessus est décr
 
 ### <a name="supported-data-types"></a>Types de données pris en charge
 
-Le tableau ci-dessous récapitule SQL types de données pris en charge dans les connecteurs MS SQL et Azure SQL. Le tableau récapitule également le type de données d’indexation pour le type SQL données pris en charge. Pour en savoir plus sur les connecteurs microsoft Graph pris en charge les types de données pour l’indexation, reportez-vous à la documentation sur les [types de ressources de propriété.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
+Le tableau ci-dessous récapitule les types SQL données pris en charge dans les connecteurs MS SQL et Azure SQL. Le tableau récapitule également le type de données d’indexation pour le type SQL données pris en charge. Pour en savoir plus sur les connecteurs Graph Microsoft pris en charge pour l’indexation, reportez-vous à la documentation sur les [types de ressources de propriété.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
 
 | Catégorie | Type de données source | Type de données d’indexation |
 | ------------ | ------------ | ------------ |
 | Date et heure | date <br> DateHeure <br> datetime2 <br> smalldatetime | DateHeure |
 | Numérique exact | bigint <br> int <br> smallint <br> tinyint | int64 |
-| Numérique exact | bit | valeur booléenne |
+| Numérique exact | bit | booléen |
 | Nombre approximatif | float <br> real | double |
 | Chaîne de caractères | char <br> varchar <br> text | string |
 | Chaînes de caractères Unicode | nchar <br> nvarchar <br> ntext | string |
@@ -134,11 +134,11 @@ Pour tout autre type de données actuellement non directement pris en charge, la
 
 ### <a name="watermark-required"></a>Filigrane (obligatoire)
 
-Pour éviter la surcharge de la base de données, le connecteur par lots et reprend les requêtes d’analyse complète avec une colonne filigrane d’analyse complète. À l’aide de la valeur de la colonne filigrane, chaque lot suivant est récupéré et l’interrogation reprend à partir du dernier point de contrôle. Essentiellement, ces mécanismes contrôlent l’actualisation des données pour les analyse complètes.
+Pour éviter la surcharge de la base de données, le connecteur par lots et reprend les requêtes d’analyse complète avec une colonne filigrane d’analyse complète. En utilisant la valeur de la colonne filigrane, chaque lot suivant est récupéré et l’interrogation reprend à partir du dernier point de contrôle. Essentiellement, ces mécanismes contrôlent l’actualisation des données pour les analyse complètes.
 
 Créez des extraits de requête pour les filigranes, comme illustré dans les exemples suivants :
 
-- `WHERE (CreatedDateTime > @watermark)`. Nommez le nom de colonne de filigrane avec le mot clé `@watermark` réservé. Si l’ordre de tri de la colonne filigrane est croissant, utilisez `>` ; sinon, utilisez `<` .
+- `WHERE (CreatedDateTime > @watermark)`. Nommez le nom de colonne de filigrane avec le mot clé `@watermark` réservé. Si l’ordre de tri de la colonne de filigrane est croissant, utilisez `>` ; dans le cas contraire, utilisez `<` .
 - `ORDER BY CreatedDateTime ASC`. Trier la colonne filigrane par ordre croissant ou décroit.
 
 Dans la configuration présentée dans l’image suivante, se trouve `CreatedDateTime` la colonne filigrane sélectionnée. Pour extraire le premier lot de lignes, spécifiez le type de données de la colonne filigrane. Dans ce cas, le type de données est `DateTime` .
@@ -157,7 +157,7 @@ Pour exclure l’indexation des lignes supprimées (ou non) dans votre base de d
 
 Sélectionnez **Gérer les autorisations** pour choisir les différentes colonnes de contrôle d’accès qui spécifient le mécanisme de contrôle d’accès. Sélectionnez le nom de colonne que vous avez spécifié dans l’analyse complète SQL requête.
 
-Chacune des colonnes de la ACL est attendue comme une colonne à valeurs multiples. Ces valeurs d’ID multiples peuvent être séparées par des séparateurs tels que des points-virgules (;), virgule (,), etc. Vous devez spécifier ce séparateur dans le champ **séparateur de** valeurs.
+Chacune des colonnes ACL est attendue comme une colonne à valeurs multiples. Ces valeurs d’ID multiples peuvent être séparées par des séparateurs tels que des points-virgules (;), virgule (,), etc. Vous devez spécifier ce séparateur dans le champ **séparateur de** valeurs.
 
 Les types d’ID suivants sont pris en charge pour l’utilisation en tant que listes de contrôle d’appel :
 
@@ -223,6 +223,6 @@ Voici une erreur courante observée lors de la configuration du connecteur et sa
 Les connecteurs SQL ont les limitations ci-après dans la version préliminaire :
 
 - Microsoft SQL Server : la base de données sur site doit être SQL Server version 2008 ou ultérieure.
-- L Microsoft 365 et l’abonnement Azure (hébergeant la base de données Azure SQL) doivent se trouver dans le même Azure Active Directory.
+- L’Microsoft 365 et l’abonnement Azure (hébergeant la base de données Azure SQL) doivent se trouver dans le même Azure Active Directory.
 - Les ACA sont uniquement pris en charge à l’aide d’un nom d’utilisateur principal (UPN), d Azure Active Directory (Azure AD) ou d’Active Directory Security.
-- L’indexation de contenu enrichi dans les colonnes de base de données n’est pas prise en charge. Les exemples de contenu de ce type sont html, JSON, XML, blobs et les parsings de document qui existent en tant que liens à l’intérieur des colonnes de base de données.
+- L’indexation de contenu enrichi dans les colonnes de base de données n’est pas prise en charge. Les exemples de contenu de ce type sont HTML, JSON, XML, blobs et les parsings de document qui existent en tant que liens à l’intérieur des colonnes de base de données.
