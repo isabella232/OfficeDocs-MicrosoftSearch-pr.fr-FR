@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble de la configuration des connecteurs Graph par Microsoft
-ms.openlocfilehash: 0c67081d3efab421b563e82dba506da85e65cb91d34b31f128f3bcff945c68a1
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: b08363421ed143eb32c112ef53ac47cff44722e0
+ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533304"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58340086"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -32,11 +32,12 @@ Cet article montre le processus de base requis pour configurer les connecteurs G
 1. [Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
 2. [Nommer la connexion](#step-2-name-the-connection)
 3. [Configurer les paramètres de connexion](#step-3-configure-the-connection-settings)
-4. [Gérer les autorisations de recherche](#step-4-manage-search-permissions)
-5. [Attribuer des étiquettes de propriété](#step-5-assign-property-labels)
-6. [Gérer le schéma](#step-6-manage-schema)
-7. [Rafraîchir les paramètres](#step-7-refresh-settings)
-8. [Examiner la connexion](#step-8-review-connection)
+4. [Sélectionner des propriétés](#step-4-select-properties)
+5. [Gérer les autorisations de recherche](#step-5-manage-search-permissions)
+6. [Attribuer des étiquettes de propriété](#step-6-assign-property-labels)
+7. [Gérer le schéma](#step-7-manage-schema)
+8. [Rafraîchir les paramètres](#step-8-refresh-settings)
+9. [Examiner la connexion](#step-9-review-connection)
 
 Cet article inclut également des informations sur la résolution des problèmes, les limitations et les étapes suivantes :
 
@@ -57,7 +58,7 @@ Pour configurer l’un des connecteurs Graph Microsoft, vous pouvez effectuer le
 
 1. Connectez-vous à votre compte d’administrateur dans [le Centre d’administration Microsoft 365](https://admin.microsoft.com).
 
-2. Dans le volet de navigation, **sélectionnez Paramètres,** puis **recherchez & intelligence.** Sélectionnez [l’onglet Connecteurs.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)
+2. Dans le volet de navigation, **sélectionnez Paramètres,** puis **recherchez & intelligence.** Sélectionnez [l’onglet Sources de données.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)
 
 3. Sélectionnez **+Ajouter,** puis sélectionnez la source de données de votre choix dans le menu des options disponibles.
 
@@ -74,24 +75,33 @@ Spécifiez les attributs ci-après :
 * Name (obligatoire)
 * ID de connexion (obligatoire)
 * Description (facultatif)
+* Case à cocher (obligatoire)
 
 L’ID de connexion crée des propriétés implicites pour votre connecteur. Il ne doit contenir que des caractères alphanumériques et un maximum de 32 caractères.
 
 ## <a name="step-3-configure-the-connection-settings"></a>Étape 3 : Configurer les paramètres de connexion
 
-Le processus de configuration des paramètres de connexion varie en fonction du type de source de données. Consultez les informations spécifiques au connecteur pour le type de source de données que vous souhaitez ajouter à votre client pour effectuer cette étape du processus d’installation.  
+Le processus de configuration des paramètres de connexion varie en fonction du type de source de données. Consultez [les informations spécifiques au](/microsoftsearch/servicenow-connector#step-31-basic-authentication) connecteur pour le type de source de données que vous souhaitez ajouter à votre client pour effectuer cette étape du processus d’installation.  
 
 Pour en savoir plus sur la connexion à une source de données sur site, voir Installer une passerelle [de données sur site.](/data-integration/gateway/service-gateway-install)
 
-## <a name="step-4-manage-search-permissions"></a>Étape 4 : Gérer les autorisations de recherche
+## <a name="step-4-select-properties"></a>Étape 4 : Sélectionner les propriétés
 
-Les listes de contrôle d’accès déterminent les utilisateurs de votre organisation qui peuvent accéder à chaque élément de données.  
+Vous pouvez choisir les propriétés qui seront indexées par Recherche Microsoft. 
+
+La requête ServiceNow peut être utilisée pour filtrer vos données avant qu’elles ne soient indexées par Recherche Microsoft ; Cela vous permet de mieux contrôler les données qui peuvent être recherchés. Pour en savoir plus sur les requêtes ServiceNow, voir [En savoir plus sur les requêtes ServiceNow.](https://go.microsoft.com/fwlink/?linkid=2151447) 
+
+## <a name="step-5-manage-search-permissions"></a>Étape 5 : Gérer les autorisations de recherche
+
+Les listes de contrôle d’accès déterminent les utilisateurs de votre organisation qui peuvent accéder à chaque élément.  
 
 Certains connecteurs tels que [Microsoft SQL](MSSQL-connector.md) et Azure Data Lake [Stockage Gen2](azure-data-lake-connector.md) Azure Active Directory [(Azure AD)](/azure/active-directory/) en natif.
 
 D’autres connecteurs tels que [ServiceNow,](servicenow-connector.md) [Azure DevOps](azure-devops-connector.md)et [Salesforce](salesforce-connector.md) prise en charge la synchronisation des utilisateurs et groupes non Azure AD.  
 
-## <a name="step-5-assign-property-labels"></a>Étape 5 : Attribuer des étiquettes de propriété
+La sélection de tout le monde permet à tous les membres de votre organisation d’voir les résultats de la recherche à partir de cette source de données.
+
+## <a name="step-6-assign-property-labels"></a>Étape 6 : Attribuer des étiquettes de propriété
 
 Vous pouvez affecter des étiquettes sémantiques à vos propriétés source sur la page « Attribuer des étiquettes de propriétés ». Les étiquettes sont des balises connues fournies par Microsoft qui fournissent une signification sémantique. Ils permettent à Microsoft d’intégrer vos données de connecteur dans Microsoft 365 expériences telles que la recherche améliorée, les cartes de personnes, la découverte intelligente et bien plus encore.  
 
@@ -101,13 +111,13 @@ Le tableau suivant répertorie les étiquettes actuellement pris en charge et le
 --- | ---  
 **title** | Titre de l’élément que vous souhaitez voir dans la recherche et d’autres expériences
 **url** | URL cible de l’élément dans le système source
-**createdBy** | Nom de la personne qui a créé l’élément
-**lastModifiedBy** | Nom de la personne qui a modifié l’élément le plus récemment
-**authors** | Nom des personnes qui ont participé/ont participé à l’élément
-**createdDateTime** | Quand l’élément a-t-il été créé ?
-**lastModifiedDateTime** | Quand l’élément a-t-il été modifié le plus récemment ?
-**fileName** | Nom de l’élément de fichier
-**fileExtension** | Type d’élément de fichier tel que .pdf ou .word
+**Créé par** | Nom de la personne qui a créé l’élément
+**Auteur de la dernière modification** | Nom de la personne qui a modifié l’élément le plus récemment
+**Authors** | Nom des personnes qui ont participé/ont participé à l’élément
+**Date et heure de création** | Quand l’élément a-t-il été créé ?
+**Heure de la dernière modification** | Quand l’élément a-t-il été modifié le plus récemment ?
+**Nom de fichier** | Nom de l’élément de fichier
+**Extension de fichier** | Type d’élément de fichier tel que .pdf ou .word
 
 Les propriétés de cette page sont pré-sélectionnées en fonction de votre source de données, mais vous pouvez modifier cette sélection si une autre propriété convient mieux à une étiquette particulière.  
 
@@ -115,7 +125,7 @@ Le titre **de l’étiquette** est l’étiquette la plus importante. Il est **v
 
 Un mappage incorrect des étiquettes entraîne une expérience de recherche insérante. Certaines étiquettes ne peuvent pas se voir attribuer de propriété.  
 
-## <a name="step-6-manage-schema"></a>Étape 6 : Gérer le schéma
+## <a name="step-7-manage-schema"></a>Étape 7 : Gérer le schéma
 
 ### <a name="content-property"></a>Propriété de contenu
 
@@ -158,7 +168,7 @@ Pour tous les connecteurs à l’exception du connecteur de partage de fichiers,
 > [!NOTE]
 > Après avoir créé une connexion, vous **ne pouvez pas** modifier le schéma. Pour ce faire, vous devez supprimer votre connexion et en créer une nouvelle.
 
-## <a name="step-7-refresh-settings"></a>Étape 7 : Actualiser les paramètres
+## <a name="step-8-refresh-settings"></a>Étape 8 : Actualiser les paramètres
 
 L’intervalle d’actualisation détermine la fréquence de synchronisation de vos données entre la source de données et Recherche Microsoft. Chaque type de source de données possède un ensemble différent de planifications d’actualisation optimales en fonction de la fréquence de modification des données et du type de modifications.
 
@@ -181,7 +191,7 @@ Les actualisations incrémentielles sont beaucoup plus rapides que les actualisa
 
 <!---Change screenshot for one that shows both options in new UI (try ServiceNow)--->
 
-## <a name="step-8-review-connection"></a>Étape 8 : Examiner la connexion
+## <a name="step-9-review-connection"></a>Étape 9 : Examiner la connexion
 
 Vous pouvez passer en revue l’intégralité de votre configuration et modifier les paramètres selon vos besoins avant d’effectuer la connexion. **N’oubliez pas de lire les informations spécifiques au connecteur pour votre source de données si vous ne l’avez pas déjà fait.** Sélectionnez **Terminer la** mise à jour lorsque vous êtes prêt à terminer la connexion.
 
@@ -202,6 +212,6 @@ Pour en savoir plus sur les limitations qui s’appliquent à toutes les sources
 
 Consultez les informations spécifiques au connecteur pour votre source de données afin de savoir si d’autres limitations s’appliquent à ce connecteur Graph spécifique.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Après avoir publié la connexion, vous devez personnaliser la page des résultats de la recherche. Pour en savoir plus sur la personnalisation des résultats de recherche, voir [Personnaliser la page des résultats de la recherche.](customize-search-page.md)

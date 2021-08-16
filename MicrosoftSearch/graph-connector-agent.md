@@ -12,14 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NoIndex
 description: Agent sur place
-ms.openlocfilehash: 1fcd1b6848d950c9f7cefa87d086f6607ac5df4f
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: b6303b71910dc300ba5297fde155e538452ef99d
+ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235945"
+ms.locfileid: "58340095"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Agent du connecteur Graph Microsoft
 
@@ -27,7 +26,7 @@ L’utilisation de connecteurs sur site nécessite l’installation du logiciel 
 
 ## <a name="installation"></a>Installation
 
-Téléchargez la dernière version de l’agent du connecteur Graph et installez le logiciel à l’aide de [https://aka.ms/GCAdownload](https://aka.ms/gcadownload) l’Assistant d’installation. À l’aide de la configuration recommandée de l’ordinateur décrite ci-dessous, le logiciel peut gérer jusqu’à trois connexions. Toutes les connexions au-delà peuvent dégrader les performances de toutes les connexions sur l’agent.
+Téléchargez la dernière version de l’agent Graph connecteur d’installation et installez le logiciel à l’aide de [https://aka.ms/GCAdownload](https://aka.ms/gcadownload) l’Assistant d’installation. À l’aide de la configuration recommandée de l’ordinateur décrite ci-dessous, le logiciel peut gérer jusqu’à trois connexions. Toutes les connexions au-delà peuvent dégrader les performances de toutes les connexions sur l’agent.
 
 Configuration recommandée :
 
@@ -37,7 +36,7 @@ Configuration recommandée :
 * 16 Go de RAM, 2 Go d’espace disque
 * Accès réseau à la source de données et à Internet via 443
 
-Après avoir installé l’agent, si les serveurs proxy ou les pare-feu de votre organisation bloquent la communication vers des domaines inconnus, ajoutez-en ci-dessous à la liste d’accès.
+Après avoir installé l’agent, si les serveurs proxy ou les pare-feu de votre organisation bloquent la communication vers des domaines inconnus, ajoutez ceux ci-dessous à la liste d’accès.
 
 1. *.servicebus.windows.net
 2. *.events.data.microsoft.com
@@ -45,6 +44,8 @@ Après avoir installé l’agent, si les serveurs proxy ou les pare-feu de votre
 4. https://<span>gcs.office.</span> com/
 5. https://<span>graph.microsoft.</span> com/
 
+>[!NOTE]
+>L’authentification proxy n’est pas prise en charge. Si votre environnement dispose d’un proxy qui nécessite une authentification, notre recommandation consiste à autoriser l’agent du connecteur à contourner le proxy.
 
 ## <a name="create-and-configure-an-app-for-the-agent"></a>Créer et configurer une application pour l’agent  
 
@@ -62,11 +63,11 @@ Tout d’abord, connectez-vous et notez que le privilège minimal requis sur le 
 
 5. Ouvrez **les autorisations d’API** à partir du volet de navigation et **sélectionnez Ajouter une autorisation.**
 
-6. Sélectionnez **Microsoft Graph** puis **autorisations d’application.**
+6. Sélectionnez **Microsoft Graph,** puis les **autorisations d’application.**
 
 7. Recherchez « ExternalItem.ReadWrite.All » et « Directory.Read.All » dans les autorisations, puis sélectionnez **Ajouter des autorisations.**
 
-8. Sélectionnez **Accorder le consentement de l’administrateur pour [TenantName]** et confirmez en sélectionnant **Oui**.
+8. Sélectionnez **Accorder le consentement administrateur pour [TenantName]** et confirmer en sélectionnant **Oui**.
 
 9. Vérifiez que les autorisations sont dans l’état « accordé ».
 
@@ -118,7 +119,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 1. Ouvrez l’application et accédez à la section Certificats et secrets à partir du volet gauche.
 
-2. Sélectionnez **Télécharger certificat** et téléchargez le fichier .cer.
+2. Sélectionnez **Télécharger certificat et** téléchargez le fichier .cer.
 
 3. Ouvrez **l’inscription de** **l’application et sélectionnez Certificats et secrets** dans le volet de navigation. Copiez l’empreinte numérique du certificat.
 
@@ -138,7 +139,7 @@ Si vous avez utilisé l’exemple de script pour générer un certificat, le fic
 
 5. Sélectionnez le certificat nouvellement installé sous  >  **Certificats personnels.**
 
-6. Cliquez avec le bouton droit sur le cert et sélectionnez **l’option** Toutes les tâches gérer les  >  **clés privées.**
+6. Cliquez avec le bouton droit sur le cert et sélectionnez **l’option** Toutes les tâches  >  **gérer les clés privées.**
 
 7. Dans la boîte de dialogue Autorisations, sélectionnez l’option Ajouter. Dans la boîte de dialogue de sélection de l’utilisateur, écrivez : **NT Service\GcaHostService** et cliquez sur **OK**. Ne cliquez pas sur le **bouton Vérifier les noms.**
 
@@ -147,6 +148,7 @@ Si vous avez utilisé l’exemple de script pour générer un certificat, le fic
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
 ### <a name="installation-failure"></a>Échec de l’installation
+
 Si l’installation échoue, vérifiez les journaux d’installation en exécutant : msiexec /i " <path to msi>\GcaInstaller.msi " /L*V " <destination path> \install.log ». Si les erreurs ne sont pas résolvantes, MicrosoftGraphConnectorsFeedback@service.microsoft.com prise en charge avec les journaux.
 
 ### <a name="registration-failure"></a>Échec de l’inscription
@@ -157,6 +159,6 @@ Si le service ne parvient pas à démarrer avec l’erreur « Le service n’a p
 
 ### <a name="connection-failure"></a>Échec de connexion
 
-Si l’action « Tester la connexion » échoue lors de la création d’une connexion avec l’erreur « Veuillez vérifier le nom d’utilisateur/mot de passe et le chemin d’accès de la source de données » même lorsque le nom d’utilisateur et le mot de passe fournis sont corrects, assurez-vous que le compte d’utilisateur dispose de droits d’accès interactifs à l’ordinateur sur lequel l’agent de connecteur Graph est installé. Reportez-vous à la documentation sur la [gestion des stratégies d’accès](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) pour vérifier les droits d’accès. Assurez-vous également que la source de données et l’ordinateur de l’agent sont sur le même réseau.
+Si l’action « Tester la connexion » échoue lors de la création d’une connexion avec l’erreur « Veuillez vérifier le nom d’utilisateur/mot de passe et le chemin d’accès de la source de données » même lorsque le nom d’utilisateur et le mot de passe fournis sont corrects, assurez-vous que le compte d’utilisateur dispose de droits d’accès interactifs à l’ordinateur sur lequel l’agent de connecteur Graph est installé. Reportez-vous à la documentation sur la [gestion des stratégies](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) d’logo pour vérifier les droits d’accès. Assurez-vous également que la source de données et l’ordinateur de l’agent sont sur le même réseau.
 
 Si une connexion échoue avec l’erreur « 1011 : l’agent du connecteur Graph n’est pas accessible ou hors connexion . », connectez-vous à l’ordinateur où l’agent est installé et démarrez l’application agent si elle n’est pas déjà en cours d’exécution. Si la connexion continue d’échouer, vérifiez que le certificat ou la secret client fourni à l’agent lors de l’inscription n’a pas expiré et qu’il dispose des autorisations requises.

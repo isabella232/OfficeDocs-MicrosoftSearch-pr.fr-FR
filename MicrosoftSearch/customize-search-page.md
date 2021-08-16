@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ajouter des secteurs verticaux de recherche et personnaliser les résultats de recherche
-ms.openlocfilehash: 0bcb8d8588edf44d4291802d1d9c73b75fd6bf327b19f9a9b1ef0555baca38ad
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 440b9afbbeb4c4cd86b2b9f67443e644c36ce042
+ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533064"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58340077"
 ---
 # <a name="customize-the-search-results-page"></a>Personnaliser la page des résultats de la recherche
 
@@ -39,7 +39,7 @@ Vous pouvez ajouter des secteurs verticaux de recherche pertinents pour votre or
 Un secteur vertical de recherche peut maintenant faire surface des résultats provenant de plusieurs sources de connecteur. Cela offre une plus grande flexibilité dans la conception de votre page de résultats de recherche. L’expérience administrative existante de la configuration verticale vous permet de sélectionner plusieurs connexions à l’étape « Source de contenu ».
 Si vous nommez avec précision autant d’étiquettes sémantiques que possible, cette expérience sera améliorée. Vous pouvez ajouter des étiquettes sémantiques lors de la définition et de l’ingestion du schéma.
 
-[Voici](configure-connector.md#step-5-assign-property-labels) des informations supplémentaires sur la création et la gestion d’étiquettes sémantiques.
+[Voici](configure-connector.md#step-6-assign-property-labels) des informations supplémentaires sur la création et la gestion d’étiquettes sémantiques.
 
 > [!NOTE]
 > Plusieurs connexions dans un secteur vertical sont actuellement en prévisualisation. Pour plus d’informations sur la prévisualisation, voir [les fonctionnalités d’aperçu des connecteurs.](connectors-overview.md#what-are-the-preview-features)
@@ -51,7 +51,7 @@ Si vous nommez avec précision autant d’étiquettes sémantiques que possible,
 
 ## <a name="things-to-consider"></a>Informations importantes
 
-Avant de commencer, assurez-vous que le connecteur a été indexé. Cela peut prendre jusqu’à 48 heures, en fonction de la taille du fichier.
+Avant de commencer, assurez-vous que le connecteur a été indexé. Cela peut prendre jusqu’à 48 heures, selon la taille du fichier.
 
 Vous ne pouvez pas créer de secteur vertical pour le contenu qui réside dans [SharePoint](https://sharepoint.com/).
 
@@ -65,14 +65,14 @@ Il existe trois étapes de base pour ajouter un secteur vertical :
 
 Après avoir commencé l’Assistant, vous êtes guidé dans les étapes de définition du nom, de la source de contenu et de l’étendue du contenu à rechercher. Le secteur vertical est créé dans un état désactivé. Vous l’activerez ultérieurement.
 
-Vous pouvez utiliser un ensemble limité de langages [KQL (Keyword Query Language)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) pour limiter l’étendue. Cette page répertorie les propriétés disponibles. Nous vous recommandons d’utiliser des mots clés de texte libre et des restrictions de propriété avec des opérateurs booléens pour créer le KQL.
+Vous pouvez utiliser un ensemble limité de langage de requête de mot [clé (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) pour limiter l’étendue. Cette page répertorie les propriétés disponibles. Nous vous recommandons d’utiliser des mots clés de texte libre et des restrictions de propriété avec des opérateurs booléens pour créer le KQL.
 KQL prend également en charge l’utilisation de [variables de requête](#profile-query-variables) de profil pour affiner les résultats sous le secteur vertical.
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>Créer un secteur vertical au niveau de l’organisation
 
 Pour créer le secteur vertical [](https://sharepoint.com/) sur Recherche Microsoft dans SharePoint d’accueil, [Office](https://office.com)ou [Bing,](https://bing.com)suivez les étapes suivantes :
 
-1. Dans la [Centre d’administration Microsoft 365](https://admin.microsoft.com), allez à [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
+1. Dans la [Centre d’administration Microsoft 365,](https://admin.microsoft.com)allez à [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 2. Sélectionnez **Ajouter** pour commencer.  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>Créer un secteur vertical au niveau du site
@@ -114,7 +114,7 @@ Après avoir démarrer l’Assistant, vous êtes guidé dans les étapes pour d�
 
 1. Sur le [SharePoint](https://sharepoint.com/) site où vous souhaitez créer le type de résultat, Paramètres **.**
 2. Sélectionnez **les informations du site,** **puis affichez tous les paramètres du site.**
-3. Recherchez la section Recherche Microsoft, puis sélectionnez **Configurer Recherche Microsoft pour cette collection de sites.**
+3. Recherchez la section Recherche Microsoft, puis **sélectionnez Configurer Recherche Microsoft pour cette collection de sites.**
 4. Dans le volet de navigation, sélectionnez **Expérience personnalisée** et sélectionnez **l’onglet Type de** résultat.
 5. Pour ajouter un type de résultat, sélectionnez **Ajouter.**  Ou, pour modifier un type de résultat, sélectionnez le type de résultat dans la liste.
 
@@ -127,7 +127,7 @@ Une fois que vous avez activé le secteur vertical, il faudra quelques heures av
 
 ## <a name="profile-query-variables"></a>Variables de requête de profil
 
-Les variables de requête sont utilisées dans la section de requête KQL d’un secteur vertical pour fournir des données dynamiques en tant qu’entrées à la requête d’un secteur vertical. Vous pouvez utiliser des variables de requête de profil pour rendre les résultats de la recherche contextuels pour l’utilisateur. Les variables de requête de profil récupèrent des valeurs à partir du profil de [l’utilisateur.](/graph/api/resources/profile?view=graph-rest-beta)
+Les variables de requête sont utilisées dans la section de requête KQL d’un secteur vertical pour fournir des données dynamiques en tant qu’entrées à la requête d’un secteur vertical. Vous pouvez utiliser des variables de requête de profil pour rendre les résultats de la recherche contextuels pour l’utilisateur. Les variables de requête de profil récupèrent les valeurs du profil de [l’utilisateur.](/graph/api/resources/profile?view=graph-rest-beta)
 
 Par exemple, si vous souhaitez créer un secteur vertical « Tickets » dans lequel un utilisateur inscrit peut rechercher des tickets de support qui lui sont affectés, vous pouvez spécifier la requête suivante sous la section « Requête » lors de la création verticale dans la page d’administration.  
 
@@ -180,9 +180,9 @@ L’opérateur « | » doit être utilisé pour résoudre les variables à valeu
 
 | #         | Syntaxe |  Valeur renvoyée  |
 | --------- | ------ | --- |
-| 1    | MyProperty:{Profile.emails.address}  |   « Megan.Bowen@contoso.com »  |
+| 1     | MyProperty:{Profile.emails.address}  |   « Megan.Bowen@contoso.com »  |
 | 2 | MyProperty:{Profile.emails}   |    {Profile.emails} This will not resolve because emails are an object.|
-| 3    | {? MyProperty:{Profile.emails}}  |  Cela ne sera pas résolu car les e-mails sont un objet. Le « ? » ignore les variables de requête qui ne sont pas résolues. Cette variable est supprimée lorsqu’elle est passée plus bas dans la pile de requêtes.   |
+| 3     | {? MyProperty:{Profile.emails}}  |  Cela ne sera pas résolu car les e-mails sont un objet. Le « ? » ignore les variables de requête qui ne sont pas résolues. Cette variable est supprimée lorsqu’elle est passée plus bas dans la pile de requêtes.   |
 | 4  | {&#124;MyProperty : {Profile.emails.source.Type}}    |  ((MyProperty:"official ») OR (MyProperty:"non-official ») OR (MyProperty:"personal »))    |
 
 > [!NOTE]
@@ -201,6 +201,6 @@ Voici une liste des problèmes courants que vous pouvez rencontrer et des action
 | Je ne vois pas ma disposition des résultats, même si j’en ai créé une. | Cela prend quelques minutes, car ces paramètres sont généralement mis en cache. Patientez quelques minutes et essayez à nouveau.        |
 | Je ne vois aucune source de contenu dans la page de type vertical ou de résultat. | Assurez-vous que vous avez configuré des connecteurs et des données indexées.   |
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 [Personnaliser la disposition des résultats](customize-results-layout.md)
