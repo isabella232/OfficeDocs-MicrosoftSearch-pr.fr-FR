@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Agent sur place
-ms.openlocfilehash: b6303b71910dc300ba5297fde155e538452ef99d
-ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
+ms.openlocfilehash: a27b5225d6a9f804d9122fbb237adb453eaf34ba
+ms.sourcegitcommit: 7148807ee9c857bd900916bed24176892a7d1d66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58340095"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58363240"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Agent du connecteur Graph Microsoft
 
@@ -36,7 +36,7 @@ Configuration recommandée :
 * 16 Go de RAM, 2 Go d’espace disque
 * Accès réseau à la source de données et à Internet via 443
 
-Après avoir installé l’agent, si les serveurs proxy ou les pare-feu de votre organisation bloquent la communication vers des domaines inconnus, ajoutez ceux ci-dessous à la liste d’accès.
+Après avoir installé l’agent, si les serveurs proxy ou les pare-feu de votre organisation bloquent la communication vers des domaines inconnus, ajoutez-en ci-dessous à la liste d’accès.
 
 1. *.servicebus.windows.net
 2. *.events.data.microsoft.com
@@ -81,7 +81,7 @@ Les détails de l’authentification peuvent être fournis à l’aide d’une s
 
 1. Go to the [Azure portal](https://portal.azure.com) and sign in with admin credentials for the tenant.
 
-2. Ouvrez **l’inscription** de l’application à partir du volet de navigation et allez à l’application appropriée. Sous **Gérer,** **sélectionnez Certificats et secrets.**
+2. Ouvrez **l’inscription** de l’application à partir du volet de navigation et allez à l’application appropriée. Sous **Gérer,** sélectionnez **Certificats et secrets.**
 
 3. Sélectionnez **Nouvelle secret client** et sélectionnez une période d’expiration pour la secret. Copiez la secret généré et enregistrez-le, car il ne sera pas affiché à nouveau.
 
@@ -121,7 +121,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 2. Sélectionnez **Télécharger certificat et** téléchargez le fichier .cer.
 
-3. Ouvrez **l’inscription de** **l’application et sélectionnez Certificats et secrets** dans le volet de navigation. Copiez l’empreinte numérique du certificat.
+3. Ouvrez **l’inscription** de **l’application et sélectionnez Certificats et secrets** dans le volet de navigation. Copiez l’empreinte numérique du certificat.
 
 :::image type="content" alt-text="Liste des certificats miniatures lorsque certificats et secrets sont sélectionnés dans le volet gauche" source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
 
@@ -139,21 +139,23 @@ Si vous avez utilisé l’exemple de script pour générer un certificat, le fic
 
 5. Sélectionnez le certificat nouvellement installé sous  >  **Certificats personnels.**
 
-6. Cliquez avec le bouton droit sur le cert et sélectionnez **l’option** Toutes les tâches  >  **gérer les clés privées.**
+6. Cliquez avec le bouton droit sur le cert et sélectionnez **l’option** Toutes les tâches gérer les  >  **clés privées.**
 
-7. Dans la boîte de dialogue Autorisations, sélectionnez l’option Ajouter. Dans la boîte de dialogue de sélection de l’utilisateur, écrivez : **NT Service\GcaHostService** et cliquez sur **OK**. Ne cliquez pas sur le **bouton Vérifier les noms.**
+7. Dans la boîte de dialogue Autorisations, sélectionnez l’option Ajouter. Il s’agit d’une nouvelle fenêtre. Sélectionnez l’option « Emplacements » dans cette option. Sélectionnez l’ordinateur sur lequel l’agent est installé dans la liste des emplacements affichés et cliquez sur **OK.**
 
-8. Cliquez sur OK dans la boîte de dialogue Autorisations. L’ordinateur de l’agent est maintenant configuré pour que l’agent génère des jetons à l’aide du certificat.
+8. Dans la boîte de dialogue de sélection de l’utilisateur, écrivez : **NT Service\GcaHostService** et cliquez sur **OK**. Ne cliquez pas sur le **bouton Vérifier les noms.**
+
+9. Cliquez sur OK dans la boîte de dialogue Autorisations. L’ordinateur de l’agent est maintenant configuré pour que l’agent génère des jetons à l’aide du certificat.
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
 ### <a name="installation-failure"></a>Échec de l’installation
 
-Si l’installation échoue, vérifiez les journaux d’installation en exécutant : msiexec /i " <path to msi>\GcaInstaller.msi " /L*V " <destination path> \install.log ». Si les erreurs ne sont pas résolvantes, MicrosoftGraphConnectorsFeedback@service.microsoft.com prise en charge avec les journaux.
+Si l’installation échoue, vérifiez les journaux d’installation en exécutant : msiexec /i « < path to msi >\GcaInstaller.msi » /L*V « < destination path >\install.log ». Si les erreurs ne sont pas résolvantes, MicrosoftGraphConnectorsFeedback@service.microsoft.com prise en charge avec les journaux.
 
 ### <a name="registration-failure"></a>Échec de l’inscription
 
-Si la signature de l’application de config échoue avec l’erreur « Échec de la signature. Cliquez sur le bouton De se connectez pour essayer à nouveau. » même après la réussite de l’authentification du navigateur, ouvrez services.msc et vérifiez si GcaHostService est en cours d’exécution. Si ce n’est pas le cas, démarrez-le manuellement.
+Si la signature de l’application de config échoue avec l’erreur « Échec de la signature. Cliquez sur le bouton se connectez pour essayer à nouveau. » même après la réussite de l’authentification du navigateur, ouvrez services.msc et vérifiez si GcaHostService est en cours d’exécution. Si ce n’est pas le cas, démarrez-le manuellement.
 
 Si le service ne parvient pas à démarrer avec l’erreur « Le service n’a pas commencé en raison d’un échec de connexion », vérifiez si le compte virtuel NT Service\GcaHostService est autorisé à se connecter en tant que service sur l’ordinateur. Consultez [ce lien](/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) pour obtenir des instructions. Si l’option d’ajout d’un utilisateur ou d’un groupe est grisée dans les stratégies locales\Attribution des droits d’utilisateur, cela signifie que l’utilisateur qui essaie d’ajouter ce compte n’a pas de privilèges d’administrateur sur cet ordinateur ou qu’une stratégie de groupe le permet. La stratégie de groupe doit être mise à jour pour permettre au service hôte de se rendre en tant que service.
 
