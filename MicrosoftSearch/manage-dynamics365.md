@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
 description: Gérer l’apparition du contenu Dynamics 365 dans les résultats de recherche
-ms.openlocfilehash: 65d6d27028f46751270cb3a50a154063de4fbab72d917f94aa8925693ac9ea2b
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: d2874febe39abf68653fa82d6a50121ebd1a357b
+ms.sourcegitcommit: fbe565b1a8994425b4f7ff0114a69044659e3892
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533646"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58380032"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Recherche de fédération Dynamics 365 (prévisualisation)
 
@@ -21,11 +21,11 @@ ms.locfileid: "54533646"
 
 Pour vous aider à rendre Recherche Microsoft plus utile, nous présentons Recherche Microsoft fédération. Avec la recherche fédérée, les organisations peuvent rendre les données accessibles dans les scénarios suivants Recherche Microsoft :
 
-* Données dans les systèmes soumis à des exigences de conformité strictes
+* Données dans les systèmes soumis à des exigences strictes de conformité
 * Données qui ne peuvent pas quitter les limites du système
 * Données sensibles stockées sur site que votre organisation ne souhaite pas indexer sur le cloud
 
-Les données accessibles via une connexion de recherche fédérée ne sont pas indexées dans Recherche Microsoft. En outre, à l’aide de connecteurs intégrés de Microsoft, il est facile de configurer des connexions de recherche fédérée. Notre connecteur Dynamics 365 est actuellement en prévisualisation. Si vous souhaitez participer à la prévisualisation, faites-le nous savoir [aka.ms/D365FederationSearchPreview](https://aka.ms/D365FederationSearchPreview).
+Les données accessibles via une connexion de recherche fédérée ne sont pas indexées dans Recherche Microsoft. En outre, à l’aide de connecteurs intégrés de Microsoft, il est facile de configurer des connexions de recherche fédérée. Notre connecteur Dynamics 365 est actuellement en prévisualisation. Si vous souhaitez participer à la prévisualisation, faites-le nous savoir [aka.ms/D365FederationSearchPreview](https://aka.ms/D365FederationSearchPreview). Pour la période de publication, voir la [feuille de route Recherche Microsoft publication.](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Search)
 
 ## <a name="dynamics-365-federation-connector"></a>Connecteur de fédération Dynamics 365
 
@@ -43,7 +43,7 @@ Les réponses Dynamics 365 apparaissent dans les résultats de la recherche dans
 
 :::image type="content" alt-text="Capture d’écran des réponses Dynamics 365 SharePoint, Bing et Office" source="media/dynamics365/dynamics365-answer.png" lightbox="media/dynamics365/dynamics365-answer.png":::
 
-À partir de la réponse, il est facile de voir d’autres résultats de recherche Dynamics 365 à l’aide du lien Plus de résultats **Dynamics 365.** Elle permet aux utilisateurs d’obtenir une page de résultats Dynamics 365 dédiée avec d’autres résultats pertinents pour leur requête.
+À partir de la réponse, il est facile de voir d’autres résultats de recherche Dynamics 365 à l’aide du lien De plus **de résultats Dynamics 365.** Elle permet aux utilisateurs d’obtenir une page de résultats Dynamics 365 dédiée avec d’autres résultats pertinents pour leur requête.
 
 :::image type="content" alt-text="Capture d’écran de Dynamics 365 vertical et résultats sur SharePoint, Bing et Office" source="media/dynamics365/dynamics365-vertical.png" lightbox="media/dynamics365/dynamics365-vertical.png":::
 
@@ -65,10 +65,10 @@ Les requêtes de nom de produit et de langage naturel sont toutes deux pris en c
 * Quels sont les comptes à Seattle ?
 * Quels sont les contacts à Seattle ?
 * Quels sont mes prospects fermant ce mois-ci
-* Appel téléphonique à priorité élevée
+* Appel téléphonique haute priorité
 * Messages électroniques manquants du contact
 
-Les modèles de nom de produit 365 365 sont des modèles qui déclenchent des résultats Dynamics 365, quel que soit l’endroit où ils apparaissent dans une requête :
+Les modèles de nom de produit 365 365 peuvent déclencher des résultats Dynamics 365, quel que soit l’endroit où ils apparaissent dans une requête :
 
 * D365
 * Dynamics 365
@@ -81,7 +81,7 @@ Les modèles de nom de produit 365 365 sont des modèles qui déclenchent des r�
 
 ## <a name="configure-the-dynamics-365-connector"></a>Configurer le connecteur Dynamics 365
 
-Grâce à cette configuration simple, vous pouvez activer l’expérience de recherche de fédération Dynamics 365 pour les membres de votre organisation.
+Avec cette configuration simple, vous pouvez activer l’expérience de recherche de fédération Dynamics 365 pour les membres de votre organisation.
 
 1. Dans la [Centre d’administration Microsoft 365](https://admin.microsoft.com), allez aux [sources de données.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors)
 
