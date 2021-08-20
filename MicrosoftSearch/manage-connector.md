@@ -13,18 +13,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Gérer les connecteurs Graph Microsoft pour Recherche Microsoft.
-ms.openlocfilehash: e8cf01cb3af3dea96ba98ab65e12d54a027ab77fa92e00c354331ac887578b0f
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 0a4165af84cc11fbba4239f0204a3a7f3ce4fb25
+ms.sourcegitcommit: d276bfd1e03d1cdc1f51f70368df333da1d0111a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532905"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58408207"
 ---
-<!-- markdownlint-disable no-inline-html -->
-
 # <a name="monitor-your-connections"></a>Surveiller vos connexions
 
-Pour accéder à vos connecteurs et les gérer, vous devez être désigné en tant qu’administrateur de recherche pour votre client. Contactez votre administrateur client pour vous fournir le rôle d’administrateur de recherche.
+Pour accéder à vos connecteurs et les gérer, vous devez être désigné comme administrateur de recherche pour votre client. Contactez votre administrateur client pour vous fournir le rôle d’administrateur de recherche.
 
 ## <a name="connection-operations"></a>Opérations de connexion
 
@@ -59,11 +57,7 @@ Cinq états s’affiche dans la colonne **État** par rapport à chaque connexio
 
 Le quota d’index et la consommation disponibles sont affichés sur la page d’accueil des connecteurs.
 
-![Barre d’utilisation du quota d’index](media/quota_utilization.png)
- 
->[!NOTE]
->Pendant la période d’aperçu, chaque organisation qui Graph des connecteurs de connexion a été fournie avec un quota fixe gratuit de 2 millions d’éléments sur toutes les connexions. Les connecteurs Graph étant généralement disponibles, le quota gratuit expirera le 1er avril 2021 pour les organisations qui ont utilisé des connecteurs Graph en prévisualisation.
->Les connecteurs Graph microsoft étiquetés [](./connectors-overview.md) comme « Aperçu » ne seront pas inclus dans le quota d’index facturé total pour votre organisation. Toutefois, il est comptabilisé dans le nombre maximum de 10 connexions que vous pouvez configurer pour votre organisation et le nombre maximum de 7 millions d’éléments que votre organisation peut indexer entre les connexions ; Chaque connexion est limitée à 700 000 éléments. 
+:::image type="content" alt-text="Barre d’utilisation du quota d’index." source="media/quota_utilization.png" lightbox="media/quota_utilization.png":::
 
 La barre d’utilisation des quotas indiquera différents états en fonction de la consommation de quota par votre organisation :
 
@@ -72,11 +66,7 @@ La barre d’utilisation des quotas indiquera différents états en fonction de 
 Normal | 0-79%
 Élevé | 80-89%
 Critique | 90%-99%
-Complet | 100 %
-
-<!-- 
-![Quota utilization levels](media/connectors-quota-utilization-levels.png)
--->
+Complet | 100 %
 
 Le nombre d’éléments indexés s’affiche également avec chaque connexion. Le nombre d’éléments indexés par chaque connexion contribue au quota total disponible pour votre organisation.
 
@@ -92,4 +82,4 @@ Pour résoudre ce problème, vous pouvez :
 
 * Identifiez les connexions qui ont trop de contenu en cours d’ingestion et mettez-les à jour pour indexer moins d’éléments afin de faire de la place pour le quota. Pour mettre à jour la connexion, vous devez supprimer et créer une connexion avec un nouveau filtre d’ingestion qui apporte moins d’éléments.
 
-* Supprimer définitivement une ou plusieurs connexions
+* Supprimez définitivement une ou plusieurs connexions.
