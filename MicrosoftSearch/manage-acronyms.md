@@ -6,24 +6,24 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Créer et mettre à jour les réponses acronymes dans Recherche Microsoft
-ms.openlocfilehash: 3b0f87fb252c3e88160f1b3753aad09b1e3f5083
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+description: Créer et mettre à jour des réponses acronymes dans Recherche Microsoft
+ms.openlocfilehash: b7b3272ba98bbce7d43562811389df0a35e9f7a2
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470247"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702065"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Gérer les réponses acronymes dans Recherche Microsoft
 
 Les utilisateurs utilisent souvent des acronymes et des abréviations peu familiers utilisés par leur organisation ou leur équipe. Les conditions propres aux organisations ou aux équipes peuvent être nouvelles pour les personnes qui passe d’une équipe à une autre, qui travaillent avec des équipes partenaires internes ou qui sont nouvelles dans l’organisation.
 
-Les organisations n’ont pas toujours une référence unique pour leur terminologie standard. L’absence d’une référence unique rend difficile la recherche de définitions pour ces acronymes. Recherche Microsoft résoudre ce problème avec les acronymes.
+Les organisations n’ont pas toujours une seule référence pour leur terminologie standard. L’absence d’une référence unique rend difficile la recherche de définitions pour ces acronymes. Recherche Microsoft résoudre ce problème avec les acronymes.
 
 ## <a name="what-users-experience"></a>Expérience des utilisateurs
 
@@ -73,7 +73,7 @@ Vous pouvez ajouter des acronymes individuellement ou en bloc pour les importer 
 
 ### <a name="csv-fields"></a>Champs CSV
 
-**Acronyme**. Contient la forme courte ou l’acronyme réel. Par exemple, *DNN*.
+**Acronyme**. Contient le formulaire court ou l’acronyme réel. Par exemple, *DNN*.
 
 **Signifie**. Contient la définition de l’acronyme. Par exemple, *le réseau neuronal profond*.
 

@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Configurer le connecteur ServiceNow Graph pour Recherche Microsoft
-ms.openlocfilehash: fccae6c2a007470eb9ef56130cb952158c01610c
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 2ad75820fde0b9282ac14b64730b69704f199fc6
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701911"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470380"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -45,7 +45,7 @@ Suivez les instructions d’installation générales.
 ## <a name="step-3-connection-settings"></a>Étape 3 : Connexion Paramètres
 Pour vous connecter à vos données ServiceNow, vous avez besoin de **l’URL d’instance ServiceNow** de votre organisation. L’URL de l’instance ServiceNow de votre organisation ressemble **généralement https:// &lt;>.service-now.com**. 
 
-En plus de cette URL, vous aurez besoin d’un compte de **service** pour la configuration de la connexion à ServiceNow et pour permettre à Recherche Microsoft de mettre à jour périodiquement les articles de la base de connaissances en fonction de la planification de l’actualisation. Le compte de service aura besoin d’un accès en lecture aux enregistrements de **table ServiceNow** suivants pour analyser correctement différentes entités.
+Avec cette URL, vous aurez besoin d’un compte de **service** pour la configuration de la connexion à ServiceNow et pour permettre à Recherche Microsoft de mettre à jour périodiquement les articles de la base de connaissances en fonction de la planification d’actualisation. Le compte de service aura besoin d’un accès en lecture aux enregistrements de **table ServiceNow** suivants pour analyser correctement différentes entités.
 
 **Fonctionnalité** | **Accéder en lecture aux tableaux requis** | **Description**
 --- | --- | ---
@@ -89,7 +89,7 @@ ID du client | ID unique généré automatiquement en lecture seule pour l’app
 Secret client | Avec cette chaîne secrète partagée, l’instance ServiceNow et Recherche Microsoft autoriser les communications entre eux. | Suivez les meilleures pratiques en matière de sécurité en traitant le secret comme un mot de passe.
 URL de redirection | URL de rappel requise vers qui le serveur d’autorisation redirige. | https://gcs.office.com/v1.0/admin/oauth/callback
 Logo URL | URL qui contient l’image du logo de l’application. | N/A
-Actif | Activez la case à cocher pour que le Registre de l’application soit actif. | Définir sur actif
+Actif | Activez la case à cocher pour rendre le Registre d’application actif. | Définir sur actif
 Durée de vie du jeton d’actualisation | Nombre de secondes de validité d’un jeton d’actualisation. Par défaut, les jetons d’actualisation expirent dans les 100 jours (8 640 000 secondes). | 31 536 000 (1 an)
 Durée de vie du jeton d’accès | Nombre de secondes de validité d’un jeton d’accès. | 43 200 (12 heures)
 
@@ -240,7 +240,7 @@ Après avoir publié la connexion, vous devez personnaliser la page des résulta
 ## <a name="limitations"></a>Limites
 Le connecteur Graph ServiceNow présente les limitations suivantes dans sa dernière version :
 - L’indexation des articles de la base de connaissances accessibles à tous les membres d’une organisation est une fonctionnalité généralement disponible.
-- *Seules les personnes ayant accès* à cette fonctionnalité de source de données dans l’étape Gérer les autorisations de recherche sont dans le canal de publication ciblé et traitent uniquement les autorisations des [critères](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) utilisateur. Tout autre type d’autorisation d’accès ne sera pas appliqué dans les résultats de la recherche.
+- *Seules les personnes ayant accès* à cette fonctionnalité de source de données dans l’étape Gérer les autorisations de recherche sont dans le canal de publication ciblé et traitent uniquement les autorisations des critères utilisateur. [](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) Tout autre type d’autorisation d’accès ne sera pas appliqué dans les résultats de la recherche.
 - Les critères utilisateur avec des scripts avancés ne sont pas pris en charge dans la version actuelle. Tous les articles de la base de connaissances avec une telle restriction d’accès seront indexés avec refuser l’accès à tout le monde, c’est-à-dire qu’ils n’apparaîtront pas dans les résultats de la recherche pour les utilisateurs tant que nous ne les auront pas supportés.
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
@@ -248,7 +248,7 @@ Après avoir publié votre connexion, personnalisé la page des résultats, vous
 Vous trouverez ci-dessous les étapes de résolution des problèmes couramment observés.
 ### <a name="1-unable-to-login-due-to-single-sign-on-enabled-servicenow-instance"></a>1. Impossible de se connecter en raison de l'Sign-On service ServiceNow activée
 
-Si votre organisation a activé l'Sign-On (SSO) sur ServiceNow, vous risquez de ne pas pouvoir vous connecter avec le compte de service. Vous pouvez afficher la connexion basée <em> `login.do` </em> sur le nom d’utilisateur et le mot de passe en ajoutant l’URL de l’instance ServiceNow. Exemple. `https://<your-organization-domain>.service-now.com./login.do` 
+Si votre organisation a activé l'Sign-On (SSO) sur ServiceNow, vous risquez de ne pas pouvoir vous connecter au compte de service. Vous pouvez afficher la connexion basée <em> `login.do` </em> sur le nom d’utilisateur et le mot de passe en ajoutant l’URL de l’instance ServiceNow. Exemple. `https://<your-organization-domain>.service-now.com./login.do` 
 
 ### <a name="2-unauthorized-or-forbidden-response-to-api-request"></a>2. Réponse non autorisée ou interdite à la demande d’API
 
@@ -256,7 +256,7 @@ Si votre organisation a activé l'Sign-On (SSO) sur ServiceNow, vous risquez de 
 Si vous voyez une réponse interdite ou non autorisée dans l’état de connexion, vérifiez si le compte de service a requis l’accès aux tables mentionnées à l’étape [3 : paramètres de connexion.](#step-3-connection-settings) Vérifiez si toutes les colonnes des tableaux ont un accès en lecture.
 
 #### <a name="22-check-if-servicenow-instance-behind-firewall"></a>2.2. Vérifier si l’instance ServiceNow est derrière le pare-feu
-Graph Le connecteur peut ne pas être en mesure d’atteindre votre instance ServiceNow si elle se trouve derrière un pare-feu réseau. Vous devez autoriser explicitement l’accès Graph service Connecteur. Vous trouverez la plage d’adresses IP publiques Graph Connector Service dans le tableau ci-dessous. En fonction de votre région de client, ajoutez-la à votre liste blanche réseau d’instances ServiceNow.
+Graph Le connecteur peut ne pas être en mesure d’atteindre votre instance ServiceNow si elle se trouve derrière un pare-feu réseau. Vous devez autoriser explicitement l’accès Graph service Connecteur. Vous trouverez la plage d’adresses IP publiques Graph Service Connecteur dans le tableau ci-dessous. En fonction de votre région de client, ajoutez-la à votre liste blanche réseau d’instances ServiceNow.
 
 **Environnement** | **Région** | **Range**
 --- | --- | ---
@@ -265,6 +265,6 @@ PROD | Europe | 20.54.41.208/30, 51.105.159.88/30
 PROD | Asie-Pacifique | 52.139.188.212/30, 20.43.146.44/30 
 
 #### <a name="23-access-permissions-not-working-as-expected"></a>2.3. Les autorisations d’accès ne fonctionnent pas comme prévu
-Si vous observez des incohérences dans les autorisations d’accès appliquées aux résultats de la recherche, vérifiez le organigramme d’accès pour les critères utilisateur dans la gestion de l’accès aux bases de connaissances [et aux articles.](https://docs.servicenow.com/bundle/rome-servicenow-platform/page/product/knowledge-management/concept/user-access-knowledge.html)
+Si vous observez des différences dans les autorisations d’accès appliquées aux résultats de la recherche, vérifiez le organigramme d’accès pour les critères utilisateur dans la gestion de l’accès aux bases de connaissances [et aux articles.](https://docs.servicenow.com/bundle/rome-servicenow-platform/page/product/knowledge-management/concept/user-access-knowledge.html)
 
 Si vous avez d’autres problèmes ou souhaitez nous faire part de vos commentaires, écrivez-nous [aka.ms/TalkToGraphConnectors](https://aka.ms/TalkToGraphConnectors)

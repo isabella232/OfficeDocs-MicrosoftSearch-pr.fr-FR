@@ -6,18 +6,18 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Examiner et agir sur les commentaires des utilisateurs dans Recherche Microsoft
-ms.openlocfilehash: 8b512f0bbfe5c72ff1a7a2296b0b76c5430e082f
-ms.sourcegitcommit: 2f5868e50caa9743d298188003a24545b5078c5b
+ms.openlocfilehash: 37ea70862cd4881170288339427f5ab1f150bf31
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58528982"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702011"
 ---
 # <a name="managing-user-feedback"></a>Gestion des commentaires des utilisateurs
 
@@ -33,7 +33,7 @@ Lorsque les membres de votre organisation utilisent Recherche Microsoft, ils peu
 
 Les utilisateurs ont également la possibilité d’envoyer leur requête et d’autres informations de diagnostic, ainsi que la catégorie et les commentaires, à Microsoft. [En savoir plus](https://privacy.microsoft.com/en-US/privacystatement) sur la confidentialité et la façon dont nous protégeons ces données. Les données de diagnostic contiennent les informations les plus critiques dont Microsoft a besoin pour utiliser l’élément de commentaires pour l’amélioration du produit.
 
-La plupart des soumissions de commentaires apparaissent dans la section [Commentaires](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) du centre d Recherche Microsoft’administration. Les commentaires envoyés avec le je **souhaite** suggérer une catégorie de lien interne apparaissent sous la mesure d’un signet suggéré dans la section [Signets](https://admin-ignite.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) et peuvent être vus en filtrant l’état **suggéré.**
+La plupart des soumissions de commentaires apparaissent dans la section [Commentaires](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) du centre d Recherche Microsoft’administration. Les commentaires envoyés avec le je **souhaite** suggérer une catégorie de lien interne apparaissent en tant que signet suggéré dans la section [Signets](https://admin-ignite.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) et peuvent être vus en filtrant l’état **suggéré.**
 
 ## <a name="review-feedback"></a>Commentaires sur la révision
 
@@ -48,7 +48,7 @@ Dans la liste des commentaires, la colonne Verbatim indique quels commentaires d
 >[!NOTE]
 >Lors du déploiement initial sur les expériences de recherche d’administrateur et d’utilisateur final, l’apparition des éléments de commentaires sur le portail d’administration peut prendre jusqu’à deux semaines.
 
-## <a name="update-feedback-state"></a>Mettre à jour l’état du commentaire
+## <a name="update-feedback-state"></a>Mettre à jour l’état des commentaires
 
 À mesure que les commentaires  entrent en réponse, il sera dans un état Nouveau et restera là jusqu’à ce que vous le changez en *Résolu ou* En *double*.
 
@@ -83,7 +83,7 @@ En tant qu’administrateur de recherche, vous devez comprendre les principales 
 
 1. « Je n’ai pas trouvé ce que je recherchais » et des commentaires similaires peuvent être utilisés pour identifier le contenu voulu par les utilisateurs, mais n’est pas inclus actuellement dans l’index de recherche. La détermination de cette situation fait souvent l’objet d’enquêtes et d’inférences basées sur la compréhension de vos utilisateurs. Une fois trouvé, déterminez les méthodes d’utilisation de ce contenu les plus appropriées :
     1. Les signets sont utiles pour les sources de contenu qui ont une page d’accueil de haute qualité et une variété limitée de termes de recherche, afin que la communauté d’utilisateurs obtient un résultat de haute qualité à partir du signet et puisse ensuite trouver efficacement ce qu’elle recherche.
-    1. Q&A sont utiles pour les réponses individuelles qui sont assez fréquentes, mais qui ne changent pas.
+    1. Les&A sont utiles pour les réponses individuelles qui sont assez fréquentes, mais qui ne changent pas.
     1. Les connecteurs sont utiles pour les sources de contenu avec une grande variété de contenu et une grande variété de termes de recherche.
 1. « Le chargement des résultats a pris trop de temps » & « J’ai trouvé un problème » peut être un indicateur d’un problème plus large. La recherche quotidienne de ces commentaires peut vous aider et, si plusieurs cas s’affichent, vous pouvez vérifier l’expérience de recherche pour vous-même et ouvrir un dossier de support auprès de Microsoft si nécessaire. Ce type de commentaires est également important pour Microsoft et constitue une excellente raison de nous faire part de tous les commentaires.
 1. « Je souhaite suggérer un lien interne » peut être évalué pour être ajouté en tant que signets ou contenu connecté. Votre première idée doit être un signet . Si le signet est très utilisé, vous pouvez envisager d’apporter du contenu via un connecteur pour permettre une expérience de recherche encore plus riche.

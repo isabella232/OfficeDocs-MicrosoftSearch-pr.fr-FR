@@ -6,18 +6,18 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Gérer les filtres à utiliser sur le SERP
-ms.openlocfilehash: da8c93f4faef7d52862db7464f61fd8e2cbd9fdf
-ms.sourcegitcommit: b69da84c97ea14fd4706d24522a1e324b6798f91
+ms.openlocfilehash: c614d4b60c746f2e18fdb3352281891ea5134373
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58674775"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702192"
 ---
 # <a name="manage-filters"></a>Gérer les filtres
 
@@ -59,7 +59,7 @@ Les filtres configurés pour les secteurs verticaux dans l’étendue Organisati
 6. Cliquez **sur Ajouter un filtre pour** configurer des filtres sur les propriétés gérées utilisables dans une recherche dans une recherche dans une recherche.
 7. Après avoir ajouté des filtres, vous pouvez examiner et enregistrer le secteur vertical.
 
-## <a name="filter-across-multiple-properties"></a>Filtrer sur plusieurs propriétés
+## <a name="filter-across-multiple-properties"></a>Filtrer plusieurs propriétés
 
 Les secteurs verticaux peuvent être créés avec une ou plusieurs sources de contenu. Lorsqu’un secteur vertical est configuré avec plusieurs sources de contenu, la liste des propriétés de l’affinement indique à quelle source de contenu chaque propriété utilisable dans une recherche dans une recherche affinement appartient. Les propriétés gérées courantes sont fusionnées en fonction du nom (ou de l’alias) et du type de données. Les filtres peuvent également être configurés sur ces propriétés communes. Pour ce faire, vous créez le filtre sur un alias commun qui alias les propriétés source sur les différentes connexions. Par exemple, vous pouvez créer un filtre **Auteur** sur ServiceNow et une connexion Jira en créant des alias comme suit :
 

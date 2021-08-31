@@ -6,18 +6,18 @@ manager: tonytha
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: La fonctionnalité de plans d’étage Recherche Microsoft aux utilisateurs de trouver des personnes, des bureaux et d’autres bâtiments au sein d’un bâtiment.
-ms.openlocfilehash: 6cbba6d764fd3904d251fa53fd96c3a66a6aed6b
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: beeef26cc7413da654cc3ab01d92aa6cdc74e5cb
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470022"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702020"
 ---
 # <a name="manage-floor-plans"></a>Gérer les plans d’étage
 
@@ -39,7 +39,7 @@ Voici quelques bons exemples pour le code de ce bâtiment : 2, B2, Building2, Bu
 
 ### <a name="step-2-review-your-floor-plans"></a>Étape 2 : Passer en revue vos plans d’étage
 
-Les fichiers de plans d’étage doivent être au format DWG ; Les fichiers DWG peuvent contenir des étiquettes de texte. Lorsqu’une étiquette de texte marque une salle, elle est appelée étiquette de salle. Le fichier DWG doit avoir **au moins 10 salles marquées** avec des étiquettes. Voici quelques exemples de fichiers DWG avec différents types d’étiquettes :
+Les fichiers de plans d’étage doivent être au format DWG ; Les fichiers DWG peuvent contenir des étiquettes de texte. Lorsqu’une étiquette de texte marque une salle, elle est appelée étiquette de salle. Le fichier DWG doit avoir **au moins 10 salles** marquées avec des étiquettes. Voici quelques exemples de fichiers DWG avec différents types d’étiquettes :
 
 |**Étiquettes de texte, y compris les étiquettes de salle**|**Étiquettes de texte mais pas d’étiquettes de salle**|**Aucune étiquette de texte**|
 |:-----:|:-----:|:-----:|
@@ -81,7 +81,7 @@ Dans [le Centre d’administration,](https://admin.microsoft.com)allez aux [**pl
 
 ![floorplans_hydrationstep.png.](media/floorplans_hydrationstep.png)
 
-### <a name="step-7-upload-floor-plans"></a>Étape 7 : Télécharger plan d’étage
+### <a name="step-7-upload-floor-plans"></a>Étape 7 : Télécharger plans d’étage
 
 1. Dans le centre [d’administration,](https://admin.microsoft.com)allez aux [**plans Floor.**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)
 2. Sélectionnez un bâtiment dans la liste liste et sélectionnez **Suivant.** Si le bâtiment n’est pas répertorié, revenir en arrière et [ajouter des emplacements de construction.](#step-5-add-building-locations)
@@ -146,7 +146,7 @@ Pour mettre à jour un plan d’étage existant, sélectionnez le plan d’étag
 
 **R :** Pour obtenir de meilleurs résultats, les étiquettes de texte doivent contenir des numéros d’étage et des numéros de salle. Les exemples ci-dessous utilisent 2 ou SC pour le code de construction.
 <!-- markdownlint-disable no-inline-html -->
-|Types d’étiquettes de salle|Floor|Room|Exemple d’étiquette de texte|Office emplacement (code de construction/étiquette de texte)|
+|Types d’étiquettes de salle|Floor|Room|Exemple d’étiquette de texte|Office (code de construction/étiquette de texte)|
 |:-----|:-----|:-----|:-----|:-----|
 |Possède le numéro d’étage et de salle|1|173|1173|2/1173|
 || 21|45|21045|2/21045|
@@ -162,7 +162,7 @@ Pour mettre à jour un plan d’étage existant, sélectionnez le plan d’étag
 
 **Q :** Puis-je utiliser un fichier DWG qui n’inclut pas de numéros d’étage ?
 
-**R :** Si, tu peux. Lorsque vous mettez à jour les emplacements de bureau dans le profil Azure Active Directory de l’utilisateur, incluez le numéro d’étage dans le numéro de la salle, même s’il est manquant dans le fichier DWG. Une fois le fichier téléchargé, l’écran Spécifier les modèles d’emplacement s’affiche et vous pouvez indiquer les deux valeurs.
+**R :** Si, tu peux. Lorsque vous mettez à jour les emplacements de bureau dans le profil Azure Active Directory de l’utilisateur, incluez le numéro d’étage dans le numéro de la salle, même s’il est manquant dans le fichier DWG. Après avoir téléchargé le fichier, l’écran Spécifier des modèles d’emplacement s’affiche et vous pouvez indiquer les deux valeurs.
 
 Par exemple, un fichier DWG qui inclut des numéros de salle, mais aucun numéro d’étage, peut ressembler à ceci :
 

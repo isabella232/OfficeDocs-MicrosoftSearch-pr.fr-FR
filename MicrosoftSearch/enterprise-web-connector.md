@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Configurer le connecteur Enterprise sites web Graph pour Recherche Microsoft
-ms.openlocfilehash: 2be52bc83718c2450ad91444a6176f5f63c03890
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 2461a447b07dec827c8cf699865c027b01e42608
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58469977"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702164"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -26,10 +26,10 @@ ms.locfileid: "58469977"
 
 # <a name="enterprise-websites-graph-connector"></a>Enterprise sites web Graph connecteur
 
-Le connecteur Enterprise sites web Graph permet à votre organisation d’indexer des articles et du contenu à partir de ses sites web **internes.** Après avoir configuré le connecteur et synchronisé le contenu à partir du site web, les utilisateurs finaux peuvent rechercher ce contenu à partir de n’Recherche Microsoft client.
+Le connecteur Enterprise sites web Graph permet à votre organisation d’indexer des articles et du contenu à partir de ses sites web **internes.** Après avoir configuré le connecteur et synchronisé le contenu à partir du site web, les utilisateurs finaux peuvent rechercher ce contenu à partir de n’importe quel client Recherche Microsoft client.
 
 > [!NOTE]
-> Lisez [**l’article Configurer votre connecteur Graph pour**](configure-connector.md) comprendre les instructions générales Graph’installation des connecteurs.
+> Lisez [**l’article Configurer votre connecteur Graph pour**](configure-connector.md) comprendre les instructions générales Graph d’installation des connecteurs.
 
 Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur Enterprise sites web. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur Enterprise sites web. Cet article inclut également des informations sur [la résolution des problèmes.](#troubleshooting)
 

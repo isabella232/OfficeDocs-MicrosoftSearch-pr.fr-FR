@@ -6,19 +6,19 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Gérer la façon dont les Power BI et les données apparaissent dans les résultats de recherche
-ms.openlocfilehash: 951b1849cd3c9f60e93c98bde189eef85680b372
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 14b294fcec7d9c7cb3e1951414ab8795fd2cace7
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470256"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702002"
 ---
 # <a name="manage-power-bi-answers"></a>Gérer Power BI réponses
 
@@ -57,7 +57,7 @@ Power BI résultats sont activés pour votre organisation par défaut. Votre adm
 
 **Q : La recherche Power BI est-elle activée par défaut ?**
 
-**R :** Oui. Power BI recherche est activée par défaut pour Recherche Microsoft. Aucune configuration initiale n’est requise par l’administrateur client pour cette fonctionnalité.
+**R :** Oui. Power BI recherche est activée par défaut pour les Recherche Microsoft. Aucune configuration initiale n’est requise par l’administrateur client pour cette fonctionnalité.
 
 **Q : La recherche Power BI peut-elle être activée ou désactivée pour des groupes ou des utilisateurs spécifiques ?**
 
@@ -71,7 +71,7 @@ Power BI résultats sont activés pour votre organisation par défaut. Votre adm
 
 **R :** Non. Si un utilisateur de recherche n’a pas de licence Power BI, la page Power BI résultats de la recherche n’apparaîtra pas dans Recherche Microsoft résultats.
 
-**Q : Est-ce que je vais voir Power BI résultats de recherche que je ne peux pas accéder ?**
+**Q : Est-ce que je vais voir Power BI de recherche que je ne peux pas accéder ?**
 
 **R :** Non. Recherche Microsoft renvoyer uniquement les Power BI que vous avez accès.
 

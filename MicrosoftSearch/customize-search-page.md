@@ -6,18 +6,18 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Ajouter des secteurs verticaux de recherche et personnaliser les résultats de recherche
-ms.openlocfilehash: 701604798115091c7c7a286d3b6e97dea08e9453
-ms.sourcegitcommit: be5dcc7005447d6139e39d86211c7ec4cd5dd907
+ms.openlocfilehash: 1ca436a2617e32e285715e4fffd622dc7a571ca1
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58639587"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702173"
 ---
 # <a name="customize-the-search-results-page"></a>Personnaliser la page des résultats de la recherche
 
@@ -71,7 +71,7 @@ Après avoir commencé l’Assistant, vous êtes guidé à travers les étapes p
 >[!Note]
 >Les secteurs verticaux sont créés dans un état désactivé. Vous les activez pour les rendre consultables.
 
-Vous pouvez utiliser un ensemble limité de langage de requête de mot [clé (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) pour limiter l’étendue. (Les propriétés que vous pouvez utiliser sont décrites plus loin dans cet article.) Nous vous recommandons d’utiliser des mots clés de texte libre et des restrictions de propriété avec des opérateurs booléens. KQL prend également en [charge les variables de requête de profil](#profile-query-variables) pour affiner les résultats sous le secteur vertical.
+Vous pouvez utiliser un ensemble limité de langages [KQL (Keyword Query Language)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) pour limiter l’étendue. (Les propriétés que vous pouvez utiliser sont décrites plus loin dans cet article.) Nous vous recommandons d’utiliser des mots clés de texte libre et des restrictions de propriété avec des opérateurs booléens. KQL prend également en [charge les variables de requête de profil](#profile-query-variables) pour affiner les résultats sous le secteur vertical.
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>Créer un secteur vertical au niveau de l’organisation
 
@@ -107,7 +107,7 @@ Pour créer votre propre disposition des résultats de recherche et remplacer la
 
 Vous pouvez créer plusieurs types de résultats pour chaque secteur vertical, ce qui vous permet d’utiliser différentes dispositions pour différents types de résultats. Par exemple, vous pouvez personnaliser les incidents de gravité *1* pour qu’ils ont des couleurs plus visibles et une police plus grande que les incidents de gravité *3.*
 
-Après avoir démarrer l’Assistant, vous êtes guidé dans les étapes pour définir le nom, la source de contenu et les conditions du type de résultat. Vous pouvez définir la priorité du type de résultat à partir de l’affichage Liste.
+Après avoir commencé l’Assistant, vous êtes guidé à travers les étapes pour définir le nom, la source de contenu et les conditions du type de résultat. Vous pouvez définir la priorité du type de résultat à partir de l’affichage Liste.
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>Créer un type de résultat au niveau de l’organisation
 
@@ -131,7 +131,7 @@ Après avoir activé le secteur vertical, il y a un délai de quelques heures av
 
 ## <a name="profile-query-variables"></a>Variables de requête de profil
 
-Utilisez des variables dans la section requête KQL d’un secteur vertical pour fournir des données dynamiques en tant qu’entrée à la requête d’un secteur vertical. Vous pouvez utiliser des variables de requête de profil pour rendre les résultats de la recherche contextuels pour l’utilisateur. Les variables de requête de profil récupèrent des valeurs à partir du profil de [l’utilisateur.](/graph/api/resources/profile)
+Utilisez des variables dans la section de requête KQL d’un secteur vertical pour fournir des données dynamiques en tant qu’entrée à la requête d’un secteur vertical. Vous pouvez utiliser des variables de requête de profil pour rendre les résultats de la recherche contextuels pour l’utilisateur. Les variables de requête de profil récupèrent des valeurs à partir du profil de [l’utilisateur.](/graph/api/resources/profile)
 
 Par exemple, pour créer un secteur vertical « Tickets » pour que l’utilisateur trouve les tickets de support qui lui sont affectés, vous pouvez spécifier la requête suivante dans la section « Requête » lors de la création verticale dans la page d’administration :  
 

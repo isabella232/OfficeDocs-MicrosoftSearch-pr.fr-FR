@@ -6,18 +6,18 @@ manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Étapes sur la façon de mameler les identités AAD
-ms.openlocfilehash: 69d4164e6d0acc245eee5c631db39ed7fb178325
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: d0292d77b3a0936ed60682b8388de1bb82ac43bb
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470295"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701966"
 ---
 # <a name="map-your-azure-ad-identities"></a>Mapper vos identités Azure AD   
 
@@ -32,7 +32,7 @@ Ces étapes sont uniquement pertinentes pour les administrateurs de recherche qu
 
 ### <a name="1-select-azure-ad-user-properties-to-map"></a>1. Sélectionnez les propriétés utilisateur Azure AD à ma map
 
-Vous pouvez sélectionner les propriétés Azure AD dont vous avez besoin pour ma map montre l’ID de fédération.
+Vous pouvez sélectionner les propriétés Azure AD que vous devez ma cartographier sur l’ID de fédération.
 
 Vous pouvez sélectionner une propriété utilisateur Azure AD dans ladown. Vous pouvez également ajouter autant de propriétés utilisateur Azure AD que vous le souhaitez si ces propriétés sont nécessaires pour créer le mappage d’ID de fédération pour votre organisation.
 

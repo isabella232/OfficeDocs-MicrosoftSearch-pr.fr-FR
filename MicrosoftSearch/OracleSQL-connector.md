@@ -7,19 +7,19 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
 description: Configurer le connecteur SQL Graph Oracle pour Recherche Microsoft.
-ms.openlocfilehash: 804bee89f8529630df5741f68b9f112c69307b4f
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 1fe45fa6f92b16290148ef72282418c41942a3c7
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701425"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470013"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -36,7 +36,7 @@ Cet article est réservé à toute personne qui configure, exécute et surveille
 
 ### <a name="install-the-graph-connector-agent"></a>Installer l’agent Graph connecteur d’installation
 
-Pour accéder à vos données tierces sur site, vous devez installer et configurer l’agent Graph connecteur local. Pour plus [d’informations, voir Installer Graph connecteur](graph-connector-agent.md) d’installation.  
+Pour accéder à vos données tierces sur site, vous devez installer et configurer l’agent Graph connecteur local. Pour plus [d’informations, voir Installer Graph’agent](graph-connector-agent.md) connecteur de connexion.  
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
 
@@ -106,7 +106,7 @@ Pour éviter la surcharge de la base de données, le connecteur par lots et repr
 
 Créez des extraits de requête pour les filigranes, comme illustré dans les exemples suivants :
 
-* `WHERE (CreatedDateTime > @watermark)`. Nommez le nom de colonne en filigrane avec le mot clé `@watermark` réservé. Vous ne pouvez trier la colonne filigrane que par ordre croissant.
+* `WHERE (CreatedDateTime > @watermark)`. Nommez le nom de colonne de filigrane avec le mot clé `@watermark` réservé. Vous ne pouvez trier la colonne filigrane que par ordre croissant.
 * `ORDER BY CreatedDateTime ASC`. Tri dans la colonne filigrane dans l’ordre croissant.
 
 Dans la configuration présentée dans l’image suivante, se trouve `CreatedDateTime` la colonne filigrane sélectionnée. Pour extraire le premier lot de lignes, spécifiez le type de données de la colonne filigrane. Dans ce cas, le type de données est `DateTime` .
@@ -125,7 +125,7 @@ Pour exclure l’indexation des lignes supprimées (à l’aide d’une suppress
 
 Sélectionnez **Gérer les autorisations** pour choisir les différentes colonnes de contrôle d’accès qui spécifient le mécanisme de contrôle d’accès. Sélectionnez le nom de colonne que vous avez spécifié dans l’analyse complète SQL requête.
 
-Chacune des colonnes ACL est attendue comme une colonne à valeurs multiples. Ces valeurs d’ID multiples peuvent être séparées par des séparateurs tels que des points-virgules (;), virgule (,), etc. Vous devez spécifier ce séparateur dans le champ **séparateur de** valeurs.
+Chacune des colonnes de la ACL est attendue comme une colonne à valeurs multiples. Ces valeurs d’ID multiples peuvent être séparées par des séparateurs tels que des points-virgules (;), virgule (,), etc. Vous devez spécifier ce séparateur dans le champ **séparateur de** valeurs.
 
 Les types d’ID suivants sont pris en charge pour l’utilisation en tant que listes de contrôle d’appel :
 
@@ -180,7 +180,7 @@ Sous-dessous se trouve une liste des erreurs courantes observées lors de la con
 
 | Étape de configuration | Message d’erreur | Raisons possibles |
 | ------------ | ------------ | ------------ |
-| Paramètres de base de données | Erreur du serveur de base de données : la demande de connexion a été hors délai | Hostname non valide <br> Hôte non accessible |
+| Paramètres de base de données | Erreur du serveur de base de données : la demande de connexion a été mise à l’heure | Hostname non valide <br> Hôte non accessible |
 | Paramètres de base de données | Erreur du serveur de base de données : ORA-12541 : TNS : pas d’écoute | Port non valide |
 | Paramètres de base de données | Erreur du serveur de base de données : ORA-12514 : TNS : l’écoute ne connaît pas actuellement le service demandé dans le descripteur de connecteur | Nom de service (base de données) non valide |
 | Paramètres de base de données | Erreur du serveur de base de données : échec de connexion pour l’utilisateur ' `user` '. | Nom d’utilisateur ou mot de passe non valide |

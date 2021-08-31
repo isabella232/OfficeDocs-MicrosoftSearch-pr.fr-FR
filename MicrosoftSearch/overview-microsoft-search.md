@@ -6,18 +6,18 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Obtenez une vue d’ensemble de ce Recherche Microsoft, de ses avantages et des applications qui la Recherche Microsoft.
-ms.openlocfilehash: 29a6db642ac9cc787b8cbec45aec609f55722206
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 271742f7f440004db039b4352b9486445508d3f0
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701939"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470331"
 ---
 # <a name="overview-of-microsoft-search"></a>Vue d’ensemble de Recherche Microsoft
 
@@ -70,7 +70,7 @@ En tant qu’administrateur, vous pouvez créer une expérience Recherche Micros
 
 Recherche Microsoft affiche le contenu que votre organisation a stocké dans Microsoft 365 ou indexé par le biais de connecteurs. Recherche Microsoft recherche pas sur les locataires ou n’affiche pas les résultats du contenu partagé par d’autres organisations. Si votre organisation a installé un environnement SharePoint hybride à l’aide de la recherche hybride sur le cloud, Recherche Microsoft renvoie les résultats de recherche à partir du contenu SharePoint en ligne et local, y compris tout contenu externe que vous avez connecté à votre environnement SharePoint Server. [Apprenez-en davantage sur les environnements hybrides de recherche](/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
-Les utilisateurs obtiennent les mêmes résultats de recherche qu’ils obtiennent à partir d’autres emplacements et obtiennent également des résultats à partir d’Internet.
+Les utilisateurs obtiennent les mêmes résultats de recherche qu’ils obtiennent à partir d’autres emplacements et ils obtiennent également des résultats à partir d’Internet.
 
 ## <a name="how-microsoft-search-works"></a>Fonctionnement Recherche Microsoft’entreprise
 

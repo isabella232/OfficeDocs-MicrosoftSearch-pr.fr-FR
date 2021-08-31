@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Configurer le connecteur Azure DevOps Graph pour Recherche Microsoft
-ms.openlocfilehash: fcf381a92ef397f900b300ca667fa80067a6672a
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 9c3c5d994f8470cdd70dc07445ede2c74f688383
+ms.sourcegitcommit: be5dcc7005447d6139e39d86211c7ec4cd5dd907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701389"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58639569"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -98,7 +98,7 @@ Ensuite, sélectionnez les champs que vous souhaitez que la connexion indexe et 
 
 ## <a name="step-4-manage-search-permissions"></a>Étape 4 : Gérer les autorisations de recherche
 
-Le connecteur Azure DevOps prend en charge les autorisations de recherche visibles uniquement pour les personnes ayant accès à  **cette source de données** ou Tout le **monde.** Si vous choisissez uniquement les personnes ayant accès à cette **source** de données, les données indexées apparaissent dans les résultats de recherche pour les utilisateurs qui y ont accès en fonction des autorisations accordées aux utilisateurs ou groupes au niveau organisation, Project ou chemin d’accès de la zone dans Azure DevOps. Si vous choisissez **Tout le** monde, les données indexées apparaissent dans les résultats de recherche pour tous les utilisateurs.
+Le connecteur Azure DevOps prend en charge les autorisations de recherche visibles uniquement pour les personnes ayant accès à  **cette source de données** ou Tout le **monde.** Si vous choisissez uniquement les personnes ayant accès à cette **source** de données, les données indexées apparaissent dans les résultats de la recherche pour les utilisateurs qui y ont accès en fonction des autorisations accordées aux utilisateurs ou aux groupes au niveau de l’organisation, du Project ou du chemin d’accès de la zone dans Azure DevOps. Si vous choisissez **Tout le** monde, les données indexées apparaissent dans les résultats de recherche pour tous les utilisateurs.
 
 ## <a name="step-5-assign-property-labels"></a>Étape 5 : Attribuer des étiquettes de propriété
 

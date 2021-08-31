@@ -6,18 +6,18 @@ manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Étapes sur la façon de mameler des identités non-AAD
-ms.openlocfilehash: e90db3bb8d20a0389ddbf2d2845bf91843513404
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: bece23677f07f10d40471fb6ec27c2d96e7018fb
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701957"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470304"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>Ma cartographier vos identités autres qu’Azure AD  
 
@@ -28,7 +28,7 @@ Ces étapes sont uniquement pertinentes pour les administrateurs de recherche qu
 >[!NOTE]
 >Si vous devez définir un connecteur Salesforce et sélectionner uniquement les personnes ayant accès à cette **source** de données et au type d’identité **AAD** sur l’écran d’autorisations de recherche, reportez-vous à l’article Ma cartographier vos [identités Azure AD](map-aad.md) pour obtenir des étapes sur la façon de mameler les identités Azure AD.  
 
-## <a name="steps-for-mapping-your-non-azure-ad-properties"></a>Étapes de mappage de propriétés autres qu’Azure AD
+## <a name="steps-for-mapping-your-non-azure-ad-properties"></a>Étapes de mappage de vos propriétés non Azure AD
 
 ### <a name="1-select-an-azure-ad-user-property"></a>1. Sélectionnez une propriété utilisateur Azure AD  
 
@@ -42,7 +42,7 @@ Vous pouvez sélectionner l’une des propriétés Azure AD suivantes :
 | Azure AD ID                 | Un ID Azure AD pour un utilisateur donné est le GUID unique de l’utilisateur.                 | 58006c96-9e6e-45ea-8c88-4a56851eefad            |
 | ID de sécurité Active Directory (SID)                  | SID (Security Identifier) est un identificateur unique qu’Active Directory utilise pour identifier les objets en tant que principal de sécurité.                  | S-1-5-21-453406510-812318184-4183662089             |
 
-### <a name="2-select-non-azure-ad-user-properties-to-map"></a>2. Sélectionnez les propriétés utilisateur autres qu’Azure AD à ma choix
+### <a name="2-select-non-azure-ad-user-properties-to-map"></a>2. Sélectionnez les propriétés utilisateur autres qu’Azure AD à ma map
 
 Vous pouvez sélectionner des propriétés non Azure AD tirées de votre source de données pour appliquer des expressions régulières. Pour en savoir plus sur l’endroit où trouver ces propriétés dans votre source de données, consultez les pages [ServiceNow](servicenow-connector.md) et [Salesforce.](salesforce-connector.md)  
 

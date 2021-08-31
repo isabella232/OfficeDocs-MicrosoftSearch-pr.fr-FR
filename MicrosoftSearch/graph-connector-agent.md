@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Agent sur place
-ms.openlocfilehash: 4b9dddba7741388f2e6c96510e5f41b196def330
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 9994b84c8db05b6b269edb6f5b6f463ab8da1529
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58469959"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702137"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Agent du connecteur Graph Microsoft
 
@@ -36,7 +36,7 @@ Configuration recommandée :
 * 16 Go de RAM, 2 Go d’espace disque
 * Accès réseau à la source de données et à Internet via 443
 
-Après avoir installé l’agent, si les serveurs proxy ou les pare-feu de votre organisation bloquent la communication vers des domaines inconnus, ajoutez ceux ci-dessous à la liste d’accès.
+Après avoir installé l’agent, si les serveurs proxy ou les pare-feu de votre organisation bloquent la communication vers des domaines inconnus, ajoutez-en ci-dessous à la liste d’accès.
 
 1. *.servicebus.windows.net
 2. *.events.data.microsoft.com
@@ -45,7 +45,7 @@ Après avoir installé l’agent, si les serveurs proxy ou les pare-feu de votre
 5. https://<span>graph.microsoft.</span> com/
 
 >[!NOTE]
->L’authentification proxy n’est pas prise en charge. Si votre environnement dispose d’un proxy qui nécessite une authentification, notre recommandation consiste à autoriser l’agent du connecteur à contourner le proxy.
+>L’authentification proxy n’est pas prise en charge. Si votre environnement dispose d’un proxy qui nécessite une authentification, notre recommandation consiste à autoriser l’agent de connecteur à contourner le proxy.
 
 ## <a name="create-and-configure-an-app-for-the-agent"></a>Créer et configurer une application pour l’agent  
 
@@ -67,7 +67,7 @@ Tout d’abord, connectez-vous et notez que le privilège minimal requis sur le 
 
 7. Recherchez « ExternalItem.ReadWrite.All » et « Directory.Read.All » dans les autorisations, puis sélectionnez **Ajouter des autorisations.**
 
-8. Sélectionnez **Accorder le consentement administrateur pour [TenantName]** et confirmer en sélectionnant **Oui**.
+8. Sélectionnez **Accorder le consentement de l’administrateur pour [TenantName]** et confirmez en sélectionnant **Oui**.
 
 9. Vérifiez que les autorisations sont dans l’état « accordé ».
 
@@ -81,7 +81,7 @@ Les détails de l’authentification peuvent être fournis à l’aide d’une s
 
 1. Go to the [Azure portal](https://portal.azure.com) and sign in with admin credentials for the tenant.
 
-2. Ouvrez **l’inscription** de l’application à partir du volet de navigation et allez à l’application appropriée. Sous **Gérer,** **sélectionnez Certificats et secrets.**
+2. Ouvrez **l’inscription** de l’application à partir du volet de navigation et allez à l’application appropriée. Sous **Gérer,** sélectionnez **Certificats et secrets.**
 
 3. Sélectionnez **Nouvelle secret client** et sélectionnez une période d’expiration pour la secret. Copiez la secret généré et enregistrez-le, car il ne sera pas affiché à nouveau.
 

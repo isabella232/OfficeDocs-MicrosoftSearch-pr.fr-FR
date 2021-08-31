@@ -7,19 +7,19 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
 description: Configurer le connecteur d’Graph de fichiers pour Recherche Microsoft
-ms.openlocfilehash: b91f10704b536ecc3a62c492ef23ba8745c4dcf8
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 874b522cb54288b531cbbc63e12f232a8a68939e
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58469950"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702146"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -34,7 +34,7 @@ Le connecteur de partage de Graph permet aux utilisateurs de votre organisation 
 
 ### <a name="install-the-graph-connector-agent"></a>Installer l’agent Graph connecteur d’installation
 
-Pour indexer vos partages Windows de fichiers, vous devez installer et inscrire l’agent Graph connecteur. Pour plus [d’informations, voir Installer Graph connecteur](graph-connector-agent.md) d’installation.  
+Pour indexer vos partages Windows de fichiers, vous devez installer et inscrire l’agent Graph connecteur. Pour plus [d’informations, voir Installer Graph’agent](graph-connector-agent.md) connecteur de connexion.  
 
 ### <a name="content-requirements"></a>Exigences en matière de contenu
 
@@ -76,7 +76,7 @@ Seul le contenu textuel de ces formats est indexé : DOC, DOCM, DOCX, DOTX, EML,
 
 #### <a name="full-network-path-of-filefolder-or-regular-expression-to-limit-indexing"></a>Chemin d’accès réseau complet du fichier/dossier ou de l’expression régulière pour limiter l’indexation 
 
-Dans le chemin d’accès réseau, utilisez le caractère d’échappatoire ( \\ ) avant les caractères spéciaux tels que \\ . Exemple : pour le chemin \\ \\ d’accès CONTOSO FILE SHAREDFOLDER, la façon correcte d’entrer est \\ \\ \\ \\ \\ \\ CONTOSO \\ \\ FILE \\ \\ SHAREDFOLDER
+Dans le chemin d’accès réseau, utilisez le caractère d’échappatoire ( \\ ) avant les caractères spéciaux comme \\ . Exemple : pour le chemin \\ \\ d’accès CONTOSO FILE SHAREDFOLDER, la façon correcte d’entrer est \\ \\ \\ \\ \\ \\ CONTOSO \\ \\ FILE \\ \\ SHAREDFOLDER
 
 Vous pouvez trouver les règles d’écriture d’expression [régulière ici](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)
 

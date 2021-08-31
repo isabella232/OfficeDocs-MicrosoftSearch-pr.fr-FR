@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Configurer le connecteur Azure SQL et Microsoft SQL Graph pour Recherche Microsoft.
-ms.openlocfilehash: ae953d55de4a4f5e8afc32cc6b55f6e0b32e2811
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: a60c8a038790bb4a08189c48675d315b06a6e0f7
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701434"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470004"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -36,7 +36,7 @@ Cet article est réservé à toute personne qui configure, exécute et surveille
 
 ### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>Installer l’agent Graph connecteur local (requis pour le connecteur Microsoft SQL Server local uniquement)
 
-Pour accéder à vos données tierces sur site, vous devez installer et configurer l’agent Graph connecteur local. Pour plus [d’informations, voir Installer Graph’agent](graph-connector-agent.md) connecteur de connexion.
+Pour accéder à vos données tierces sur site, vous devez installer et configurer l’agent Graph connecteur local. Pour plus [d’informations, voir Installer Graph connecteur](graph-connector-agent.md) d’installation.
 
 >[!NOTE]
 >Si vous utilisez l’authentification Windows lors de la configuration du connecteur Microsoft SQL Server Graph, l’utilisateur avec lequel vous essayez de vous connecter doit avoir des droits de connexion interactifs sur l’ordinateur sur lequel l’agent de connecteur Graph est installé. Reportez-vous à la documentation sur la [gestion des stratégies d’accès](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) pour vérifier les droits d’accès.
@@ -141,7 +141,7 @@ Pour éviter la surcharge de la base de données, le connecteur par lots et repr
 
 Créez des extraits de requête pour les filigranes, comme illustré dans les exemples suivants :
 
-- `WHERE (CreatedDateTime > @watermark)`. Nommez le nom de colonne en filigrane avec le mot clé `@watermark` réservé. Si l’ordre de tri de la colonne de filigrane est croissant, utilisez `>` ; dans le cas contraire, utilisez `<` .
+- `WHERE (CreatedDateTime > @watermark)`. Nommez le nom de colonne de filigrane avec le mot clé `@watermark` réservé. Si l’ordre de tri de la colonne de filigrane est croissant, utilisez `>` ; dans le cas contraire, utilisez `<` .
 - `ORDER BY CreatedDateTime ASC`. Trier sur la colonne filigrane dans l’ordre croissant ou décroit.
 
 Dans la configuration présentée dans l’image suivante, se trouve `CreatedDateTime` la colonne filigrane sélectionnée. Pour extraire le premier lot de lignes, spécifiez le type de données de la colonne filigrane. Dans ce cas, le type de données est `DateTime` .

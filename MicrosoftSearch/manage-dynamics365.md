@@ -6,14 +6,14 @@ manager: kellis
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Gérer l’apparition du contenu Dynamics 365 dans les résultats de recherche
-ms.openlocfilehash: ff7b1d86716233910ba6c1ba3141fbe13beb5a98
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 8a87e4026937ba01132c10815dc2f91d27da79c9
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470229"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702029"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Recherche de fédération Dynamics 365 (prévisualisation)
 
@@ -43,7 +43,7 @@ Les réponses Dynamics 365 apparaissent dans les résultats de la recherche dans
 
 :::image type="content" alt-text="Capture d’écran des réponses Dynamics 365 SharePoint, Bing et Office" source="media/dynamics365/dynamics365-answer.png" lightbox="media/dynamics365/dynamics365-answer.png":::
 
-À partir de la réponse, il est facile de voir d’autres résultats de recherche Dynamics 365 à l’aide du lien De plus **de résultats Dynamics 365.** Elle permet aux utilisateurs d’obtenir une page de résultats Dynamics 365 dédiée avec d’autres résultats pertinents pour leur requête.
+À partir de la réponse, il est facile de voir d’autres résultats de recherche Dynamics 365 à l’aide du lien De plus **de résultats Dynamics 365.** Il permet aux utilisateurs d’obtenir une page de résultats Dynamics 365 dédiée avec d’autres résultats pertinents pour leur requête.
 
 :::image type="content" alt-text="Capture d’écran de Dynamics 365 vertical et résultats sur SharePoint, Bing et Office" source="media/dynamics365/dynamics365-vertical.png" lightbox="media/dynamics365/dynamics365-vertical.png":::
 
@@ -65,10 +65,10 @@ Les requêtes de nom de produit et de langage naturel sont toutes deux pris en c
 * Quels sont les comptes à Seattle ?
 * Quels sont les contacts à Seattle ?
 * Quels sont mes prospects fermant ce mois-ci
-* Appel téléphonique à priorité élevée
+* Appel téléphonique haute priorité
 * Messages électroniques manquants du contact
 
-Les modèles de nom de produit 365 365 sont des modèles qui déclenchent des résultats Dynamics 365, quel que soit l’endroit où ils apparaissent dans une requête :
+Les modèles de nom de produit 365 365 peuvent déclencher des résultats Dynamics 365, quel que soit l’endroit où ils apparaissent dans une requête :
 
 * D365
 * Dynamics 365

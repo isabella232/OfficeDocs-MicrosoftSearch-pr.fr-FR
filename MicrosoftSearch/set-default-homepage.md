@@ -6,19 +6,19 @@ manager: shohara
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 description: Découvrez comment configurer un navigateur par défaut pour votre entreprise avec Microsoft Search (recherche Microsoft).
-ms.openlocfilehash: 745e4a81e4b53ff88b612cd19295cb89dc041ddc
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 34820952c9b964d4add58ca40d8c79de7c968daa
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701443"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58469941"
 ---
 # <a name="make-bingcom-the-default-home-page"></a>Configurer Bing.com en tant que page d’accueil par défaut
 
