@@ -6,20 +6,20 @@ manager: kellis
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
-description: Obtenez des suggestions de recherche pertinentes et trouvez des résultats de travail plus rapidement en ajoutant Recherche Microsoft zone de recherche à votre site ou page intranet.
-ms.openlocfilehash: f11fcbeee23346041e4ebc720e4256d3aba29d57bed9266ed04bb02ee31c2ada
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+description: Obtenez des suggestions de recherche pertinentes et trouvez des résultats de travail plus rapidement en ajoutant une zone de Recherche Microsoft à votre site ou page intranet.
+ms.openlocfilehash: d9f730eee98291d64e1f860c67be3eb7aa52a4a8
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533388"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701407"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>Ajout d’une zone de recherche à votre site intranet
 
@@ -108,7 +108,7 @@ Pour faciliter l’intégration entre vos applications métier ou sites intranet
 
 Utilisez l’option verticale dans bfbSearchBoxConfig pour définir le secteur vertical de votre choix. Par exemple, si vous souhaitez que les utilisateurs se placent toujours sur le secteur vertical Sites, l’un des secteurs verticaux par défaut, utilisez la valeur « Site-sites ».
 
-:::image type="content" alt-text="Capture d’écran de la page des résultats du travail Recherche Microsoft dans Bing montrant les résultats verticaux sites et l’URL." source="media/sites-vertical-esb.png" lightbox="media/sites-vertical-esb.png":::
+:::image type="content" alt-text="Capture d’écran de la page des résultats du travail Recherche Microsoft dans Bing montrant les résultats verticaux et l’URL des sites." source="media/sites-vertical-esb.png" lightbox="media/sites-vertical-esb.png":::
 
 Pour les secteurs verticaux personnalisés, utilisez le hachage à la fin de l’URL. Vous pouvez trouver ces valeurs en recherchant à partir de la page de travail sur Bing, en cliquant sur une étiquette verticale et en copiant la valeur après le signe numérique (#).
 

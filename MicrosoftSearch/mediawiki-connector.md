@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Configurer le connecteur d’Graph MediaWiki pour Recherche Microsoft
-ms.openlocfilehash: fff24ce918e3eab6a50d78977749a030ef17d0aef235e6d98e02bdf54fc63a0c
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 7e1c308eb1785dd7fec23fac7e9002957a0d50ca
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532693"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701948"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -49,7 +49,7 @@ Suivez les [instructions d’installation générales.](./configure-connector.md
 
 Entrez votre **URL Wiki** et choisissez le **type d’authentification** dans le menu déroulant des options. Les options sont **None**, **Basic** et **OAuth 2.0 AAD**.
 
-Si vous choisissez **De base** comme type d’authentification, vous devez fournir le nom d’utilisateur et le mot de passe **du** wiki. 
+Si vous choisissez **De base** comme type d’authentification, vous devez fournir le nom d’utilisateur et le mot de **passe** du wiki. 
 
 Si vous choisissez **OAuth 2.0 AAD** comme type d’authentification, vous devez fournir l’ID de ressource de l’installation wiki.  Vous devez également fournir **l’ID client** et la secret **client** générés sur la page d’inscription de l’application AAD.
 
@@ -85,6 +85,6 @@ Suivez les [instructions d’installation générales.](./configure-connector.md
 Le connecteur MediaWiki présente les limitations ci-après dans la version préliminaire :
 
 * Prend en charge uniquement les wikis basés sur le cloud.
-* Prend en charge uniquement Basic ou OAuth 2.0 avec l’authentification Azure Active Directory azure.
+* Prend en charge uniquement Basic ou OAuth 2.0 avec l’authentification Azure Active Directory ou Azure.
 * Ne prend pas en charge la sélection d’espace de noms pour l’indexation. Indexe uniquement les espaces de noms Principal, Catégorie et Fichier.
 * Ne prend pas en charge les listes de contrôle d’accès. Par conséquent, les pages indexées sont visibles par tous les utilisateurs de l’organisation.

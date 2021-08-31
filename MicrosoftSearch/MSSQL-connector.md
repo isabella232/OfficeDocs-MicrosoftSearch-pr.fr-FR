@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Configurer le connecteur Azure SQL et Microsoft SQL Graph pour Recherche Microsoft.
-ms.openlocfilehash: f80e3e1b86a120981c4dafd95715c00cd766f5e9
-ms.sourcegitcommit: 17cc660ec51bea11ab65f62655584c65c84a1d79
+ms.openlocfilehash: ae953d55de4a4f5e8afc32cc6b55f6e0b32e2811
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58406944"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701434"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -30,7 +30,7 @@ Le connecteur Graph indexe le contenu spécifié dans Recherche Microsoft. Pour 
 > [!NOTE]
 > Lisez [**l’article Configurer votre connecteur Graph pour**](configure-connector.md) comprendre les instructions générales Graph d’installation des connecteurs.
 
-Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur d’SQL azure et de serveur Microsoft SQL Graph. Il complète le processus de configuration générale et affiche des instructions qui s’appliquent uniquement au connecteur d’installation SQL Azure et Microsoft SQL server Graph. Cet article inclut également des informations [sur les limitations](#limitations) pour le serveur Microsoft SQL et les connecteurs SQL Azure.
+Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur d’SQL azure et de serveur Microsoft SQL Graph. Il complète le processus d’installation général et affiche des instructions qui s’appliquent uniquement au connecteur d’installation SQL Azure et Microsoft SQL server Graph. Cet article inclut également des informations [sur les limitations](#limitations) pour le serveur Microsoft SQL et les connecteurs SQL Azure.
 
 ## <a name="before-you-get-started"></a>Avant de commencer
 
@@ -55,7 +55,7 @@ instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>Étape 3 : Configurer les paramètres de connexion
 
-### <a name="register-an-app-for-azure-sql-connector-only"></a>Inscrire une application (pour le connecteur Azure SQL uniquement)
+### <a name="register-an-app-for-azure-sql-connector-only"></a>Inscrire une application (pour le connecteur azure SQL uniquement)
 
 Pour le connecteur SQL Azure, vous devez inscrire une application dans Azure Active Directory pour permettre Recherche Microsoft’accès aux données pour l’indexation. Pour en savoir plus sur l’inscription d’une application, consultez la documentation microsoft Graph sur l’inscription [d’une application.](/graph/auth-register-app-v2)
 
@@ -98,7 +98,7 @@ Dans cette étape, vous configurez la requête SQL qui exécute une analyse comp
 > [!Tip]
 > Pour obtenir toutes les colonnes dont vous avez besoin, vous pouvez joindre plusieurs tables.
 
-![Script montrant les propriétés OrderTable et AclTable avec des exemples de propriétés](media/MSSQL-fullcrawl.png)
+![Script montrant les propriétés OrderTable et AclTable avec des exemples de propriétés.](media/MSSQL-fullcrawl.png)
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a>Sélectionner des colonnes de données (obligatoire) et des colonnes ACL (facultatif)
 
@@ -117,11 +117,11 @@ L’utilisation de chacune des colonnes ACL dans la requête ci-dessus est décr
 - **DeniedUsers**: cette colonne spécifie la liste des utilisateurs qui **n’ont** pas accès aux résultats de la recherche. Dans l’exemple suivant, les utilisateurs john@contoso.com et keith@contoso.com n’ont pas accès à l’enregistrement avec OrderId = 13, alors que tous les autres utilisateurs ont accès à cet enregistrement.
 - **DeniedGroups**: cette colonne spécifie le groupe d’utilisateurs qui **n’ont** pas accès aux résultats de la recherche. Dans l’exemple suivant, les groupes engg-team@contoso.com et pm-team@contoso.com n’ont pas accès à l’enregistrement avec OrderId = 15, alors que tous les autres ont accès à cet enregistrement.  
 
-![Exemple de données montrant les propriétés OrderTable et AclTable avec des exemples de propriétés](media/MSSQL-ACL1.png)
+![Exemple de données montrant les propriétés OrderTable et AclTable avec des exemples de propriétés.](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>Types de données pris en charge
 
-Le tableau ci-dessous récapitule les types SQL données pris en charge dans les connecteurs MS SQL et Azure SQL. Le tableau récapitule également le type de données d’indexation pour le type SQL données pris en charge. Pour en savoir plus sur les connecteurs microsoft Graph pris en charge les types de données pour l’indexation, reportez-vous à la documentation sur les [types de ressources de propriété.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
+Le tableau ci-dessous récapitule SQL types de données pris en charge dans les connecteurs MS SQL et Azure SQL. Le tableau récapitule également le type de données d’indexation pour le type SQL données pris en charge. Pour en savoir plus sur les connecteurs Graph Microsoft pris en charge pour l’indexation, reportez-vous à la documentation sur les [types de ressources de propriété.](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)
 
 | Catégorie | Type de données source | Type de données d’indexation |
 | ------------ | ------------ | ------------ |
@@ -137,30 +137,30 @@ Pour tout autre type de données actuellement non directement pris en charge, la
 
 ### <a name="watermark-required"></a>Filigrane (obligatoire)
 
-Pour éviter la surcharge de la base de données, le connecteur par lots et reprend les requêtes d’analyse complète avec une colonne filigrane d’analyse complète. À l’aide de la valeur de la colonne filigrane, chaque lot suivant est récupéré et l’interrogation reprend à partir du dernier point de contrôle. Essentiellement, ces mécanismes contrôlent l’actualisation des données pour les analyse complètes.
+Pour éviter la surcharge de la base de données, le connecteur par lots et reprend les requêtes d’analyse complète avec une colonne filigrane d’analyse complète. En utilisant la valeur de la colonne filigrane, chaque lot suivant est récupéré et l’interrogation reprend à partir du dernier point de contrôle. Essentiellement, ces mécanismes contrôlent l’actualisation des données pour les analyse complètes.
 
 Créez des extraits de requête pour les filigranes, comme illustré dans les exemples suivants :
 
-- `WHERE (CreatedDateTime > @watermark)`. Nommez le nom de colonne en filigrane avec le mot clé `@watermark` réservé. Si l’ordre de tri de la colonne filigrane est croissant, utilisez `>` ; sinon, utilisez `<` .
+- `WHERE (CreatedDateTime > @watermark)`. Nommez le nom de colonne en filigrane avec le mot clé `@watermark` réservé. Si l’ordre de tri de la colonne de filigrane est croissant, utilisez `>` ; dans le cas contraire, utilisez `<` .
 - `ORDER BY CreatedDateTime ASC`. Trier sur la colonne filigrane dans l’ordre croissant ou décroit.
 
 Dans la configuration présentée dans l’image suivante, se trouve `CreatedDateTime` la colonne filigrane sélectionnée. Pour extraire le premier lot de lignes, spécifiez le type de données de la colonne filigrane. Dans ce cas, le type de données est `DateTime` .
 
-![Configuration des colonnes de filigrane](media/MSSQL-watermark.png)
+![Configuration des colonnes de filigrane.](media/MSSQL-watermark.png)
 
 La première requête récupère le premier **N** nombre de lignes à l’aide de : « CreatedDateTime > 1er janvier 1753 00:00:00 » (valeur min du type de données DateTime). Une fois le premier lot récupéré, la valeur la plus élevée renvoyée dans le lot est enregistrée en tant que point de contrôle si les lignes sont triées par `CreatedDateTime` ordre croissant. Par exemple, 1er mars 2019 03:00:00. Ensuite, le lot suivant de **lignes N** est récupéré à l’aide de « CreatedDateTime > Mars 1, 2019 03:00:00 » dans la requête.
 
 ### <a name="skipping-soft-deleted-rows-optional"></a>Ignorer les lignes supprimées (facultatif)
 
-Pour exclure l’indexation des lignes supprimées (ou non) dans votre base de données, spécifiez le nom et la valeur de la colonne de suppression (suppression totale) qui indiquent que la ligne est supprimée.
+Pour exclure l’indexation des lignes supprimées (à l’aide d’une suppression indélémentée) dans votre base de données, spécifiez le nom et la valeur de la colonne de suppression (suppression totale) qui indiquent que la ligne est supprimée.
 
-![Paramètres de suppression souple : « Supprimer (suppression) » et « Valeur de la colonne suppression (suppression) qui indique une ligne supprimée »](media/MSSQL-softdelete.png)
+![Paramètres de suppression souple : « Supprimer (suppression) » et « Valeur de la colonne suppression (suppression) qui indique une ligne supprimée ».](media/MSSQL-softdelete.png)
 
 ### <a name="full-crawl-manage-search-permissions"></a>Analyse complète : gérer les autorisations de recherche
 
 Sélectionnez **Gérer les autorisations** pour choisir les différentes colonnes de contrôle d’accès qui spécifient le mécanisme de contrôle d’accès. Sélectionnez le nom de colonne que vous avez spécifié dans l’analyse complète SQL requête.
 
-Chacune des colonnes de la ACL est attendue comme une colonne à valeurs multiples. Ces valeurs d’ID multiples peuvent être séparées par des séparateurs tels que des points-virgules (;), virgule (,), etc. Vous devez spécifier ce séparateur dans le champ **séparateur de** valeurs.
+Chacune des colonnes ACL est attendue comme une colonne à valeurs multiples. Ces valeurs d’ID multiples peuvent être séparées par des séparateurs tels que des points-virgules (;), virgule (,), etc. Vous devez spécifier ce séparateur dans le champ **séparateur de** valeurs.
 
 Les types d’ID suivants sont pris en charge pour l’utilisation en tant que listes de contrôle d’appel :
 
@@ -168,7 +168,7 @@ Les types d’ID suivants sont pris en charge pour l’utilisation en tant que l
 - **Azure Active Directory (AAD) :** dans Azure AD, chaque utilisateur ou groupe possède un ID d’objet qui ressemble à « e0d3ad3d-0000-1111-2222-3c5f5c52ab9b ».
 - ID de sécurité **Active Directory (AD)**: dans une configuration AD sur site, chaque utilisateur et groupe ont un identificateur de sécurité unique immuable qui ressemble à « S-1-5-21-3878594291-2115959936-132693609-65242 ».
 
-![Paramètres d’autorisation de recherche pour configurer les listes de contrôle d’accès](media/MSSQL-ACL2.png)
+![Paramètres d’autorisation de recherche pour configurer les listes de contrôle d’accès.](media/MSSQL-ACL2.png)
 
 ## <a name="step-3b-incremental-crawl-optional"></a>Étape 3b : analyse incrémentielle (facultatif)
 
@@ -229,4 +229,4 @@ Les connecteurs SQL ont les limitations ci-après dans la version préliminaire 
 - Microsoft SQL Server : la base de données sur site doit être SQL Server version 2008 ou ultérieure.
 - L’Microsoft 365 et l’abonnement Azure (hébergeant la base de données Azure SQL) doivent se trouver dans le même Azure Active Directory.
 - Les ACA sont uniquement pris en charge à l’aide d’un nom d’utilisateur principal (UPN), d Azure Active Directory (Azure AD) ou d’Active Directory Security.
-- L’indexation de contenu enrichi dans les colonnes de base de données n’est pas prise en charge. Les exemples de contenu de ce type sont html, JSON, XML, blobs et les parsings de document qui existent en tant que liens à l’intérieur des colonnes de base de données.
+- L’indexation de contenu enrichi dans les colonnes de base de données n’est pas prise en charge. Les exemples de contenu de ce type sont HTML, JSON, XML, blobs et les parsings de document qui existent en tant que liens à l’intérieur des colonnes de base de données.

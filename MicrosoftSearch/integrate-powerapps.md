@@ -6,19 +6,19 @@ manager: kellis
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
 description: Inclure des applications basées sur le navigateur dans les résultats des signets pour Recherche Microsoft
-ms.openlocfilehash: 4571862919c2f8bd92f1756a70baef908eaa0eade649e6890c1ba56d314398c2
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 55df0d6d6d39742548db497ed77f530b6a591895
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532956"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702101"
 ---
 # <a name="integrate-power-apps-in-microsoft-search-bookmarks"></a>Intégrer Power Apps dans Recherche Microsoft signets
    
@@ -38,7 +38,7 @@ Aidez vos utilisateurs à effectuer des tâches, telles que la saisie de congés
   
 1. [Recherchez l’ID de l’application Power App](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) que vous souhaitez intégrer.
     
-2. Dans le Microsoft 365 [d’administration,](https://admin.microsoft.com)allez à **Signets.**
+2. Dans le Microsoft 365 [d’administration,](https://admin.microsoft.com)allez **à Signets.**
     
 3. Ajoutez un signet ou recherchez un signet existant à ajouter à une application Power App.
     

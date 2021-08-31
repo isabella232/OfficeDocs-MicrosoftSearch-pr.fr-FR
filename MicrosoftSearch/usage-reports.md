@@ -8,18 +8,18 @@ ms.service: mssearch
 audience: Admin
 ms.audience: Admin
 ms.date: 07/02/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Examiner les rapports Recherche Microsoft’utilisation des applications
-ms.openlocfilehash: 9798cdaf0f88ca2f247bb8d10fce526f07adbabc1bbe5566eaddfc071346f751
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 9de48331efbc956ee7d980b919d9bd2f025fc8aa
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533112"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701452"
 ---
 # <a name="microsoft-search-usage-reports"></a>Recherche Microsoft Rapports d’utilisation
 
@@ -33,7 +33,7 @@ Les rapports [d’utilisation](https://admin.microsoft.com/Adminportal/Home?#/Mi
 Une version précédente de cette page incluait les données des recherches exécutées uniquement pour Recherche Microsoft dans Bing sur Bing.com. Ces données sont désormais intégrées dans ces rapports ; Vous pouvez toujours voir l’ancienne page en cliquant sur le lien en bas de la page pour afficher les requêtes Bing et la distribution des **impressions.** Ce lien et l’ancienne page seront bientôt supprimés.
 
 > [!div class="mx-imgBorder"]
-> ![Tableau de bord des rapports d’utilisation de la recherche](media/usage-reports/usage_reports_v2.png)
+> ![Tableau de bord rapports d’utilisation de la recherche.](media/usage-reports/usage_reports_v2.png)
 
 ## <a name="overview-of-search-reports"></a>Vue d’ensemble des rapports de recherche
 
@@ -45,11 +45,11 @@ Une version précédente de cette page incluait les données des recherches exé
 |Requêtes sans résultats|Ce rapport indique les requêtes de recherche populaires qui n'ont retourné aucun résultat. Il permet d'identifier les requêtes de recherche pouvant provoquer l'insatisfaction des utilisateurs et d'améliorer la détectabilité du contenu. Vous pouvez ensuite déterminer si la création d’une réponse, telle qu’un signet, ou l’ing d’un nouveau contenu via un connecteur Graph est l’action la plus appropriées.|
 
 >[!NOTE]
->Il existe actuellement un problème connu où les requêtes satisfaites par une réponse telle qu’un signet sont comptées comme une requête abandonnée.
+>Il existe actuellement un problème connu où les requêtes satisfaites par une réponse telle qu’un signet sont comptabilisées comme une requête abandonnée.
 
 ## <a name="viewing-reports"></a>Affichage des rapports
 
-Lorsque vous accédez à la page rapports d’utilisation, tous les rapports sont disponibles. Vous pouvez utiliser le filtre de date pour sélectionner un jour ou un mois spécifique à afficher.
+Lorsque vous accédez à la page Rapports d’utilisation, tous les rapports sont disponibles. Vous pouvez utiliser le filtre de date pour sélectionner un jour ou un mois spécifique à afficher.
 
 Le téléchargement d’un rapport vous permettra de voir les rapports à partir d’un plus large éventail de temps. Cliquez sur la flèche de téléchargement et sélectionnez **les 31 derniers jours** ou **les 12 derniers mois.** Le rapport est téléchargé sous la Excel feuille de calcul. Si vous avez sélectionné au-delà de 31 jours, la feuille de calcul aura un onglet individuel pour chaque jour. Le téléchargement des 12 derniers mois aura un onglet pour chaque mois.
 

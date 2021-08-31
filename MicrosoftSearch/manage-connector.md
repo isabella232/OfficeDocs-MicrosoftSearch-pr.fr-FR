@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Gérer les connecteurs Graph Microsoft pour Recherche Microsoft.
-ms.openlocfilehash: 0a4165af84cc11fbba4239f0204a3a7f3ce4fb25
-ms.sourcegitcommit: d276bfd1e03d1cdc1f51f70368df333da1d0111a
+ms.openlocfilehash: dd82114ff6aa651b57ce1941685840906ecf7318
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58408207"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702047"
 ---
 # <a name="monitor-your-connections"></a>Surveiller vos connexions
 
@@ -26,7 +26,7 @@ Pour accéder à vos connecteurs et les gérer, vous devez être désigné comme
 
 ## <a name="connection-operations"></a>Opérations de connexion
 
-Accédez à [l’onglet Connecteurs](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) dans [la Centre d’administration Microsoft 365](https://admin.microsoft.com).
+Accédez à [l’onglet Connecteurs](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) dans la [Centre d’administration Microsoft 365](https://admin.microsoft.com).
 
 Pour chaque type de connecteur, la [Centre d’administration Microsoft 365](https://admin.microsoft.com) prend en charge les opérations indiquées dans le tableau suivant :
 
@@ -39,7 +39,7 @@ Modifier un brouillon de connexion | :heavy_check_mark: | :x:
 
 ## <a name="monitor-your-connection-state"></a>Surveiller l’état de votre connexion
 
-Après avoir créé une connexion, le nombre d’éléments traitées s’affiche sous l’onglet **Connecteurs** **de Recherche Microsoft** page. Une fois l’analyse complète initiale terminée, la progression des analyses incrémentielles périodiques s’affiche. Cette page fournit des informations sur les opérations quotidiennes du connecteur et une vue d’ensemble des journaux et de l’historique des erreurs.
+Une fois que vous avez créé une connexion, le nombre d’éléments traitées s’affiche sous l’onglet **Connecteurs** **sur Recherche Microsoft** page. Une fois l’analyse complète initiale terminée, la progression des analyses incrémentielles périodiques s’affiche. Cette page fournit des informations sur les opérations quotidiennes du connecteur et une vue d’ensemble des journaux et de l’historique des erreurs.
 
 Cinq états s’affiche dans la colonne **État** par rapport à chaque connexion :
 
@@ -78,7 +78,7 @@ Lorsque le quota d’index est dépassé pour votre organisation, toutes les con
 
 Pour résoudre ce problème, vous pouvez :
 
-* Découvrez comment acheter un quota d’index pour votre organisation selon les exigences de licence [et la tarification.](licensing.md)
+* Découvrez comment acheter un quota d’index pour votre organisation en matière de [licences et de tarification.](licensing.md)
 
 * Identifiez les connexions qui ont trop de contenu en cours d’ingestion et mettez-les à jour pour indexer moins d’éléments afin de faire de la place pour le quota. Pour mettre à jour la connexion, vous devez supprimer et créer une connexion avec un nouveau filtre d’ingestion qui apporte moins d’éléments.
 

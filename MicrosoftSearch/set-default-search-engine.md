@@ -6,19 +6,19 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 description: Découvrez comment définir Bing comme moteur de recherche par défaut de votre entreprise à l’aide de Microsoft Search (recherche Microsoft).
-ms.openlocfilehash: 7ad9ff2a0fde5ad5d84a7a51785767fd2e5d21df6654a76b09e9796917a92a0f
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 5feef972d5c61c9cefba6981084e005271b39f15
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534183"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701902"
 ---
 # <a name="make-bing-the-default-search-engine"></a>Définir Bing en tant que moteur de recherche par défaut
   
@@ -89,7 +89,7 @@ Windows Registry Editor Version 5.00
   
 Double-cliquez sur le fichier créé et suivez les étapes pour importer le fichier. Une importation réussie doit avoir pour résultat la boîte de dialogue suivante :
   
-![Message d’importation réussi Éditeur du Registre](media/ea3686b9-f6d7-481e-9a0d-2c96891bc501.png)
+![Message d’importation réussi de l’Éditeur du Registre.](media/ea3686b9-f6d7-481e-9a0d-2c96891bc501.png)
   
 ### <a name="step-2-open-the-group-policy-management-console-gpmcmsc-and-switch-to-editing-an-existing-policy-or-creating-a-new-one"></a>ÉTAPE 2. Ouvrir la Console de gestion des stratégies de groupe (gpmc.msc) et basculer en mode modification d’une stratégie existante ou en créer une nouvelle.
 
@@ -98,7 +98,7 @@ Double-cliquez sur le fichier créé et suivez les étapes pour importer le fich
 3. Accédez à **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\SearchScopes**.
 4. À partir de cette clé, veillez à sélectionner DefaultScope.
 
-    ![Navigateur de Registre avec DefaultScope sélectionné](media/ec5a450d-0cba-4e9c-acba-1a09e8e90bad.png)
+    ![Navigateur du Registre avec DefaultScope sélectionné.](media/ec5a450d-0cba-4e9c-acba-1a09e8e90bad.png)
 5. Consultez toutes les sous-clés contenant le GUIDE de Microsoft Search (recherche Microsoft) dans Bing et chaque valeur sous la clé à l’exception d’un chemin d’accès aux profils utilisateur. Faites défiler vers le bas pour sélectionner d’autres éléments.
 6. Cliquez sur Terminer afin de compléter cette configuration.
 

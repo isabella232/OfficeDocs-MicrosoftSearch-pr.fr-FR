@@ -6,22 +6,22 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Comment personnaliser l’expérience de zone de recherche sur SharePoint sites
-ms.openlocfilehash: 151b5b066cd0164d4f7689192c37867d75b6eb6c57c82588cee654871c5e32b0
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: b5d58dd5a241ccf2ada556c44ec0ea5479ea2e2b
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533580"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701975"
 ---
 # <a name="search-box-settings-on-sharepoint-sites"></a>Paramètres de zone de recherche sur SharePoint sites
 
-L’une des différentes façons de personnaliser Recherche Microsoft sites SharePoint consiste à personnaliser le fonctionnement de la zone de recherche dans la barre de navigation de suite dans les sites SharePoint en fonction de vos besoins.
+L’une des différentes façons de personnaliser Recherche Microsoft sites SharePoint consiste à personnaliser le fonctionnement de la zone de recherche dans la barre de navigation de suite dans les sites SharePoint pour répondre au mieux à vos besoins.
 
 Pour d’autres options de personnalisation, voir Modification de la page de résultats Recherche Microsoft pour ajouter des secteurs verticaux [personnalisés, des types](customize-search-page.md)de résultats et des dispositions, et Création d’une page de résultats de recherche [personnalisée.](create-search-results-pages.md)
 

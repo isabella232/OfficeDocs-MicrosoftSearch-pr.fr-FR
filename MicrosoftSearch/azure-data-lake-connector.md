@@ -7,31 +7,31 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Configurer le connecteur Azure Data Lake Stockage Gen2 Graph pour Recherche Microsoft
-ms.openlocfilehash: 10bccfc0af144c22f280819d96e21be13ae1c2aad273364499296b6289d3a1e5
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: f60de4252e514f84bc92daf4ea65c535cf40a13d
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533364"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701398"
 ---
 <!---Previous ms.author: monaray --->
 
-# <a name="azure-data-lake-storage-gen2-graph-connector"></a>Connecteur d’Stockage Azure Data Lake Graph Gen2
+# <a name="azure-data-lake-storage-gen2-graph-connector"></a>Connecteur d’Graph Azure Data Lake Stockage Gen2
 
 Le connecteur Azure Data Lake Stockage Gen2 Graph permet aux utilisateurs de votre organisation de rechercher des fichiers stockés dans des comptes [Azure Blob Stockage](/azure/storage/blobs/storage-blobs-introduction) et [Azure Data Lake Gen 2 Stockage.](/azure/storage/blobs/data-lake-storage-introduction)
 
 > [!NOTE]
-> Lisez [**l’article Configurer votre connecteur Graph pour**](configure-connector.md) comprendre les instructions générales Graph’installation des connecteurs.
+> Lisez [**l’article Configurer votre connecteur Graph pour**](configure-connector.md) comprendre les instructions générales Graph d’installation des connecteurs.
 
-Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur Azure Data Lake Stockage Gen2. Il complète le processus de configuration général et affiche des instructions qui s’appliquent uniquement au connecteur Azure Data Lake Stockage Gen2. Cet article inclut également des informations sur [les limitations.](#limitations)
+Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur Azure Data Lake Stockage Gen2. Il complète le processus de configuration générale et affiche des instructions qui s’appliquent uniquement au connecteur Azure Data Lake Stockage Gen2. Cet article inclut également des informations sur [les limitations.](#limitations)
 
-Dans cet article, nous utilisons *stockage Azure* comme terme générique pour [Azure Blob Stockage](/azure/storage/blobs/storage-blobs-introduction) et Azure Data Lake Gen [2 Stockage](/azure/storage/blobs/data-lake-storage-introduction).
+Dans l’article, nous utilisons *stockage Azure* comme terme générique pour [Azure Blob Stockage](/azure/storage/blobs/storage-blobs-introduction) et Azure Data Lake Gen [2 Stockage](/azure/storage/blobs/data-lake-storage-introduction).
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
 
@@ -51,16 +51,16 @@ Si vous préférez ne pas fournir la clé **AccountKey** (paramètre dans la cha
 
 * Stockage Lecteur de données Blob
 * Stockage Collaborateur de données de file d’attente
-* Stockage Blob Delegator
+* Stockage Délégant blob
 
 Accédez à **l’onglet Contrôle** d’accès de votre compte stockage Azure, puis suivez les instructions ci-après pour accorder l’accès à l’application suivante :
 
-* **ID d’application** first party : 56c1da01-2129-48f7-9355-af6d59d42766
+* **ID** d’application first party : 56c1da01-2129-48f7-9355-af6d59d42766
 * **First Party App Name:** Graph Connector Service
 
 ### <a name="storage-account-and-queue-notifications-optional"></a>Stockage de compte et de file d’attente (facultatif)
 
-Prise en charge du traitement des modifications en temps réel dans Graph service connecteurs peuvent être ajoutés à l’avenir. Dans ce cas, nous allons surveiller les stockage Azure notifications de modification stockées dans une file d’attente. Vous devez créer une file d’attente dans le même compte que votre stockage Azure client.
+Prise en charge du traitement des modifications en temps réel dans Graph service connecteurs peut être ajouté à l’avenir. Dans ce cas, nous allons surveiller les stockage Azure notifications de modification stockées dans une file d’attente. Vous devez créer une file d’attente dans le même compte que votre stockage Azure client.
 
 Après avoir créé une file d’attente, rendez-vous dans l’onglet **Événements** de la page de file d’attente pour configurer **l’abonnement aux événements.** Choisissez tous les événements Blob que la file d’attente recevra et connectez-la au compte stockage Azure client.
 
@@ -84,7 +84,7 @@ Le connecteur azure Data Lake Stockage Gen2 Graph prend en charge les autorisati
 
 Pour une connexion à [Azure Blob Stockage](/azure/storage/blobs/storage-blobs-introduction), tout le contenu indexé à partir de la source configurée est visible par tous les membres de votre organisation. Les listes de contrôle d’accès ne sont pas pris en charge au niveau blob dans Azure Blob Stockage.
 
-## <a name="step-7-set-the-refresh-schedule"></a>Étape 7 : Définir la planification d’actualisation
+## <a name="step-7-set-the-refresh-schedule"></a>Étape 7 : Définir la planification de l’actualisation
 
 Dans **l’écran Actualiser Paramètres,** vous pouvez définir l’intervalle d’analyse incrémentielle et l’intervalle d’analyse complet. Les intervalles par défaut pour le connecteur Azure Data Lake Stockage Gen2 sont de 15 minutes pour une analyse incrémentielle et d’une semaine pour une analyse complète.
 

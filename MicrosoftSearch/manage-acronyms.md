@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créer et mettre à jour les réponses acronymes dans Recherche Microsoft
-ms.openlocfilehash: 14b46e8f689a4df1e41d1852f49157faf67f7fdece2fa09fb740b5652d719a34
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 3b0f87fb252c3e88160f1b3753aad09b1e3f5083
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532919"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470247"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Gérer les réponses acronymes dans Recherche Microsoft
 
@@ -27,7 +27,7 @@ Les organisations n’ont pas toujours une référence unique pour leur terminol
 
 ## <a name="what-users-experience"></a>Expérience des utilisateurs
 
-Recherche Microsoft utilisateurs peuvent obtenir des définitions avec des acronymes [dans Bing,](https://Bing.com) [SharePoint](https://products.office.com/sharepoint/collaboration)et [Office 365](https://Office.com). Dans la zone **de** recherche, les utilisateurs entrent des requêtes telles que les exemples suivants :
+Recherche Microsoft utilisateurs peuvent obtenir des définitions avec des acronymes dans [Bing,](https://Bing.com) [SharePoint,](https://products.office.com/sharepoint/collaboration) [Office 365,](https://Office.com)Outlook sur le web, Outlook Mobile (Android) et Teams Mobile (iOS et Android). Dans la zone **de** recherche, les utilisateurs entrent des requêtes telles que les exemples suivants :
 
 - *Qu’est-ce que* DNN
 - *Définir* DNN
@@ -45,31 +45,31 @@ Le résultat inclut toutes les significations de DNN présentes au sein de l’o
 
 ## <a name="set-up-acronyms-answers"></a>Configurer les réponses acronymes
 
-Dans la [Centre d’administration Microsoft 365,](https://admin.microsoft.com)sélectionnez [**Acronymes,**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)puis **sélectionnez Ajouter un acronyme.**
+Dans la [Centre d’administration Microsoft 365](https://admin.microsoft.com), sélectionnez [**Acronymes,**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)puis **sélectionnez Ajouter un acronyme**.
 
 Recherche Microsoft deux sources de données pour fournir des réponses acronymes aux recherches des utilisateurs :
 
 1. **Organisé par l’administrateur.** Fourni par les administrateurs informatiques dans le [Centre d’administration.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)
 2. **Organisé par le système**. Découverte par les Recherche Microsoft des e-mails et des documents des utilisateurs, ainsi que des données publiquement disponibles au sein de l’organisation.
 
-### <a name="set-up-admin-curated-acronyms"></a>Configurer des acronymes organisés par l’administrateur
+### <a name="set-up-admin-curated-acronyms"></a>Configurer les acronymes organisés par l’administrateur
 
 Les administrateurs de recherche peuvent ajouter des acronymes sous l’onglet [Acronymes](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms) [dans Recherche Microsoft centre d’administration.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch) Vous pouvez ajouter des acronymes de n’importe quel site ou référentiel interne au Centre d’administration. Ces acronymes peuvent être ajoutés à l’état **Publié** **ou** Brouillon :
 
 **État publié**. Les acronymes sont disponibles pour les utilisateurs de l’organisation via Recherche Microsoft.
 
 > [!NOTE]
-> La publication des acronymes ajoutés à l’état publié dans l’état publié peut prendre jusqu’à trois jours Recherche Microsoft.
+> Il faut jusqu’à un jour pour que les acronymes ajoutés à l’état publié deviennent disponibles dans Recherche Microsoft.
 
-**État brouillon**. Si vous souhaitez passer en revue un acronyme avant de le rendre disponible dans Recherche Microsoft, vous pouvez ajouter l’acronyme dans un état Brouillon. Les acronymes dans l’état Brouillon n’apparaissent pas dans les résultats de la recherche. Vous devez déplacer l’acronyme vers l’état Publié pour qu’il apparaisse dans les résultats de la recherche.
+**État brouillon**. Si vous souhaitez passer en revue un acronyme avant de le rendre disponible dans Recherche Microsoft, vous pouvez ajouter l’acronyme dans un état Brouillon. Les acronymes dans l’état Brouillon n’apparaissent pas dans les résultats de la recherche. Vous devrez déplacer l’acronyme vers l’état Publié pour qu’il apparaisse dans les résultats de la recherche.
 
-**État exclu**. Si vous souhaitez empêcher l’apparition d’un acronyme dans Recherche Microsoft, utilisez exclure **un acronyme** pour l’ajouter. Pour empêcher l’exclusion d’un acronyme, vous devez supprimer l’acronyme exclu et l’ajouter ou vérifier qu’il figure dans votre liste publiée.
+**État exclu**. Si vous souhaitez empêcher l’apparition d’un acronyme dans Recherche Microsoft, utilisez **l’acronyme** Exclure pour l’ajouter. Pour empêcher l’exclusion d’un acronyme, vous devez supprimer l’acronyme exclu et l’ajouter ou vérifier qu’il figure dans votre liste publiée.
 
 Vous pouvez ajouter des acronymes individuellement ou en bloc pour les importer dans un fichier CSV. Télécharger fichier CSV avec les champs indiqués dans le tableau suivant :
 
 | Acronyme (obligatoire) | Signifie (obligatoire) | Url | Description  | État (obligatoire) | Dernière modification | Dernière modification par | ID |
 | --------- | --------- | --------- | ---------- | --------- |--------- |--------- |--------- |
-| *XXX* | *Abréviation* | *Source* |  | *Publié, Brouillon ou Exclu* |  |  |  |
+| *XXX* | *Abréviation orthographie* | *Source* |  | *Publié, Brouillon ou Exclu* |  |  |  |
 
 ### <a name="csv-fields"></a>Champs CSV
 
@@ -77,7 +77,7 @@ Vous pouvez ajouter des acronymes individuellement ou en bloc pour les importer 
 
 **Signifie**. Contient la définition de l’acronyme. Par exemple, *le réseau neuronal profond*.
 
-**Description**. Brève description de l’acronyme qui donne aux utilisateurs plus d’informations sur l’acronyme et sa définition. Par exemple, un réseau neuronal profond est un réseau neuronal avec un certain niveau de complexité, un réseau neuronal avec plus *de deux couches*.
+**Description**. Brève description de l’acronyme qui donne aux utilisateurs plus d’informations sur l’acronyme et sa définition. Par exemple, un réseau neuronal profond est un réseau neuronal avec un certain niveau de complexité, un réseau neuronal de plus *de deux couches.*
 
 **Source**. URL de la page ou du site web où vous souhaitez que les utilisateurs recherchent plus d’informations sur l’acronyme.
 
@@ -106,13 +106,17 @@ Recherche Microsoft s’assure que seuls les utilisateurs ayant accès et des au
 
 **R :** Le classement des résultats peut varier d’une personne à l’autre, car les résultats sont personnalisés pour chaque utilisateur. Aucune de ces catégories ne sera toujours prioritaire sur l’autre.
 
+**Q : Comment les utilisateurs déclenchent-ils des réponses d’acronymes ?**
+
+**R :** Pour obtenir des réponses aux acronymes, les utilisateurs doivent entrer des modèles de requête spécifiques dans une zone de recherche [Bing,](https://bing.com) [SharePoint,](https://products.office.com/sharepoint/collaboration) [Office 365,](https://Office.com)Outlook sur le web, Outlook Mobile (Android)  ou Teams Mobile (iOS et Android).
+
+**Q : Les utilisateurs peuvent-ils entrer uniquement l’acronyme lors de la recherche ?**
+
+**R :** Sur Bing, les utilisateurs peuvent désormais trouver des réponses acronymes en recherchant simplement un acronyme, un mot clé n’est plus nécessaire. Cette même expérience sera activée pour d’autres points d’Recherche Microsoft par phases.
+
 **Q : Combien de temps faut-il pour que les acronymes organisés par l’administrateur soient visibles dans Recherche Microsoft après leur publication ?**
 
-**R :**  Il faut jusqu’à un jour pour que les acronymes ajoutés à l’état publié deviennent disponibles dans Recherche Microsoft.
-
-**Q : Comment les utilisateurs déclenchent-ils des réponses aux acronymes ?**
-
-**R**: Pour obtenir des réponses d’acronymes, les utilisateurs doivent entrer des modèles de requête spécifiques dans [une zone Bing,](https://bing.com) [SharePoint](https://products.office.com/sharepoint/collaboration)ou [Office 365](https://Office.com) **recherche.**
+**R :** Il faut jusqu’à un jour pour que les acronymes ajoutés à l’état publié deviennent disponibles dans Recherche Microsoft.
 
 **Q : Combien de temps faut-il pour que les acronymes organisés par le système apparaissent après la réception ou l’envoi d’un nouveau message électronique ou document ?**
 
@@ -120,11 +124,11 @@ Recherche Microsoft s’assure que seuls les utilisateurs ayant accès et des au
 
 **Q : Que se passe-t-il lorsqu’un acronyme est à la fois exclu et publié ?**
 
-**R :** L’acronyme exclu est prioritaire et empêche l’acronyme publié d’apparaître dans les résultats de la recherche. Elle ne supprime pas ou ne supprime pas l’acronyme publié.
+**R :** L’acronyme exclu est prioritaire et empêche l’acronyme publié d’apparaître dans les résultats de la recherche. Il ne supprime pas ou ne supprime pas l’acronyme publié.
 
-**Q : Combien de temps faut-il pour qu’un acronyme soit exclu Recherche Microsoft résultats ?**
+**Q : Combien de temps faut-il pour qu’un acronyme soit exclu des Recherche Microsoft résultats ?**
 
-**R**: L’apparition d’un acronyme exclu dans les résultats de la recherche prend jusqu’à un jour.
+**R :** L’apparition d’un acronyme exclu dans les résultats de la recherche prend jusqu’à un jour.
 
 **Q : Pour les acronymes organisés par le système, les documents doivent-ils être dans un format spécifique ?**
 
@@ -132,9 +136,9 @@ Recherche Microsoft s’assure que seuls les utilisateurs ayant accès et des au
 
 **Q : Microsoft découvrira-t-il les acronymes des documents dans toutes les langues ?**
 
-**R**: Microsoft prend uniquement en charge les acronymes organisés par le système à partir de documents en anglais, en espagnol, en français, en italien, en allemand et en portugais. La prise en charge d’autres langues sera ajoutée par phases.
+**R :** Microsoft prend uniquement en charge les acronymes organisés par le système à partir de documents en anglais, en espagnol, en français, en italien, en allemand et en portugais. La prise en charge d’autres langues sera ajoutée par phases.
 
 **Q : Que se passe-t-il si mon organisation ne souhaite pas afficher les acronymes organisés par le système ? Puis-je arrêter d’afficher ce type d’acronyme dans mes résultats de recherche ?**
 
-**R**: pour désactiver l’affichage des acronymes organisés par le système dans les résultats de la recherche, créez un ticket de support client en suivant les instructions du support technique pour les [produits d’entreprise.](/microsoft-365/admin/contact-support-for-business-products)
+**R :** Pour désactiver l’affichage des acronymes organisés par le système dans les résultats de la recherche, créez un ticket de support client en suivant les instructions du support technique pour les [produits d’entreprise.](/microsoft-365/admin/contact-support-for-business-products)
 Après avoir créé un ticket de support, l’apparition des acronymes organisés par le système dans les résultats de la recherche prend jusqu’à 48 heures.

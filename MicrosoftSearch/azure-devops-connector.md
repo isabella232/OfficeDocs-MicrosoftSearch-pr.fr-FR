@@ -1,5 +1,5 @@
 ---
-title: Azure DevOps Graph connecteur pour Recherche Microsoft
+title: Azure DevOps Graph connecteur d’Recherche Microsoft
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -7,22 +7,22 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Configurer le connecteur Azure DevOps Graph pour Recherche Microsoft
-ms.openlocfilehash: b7c5ab48288fdc421cda87b8afbadf08b8cf42ef023e8f56decd7b5c177c619a
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: fcf381a92ef397f900b300ca667fa80067a6672a
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533337"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701389"
 ---
 <!---Previous ms.author: shgrover --->
 
-# <a name="azure-devops-graph-connector-preview"></a>Azure DevOps Graph connecteur de connexion (prévisualisation)
+# <a name="azure-devops-graph-connector-preview"></a>Azure DevOps Graph(prévisualisation)
 
 Le connecteur Azure DevOps Graph permet à votre organisation d’indexer des éléments de travail dans son instance du service Azure DevOps de travail. Après avoir configuré le connecteur et indexé le contenu à partir Azure DevOps, les utilisateurs finaux peuvent rechercher ces éléments dans Recherche Microsoft.
 
@@ -66,7 +66,7 @@ Champs obligatoires | Description | Valeur recommandée
 | Nom de l’application     | Valeur unique qui identifie l’application que vous autorisez.    | Recherche Microsoft     |
 | Site web d’application  | URL de l’application qui demande l’accès à votre instance Azure DevOps lors de l’installation du connecteur. (Obligatoire).  | https://<span>gcs.office.</span> com/
 | URL de rappel d’autorisation        | URL de rappel requise vers qui le serveur d’autorisation redirige. | https://<span>gcs.office.</span> com/v1.0/admin/oauth/callback|
-| Étendues autorisées | Étendue de l’accès pour l’application | Sélectionnez les étendues suivantes : Identité (lecture), Éléments de travail (lecture), Groupes de variables (lecture), Project et équipe (lecture), Graph (lecture)|
+| Étendues autorisées | Étendue de l’accès pour l’application | Sélectionnez les étendues suivantes : Identité (lecture), Éléments de travail (lecture), Groupes de variables (lecture), Project et équipe (lecture), Graph (lecture), Analyse (lecture)|
 
 >[!IMPORTANT]
 >Les étendues autorisées que vous sélectionnez pour l’application doivent correspondre exactement aux étendues répertoriées ci-dessus. Si vous omettez l’une des étendues autorisées dans la liste ou ajoutez une autre étendue, l’autorisation échoue.
@@ -80,9 +80,9 @@ Lors de l’inscription de l’application avec les détails ci-dessus, vous obt
 
 Après avoir inscrit l Recherche Microsoft appapplation Azure DevOps, vous pouvez effectuer l’étape des paramètres de connexion. Entrez le nom de votre organisation, l’ID d’application et la secret client.
 
-![Connection Application Paramètres](media/ADO_Connection_settings_2.png)
+![Connexion application Paramètres.](media/ADO_Connection_settings_2.png)
 
-### <a name="configure-data-select-projects-and-fields"></a>Configurer des données : sélectionner des projets et des champs
+### <a name="configure-data-select-projects-and-fields"></a>Configurer les données : sélectionner des projets et des champs
 
 Vous pouvez choisir la connexion pour indexer l’ensemble de l’organisation ou des projets spécifiques.
 
@@ -90,15 +90,15 @@ Si vous choisissez d’indexer l’ensemble de l’organisation, les éléments 
 
 Si vous choisissez des projets individuels, seuls les éléments de travail de ces projets seront indexés.
 
-![Configurer des données](media/ADO_Configure_data.png)
+![Configurez les données.](media/ADO_Configure_data.png)
 
 Ensuite, sélectionnez les champs que vous souhaitez que la connexion indexe et affiche un aperçu des données dans ces champs avant de poursuivre.
 
-![Choisir les propriétés](media/ADO_choose_properties.png)
+![Choisissez les propriétés.](media/ADO_choose_properties.png)
 
 ## <a name="step-4-manage-search-permissions"></a>Étape 4 : Gérer les autorisations de recherche
 
-Le connecteur Azure DevOps prend en charge les autorisations de recherche visibles uniquement pour les personnes ayant accès à  **cette source de données** ou Tout le **monde.** Si vous choisissez uniquement les personnes ayant accès à cette **source** de données, les données indexées apparaissent dans les résultats de la recherche pour les utilisateurs qui y ont accès en fonction des autorisations accordées aux utilisateurs ou aux groupes au niveau de l’organisation, du Project ou du chemin d’accès de la zone dans Azure DevOps. Si vous choisissez **Tout le** monde, les données indexées apparaissent dans les résultats de recherche pour tous les utilisateurs.
+Le connecteur Azure DevOps prend en charge les autorisations de recherche visibles uniquement pour les personnes ayant accès à  **cette source de données** ou Tout le **monde.** Si vous choisissez uniquement les personnes ayant accès à cette **source** de données, les données indexées apparaissent dans les résultats de recherche pour les utilisateurs qui y ont accès en fonction des autorisations accordées aux utilisateurs ou groupes au niveau organisation, Project ou chemin d’accès de la zone dans Azure DevOps. Si vous choisissez **Tout le** monde, les données indexées apparaissent dans les résultats de recherche pour tous les utilisateurs.
 
 ## <a name="step-5-assign-property-labels"></a>Étape 5 : Attribuer des étiquettes de propriété
 
@@ -111,7 +111,7 @@ Suivez les [instructions d’installation générales.](./configure-connector.md
 ## <a name="step-7-choose-refresh-settings"></a>Étape 7 : Choisir les paramètres d’actualisation
 
 Le connecteur Azure DevOps prend en charge les planifications d’actualisation pour les analyses complètes et incrémentielles.
-La planification recommandée est une heure pour une analyse incrémentielle et un jour pour une analyse complète.
+La planification recommandée est d’une heure pour une analyse incrémentielle et d’un jour pour une analyse complète.
 
 ## <a name="step-8-review-connection"></a>Étape 8 : Examiner la connexion
 
@@ -119,15 +119,19 @@ Suivez les [instructions d’installation générales.](./configure-connector.md
 
 >[!TIP]
 >**Type de résultat par défaut**
->* Le connecteur Azure DevOps enregistre automatiquement un [type](./customize-search-page.md#step-2-create-the-result-types) de résultat une fois le connecteur publié. Le type de résultat utilise [](./customize-results-layout.md) une disposition des résultats générée dynamiquement en fonction des champs sélectionnés à l’étape 3. 
+>* Le connecteur Azure DevOps enregistre automatiquement un [type](./customize-search-page.md#step-2-create-result-types) de résultat une fois le connecteur publié. Le type de résultat utilise [](./customize-results-layout.md) une disposition des résultats générée dynamiquement en fonction des champs sélectionnés à l’étape 3. 
 >* Vous pouvez gérer le type de résultat en naviguant vers les [**types de**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) résultats dans [le Centre d’administration Microsoft 365](https://admin.microsoft.com). Le type de résultat par défaut sera nommé « `ConnectionId` Default ». Par exemple, si votre ID de connexion est , votre disposition des résultats sera nommée `AzureDevOps` : « AzureDevOpsDefault »
 >* En outre, vous pouvez choisir de créer votre propre type de résultat si nécessaire.
 
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
 instructions.-->
 
-<!---## Troubleshooting-->
-<!---Insert troubleshooting recommendations for this data source-->
+## <a name="troubleshooting"></a>Résolution des problèmes
+Voici une erreur courante observée lors de la configuration du connecteur et sa raison possible.
+
+| Étape de configuration | Message d’erreur | Raisons possibles |
+| ------------ | ------------ | ------------ |
+|  | `The account associated with the connector doesn't have permission to access the item.` | L’application inscrite ne comprend aucune des étendues OAuth requises. (Remarque : une nouvelle exigence d’étendue OAuth « Analytics:read » a été introduite le 31/08/2021)  |
 
 <!---## Limitations-->
 <!---Insert limitations for this data source-->

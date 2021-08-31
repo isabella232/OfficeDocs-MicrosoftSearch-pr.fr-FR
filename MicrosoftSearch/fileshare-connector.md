@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: Configurer le connecteur d’Graph de fichiers pour Recherche Microsoft
-ms.openlocfilehash: 71bcc86c2a1bf2f3d20693028ce006812aa170b5
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: b91f10704b536ecc3a62c492ef23ba8745c4dcf8
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235915"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58469950"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -70,19 +70,19 @@ Lors de la configuration d’une connexion de partage de fichiers, l’administr
 
 #### <a name="based-on-file-types"></a>Basé sur les types de fichiers
 
-Seul le contenu textuel de ces formats est indexé : DOC, DOCM, DOCX, DOTX, EML, HTML, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODT, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS. Pour les fichiers multimédias et les fichiers qui n’appartiennent pas à ce format, les seules métadonnées sont indexées.
+Seul le contenu textuel de ces formats est indexé : DOC, DOCM, DOCX, DOTX, EML, HTML, MHT, MHTML, MSG, NWS, OBD, OBT, ODP, ODS, ODT, ONE, PDF, POT, PPS, PPT, PPTM, PPTX, TXT, XLB, XLC, XLSB, XLS, XLSX, XLT, XLXM, XML, XPS. Pour les fichiers multimédias et les fichiers qui n’appartiennent pas à ce format, les seules métadonnées sont indexées.
 
 #### <a name="based-on-last-modified-date-or-number-of-days-since-last-modification"></a>En fonction de la date de dernière modification ou du nombre de jours depuis la dernière modification
 
 #### <a name="full-network-path-of-filefolder-or-regular-expression-to-limit-indexing"></a>Chemin d’accès réseau complet du fichier/dossier ou de l’expression régulière pour limiter l’indexation 
 
-Dans le chemin d’accès réseau, utilisez le caractère d’échappatoire ( \\ ) avant les caractères spéciaux comme \\ . Exemple : pour le chemin \\ \\ d’accès CONTOSO FILE SHAREDFOLDER, la façon correcte d’entrer est \\ \\ \\ \\ \\ \\ CONTOSO \\ \\ FILE \\ \\ SHAREDFOLDER
+Dans le chemin d’accès réseau, utilisez le caractère d’échappatoire ( \\ ) avant les caractères spéciaux tels que \\ . Exemple : pour le chemin \\ \\ d’accès CONTOSO FILE SHAREDFOLDER, la façon correcte d’entrer est \\ \\ \\ \\ \\ \\ CONTOSO \\ \\ FILE \\ \\ SHAREDFOLDER
 
 Vous pouvez trouver les règles d’écriture d’expression [régulière ici](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)
 
 L’administrateur aurait également la possibilité d’accorder une exception à la règle de limite. La priorité de la règle d’exception a priorité sur les règles de limite. De la même manière, une exception peut être définie en donnant un chemin d’accès au dossier/fichier pour les éléments que nous voulons inclure dans l’indexation.
 
-![Limites et exceptions](media/file-connector/ExclusionRule.png)
+![Limites et exceptions.](media/file-connector/ExclusionRule.png)
 
 ## <a name="step-5-manage-search-permissions"></a>Étape 5 : Gérer les autorisations de recherche
 
@@ -90,9 +90,9 @@ Vous pouvez restreindre l’autorisation de rechercher n’importe quel fichier 
 
 Notez que windows fournit par défaut l’autorisation « Lecture » à « Tout le monde » dans les AAL de partage lorsqu’un dossier est partagé sur le réseau. Par extension, si vous choisissez partager des ACA dans Gérer les autorisations de recherche, les **utilisateurs** pourront rechercher tous les fichiers. Si vous souhaitez restreindre l’accès, supprimez l’accès « Lecture » pour « Tout le monde » dans les partages de fichiers et fournissez l’accès uniquement aux utilisateurs et groupes souhaités. Le connecteur lit ensuite ces restrictions d’accès et les applique à la recherche.
 
-Vous pouvez choisir les AAL de partage uniquement si le chemin d’accès de partage que vous avez fourni suit le format de chemin d’accès UNC. Vous pouvez créer un chemin d’accès au format UNC en allant à « Partage avancé » sous l’option « Partage ».
+Vous pouvez choisir les ACA de partage uniquement si le chemin d’accès au partage que vous avez fourni suit le format de chemin d’accès UNC. Vous pouvez créer un chemin d’accès au format UNC en allant à « Partage avancé » sous l’option « Partage ».
 
-![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
+![Advanced_sharing.](media/file-connector/file-advanced-sharing.png)
 
 ## <a name="step-6-assign-property-labels"></a>Étape 6 : Attribuer des étiquettes de propriété
 

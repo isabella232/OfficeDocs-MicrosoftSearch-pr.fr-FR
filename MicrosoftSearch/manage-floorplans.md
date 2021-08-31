@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: La fonctionnalité de plans d’étage Recherche Microsoft aux utilisateurs de trouver des personnes, des bureaux et d’autres bâtiments au sein d’un bâtiment.
-ms.openlocfilehash: 6ca32db0afafe328d872b87c2ba7ebf5bee40148ae8aea089e097a3b6ec4dedf
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 6cbba6d764fd3904d251fa53fd96c3a66a6aed6b
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533716"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470022"
 ---
 # <a name="manage-floor-plans"></a>Gérer les plans d’étage
 
@@ -35,7 +35,7 @@ Suivez ces étapes pour configurer les réponses aux plans **d’étage dans Rec
 
 Les codes de construction sont utilisés dans le cadre de l’emplacement du bureau d’un utilisateur. Vous utiliserez ces codes lors de la mise à jour des profils utilisateur. Supposons que votre organisation possède un bâtiment à cet emplacement : *Building 2, 350 5th Avenue, New York City, NY 10016*
 
-Voici quelques exemples de code de ce bâtiment : 2, B2, Building2, Building 2 ou NYCB2. Chaque bâtiment doit avoir un code unique.
+Voici quelques bons exemples pour le code de ce bâtiment : 2, B2, Building2, Building 2 ou NYCB2. Chaque bâtiment doit avoir un code unique.
 
 ### <a name="step-2-review-your-floor-plans"></a>Étape 2 : Passer en revue vos plans d’étage
 
@@ -43,7 +43,7 @@ Les fichiers de plans d’étage doivent être au format DWG ; Les fichiers DWG 
 
 |**Étiquettes de texte, y compris les étiquettes de salle**|**Étiquettes de texte mais pas d’étiquettes de salle**|**Aucune étiquette de texte**|
 |:-----:|:-----:|:-----:|
-|![floorplans-textandroomlabels.png](media/floorplans-textandroomlabels.png)|![floorplans-textnoroomlabels.png](media/floorplans-textnoroomlabels.png)|![floorplans-nolabels.png](media/floorplans-nolabels.png)|
+|![floorplans-textandroomlabels.png.](media/floorplans-textandroomlabels.png)|![floorplans-textnoroomlabels.png](media/floorplans-textnoroomlabels.png)|![floorplans-nolabels.png](media/floorplans-nolabels.png)|
 
 Consultez la section [FAQ](#frequently-asked-questions) pour plus d’informations sur l’affichage et la mise à jour des fichiers DWG.
 
@@ -54,7 +54,7 @@ L’emplacement du bureau d’un utilisateur est une combinaison d’un code de 
 Ajouter ou mettre à jour des emplacements de bureau pour chaque utilisateur de votre organisation. Vous pouvez modifier l’emplacement du bureau sur le profil utilisateur dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com) ou vous pouvez modifier votre annuaire Active Directory local pour le synchroniser avec Azure Active Directory. *PhysicalDeliveryOfficeName est* le champ utilisé pour l’emplacement du bureau. Si vos étiquettes de salle n’incluent pas de numéros d’étage, consultez le FAQ pour obtenir des conseils.
 
 Dans cet exemple, le bureau de Celui-ci se trouve dans la salle 1173 de l’étage 1 du bâtiment 2.
-![floorplans-userlestview.png](media/floorplans-userlistview.png)
+![floorplans-userlestview.png.](media/floorplans-userlistview.png)
 
 > [!NOTE]
 > Pour voir les emplacements de bureau mis à jour lors de la recherche de plans d’étage, vous devez mettre à jour les emplacements de bureau pour au moins **10** personnes sur chaque étage.
@@ -63,27 +63,27 @@ Dans cet exemple, le bureau de Celui-ci se trouve dans la salle 1173 de l’éta
 
 Utilisez **Recherche Microsoft** pour rechercher un utilisateur et vérifier que son bureau s’affiche correctement. Si vous avez mis à jour des emplacements, vous devrez peut-être attendre **jusqu’à 72** heures avant que les mises à jour apparaissent dans les résultats de la recherche.
 
-![floorplans-peoplecard.png](media/floorplans-peoplecard.png)
+![floorplans-peoplecard.png.](media/floorplans-peoplecard.png)
 
 ### <a name="step-5-add-building-locations"></a>Étape 5 : Ajouter des emplacements de construction
 
-Les plans d’étage [utilisent des](manage-locations.md) emplacements pour définir vos bâtiments. Dans la [Centre d’administration Microsoft 365](https://admin.microsoft.com), allez à [**Emplacements,**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)puis sélectionnez **Ajouter**. Entrez le nom, l’adresse et les mots clés du bâtiment. Ajoutez autant de bâtiments que nécessaire.
+Les plans d’étage [utilisent des emplacements](manage-locations.md) pour définir vos bâtiments. Dans la [Centre d’administration Microsoft 365](https://admin.microsoft.com), allez à [**Emplacements,**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)puis sélectionnez **Ajouter**. Entrez le nom, l’adresse et les mots clés du bâtiment. Ajoutez autant de bâtiments que nécessaire.
 
-![floorplans-locations.png](media/floorplans-locations.png)
+![floorplans-locations.png.](media/floorplans-locations.png)
 
 Pour plus d’informations sur les emplacements, voir [Gérer les emplacements](manage-locations.md)
 
-### <a name="step-6-gather-and-organize-office-locations"></a>Étape 6 : Collecter et organiser les bureaux
+### <a name="step-6-gather-and-organize-office-locations"></a>Étape 6 : collecter et organiser les emplacements de bureau
 
 Avant de pouvoir utiliser des plans d’étage, les bureaux doivent être indexés. Il s’agit d’une opération en une seule fois qui peut prendre jusqu’à 48 heures. Le temps total dépend de la taille de votre organisation.
 
 Dans [le Centre d’administration,](https://admin.microsoft.com)allez aux [**plans Floor,**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)puis sélectionnez **Commencer.** Si vous ne voyez pas cet avis, cette étape est déjà terminée pour votre organisation.
 
-![floorplans_hydrationstep.png](media/floorplans_hydrationstep.png)
+![floorplans_hydrationstep.png.](media/floorplans_hydrationstep.png)
 
 ### <a name="step-7-upload-floor-plans"></a>Étape 7 : Télécharger plan d’étage
 
-1. Dans le Centre [d’administration,](https://admin.microsoft.com)allez aux [**plans Floor.**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)
+1. Dans le centre [d’administration,](https://admin.microsoft.com)allez aux [**plans Floor.**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)
 2. Sélectionnez un bâtiment dans la liste liste et sélectionnez **Suivant.** Si le bâtiment n’est pas répertorié, revenir en arrière et [ajouter des emplacements de construction.](#step-5-add-building-locations)
 3. Sélectionnez **Télécharger fichiers,** puis choisissez le plan d’étage que vous téléchargez.
 4. Une fois le chargement terminé, vous devez entrer le numéro d’étage qui est représenté dans le fichier du plan d’étage. Ensuite, sélectionnez **Suivant**.
@@ -99,13 +99,13 @@ Dans [le Centre d’administration,](https://admin.microsoft.com)allez aux [**pl
 > [!NOTE]
 > **La publication des plans d’étage prend 48 heures.** Après cela, vos utilisateurs voient un plan d’étage semblable à celui ci-dessous lorsqu’ils recherchent le bureau d’un collègue.
 
-![floorplans-officelocation.png](media/floorplans-officelocation.png)
+![floorplans-officelocation.png.](media/floorplans-officelocation.png)
 
 ### <a name="step-8-optional-specify-location-patterns"></a>Étape 8 : (Facultatif) Spécifier des modèles d’emplacement
 
 Après le chargement d’un plan d’étage, les étiquettes de texte sont comparées aux emplacements de bureau dans les profils de vos utilisateurs. S’il y a moins de 10 correspondances, l’écran Spécifier des **modèles d’emplacement** s’affiche. Les modèles d’emplacement sont utilisés pour extraire les informations d’étage, d’aile et de salle des bureaux.
 
-![floorplans-locationpattern.png](media/floorplans-locationpattern.png)
+![floorplans-locationpattern.png.](media/floorplans-locationpattern.png)
 
 Seule l’espace est nécessaire, le sol et l’aile sont facultatifs et vous pouvez ignorer les emplacements selon vos besoins.
 
@@ -115,14 +115,14 @@ Pour mettre à jour un plan d’étage existant, sélectionnez le plan d’étag
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
-|**Étape**|**Message d’erreur**|**Type**|**Action**|
+|**Étape**|**Message d’erreur**|**Type (Type)**|**Action**|
 |:-----|:-----|:-----|:-----|
-|Télécharger plans d’étage|Impossible de lire CC_1.dwg. Veuillez charger à nouveau ou supprimer le plan d’étage.|Erreur|Essayez de charger à nouveau le fichier. Si cela ne fonctionne pas, supprimez le fichier et recommencez.|
-|Télécharger plans d’étage|Il existe deux fichiers nommés CC_1.dwg. Supprimez l’un d’eux ou téléchargez-le à nouveau avec un autre nom.|Erreur|Si le nom de fichier est incorrect, rendez le nom de fichier unique en ajoutant des informations d’étage ou d’aile, puis téléchargez à nouveau le fichier. Si vous avez accidentellement ajouté le même fichier à deux reprises, supprimez-le simplement.|
-|Télécharger plans d’étage|Aucune donnée trouvée.|Erreur|Vérifiez votre fichier pour vous assurer qu’il est correct, puis téléchargez-le à nouveau ou supprimez-le.|
+|Télécharger plans d’étage|Impossible de lire CC_1.dwg. Veuillez charger à nouveau ou supprimer le plan d’étage.|Error|Essayez de charger à nouveau le fichier. Si cela ne fonctionne pas, supprimez le fichier et recommencez.|
+|Télécharger plans d’étage|Il existe deux fichiers nommés CC_1.dwg. Supprimez l’un d’eux ou téléchargez-le à nouveau avec un autre nom.|Error|Si le nom de fichier est incorrect, rendez le nom de fichier unique en ajoutant des informations d’étage ou d’aile, puis téléchargez à nouveau le fichier. Si vous avez accidentellement ajouté le même fichier deux fois, supprimez-le simplement.|
+|Télécharger plans d’étage|Aucune donnée trouvée.|Error|Vérifiez votre fichier pour vous assurer qu’il est correct, puis téléchargez-le à nouveau ou supprimez-le.|
 |Télécharger plans d’étage|Des références externes sont manquantes dans ce fichier. Chargez CC_1_furniture.dwg ou supprimez ce fichier.|Avertissement|Télécharger fichiers de référence externe ou supprimer.|
 |Télécharger plans d’étage|Nous n’avons pas pu lire les numéros de salle ou les balises dans le fichier DWG. Supprimez ce fichier.|Avertissement|Vérifiez votre fichier DWG pour vous assurer que les données sont incluses, puis supprimez le fichier et essayez à nouveau.|
-|Lier des emplacements de bureau|Aucun emplacement de bureau trouvé dans Azure Active Directory. Ajoutez des données d’emplacement Azure Active Directory avant de définir des plans d’étage.|Erreur|[Mettre à jour les emplacements des bureaux sur les profils utilisateur](#step-3-update-office-locations-on-user-profiles) |
+|Lier des emplacements de bureau|Aucun emplacement de bureau trouvé dans Azure Active Directory. Ajoutez des données d’emplacement Azure Active Directory avant de définir des plans d’étage.|Error|[Mettre à jour les emplacements des bureaux sur les profils utilisateur](#step-3-update-office-locations-on-user-profiles) |
 
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 
@@ -166,6 +166,6 @@ Pour mettre à jour un plan d’étage existant, sélectionnez le plan d’étag
 
 Par exemple, un fichier DWG qui inclut des numéros de salle, mais aucun numéro d’étage, peut ressembler à ceci :
 
-![floorplans-nofloors.png](media/floorplans-nofloors.png)
+![floorplans-nofloors.png.](media/floorplans-nofloors.png)
 
 L’emplacement du bureau dans le profil de l’utilisateur doit être le 2/1175 où « 2 » est le code de construction, « 1 » est le numéro d’étage et « 175 » le numéro de salle.

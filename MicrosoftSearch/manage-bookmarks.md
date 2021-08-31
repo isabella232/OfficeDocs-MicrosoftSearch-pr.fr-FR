@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Créer et mettre à jour des signets et des méthodes pour modifier en bloc les résultats des signets pour Recherche Microsoft
-ms.openlocfilehash: ed46583d857d97fa28773b64401ae4f85f88650a
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: 67833ba563f8f4081cc6291db968542ba32df79f
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235964"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470238"
 ---
 # <a name="manage-bookmarks"></a>Gérer des signets
 
@@ -54,7 +54,7 @@ Les administrateurs et les éditeurs de recherche peuvent ajouter des signets da
 - **Brouillon**: les signets enregistrés en tant que brouillons ne sont pas disponibles pour vos utilisateurs. Utilisez cet état si vous ou d’autres parties prenantes souhaitez consulter ou mettre à jour les signets avant de les publier.
 - **Scheduled**: signets qui seront publiés à la date et à l’heure spécifiées.
 
-Vous pouvez utiliser l’extension Recherche Microsoft navigateur créateur de contenu pour ajouter facilement des signets. Il vous suffit d’aller sur le site que vous souhaitez ajouter en tant que signet, puis de cliquer sur Ajouter dans l’extension. Pour installer l’extension pour Microsoft Edge ou Google Chrome, allez dans le [magasin web Chrome](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) et ajoutez-la à votre navigateur.
+Vous pouvez utiliser l’extension Recherche Microsoft navigateur créateur de contenu pour ajouter facilement des signets. Il vous suffit d’aller sur le site que vous souhaitez ajouter en tant que signet, puis cliquez sur Ajouter dans l’extension. Pour installer l’extension pour Microsoft Edge ou Google Chrome, allez dans le [magasin web Chrome](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) et ajoutez-la à votre navigateur.
 
 ### <a name="import-sharepoint-results"></a>Importer les SharePoint résultats
 
@@ -76,7 +76,7 @@ Utilisez la fonctionnalité d’importation pour faciliter l’ajout ou la modif
 Quelques points importants sur le fichier de modèle :
 
 - Ne modifiez jamais les données dans ces champs *: ID,* *Dernière modification* et Dernière *modification par*
-- Si vous incluez *l’ID* d’un signet existant, il sera remplacé par les informations dans le fichier d’importation.
+- Si vous incluez *l’ID* d’un signet existant, il sera remplacé par les informations du fichier d’importation.
 - Pour les signets existants avec le même titre ou url, le signet est mis à jour avec les informations dans le fichier d’importation.
 - Certains champs du fichier modèle ne sont pas obligatoires, et les champs obligatoires varient en fonction de l’état du signet.
 - En fonction du *champ État,* les signets sont enregistrés en tant que brouillons, suggérés, programmés, exclus, ou ils seront publiés automatiquement.
@@ -104,7 +104,7 @@ Pour éviter les erreurs de duplication de signet à signet :
 
 Pour réduire l’effort manuel requis pour ajouter des signets, Recherche Microsoft pouvez évaluer les liens SharePoint de votre organisation et recommander des signets. Vous pouvez les consulter avant de les publier ou les configurer pour les publier automatiquement. Aucune configuration n’est nécessaire pour les signets recommandés, ils sont activés et configurés sur autopublish par défaut. Pour modifier ces paramètres à tout moment, sélectionnez Gérer les **signets** pour ouvrir le panneau Paramètres du signet.
 
-![Capture d’écran des paramètres de signet recommandés dans le portail Microsoft 365'administration](media/bookmarks-recommendedsettings.png)
+![Capture d’écran des paramètres de signet recommandés dans Microsoft 365 portail d’administration.](media/bookmarks-recommendedsettings.png)
 
 Si les signets recommandés sont activés, le moteur de recommandation évalue SharePoint sites de votre organisation pour identifier les liens à trafic élevé. Après une période d’évaluation initiale, les signets recommandés seront publiés automatiquement ou ajoutés à la liste des signets suggérés. Le cycle suivant ,une période d’évaluation de 30 jours suivie de l’autopublishing ou de l’ajout de signets suggérés, commence.
 
@@ -120,7 +120,7 @@ Pour empêcher le moteur de recommandation de publier ou de suggérer un signet 
 
 Un signet peut avoir plusieurs mots clés et partager le même mot clé, mais le mot clé réservé ne peut pas être partagé. Un mot clé réservé est un terme ou une expression unique qui déclenche un signet spécifique. Un mot clé réservé peut être associé à une seule réponse. Utilisez les mots clés réservés avec parcimonie.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Q : Combien de temps faut-il pour qu’un signet soit visible dans Recherche Microsoft après sa publication ?**
 

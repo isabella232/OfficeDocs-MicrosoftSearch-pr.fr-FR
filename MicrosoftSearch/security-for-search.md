@@ -6,22 +6,22 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Protéger les données de votre entreprise et les utilisateurs finaux tout en fournissant des informations aux utilisateurs autorisés Recherche Microsoft dans Bing
-ms.openlocfilehash: 181a06ecb9c009d03c71e3e7f8ecfc7d675faa659967bc6a6c1560513a45a5ac
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: bf3629b2508c705d19e3b7b772c6f3672063a6f1
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532676"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701857"
 ---
 # <a name="security-and-privacy-for-microsoft-search-in-bing"></a>Sécurité et confidentialité pour les Recherche Microsoft dans Bing
 
-Grâce à l’amélioration des mesures de confidentialité et de sécurité, Recherche Microsoft en Bing vous permet de protéger vos utilisateurs et vos données de l’espace de travail.
+Grâce à des mesures de confidentialité et de sécurité améliorées, Recherche Microsoft en Bing vous aide à protéger vos utilisateurs et vos données de l’espace de travail.
 
 ## <a name="secure-by-default"></a>Sécurisé par défaut.
 
@@ -35,7 +35,7 @@ Les utilisateurs peuvent accéder à Microsoft Search (recherche Microsoft) uniq
 
 ## <a name="single-sign-on"></a>Authentification unique
 
-Si un utilisateur est déjà authentifié avec son compte scolaire ou scolaire dans un autre service, tel que Outlook ou SharePoint, il est automatiquement inscrit au même compte scolaire ou scolaire lorsqu’il passe à Bing dans le même navigateur. En outre, lorsque l’utilisateur se résigne à son compte scolaire ou scolaire, il est automatiquement signé à partir d’autres services Microsoft Office dans le même navigateur.
+Si un utilisateur est déjà authentifié avec son compte scolaire ou de travail dans un autre service, tel que Outlook ou SharePoint, il est automatiquement inscrit au même compte scolaire ou scolaire lorsqu’il passe à Bing dans le même navigateur. En outre, lorsque l’utilisateur se résigne à son compte scolaire ou scolaire, il est automatiquement signé à partir d’autres services Microsoft Office dans le même navigateur.
   
 ## <a name="communicates-with-the-microsoft-cloud-from-the-browser"></a>Communique avec le cloud Microsoft à partir du navigateur
 
@@ -57,7 +57,7 @@ Lorsqu’un utilisateur entre une requête de recherche dans Recherche Microsoft
 ### <a name="logging"></a>Logging
 
 - Tous Bing de recherche .com qui se rapportent à Recherche Microsoft dans Bing trafic sont dissociés de votre identité de lieu de travail.
-- Si un ensemble de restrictions ou de seuils de fréquence est atteint, ce qui nous donne la certitude que la requête n’est pas spécifique à une organisation particulière, la requête sera traitée comme décrit dans la section Recherche et intelligence artificielle de la déclaration de [confidentialité.](https://privacy.microsoft.com/privacystatement) Par exemple, ces requêtes seront utilisées pour modéliser et former des fonctionnalités publiques, telles que les recherches de déboiement automatique ou les recherches associées.
+- Si un ensemble de restrictions ou de seuils de fréquence est atteint, ce qui nous donne la certitude que la requête n’est pas spécifique à une organisation particulière, la requête sera traitée comme décrit dans la section Recherche et intelligence artificielle de la déclaration de [confidentialité.](https://privacy.microsoft.com/privacystatement) Par exemple, ces requêtes seront utilisées pour modéliser et former des fonctionnalités publiques, telles que les opérations de débrancher automatiquement ou les recherches associées.
 - Les requêtes qui ne répondent pas à ces restrictions ou seuils de fréquence seront stockées séparément du trafic public, hors Recherche Microsoft.
 
 ### <a name="advertising"></a>Publicité
@@ -68,4 +68,4 @@ Les publicités affichées Bing.com dans le cadre des recherches sur l’espace 
 
 Le billet de blog du [21 mai 2018](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/) de Microsoft reflète notre engagement en matière de conformité au R GDPR et la façon dont Microsoft aide les entreprises et les organisations avec leurs propres obligations de conformité au R GDPR. Vous trouverez des détails supplémentaires dans le FAQ du Centre [de confidentialité](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)Microsoft.
 
-Recherche Microsoft requêtes exécutées sur les ressources internes et les résultats renvoyés d’un client sont considérées comme des données client et, en tant que telles, répondent également aux engagements du sous-processeur décrits dans l’article 28, comme indiqué dans la [FAQ](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)du Centre de gestion de la confidentialité. En ce qui concerne les requêtes provenant de Recherche Microsoft qui sont Bing publiques, Microsoft respecte ses obligations en tant que contrôleur de données en tant que contrôleur de données.
+Recherche Microsoft requêtes exécutées sur les ressources internes et les résultats renvoyés d’un client sont considérées comme des données client et, en tant que telles, respectent également les engagements du sous-processeur décrits à l’article 28, comme indiqué dans la [FAQ](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)du Centre de gestion de la confidentialité. En ce qui concerne les requêtes provenant de Recherche Microsoft qui sont Bing publiques, Microsoft respecte ses obligations en tant que contrôleur de données.

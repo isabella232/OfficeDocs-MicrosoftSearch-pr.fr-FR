@@ -6,19 +6,19 @@ manager: kellis
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: Au fil du temps, il se peut que vous deviez mettre à jour le statut et le contenu de certains emplacements afin qu’ils restent pertinents. 
-ms.openlocfilehash: 5e9d88fc08458e928e52988124ee94c60829c7bb71ed13f8534b71ca08e2d50c
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 0c93e29c8c899a4b70a30cf97354cf00fc19667f
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532874"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701993"
 ---
 # <a name="manage-locations"></a>Gérer les emplacements
 
@@ -59,9 +59,9 @@ Remarques importantes concernant le fichier modèle :
 - Ne modifiez jamais les données dans les champs suivants : *ID*, *Dernière modification* et *Dernière modification par*.
 - Si vous incluez *l’ID* d’un emplacement existant, il sera remplacé par les informations dans le fichier d’importation.
 - S’il existe un emplacement du même nom, l’emplacement est mis à jour avec les informations dans le fichier d’importation.
-- Tous les champs du fichier modèle ne sont pas obligatoires et les champs requis varient en fonction de l’état de l’emplacement.
-- En fonction du *champ État,* les emplacements sont enregistrés en tant que brouillons, suggérés, programmés ou publiés automatiquement.
-- Pour les partenaires qui gèrent plusieurs organisations, vous pouvez exporter vos emplacements à partir d’une organisation et les importer dans une autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne *ID*.
+- Tous les champs du fichier modèle ne sont pas obligatoires et les champs obligatoires varient en fonction de l’état de l’emplacement.
+- En fonction du *champ État,* les emplacements seront enregistrés en tant que brouillons, suggérés, programmés ou seront publiés automatiquement.
+- Pour les partenaires qui gèrent plusieurs organisations, vous pouvez exporter vos emplacements d’une organisation et les importer dans une autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne *ID*.
 
 > [!NOTE]
 > Vous ne pouvez pas importer des emplacements s’il existe des erreurs dans le fichier modèle. Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement mis en forme et qu’il contient toutes les informations requises.

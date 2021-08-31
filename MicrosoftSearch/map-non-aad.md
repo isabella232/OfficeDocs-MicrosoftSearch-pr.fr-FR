@@ -6,18 +6,18 @@ manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Étapes sur la façon de mameler des identités non-AAD
-ms.openlocfilehash: 48f462318b005f426cd2e0ee3ade0ee895b1c38b36ccf53faf5631a5c002c3d6
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: e90db3bb8d20a0389ddbf2d2845bf91843513404
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533565"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701957"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>Ma cartographier vos identités autres qu’Azure AD  
 
@@ -28,7 +28,7 @@ Ces étapes sont uniquement pertinentes pour les administrateurs de recherche qu
 >[!NOTE]
 >Si vous devez définir un connecteur Salesforce et sélectionner uniquement les personnes ayant accès à cette **source** de données et au type d’identité **AAD** sur l’écran d’autorisations de recherche, reportez-vous à l’article Ma cartographier vos [identités Azure AD](map-aad.md) pour obtenir des étapes sur la façon de mameler les identités Azure AD.  
 
-## <a name="steps-for-mapping-your-non-azure-ad-properties"></a>Étapes de mappage de vos propriétés non Azure AD
+## <a name="steps-for-mapping-your-non-azure-ad-properties"></a>Étapes de mappage de propriétés autres qu’Azure AD
 
 ### <a name="1-select-an-azure-ad-user-property"></a>1. Sélectionnez une propriété utilisateur Azure AD  
 
@@ -38,11 +38,11 @@ Vous pouvez sélectionner l’une des propriétés Azure AD suivantes :
 
 | Propriété Azure AD    | Définition           | Exemple         |
 | :------------------- | :------------------- |:--------------- |
-| Nom d’utilisateur principal (UPN)  | Un UPN se compose d’un préfixe UPN (nom du compte d’utilisateur) et d’un suffixe UPN (un nom de domaine DNS). Le préfixe est joint au suffixe à l’aide du symbole « @ ». | us1@contoso.onmicrosoft.com |
+| Nom d’utilisateur principal (UPN)  | Un upn se compose d’un préfixe UPN (nom du compte d’utilisateur) et d’un suffixe UPN (un nom de domaine DNS). Le préfixe est joint au suffixe à l’aide du symbole « @ ». | us1@contoso.onmicrosoft.com |
 | Azure AD ID                 | Un ID Azure AD pour un utilisateur donné est le GUID unique de l’utilisateur.                 | 58006c96-9e6e-45ea-8c88-4a56851eefad            |
 | ID de sécurité Active Directory (SID)                  | SID (Security Identifier) est un identificateur unique qu’Active Directory utilise pour identifier les objets en tant que principal de sécurité.                  | S-1-5-21-453406510-812318184-4183662089             |
 
-### <a name="2-select-non-azure-ad-user-properties-to-map"></a>2. Sélectionnez les propriétés utilisateur autres qu’Azure AD à ma map
+### <a name="2-select-non-azure-ad-user-properties-to-map"></a>2. Sélectionnez les propriétés utilisateur autres qu’Azure AD à ma choix
 
 Vous pouvez sélectionner des propriétés non Azure AD tirées de votre source de données pour appliquer des expressions régulières. Pour en savoir plus sur l’endroit où trouver ces propriétés dans votre source de données, consultez les pages [ServiceNow](servicenow-connector.md) et [Salesforce.](salesforce-connector.md)  
 
@@ -62,7 +62,7 @@ Vous pouvez ajouter autant de propriétés utilisateur non Azure AD que vous le 
 
 Vous pouvez combiner les sorties des expressions régulières appliquées à chacune de vos propriétés utilisateur non Azure AD pour former la propriété Azure AD sélectionnée à l’étape 1.
 
-Dans la zone de formule, « » correspond à la sortie de l’expression régulière appliquée à la première propriété {0} non Azure AD que vous avez  sélectionnée. « " correspond à la sortie de l’expression régulière appliquée à la {1} *deuxième* propriété non Azure AD que vous avez sélectionnée. « " correspond à la sortie de l’expression régulière appliquée à la {2} *troisième* propriété non Azure AD, et ainsi de suite.  
+Dans la zone de formule, « » correspond à la sortie de l’expression régulière appliquée à la première propriété {0} non Azure AD que vous avez  sélectionnée. « " correspond à la sortie de l’expression régulière appliquée à la {1} *deuxième* propriété non Azure AD que vous avez sélectionnée. « " correspond à la sortie de l’expression régulière appliquée à la {2} *troisième* propriété non Azure AD, etc.  
 
 Voici quelques exemples de formules avec des exemples de sorties d’expression régulière et de sorties de formule : 
 
@@ -71,16 +71,16 @@ Voici quelques exemples de formules avec des exemples de sorties d’expression 
 | {0}.{1} @contoso.com  | firstname | lastname |firstname.lastname@contoso.com
 | {0}@domain.com                 | userid                 |             |userid@domain.com
 
-Après avoir fourni votre formule,  vous pouvez éventuellement cliquer sur Aperçu pour afficher un aperçu de 5 utilisateurs aléatoires de votre source de données avec leurs mappages utilisateur respectifs appliqués. La sortie de l’aperçu inclut la valeur des propriétés utilisateur non Azure AD sélectionnées à l’étape 2 pour ces utilisateurs et la sortie de la formule finale fournie à l’étape 3 pour cet utilisateur. Il indique également si la sortie de la formule peut être résolue vers un utilisateur Azure AD dans votre client via une icône « Réussite » ou « Échec ».  
+Après avoir fourni votre formule,  vous pouvez éventuellement cliquer sur Aperçu pour afficher un aperçu de 5 utilisateurs aléatoires de votre source de données avec leurs mappages d’utilisateur respectifs appliqués. La sortie de l’aperçu inclut la valeur des propriétés utilisateur non Azure AD sélectionnées à l’étape 2 pour ces utilisateurs et la sortie de la formule finale fournie à l’étape 3 pour cet utilisateur. Il indique également si la sortie de la formule peut être résolue vers un utilisateur Azure AD dans votre client via une icône « Réussite » ou « Échec ».  
 
 >[!NOTE]
->Vous pouvez continuer à créer votre connexion si un ou plusieurs mappages utilisateur ont l’état « Échec » après avoir cliqué sur **Aperçu.** L’aperçu affiche 5 utilisateurs aléatoires et leurs mappages à partir de votre source de données. Si le mappage que vous fournissez ne ma mappage pas tous les utilisateurs, vous pouvez faire l’expérience de ce cas.
+>Vous pouvez continuer à créer votre connexion si un ou plusieurs mappages utilisateur ont l’état « Échec » après avoir cliqué sur **Aperçu.** L’aperçu montre 5 utilisateurs aléatoires et leurs mappages à partir de votre source de données. Si le mappage que vous fournissez ne ma mappage pas tous les utilisateurs, vous pouvez faire l’expérience de ce cas.
 
 ## <a name="sample-non-azure-ad-mapping"></a>Exemple de mappage non Azure AD
 
 Consultez la capture instantanée ci-dessous pour obtenir un exemple de mappage non Azure AD.
 
-![Exemple de capture instantanée de la page de mappage non-Azure AD](media/non-aad-mapping.png)
+![Exemple d’instantané de la façon de remplir la page de mappage non-Azure AD.](media/non-aad-mapping.png)
 
 ## <a name="limitations"></a>Limites  
 

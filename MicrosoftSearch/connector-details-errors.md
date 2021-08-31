@@ -6,18 +6,18 @@ manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Détails et erreurs des connecteurs
-ms.openlocfilehash: f7ae7f66aa1ec00c3178bec91b15304459666d5e
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: 915723a2a22771e89fdb433b4ddadba76fa91090
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235953"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701380"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -25,7 +25,7 @@ ms.locfileid: "58235953"
 
 Pour accéder à vos connecteurs et les gérer, vous devez être désigné comme administrateur de recherche pour votre client. Contactez votre administrateur client pour vous fournir le rôle d’administrateur de recherche.
 
-Accédez à [l’onglet Connecteurs](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) dans [la Centre d’administration Microsoft 365](https://admin.microsoft.com).
+Accédez à [l’onglet Connecteurs](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) dans la [Centre d’administration Microsoft 365](https://admin.microsoft.com).
 
 Vous pouvez afficher les détails et les erreurs de connexion lorsque vous cliquez sur la connexion sous [l’onglet Connecteurs.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)  
 
@@ -38,7 +38,7 @@ Les dernières valeurs d’analyse suivantes seront disponibles pour chaque conn
 Valeur | Description
 --- | ---
 **Terminé à l'** | Date et heure de fin de la dernière analyse
-**Type** | Analyse incrémentielle ou complète
+**Type (Type)** | Analyse incrémentielle ou complète
 **Duration** | combien de temps la dernière analyse a-t-elle pris pour se terminer
 **Réussites** | Nombre d’éléments qui ont été correctement ingérés lors de la dernière analyse
 **Erreurs** | Nombre d’éléments qui ont fait l’objet d’une erreur lors de la dernière analyse
@@ -72,12 +72,12 @@ Code d’erreur | Message d’erreur | Solution
 1012 | L’authentification à votre connexion a échoué en raison d’un mode d’authentification non pris en compte. | Modifiez la connexion pour mettre à jour les paramètres d’authentification de votre connexion.
 2001 | L’indexation est limitée en raison d’un grand nombre de mises à jour dans la file d’attente. En fonction de la file d’attente, la fin des mises à jour peut prendre un certain temps. | Veuillez patienter jusqu’à ce que la file d’attente soit effacée.
 2002 | L’indexation a échoué en raison d’une mise en forme d’élément non pris en compte. | Pour plus d’informations, voir la documentation spécifique au connecteur.
-2003 | L’indexation a échoué en raison du contenu d’élément non pris en compte. | Pour plus d’informations, voir la documentation spécifique au connecteur.
+2003 | L’indexation a échoué en raison d’un contenu d’élément non pris en compte. | Pour plus d’informations, voir la documentation spécifique au connecteur.
 2004 | L’indexation a échoué en raison d’un élément ou d’une taille de fichier non pris en compte. | Pour plus d’informations, voir la documentation spécifique au connecteur.
 2005 | L’indexation a échoué car l’URI est trop long. | Pour plus d’informations, voir la documentation spécifique au connecteur.
 2006 | Échec du mappage utilisateur en raison d’une formule de mappage non valide ou d’aucun utilisateur Azure AD avec cette propriété. | Essayez de supprimer et de recréer la connexion avec une formule de mappage différente. 
 2007 | Cet élément ne s’affichera pas dans Recherche Microsoft car certains utilisateurs ou groupes sans autorisation d’affichage de cet élément n’ont pas pu être indexés. | 
-2008 | Les connexions ne peuvent pas avoir de groupes non Azure AD avec plus de 50 000 membres. | Essayez de supprimer des utilisateurs d’un groupe ou essayez de supprimer des éléments ACLed avec ce groupe de l’ingestion et de recréer la connexion.
+2008 | Les connexions ne peuvent pas avoir de groupes non-Azure AD avec plus de 50 000 membres. | Essayez de supprimer des utilisateurs d’un groupe ou essayez de supprimer des éléments ACLed avec ce groupe de l’ingestion et de recréer la connexion.
 2009 | L’indexation de groupe non Azure AD est temporairement suspendue en raison d’un grand nombre de demandes. L’indexation reprend lorsque le système termine le traitement de ces demandes. Veuillez revenir plus tard. | 
 2010 | Cette connexion n’est plus valide en raison d’une mise à jour réalisée par Microsoft. Supprimez la connexion et créez-en une. | Supprimez la connexion et créez-en une.
 5000 | Un problème s’est passé. Si cela se poursuit, contactez le support technique. |

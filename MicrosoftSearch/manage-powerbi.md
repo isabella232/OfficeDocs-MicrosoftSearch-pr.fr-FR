@@ -12,21 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: Gérer la façon dont Power BI et les données apparaissent dans les résultats de la recherche
-ms.openlocfilehash: a9148ab621703d89ddbe0f225ac2b0697748d8a2e85ffe96cec1763e04deeda9
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+description: Gérer la façon dont les Power BI et les données apparaissent dans les résultats de recherche
+ms.openlocfilehash: 951b1849cd3c9f60e93c98bde189eef85680b372
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533613"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470256"
 ---
 # <a name="manage-power-bi-answers"></a>Gérer Power BI réponses
 
 Pour que vos utilisateurs trouvent plus facilement les données et les analyses dont ils ont besoin pour prendre des décisions éclairées, Recherche Microsoft a ajouté la prise en charge des tableaux de bord et des rapports Power BI de données. Voici quelques-uns des avantages de la Power BI recherche :
 
-* **Facile à utiliser :** Cette expérience de recherche out-of-box permet aux utilisateurs de trouver facilement et rapidement Power BI tableaux de bord et rapports au sein de votre organisation.
+* **Facile à utiliser :** Cette expérience de recherche out-of-box permet aux utilisateurs de trouver facilement et rapidement des Power BI tableaux de bord et des rapports au sein de votre organisation.
 * **Contenu enrichi :** Pour rendre les Power BI de recherche plus utiles, ils incluent des informations clés telles que le type de contenu (tableau de bord ou rapport), ainsi que l’équipe ou la personne qui en est propriétaire.
-* **Protection des données intégrée** : Power BI résultats s’affiche uniquement pour les utilisateurs qui ont accès au tableau de bord ou au rapport.
+* **Protection des données intégrée** : les Power BI de données apparaissent uniquement pour les utilisateurs qui ont accès au tableau de bord ou au rapport.
 * **Expérience de recherche unifiée :** Pour conserver une expérience cohérente, Power BI résultats sont cohérents sur tous les points d’entrée de recherche. Où que vous recherchez, vous obtenez les mêmes résultats avec la même apparence.
 
 ## <a name="what-users-experience"></a>Expérience des utilisateurs
@@ -42,13 +42,13 @@ Recherche Microsoft utilisateurs peuvent trouver Power BI résultats en recherch
 
 Remplacez les exemples ci-dessus par les informations que vous recherchez, telles que les `<topic>` ventes, l’utilisation, la capacité, 2021, le T1 et bien plus encore, pour voir les résultats pertinents de Power BI.
 
-:::image type="content" source="media/powerbi-answers/powerbi-serp.png" alt-text="Capture d’écran d’un seRP avec Power BI réponses et verticales" border="true":::
+:::image type="content" source="media/powerbi-answers/powerbi-serp.png" alt-text="Capture d’écran d’un SERP avec Power BI réponses et verticales." border="true":::
 
 ## <a name="turn-power-bi-search-on-or-off"></a>Activer Power BI la recherche
 
-Power BI résultats sont activés pour votre organisation par défaut. Votre administrateur Power BI peut les désactiver à tout moment. Dans le portail Power BI d’administration, allez sur Paramètres du client et désactivez le paramètre Utiliser la recherche globale **pour Power BI** client. Pour en savoir plus, [consultez l’Power BI dans le portail d’administration.](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview)
+Power BI résultats sont activés pour votre organisation par défaut. Votre administrateur Power BI peut les désactiver à tout moment. Dans le portail Power BI d’administration, allez dans Paramètres du client et désactivez le paramètre Utiliser la recherche globale **pour Power BI** client. Pour en savoir plus, [consultez l’Power BI dans le portail d’administration.](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview)
 
-:::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="Capture d’écran du paramètre pour activer Power BI de réponse" border="true":::
+:::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="Capture d’écran du paramètre pour activer Power BI ou désactiver les réponses." border="true":::
 
 > [!NOTE]
 > Lorsque vous utilisez Recherche Microsoft, votre requête de recherche et les résultats renvoyés par Power BI peuvent être traitées dans une région ou une zone géographique différente de l’emplacement où se trouvent vos données client Power BI.
@@ -77,4 +77,4 @@ Power BI résultats sont activés pour votre organisation par défaut. Votre adm
 
 **Q : Puis-je personnaliser les résultats Power BI recherche (par exemple, le type de rapport ou le propriétaire du rapport) ?**
 
-**R :** Actuellement, nous ne personnalisations pas les champs inclus dans les Power BI de recherche.
+**R :** Actuellement, nous ne personnalisations pas les champs inclus dans les résultats Power BI recherche.

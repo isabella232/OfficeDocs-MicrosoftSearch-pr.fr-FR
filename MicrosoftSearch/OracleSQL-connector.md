@@ -7,19 +7,19 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
 description: Configurer le connecteur SQL Graph Oracle pour Recherche Microsoft.
-ms.openlocfilehash: 21585d1d60e5dcd73a45a3ccda151fbb144e85eb
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: 804bee89f8529630df5741f68b9f112c69307b4f
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58236023"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701425"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -66,7 +66,7 @@ Dans cette étape, vous configurez la requête SQL qui exécute une analyse comp
 > [!Tip]
 > Pour obtenir toutes les colonnes dont vous avez besoin, vous pouvez joindre plusieurs tables.
 
-![Script montrant les propriétés OrderTable et AclTable avec des exemples de propriétés](media/MSSQL-fullcrawl.png)
+![Script montrant les propriétés OrderTable et AclTable avec des exemples de propriétés.](media/MSSQL-fullcrawl.png)
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a>Sélectionner des colonnes de données (obligatoire) et des colonnes ACL (facultatif)
 
@@ -81,9 +81,9 @@ L’utilisation de chacune des colonnes ACL dans la requête ci-dessus est décr
 * **AllowedUsers**: cette option spécifie la liste des ID d’utilisateur qui pourront accéder aux résultats de la recherche. Dans l’exemple suivant, la liste des utilisateurs : john@contoso.com, keith@contoso.com et lisa@contoso.com n’ont accès qu’à un enregistrement avec OrderId = 12.
 * **AllowedGroups**: cette option spécifie le groupe d’utilisateurs qui pourront accéder aux résultats de la recherche. Dans l’exemple suivant, les sales-team@contoso.com n’ont accès qu’à l’enregistrement avec OrderId = 12.
 * **DeniedUsers**: cette option spécifie la liste des utilisateurs qui **n’ont** pas accès aux résultats de la recherche. Dans l’exemple suivant, les utilisateurs john@contoso.com et keith@contoso.com n’ont pas accès à l’enregistrement avec OrderId = 13, alors que tous les autres utilisateurs ont accès à cet enregistrement.
-* **DeniedGroups :** cette option spécifie le groupe d’utilisateurs qui **n’ont** pas accès aux résultats de la recherche. Dans l’exemple suivant, les groupes engg-team@contoso.com et pm-team@contoso.com n’ont pas accès à l’enregistrement avec OrderId = 15, alors que tous les autres ont accès à cet enregistrement.  
+* **DeniedGroups**: cette option spécifie le groupe d’utilisateurs qui **n’ont** pas accès aux résultats de la recherche. Dans l’exemple suivant, les groupes engg-team@contoso.com et pm-team@contoso.com n’ont pas accès à l’enregistrement avec OrderId = 15, alors que tous les autres ont accès à cet enregistrement.  
 
-![Exemple de données montrant les propriétés OrderTable et AclTable avec des exemples de propriétés](media/MSSQL-ACL1.png)
+![Exemple de données montrant les propriétés OrderTable et AclTable avec des exemples de propriétés.](media/MSSQL-ACL1.png)
 
 ### <a name="supported-data-types"></a>Types de données pris en charge
 
@@ -106,12 +106,12 @@ Pour éviter la surcharge de la base de données, le connecteur par lots et repr
 
 Créez des extraits de requête pour les filigranes, comme illustré dans les exemples suivants :
 
-* `WHERE (CreatedDateTime > @watermark)`. Nommez le nom de colonne de filigrane avec le mot clé `@watermark` réservé. Vous ne pouvez trier la colonne filigrane que par ordre croissant.
+* `WHERE (CreatedDateTime > @watermark)`. Nommez le nom de colonne en filigrane avec le mot clé `@watermark` réservé. Vous ne pouvez trier la colonne filigrane que par ordre croissant.
 * `ORDER BY CreatedDateTime ASC`. Tri dans la colonne filigrane dans l’ordre croissant.
 
 Dans la configuration présentée dans l’image suivante, se trouve `CreatedDateTime` la colonne filigrane sélectionnée. Pour extraire le premier lot de lignes, spécifiez le type de données de la colonne filigrane. Dans ce cas, le type de données est `DateTime` .
 
-![Configuration des colonnes de filigrane](media/MSSQL-watermark.png)
+![Configuration des colonnes de filigrane.](media/MSSQL-watermark.png)
 
 La première requête récupère le premier **N** nombre de lignes à l’aide de : « CreatedDateTime > 1er janvier 1753 00:00:00 » (valeur min du type de données DateTime). Une fois le premier lot récupéré, la valeur la plus élevée renvoyée dans le lot est enregistrée en tant que point de contrôle si les lignes sont triées par `CreatedDateTime` ordre croissant. Par exemple, 1er mars 2019 03:00:00. Ensuite, le lot suivant de **lignes N** est récupéré à l’aide de « CreatedDateTime > Mars 1, 2019 03:00:00 » dans la requête.
 
@@ -119,13 +119,13 @@ La première requête récupère le premier **N** nombre de lignes à l’aide d
 
 Pour exclure l’indexation des lignes supprimées (à l’aide d’une suppression indélémentée) dans votre base de données, spécifiez le nom et la valeur de la colonne de suppression (suppression totale) qui indiquent que la ligne est supprimée.
 
-![Paramètres de suppression souple : « Supprimer (suppression) » et « Valeur de la colonne suppression (suppression) qui indique une ligne supprimée »](media/MSSQL-softdelete.png)
+![Paramètres de suppression souple : « Supprimer (suppression) » et « Valeur de la colonne suppression (suppression) qui indique une ligne supprimée ».](media/MSSQL-softdelete.png)
 
 ### <a name="full-crawl-manage-search-permissions"></a>Analyse complète : gérer les autorisations de recherche
 
 Sélectionnez **Gérer les autorisations** pour choisir les différentes colonnes de contrôle d’accès qui spécifient le mécanisme de contrôle d’accès. Sélectionnez le nom de colonne que vous avez spécifié dans l’analyse complète SQL requête.
 
-Chacune des colonnes de la ACL est attendue comme une colonne à valeurs multiples. Ces valeurs d’ID multiples peuvent être séparées par des séparateurs tels que des points-virgules (;), virgule (,), etc. Vous devez spécifier ce séparateur dans le champ **séparateur de** valeurs.
+Chacune des colonnes ACL est attendue comme une colonne à valeurs multiples. Ces valeurs d’ID multiples peuvent être séparées par des séparateurs tels que des points-virgules (;), virgule (,), etc. Vous devez spécifier ce séparateur dans le champ **séparateur de** valeurs.
 
 Les types d’ID suivants sont pris en charge pour l’utilisation en tant que listes de contrôle d’appel :
 
@@ -133,7 +133,7 @@ Les types d’ID suivants sont pris en charge pour l’utilisation en tant que l
 * **Azure Active Directory (AAD) :** dans Azure AD, chaque utilisateur ou groupe possède un ID d’objet qui ressemble à « e0d3ad3d-0000-1111-2222-3c5f5c52ab9b »
 * ID de sécurité **Active Directory (AD)**: dans une configuration AD sur site, chaque utilisateur et groupe ont un identificateur de sécurité unique immuable qui ressemble à « S-1-5-21-3878594291-2115959936-132693609-65242 ».
 
-![Paramètres d’autorisation de recherche pour configurer les listes de contrôle d’accès](media/MSSQL-ACL2.png)
+![Paramètres d’autorisation de recherche pour configurer les listes de contrôle d’accès.](media/MSSQL-ACL2.png)
 
 ## <a name="step-3b-incremental-crawl-optional"></a>Étape 3b : analyse incrémentielle (facultatif)
 

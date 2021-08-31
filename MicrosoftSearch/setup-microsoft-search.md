@@ -6,18 +6,18 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Configurer la fonctionnalité Recherche Microsoft pour la première fois.
-ms.openlocfilehash: 9a52695f3a7494b27849ff21798302777716b9bda755ff372e605ec45a6d94b5
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: b1ddc3c32036b1fe3b86d38926bec86f626736f4
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534121"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701461"
 ---
 # <a name="set-up-microsoft-search"></a>Configurer la fonctionnalité Recherche Microsoft
 
@@ -27,7 +27,7 @@ Pour en savoir plus sur la fonctionnalité Recherche Microsoft, consultez [Vue d
 
 ## <a name="get-started"></a>Prise en main
 
-La fonctionnalité Recherche Microsoft est activée par défaut pour toutes les applications Microsoft qui la prennent en charge, dans le cadre de Microsoft 365. Aucune configuration n’est requise, mais vous pouvez améliorer l’expérience Recherche Microsoft globale via certaines tâches d’administration de base.
+La fonctionnalité Recherche Microsoft est activée par défaut pour toutes les applications Microsoft qui la prennent en charge, dans le cadre de Microsoft 365. Aucune configuration n’est requise, mais vous pouvez améliorer l’expérience globale Recherche Microsoft à travers certaines tâches d’administration de base.
 
 Vous gérez Recherche Microsoft à partir du Centre d’administration Microsoft 365.
 

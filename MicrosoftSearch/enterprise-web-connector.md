@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Configurer le connecteur de Enterprise web Graph pour Recherche Microsoft
-ms.openlocfilehash: 002a1504915c2c882492c894595e39598c692bcf
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+description: Configurer le connecteur Enterprise sites web Graph pour Recherche Microsoft
+ms.openlocfilehash: 2be52bc83718c2450ad91444a6176f5f63c03890
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235933"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58469977"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -64,7 +64,7 @@ Lorsqu’il est sélectionné, le connecteur analyse uniquement les URL réperto
 Si votre site web contient du contenu dynamique, par exemple des pages web qui se trouve dans des systèmes de gestion de contenu tels que Contrôle ou Unily, vous pouvez activer un robot dynamique. Pour l’activer, sélectionnez **Activer l’analyse pour les sites dynamiques.** Le robot attend le rendu du contenu dynamique avant de commencer l’analyse.
 
 > [!div class="mx-imgBorder"]
-> ![Capture d’écran du volet Paramètres connexion pour Enterprise Web Connector](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
+> ![Capture d’écran du volet Paramètres connexion pour Enterprise Web Connector.](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
 
 Outre la case à cocher, trois champs facultatifs sont disponibles :
 
@@ -112,7 +112,7 @@ Vous pouvez éventuellement créer une liste **d’exclusions** pour exclure cer
 
 ## <a name="step-4-assign-property-labels"></a>Étape 4 : Attribuer des étiquettes de propriété
 
-Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Bien que cette étape ne soit pas obligatoire, le fait d’avoir certaines étiquettes de propriétés améliorera la pertinence de la recherche et garantira des résultats de recherche plus précis pour les utilisateurs finaux.
+Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Bien que cette étape ne soit pas obligatoire, le fait d’avoir des étiquettes de propriétés améliorera la pertinence de la recherche et garantira des résultats de recherche plus précis pour les utilisateurs finaux.
 
 ## <a name="step-5-manage-schema"></a>Étape 5 : Gérer le schéma
 
@@ -138,7 +138,7 @@ Lors de la lecture du contenu du site web, l’analyse peut rencontrer des erreu
  Code d’erreur détaillé | Message d’erreur
  --- | ---
  6001 | Le site en cours d’indexation n’est pas accessible
- 6005 | La page source tentée d’indexer a été bloquée par la configuration robots.txt'indexation.
+ 6005 | La page source en cours d’indexation a été bloquée par la configuration robots.txt'indexation.
  6008 | Impossible de résoudre le DNS
  6009 | Pour toutes les erreurs côté client (à l’exception de HTTP 404, 408), reportez-vous aux codes d’erreur HTTP 4xx pour plus d’informations.
  6013 | La page source en cours d’indexation est in trouvée. (Erreur HTTP 404)
