@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Conditions de licence et tarification pour la prévisualisation publique des connecteurs Microsoft Graph pour Recherche Microsoft
-ms.openlocfilehash: df91bb0ae68dd86d61855eed6d70a09ed0986800
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: b62187f0618405bdd691f923437b7b1e0edea1f9
+ms.sourcegitcommit: 134749c0f3a10f63d667f86dca55656b020b920f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702083"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58923151"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -51,7 +51,7 @@ Notez que Microsoft 365 A5 ou Office 365 A5 n’incluent pas ce droit.
 ## <a name="purchase-of-add-on-index-quota"></a>Achat d’un quota d’index de modules de modules
 Pour acheter un quota Graph connecteurs, vous pouvez contacter votre gestionnaire de comptes Microsoft ou effectuer les étapes suivantes :
 
-1. Dans la **Centre d’administration Microsoft 365**: https://<span>admin.microsoft.</span> menu de navigation com, go to **Billing > Purchase services**.
+1. Dans la **Centre d'administration Microsoft 365**: https://<span>admin.microsoft.</span> menu de navigation com, go to **Billing > Purchase services**.
 2. En bas de la page Acheter des services, sélectionnez **Modules.**
 3. Sélectionnez **Capacité Graph connecteur supplémentaire.**
 4. Sélectionnez **Acheter,** puis complétez vos préférences de commande.
@@ -70,3 +70,4 @@ Il existe deux options pour explorer Graph connecteurs avec Sujets Microsoft Viv
 
 > [!NOTE]
 > Actuellement, les connecteurs Microsoft Graph ne peuvent prendre en charge que jusqu’à 7 millions d’éléments du quota d’index total, ce qui inclut tout quota intégré regroupé dans des licences Microsoft 365 ou Office 365 E5 licences. La plateforme prendra en charge des limites plus élevées à l’avenir. Si vous avez des questions, contactez le support Microsoft ou votre gestionnaire de comptes Microsoft.
+> Les connecteurs d’aperçu ne sont pas comptabilisés dans le quota, une fois qu’un connecteur devient généralement disponible, il commence à compter sur le quota d’index total.

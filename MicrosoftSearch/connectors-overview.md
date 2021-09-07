@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble des connecteurs Graph Microsoft pour Recherche Microsoft
-ms.openlocfilehash: e1aea93c927d933a63c3eb0456bb18d3f99e9291
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 0d0a1a89edfbcba0fed167c8b3f7bb2166da9439
+ms.sourcegitcommit: 134749c0f3a10f63d667f86dca55656b020b920f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702210"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58923142"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -71,7 +71,7 @@ Vous pouvez vous connecter aux sources de données suivantes à l’aide de conn
 * [MediaWiki](mediawiki-connector.md)
 * [Partage de fichiers](fileshare-connector.md)
 * [Oracle SQL](OracleSQL-connector.md)
-* [Salesforce (préversion)](salesforce-connector.md)
+* [Salesforce ](salesforce-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
 La [galerie de connecteurs Graph](https://www.microsoft.com/microsoft-search/connectors) Microsoft contient une brève description de chacun de ces connecteurs. Si vous êtes prêt à connecter l’une de ces sources [](configure-connector.md) de données à votre client, n’oubliez pas de lire la vue d’ensemble du programme d’installation et les autres articles de la section Connecteurs d’installation par Microsoft qui s’appliquent à votre source de données.
@@ -86,7 +86,7 @@ Vous pouvez créer votre propre connecteur si vous préférez. Pour plus d’inf
 
 ## <a name="how-do-i-manage-my-connections"></a>Comment gérer mes connexions ?
 
-Vous pouvez gérer vos connexions à partir de [l’onglet Connecteurs](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com/). Pour plus d’informations sur la gestion des connexions, voir : [Gérer vos connexions.](manage-connector.md)
+Vous pouvez gérer vos connexions à partir de [l’onglet Connecteurs](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) dans le [Centre d'administration Microsoft 365](https://admin.microsoft.com/). Pour plus d’informations sur la gestion des connexions, voir : [Gérer vos connexions.](manage-connector.md)
 
 ## <a name="what-are-the-license-requirements-and-terms-of-use-for-connectors"></a>Quelles sont les conditions d’utilisation et les conditions d’utilisation des licences pour les connecteurs ?
 
@@ -101,8 +101,6 @@ Bien que les connecteurs Graph microsoft et Recherche Microsoft API soient déso
 L’ensemble des connecteurs et des fonctionnalités de la prévisualisation comprend les éléments suivants :
 
 * [Azure DevOps connecteur](azure-devops-connector.md)
-* [Connecteur Salesforce](salesforce-connector.md)
-* [Connecteur ServiceNow avec](servicenow-connector.md) autorisations de recherche qui utilisent des ACA sources
 * [Gérer les filtres personnalisés](custom-filters.md)
 * [Plusieurs connexions dans un secteur vertical](customize-search-page.md#multiple-connections-in-a-vertical)
 
