@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Étapes sur la façon de mameler les identités AAD
 ms.openlocfilehash: d0292d77b3a0936ed60682b8388de1bb82ac43bb
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701966"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973457"
 ---
 # <a name="map-your-azure-ad-identities"></a>Mapper vos identités Azure AD   
 
@@ -26,7 +26,7 @@ Cet article vous explique les étapes de mappage de vos identités Azure AD à u
 Ces étapes sont uniquement pertinentes pour les administrateurs de recherche qui sont en train de définir un connecteur [Salesforce](salesforce-connector.md) par Microsoft avec des autorisations de recherche pour « Uniquement les personnes ayant accès à cette source de données » et le type d’identité « AAD ». Les étapes suivantes vous indiquent comment ma cartographier vos propriétés utilisateur Azure AD avec les ID de fédération **de vos utilisateurs.**
 
 >[!NOTE]
->Si vous êtes en train de définir un connecteur [Salesforce](salesforce-connector.md) et sélectionnez uniquement les personnes ayant accès à cette **source** de données et ce type d’identité **non-AAD** sur l’écran d’autorisations de recherche, reportez-vous à l’article Ma cartographier vos [identités non Azure AD pour](map-non-aad.md) obtenir des étapes sur la façon de mameler des identités non Azure AD.  
+>Si vous êtes en train de définir un connecteur [Salesforce](salesforce-connector.md) et sélectionnez uniquement les personnes ayant accès à cette **source** de données et ce type d’identité **non-AAD** sur l’écran d’autorisations de recherche, reportez-vous à l’article Ma cartographier vos [identités non Azure AD pour](map-non-aad.md) obtenir la procédure de map mappation des identités non Azure AD.  
 
 ## <a name="steps-for-mapping-your-azure-ad-properties"></a>Étapes de mappage de vos propriétés Azure AD
 

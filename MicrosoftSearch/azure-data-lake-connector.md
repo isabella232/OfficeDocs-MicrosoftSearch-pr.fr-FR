@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 description: Configurer le connecteur Azure Data Lake Stockage Gen2 Graph pour Recherche Microsoft
 ms.openlocfilehash: f60de4252e514f84bc92daf4ea65c535cf40a13d
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701398"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973470"
 ---
 <!---Previous ms.author: monaray --->
 
-# <a name="azure-data-lake-storage-gen2-graph-connector"></a>Connecteur d’Graph Azure Data Lake Stockage Gen2
+# <a name="azure-data-lake-storage-gen2-graph-connector"></a>Connecteur d’Stockage Azure Data Lake Graph Gen2
 
 Le connecteur Azure Data Lake Stockage Gen2 Graph permet aux utilisateurs de votre organisation de rechercher des fichiers stockés dans des comptes [Azure Blob Stockage](/azure/storage/blobs/storage-blobs-introduction) et [Azure Data Lake Gen 2 Stockage.](/azure/storage/blobs/data-lake-storage-introduction)
 
@@ -33,7 +33,7 @@ Cet article est réservé à toute personne qui configure, exécute et surveille
 
 Dans l’article, nous utilisons *stockage Azure* comme terme générique pour [Azure Blob Stockage](/azure/storage/blobs/storage-blobs-introduction) et Azure Data Lake Gen [2 Stockage](/azure/storage/blobs/data-lake-storage-introduction).
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d'administration Microsoft 365
 
 Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->

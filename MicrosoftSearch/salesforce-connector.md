@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Configurer le connecteur Graph Salesforce pour Recherche Microsoft
 ms.openlocfilehash: c2679002affe494ba31777718d265b5526b744c0
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701866"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973476"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -50,7 +50,7 @@ Pour vous connecter à votre instance Salesforce, vous avez besoin de votre URL 
 
     - Spécifiez l’URL de rappel comme : [https://gcs.office.com/v1.0/admin/oauth/callback](https://gcs.office.com/v1.0/admin/oauth/callback)
 
-    - Sélectionnez ces étendues OAuth requises.
+    - Sélectionnez les étendues OAuth requises.
 
         - Accéder à vos données (api) et les gérer
 
@@ -79,7 +79,7 @@ Pour vous connecter à votre instance Salesforce, vous avez besoin de votre URL 
 
 Vous pouvez désormais utiliser le [centre Administration Microsoft 365 pour](https://admin.microsoft.com/) terminer le reste du processus d’installation de votre connecteur Graph de connexion.
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d'administration Microsoft 365
 
 Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -146,7 +146,7 @@ Vous pouvez affecter une propriété source à chaque étiquette en choisissant 
 
 ## <a name="step-7-manage-schema"></a>Étape 7 : Gérer le schéma
 
-Vous pouvez sélectionner les propriétés source qui doivent être indexées afin qu’elles s’afficheront dans les résultats de la recherche. L’Assistant Connexion sélectionne par défaut un schéma de recherche basé sur un ensemble de propriétés source. Vous pouvez le modifier en élecntant les cases à cocher de chaque propriété et attribut de la page de schéma de recherche. Les attributs de schéma de recherche incluent recherche, requête, récupération et affiner.
+Vous pouvez sélectionner les propriétés source qui doivent être indexées afin qu’elles s’afficheront dans les résultats de la recherche. L’Assistant Connexion sélectionne par défaut un schéma de recherche basé sur un ensemble de propriétés source. Vous pouvez le modifier en élecant les cases à cocher de chaque propriété et attribut de la page de schéma de recherche. Les attributs de schéma de recherche incluent recherche, requête, récupération et affiner.
 L’affinement vous permet de définir les propriétés qui peuvent être utilisées ultérieurement en tant qu’affinements ou filtres personnalisés dans l’expérience de recherche.  
 
 > [!div class="mx-imgBorder"]
@@ -168,7 +168,7 @@ Suivez les [instructions d’installation générales.](./configure-connector.md
 >[!TIP]
 >**Type de résultat par défaut**
 >* Le connecteur Salesforce enregistre automatiquement un [type](./customize-search-page.md#step-2-create-result-types) de résultat une fois le connecteur publié. Le type de résultat utilise [](./customize-results-layout.md) une disposition des résultats générée dynamiquement en fonction des champs sélectionnés à l’étape 3.
->* Vous pouvez gérer le type de résultat en naviguant vers les [**types de**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) résultats dans [le Centre d’administration Microsoft 365](https://admin.microsoft.com). Le type de résultat par défaut sera nommé « `ConnectionId` Default ». Par exemple, si votre ID de connexion est , votre disposition des résultats sera nommée `Salesforce` : « SalesforceDefault »
+>* Vous pouvez gérer le type de résultat en naviguant vers les [**types de**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) résultats dans [le Centre d'administration Microsoft 365](https://admin.microsoft.com). Le type de résultat par défaut sera nommé « `ConnectionId` Default ». Par exemple, si votre ID de connexion est , votre disposition des résultats sera nommée `Salesforce` : « SalesforceDefault »
 >* En outre, vous pouvez choisir de créer votre propre type de résultat si nécessaire.
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
@@ -179,7 +179,7 @@ Suivez les [instructions d’installation générales.](./configure-connector.md
 
 - Le connecteur Graph ne prend actuellement pas en charge le partage basé sur apex basé sur un territoire et le partage à l’aide de groupes personnels de Salesforce.
 - Il existe un bogue connu dans l’API Salesforce que le connecteur Graph utilise, où les valeurs par défaut à l’échelle de l’organisation privée pour les prospects ne sont pas honorées actuellement.  
-- Si un champ a la sécurité de niveau de champ (FLS) définie pour un profil, le connecteur Graph n’ing aura pas ce champ pour les profils dans cette organisation Salesforce. Par conséquent, les utilisateurs ne pourront pas rechercher sur les valeurs de ces champs, ni s’afficher dans les résultats.  
+- Si un champ a la sécurité au niveau du champ (FLS) définie pour un profil, le connecteur Graph n’ing aura pas ce champ pour les profils dans cette organisation Salesforce. Par conséquent, les utilisateurs ne pourront pas rechercher sur les valeurs de ces champs, ni s’afficher dans les résultats.  
 - Dans l’écran Gérer le schéma, ces noms de propriété standard communs sont répertoriés une seule fois, les options sont **Requête,** **Rechercher,** Récupérer **et** **Affiner,** et s’appliquent à tout ou aucun.
     - Nom
     - Url

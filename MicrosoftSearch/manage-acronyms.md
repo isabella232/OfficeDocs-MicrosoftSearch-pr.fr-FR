@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Créer et mettre à jour des réponses acronymes dans Recherche Microsoft
 ms.openlocfilehash: b7b3272ba98bbce7d43562811389df0a35e9f7a2
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702065"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973660"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>Gérer les réponses acronymes dans Recherche Microsoft
 
@@ -45,7 +45,7 @@ Le résultat inclut toutes les significations de DNN présentes au sein de l’o
 
 ## <a name="set-up-acronyms-answers"></a>Configurer les réponses acronymes
 
-Dans la [Centre d’administration Microsoft 365](https://admin.microsoft.com), sélectionnez [**Acronymes,**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)puis **sélectionnez Ajouter un acronyme**.
+Dans la [Centre d'administration Microsoft 365](https://admin.microsoft.com), sélectionnez [**Acronymes,**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)puis **sélectionnez Ajouter un acronyme**.
 
 Recherche Microsoft deux sources de données pour fournir des réponses acronymes aux recherches des utilisateurs :
 
@@ -73,7 +73,7 @@ Vous pouvez ajouter des acronymes individuellement ou en bloc pour les importer 
 
 ### <a name="csv-fields"></a>Champs CSV
 
-**Acronyme**. Contient le formulaire court ou l’acronyme réel. Par exemple, *DNN*.
+**Acronyme**. Contient la forme courte ou l’acronyme réel. Par exemple, *DNN*.
 
 **Signifie**. Contient la définition de l’acronyme. Par exemple, *le réseau neuronal profond*.
 
@@ -106,7 +106,7 @@ Recherche Microsoft s’assure que seuls les utilisateurs ayant accès et des au
 
 **R :** Le classement des résultats peut varier d’une personne à l’autre, car les résultats sont personnalisés pour chaque utilisateur. Aucune de ces catégories ne sera toujours prioritaire sur l’autre.
 
-**Q : Comment les utilisateurs déclenchent-ils des réponses d’acronymes ?**
+**Q : Comment les utilisateurs déclenchent-ils des réponses aux acronymes ?**
 
 **R :** Pour obtenir des réponses aux acronymes, les utilisateurs doivent entrer des modèles de requête spécifiques dans une zone de recherche [Bing,](https://bing.com) [SharePoint,](https://products.office.com/sharepoint/collaboration) [Office 365,](https://Office.com)Outlook sur le web, Outlook Mobile (Android)  ou Teams Mobile (iOS et Android).
 

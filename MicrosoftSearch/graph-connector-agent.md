@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Agent sur place
 ms.openlocfilehash: 9994b84c8db05b6b269edb6f5b6f463ab8da1529
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702137"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973481"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Agent du connecteur Graph Microsoft
 
@@ -155,12 +155,12 @@ Si l’installation échoue, vérifiez les journaux d’installation en exécuta
 
 ### <a name="registration-failure"></a>Échec de l’inscription
 
-Si la signature de l’application de config échoue avec l’erreur « Échec de la signature. Cliquez sur le bouton se connectez pour essayer à nouveau. » même après la réussite de l’authentification du navigateur, ouvrez services.msc et vérifiez si GcaHostService est en cours d’exécution. Si ce n’est pas le cas, démarrez-le manuellement.
+Si la signature de l’application de config échoue avec l’erreur « Échec de la signature. Cliquez sur le bouton De se connectez pour essayer à nouveau. » même après la réussite de l’authentification du navigateur, ouvrez services.msc et vérifiez si GcaHostService est en cours d’exécution. Si ce n’est pas le cas, démarrez-le manuellement.
 
 Si le service ne parvient pas à démarrer avec l’erreur « Le service n’a pas commencé en raison d’un échec de connexion », vérifiez si le compte virtuel NT Service\GcaHostService est autorisé à se connecter en tant que service sur l’ordinateur. Consultez [ce lien](/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) pour obtenir des instructions. Si l’option d’ajout d’un utilisateur ou d’un groupe est grisée dans les stratégies locales\Attribution des droits d’utilisateur, cela signifie que l’utilisateur qui essaie d’ajouter ce compte n’a pas de privilèges d’administrateur sur cet ordinateur ou qu’une stratégie de groupe le permet. La stratégie de groupe doit être mise à jour pour permettre au service hôte de se rendre en tant que service.
 
 ### <a name="connection-failure"></a>Échec de connexion
 
-Si l’action « Tester la connexion » échoue lors de la création d’une connexion avec l’erreur « Veuillez vérifier le nom d’utilisateur/mot de passe et le chemin d’accès de la source de données » même lorsque le nom d’utilisateur et le mot de passe fournis sont corrects, assurez-vous que le compte d’utilisateur dispose de droits d’accès interactifs à l’ordinateur sur lequel l’agent de connecteur Graph est installé. Reportez-vous à la documentation sur la [gestion des stratégies d’accès](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) pour vérifier les droits d’accès. Assurez-vous également que la source de données et l’ordinateur de l’agent sont sur le même réseau.
+Si l’action « Tester la connexion » échoue lors de la création d’une connexion avec l’erreur « Veuillez vérifier le nom d’utilisateur/mot de passe et le chemin d’accès de la source de données » même lorsque le nom d’utilisateur et le mot de passe fournis sont corrects, assurez-vous que le compte d’utilisateur dispose de droits d’accès interactifs à l’ordinateur sur lequel l’agent de connecteur Graph est installé. Reportez-vous à la documentation sur la [gestion des stratégies](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) d’logo pour vérifier les droits d’accès. Assurez-vous également que la source de données et l’ordinateur de l’agent sont sur le même réseau.
 
 Si une connexion échoue avec l’erreur « 1011 : l’agent du connecteur Graph n’est pas accessible ou hors connexion . », connectez-vous à l’ordinateur où l’agent est installé et démarrez l’application de l’agent si elle n’est pas déjà en cours d’exécution. Si la connexion continue d’échouer, vérifiez que le certificat ou la secret client fourni à l’agent lors de l’inscription n’a pas expiré et qu’il dispose des autorisations requises.

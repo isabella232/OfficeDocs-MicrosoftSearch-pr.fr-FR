@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Gérer la façon dont les Power BI et les données apparaissent dans les résultats de recherche
 ms.openlocfilehash: 14b294fcec7d9c7cb3e1951414ab8795fd2cace7
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702002"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973663"
 ---
 # <a name="manage-power-bi-answers"></a>Gérer Power BI réponses
 
@@ -26,7 +26,7 @@ Pour que vos utilisateurs trouvent plus facilement les données et les analyses 
 
 * **Facile à utiliser :** Cette expérience de recherche out-of-box permet aux utilisateurs de trouver facilement et rapidement des Power BI tableaux de bord et des rapports au sein de votre organisation.
 * **Contenu enrichi :** Pour rendre les Power BI de recherche plus utiles, ils incluent des informations clés telles que le type de contenu (tableau de bord ou rapport), ainsi que l’équipe ou la personne qui en est propriétaire.
-* **Protection des données intégrée** : les Power BI de données apparaissent uniquement pour les utilisateurs qui ont accès au tableau de bord ou au rapport.
+* **Protection des données intégrée** : Power BI résultats s’affiche uniquement pour les utilisateurs qui ont accès au tableau de bord ou au rapport.
 * **Expérience de recherche unifiée :** Pour conserver une expérience cohérente, Power BI résultats sont cohérents sur tous les points d’entrée de recherche. Où que vous recherchez, vous obtenez les mêmes résultats avec la même apparence.
 
 ## <a name="what-users-experience"></a>Expérience des utilisateurs
@@ -57,7 +57,7 @@ Power BI résultats sont activés pour votre organisation par défaut. Votre adm
 
 **Q : La recherche Power BI est-elle activée par défaut ?**
 
-**R :** Oui. Power BI recherche est activée par défaut pour les Recherche Microsoft. Aucune configuration initiale n’est requise par l’administrateur client pour cette fonctionnalité.
+**R :** Oui. Power BI recherche est activée par défaut pour Recherche Microsoft. Aucune configuration initiale n’est requise par l’administrateur client pour cette fonctionnalité.
 
 **Q : La recherche Power BI peut-elle être activée ou désactivée pour des groupes ou des utilisateurs spécifiques ?**
 

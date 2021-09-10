@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 description: En savoir plus sur les méthodes et les processus pour vous aider à déployer Recherche Microsoft votre organisation
 ms.openlocfilehash: 1e33e17da92070eb4a887b4d5130a4c47b7cfe37
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701884"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973808"
 ---
 # <a name="user-adoption-guide"></a>Guide d’adoption par l’utilisateur
 
@@ -30,7 +30,7 @@ Pour déployer et garantir l’adoption réussie des Recherche Microsoft au sein
 
 Pour garantir un déploiement transparent et augmenter l’adoption des Recherche Microsoft par les utilisateurs, identifiez les personnes qui peuvent vous aider à prendre en charge et à piloter le processus.
   
-Le tableau présente la hiérarchie d’équipe et les contribution de chaque personne. 
+Le tableau indique la hiérarchie d’équipe et ce que chaque personne contribue. 
   
  **Rôles et responsabilités de l’équipe d’adoption par les utilisateurs**
   
@@ -40,7 +40,7 @@ Le tableau présente la hiérarchie d’équipe et les contribution de chaque pe
 |Propriétaire d'entreprise  <br/> |Identifier les scénarios de produit et d’utilisateur.  <br/> Déterminer les mesures de réussite pour les services et l’organisation.  <br/> |N’importe lequel  <br/> |
 |Équipe de gestion des changements  <br/> |Assurez-vous que la valeur du produit est facile à comprendre.  <br/> Créez un plan pour le déploiement.  <br/> |IT  <br/> |
 |Champions   <br/> |Insézez le produit aux pairs et aux équipes.  <br/> |Tout (personnel)  <br/> |
-|Administrateur de recherche  <br/> |Identifier les membres principaux de l’équipe d’adoption utilisateur.  <br/> Gérez Recherche Microsoft, y compris l’apparence de l’expérience et la gestion continue.  <br/> Drive discussions to show the value of Recherche Microsoft.  <br/> |IT  <br/> |
+|Administrateur de recherche  <br/> |Identifiez les membres principaux de l’équipe d’adoption utilisateur.  <br/> Gérez Recherche Microsoft, y compris l’apparence de l’expérience et la gestion continue.  <br/> Drive discussions to show the value of Recherche Microsoft.  <br/> |IT  <br/> |
 |Editors  <br/> |Créez du contenu dans Microsoft 365 [centre d’administration.](https://admin.microsoft.com)  <br/> |IT/Any  <br/> |
    
 ## <a name="stage-2-scenarios"></a>Étape 2 : Scénarios
@@ -69,7 +69,7 @@ Pour vous aider à atteindre vos objectifs de déploiement et à afficher un imp
   
 1. **Gestion des changements :** Déterminez comment mesurer la sensibilisation des Recherche Microsoft et la réussite des communications à ce sujet. 
     
-2. **Utilisation :** Vous pouvez exploiter les données de votre tableau de bord Informations, notamment les utilisateurs actifs quotidiennement et mensuellement (DAU et MAU), les types de contenu qui sont les plus populaires et les principaux mots clés de recherche pour mesurer l’utilisation au fil du temps. Pour plus d’informations, [voir Recherche Microsoft Informations tableau de bord.](./usage-reports.md)
+2. **Utilisation :** Vous pouvez exploiter les données de votre tableau de bord Informations, y compris les utilisateurs actifs quotidiennement et mensuellement (DAU et MAU), les types de contenu qui sont les plus populaires et les principaux mots clés de recherche pour mesurer l’utilisation au fil du temps. Pour plus d’informations, [voir Recherche Microsoft Informations tableau de bord.](./usage-reports.md)
     
 3. **Satisfaction de l’utilisateur :** Utilisez les données que vous avez recueillies à partir d’enquêtes et de groupes de focus utilisateur pour déterminer votre base de référence. La satisfaction nette (NSAT) et les scores de net-score (NPS) peuvent également fournir des mesures utiles. Quelle que soit la méthode que vous utilisez, conservez-la cohérente, afin de pouvoir voir l’impact au fil du temps. 
     
@@ -77,7 +77,7 @@ Pour vous aider à atteindre vos objectifs de déploiement et à afficher un imp
     
 ## <a name="stage-3-readiness"></a>Étape 3 : Préparation
 
-Investir du temps dans la préparation Recherche Microsoft déploiement de votre entreprise aura un impact positif pour votre organisation. Microsoft fournit un <a href="https://go.microsoft.com/fwlink/?linkid=2114710">kit d’adoption</a> qui contient un modèle de courrier électronique d’annonce, du contenu visuel léger créé pour le partage sur vos sites de communication internes et une présentation de formation. Il existe également un centre de ressources <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Recherche Microsoft</a> où vous pouvez trouver d’autres ressources de formation et d’adoption conçues pour vous aider à faire de votre déploiement Recherche Microsoft un déploiement réussi.
+Investir du temps dans la préparation Recherche Microsoft déploiement de votre entreprise aura un impact positif pour votre organisation. Microsoft fournit un <a href="https://go.microsoft.com/fwlink/?linkid=2114710">kit d’adoption</a> qui contient un modèle de courrier électronique d’annonce, du contenu visuel léger créé pour le partage sur vos sites de communication internes et une présentation de formation. Il existe également un centre de ressources <a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Recherche Microsoft</a> qui vous permet de trouver d’autres ressources de formation et d’adoption conçues pour vous aider à faire de votre déploiement Recherche Microsoft un déploiement réussi.
   
 ### <a name="product-and-content-readiness"></a>Préparation des produits et du contenu
   

@@ -14,21 +14,21 @@ search.appverid:
 - MOE150
 description: Gérer les connecteurs Graph Microsoft pour Recherche Microsoft.
 ms.openlocfilehash: dd82114ff6aa651b57ce1941685840906ecf7318
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702047"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973493"
 ---
 # <a name="monitor-your-connections"></a>Surveiller vos connexions
 
-Pour accéder à vos connecteurs et les gérer, vous devez être désigné comme administrateur de recherche pour votre client. Contactez votre administrateur client pour vous fournir le rôle d’administrateur de recherche.
+Pour accéder à vos connecteurs et les gérer, vous devez être désigné en tant qu’administrateur de recherche pour votre client. Contactez votre administrateur client pour vous fournir le rôle d’administrateur de recherche.
 
 ## <a name="connection-operations"></a>Opérations de connexion
 
-Accédez à [l’onglet Connecteurs](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) dans la [Centre d’administration Microsoft 365](https://admin.microsoft.com).
+Accédez à [l’onglet Connecteurs](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) dans la [Centre d'administration Microsoft 365](https://admin.microsoft.com).
 
-Pour chaque type de connecteur, la [Centre d’administration Microsoft 365](https://admin.microsoft.com) prend en charge les opérations indiquées dans le tableau suivant :
+Pour chaque type de connecteur, la [Centre d'administration Microsoft 365](https://admin.microsoft.com) prend en charge les opérations indiquées dans le tableau suivant :
 
 Opération | Connecteurs Graph par Microsoft | Connecteurs partenaires Graph de connexion
 --- | --- | ---

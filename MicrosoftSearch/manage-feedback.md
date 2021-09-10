@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Examiner et agir sur les commentaires des utilisateurs dans Recherche Microsoft
 ms.openlocfilehash: 37ea70862cd4881170288339427f5ab1f150bf31
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702011"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973648"
 ---
 # <a name="managing-user-feedback"></a>Gestion des commentaires des utilisateurs
 
@@ -35,7 +35,7 @@ Les utilisateurs ont également la possibilité d’envoyer leur requête et d�
 
 La plupart des soumissions de commentaires apparaissent dans la section [Commentaires](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) du centre d Recherche Microsoft’administration. Les commentaires envoyés avec le je **souhaite** suggérer une catégorie de lien interne apparaissent en tant que signet suggéré dans la section [Signets](https://admin-ignite.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) et peuvent être vus en filtrant l’état **suggéré.**
 
-## <a name="review-feedback"></a>Commentaires sur la révision
+## <a name="review-feedback"></a>Commentaires sur l’avis
 
 Dans la page [Commentaires,](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) vous pouvez examiner et exporter les commentaires envoyés par les membres de votre organisation au cours des 30 derniers jours. Une fois qu’un utilisateur a soumis des commentaires, il apparaît dans cette liste dans les 20 minutes. Vous pouvez utiliser le bouton Actualiser pour vous assurer que vous regardez les données les plus récentes
 
@@ -83,7 +83,7 @@ En tant qu’administrateur de recherche, vous devez comprendre les principales 
 
 1. « Je n’ai pas trouvé ce que je recherchais » et des commentaires similaires peuvent être utilisés pour identifier le contenu voulu par les utilisateurs, mais n’est pas inclus actuellement dans l’index de recherche. La détermination de cette situation fait souvent l’objet d’enquêtes et d’inférences basées sur la compréhension de vos utilisateurs. Une fois trouvé, déterminez les méthodes d’utilisation de ce contenu les plus appropriées :
     1. Les signets sont utiles pour les sources de contenu qui ont une page d’accueil de haute qualité et une variété limitée de termes de recherche, afin que la communauté d’utilisateurs obtient un résultat de haute qualité à partir du signet et puisse ensuite trouver efficacement ce qu’elle recherche.
-    1. Les&A sont utiles pour les réponses individuelles qui sont assez fréquentes, mais qui ne changent pas.
+    1. Q&A sont utiles pour les réponses individuelles qui sont assez fréquentes, mais qui ne changent pas.
     1. Les connecteurs sont utiles pour les sources de contenu avec une grande variété de contenu et une grande variété de termes de recherche.
 1. « Le chargement des résultats a pris trop de temps » & « J’ai trouvé un problème » peut être un indicateur d’un problème plus large. La recherche quotidienne de ces commentaires peut vous aider et, si plusieurs cas s’affichent, vous pouvez vérifier l’expérience de recherche pour vous-même et ouvrir un dossier de support auprès de Microsoft si nécessaire. Ce type de commentaires est également important pour Microsoft et constitue une excellente raison de nous faire part de tous les commentaires.
 1. « Je souhaite suggérer un lien interne » peut être évalué pour être ajouté en tant que signets ou contenu connecté. Votre première idée doit être un signet . Si le signet est très utilisé, vous pouvez envisager d’apporter du contenu via un connecteur pour permettre une expérience de recherche encore plus riche.

@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: À l’aide de cartes adaptatives, créez une disposition pour afficher vos résultats de recherche personnalisés
 ms.openlocfilehash: 44808d1dba8d765ba67fcd0c3dcf6f186a0b774c
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702183"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973469"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>Créer une disposition pour personnaliser les résultats de recherche
@@ -93,7 +93,7 @@ Et voici le fichier JSON associé à la disposition :
 
 Vous pouvez séparer les données de la disposition et les lier.
 
-Voici la disposition JSON après la liaison des données :
+Voici la disposition JSON après liaison des données :
 
 ```json
 {
@@ -183,7 +183,7 @@ Avant de commencer, vous devez faire quelques opérations et éviter d’avoir �
 - Ne définissez pas de types de données non valides lors de la liaison de valeurs. Pour plus d’informations sur les types de données, voir [Gérer le schéma de recherche.](/sharepoint/search/manage-the-search-schema)
 - Évitez de rogler le résultat sur la page de résultats en suivant la hauteur maximale de la disposition des résultats JSON. Si vous dépassez la hauteur maximale de la mise en page des résultats, le résultat est rogé sur la page de résultats.
 - N’utilisez pas de `px` valeurs dans les propriétés de l’élément.
-- N’utilisez pas markdown avec la **propriété ResultSnippet** dans la disposition des résultats pour mettre en évidence la correspondance de requête dans le résultat de la recherche.
+- N’utilisez pas markdown avec la **propriété ResultSnippet** dans la disposition des résultats pour mettre en évidence la correspondance de requête dans le résultat de recherche.
 
 ## <a name="resources"></a>Ressources
 

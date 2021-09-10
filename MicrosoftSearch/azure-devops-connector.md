@@ -7,22 +7,22 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Configurer le connecteur Azure DevOps Graph pour Recherche Microsoft
-ms.openlocfilehash: 9c3c5d994f8470cdd70dc07445ede2c74f688383
-ms.sourcegitcommit: be5dcc7005447d6139e39d86211c7ec4cd5dd907
+ms.openlocfilehash: fcf381a92ef397f900b300ca667fa80067a6672a
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58639569"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973475"
 ---
 <!---Previous ms.author: shgrover --->
 
-# <a name="azure-devops-graph-connector-preview"></a>Azure DevOps Graph(prévisualisation)
+# <a name="azure-devops-graph-connector-preview"></a>Azure DevOps Graph connecteur de connexion (prévisualisation)
 
 Le connecteur Azure DevOps Graph permet à votre organisation d’indexer des éléments de travail dans son instance du service Azure DevOps de travail. Après avoir configuré le connecteur et indexé le contenu à partir Azure DevOps, les utilisateurs finaux peuvent rechercher ces éléments dans Recherche Microsoft.
 
@@ -38,7 +38,7 @@ Cet article est réservé à toute personne qui configure, exécute et surveille
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d'administration Microsoft 365
 
 Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -98,7 +98,7 @@ Ensuite, sélectionnez les champs que vous souhaitez que la connexion indexe et 
 
 ## <a name="step-4-manage-search-permissions"></a>Étape 4 : Gérer les autorisations de recherche
 
-Le connecteur Azure DevOps prend en charge les autorisations de recherche visibles uniquement pour les personnes ayant accès à  **cette source de données** ou Tout le **monde.** Si vous choisissez uniquement les personnes ayant accès à cette **source** de données, les données indexées apparaissent dans les résultats de la recherche pour les utilisateurs qui y ont accès en fonction des autorisations accordées aux utilisateurs ou aux groupes au niveau de l’organisation, du Project ou du chemin d’accès de la zone dans Azure DevOps. Si vous choisissez **Tout le** monde, les données indexées apparaissent dans les résultats de recherche pour tous les utilisateurs.
+Le connecteur Azure DevOps prend en charge les autorisations de recherche visibles uniquement pour les personnes ayant accès à  **cette source de données** ou Tout le **monde.** Si vous choisissez uniquement les personnes ayant accès à cette **source** de données, les données indexées apparaissent dans les résultats de recherche pour les utilisateurs qui y ont accès en fonction des autorisations accordées aux utilisateurs ou groupes au niveau organisation, Project ou chemin d’accès de la zone dans Azure DevOps. Si vous choisissez **Tout le** monde, les données indexées apparaissent dans les résultats de recherche pour tous les utilisateurs.
 
 ## <a name="step-5-assign-property-labels"></a>Étape 5 : Attribuer des étiquettes de propriété
 
@@ -120,7 +120,7 @@ Suivez les [instructions d’installation générales.](./configure-connector.md
 >[!TIP]
 >**Type de résultat par défaut**
 >* Le connecteur Azure DevOps enregistre automatiquement un [type](./customize-search-page.md#step-2-create-result-types) de résultat une fois le connecteur publié. Le type de résultat utilise [](./customize-results-layout.md) une disposition des résultats générée dynamiquement en fonction des champs sélectionnés à l’étape 3. 
->* Vous pouvez gérer le type de résultat en naviguant vers les [**types de**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) résultats dans [le Centre d’administration Microsoft 365](https://admin.microsoft.com). Le type de résultat par défaut sera nommé « `ConnectionId` Default ». Par exemple, si votre ID de connexion est , votre disposition des résultats sera nommée `AzureDevOps` : « AzureDevOpsDefault »
+>* Vous pouvez gérer le type de résultat en naviguant vers les [**types de**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) résultats dans [le Centre d'administration Microsoft 365](https://admin.microsoft.com). Le type de résultat par défaut sera nommé « `ConnectionId` Default ». Par exemple, si votre ID de connexion est , votre disposition des résultats sera nommée `AzureDevOps` : « AzureDevOpsDefault »
 >* En outre, vous pouvez choisir de créer votre propre type de résultat si nécessaire.
 
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 

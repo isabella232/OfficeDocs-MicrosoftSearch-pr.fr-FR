@@ -12,30 +12,32 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble de la façon dont les administrateurs peuvent s’assurer que l’accès aux sites et aux fichiers est correctement restreint au sein de leur organisation.
-ms.openlocfilehash: c85cce6208743b884cce86cc11c46aab3e01254d
-ms.sourcegitcommit: 70c48e470262099feb79553e36593521cc5e7abc
+ms.openlocfilehash: c19442e1d89ddfe65a772213a8b0225ca680d699
+ms.sourcegitcommit: 3e069fd920b5fcdfe97a0261930447e9e87d9013
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58835019"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "58973817"
 ---
 # <a name="manage-access-to-files-and-sites"></a>Gérer l’accès aux fichiers et aux sites
 
-Tous les fichiers ou sites ne doivent pas être disponibles pour tous les membres de votre organisation. Les administrateurs et les utilisateurs peuvent gérer l’accès aux informations sensibles ou confidentielles à l’aide de solutions qui permettent de résoudre au mieux leurs problèmes spécifiques. Si les contrôles d’accès adéquats ne sont pas appliqués de manière cohérente, cela peut entraîner un « partage de partage ». En rendant plus facile la recherche d’informations partagées au sein de votre organisation, les fichiers et les sites avec des restrictions incorrectes sont accessibles par inadvertance à l’aide Recherche Microsoft.
+Tous les fichiers ou sites ne doivent pas être disponibles pour tous les membres de votre organisation. Les administrateurs et les utilisateurs peuvent gérer l’accès aux informations sensibles ou confidentielles à l’aide de solutions qui permettent de résoudre au mieux leurs problèmes spécifiques. Si des contrôles d’accès adéquats ne sont pas appliqués de manière cohérente, cela peut entraîner un « partage de partage ». En rendant plus facile la recherche d’informations partagées au sein de votre organisation, les fichiers et les sites avec des restrictions incorrectes sont accessibles par inadvertance à l’aide de Recherche Microsoft.
 
 Les administrateurs de recherche ne peuvent pas résoudre ces problèmes de partage. Les fichiers et les sites sans accès restreint seront découverts dans les résultats de recherche internes et via d’autres moyens de découverte. Toutefois, lorsque des contrôles pour empêcher le partage sont en place, toutes les voies, y compris la recherche, sont fermées.
 
 ## <a name="solutions-to-prevent-oversharing"></a>Solutions pour empêcher le partage
 
-Utilisez les outils, stratégies et techniques ci-dessous pour restreindre ou obscurcir l’accès aux informations pour empêcher le partage. L’implémentation de ces solutions nécessitera probablement un accès administrateur global, de conformité ou de sécurité. Nous recommandons également une campagne interne pour informer vos utilisateurs sur la façon de sécuriser, d’étiqueter et d’autoriser correctement leurs sites et fichiers.
+Utilisez les outils, stratégies et techniques ci-dessous pour restreindre ou obscurcir l’accès aux informations afin d’empêcher le partage. L’implémentation de ces solutions nécessitera probablement un accès administrateur global, de conformité ou de sécurité. Nous recommandons également une campagne interne pour informer vos utilisateurs sur la façon de sécuriser, d’étiqueter et d’autoriser correctement leurs sites et fichiers.
 
-### <a name="public-sites-or-sites-with-public-owners"></a>Sites publics ou sites avec des propriétaires publics
+### <a name="public-sites-or-sites-with-public-groups-as-owners"></a>Sites publics ou sites avec des groupes publics en tant que propriétaires
 
-Les fichiers peuvent être partagés avec tous les membres de votre organisation via des sites publics ou des sites avec des propriétaires publics. Les étiquettes de sensibilité peuvent empêcher les utilisateurs de créer des groupes ou des sites publics. Pour ce faire, vous configurez toutes les étiquettes pour créer des groupes privés et exigez une étiquette pour les groupes. Pour plus d’informations, voir Utiliser des étiquettes de sensibilité pour protéger le contenu [Microsoft Teams, Microsoft 365 groupes](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)et SharePoint sites. Vous devez définir un processus distinct pour que les utilisateurs demandent ou créent des groupes publics.
+Les fichiers peuvent être partagés avec tout le monde via des sites publics ou des sites avec des groupes publics en tant que propriétaires. Les étiquettes de sensibilité peuvent empêcher les utilisateurs de créer des groupes ou des sites publics. Pour plus d’informations sur la configuration de toutes les étiquettes pour créer des groupes/sites privés et l’établissement d’une étiquette pour les groupes/sites, voir Utiliser des étiquettes de niveau de sensibilité pour protéger le contenu dans [les sites Microsoft Teams, Microsoft 365 Groups](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)et SharePoint.
 
-Une autre option consiste à définir qui peut créer des groupes Microsoft 365 de votre organisation. Pour plus d’informations, voir Créer un groupe pour les utilisateurs qui doivent [créer Microsoft 365 groupes.](/microsoft-365/solutions/manage-creation-of-groups#step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups) Un administrateur global doit configurer un processus pour que les utilisateurs envoient des demandes de création de groupe. Nous vous suggérons également d’informer les utilisateurs de cette modification.
+Une autre option consiste à contrôler qui peut créer des groupes Microsoft 365 de votre organisation. Pour plus d’informations, voir Créer un groupe pour les utilisateurs qui doivent [créer Microsoft 365 groupes.](/microsoft-365/solutions/manage-creation-of-groups#step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups)
 
-Si la restriction de la possibilité de créer des groupes n’est pas possible pour votre organisation, vous pouvez surveiller l’activité, y compris la création de groupes, par le biais d’un audit. Pour plus d’informations sur l’audit de base et avancé, voir [solutions d’audit dans Microsoft 365](/microsoft-365/compliance/auditing-solutions-overview).
+Lorsque vous implémentez l’une de ces solutions, nous vous suggérons également de configurer un processus pour que les utilisateurs demandent la création de groupes publics et informent vos utilisateurs de la modification.
+
+Si la restriction de la possibilité de créer des groupes n’est pas possible pour votre organisation, vous pouvez surveiller les activités, y compris la création de groupes, par le biais de l’audit. Pour plus d’informations sur l’audit de base et avancé, voir [solutions d’audit dans Microsoft 365](/microsoft-365/compliance/auditing-solutions-overview).
 
 ### <a name="shared-files"></a>Fichiers partagés
 

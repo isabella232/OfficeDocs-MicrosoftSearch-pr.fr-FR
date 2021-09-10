@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: Créer et mettre à jour des signets et des méthodes pour modifier en bloc les résultats des signets pour Recherche Microsoft
 ms.openlocfilehash: a08bef9ccc56d395fe6570bacc856653ff3a1563
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702056"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973675"
 ---
 # <a name="manage-bookmarks"></a>Gérer des signets
 
@@ -29,7 +29,7 @@ Les signets aident les personnes à trouver rapidement des sites et des outils i
 Un grand signet possède quatre éléments clés :
 
 1. Titre fort et **informatif.** Ne pas atteindre plus de huit mots ou environ 60 caractères au maximum. Vous souhaitez que vos utilisateurs cliquent sur le titre et visualisent le contenu, mais évitez les clics évidents :
-    - Bon : essayez les favoris de cette semaine à partir du menu de la menu. Le titre est clair, concis et intéressant, mais peut être surpromising.
+    - Bon : essayez les favoris de cette semaine à partir du menu de la menu. Le titre est clair, concis et intéressant, mais il peut s’agit d’un surpromising.
     - Meilleure : menu de la semaine. N’est pas surpromise ou son comme une ad.
     - Évitez : vous ne pensez pas ce qui arrive au menu de la menu de la semaine. Utilise des clichés clickbait qui ressemblent à une nouvelle.
 2. Description **succincte**, d’environ 300 caractères, qui résume l’objectif ou la fonctionnalité de la ressource liée.
@@ -38,7 +38,7 @@ Un grand signet possède quatre éléments clés :
 
 ## <a name="create-bookmark-answers"></a>Créer des réponses de signet
 
-Dans la [Centre d’administration Microsoft 365,](https://admin.microsoft.com/)sélectionnez [Signets](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) et choisissez la façon dont vous souhaitez créer de nouveaux signets :
+Dans la [Centre d'administration Microsoft 365,](https://admin.microsoft.com/)sélectionnez [Signets](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) et choisissez la façon dont vous souhaitez créer de nouveaux signets :
 
 - Ajouter des signets
 - Importer les SharePoint résultats
@@ -48,7 +48,7 @@ Dans la [Centre d’administration Microsoft 365,](https://admin.microsoft.com/)
 
 ### <a name="add-bookmarks"></a>Ajouter des signets
 
-Les administrateurs et les éditeurs de recherche peuvent ajouter des signets dans le Centre d’administration Microsoft 365 et les publier ou les enregistrer dans un brouillon. La publication d’un signet actualisé immédiatement l’index de recherche, le rendant immédiatement accessible aux utilisateurs. Vous pouvez également planifier un signet en spécifiant la date et l’heure de sa publication.
+Les administrateurs et les éditeurs de recherche peuvent ajouter des signets dans le Centre d'administration Microsoft 365 et les publier ou les enregistrer dans un brouillon. La publication d’un signet actualise immédiatement l’index de recherche, le rendant immédiatement accessible aux utilisateurs. Vous pouvez également planifier un signet en spécifiant la date et l’heure de sa publication.
 
 - **Publié**: les signets sont disponibles pour les utilisateurs de l’organisation via Recherche Microsoft.
 - **Brouillon**: les signets enregistrés en tant que brouillons ne sont pas disponibles pour vos utilisateurs. Utilisez cet état si vous ou d’autres parties prenantes souhaitez consulter ou mettre à jour les signets avant de les publier.
@@ -102,11 +102,11 @@ Pour éviter les erreurs de duplication de signet à signet :
 
 ### <a name="publish-or-review-recommended-bookmarks"></a>Publier ou réviser les signets recommandés
 
-Pour réduire l’effort manuel requis pour ajouter des signets, Recherche Microsoft pouvez évaluer les liens SharePoint de votre organisation et recommander des signets. Vous pouvez les consulter avant de les publier ou les configurer pour les publier automatiquement. Aucune configuration n’est nécessaire pour les signets recommandés, ils sont activés et configurés sur l’autopublish par défaut. Pour modifier ces paramètres à tout moment, sélectionnez Gérer les **signets** pour ouvrir le panneau Paramètres du signet.
+Pour réduire l’effort manuel requis pour ajouter des signets, Recherche Microsoft pouvez évaluer les liens SharePoint de votre organisation et recommander des signets. Vous pouvez les consulter avant de les publier ou les configurer pour les publier automatiquement. Aucune configuration n’est nécessaire pour les signets recommandés, ils sont activés et configurés sur autopublish par défaut. Pour modifier ces paramètres à tout moment, sélectionnez Gérer les **signets** pour ouvrir le panneau Paramètres du signet.
 
 ![Capture d’écran des paramètres de signet recommandés dans Microsoft 365 portail d’administration.](media/bookmarks-recommendedsettings.png)
 
-Si les signets recommandés sont activés, le moteur de recommandation évalue SharePoint sites de votre organisation pour identifier les liens à trafic élevé. Après une période d’évaluation initiale, les signets recommandés seront publiés automatiquement ou ajoutés à la liste des signets suggérés. Le cycle suivant( une période d’évaluation de 30 jours suivie de l’autopublishing ou de l’ajout de signets suggérés) commencera ensuite.
+Si les signets recommandés sont activés, le moteur de recommandation évalue SharePoint sites de votre organisation pour identifier les liens à trafic élevé. Après une période d’évaluation initiale, les signets recommandés seront publiés automatiquement ou ajoutés à la liste des signets suggérés. Le cycle suivant ,une période d’évaluation de 30 jours suivie de l’autopublishing ou de l’ajout de signets suggérés, commence.
 
 Nous vous suggérons d’examiner régulièrement ces signets publiés automatiquement ou suggérés par les administrateurs ou les éditeurs de recherche. En outre, les signets recommandés n’incluent jamais les URL trouvées dans les signets publiés, suggérés, programmés ou exclus existants.
 
@@ -134,7 +134,7 @@ Un signet peut avoir plusieurs mots clés et partager le même mot clé, mais le
 
 **R**: Les signets supprimés sont immédiatement supprimés des résultats du travail.
 
-**Q : Est-ce Recherche Microsoft des signets provenant de sites dans toutes les langues ?**
+**Q : Est-ce Recherche Microsoft recommander des signets à partir de sites dans toutes les langues ?**
 
 **R**: Oui, Recherche Microsoft pouvez recommander des signets à partir de n’importe quel site SharePoint interne, quelle que soit la langue.
 

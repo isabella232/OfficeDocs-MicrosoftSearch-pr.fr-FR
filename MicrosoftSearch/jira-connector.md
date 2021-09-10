@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Configurer le connecteur Graph Atlassian Jira pour Recherche Microsoft
 ms.openlocfilehash: 0b4b1dc0ed1f9e9d3ca57f98dc3878f63e68d510
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702092"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973777"
 ---
 # <a name="atlassian-jira-graph-connector-preview"></a>Connecteur d’Graph Atlassian Jira (prévisualisation)
 
@@ -30,12 +30,12 @@ Le connecteur de Graph atlassien permet à votre organisation d’indexer les pr
 Cet article est réservé à toute personne qui configure, exécute et surveille un connecteur d’Graph Atlassian. Il complète le processus d’installation général et affiche des instructions qui s’appliquent uniquement au connecteur Graph Atlassian.
 
 >[!IMPORTANT]
->Le connecteur d’Graph atlassian Jira prend en charge uniquement les instances hébergées dans le cloud Jira. Les versions Jira Server et Jira Data Center ne sont pas pris en charge par ce connecteur.
+>Le connecteur d’Graph atlassian Jira prend en charge uniquement les instances hébergées dans le cloud Jira. Les versions de Jira Server et du centre de données Jira ne sont pas pris en charge par ce connecteur.
 
 ## <a name="before-you-get-started"></a>Avant de commencer
 Vous devez être l’administrateur du client M365 de votre organisation, ainsi que l’administrateur du site Jira de votre organisation.
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d'administration Microsoft 365
 Suivez les [instructions d’installation générales.](./configure-connector.md)
 
 ## <a name="step-2-name-the-connection"></a>Étape 2 : Nommer la connexion
@@ -70,7 +70,7 @@ Vous pouvez choisir la connexion pour indexer l’intégralité du site Jira ou 
 
 Vous pouvez également choisir de filtrer les problèmes de Jira qui seront indexés de 2 façons.
 * Spécifiez la **période de modification du problème.** Cela indexe uniquement les problèmes Jira qui sont créés ou  modifiés dans la période sélectionnée sur une base continue en fonction de l’analyse actuelle.
-* Spécifiez **le JQL**. Cela indexe uniquement les problèmes Jira qui sont renvoyés après le filtrage en fonction du langage Jira Query Language (JQL) fourni. Pour en savoir plus sur l’utilisation de JQL, voir la documentation de support Atlassian sur l’utilisation de la recherche avancée avec [le langage de requête Jira](https://support.atlassian.com/jira-service-management-cloud/docs/use-advanced-search-with-jira-query-language-jql/)
+* Spécifiez **le JQL**. Cela indexe uniquement les problèmes Jira qui sont renvoyés après le filtrage en fonction du langage Jira Query Language (JQL) fourni. Pour en savoir plus sur l’utilisation de JQL, voir la documentation du support Atlassian sur l’utilisation de la recherche avancée avec [le langage de requête Jira](https://support.atlassian.com/jira-service-management-cloud/docs/use-advanced-search-with-jira-query-language-jql/)
 
 > [!TIP]
 > Vous pouvez utiliser le filtre JQL pour indexer uniquement des types de problèmes Jira spécifiques à l’aide de «*issueType in (Bug,Improvement)*»

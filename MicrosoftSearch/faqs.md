@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Trouvez les réponses à certaines des questions les plus fréquentes concernant Microsoft Search (recherche Microsoft)
 ms.openlocfilehash: 8b4de717ab63af8842dc86135748e551ff386a2a
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702155"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973654"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>Questions fréquemment posées
@@ -31,7 +31,7 @@ Voici la liste des questions fréquemment posées.
 
 Oui, Recherche Microsoft l’intention de la requête à partir d’expressions plus grandes. Cette fonctionnalité utilise l’IA pour découvrir les expressions superflues courantes que les utilisateurs ajoutent à leurs requêtes qui n’affectent pas leur objectif de recherche. Par exemple, lorsqu’un utilisateur recherche des informations sur la modification de mon mot de *passe,* nous extrayons les mots les moins importants de la requête et le déclencheur en fonction des mots pertinents tels que le mot de passe de *modification.*
   
-Cette fonctionnalité ne remplace pas les mots clés définies dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com).
+Cette fonctionnalité ne remplace pas les mots clés définies dans le [Centre d'administration Microsoft 365](https://admin.microsoft.com).
   
 ## <a name="can-you-search-for-files-on-premises"></a>Pouvez-vous rechercher des fichiers en local ?
 
@@ -61,8 +61,8 @@ Pour plus d’informations, voir les pages du Centre de [Office 365.](https://ww
 
 Microsoft 365 permet une collaboration enrichie avec des personnes extérieures à votre organisation via [l’accès invité.](/microsoft-365/solutions/collaborate-with-people-outside-your-organization) Ces utilisateurs peuvent rechercher des documents, des sites, des groupes, des listes et des bibliothèques. Toutefois, les utilisateurs invités n’obtiennent pas l’expérience Recherche Microsoft complète et personnalisée et peuvent avoir besoin d’utiliser la zone de recherche sur la page au lieu de la zone de Recherche Microsoft unifiée dans l’en-tête.
 
-## <a name="how-do-i-turn-microsoft-search-in-bing-on-or-off"></a>Comment puis-je activer Recherche Microsoft de Bing ou désactiver les Bing'
+## <a name="how-do-i-turn-microsoft-search-in-bing-on-or-off"></a>Comment puis-je activer Recherche Microsoft l Bing de l’autre ?
 
-Pour la plupart des organisations, y compris les entreprises et l’éducation, Recherche Microsoft dans Bing est en cours d’exploitation par défaut. Pour activer Recherche Microsoft dans Bing, allez à la page [Configurations](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations) dans la Centre d’administration Microsoft 365. Sous Recherche Microsoft dans Bing paramètres, sélectionnez Modifier les **paramètres** et activer Autoriser votre organisation à utiliser Recherche Microsoft dans **Bing**. Cette modification prend jusqu’à 24 heures pour prendre effet.
+Pour la plupart des organisations, y compris les entreprises et l’éducation, les Recherche Microsoft dans Bing sont en cours d’exploitation par défaut. Pour activer Recherche Microsoft dans Bing, allez à la page [Configurations](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations) dans la Centre d'administration Microsoft 365. Sous Recherche Microsoft dans Bing paramètres, sélectionnez Modifier les **paramètres** et activer Autoriser votre organisation à utiliser Recherche Microsoft dans **Bing**. Cette modification prend jusqu’à 24 heures pour prendre effet.
 
 Si ce paramètre est éteint, les utilisateurs n’obtiennent pas de résultats internes lorsqu’ils recherchent sur Bing, Windows recherche ou dans Microsoft Edge. La Recherche Microsoft’Bing n’arrête pas ou n’empêche pas l’ajout de contenu interne à votre index de recherche. Il désactive uniquement Bing points d’entrée de Recherche Microsoft. Pour trouver des réponses et des résultats internes, les utilisateurs doivent utiliser d’autres points d’entrée, par exemple SharePoint Online ou une Office 365 app.

@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
 description: Inclure des applications basées sur le navigateur dans les résultats des signets pour Recherche Microsoft
 ms.openlocfilehash: 55df0d6d6d39742548db497ed77f530b6a591895
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702101"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973684"
 ---
 # <a name="integrate-power-apps-in-microsoft-search-bookmarks"></a>Intégrer Power Apps dans Recherche Microsoft signets
    
@@ -34,7 +34,7 @@ Aidez vos utilisateurs à effectuer des tâches, telles que la saisie de congés
     
 ## <a name="add-a-power-app-to-a-bookmark"></a>Ajouter une application Power App à un signet
 
-[Power Apps( fonctionnent dans n’importe quel navigateur et sur n’importe quel appareil et prennent moins https://products.office.com/business/microsoft-powerapps) d’une minute pour l’ajouter.
+[Power Apps( fonctionnent dans n’importe quel navigateur et sur n’importe quel appareil et prennent https://products.office.com/business/microsoft-powerapps) moins d’une minute pour l’ajouter.
   
 1. [Recherchez l’ID de l’application Power App](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) que vous souhaitez intégrer.
     

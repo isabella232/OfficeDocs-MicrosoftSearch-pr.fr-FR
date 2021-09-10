@@ -8,18 +8,18 @@ ms.service: mssearch
 audience: Admin
 ms.audience: Admin
 ms.date: 07/02/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Examiner les rapports Recherche Microsoft’utilisation des applications
-ms.openlocfilehash: b20045fc3cec609a1c2ad5e3e51655f1f2f24986
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 9de48331efbc956ee7d980b919d9bd2f025fc8aa
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470389"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973678"
 ---
 # <a name="microsoft-search-usage-reports"></a>Recherche Microsoft Rapports d’utilisation
 
@@ -28,7 +28,7 @@ Les rapports d’utilisation de la recherche vous permettent de mieux comprendre
 > [!IMPORTANT]
 > Recherche Microsoft rapports d’utilisation sont actuellement en prévisualisation
 
-Les rapports [d’utilisation](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) Recherche Microsoft incluent des graphiques et des tableaux générés à partir de recherches exécutées à partir de SharePoint Home, Office.com et Recherche Microsoft dans Bing de recherche. Vous pouvez voir les données des 31 derniers jours, par jour ou par mois de l’année précédente. Ces rapports sont simplement en cours de déploiement, de sorte que l’ensemble des données historiques prendra du temps.
+Les rapports [d’utilisation](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) Recherche Microsoft incluent des graphiques et des tableaux générés à partir de recherches exécutées à partir de SharePoint Famille, Office.com et Recherche Microsoft dans Bing zones de recherche. Vous pouvez voir les données des 31 derniers jours, par jour ou par mois de l’année précédente. Ces rapports sont simplement en cours de déploiement afin que l’ensemble des données historiques prennent du temps.
 
 Une version précédente de cette page incluait les données des recherches exécutées uniquement pour Recherche Microsoft dans Bing sur Bing.com. Ces données sont désormais intégrées dans ces rapports ; Vous pouvez toujours voir l’ancienne page en cliquant sur le lien en bas de la page pour afficher les requêtes Bing et la distribution des **impressions.** Ce lien et l’ancienne page seront bientôt supprimés.
 

@@ -15,11 +15,11 @@ ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: Obtenez des suggestions de recherche pertinentes et trouvez des résultats de travail plus rapidement en ajoutant une zone de Recherche Microsoft à votre site ou page intranet.
 ms.openlocfilehash: d9f730eee98291d64e1f860c67be3eb7aa52a4a8
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701407"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973800"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>Ajout d’une zone de recherche à votre site intranet
 

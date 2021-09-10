@@ -15,11 +15,11 @@ search.appverid:
 ROBOTS: NoIndex
 description: Configurer le connecteur d’Graph de fichiers pour Recherche Microsoft
 ms.openlocfilehash: 874b522cb54288b531cbbc63e12f232a8a68939e
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702146"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973499"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -34,7 +34,7 @@ Le connecteur de partage de Graph permet aux utilisateurs de votre organisation 
 
 ### <a name="install-the-graph-connector-agent"></a>Installer l’agent Graph connecteur d’installation
 
-Pour indexer vos partages Windows de fichiers, vous devez installer et inscrire l’agent Graph connecteur. Pour plus [d’informations, voir Installer Graph’agent](graph-connector-agent.md) connecteur de connexion.  
+Pour indexer vos partages Windows de fichiers, vous devez installer et inscrire l’agent Graph connecteur. Pour plus [d’informations, voir Installer Graph connecteur](graph-connector-agent.md) d’installation.  
 
 ### <a name="content-requirements"></a>Exigences en matière de contenu
 
@@ -46,7 +46,7 @@ Le contenu des formats suivants peut être indexé et recherché : DOC, DOCM, DO
 
 La taille maximale de fichier prise en charge est de 100 Mo. Les fichiers dont la valeur est supérieure à 100 Mo ne sont pas indexés. La taille limite post-traitée maximale est de 4 Mo. Le traitement s’arrête lorsque la taille d’un fichier atteint 4 Mo. Par conséquent, certaines expressions présentes dans le fichier peuvent ne pas fonctionner pour la recherche.
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d'administration Microsoft 365
 
 Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -86,7 +86,7 @@ L’administrateur aurait également la possibilité d’accorder une exception 
 
 ## <a name="step-5-manage-search-permissions"></a>Étape 5 : Gérer les autorisations de recherche
 
-Vous pouvez restreindre l’autorisation de rechercher n’importe quel fichier basé sur les listes de contrôle d’accès de partage ou les listes de contrôle d’accès NTFS (New Technology File System), en sélectionnant l’option souhaitée dans la page Gérer les **autorisations** de recherche. Les comptes et groupes d’utilisateurs fournis dans ces listes de contrôle d’accès doivent être gérés par Active Directory (AD). Si vous utilisez un autre système pour la gestion des comptes d’utilisateurs, vous pouvez sélectionner l’option « tout le monde » qui permet aux utilisateurs de rechercher tous les fichiers sans restrictions d’accès. Toutefois, lorsque les utilisateurs tentent d’ouvrir le fichier, les contrôles d’accès définies au niveau de la source s’appliquent.
+Vous pouvez restreindre l’autorisation de rechercher n’importe quel fichier en fonction des listes de contrôle d’accès de partage ou des listes de contrôle d’accès NTFS (New Technology File System), en sélectionnant l’option souhaitée dans la page Gérer les **autorisations de** recherche. Les comptes et groupes d’utilisateurs fournis dans ces listes de contrôle d’accès doivent être gérés par Active Directory (AD). Si vous utilisez un autre système pour la gestion des comptes d’utilisateurs, vous pouvez sélectionner l’option « tout le monde » qui permet aux utilisateurs de rechercher tous les fichiers sans restrictions d’accès. Toutefois, lorsque les utilisateurs tentent d’ouvrir le fichier, les contrôles d’accès définies au niveau de la source s’appliquent.
 
 Notez que windows fournit par défaut l’autorisation « Lecture » à « Tout le monde » dans les AAL de partage lorsqu’un dossier est partagé sur le réseau. Par extension, si vous choisissez partager des ACA dans Gérer les autorisations de recherche, les **utilisateurs** pourront rechercher tous les fichiers. Si vous souhaitez restreindre l’accès, supprimez l’accès « Lecture » pour « Tout le monde » dans les partages de fichiers et fournissez l’accès uniquement aux utilisateurs et groupes souhaités. Le connecteur lit ensuite ces restrictions d’accès et les applique à la recherche.
 

@@ -9,11 +9,11 @@ ms.service: mssearch
 ms.localizationpriority: medium
 description: Gérer l’apparition du contenu Dynamics 365 dans les résultats de recherche
 ms.openlocfilehash: 8a87e4026937ba01132c10815dc2f91d27da79c9
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702029"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973642"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Recherche de fédération Dynamics 365 (prévisualisation)
 
@@ -25,7 +25,7 @@ Pour vous aider à rendre Recherche Microsoft plus utile, nous présentons Reche
 * Données qui ne peuvent pas quitter les limites du système
 * Données sensibles stockées sur site que votre organisation ne souhaite pas indexer sur le cloud
 
-Les données accessibles via une connexion de recherche fédérée ne sont pas indexées Recherche Microsoft. En outre, à l’aide de connecteurs intégrés de Microsoft, il est facile de configurer des connexions de recherche fédérée. Notre connecteur Dynamics 365 est actuellement en prévisualisation. Si vous souhaitez participer à la prévisualisation, faites-le nous savoir [aka.ms/D365FederationSearchPreview](https://aka.ms/D365FederationSearchPreview). Pour la période de publication, voir la [feuille Recherche Microsoft feuille de route.](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Search)
+Les données accessibles via une connexion de recherche fédérée ne sont pas indexées Recherche Microsoft. En outre, à l’aide de connecteurs intégrés de Microsoft, il est facile de configurer des connexions de recherche fédérée. Notre connecteur Dynamics 365 est actuellement en prévisualisation. Si vous souhaitez participer à la prévisualisation, faites-le nous savoir [aka.ms/D365FederationSearchPreview](https://aka.ms/D365FederationSearchPreview). Pour la période de publication, voir la [feuille de route Recherche Microsoft publication.](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Search)
 
 ## <a name="dynamics-365-federation-connector"></a>Connecteur de fédération Dynamics 365
 
@@ -43,7 +43,7 @@ Les réponses Dynamics 365 apparaissent dans les résultats de la recherche dans
 
 :::image type="content" alt-text="Capture d’écran des réponses Dynamics 365 SharePoint, Bing et Office" source="media/dynamics365/dynamics365-answer.png" lightbox="media/dynamics365/dynamics365-answer.png":::
 
-À partir de la réponse, il est facile de voir d’autres résultats de recherche Dynamics 365 à l’aide du lien De plus **de résultats Dynamics 365.** Il permet aux utilisateurs d’obtenir une page de résultats Dynamics 365 dédiée avec d’autres résultats pertinents pour leur requête.
+À partir de la réponse, il est facile de voir d’autres résultats de recherche Dynamics 365 à l’aide du lien Plus de résultats **Dynamics 365.** Il permet aux utilisateurs d’obtenir une page de résultats Dynamics 365 dédiée avec d’autres résultats pertinents pour leur requête.
 
 :::image type="content" alt-text="Capture d’écran de Dynamics 365 vertical et résultats sur SharePoint, Bing et Office" source="media/dynamics365/dynamics365-vertical.png" lightbox="media/dynamics365/dynamics365-vertical.png":::
 
@@ -65,13 +65,13 @@ Les requêtes de nom de produit et de langage naturel sont toutes deux pris en c
 * Quels sont les comptes à Seattle ?
 * Quels sont les contacts à Seattle ?
 * Quels sont mes prospects fermant ce mois-ci
-* Appel téléphonique haute priorité
+* Appel téléphonique à priorité élevée
 * Messages électroniques manquants du contact
 
 Les modèles de nom de produit 365 365 peuvent déclencher des résultats Dynamics 365, quel que soit l’endroit où ils apparaissent dans une requête :
 
 * D365
-* Dynamics 365
+* Dynamics 365
 * Dynamics365
 * Dynamics CRM
 * Dynamics Sales
@@ -83,7 +83,7 @@ Les modèles de nom de produit 365 365 peuvent déclencher des résultats Dynami
 
 Avec cette configuration simple, vous pouvez activer l’expérience de recherche de fédération Dynamics 365 pour les membres de votre organisation.
 
-1. Dans la [Centre d’administration Microsoft 365](https://admin.microsoft.com), allez aux [sources de données.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors)
+1. Dans la [Centre d'administration Microsoft 365](https://admin.microsoft.com), allez aux [sources de données.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors)
 
 2. Dans la section Applications et services Microsoft, sous Microsoft Dynamics 365, sélectionnez **Gérer** pour ouvrir le panneau Microsoft Dynamics 365.
 
@@ -97,6 +97,6 @@ Avec cette configuration simple, vous pouvez activer l’expérience de recherch
 
 7. Sélectionnez **Enregistrer** pour terminer la configuration de la connexion.
 
-:::image type="content" alt-text="Capture d’écran du panneau de configurer Dynamics 365 dans la Centre d’administration Microsoft 365." source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
+:::image type="content" alt-text="Capture d’écran du panneau de configurer Dynamics 365 dans la Centre d'administration Microsoft 365." source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
 
 Une fois l’installation terminée, les réponses et le secteur vertical de Dynamics 365 apparaissent uniquement pour les utilisateurs titulaires d’une licence Dynamics 365 valide et d’un accès à l’environnement Dynamics 365 connecté. À tout moment, vous pouvez revenir à ces paramètres et modifier l’environnement de point de terminaison de connexion ou désactiver la connexion.

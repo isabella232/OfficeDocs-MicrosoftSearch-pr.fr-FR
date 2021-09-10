@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Ajouter des secteurs verticaux de recherche et personnaliser les résultats de recherche
 ms.openlocfilehash: 1ca436a2617e32e285715e4fffd622dc7a571ca1
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702173"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973488"
 ---
 # <a name="customize-the-search-results-page"></a>Personnaliser la page des résultats de la recherche
 
@@ -77,7 +77,7 @@ Vous pouvez utiliser un ensemble limité de langages [KQL (Keyword Query Languag
 
 Pour créer un secteur vertical Recherche Microsoft dans SharePoint d’accueil, Office ou Bing, suivez les étapes suivantes :
 
-1. Dans la [Centre d’administration Microsoft 365](https://admin.microsoft.com), allez à [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
+1. Dans la [Centre d'administration Microsoft 365](https://admin.microsoft.com), allez à [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 2. Sélectionnez **Ajouter** pour commencer.  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>Créer un secteur vertical au niveau du site
@@ -111,7 +111,7 @@ Après avoir commencé l’Assistant, vous êtes guidé à travers les étapes p
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>Créer un type de résultat au niveau de l’organisation
 
-1. Dans la [Centre d’administration Microsoft 365](https://admin.microsoft.com), allez à [**Types de résultats.**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)
+1. Dans la [Centre d'administration Microsoft 365](https://admin.microsoft.com), allez à [**Types de résultats.**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)
 2. Pour ajouter un type de résultat, sélectionnez **Ajouter.** Pour modifier un type de résultat, sélectionnez-le dans la liste concernée.
 
 ### <a name="create-a-result-type-at-the-site-level"></a>Créer un type de résultat au niveau du site
@@ -131,7 +131,7 @@ Après avoir activé le secteur vertical, il y a un délai de quelques heures av
 
 ## <a name="profile-query-variables"></a>Variables de requête de profil
 
-Utilisez des variables dans la section de requête KQL d’un secteur vertical pour fournir des données dynamiques en tant qu’entrée à la requête d’un secteur vertical. Vous pouvez utiliser des variables de requête de profil pour rendre les résultats de la recherche contextuels pour l’utilisateur. Les variables de requête de profil récupèrent des valeurs à partir du profil de [l’utilisateur.](/graph/api/resources/profile)
+Utilisez des variables dans la section requête KQL d’un secteur vertical pour fournir des données dynamiques en tant qu’entrée à la requête d’un secteur vertical. Vous pouvez utiliser des variables de requête de profil pour rendre les résultats de la recherche contextuels pour l’utilisateur. Les variables de requête de profil récupèrent les valeurs du profil de [l’utilisateur.](/graph/api/resources/profile)
 
 Par exemple, pour créer un secteur vertical « Tickets » pour que l’utilisateur trouve les tickets de support qui lui sont affectés, vous pouvez spécifier la requête suivante dans la section « Requête » lors de la création verticale dans la page d’administration :  
 

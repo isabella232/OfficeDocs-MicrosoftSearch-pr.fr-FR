@@ -13,19 +13,19 @@ search.appverid:
 - MOE150
 description: Détails et erreurs des connecteurs
 ms.openlocfilehash: 915723a2a22771e89fdb433b4ddadba76fa91090
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701380"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973793"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
 # <a name="view-connection-details-and-errors"></a>Afficher les détails et erreurs de connexion
 
-Pour accéder à vos connecteurs et les gérer, vous devez être désigné comme administrateur de recherche pour votre client. Contactez votre administrateur client pour vous fournir le rôle d’administrateur de recherche.
+Pour accéder à vos connecteurs et les gérer, vous devez être désigné en tant qu’administrateur de recherche pour votre client. Contactez votre administrateur client pour vous fournir le rôle d’administrateur de recherche.
 
-Accédez à [l’onglet Connecteurs](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) dans la [Centre d’administration Microsoft 365](https://admin.microsoft.com).
+Accédez à [l’onglet Connecteurs](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) dans la [Centre d'administration Microsoft 365](https://admin.microsoft.com).
 
 Vous pouvez afficher les détails et les erreurs de connexion lorsque vous cliquez sur la connexion sous [l’onglet Connecteurs.](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)  
 
@@ -38,7 +38,7 @@ Les dernières valeurs d’analyse suivantes seront disponibles pour chaque conn
 Valeur | Description
 --- | ---
 **Terminé à l'** | Date et heure de fin de la dernière analyse
-**Type (Type)** | Analyse incrémentielle ou complète
+**Type** | Analyse incrémentielle ou complète
 **Duration** | combien de temps la dernière analyse a-t-elle pris pour se terminer
 **Réussites** | Nombre d’éléments qui ont été correctement ingérés lors de la dernière analyse
 **Erreurs** | Nombre d’éléments qui ont fait l’objet d’une erreur lors de la dernière analyse

@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Créez des signets, des emplacements et des Q&R pour accéder facilement au contenu de votre organisation.
 ms.openlocfilehash: 77b6507c7643e6cf2176f37a9a2cf0def1c640ba
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702074"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973672"
 ---
 # <a name="make-content-easy-to-find"></a>Faciliter l’accès au contenu
 
@@ -42,7 +42,7 @@ Actuellement, les extensions de navigateur sont disponibles [pour Microsoft Edge
 
 En ajoutant des [PowerApps existantes](integrate-powerapps.md) à vos signets, les utilisateurs peuvent effectuer des tâches [telles](manage-bookmarks.md)que la saisie de congés ou la déclaration de dépenses. 
 
-Avec [PowerApps,](integrate-powerapps.md)vous pouvez créer des applications d’entreprise qui s’exécutent dans un navigateur, sur un téléphone ou une tablette. Aucune expérience de codage n’est requise. PowerApps fonctionne dans n’importe quel navigateur et sur n’importe quel appareil. L’ajout prend moins d’une minute. Pour en savoir plus sur PowerApps, consultez les articles suivants :
+Avec [PowerApps,](integrate-powerapps.md)vous pouvez créer des applications professionnelles qui s’exécutent dans un navigateur, sur un téléphone ou une tablette. Aucune expérience de codage n’est requise. PowerApps fonctionne dans n’importe quel navigateur et sur n’importe quel appareil. L’ajout prend moins d’une minute. Pour en savoir plus sur PowerApps, consultez les articles suivants :
 - [Formation guidée](/learn/browse/?products=powerapps)
 - [Documentation PowerApps](/powerapps/maker/canvas-apps/get-sessionid)
 - [Accueil PowerApps](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
@@ -52,7 +52,7 @@ Avec [PowerApps,](integrate-powerapps.md)vous pouvez créer des applications d�
 1. Recherchez [l’ID d’application](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) pour l’application PowerApp que vous souhaitez ajouter.
 1. Dans le Microsoft 365 [d’administration,](https://admin.microsoft.com) Paramètres  >  **Recherche Microsoft**. 
 1. Ajoutez un nouveau signet ou accédez à un signet existant auquel vous souhaitez ajouter une application PowerApp.
-1. Dans **les paramètres de signet,** **sélectionnez Power App.** Ensuite, **sélectionnez Ajouter une application Power.**
+1. Dans **les paramètres de signet,** **sélectionnez Power App.** Ensuite, **sélectionnez Ajouter une application Power App.**
 1. Entrez **l’ID de l’application.** La hauteur et la largeur s’ajustent automatiquement. [Les signets](manage-bookmarks.md) peuvent prendre en charge les orientations portrait et paysage, mais actuellement la taille ne peut pas être modifiée. Pour faciliter le test, l’aperçu de signet affiche un PowerApp entièrement fonctionnel.
 1. Sélectionnez **Publier** ou **Enregistrer en tant que brouillon**.
 
@@ -88,10 +88,10 @@ Les balises non pris en compte sont ignorées ou affichées en tant que texte. V
 
 ## <a name="locations"></a>Emplacements
 
-Avec [Locations,](manage-locations.md)vos utilisateurs peuvent trouver des adresses et localiser les bâtiments de votre organisation. La **fonctionnalité Emplacements** fournit un emplacement précis pour les bureaux, les campus et les bâtiments, ainsi que des instructions et la navigation. Pour obtenir de meilleurs résultats, les administrateurs doivent ajouter tous les emplacements importants de leur organisation Recherche Microsoft. Contrairement [aux signets](manage-bookmarks.md) [et aux signets&A,](manage-qas.md)l’index des emplacements n’est pas actualisé immédiatement. L’apparition d’emplacements nouveaux ou modifiés dans les résultats de la recherche peut prendre plusieurs heures.
+Avec [Locations,](manage-locations.md)vos utilisateurs peuvent trouver des adresses et localiser les bâtiments de votre organisation. La **fonctionnalité Emplacements** fournit un emplacement précis pour les bureaux, les campus et les bâtiments, ainsi que des instructions et la navigation. Pour obtenir de meilleurs résultats, les administrateurs doivent ajouter tous les emplacements importants de leur organisation Recherche Microsoft. Contrairement [aux signets](manage-bookmarks.md) [et aux&A,](manage-qas.md)l’index emplacements ne s’actualise pas immédiatement. L’apparition d’emplacements nouveaux ou modifiés dans les résultats de la recherche peut prendre plusieurs heures.
 
 ## <a name="get-started"></a>Prise en main
-Pour savoir ce dont vos utilisateurs ont besoin et faciliter la découverte de ces informations, essayez certaines de ces méthodes :
+Pour savoir ce dont vos utilisateurs ont besoin et faciliter la découverte de ces informations, essayez certaines des méthodes ci-après :
 
 - Utilisez les journaux de recherche intranet pour identifier les sites et les pages qui génèrent le plus de trafic.
 - Identifiez les applications, les sites et les outils utilisés sur une base quotidienne ou hebdomadaire.
@@ -99,7 +99,7 @@ Pour savoir ce dont vos utilisateurs ont besoin et faciliter la découverte de c
 - Identifiez les stratégies et processus que les utilisateurs doivent connaître.
 - Déterminez qui les utilisateurs contactent pour obtenir de l’aide et comment ils le font.
 - Obtenez des informations qui sont nécessaires de manière récurrente, soit de manière annuelle, soit en fonction des cycles d’entreprise. Par exemple, les personnes qui recherchent des outils pour réserver des congés ou des mises à jour financières trimestrielles.
-- Collecter des stratégies pour les utilisateurs régionaux ou mobiles. Voici quelques exemples d’avantages qui varient en fonction de l’emplacement.
+- Collecter des stratégies pour les utilisateurs régionaux ou mobiles. Par exemple, les avantages varient en fonction de l’emplacement.
 - Déterminer les sites internes et les informations pour les recherches web courantes. Par exemple, le trafic, les informations de transport public, la météo locale, les remises disponibles auprès des partenaires de l’entreprise et les programmes de santé et de santé.
 - Trouvez des informations sur les événements, conférences ou séminaires parrainés par l’entreprise.
 - Effectuez des recherches sur des sujets courants liés à l’informatique, aux ressources humaines et au support technique ainsi que les questions fréquentes (FAQ) et leurs réponses.
@@ -110,7 +110,7 @@ Dans une organisation, les utilisateurs recherchent une gamme de sujets simples 
 La plupart des administrateurs de recherche n’ont pas de connaissances spécifiques sur chaque sujet. Pour mettre à l’échelle la quantité de contenu disponible sans l’aide de ressources externes, recherchez des connaissances et des connaissances d’autres membres de votre organisation.
 
 ### <a name="get-content-from-smes"></a>Obtenir du contenu à partir de PME
-Tirez parti des experts techniques de votre organisation, notamment des experts en ressources humaines, en support technique, en ventes, en technologie et dans d’autres domaines clés. Les PME peuvent contribuer directement au contenu si vous les ajoutez en tant Recherche Microsoft éditeurs. 
+Tirez parti des experts techniques de votre organisation, notamment des experts en ressources humaines, en support technique, en ventes, en technologie et dans d’autres domaines clés. Les PME peuvent contribuer directement au contenu si vous les ajoutez en tant qu Recherche Microsoft éditeurs. 
 
 ### <a name="involve-your-users"></a>Impliquer les utilisateurs
 Demandez aux utilisateurs de suggérer des ressources à ajouter comme signets. Demandez également aux utilisateurs de signaler des erreurs telles que des liens rompus ou non valides.
@@ -148,14 +148,14 @@ Ez compte des recommandations et restrictions suivantes lorsque vous travaillez 
 - S’il existe un signet avec le même titre ou url dans le fichier existant, le signet est mis à jour avec les informations dans le fichier d’importation.
 - Tous les champs du fichier de modèle ne sont pas obligatoires et les champs requis varient en fonction de l’état du signet.
 - En fonction du *champ État,* les signets sont enregistrés en tant que brouillons, **suggérés** ou  **programmés.** Dans le cas contraire, ils sont publiés automatiquement.
-- Si vous gérez plusieurs organisations, vous pouvez exporter vos signets à partir d’une organisation et les importer dans une autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne *ID*.
+- Si vous gérez plusieurs organisations, vous pouvez exporter vos signets d’une organisation et les importer dans une autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne *ID*.
 
 > [!Note]
 > Vous ne pouvez pas importer d’éléments de composant en cas d’erreurs dans le fichier de modèle. Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement formaté et qu’il inclut toutes les informations requises.
 
 ### <a name="prevent-import-errors"></a>Éviter les erreurs d’importation
 
-Vous obtenez un message d’erreur si des données requises sont manquantes ou non valides. Un fichier journal génère des informations supplémentaires sur les lignes et les colonnes à corriger. A effectuer les modifications nécessaires et essayez à nouveau d’importer le fichier. Vous ne pouvez pas importer ou enregistrer de signets tant que toutes les erreurs n’ont pas été résolues.
+Vous obtenez un message d’erreur si des données requises sont manquantes ou non valides. Un fichier journal génère des informations supplémentaires sur les lignes et les colonnes à corriger. A effectuer les modifications nécessaires et essayez à nouveau d’importer le fichier. Vous ne pouvez pas importer ou enregistrer de signet tant que toutes les erreurs n’ont pas été résolues.
 
 Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement formaté et répond aux exigences ci-après :
 - La ligne d’en-tête et toutes les colonnes du modèle d’importation sont incluses.
@@ -193,7 +193,7 @@ Grâce aux paramètres de recherche, vous pouvez personnaliser votre contenu et 
 
 ## <a name="test-your-content"></a>Tester votre contenu
 Après avoir créé [des signets](manage-bookmarks.md) et [des&R,](manage-qas.md)vérifiez les résultats ci-après :
-- Le signet ou le signet Q&A s’affiche.
+- Le signet ou le signet Q&A correct s’affiche.
 - Tout le contenu regroupé avec des mots clés apparaît ensemble comme prévu.
 - Rien d’inattendu n’apparaît dans les réponses de recherche.
 - Le signet ou le signet&A a suffisamment d’informations.
@@ -201,8 +201,8 @@ Après avoir créé [des signets](manage-bookmarks.md) et [des&R,](manage-qas.md
 Les utilisateurs et les PME qui contribuent à la création de contenu peuvent aider à tester et valider les résultats de la recherche.
 
 ## <a name="review-and-update-periodically"></a>Vérification et mise à jour de manière périodique
-Les informations faisant autorité [telles](manage-bookmarks.md) que les signets [et les&A doivent](manage-qas.md) rester à jour. Prenez les mesures suivantes régulièrement :
-- Corrigez ou supprimez les URL incorrectes et non valides.
+Les informations faisant autorité [telles](manage-bookmarks.md) que les signets [et les&A doivent](manage-qas.md) rester à jour. Prenez régulièrement les mesures suivantes :
+- Corriger ou supprimer les URL incorrectes et non valides.
 - Supprimez les signets ou les&A qui ne sont plus pertinents.
 - vérifier si des changements d’outil, de nom de site ou de nom d’équipe sont intervenus ;
 - Envisagez si le signet ou le signet&A fait suffisamment autorité ou nécessite une description plus claire.

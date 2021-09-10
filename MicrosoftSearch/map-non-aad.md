@@ -6,24 +6,24 @@ manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Étapes sur la façon de mameler des identités non-AAD
-ms.openlocfilehash: bece23677f07f10d40471fb6ec27c2d96e7018fb
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: f433da10347ef59acf7675ec65da8acbd7f0f347
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470304"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973451"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>Ma cartographier vos identités autres qu’Azure AD  
 
 Cet article vous explique les étapes de mappage de vos identités non-Azure AD à vos identités Azure AD afin que les personnes de votre liste de contrôle d’accès (ACL) avec des identités non Azure AD peuvent voir les résultats de recherche de connecteur qui leur sont spécifiques.
 
-Ces étapes sont uniquement pertinentes pour les administrateurs de recherche qui sont en train de définir des connecteurs [ServiceNow](servicenow-connector.md) ou [Salesforce](salesforce-connector.md) par Microsoft avec des autorisations de recherche pour « Seules les personnes ayant accès à cette source de données » et le type d’identité « Non-AAD ».
+Ces étapes sont uniquement pertinentes pour les administrateurs de recherche qui sont en train de définir des connecteurs [Cloud](confluence-cloud-connector.md)Cloud, [ServiceNow Knowledge,](servicenow-knowledge-connector.md) [ServiceNow Catalog](servicenow-catalog-connector.md) ou [Salesforce](salesforce-connector.md) par Microsoft avec des autorisations de recherche pour « Uniquement les personnes ayant accès à cette source de données » et le type d’identité « Non-AAD ».
 
 >[!NOTE]
 >Si vous devez définir un connecteur Salesforce et sélectionner uniquement les personnes ayant accès à cette **source** de données et au type d’identité **AAD** sur l’écran d’autorisations de recherche, reportez-vous à l’article Ma cartographier vos [identités Azure AD](map-aad.md) pour obtenir des étapes sur la façon de mameler les identités Azure AD.  
@@ -44,9 +44,9 @@ Vous pouvez sélectionner l’une des propriétés Azure AD suivantes :
 
 ### <a name="2-select-non-azure-ad-user-properties-to-map"></a>2. Sélectionnez les propriétés utilisateur autres qu’Azure AD à ma map
 
-Vous pouvez sélectionner des propriétés non Azure AD tirées de votre source de données pour appliquer des expressions régulières. Pour en savoir plus sur l’endroit où trouver ces propriétés dans votre source de données, consultez les pages [ServiceNow](servicenow-connector.md) et [Salesforce.](salesforce-connector.md)  
+Vous pouvez sélectionner des propriétés non Azure AD tirées de votre source de données pour appliquer des expressions régulières. Pour en savoir plus sur l’endroit où trouver ces propriétés dans votre source de données, consultez les pages [Cloud Cloud,](confluence-cloud-connector.md) [ServiceNow Knowledge,](servicenow-knowledge-connector.md) [ServiceNow Catalog](servicenow-catalog-connector.md) et [Salesforce.](salesforce-connector.md)  
 
-Vous pouvez sélectionner une propriété utilisateur non Azure AD dans ladown et fournir une expression régulière à appliquer à ces valeurs de propriété utilisateur. Pour en savoir plus sur les expressions régulières, consultez [la référence des expressions régulières.]( https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)  
+Vous pouvez sélectionner une propriété utilisateur non Azure AD dans ladown et fournir une expression régulière à appliquer à ces valeurs de propriété utilisateur.
 
 Voici quelques exemples d’expressions régulières et leurs sorties appliquées à un exemple de chaîne : 
 

@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Configurer le connecteur d’Graph MediaWiki pour Recherche Microsoft
 ms.openlocfilehash: 7e1c308eb1785dd7fec23fac7e9002957a0d50ca
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701948"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973494"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -35,7 +35,7 @@ Cet article est réservé à toute personne qui configure, exécute et surveille
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d'administration Microsoft 365
 
 Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->

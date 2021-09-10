@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Configurer la fonctionnalité Recherche Microsoft pour la première fois.
 ms.openlocfilehash: b1ddc3c32036b1fe3b86d38926bec86f626736f4
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701461"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973519"
 ---
 # <a name="set-up-microsoft-search"></a>Configurer la fonctionnalité Recherche Microsoft
 
@@ -31,7 +31,7 @@ La fonctionnalité Recherche Microsoft est activée par défaut pour toutes les 
 
 Vous gérez Recherche Microsoft à partir du Centre d’administration Microsoft 365.
 
-1. In Centre d’administration Microsoft 365, go to **Paramètres**  >  [**Search & intelligence**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch).
+1. In Centre d'administration Microsoft 365, go to **Paramètres**  >  [**Search & intelligence**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch).
 
 En tant qu’administrateur, vous devez tenir compte de certains éléments pour rendre l’expérience Recherche Microsoft efficace et conviviale au sein de votre organisation.
 

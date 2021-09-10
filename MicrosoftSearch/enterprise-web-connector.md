@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Configurer le connecteur Enterprise sites web Graph pour Recherche Microsoft
 ms.openlocfilehash: 2461a447b07dec827c8cf699865c027b01e42608
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702164"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973512"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -26,7 +26,7 @@ ms.locfileid: "58702164"
 
 # <a name="enterprise-websites-graph-connector"></a>Enterprise sites web Graph connecteur
 
-Le connecteur Enterprise sites web Graph permet à votre organisation d’indexer des articles et du contenu à partir de ses sites web **internes.** Après avoir configuré le connecteur et synchronisé le contenu à partir du site web, les utilisateurs finaux peuvent rechercher ce contenu à partir de n’importe quel client Recherche Microsoft client.
+Le connecteur Enterprise sites web Graph permet à votre organisation d’indexer des articles et du contenu à partir de ses sites web **internes.** Après avoir configuré le connecteur et synchronisé le contenu à partir du site web, les utilisateurs finaux peuvent rechercher ce contenu à partir de n’Recherche Microsoft client.
 
 > [!NOTE]
 > Lisez [**l’article Configurer votre connecteur Graph pour**](configure-connector.md) comprendre les instructions générales Graph d’installation des connecteurs.
@@ -37,7 +37,7 @@ Cet article est réservé à toute personne qui configure, exécute et surveille
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d’administration Microsoft 365
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>Étape 1 : Ajouter un connecteur Graph dans le Centre d'administration Microsoft 365
 
 Suivez les [instructions d’installation générales.](./configure-connector.md)
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -85,7 +85,7 @@ Pour vos sites web locaux, sélectionnez **Agent** comme mode d’analyse et, da
 
 ### <a name="authentication"></a>Authentification
 
-L’authentification de base nécessite un nom d’utilisateur et un mot de passe. Créez ce compte de bot à l’aide [Centre d’administration Microsoft 365](https://admin.microsoft.com).
+L’authentification de base nécessite un nom d’utilisateur et un mot de passe. Créez ce compte de bot à l’aide [Centre d'administration Microsoft 365](https://admin.microsoft.com).
 
 OAuth 2.0 avec [Azure AD](/azure/active-directory/) nécessite un ID de ressource, un ID client et une secret client. OAuth 2.0 fonctionne uniquement avec le mode Cloud.
 
@@ -96,7 +96,7 @@ Pour plus d’informations, voir [Authorize access to Azure Active Directory web
 
 Pour obtenir les valeurs de la ressource, client_id et client_secret, accédez à Utiliser le **code** d’autorisation pour demander un jeton d’accès sur la page web de l’URL de redirection.
 
-Pour plus d’informations, voir Démarrage rapide : inscrire [une application auprès du Plateforme d’identités Microsoft](/azure/active-directory/develop/quickstart-register-app).
+Pour plus d’informations, voir Démarrage rapide : inscrire [une application avec le Plateforme d'identités Microsoft](/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>Étape 3a : Ajouter des URL à exclure (restrictions d’analyse facultatives)
 
@@ -112,7 +112,7 @@ Vous pouvez éventuellement créer une liste **d’exclusions** pour exclure cer
 
 ## <a name="step-4-assign-property-labels"></a>Étape 4 : Attribuer des étiquettes de propriété
 
-Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Bien que cette étape ne soit pas obligatoire, le fait d’avoir des étiquettes de propriétés améliorera la pertinence de la recherche et garantira des résultats de recherche plus précis pour les utilisateurs finaux.
+Vous pouvez affecter une propriété source à chaque étiquette en choisissant dans un menu d’options. Bien que cette étape ne soit pas obligatoire, le fait d’avoir certaines étiquettes de propriétés améliorera la pertinence de la recherche et garantira des résultats de recherche plus précis pour les utilisateurs finaux.
 
 ## <a name="step-5-manage-schema"></a>Étape 5 : Gérer le schéma
 

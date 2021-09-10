@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Comment personnaliser l’expérience de zone de recherche sur SharePoint sites
 ms.openlocfilehash: b5d58dd5a241ccf2ada556c44ec0ea5479ea2e2b
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701975"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973785"
 ---
 # <a name="search-box-settings-on-sharepoint-sites"></a>Paramètres de zone de recherche sur SharePoint sites
 
@@ -28,7 +28,7 @@ Pour d’autres options de personnalisation, voir Modification de la page de ré
 > [!NOTE]
 > La zone de recherche de la barre de navigation de suite n’est pas disponible pour tous les clients pour le moment, mais ces options peuvent toujours être définies maintenant et elles prennent effet dès qu’elles sont disponibles.
 
-Pour les tâches répertoriées ci-dessous, vous utiliserez PowerShell avec SharePoint extensions PowerShell PnP. Vous pouvez installer et en savoir plus sur la façon de commencer [ici.](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps) Vous vous connectez à votre site ou collection de sites à l’aide de la commande ci-après :
+Pour les tâches répertoriées ci-dessous, vous utiliserez PowerShell avec SharePoint extensions PowerShell PnP. Vous pouvez installer et en savoir plus sur la façon de commencer [ici.](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps) Vous vous connectez à votre site ou collection de sites à l’aide de cette commande :
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
@@ -88,7 +88,7 @@ Plusieurs points sont à prendre en considération :
 
 * Cette solution supprime également la zone de recherche des listes et des bibliothèques de votre site. Votre solution de recherche personnalisée doit prendre en compte les recherches contextuelles pour SharePoint listes et bibliothèques, en plus de la recherche à l’échelle du site.
 
-* Si vous appliquez le paramètre au site racine de votre domaine, la page SharePoint de démarrage cessera également d’afficher la zone de recherche.
+* Si vous appliquez le paramètre au site racine de votre domaine, la page d SharePoint de démarrage cessera également d’afficher la zone de recherche.
 
 ## <a name="changing-the-hint-displayed-in-the-search-box"></a>Modification de l’indication affichée dans la zone de recherche
 

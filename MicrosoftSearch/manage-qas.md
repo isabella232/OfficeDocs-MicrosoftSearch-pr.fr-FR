@@ -14,19 +14,19 @@ search.appverid:
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: Recherchez et mettez à jour les réponses individuellement ou utilisez les outils Recherche Microsoft disponibles pour modifier la&en même temps.
 ms.openlocfilehash: 2ee42e3feaf5c14b2af820360f753ecc2e116f9b
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701984"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973681"
 ---
 # <a name="manage-qas"></a>Gérer les Q&R
 
-La création de Q&R s’apparente à celle de signets. Q&vous permettre de répondre aux questions de l’utilisateur au lieu de simplement fournir un lien vers une page web. Vous pouvez également formater la réponse en texte enrichi. Si un signet et un signet&A partagent le même mot clé, le résultat du signet s’affiche en premier. Comme les signets, la&un index est actualisé immédiatement après l’ajout ou la&A.
+La création de Q&R s’apparente à celle de signets. Q&vous permettre de répondre aux questions de l’utilisateur au lieu de simplement fournir un lien vers une page web. Vous pouvez également formater la réponse en texte enrichi. Si un signet et un signet&A partagent le même mot clé, le résultat du signet s’affiche en premier. Comme les signets, la&Q est actualisée immédiatement après l’ajout ou la&A.
 
 ## <a name="add-or-edit-a-single-qa"></a>Ajouter ou modifier un seul élément Q&R
 
-1. Dans la [Centre d’administration Microsoft 365,](https://admin.microsoft.com)allez à [**Q&A**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
+1. Dans la [Centre d'administration Microsoft 365,](https://admin.microsoft.com)allez à [**Q&A**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
 1. Pour ajouter une question&R, sélectionnez **Ajouter.**
 Pour modifier un élément Q&R, sélectionnez-le dans la liste. Lorsque vous ajoutez ou modifiez les informations, l’aperçu est automatiquement mis à jour.
 1. Enregistrez vos modifications.
@@ -69,14 +69,14 @@ Les administrateurs peuvent utiliser les fonctionnalités d’importation et d�
 
 Utilisez la Import/Export pour :
 
-- Ajoutez en bloc des&- Ajoutez des détails dans le fichier de modèle&A, puis importez-le.
-- Modification en bloc de Q&- Exporter les Q&Comme à un fichier .csv, modifier les détails de la&Q dans le fichier exporté, puis importer le fichier.
+- Ajoutez en bloc des&- Ajoutez des détails dans le fichier de modèle&Q, puis importez-le.
+- Modification en bloc de Q&- Exporter les Q&Comme à un fichier .csv, modifiez les détails de la&Q dans le fichier exporté, puis importez le fichier.
 - Back up&Q As - Export Q&As to a .csv file.
 
 Pour importer ou exporter des Q&comme :
 
 1. Dans le coin supérieur droit de l’onglet Q&R, sélectionnez **Importer**.
-Sélectionnez **Exporter** pour télécharger toutes les données Q&comme dans un .csv existant.
+Sélectionnez **Exporter** pour télécharger toutes les Q&comme dans un .csv existant.
 1. Dans le volet droit, sélectionnez l’option à importer à l’aide d'.csv fichier. Téléchargez le fichier modèle pour obtenir la liste des champs et détails requis.
 1. Ajoutez ou modifiez Q&détails dans le fichier de modèle et enregistrez-le sur votre ordinateur.
 1. Dans le **volet Importer&A,** sélectionnez **Parcourir,** puis sélectionnez .csv fichier à importer.
@@ -89,7 +89,7 @@ Conseils importants sur les fichiers de modèles :
 - S’il existe un signet ayant le même titre ou la même URL, le signet est mis à jour avec les informations dans le fichier d’importation.
 - Tous les champs du fichier de modèle ne sont pas obligatoires et les champs requis varient en fonction de l’état du signet.
 - En fonction du **champ État,** les signets sont enregistrés en tant que brouillons, suggérés ou programmés, ou ils sont publiés automatiquement.   
-- Pour les partenaires qui gèrent plusieurs organisations : vous pouvez exporter vos signets à partir d’une organisation et les importer dans une autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne **ID**.
+- Pour les partenaires qui gèrent plusieurs organisations : vous pouvez exporter vos signets d’une organisation et les importer dans une autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne **ID**.
 
 > [!NOTE]
 > Vous ne pouvez pas importer Q&comme s’il y avait des erreurs dans le fichier modèle. Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement formaté et incluez toutes les informations requises.

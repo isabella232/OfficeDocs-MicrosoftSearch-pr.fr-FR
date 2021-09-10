@@ -6,18 +6,18 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Obtenez une vue d’ensemble de ce Recherche Microsoft, de ses avantages et des applications qui la Recherche Microsoft.
-ms.openlocfilehash: 271742f7f440004db039b4352b9486445508d3f0
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 29a6db642ac9cc787b8cbec45aec609f55722206
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470331"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973482"
 ---
 # <a name="overview-of-microsoft-search"></a>Vue d’ensemble de Recherche Microsoft
 
@@ -27,7 +27,7 @@ Recherche Microsoft permet aux utilisateurs de trouver les réponses, les person
 
 - Les utilisateurs obtiennent des résultats pertinents dans le **contexte** de l’application à partir de laquelle ils effectuent la recherche. Par exemple, lorsqu’ils recherchent dans [Microsoft Outlook,](https://www.microsoft.com/outlook)ils trouvent des e-mails et ne peuvent [pas SharePoint](http://sharepoint.com/) sites. Lorsqu’ils recherchent dans SharePoint, ils trouvent des sites, pages et fichiers.
 - Quelle que soit l’application dans laquelle les utilisateurs travaillent ; Recherche Microsoft est **personnel**. Recherche Microsoft utilise les informations de [Microsoft Graph](https://developer.microsoft.com/graph/) pour afficher les résultats pertinents pour chaque utilisateur. Chaque utilisateur peut voir des résultats différents, même s’ils cherchaient les même mots. Ils voient uniquement les résultats qu’ils ont déjà accès Recherche Microsoft ne modifient pas les autorisations.
-- Les utilisateurs n’ont pas besoin de se souvenir où se trouvent les informations. Par exemple, un utilisateur travaille dans [Microsoft Word](https://products.office.com/word) et souhaite réutiliser les informations d’une présentation qu’un collègue a partagée à partir de [son OneDrive](https://onedrive.live.com/about/). Il n’est pas nécessaire de basculer vers OneDrive et de rechercher cette présentation, ils peuvent simplement effectuer une recherche à partir de Word.
+- Les utilisateurs n’ont pas besoin de se souvenir où se trouvent les informations. Par exemple, un utilisateur travaille dans [Microsoft Word](https://products.office.com/word) et souhaite réutiliser les informations d’une présentation qu’un collègue a partagées à partir de [son OneDrive](https://onedrive.live.com/about/). Il n’est pas nécessaire de basculer vers OneDrive et de rechercher cette présentation, ils peuvent simplement effectuer une recherche à partir de Word.
 - Dans [Bing](https://bing.com), les utilisateurs obtiennent des résultats relatifs à leur organisation en plus des résultats web publics.
 
 ## <a name="what-users-see"></a>Ce que voient les utilisateurs
@@ -40,7 +40,7 @@ Lorsque les utilisateurs cliquent dans la zone de recherche, la recherche suggè
 
 ![Captures d’écran de la Recherche Microsoft avec une requête et des résultats suggérés.](media/SERP_text_520.png)
 
-Si les suggestions dans la zone de recherche ne sont pas ce que les utilisateurs recherchent, **Entrée** ouvre la liste complète des résultats. Ils peuvent utiliser des métadonnées telles que la dernière modification de l’élément et quand, l’emplacement de l’élément, ainsi que l’aperçu pour déterminer s’il s’agit de ce qu’ils recherchent.
+Si les suggestions dans la zone de recherche ne sont pas ce que les utilisateurs recherchent, **Entrée** ouvre la liste complète des résultats. Ils peuvent utiliser des métadonnées telles que qui a modifié l’élément en dernier et quand, où se trouve l’élément, et l’afficher en aperçu pour déterminer s’il s’agit de ce qu’ils recherchent.
 
 ![Captures d’écran de Recherche Microsoft page de résultats.](media/search_box.png)
 
@@ -70,7 +70,7 @@ En tant qu’administrateur, vous pouvez créer une expérience Recherche Micros
 
 Recherche Microsoft affiche le contenu que votre organisation a stocké dans Microsoft 365 ou indexé par le biais de connecteurs. Recherche Microsoft recherche pas sur les locataires ou n’affiche pas les résultats du contenu partagé par d’autres organisations. Si votre organisation a installé un environnement SharePoint hybride à l’aide de la recherche hybride sur le cloud, Recherche Microsoft renvoie les résultats de recherche à partir du contenu SharePoint en ligne et local, y compris tout contenu externe que vous avez connecté à votre environnement SharePoint Server. [Apprenez-en davantage sur les environnements hybrides de recherche](/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint).
 
-Les utilisateurs obtiennent les mêmes résultats de recherche qu’ils obtiennent à partir d’autres emplacements et ils obtiennent également des résultats à partir d’Internet.
+Les utilisateurs obtiennent les mêmes résultats de recherche qu’ils obtiennent à partir d’autres emplacements et obtiennent également des résultats à partir d’Internet.
 
 ## <a name="how-microsoft-search-works"></a>Fonctionnement Recherche Microsoft’entreprise
 

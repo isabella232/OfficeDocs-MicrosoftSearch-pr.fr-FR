@@ -1,9 +1,11 @@
 - name: Planifier la Recherche Microsoft
   items:
-    - name: Vue d’ensemble
+    - name: Présentation
       href: overview-microsoft-search.md
     - name: Configurer
       href: setup-microsoft-search.md
+    - name: Gérer l’accès aux fichiers et aux sites
+      href: manage-access-files-sites.md
     - name: Foire aux questions
       href: faqs.md
 - name: Obtenir des informations
@@ -32,7 +34,7 @@
   items:
     - name: Connecteurs graphiques
       items:
-        - name: Vue d’ensemble
+        - name: Présentation
           href: connectors-overview.md
         - name: galerie Connecteurs
           href: connectors-gallery.md
@@ -54,6 +56,10 @@
                   href: azure-devops-connector.md
                 - name: Azure SQL et Microsoft SQL Server
                   href: MSSQL-connector.md
+                - name: Cloud Cloud Cloud (prévisualisation)
+                  href: confluence-cloud-connector.md
+                - name: Jira Cloud (prévisualisation)
+                  href: jira-connector.md
                 - name: Sites web d’entreprise
                   href: enterprise-web-connector.md
                 - name: Partage de fichiers
@@ -64,8 +70,10 @@
                   href: OracleSQL-connector.md
                 - name: Salesforce
                   href: salesforce-connector.md
-                - name: ServiceNow
-                  href: servicenow-connector.md
+                - name: Catalogue ServiceNow (prévisualisation)
+                  href: servicenow-catalog-connector.md
+                - name: Connaissances ServiceNow
+                  href: servicenow-knowledge-connector.md
         - name: Gérer les connexions
           items:
             - name: Surveiller la connectivité
@@ -92,7 +100,7 @@
       href: custom-filters.md
     - name: Recherche Microsoft dans SharePoint
       items:
-        - name: Vue d’ensemble
+        - name: Présentation
           href: get-started-search-in-sharepoint-online.md
         - name: Créer une page de résultats de recherche personnalisée
           href: create-search-results-pages.md
