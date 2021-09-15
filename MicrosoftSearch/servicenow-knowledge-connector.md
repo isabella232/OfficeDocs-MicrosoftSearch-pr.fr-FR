@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Configurer le connecteur d’Graph de connaissances ServiceNow pour Recherche Microsoft
 ms.openlocfilehash: 8052571124a74dfa92e5cd81deceee044081ecc1
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973463"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376047"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -89,7 +89,7 @@ Secret client | Avec cette chaîne secrète partagée, l’instance ServiceNow e
 URL de redirection | URL de rappel requise vers qui le serveur d’autorisation redirige. | https://gcs.office.com/v1.0/admin/oauth/callback
 Logo URL | URL qui contient l’image du logo de l’application. | N/A
 Actif | Activez la case à cocher pour rendre le Registre d’application actif. | Définir sur actif
-Durée de vie du jeton d’actualisation | Nombre de secondes de validité d’un jeton d’actualisation. Par défaut, les jetons d’actualisation expirent dans 100 jours (8 640 000 secondes). | 31 536 000 (1 an)
+Durée de vie du jeton d’actualisation | Nombre de secondes de validité d’un jeton d’actualisation. Par défaut, les jetons d’actualisation expirent dans les 100 jours (8 640 000 secondes). | 31 536 000 (1 an)
 Durée de vie du jeton d’accès | Nombre de secondes de validité d’un jeton d’accès. | 43 200 (12 heures)
 
 Entrez l’ID client et la secret client pour vous connecter à votre instance. Une fois connecté, utilisez les informations d’identification d’un compte ServiceNow pour authentifier l’autorisation d’analyse. Le compte doit au moins avoir un **rôle de** connaissance. Reportez-vous au tableau au début de l’étape 3 : [paramètres](#step-3-connection-settings) de connexion pour fournir un accès en lecture à d’autres enregistrements de table ServiceNow et indexer les autorisations des critères utilisateur.
@@ -163,7 +163,7 @@ L’instance ServiceNow a besoin de la configuration suivante :
    Champ | Valeur recommandée
    --- | ---
    Fournisseur OIDC |  Azure AD
-   URL des métadonnées OIDC | L’URL doit prendre la forme https \: //login.microsoftonline.com/<tenandId">/.well-known/openid-configuration <br/>Remplacez « tenantID » par l’ID d’annuaire (client) de l’étape 3.a.
+   URL des métadonnées OIDC | L’URL doit être au formulaire https \: //login.microsoftonline.com/<tenandId">/.well-known/openid-configuration <br/>Remplacez « tenantID » par l’ID d’annuaire (client) de l’étape 3.a.
    Durée de vie du cache de configuration OIDC |  120
    Application | Global
    Revendication de l’utilisateur | sub
@@ -213,7 +213,7 @@ Pour identifier l’option qui convient à votre organisation :
 2. Choisissez **l’option Non-AAD** si l’ID de messagerie des utilisateurs serviceNow est **différent** de l’UPN (UserPrincipalName) des utilisateurs dans AAD. 
 
 >[!NOTE]
-> * Si vous choisissez AAD comme type de source d’identité, le connecteur mase les ID de messagerie des utilisateurs obtenus à partir de ServiceNow directement à la propriété UPN à partir d’AAD.
+> * Si vous choisissez AAD comme type de source d’identité, le connecteur masce les ID de messagerie des utilisateurs obtenus à partir de ServiceNow directement à la propriété UPN à partir d’AAD.
 > * Si vous avez choisi « Non-AAD » pour le type d’identité, voir Mappage de vos [identités non-Azure AD](map-non-aad.md) pour obtenir des instructions sur le mappage des identités. Vous pouvez utiliser cette option pour fournir l’expression régulière de mappage de l’ID de messagerie vers l’UPN.
 
 
@@ -257,7 +257,7 @@ Si votre organisation a activé l'Sign-On (SSO) sur ServiceNow, vous risquez de 
 Si vous voyez une réponse interdite ou non autorisée dans l’état de connexion, vérifiez si le compte de service a requis l’accès aux tables mentionnées à l’étape [3 : paramètres de connexion.](#step-3-connection-settings) Vérifiez si toutes les colonnes des tableaux ont un accès en lecture.
 
 #### <a name="22-check-if-servicenow-instance-behind-firewall"></a>2.2. Vérifier si l’instance ServiceNow est derrière le pare-feu
-Graph Le connecteur peut ne pas être en mesure d’atteindre votre instance ServiceNow si elle se trouve derrière un pare-feu réseau. Vous devez autoriser explicitement l’accès Graph service Connecteur. Vous trouverez la plage d’adresses IP publiques Graph Service Connecteur dans le tableau ci-dessous. En fonction de votre région de client, ajoutez-la à votre liste d’instances réseau de ServiceNow.
+Graph Le connecteur peut ne pas être en mesure d’atteindre votre instance ServiceNow si elle se trouve derrière un pare-feu réseau. Vous devez autoriser explicitement l’accès Graph service Connecteur. Vous trouverez la plage d’adresses IP publiques Graph Connector Service dans le tableau ci-dessous. En fonction de votre région de client, ajoutez-la à votre liste d’instances réseau de ServiceNow.
 
 **Environnement** | **Région** | **Range**
 --- | --- | ---

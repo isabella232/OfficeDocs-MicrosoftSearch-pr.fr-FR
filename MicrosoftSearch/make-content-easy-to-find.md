@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Créez des signets, des emplacements et des Q&R pour accéder facilement au contenu de votre organisation.
 ms.openlocfilehash: 77b6507c7643e6cf2176f37a9a2cf0def1c640ba
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973672"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375856"
 ---
 # <a name="make-content-easy-to-find"></a>Faciliter l’accès au contenu
 
@@ -52,7 +52,7 @@ Avec [PowerApps,](integrate-powerapps.md)vous pouvez créer des applications pro
 1. Recherchez [l’ID d’application](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) pour l’application PowerApp que vous souhaitez ajouter.
 1. Dans le Microsoft 365 [d’administration,](https://admin.microsoft.com) Paramètres  >  **Recherche Microsoft**. 
 1. Ajoutez un nouveau signet ou accédez à un signet existant auquel vous souhaitez ajouter une application PowerApp.
-1. Dans **les paramètres de signet,** **sélectionnez Power App.** Ensuite, **sélectionnez Ajouter une application Power App.**
+1. Dans **les paramètres de signet,** **sélectionnez Power App.** Ensuite, **sélectionnez Ajouter une application Power.**
 1. Entrez **l’ID de l’application.** La hauteur et la largeur s’ajustent automatiquement. [Les signets](manage-bookmarks.md) peuvent prendre en charge les orientations portrait et paysage, mais actuellement la taille ne peut pas être modifiée. Pour faciliter le test, l’aperçu de signet affiche un PowerApp entièrement fonctionnel.
 1. Sélectionnez **Publier** ou **Enregistrer en tant que brouillon**.
 
@@ -88,10 +88,10 @@ Les balises non pris en compte sont ignorées ou affichées en tant que texte. V
 
 ## <a name="locations"></a>Emplacements
 
-Avec [Locations,](manage-locations.md)vos utilisateurs peuvent trouver des adresses et localiser les bâtiments de votre organisation. La **fonctionnalité Emplacements** fournit un emplacement précis pour les bureaux, les campus et les bâtiments, ainsi que des instructions et la navigation. Pour obtenir de meilleurs résultats, les administrateurs doivent ajouter tous les emplacements importants de leur organisation Recherche Microsoft. Contrairement [aux signets](manage-bookmarks.md) [et aux&A,](manage-qas.md)l’index emplacements ne s’actualise pas immédiatement. L’apparition d’emplacements nouveaux ou modifiés dans les résultats de la recherche peut prendre plusieurs heures.
+Avec [Locations,](manage-locations.md)vos utilisateurs peuvent trouver des adresses et localiser les bâtiments de votre organisation. La **fonctionnalité Emplacements** fournit un emplacement précis pour les bureaux, les campus et les bâtiments, ainsi que des instructions et la navigation. Pour obtenir de meilleurs résultats, les administrateurs doivent ajouter tous les emplacements importants de leur organisation Recherche Microsoft. Contrairement [aux signets](manage-bookmarks.md) [et aux signets&A,](manage-qas.md)l’index des emplacements n’est pas actualisé immédiatement. L’apparition d’emplacements nouveaux ou modifiés dans les résultats de la recherche peut prendre plusieurs heures.
 
 ## <a name="get-started"></a>Prise en main
-Pour savoir ce dont vos utilisateurs ont besoin et faciliter la découverte de ces informations, essayez certaines des méthodes ci-après :
+Pour savoir ce dont vos utilisateurs ont besoin et faciliter la découverte de ces informations, essayez certaines de ces méthodes :
 
 - Utilisez les journaux de recherche intranet pour identifier les sites et les pages qui génèrent le plus de trafic.
 - Identifiez les applications, les sites et les outils utilisés sur une base quotidienne ou hebdomadaire.
@@ -148,10 +148,10 @@ Ez compte des recommandations et restrictions suivantes lorsque vous travaillez 
 - S’il existe un signet avec le même titre ou url dans le fichier existant, le signet est mis à jour avec les informations dans le fichier d’importation.
 - Tous les champs du fichier de modèle ne sont pas obligatoires et les champs requis varient en fonction de l’état du signet.
 - En fonction du *champ État,* les signets sont enregistrés en tant que brouillons, **suggérés** ou  **programmés.** Dans le cas contraire, ils sont publiés automatiquement.
-- Si vous gérez plusieurs organisations, vous pouvez exporter vos signets d’une organisation et les importer dans une autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne *ID*.
+- Si vous gérez plusieurs organisations, vous pouvez exporter vos signets à partir d’une organisation et les importer dans une autre. Avant l’importation, vous devez toutefois supprimer les données de la colonne *ID*.
 
 > [!Note]
-> Vous ne pouvez pas importer d’éléments de composant en cas d’erreurs dans le fichier de modèle. Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement formaté et qu’il inclut toutes les informations requises.
+> Vous ne pouvez pas importer d’éléments de composant en cas d’erreurs dans le fichier modèle. Pour éviter les erreurs, assurez-vous que votre fichier d’importation est correctement formaté et qu’il inclut toutes les informations requises.
 
 ### <a name="prevent-import-errors"></a>Éviter les erreurs d’importation
 
@@ -201,8 +201,8 @@ Après avoir créé [des signets](manage-bookmarks.md) et [des&R,](manage-qas.md
 Les utilisateurs et les PME qui contribuent à la création de contenu peuvent aider à tester et valider les résultats de la recherche.
 
 ## <a name="review-and-update-periodically"></a>Vérification et mise à jour de manière périodique
-Les informations faisant autorité [telles](manage-bookmarks.md) que les signets [et les&A doivent](manage-qas.md) rester à jour. Prenez régulièrement les mesures suivantes :
-- Corriger ou supprimer les URL incorrectes et non valides.
+Les informations faisant autorité [telles](manage-bookmarks.md) que les signets [et les&A doivent](manage-qas.md) rester à jour. Prenez les mesures suivantes régulièrement :
+- Corrigez ou supprimez les URL incorrectes et non valides.
 - Supprimez les signets ou les&A qui ne sont plus pertinents.
 - vérifier si des changements d’outil, de nom de site ou de nom d’équipe sont intervenus ;
 - Envisagez si le signet ou le signet&A fait suffisamment autorité ou nécessite une description plus claire.

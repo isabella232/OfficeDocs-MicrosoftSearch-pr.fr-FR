@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 description: Découvrez comment configurer un navigateur par défaut pour votre entreprise avec Microsoft Search (recherche Microsoft).
 ms.openlocfilehash: 745e4a81e4b53ff88b612cd19295cb89dc041ddc
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973651"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376044"
 ---
 # <a name="make-bingcom-the-default-home-page"></a>Configurer Bing.com en tant que page d’accueil par défaut
 
@@ -85,7 +85,7 @@ Les utilisateurs peuvent encore modifier la page d’accueil une fois cette stra
     
 5. Appuyez sur **F8** pour désactiver tous les paramètres avant de configurer quoi que ce soit. L’écran doit ressembler à ceci : 
     
-    ![Internet Explorer 10 de propriétés de l’Internet Explorer 10.](media/2fd55755-5007-4e33-a795-c42ce2fcef4a.jpg)
+    ![Internet Explorer 10 propriétés de l’Internet Explorer 10.](media/2fd55755-5007-4e33-a795-c42ce2fcef4a.jpg)
   
 6. Appuyez sur **F6** sur les paramètres de la page d’accueil et entrez `https://www.bing.com/business?form=BFBSPR`
     

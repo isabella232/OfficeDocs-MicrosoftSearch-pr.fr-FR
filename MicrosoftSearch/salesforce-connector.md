@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Configurer le connecteur Graph Salesforce pour Recherche Microsoft
 ms.openlocfilehash: c2679002affe494ba31777718d265b5526b744c0
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973476"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376062"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -109,7 +109,7 @@ Vérifiez que la connexion a réussi en recherchant une bannière verte qui indi
 
 ## <a name="step-4-select-properties"></a>Étape 4 : Sélectionner les propriétés
 
-Sélectionnez les objets Salesforce que vous souhaitez que le connecteur analyse et inclue dans les résultats de recherche. Si le contact est sélectionné, le compte est également automatiquement sélectionné.
+Sélectionnez les objets Salesforce que vous souhaitez que le connecteur analyse et inclue dans les résultats de la recherche. Si le contact est sélectionné, le compte est également automatiquement sélectionné.
 
 >[!NOTE]
 >Si un champ a la sécurité au niveau du champ (FLS) définie pour un profil, le connecteur n’ingétre pas ce champ pour les profils dans cette organisation Salesforce. Par conséquent, les utilisateurs ne pourront pas rechercher sur les valeurs de ces champs, ni s’afficher dans les résultats.
@@ -146,7 +146,7 @@ Vous pouvez affecter une propriété source à chaque étiquette en choisissant 
 
 ## <a name="step-7-manage-schema"></a>Étape 7 : Gérer le schéma
 
-Vous pouvez sélectionner les propriétés source qui doivent être indexées afin qu’elles s’afficheront dans les résultats de la recherche. L’Assistant Connexion sélectionne par défaut un schéma de recherche basé sur un ensemble de propriétés source. Vous pouvez le modifier en élecant les cases à cocher de chaque propriété et attribut de la page de schéma de recherche. Les attributs de schéma de recherche incluent recherche, requête, récupération et affiner.
+Vous pouvez sélectionner les propriétés source qui doivent être indexées afin qu’elles s’afficheront dans les résultats de la recherche. L’Assistant Connexion sélectionne par défaut un schéma de recherche basé sur un ensemble de propriétés source. Vous pouvez le modifier en élecntant les cases à cocher de chaque propriété et attribut de la page de schéma de recherche. Les attributs de schéma de recherche incluent recherche, requête, récupération et affiner.
 L’affinement vous permet de définir les propriétés qui peuvent être utilisées ultérieurement en tant qu’affinements ou filtres personnalisés dans l’expérience de recherche.  
 
 > [!div class="mx-imgBorder"]

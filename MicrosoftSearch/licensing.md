@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Conditions de licence et tarification pour la prévisualisation publique des connecteurs Microsoft Graph pour Recherche Microsoft
 ms.openlocfilehash: b62187f0618405bdd691f923437b7b1e0edea1f9
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973464"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375888"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -38,7 +38,7 @@ Pour indexer le contenu à Graph connecteurs d’index, vous devez avoir un quot
 
 ## <a name="entitlement-built-into-microsoft-365-or-office-365-e5-licenses"></a>Droits intégrés aux licences Microsoft 365 ou Office 365 E5 licences
 
-Les licences suivantes incluent le droit à 500 éléments de quota d’index, ce qui est comptabilisé dans le quota de votre organisation pour l’ingéré de contenu à partir de connecteurs Graph suivants :
+Les licences suivantes incluent le droit à 500 éléments de quota d’index, ce qui est comptabilisé dans le quota de votre organisation pour l’ingéré de contenu à partir de connecteurs Graph:
 
 * Le Microsoft 365 E5 ou le Office 365 E5
 * [Rubriques Microsoft Viva](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Examiner et agir sur les commentaires des utilisateurs dans Recherche Microsoft
-ms.openlocfilehash: 37ea70862cd4881170288339427f5ab1f150bf31
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.openlocfilehash: db2854205b3006328919e22bd69c11a075ffc15d
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973648"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334486"
 ---
 # <a name="managing-user-feedback"></a>Gestion des commentaires des utilisateurs
 
@@ -33,9 +33,9 @@ Lorsque les membres de votre organisation utilisent Recherche Microsoft, ils peu
 
 Les utilisateurs ont également la possibilité d’envoyer leur requête et d’autres informations de diagnostic, ainsi que la catégorie et les commentaires, à Microsoft. [En savoir plus](https://privacy.microsoft.com/en-US/privacystatement) sur la confidentialité et la façon dont nous protégeons ces données. Les données de diagnostic contiennent les informations les plus critiques dont Microsoft a besoin pour utiliser l’élément de commentaires pour l’amélioration du produit.
 
-La plupart des soumissions de commentaires apparaissent dans la section [Commentaires](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) du centre d Recherche Microsoft’administration. Les commentaires envoyés avec le je **souhaite** suggérer une catégorie de lien interne apparaissent en tant que signet suggéré dans la section [Signets](https://admin-ignite.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) et peuvent être vus en filtrant l’état **suggéré.**
+La plupart des soumissions de commentaires apparaissent dans la section [Commentaires](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) du centre d Recherche Microsoft’administration. Les commentaires envoyés avec le je **souhaite** suggérer une catégorie de lien interne apparaissent sous la mesure d’un signet suggéré dans la section [Signets](https://admin-ignite.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) et peuvent être vus en filtrant l’état **suggéré.**
 
-## <a name="review-feedback"></a>Commentaires sur l’avis
+## <a name="review-feedback"></a>Commentaires sur la révision
 
 Dans la page [Commentaires,](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) vous pouvez examiner et exporter les commentaires envoyés par les membres de votre organisation au cours des 30 derniers jours. Une fois qu’un utilisateur a soumis des commentaires, il apparaît dans cette liste dans les 20 minutes. Vous pouvez utiliser le bouton Actualiser pour vous assurer que vous regardez les données les plus récentes
 
@@ -66,7 +66,7 @@ Si vous souhaitez partager des commentaires de recherche avec d’autres personn
 
 ## <a name="send-user-feedback-to-microsoft"></a>Envoyer des commentaires aux utilisateurs à Microsoft
 
-Par défaut, tous les commentaires des utilisateurs sont envoyés à Microsoft et vous sont également envoyés. Pour arrêter d’envoyer des commentaires à Microsoft, cliquez sur Gérer les **paramètres** et cochez la case Envoyer automatiquement les commentaires des utilisateurs **à Microsoft.** L’application de cette modification peut prendre jusqu’à 24 heures.
+Par défaut, tous les commentaires des utilisateurs sont envoyés à Microsoft en plus de vous. Pour arrêter d’envoyer des commentaires à Microsoft, cliquez sur Gérer les **paramètres** et cochez la case Envoyer automatiquement les commentaires des utilisateurs **à Microsoft.** L’application de cette modification peut prendre jusqu’à 24 heures.
 
 Si vous avez décidé de ne pas envoyer automatiquement de commentaires à Microsoft, vous pouvez toujours envoyer des commentaires individuels à Microsoft.
 

@@ -13,15 +13,15 @@ search.appverid:
 - MOE150
 description: Vue d’ensemble de la façon dont les administrateurs peuvent s’assurer que l’accès aux sites et aux fichiers est correctement restreint au sein de leur organisation.
 ms.openlocfilehash: c19442e1d89ddfe65a772213a8b0225ca680d699
-ms.sourcegitcommit: 3e069fd920b5fcdfe97a0261930447e9e87d9013
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "58973817"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375715"
 ---
 # <a name="manage-access-to-files-and-sites"></a>Gérer l’accès aux fichiers et aux sites
 
-Tous les fichiers ou sites ne doivent pas être disponibles pour tous les membres de votre organisation. Les administrateurs et les utilisateurs peuvent gérer l’accès aux informations sensibles ou confidentielles à l’aide de solutions qui permettent de résoudre au mieux leurs problèmes spécifiques. Si des contrôles d’accès adéquats ne sont pas appliqués de manière cohérente, cela peut entraîner un « partage de partage ». En rendant plus facile la recherche d’informations partagées au sein de votre organisation, les fichiers et les sites avec des restrictions incorrectes sont accessibles par inadvertance à l’aide de Recherche Microsoft.
+Tous les fichiers ou sites ne doivent pas être disponibles pour tous les membres de votre organisation. Les administrateurs et les utilisateurs peuvent gérer l’accès aux informations sensibles ou confidentielles à l’aide de solutions qui permettent de résoudre au mieux leurs problèmes spécifiques. Si les contrôles d’accès adéquats ne sont pas appliqués de manière cohérente, cela peut entraîner un « partage de partage ». En rendant plus facile la recherche d’informations partagées au sein de votre organisation, les fichiers et les sites avec des restrictions incorrectes sont accessibles par inadvertance à l’aide de Recherche Microsoft.
 
 Les administrateurs de recherche ne peuvent pas résoudre ces problèmes de partage. Les fichiers et les sites sans accès restreint seront découverts dans les résultats de recherche internes et via d’autres moyens de découverte. Toutefois, lorsque des contrôles pour empêcher le partage sont en place, toutes les voies, y compris la recherche, sont fermées.
 

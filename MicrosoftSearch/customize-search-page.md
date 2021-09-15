@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Ajouter des secteurs verticaux de recherche et personnaliser les résultats de recherche
 ms.openlocfilehash: 1ca436a2617e32e285715e4fffd622dc7a571ca1
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973488"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375948"
 ---
 # <a name="customize-the-search-results-page"></a>Personnaliser la page des résultats de la recherche
 
@@ -131,7 +131,7 @@ Après avoir activé le secteur vertical, il y a un délai de quelques heures av
 
 ## <a name="profile-query-variables"></a>Variables de requête de profil
 
-Utilisez des variables dans la section requête KQL d’un secteur vertical pour fournir des données dynamiques en tant qu’entrée à la requête d’un secteur vertical. Vous pouvez utiliser des variables de requête de profil pour rendre les résultats de la recherche contextuels pour l’utilisateur. Les variables de requête de profil récupèrent les valeurs du profil de [l’utilisateur.](/graph/api/resources/profile)
+Utilisez des variables dans la section de requête KQL d’un secteur vertical pour fournir des données dynamiques en tant qu’entrée à la requête d’un secteur vertical. Vous pouvez utiliser des variables de requête de profil pour rendre les résultats de la recherche contextuels pour l’utilisateur. Les variables de requête de profil récupèrent des valeurs à partir du profil de [l’utilisateur.](/graph/api/resources/profile)
 
 Par exemple, pour créer un secteur vertical « Tickets » pour que l’utilisateur trouve les tickets de support qui lui sont affectés, vous pouvez spécifier la requête suivante dans la section « Requête » lors de la création verticale dans la page d’administration :  
 

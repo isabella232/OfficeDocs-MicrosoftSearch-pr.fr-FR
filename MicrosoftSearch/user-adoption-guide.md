@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 description: En savoir plus sur les méthodes et les processus pour vous aider à déployer Recherche Microsoft votre organisation
 ms.openlocfilehash: 1e33e17da92070eb4a887b4d5130a4c47b7cfe37
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973808"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376002"
 ---
 # <a name="user-adoption-guide"></a>Guide d’adoption par l’utilisateur
 
@@ -40,7 +40,7 @@ Le tableau indique la hiérarchie d’équipe et ce que chaque personne contribu
 |Propriétaire d'entreprise  <br/> |Identifier les scénarios de produit et d’utilisateur.  <br/> Déterminer les mesures de réussite pour les services et l’organisation.  <br/> |N’importe lequel  <br/> |
 |Équipe de gestion des changements  <br/> |Assurez-vous que la valeur du produit est facile à comprendre.  <br/> Créez un plan pour le déploiement.  <br/> |IT  <br/> |
 |Champions   <br/> |Insézez le produit aux pairs et aux équipes.  <br/> |Tout (personnel)  <br/> |
-|Administrateur de recherche  <br/> |Identifiez les membres principaux de l’équipe d’adoption utilisateur.  <br/> Gérez Recherche Microsoft, y compris l’apparence de l’expérience et la gestion continue.  <br/> Drive discussions to show the value of Recherche Microsoft.  <br/> |IT  <br/> |
+|Administrateur de recherche  <br/> |Identifier les membres principaux de l’équipe d’adoption utilisateur.  <br/> Gérez Recherche Microsoft, y compris l’apparence de l’expérience et la gestion continue.  <br/> Drive discussions to show the value of Recherche Microsoft.  <br/> |IT  <br/> |
 |Editors  <br/> |Créez du contenu dans Microsoft 365 [centre d’administration.](https://admin.microsoft.com)  <br/> |IT/Any  <br/> |
    
 ## <a name="stage-2-scenarios"></a>Étape 2 : Scénarios
@@ -69,7 +69,7 @@ Pour vous aider à atteindre vos objectifs de déploiement et à afficher un imp
   
 1. **Gestion des changements :** Déterminez comment mesurer la sensibilisation des Recherche Microsoft et la réussite des communications à ce sujet. 
     
-2. **Utilisation :** Vous pouvez exploiter les données de votre tableau de bord Informations, y compris les utilisateurs actifs quotidiennement et mensuellement (DAU et MAU), les types de contenu qui sont les plus populaires et les principaux mots clés de recherche pour mesurer l’utilisation au fil du temps. Pour plus d’informations, [voir Recherche Microsoft Informations tableau de bord.](./usage-reports.md)
+2. **Utilisation :** Vous pouvez exploiter les données de votre tableau de bord Informations, notamment les utilisateurs actifs quotidiennement et mensuellement (DAU et MAU), les types de contenu qui sont les plus populaires et les principaux mots clés de recherche pour mesurer l’utilisation au fil du temps. Pour plus d’informations, [voir Recherche Microsoft Informations tableau de bord.](./usage-reports.md)
     
 3. **Satisfaction de l’utilisateur :** Utilisez les données que vous avez recueillies à partir d’enquêtes et de groupes de focus utilisateur pour déterminer votre base de référence. La satisfaction nette (NSAT) et les scores de net-score (NPS) peuvent également fournir des mesures utiles. Quelle que soit la méthode que vous utilisez, conservez-la cohérente, afin de pouvoir voir l’impact au fil du temps. 
     
@@ -113,7 +113,7 @@ Commencez à planifier des communications et des événements pour votre organis
     
 - Faites en cas de sponsor exécutif l’hôte d’une réunion publique ou envoyez un message électronique d’annonce.
     
-- Partagez une documentation en libre-Recherche Microsoft.
+- Partagez de la documentation en libre-Recherche Microsoft.
     
 Toutes les communications doivent informer les utilisateurs sur la façon dont ils peuvent se Bing [pour](https://Bing.com) trouver des résultats de travail.
   
@@ -185,7 +185,7 @@ Appuyez les utilisateurs et faites-leur savoir qu’ils vous intéressent en les
   
 Utilisez le tableau de bord d’informations pour voir comment le produit et le contenu fonctionnent. Tirez parti de ces informations pour mettre à jour les signets, les&as et d’autres communications. Cela vous aidera également :
   
-- Améliorer la qualité du contenu : réviser les titres, les descriptions et les URL, optimiser les mots clés, supprimer les informations obsolètes et ajouter de nouvelles informations.
+- Améliorer la qualité du contenu : réviser les titres, descriptions et URL, optimiser les mots clés, supprimer les informations obsolètes et ajouter de nouvelles informations.
     
 2. Déterminez les fonctionnalités les plus fréquemment ou rarement utilisées. 
     

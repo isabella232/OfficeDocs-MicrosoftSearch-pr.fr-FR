@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Gérer les filtres à utiliser sur le SERP
 ms.openlocfilehash: c614d4b60c746f2e18fdb3352281891ea5134373
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973458"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375954"
 ---
 # <a name="manage-filters"></a>Gérer les filtres
 
@@ -29,7 +29,7 @@ Deux types de filtres sont disponibles sur la page de recherche.
 - Filtres personnalisés
 
 > [!NOTE]
-> Les filtres personnalisés sont actuellement en prévisualisation pour les administrateurs et les utilisateurs finaux dans la version ciblée. Pour plus d’informations sur la prévisualisation, voir [les fonctionnalités d’aperçu des connecteurs.](connectors-overview.md#what-are-the-preview-features)
+> Les filtres personnalisés sont actuellement en prévisualisation pour les administrateurs et les utilisateurs finaux dans la version ciblée. Pour plus d’informations sur la prévisualisation, voir [Les fonctionnalités d’aperçu des connecteurs.](connectors-overview.md#what-are-the-preview-features)
 
 ## <a name="out-of-the-box-filters"></a>Filtres « out of the box
 
@@ -52,7 +52,7 @@ Les filtres configurés pour les secteurs verticaux dans l’étendue Organisati
 ## <a name="create-sharepoint-site-level-filters"></a>Créer des SharePoint au niveau du site
 
 1. Dans [SharePoint centre d’administration,](https://sharepoint.com/)Paramètres.
-2. Recherchez la section Recherche Microsoft, puis **sélectionnez Configurer Recherche Microsoft pour cette collection de sites.**
+2. Recherchez la section Recherche Microsoft, puis sélectionnez **Configurer Recherche Microsoft pour cette collection de sites.**
 3. Dans le volet de navigation, sélectionnez Expérience personnalisée, puis  **sélectionnez Verticals**.
 4. Sélectionnez votre secteur vertical préféré pour créer le filtre, puis cliquez sur **Modifier.**
 5. Accédez à l’étape Filtres dans l’Assistant du secteur vertical.

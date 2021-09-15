@@ -9,15 +9,15 @@ ms.service: mssearch
 ms.localizationpriority: medium
 description: Créer votre propre page de résultats de recherche pour un site SharePoint Online
 ms.openlocfilehash: df99287dbdd9a82c1a8bc66b39e67a37fcb22da8
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973784"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375957"
 ---
 # <a name="create-a-custom-search-results-page-in-sharepoint-online"></a>Créer une page de résultats de recherche personnalisée dans SharePoint Online
 
-L’une des façons de personnaliser l’expérience de SharePoint consiste à créer une page de résultats de recherche personnalisée pour un site. Cela vous permet d’utiliser une page que vous avez créée, plutôt que la page de résultats par Recherche Microsoft par défaut. Cela vous offre plus de flexibilité sur la façon dont l’expérience de résultats de recherche vos utilisateurs.
+L’une des façons de personnaliser l’expérience de SharePoint consiste à créer une page de résultats de recherche personnalisée pour un site. Cela vous permet d’utiliser une page que vous avez créée, plutôt que la page de résultats par Recherche Microsoft par défaut. Cela vous offre plus de flexibilité sur la façon dont l’expérience de résultats de recherche pour vos utilisateurs.
 
 >[!NOTE]
 > Pour apporter des modifications à la page de résultats Recherche Microsoft par défaut, voir Personnaliser la [page des résultats de la recherche.](customize-search-page.md)

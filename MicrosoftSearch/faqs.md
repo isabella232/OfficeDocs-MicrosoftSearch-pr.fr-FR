@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Trouvez les réponses à certaines des questions les plus fréquentes concernant Microsoft Search (recherche Microsoft)
 ms.openlocfilehash: 8b4de717ab63af8842dc86135748e551ff386a2a
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973654"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375942"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>Questions fréquemment posées
@@ -61,7 +61,7 @@ Pour plus d’informations, voir les pages du Centre de [Office 365.](https://ww
 
 Microsoft 365 permet une collaboration enrichie avec des personnes extérieures à votre organisation via [l’accès invité.](/microsoft-365/solutions/collaborate-with-people-outside-your-organization) Ces utilisateurs peuvent rechercher des documents, des sites, des groupes, des listes et des bibliothèques. Toutefois, les utilisateurs invités n’obtiennent pas l’expérience Recherche Microsoft complète et personnalisée et peuvent avoir besoin d’utiliser la zone de recherche sur la page au lieu de la zone de Recherche Microsoft unifiée dans l’en-tête.
 
-## <a name="how-do-i-turn-microsoft-search-in-bing-on-or-off"></a>Comment puis-je activer Recherche Microsoft l Bing de l’autre ?
+## <a name="how-do-i-turn-microsoft-search-in-bing-on-or-off"></a>Comment puis-je activer Recherche Microsoft de Bing ou désactiver les Bing'
 
 Pour la plupart des organisations, y compris les entreprises et l’éducation, les Recherche Microsoft dans Bing sont en cours d’exploitation par défaut. Pour activer Recherche Microsoft dans Bing, allez à la page [Configurations](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/configurations) dans la Centre d'administration Microsoft 365. Sous Recherche Microsoft dans Bing paramètres, sélectionnez Modifier les **paramètres** et activer Autoriser votre organisation à utiliser Recherche Microsoft dans **Bing**. Cette modification prend jusqu’à 24 heures pour prendre effet.
 

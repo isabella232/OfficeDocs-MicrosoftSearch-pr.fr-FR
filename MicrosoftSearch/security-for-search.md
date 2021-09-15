@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Protéger les données de votre entreprise et les utilisateurs finaux tout en fournissant des informations aux utilisateurs autorisés Recherche Microsoft dans Bing
 ms.openlocfilehash: bf3629b2508c705d19e3b7b772c6f3672063a6f1
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973505"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376056"
 ---
 # <a name="security-and-privacy-for-microsoft-search-in-bing"></a>Sécurité et confidentialité pour les Recherche Microsoft dans Bing
 
@@ -57,7 +57,7 @@ Lorsqu’un utilisateur entre une requête de recherche dans Recherche Microsoft
 ### <a name="logging"></a>Logging
 
 - Tous Bing de recherche .com qui se rapportent à Recherche Microsoft dans Bing trafic sont dissociés de votre identité de lieu de travail.
-- Si un ensemble de restrictions ou de seuils de fréquence est atteint, ce qui nous donne la certitude que la requête n’est pas spécifique à une organisation particulière, la requête sera traitée comme décrit dans la section Recherche et intelligence artificielle de la déclaration de [confidentialité.](https://privacy.microsoft.com/privacystatement) Par exemple, ces requêtes seront utilisées pour modéliser et former des fonctionnalités publiques, telles que les recherches de déboiement automatique ou les recherches associées.
+- Si un ensemble de restrictions ou de seuils de fréquence est atteint, ce qui nous donne la certitude que la requête n’est pas spécifique à une organisation particulière, la requête sera traitée comme décrit dans la section Recherche et intelligence artificielle de la déclaration de [confidentialité.](https://privacy.microsoft.com/privacystatement) Par exemple, ces requêtes seront utilisées pour modéliser et former des fonctionnalités publiques, telles que les opérations de débrancher automatiquement ou les recherches associées.
 - Les requêtes qui ne répondent pas à ces restrictions ou seuils de fréquence seront stockées séparément du trafic public, hors Recherche Microsoft.
 
 ### <a name="advertising"></a>Publicité

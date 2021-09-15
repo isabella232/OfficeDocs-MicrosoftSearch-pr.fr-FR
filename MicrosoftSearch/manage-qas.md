@@ -12,17 +12,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
-description: Recherchez et mettez à jour les réponses individuellement ou utilisez les outils Recherche Microsoft disponibles pour modifier la&en même temps.
+description: Recherchez et mettez à jour les réponses individuellement ou utilisez les outils Recherche Microsoft disponibles pour modifier les&en même temps.
 ms.openlocfilehash: 2ee42e3feaf5c14b2af820360f753ecc2e116f9b
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973681"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334487"
 ---
 # <a name="manage-qas"></a>Gérer les Q&R
 
-La création de Q&R s’apparente à celle de signets. Q&vous permettre de répondre aux questions de l’utilisateur au lieu de simplement fournir un lien vers une page web. Vous pouvez également formater la réponse en texte enrichi. Si un signet et un signet&A partagent le même mot clé, le résultat du signet s’affiche en premier. Comme les signets, la&Q est actualisée immédiatement après l’ajout ou la&A.
+La création de Q&R s’apparente à celle de signets. Q&vous permettre de répondre aux questions de l’utilisateur au lieu de simplement fournir un lien vers une page web. Vous pouvez également formater la réponse en texte enrichi. Si un signet et un signet&A partagent le même mot clé, le résultat du signet s’affiche en premier. Comme les signets, la&un index est actualisé immédiatement après l’ajout ou la&A.
 
 ## <a name="add-or-edit-a-single-qa"></a>Ajouter ou modifier un seul élément Q&R
 
@@ -69,14 +69,14 @@ Les administrateurs peuvent utiliser les fonctionnalités d’importation et d�
 
 Utilisez la Import/Export pour :
 
-- Ajoutez en bloc des&- Ajoutez des détails dans le fichier de modèle&Q, puis importez-le.
+- Ajoutez en bloc des&- Ajoutez des détails dans le fichier de modèle&A, puis importez-le.
 - Modification en bloc de Q&- Exporter les Q&Comme à un fichier .csv, modifiez les détails de la&Q dans le fichier exporté, puis importez le fichier.
 - Back up&Q As - Export Q&As to a .csv file.
 
 Pour importer ou exporter des Q&comme :
 
 1. Dans le coin supérieur droit de l’onglet Q&R, sélectionnez **Importer**.
-Sélectionnez **Exporter** pour télécharger toutes les Q&comme dans un .csv existant.
+Sélectionnez **Exporter** pour télécharger toutes les données Q&comme dans un .csv existant.
 1. Dans le volet droit, sélectionnez l’option à importer à l’aide d'.csv fichier. Téléchargez le fichier modèle pour obtenir la liste des champs et détails requis.
 1. Ajoutez ou modifiez Q&détails dans le fichier de modèle et enregistrez-le sur votre ordinateur.
 1. Dans le **volet Importer&A,** sélectionnez **Parcourir,** puis sélectionnez .csv fichier à importer.

@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Vue d’ensemble de la configuration des connecteurs Graph par Microsoft
 ms.openlocfilehash: 95a2640652bd1289962c888be4ba771629806a6b
-ms.sourcegitcommit: 3e069fd920b5fcdfe97a0261930447e9e87d9013
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "58973527"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375885"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -115,7 +115,7 @@ Le tableau suivant répertorie les étiquettes actuellement pris en charge et le
 **Auteur de la dernière modification** | Nom de la personne qui a modifié l’élément le plus récemment
 **Authors** | Nom des personnes qui ont participé/ont participé à l’élément
 **Date et heure de création** | Quand l’élément a-t-il été créé ?
-**Heure de la dernière modification** | Quand l’élément a-t-il été modifié le plus récemment ?
+**Heure de la dernière modification** | Quand l’élément a-t-il été modifié le plus récemment
 **Nom de fichier** | Nom de l’élément de fichier
 **Extension de fichier** | Type d’élément de fichier tel que .pdf ou .word
 
@@ -146,11 +146,11 @@ Les attributs de schéma de recherche incluent des options **pour interroger,** 
 Attribut de schéma de recherche | Fonction | Exemple
 --- | --- | ---
 SEARCH | Rend le contenu de texte d’une propriété utilisable dans une recherche. Le contenu de la propriété est inclus dans l’index de texte intégral. | Si la propriété est **un titre,** une requête pour **Enterprise** renvoie des réponses qui contiennent le mot Enterprise **dans** n’importe quel texte ou titre.
-REQUÊTE | Recherche par requête une correspondance pour une propriété particulière. Le nom de la propriété peut ensuite être spécifié dans la requête par programme ou par mot. |  Si la **propriété Title** peut être interrogé, la requête **Title: Enterprise** est prise en charge.
+REQUÊTE | Recherche par requête une correspondance pour une propriété particulière. Le nom de la propriété peut ensuite être spécifié dans la requête par programme ou en verbatim. |  Si la **propriété Title** peut être interrogé, la requête **Title: Enterprise** est prise en charge.
 RETRIEVE | Seules les propriétés récupérables peuvent être utilisées dans le type de résultat et s’afficher dans le résultat de recherche. |
 AFFINER | L’option d’affinment peut être utilisée comme dans la page Recherche Microsoft résultats. | Les utilisateurs de votre organisation peuvent [filtrer](custom-filters.md) par **URL** dans la page des résultats de la recherche si la propriété affiner est marquée lors de la configuration de la connexion
 
-Pour tous les connecteurs à l’exception du connecteur de partage de fichiers, les types personnalisés doivent être définies manuellement. Pour activer les fonctionnalités de recherche pour chaque champ, vous avez besoin d’un schéma de recherche mappé à une liste de propriétés. L’Assistant Connexion sélectionne automatiquement un schéma de recherche basé sur l’ensemble des propriétés sources que vous choisissez. Vous pouvez modifier ce schéma en sélectionnant les cases à cocher pour chaque propriété et attribut dans la page de schéma de recherche.
+Pour tous les connecteurs à l’exception du connecteur de partage de fichiers, les types personnalisés doivent être définies manuellement. Pour activer les fonctionnalités de recherche pour chaque champ, vous avez besoin d’un schéma de recherche mappé à une liste de propriétés. L’Assistant Connexion sélectionne automatiquement un schéma de recherche basé sur l’ensemble des propriétés source que vous choisissez. Vous pouvez modifier ce schéma en sélectionnant les cases à cocher pour chaque propriété et attribut dans la page de schéma de recherche.
 
 > [!div class="mx-imgBorder"]
 > ![Le schéma d’un connecteur peut être personnalisé en ajoutant ou en supprimant des fonctions Requête, Recherche et Récupération.](media/manageschema.png)
@@ -159,7 +159,7 @@ Pour tous les connecteurs à l’exception du connecteur de partage de fichiers,
 
 * La **propriété de** contenu est uniquement utilisable dans une recherche. Une fois sélectionnée dans ladown, cette propriété ne peut pas être utilisée avec les options **retrieve** ou **query**.
 
-* Des problèmes de performances importants se produisent lorsque les résultats de la recherche s’restituer avec **la propriété de** contenu. Par exemple, le **champ de** contenu Texte d’un article de la base de connaissances [ServiceNow.](https://www.servicenow.com)
+* Des problèmes de performances importants se produisent lorsque les résultats de la recherche s’restituer avec la **propriété de** contenu. Par exemple, le **champ de** contenu Texte d’un article de la base de connaissances [ServiceNow.](https://www.servicenow.com)
 
 * Seules les propriétés marquées comme récupérables sont restituer dans les résultats de la recherche et peuvent être utilisées pour créer des types de résultats modernes (MRT).
 

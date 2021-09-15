@@ -13,17 +13,17 @@ search.appverid:
 - MOE150
 description: Détails et erreurs des connecteurs
 ms.openlocfilehash: 915723a2a22771e89fdb433b4ddadba76fa91090
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973793"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375996"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
 # <a name="view-connection-details-and-errors"></a>Afficher les détails et erreurs de connexion
 
-Pour accéder à vos connecteurs et les gérer, vous devez être désigné en tant qu’administrateur de recherche pour votre client. Contactez votre administrateur client pour vous fournir le rôle d’administrateur de recherche.
+Pour accéder à vos connecteurs et les gérer, vous devez être désigné comme administrateur de recherche pour votre client. Contactez votre administrateur client pour vous fournir le rôle d’administrateur de recherche.
 
 Accédez à [l’onglet Connecteurs](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) dans la [Centre d'administration Microsoft 365](https://admin.microsoft.com).
 

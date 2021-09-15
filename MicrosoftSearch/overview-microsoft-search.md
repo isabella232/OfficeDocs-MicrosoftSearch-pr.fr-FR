@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Obtenez une vue d’ensemble de ce Recherche Microsoft, de ses avantages et des applications qui la Recherche Microsoft.
 ms.openlocfilehash: 29a6db642ac9cc787b8cbec45aec609f55722206
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973482"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59376071"
 ---
 # <a name="overview-of-microsoft-search"></a>Vue d’ensemble de Recherche Microsoft
 
@@ -26,7 +26,7 @@ Recherche Microsoft vous aide à trouver ce dont vous avez besoin pour effectuer
 Recherche Microsoft permet aux utilisateurs de trouver les réponses, les personnes et le contenu qui leur sont nécessaires pour effectuer leurs tâches dans l’application dans qui ils travaillent déjà.
 
 - Les utilisateurs obtiennent des résultats pertinents dans le **contexte** de l’application à partir de laquelle ils effectuent la recherche. Par exemple, lorsqu’ils recherchent dans [Microsoft Outlook,](https://www.microsoft.com/outlook)ils trouvent des e-mails et ne peuvent [pas SharePoint](http://sharepoint.com/) sites. Lorsqu’ils recherchent dans SharePoint, ils trouvent des sites, pages et fichiers.
-- Quelle que soit l’application dans laquelle les utilisateurs travaillent ; Recherche Microsoft est **personnel**. Recherche Microsoft utilise les informations de [Microsoft Graph](https://developer.microsoft.com/graph/) pour afficher les résultats pertinents pour chaque utilisateur. Chaque utilisateur peut voir des résultats différents, même s’ils cherchaient les même mots. Ils voient uniquement les résultats qu’ils ont déjà accès Recherche Microsoft ne modifient pas les autorisations.
+- Quelle que soit l’application dans laquelle les utilisateurs travaillent ; Recherche Microsoft est **personnel**. Recherche Microsoft utilise les informations de [Microsoft Graph](https://developer.microsoft.com/graph/) pour afficher les résultats pertinents pour chaque utilisateur. Chaque utilisateur peut voir des résultats différents, même s’ils cherchaient les même mots. Ils voient uniquement les résultats qu’ils ont déjà accès, Recherche Microsoft ne modifient pas les autorisations.
 - Les utilisateurs n’ont pas besoin de se souvenir où se trouvent les informations. Par exemple, un utilisateur travaille dans [Microsoft Word](https://products.office.com/word) et souhaite réutiliser les informations d’une présentation qu’un collègue a partagées à partir de [son OneDrive](https://onedrive.live.com/about/). Il n’est pas nécessaire de basculer vers OneDrive et de rechercher cette présentation, ils peuvent simplement effectuer une recherche à partir de Word.
 - Dans [Bing](https://bing.com), les utilisateurs obtiennent des résultats relatifs à leur organisation en plus des résultats web publics.
 

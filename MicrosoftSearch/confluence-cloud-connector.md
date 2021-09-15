@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: Configurer le connecteur cloud Graph Cloud pour Recherche Microsoft
 ms.openlocfilehash: baf6139257c8bf8e40bc997e2a408efb4fc2549f
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973443"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375990"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -44,7 +44,7 @@ Suivez les [instructions d’installation générales.](./configure-connector.md
 Suivez les [instructions d’installation générales.](./configure-connector.md)
 
 ## <a name="step-3-configure-the-connection-settings"></a>Étape 3 : Configurer les paramètres de connexion
-Pour vous connecter à votre site Der, utilisez l’URL de votre site. Une URL de site cloud DeNte ressemble généralement *à https://<organization_name>.atlassian.net/*. Vous pouvez choisir l’authentification de base ou OAuth 2.0 (recommandé) pour vous authentifier sur votre site de Contrôle.
+Pour vous connecter à votre site Der, utilisez l’URL de votre site. Une URL de site cloud DeNte ressemble généralement *à https://<organization_name>.atlassian.net/*. Vous pouvez choisir soit l’authentification de base, soit OAuth 2.0 (recommandé) pour vous authentifier sur votre site de Contrôle.
 
 ### <a name="basic-auth"></a>Th de base
 Entrez le nom d’utilisateur de votre compte (généralement l’ID de courrier électronique) et le jeton d’API pour vous authentifier à l’aide de l’authentification de base. Pour en savoir plus sur la génération d’un jeton d’API, reportez-vous à la documentation d’Atlassian sur la gestion des jetons d’API pour votre [compte Atlassian.](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)
@@ -75,14 +75,14 @@ Utilisez le bouton d’aperçu des résultats pour vérifier les exemples de val
 
 Le connecteur cloud Graph cloud prend  **** en charge les autorisations de recherche visibles par tout le monde ou uniquement les personnes ayant **accès à cette source de données.** Si vous choisissez **Tout le** monde, les données indexées apparaissent dans les résultats de recherche pour tous les utilisateurs. Si vous choisissez **uniquement les personnes** ayant accès à cette source de données, les données indexées apparaissent dans les résultats de la recherche pour les utilisateurs qui y ont accès.
 
-Dans Cloud Cloud, les autorisations de sécurité pour les utilisateurs et les groupes sont définies à l’aide d’autorisations d’espace et de restrictions de page. Cloud Graph Connector applique des autorisations d’espace s’il n’existe aucune restriction de page. Les restrictions de niveau page, si elles sont présentes, prévalent sur les autorisations d’espace.
+Dans Cloud Cloud, les autorisations de sécurité pour les utilisateurs et les groupes sont définies à l’aide d’autorisations d’espace et de restrictions de page. Cloud Graph Connector applique des autorisations d’espace en l’absence de restrictions de page. Les restrictions de niveau page, si elles sont présentes, prévalent sur les autorisations d’espace.
 
 Si vous choisissez uniquement les personnes ayant accès à cette **source** de données, vous devez choisir si votre site de Azure Active Directory (AAD) dispose d’utilisateurs ou d’utilisateurs non AAD.
 
 Pour identifier l’option qui convient à votre organisation :
 
 1. Sélectionnez **l’option AAD** si l’ID de messagerie des utilisateurs Demms est identique à l’UPN (UserPrincipalName) des utilisateurs dans AAD. 
-2. Choisissez **l’option Non-AAD** si l’ID de messagerie des utilisateurs Demms est **différent** de l’UPN (UserPrincipalName) des utilisateurs dans AAD. 
+2. Sélectionnez **l’option Non-AAD** si l’ID de messagerie des utilisateurs Demms est **différent** de l’UPN (UserPrincipalName) des utilisateurs dans AAD. 
 
 >[!NOTE]
 > * Si vous choisissez AAD comme type de source d’identité, le connecteur masce les ID de messagerie des utilisateurs obtenus directement à partir d’AAD à la propriété UPN.
