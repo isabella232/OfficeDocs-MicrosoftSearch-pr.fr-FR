@@ -1,12 +1,12 @@
 - name: Planifier la Recherche Microsoft
   items:
-    - name: Présentation
+    - name: Vue d’ensemble
       href: overview-microsoft-search.md
     - name: Configurer
       href: setup-microsoft-search.md
     - name: Gérer l’accès aux fichiers et aux sites
       href: manage-access-files-sites.md
-    - name: Foire aux questions
+    - name: Questions fréquentes (FAQ)
       href: faqs.md
 - name: Obtenir des informations
   items:
@@ -34,7 +34,7 @@
   items:
     - name: Connecteurs graphiques
       items:
-        - name: Présentation
+        - name: Vue d’ensemble
           href: connectors-overview.md
         - name: galerie Connecteurs
           href: connectors-gallery.md
@@ -100,7 +100,7 @@
       href: custom-filters.md
     - name: Recherche Microsoft dans SharePoint
       items:
-        - name: Présentation
+        - name: Vue d’ensemble
           href: get-started-search-in-sharepoint-online.md
         - name: Créer une page de résultats de recherche personnalisée
           href: create-search-results-pages.md
@@ -114,6 +114,8 @@
           href: security-for-search.md
         - name: Ajout d’une zone de recherche à votre site intranet
           href: add-a-search-box-to-your-intranet-site.md
+        - name: Sélectionner une expérience de recherche scolaire ou professionnelle (aperçu)
+          href: select-work-school-search-experience.md
         - name: Définir Microsoft Edge comme navigateur par défaut
           href: /deployedge/edge-default-browser
         - name: Définir Bing en tant que moteur de recherche par défaut
