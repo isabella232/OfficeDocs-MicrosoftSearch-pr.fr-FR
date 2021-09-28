@@ -7,30 +7,28 @@ ms.topic: article
 ms.service: mssearch
 audience: Admin
 ms.audience: Admin
-ms.date: 07/02/2021
+ms.date: 09/24/2021
 ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Examiner les rapports Recherche Microsoft’utilisation des applications
-ms.openlocfilehash: 9de48331efbc956ee7d980b919d9bd2f025fc8aa
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 3f6b35ddbd08d4c709ce8b8b9125caa1a6517bae
+ms.sourcegitcommit: df898c1616c7c89e819cf2900a08a319af12f8cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59376011"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59940647"
 ---
 # <a name="microsoft-search-usage-reports"></a>Recherche Microsoft Rapports d’utilisation
 
-Les rapports d’utilisation de la recherche vous permettent de mieux comprendre le fonctionnement de la recherche dans votre organisation. Les informations générées à partir [](./make-content-easy-to-find.md) de ces rapports vous aideront à faciliter la recherche de contenu et à prendre des mesures qui donnent à vos utilisateurs une expérience plus utile et agréable.
+Les rapports d’utilisation de la recherche vous permettent de mieux comprendre le fonctionnement de la recherche dans votre organisation. Les informations générées à partir de ces rapports vous aideront à prendre des mesures qui feront de la recherche une expérience plus utile et agréable pour vos utilisateurs.
 
 > [!IMPORTANT]
 > Recherche Microsoft rapports d’utilisation sont actuellement en prévisualisation
 
 Les rapports [d’utilisation](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) Recherche Microsoft incluent des graphiques et des tableaux générés à partir de recherches exécutées à partir de SharePoint Famille, Office.com et Recherche Microsoft dans Bing zones de recherche. Vous pouvez voir les données des 31 derniers jours, par jour ou par mois de l’année précédente. Ces rapports sont simplement en cours de déploiement afin que l’ensemble des données historiques prennent du temps.
-
-Une version précédente de cette page incluait les données des recherches exécutées uniquement pour Recherche Microsoft dans Bing sur Bing.com. Ces données sont désormais intégrées dans ces rapports ; Vous pouvez toujours voir l’ancienne page en cliquant sur le lien en bas de la page pour afficher les requêtes Bing et la distribution des **impressions.** Ce lien et l’ancienne page seront bientôt supprimés.
 
 > [!div class="mx-imgBorder"]
 > ![Tableau de bord rapports d’utilisation de la recherche.](media/usage-reports/usage_reports_v2.png)
@@ -53,9 +51,7 @@ Lorsque vous accédez à la page Rapports d’utilisation, tous les rapports son
 
 Le téléchargement d’un rapport vous permettra de voir les rapports à partir d’un plus large éventail de temps. Cliquez sur la flèche de téléchargement et sélectionnez **les 31 derniers jours** ou **les 12 derniers mois.** Le rapport est téléchargé sous la Excel feuille de calcul. Si vous avez sélectionné au-delà de 31 jours, la feuille de calcul aura un onglet individuel pour chaque jour. Le téléchargement des 12 derniers mois aura un onglet pour chaque mois.
 
-Pour afficher Bing les principales requêtes et les rapports de distribution des impressions, cliquez sur le lien de la page.
-
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Lorsque je sélectionne les 31 derniers jours ou les 12 derniers mois, pourquoi dois-je choisir un jour ou un mois spécifique ?**
 
@@ -63,7 +59,7 @@ L’affichage Calendrier, aujourd’hui, dans les rapports d’utilisation de la
 
 Les tables de requête en haut, abandonnées et échouées indiquent les résultats du jour ou du mois que vous choisissez.
 
-**Quand puis-je voir les données agrégées des 7 derniers jours, des 30 derniers jours, et ainsi de suite... comme Bing les principaux rapports de requêtes ?**
+**Quand puis-je voir les données agrégées des 7 derniers jours, des 30 derniers jours, et ainsi de suite... ?**
 
 Nous envisageons ce type d’agrégation et simplifions le filtrage des plages de données pour les futures versions de ces rapports.
 
@@ -73,4 +69,4 @@ Actuellement, le filtrage par source n’est pas disponible. Les rapports combin
 
 **Quel autre filtrage des rapports d’utilisation sera-t-il à venir ?**
 
-Nous travaillons sur des filtres supplémentaires qui vous aideront à donner un sens à l’utilisation de la recherche à un niveau plus granulaire de votre organisation. Par exemple, vous pourrez voir le volume de requête pour une zone géographique ou un service spécifique.
+Nous travaillons sur d’autres filtres qui vous aideront à prendre en compte l’utilisation de la recherche à un niveau plus granulaire de votre organisation. Par exemple, vous pourrez voir le volume de requête pour une zone géographique ou un service spécifique.
