@@ -6,7 +6,7 @@
       href: setup-microsoft-search.md
     - name: Gérer l’accès aux fichiers et aux sites
       href: manage-access-files-sites.md
-    - name: Questions fréquentes (FAQ)
+    - name: Foire aux questions
       href: faqs.md
 - name: Obtenir des informations
   items:
@@ -26,7 +26,7 @@
       href: manage-floorplans.md
     - name: Emplacements
       href: manage-locations.md
-    - name: Power BI
+    - name: "Power\_BI"
       href: manage-powerbi.md
     - name: Questions et réponses
       href: manage-qas.md
@@ -110,6 +110,8 @@
           href: manage-classic-spo-pages.md
     - name: Recherche Microsoft dans Bing
       items:
+        - name: Présentation
+          href: overview-microsoft-search-bing.md
         - name: Sécurité et confidentialité
           href: security-for-search.md
         - name: Ajout d’une zone de recherche à votre site intranet
