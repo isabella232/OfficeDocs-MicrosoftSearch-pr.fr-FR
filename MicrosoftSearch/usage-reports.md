@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Examiner les rapports Recherche Microsoft’utilisation des applications
-ms.openlocfilehash: 3f6b35ddbd08d4c709ce8b8b9125caa1a6517bae
-ms.sourcegitcommit: df898c1616c7c89e819cf2900a08a319af12f8cc
+ms.openlocfilehash: 1f2afa6e2c7691aa3284ae017913827761981529
+ms.sourcegitcommit: ca6f0488b842e7fc0d98c7b84b2b8bc5817d3e7b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59940647"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60224866"
 ---
 # <a name="microsoft-search-usage-reports"></a>Recherche Microsoft Rapports d’utilisation
 
@@ -28,7 +28,7 @@ Les rapports d’utilisation de la recherche vous permettent de mieux comprendre
 > [!IMPORTANT]
 > Recherche Microsoft rapports d’utilisation sont actuellement en prévisualisation
 
-Les rapports [d’utilisation](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) Recherche Microsoft incluent des graphiques et des tableaux générés à partir de recherches exécutées à partir de SharePoint Famille, Office.com et Recherche Microsoft dans Bing zones de recherche. Vous pouvez voir les données des 31 derniers jours, par jour ou par mois de l’année précédente. Ces rapports sont simplement en cours de déploiement afin que l’ensemble des données historiques prennent du temps.
+Les [](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) rapports d’utilisation Recherche Microsoft incluent des graphiques et des tableaux générés à partir de recherches exécutées à partir d’SharePoint Home (le site dont l’URL se termine par /SharePoint.aspx), Office.com et Recherche Microsoft dans les zones de recherche Bing. Vous pouvez voir les données des 31 derniers jours, par jour ou par mois de l’année précédente. Ces rapports sont simplement en cours de déploiement afin que l’ensemble des données historiques prennent du temps.
 
 > [!div class="mx-imgBorder"]
 > ![Tableau de bord rapports d’utilisation de la recherche.](media/usage-reports/usage_reports_v2.png)
@@ -43,7 +43,7 @@ Les rapports [d’utilisation](https://admin.microsoft.com/Adminportal/Home?#/Mi
 |Requêtes sans résultats|Ce rapport indique les requêtes de recherche populaires qui n'ont retourné aucun résultat. Il permet d'identifier les requêtes de recherche pouvant provoquer l'insatisfaction des utilisateurs et d'améliorer la détectabilité du contenu. Vous pouvez ensuite déterminer si la création d’une réponse, telle qu’un signet, ou l’ing d’un nouveau contenu via un connecteur Graph est l’action la plus appropriées.|
 
 >[!NOTE]
->Il existe actuellement un problème connu où les requêtes satisfaites par une réponse telle qu’un signet sont comptabilisées comme une requête abandonnée.
+>Il existe actuellement un problème connu où les requêtes satisfaites par une réponse telle qu’un signet sont comptées comme une requête abandonnée.
 
 ## <a name="viewing-reports"></a>Affichage des rapports
 
@@ -51,7 +51,7 @@ Lorsque vous accédez à la page Rapports d’utilisation, tous les rapports son
 
 Le téléchargement d’un rapport vous permettra de voir les rapports à partir d’un plus large éventail de temps. Cliquez sur la flèche de téléchargement et sélectionnez **les 31 derniers jours** ou **les 12 derniers mois.** Le rapport est téléchargé sous la Excel feuille de calcul. Si vous avez sélectionné au-delà de 31 jours, la feuille de calcul aura un onglet individuel pour chaque jour. Le téléchargement des 12 derniers mois aura un onglet pour chaque mois.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Questions posées fréquemment
 
 **Lorsque je sélectionne les 31 derniers jours ou les 12 derniers mois, pourquoi dois-je choisir un jour ou un mois spécifique ?**
 
