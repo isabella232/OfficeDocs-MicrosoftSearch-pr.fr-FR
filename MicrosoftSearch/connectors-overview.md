@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble des connecteurs Graph Microsoft pour Recherche Microsoft
-ms.openlocfilehash: 006ab3f56eb4976b44904e5191ae8fd256c8d5de
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 2dec2d17479368bc6d85c0a5bd275461a4114800
+ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375984"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60238393"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -76,8 +76,7 @@ Vous pouvez vous connecter aux sources de données suivantes à l’aide de conn
 * [Connaissances ServiceNow](servicenow-knowledge-connector.md)
 * [Catalogue ServiceNow (prévisualisation)](servicenow-catalog-connector.md)
 
-
-La [galerie de connecteurs Graph](https://www.microsoft.com/microsoft-search/connectors) Microsoft contient une brève description de chacun de ces connecteurs. Si vous êtes prêt à connecter l’une de ces sources [](configure-connector.md) de données à votre client, n’oubliez pas de lire la vue d’ensemble du programme d’installation et les autres articles de la section Connecteurs d’installation par Microsoft qui s’appliquent à votre source de données.
+La [galerie de connecteurs Graph](https://www.microsoft.com/microsoft-search/connectors) Microsoft contient une brève description de chacun de ces connecteurs. Si vous êtes prêt à connecter l’une de ces sources [](configure-connector.md) de données à votre client, n’oubliez pas de lire la vue d’ensemble du programme d’installation et tous les autres articles de la section Connecteurs d’installation par Microsoft qui s’appliquent à votre source de données.
 
 ### <a name="microsoft-graph-connectors-by-our-partners"></a>Connecteurs Graph Microsoft par nos partenaires
 
@@ -85,7 +84,7 @@ La [galerie de connecteurs](https://www.microsoft.com/microsoft-search/connector
 
 ### <a name="build-your-own-microsoft-graph-connector"></a>Créer votre propre connecteur Microsoft Graph
 
-Vous pouvez créer votre propre connecteur si vous préférez. Pour plus d’informations sur la création de connecteurs, voir Créer votre premier connecteur [microsoft Graph personnalisé.](/graph/connecting-external-content-build-quickstart)
+Vous pouvez créer votre propre connecteur si vous préférez. Pour plus d’informations sur la création de connecteurs, voir Créer votre premier connecteur [Microsoft Graph personnalisé.](/graph/connecting-external-content-build-quickstart)
 
 ## <a name="how-do-i-manage-my-connections"></a>Comment gérer mes connexions ?
 
@@ -99,7 +98,7 @@ Pour plus d’informations, voir [Conditions d’utilisation](licensing.md) et c
 
 ## <a name="what-are-the-preview-features"></a>Quelles sont les fonctionnalités d’aperçu ?
 
-Bien que les connecteurs Graph microsoft et Recherche Microsoft API soient désormais généralement disponibles, plusieurs fonctionnalités sont disponibles en prévisualisation.
+Bien que les connecteurs Graph microsoft et les API Recherche Microsoft soient désormais généralement disponibles, plusieurs fonctionnalités sont disponibles en prévisualisation.
 
 L’ensemble des connecteurs et des fonctionnalités de la prévisualisation comprend les éléments suivants :
 
@@ -113,7 +112,7 @@ L’ensemble des connecteurs et des fonctionnalités de la prévisualisation com
 
 Il existe de nombreuses façons de personnaliser et de configurer les résultats de recherche. Pour en savoir plus, consultez les articles suivants :
 
-* [Gérer des secteurs verticaux et des types de résultats](customize-search-page.md)
+* [Gérer les secteurs verticaux et](manage-verticals.md) [les types de résultats](manage-result-types.md)
 * [Gérer les dispositions des résultats de la recherche](customize-results-layout.md)
 * [Gérer le cluster de résultat](result-cluster.md)
 * [Gérer les filtres personnalisés](custom-filters.md)
@@ -124,7 +123,7 @@ Une fois les données personnalisées indexées, les développeurs peuvent [inte
 
 ## <a name="how-do-i-customize-search-results"></a>Comment personnaliser les résultats de recherche ?
 
-L’étape suivante consiste à personnaliser les résultats de recherche comme recommandé dans cet article Comment personnaliser et configurer [les résultats de la recherche ?](#how-do-i-customize-and-configure-search-results) Pour en savoir plus sur la personnalisation des résultats de recherche, voir [Personnaliser la page des résultats de la recherche.](customize-search-page.md)
+L’étape suivante consiste à personnaliser les résultats de la recherche comme recommandé dans cet article Comment personnaliser et [configurer les résultats de recherche ?](#how-do-i-customize-and-configure-search-results) Pour en savoir plus sur la personnalisation des résultats de recherche, voir [Personnaliser la page des résultats de la recherche.](customize-search-page.md)
 
 ## <a name="what-are-the-connector-limitations"></a>Quelles sont les limitations du connecteur ?
 

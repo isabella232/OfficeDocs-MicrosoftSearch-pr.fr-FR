@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble de la configuration des connecteurs Graph par Microsoft
-ms.openlocfilehash: 95a2640652bd1289962c888be4ba771629806a6b
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: f3e622abbc54103a47a06c587a1d20190639504c
+ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375885"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60238438"
 ---
 <!-- Previous ms.author: monaray -->
 
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Vue d’ensemble de la configuration des connecteurs Graph par Microsoft 
+# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Vue d’ensemble de la configuration des connecteurs Graph par Microsoft
 
 Cet article montre le processus de base requis pour configurer les connecteurs Graph par **Microsoft** dans le [Centre d'administration Microsoft 365](https://admin.microsoft.com). Ce processus simple comprend les étapes suivantes :  
 <!---Add links to each section in the doc--->
@@ -87,9 +87,9 @@ Pour en savoir plus sur la connexion à une source de données sur site, voir In
 
 ## <a name="step-4-select-properties"></a>Étape 4 : Sélectionner les propriétés
 
-Vous pouvez choisir les propriétés qui seront indexées par Recherche Microsoft. 
+Vous pouvez choisir les propriétés qui seront indexées par Recherche Microsoft.
 
-La requête ServiceNow peut être utilisée pour filtrer vos données avant qu’elles ne soient indexées par Recherche Microsoft ; Cela vous permet de mieux contrôler les données qui peuvent être recherchés. Pour en savoir plus sur les requêtes ServiceNow, voir [En savoir plus sur les requêtes ServiceNow.](https://go.microsoft.com/fwlink/?linkid=2151447) 
+La requête ServiceNow peut être utilisée pour filtrer vos données avant qu’elles ne soient indexées par Recherche Microsoft ; Cela vous permet de mieux contrôler les données qui peuvent être recherchés. Pour en savoir plus sur les requêtes ServiceNow, voir [En savoir plus sur les requêtes ServiceNow.](https://go.microsoft.com/fwlink/?linkid=2151447)
 
 ## <a name="step-5-manage-search-permissions"></a>Étape 5 : Gérer les autorisations de recherche
 
@@ -115,7 +115,7 @@ Le tableau suivant répertorie les étiquettes actuellement pris en charge et le
 **Auteur de la dernière modification** | Nom de la personne qui a modifié l’élément le plus récemment
 **Authors** | Nom des personnes qui ont participé/ont participé à l’élément
 **Date et heure de création** | Quand l’élément a-t-il été créé ?
-**Heure de la dernière modification** | Quand l’élément a-t-il été modifié le plus récemment
+**Heure de la dernière modification** | Quand l’élément a-t-il été modifié le plus récemment ?
 **Nom de fichier** | Nom de l’élément de fichier
 **Extension de fichier** | Type d’élément de fichier tel que .pdf ou .word
 
@@ -139,21 +139,20 @@ Vous pouvez ajouter des alias à vos propriétés sous la colonne « Alias » da
 
 ### <a name="search-schema-attributes"></a>Attributs de schéma de recherche
 
-Vous pouvez définir les attributs de schéma de recherche pour contrôler les fonctionnalités de recherche de chaque propriété source. Un schéma de recherche permet de déterminer les résultats affichés sur la page des résultats de la recherche et les informations que les utilisateurs finaux peuvent afficher et consulter.
+Vous pouvez définir les attributs de schéma de recherche pour contrôler la fonctionnalité de recherche de chaque propriété source. Un schéma de recherche permet de déterminer les résultats affichés sur la page des résultats de la recherche et les informations que les utilisateurs finaux peuvent afficher et consulter.
 
 Les attributs de schéma de recherche incluent des options **pour interroger,** **rechercher,** **récupérer** et **affiner**. Le tableau suivant répertorie chacun des attributs que les connecteurs Graph Microsoft Graph et explique leurs fonctions.
 
 Attribut de schéma de recherche | Fonction | Exemple
 --- | --- | ---
-SEARCH | Rend le contenu de texte d’une propriété utilisable dans une recherche. Le contenu de la propriété est inclus dans l’index de texte intégral. | Si la propriété est **un titre,** une requête pour **Enterprise** renvoie des réponses qui contiennent le mot Enterprise **dans** n’importe quel texte ou titre.
-REQUÊTE | Recherche par requête une correspondance pour une propriété particulière. Le nom de la propriété peut ensuite être spécifié dans la requête par programme ou en verbatim. |  Si la **propriété Title** peut être interrogé, la requête **Title: Enterprise** est prise en charge.
+SEARCH | Rend le contenu de texte d’une propriété utilisable dans une recherche. Le contenu de la propriété est inclus dans l’index de texte intégral. | Si la propriété est **un titre,** une requête de **Enterprise** renvoie des réponses qui contiennent le mot Enterprise **dans** n’importe quel texte ou titre.
+REQUÊTE | Recherche par requête une correspondance pour une propriété particulière. Le nom de la propriété peut ensuite être spécifié dans la requête par programme ou par mot. |  Si la **propriété Title** peut être interrogé, la requête **Title: Enterprise** est prise en charge.
 RETRIEVE | Seules les propriétés récupérables peuvent être utilisées dans le type de résultat et s’afficher dans le résultat de recherche. |
-AFFINER | L’option d’affinment peut être utilisée comme dans la page Recherche Microsoft résultats. | Les utilisateurs de votre organisation peuvent [filtrer](custom-filters.md) par **URL** dans la page des résultats de la recherche si la propriété affiner est marquée lors de la configuration de la connexion
+AFFINER | L’option d’affinment peut être utilisée comme dans la page Recherche Microsoft résultats. | Les utilisateurs de votre organisation peuvent [filtrer](custom-filters.md) par **URL** dans la page des résultats de la recherche si la propriété Affiner est marquée lors de la configuration de la connexion
 
 Pour tous les connecteurs à l’exception du connecteur de partage de fichiers, les types personnalisés doivent être définies manuellement. Pour activer les fonctionnalités de recherche pour chaque champ, vous avez besoin d’un schéma de recherche mappé à une liste de propriétés. L’Assistant Connexion sélectionne automatiquement un schéma de recherche basé sur l’ensemble des propriétés source que vous choisissez. Vous pouvez modifier ce schéma en sélectionnant les cases à cocher pour chaque propriété et attribut dans la page de schéma de recherche.
 
-> [!div class="mx-imgBorder"]
-> ![Le schéma d’un connecteur peut être personnalisé en ajoutant ou en supprimant des fonctions Requête, Recherche et Récupération.](media/manageschema.png)
+:::image type="content" alt-text="Le schéma d’un connecteur peut être personnalisé en ajoutant ou en supprimant des fonctions Requête, Recherche et Récupération." source="media/manageschema.png" lightbox="media/manageschema.png":::
 
 ### <a name="restrictions-and-recommendations-for-search-schema-settings"></a>Restrictions et recommandations pour les paramètres de schéma de recherche
 
@@ -187,13 +186,13 @@ Avec une actualisation **incrémentielle,** le moteur de recherche peut traiter 
 Les actualisations incrémentielles sont beaucoup plus rapides que les actualisations complètes, car les éléments inchangés ne sont pas traitées. Toutefois, si vous choisissez d’exécuter des actualisations incrémentielles, vous devez toujours exécuter régulièrement des actualisations complètes pour maintenir une synchronisation correcte des données entre la source de contenu et l’index de recherche.
 
 > [!div class="mx-imgBorder"]
-> ![Paramètres d’analyse incrémentielle et d’intervalle d’analyse complète indiquant Incrémentielle à 15 minutes et analyse complète à 1 semaine.](media/refreshschedule.png)
+> ![Paramètres d’intervalle d’analyse incrémentielle et d’analyse complète indiquant Incrémentielle à 15 minutes et analyse complète à 1 semaine.](media/refreshschedule.png)
 
 <!---Change screenshot for one that shows both options in new UI (try ServiceNow)--->
 
 ## <a name="step-9-review-connection"></a>Étape 9 : Examiner la connexion
 
-Vous pouvez passer en revue l’intégralité de votre configuration et modifier les paramètres selon vos besoins avant d’achever la connexion. **N’oubliez pas de lire les informations spécifiques au connecteur pour votre source de données si vous ne l’avez pas déjà fait.** Sélectionnez **Terminer la** mise à jour lorsque vous êtes prêt à terminer la connexion.
+Vous pouvez passer en revue l’intégralité de votre configuration et modifier les paramètres selon vos besoins avant d’effectuer la connexion. **N’oubliez pas de lire les informations spécifiques au connecteur pour votre source de données si vous ne l’avez pas déjà fait.** Sélectionnez **Terminer la** mise à jour lorsque vous êtes prêt à terminer la connexion.
 
 ### <a name="confirm-if-the-connection-setup-worked"></a>Vérifier si la configuration de la connexion a fonctionné
 
@@ -201,7 +200,7 @@ Go to the list of your published connections under the **Connectors** tab in the
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 <!---Insert troubleshooting recommendations for this data source-->
-Lisez les informations spécifiques au connecteur pour votre source de données. 
+Lisez les informations spécifiques au connecteur pour votre source de données.
 
 > [!NOTE]
 > À ce stade, certains articles spécifiques au connecteur n’incluent pas de recommandations de résolution des problèmes.
@@ -214,4 +213,4 @@ Consultez les informations spécifiques au connecteur pour votre source de donn�
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Après avoir publié la connexion, vous devez personnaliser la page des résultats de la recherche. Pour en savoir plus sur la personnalisation des résultats de recherche, voir [Personnaliser la page des résultats de la recherche.](customize-search-page.md)
+Après avoir publié la connexion, vous devez personnaliser la page des résultats de la recherche avec les secteurs verticaux et les types de résultats. Pour en savoir plus sur la personnalisation des résultats de recherche, vous pouvez examiner comment gérer les [secteurs verticaux](manage-verticals.md) et les [types de résultats.](manage-result-types.md)

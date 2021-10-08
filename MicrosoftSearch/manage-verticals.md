@@ -11,14 +11,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NOINDEX
 description: Gérer les secteurs verticaux de recherche sur la page des résultats
-ms.openlocfilehash: 89887b6ce5391d2473692504efa3c0eb35407b48
-ms.sourcegitcommit: 967a02ee932f8a6cee70cfd78bb0c8b1b78d07c4
+ms.openlocfilehash: 0396c1f67b22a77a39f78aa1f058ee4b2019a39c
+ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127769"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60238402"
 ---
 # <a name="manage-search-verticals"></a>Gérer les secteurs verticaux de recherche
 
@@ -31,7 +30,7 @@ Vous pouvez gérer les secteurs verticaux à deux niveaux :
 
 ## <a name="understanding-search-verticals"></a>Comprendre les secteurs verticaux de recherche
 
-Recherche Microsoft deux types de secteurs verticaux, à l’est et les secteurs verticaux personnalisés. Les secteurs verticaux à l’emploi tels que Tous, Fichiers et Personnes créent un accès facile aux résultats de recherche les plus couramment utilisés.
+Recherche Microsoft possède deux types de secteurs verticaux, les secteurs verticaux intégrés et les secteurs verticaux personnalisés. Les secteurs verticaux à l’emploi tels que Tous, Fichiers et Personnes créent un accès facile aux résultats de recherche les plus couramment utilisés.
 
 Des options de configuration supplémentaires sont proposées sur des secteurs verticaux personnalisés et peuvent être utilisées pour créer la meilleure expérience pour vos utilisateurs.
 
@@ -39,7 +38,7 @@ Vous pouvez ajouter des secteurs verticaux de recherche pertinents pour votre or
 
 ## <a name="create-search-verticals"></a>Créer des secteurs verticaux de recherche
 
-L’expérience de gestion verticale est pilotée par l’Assistant. Vous êtes guidé à travers les étapes pour définir le nom du secteur vertical, la source de contenu et l’étendue du contenu à rechercher. Vous pouvez utiliser un ensemble limité de langages [KQL (Keyword Query Language)](#keyword-query-language-kql) pour définir l’étendue de la recherche verticale pour une source de contenu donnée.
+L’expérience de gestion verticale est pilotée par l’Assistant. Vous êtes guidé à travers les étapes pour définir le nom du secteur vertical, la source de contenu et l’étendue du contenu à rechercher. Vous pouvez utiliser un ensemble limité de langage de requête de mot clé [(KQL)](#keyword-query-language-kql) pour définir l’étendue de la recherche verticale pour une source de contenu donnée.
 
 Voici les étapes à suivre pour créer les secteurs verticaux personnalisés sur Recherche Microsoft dans SharePoint [accueil,](https://sharepoint.com/)Office [ou](https://office.com/) [Bing](https://bing.com/).  
 
@@ -67,7 +66,7 @@ Une [disposition des résultats de recherche](manage-result-types.md) est néces
 
 ## <a name="advanced-configuration-options"></a>Options de configuration avancées
 
-### <a name="multiple-connections-in-a-vertical"></a>Plusieurs connexions dans un secteur vertical
+### <a name="multiple-connections-in-a-vertical"></a>Connexions multiples dans un secteur vertical
 
 Un secteur vertical de recherche peut faire surface des résultats provenant de plusieurs sources de connecteur. Cette option offre de la flexibilité dans la conception de votre page de résultats de recherche. Le processus de configuration verticale permet aux administrateurs de sélectionner plusieurs connexions à l’étape « Source de contenu ».
 
@@ -154,7 +153,7 @@ Utilisez l’opérateur « | » pour résoudre les variables à valeurs multiple
 > [!NOTE]
 >
 > - Les variables de requête de profil sont uniquement pris en charge pour les secteurs verticaux personnalisés qui utilisent [un connecteur](connectors-overview.md) comme source de contenu.
-> - La fonctionnalité des variables de requête de profil est actuellement en prévisualisation. Pour plus d’informations sur la prévisualisation, voir [Les fonctionnalités d’aperçu des connecteurs.](connectors-overview.md#what-are-the-preview-features)
+> - La fonctionnalité des variables de requête de profil est actuellement en prévisualisation. Pour plus d’informations sur la prévisualisation, voir [les fonctionnalités d’aperçu des connecteurs.](connectors-overview.md#what-are-the-preview-features)
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
